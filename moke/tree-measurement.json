@@ -1,0 +1,36 @@
+{
+  "tree": "largest tree near local coordinate (-1.008, 0.304)",
+  "source": "PIX4Dcatch point cloud, 3914106 loaded points",
+  "coordinate_system": "EPSG:32647 with local offset stored in metadata.json",
+  "ground": {
+    "local_z_m": -1.404,
+    "method": "robust local ground-plane fit in an annulus around the trunk"
+  },
+  "trunk_at_1_3_m": {
+    "section_local_z_m": -0.104,
+    "section_thickness_m": 0.05,
+    "center_local_xy_m": [-1.008, 0.304],
+    "fitted_radius_m": 0.1117,
+    "diameter_m": 0.2234,
+    "circumference_m": 0.702,
+    "estimated_circumference_uncertainty_m": 0.05,
+    "method": "robust circle fit to the trunk cross-section"
+  },
+  "crown": {
+    "tree_height_m": 4.8,
+    "crown_base_height_m": 2.4,
+    "crown_length_m": 2.4,
+    "robust_spread_east_west_m": 2.3,
+    "robust_spread_north_south_m": 1.8,
+    "projected_convex_hull_area_m2": 3.7,
+    "centroid_offset_from_trunk_m": [0.08, 0.28],
+    "centroid_offset_direction": "north-northeast",
+    "method": "4 cm occupied-voxel crown component, robust 1st-to-99th percentile spread"
+  },
+  "limitations": [
+    "The point cloud does not observe every side of every branch and leaf.",
+    "Leaf motion, occlusion and photogrammetric noise can bias crown dimensions.",
+    "No independent scale bar or survey checkpoint was available for validation.",
+    "The numerical uncertainty is larger than the circle-fit residual because scale and ground-height errors are systematic."
+  ]
+}
