@@ -1,0 +1,87 @@
+{
+    "attributes": [
+        {
+            "bufferView": {
+                "byteLength": 15656424,
+                "byteOffset": 0,
+                "uri": "colors.glbin"
+            },
+            "description": "",
+            "elementSize": 1,
+            "name": "rgba",
+            "numElements": 4,
+            "size": 4,
+            "type": "uint8"
+        },
+        {
+            "bufferView": {
+                "byteLength": 46969272,
+                "byteOffset": 0,
+                "uri": "normals.glbin"
+            },
+            "description": "",
+            "elementSize": 4,
+            "name": "normal",
+            "numElements": 3,
+            "size": 12,
+            "type": "float"
+        },
+        {
+            "bufferView": {
+                "byteLength": 46969272,
+                "byteOffset": 0,
+                "uri": "positions.glbin"
+            },
+            "description": "",
+            "elementSize": 4,
+            "max": [
+                681304.0200595604,
+                1532779.1311118337,
+                -23.34747713101623
+            ],
+            "min": [
+                681295.1445882069,
+                1532773.003171179,
+                -28.69451265824554
+            ],
+            "name": "position",
+            "numElements": 3,
+            "size": 12,
+            "type": "float"
+        }
+    ],
+    "boundingBox": {
+        "max": [
+            681304.0200600373,
+            1532780.5048775407,
+            -21.58325880063293
+        ],
+        "min": [
+            681295.1445879685,
+            1532771.629405472,
+            -30.45873086941955
+        ]
+    },
+    "description": "Generated with OPF glTF converter version 3.0.0",
+    "encoding": "GLTF",
+    "hierarchy": {
+        "depth": 4,
+        "firstChunkSize": 14696,
+        "stepSize": 4
+    },
+    "name": "Pix4D Converted",
+    "offset": [
+        681298.0860070931,
+        1532775.9151081773,
+        -26.7847778130841
+    ],
+    "points": 3914029,
+    "projection": "",
+    "scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "spacing": 0.008068843744695187,
+    "version": "2.0"
+}

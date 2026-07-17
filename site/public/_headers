@@ -1,0 +1,6 @@
+/data/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/viewer/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moke Garden Point Cloud</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, -apple-system, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #07110d; }
+    canvas { display: block; }
+    #panel {
+      position: fixed; z-index: 2; top: 16px; left: 16px; width: min(360px, calc(100vw - 32px));
+      padding: 16px; border: 1px solid rgba(165, 214, 180, .22); border-radius: 16px;
+      background: rgba(6, 18, 12, .84); backdrop-filter: blur(14px); box-shadow: 0 18px 55px rgba(0, 0, 0, .35);
+    }
+    h1 { margin: 0 0 4px; font-size: 18px; font-weight: 650; }
+    .sub { color: #a6b9ae; font-size: 12px; line-height: 1.45; }
+    #status { margin: 13px 0; padding: 10px 12px; border-radius: 10px; background: rgba(95, 184, 126, .1); color: #bce9ca; font-size: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+    label { display: grid; gap: 6px; color: #a6b9ae; font-size: 11px; }
+    select, button, input { width: 100%; }
+    select, button {
+      min-height: 34px; color: #eaf7ee; border: 1px solid rgba(165, 214, 180, .2); border-radius: 9px;
+      background: rgba(255,255,255,.06); padding: 0 10px;
+    }
+    button { cursor: pointer; }
+    button:hover { background: rgba(127, 214, 154, .14); }
+    .buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 11px; }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 12px; }
+    .metric { padding: 9px; border-radius: 10px; background: rgba(255,255,255,.045); }
+    .metric b { display: block; color: #eef9f1; font-size: 14px; }
+    .metric span { color: #8fa399; font-size: 10px; }
+    .tree-card { margin-top: 12px; padding: 12px; border: 1px solid rgba(245, 196, 91, .22); border-radius: 12px; background: rgba(245, 196, 91, .06); }
+    .tree-card h2 { margin: 0 0 9px; color: #ffe7a9; font-size: 13px; }
+    .tree-data { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .tree-data b { display: block; color: #fff5d6; font-size: 14px; }
+    .tree-data span { color: #aa9d79; font-size: 10px; line-height: 1.2; }
+    .tree-note { margin-top: 8px; color: #b9af91; font-size: 10px; line-height: 1.4; }
+    .measure-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 10px; }
+    .measure-buttons button { min-height: 31px; padding: 0 6px; font-size: 10px; }
+    #focusTrunk { border-color: rgba(255, 200, 79, .5); color: #ffe3a0; }
+    #focusCrown { border-color: rgba(117, 230, 154, .45); color: #baf2cb; }
+    #hint { position: fixed; z-index: 2; right: 16px; bottom: 14px; color: rgba(225,240,230,.62); font-size: 11px; }
+    @media (max-width: 620px) { #hint { display: none; } }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+</head>
+<body>
+  <section id="panel">
+    <h1>สวน Moke · Point Cloud</h1>
+    <div class="sub">Pix4Dcatch · 17 ก.ค. 2026 · EPSG:32647</div>
+    <div id="status">กำลังโหลด metadata…</div>
+    <div class="grid">
+      <label>จำนวนจุดที่แสดง
+        <select id="budget">
+          <option value="500000">0.5 ล้าน</option>
+          <option value="1000000" selected>1 ล้าน</option>
+          <option value="2000000">2 ล้าน</option>
+          <option value="99999999">ทั้งหมด</option>
+        </select>
+      </label>
+      <label>ขนาดจุด <span id="pointSizeLabel">2.0</span>
+        <input id="pointSize" type="range" min="0.5" max="5" value="2" step="0.1">
+      </label>
+    </div>
+    <div class="buttons">
+      <button id="reset">มุมเริ่มต้น</button>
+      <button id="top">มองจากบน</button>
+      <button id="front">มองด้านข้าง</button>
+    </div>
+    <div class="metrics">
+      <div class="metric"><b id="points">–</b><span>จุดทั้งหมด</span></div>
+      <div class="metric"><b id="footprint">–</b><span>ขนาดพื้นที่</span></div>
+      <div class="metric"><b id="height">–</b><span>ช่วงความสูง</span></div>
+    </div>
+    <div class="tree-card">
+      <h2>ต้นไม้ใหญ่ · วัดจาก point cloud</h2>
+      <div class="tree-data">
+        <div><b>0.70 ม.</b><span>เส้นรอบวงที่ 1.30 ม.</span></div>
+        <div><b>22.3 ซม.</b><span>DBH โดยประมาณ</span></div>
+        <div><b>4.8 ม.</b><span>ความสูงต้น</span></div>
+        <div><b>2.3 × 1.8 ม.</b><span>ความกว้างพุ่ม</span></div>
+        <div><b>3.7 ตร.ม.</b><span>พื้นที่ฉายพุ่ม</span></div>
+        <div><b>≈ 0.3 ม.</b><span>พุ่มเยื้องไปเหนือ–ตะวันออก</span></div>
+      </div>
+      <div class="tree-note">สีเหลือง = จุดและหน้าตัดที่ใช้วัดลำต้น · สีเขียว = จุดและกรอบ 3D ที่ใช้วัดเรือนยอด</div>
+      <div class="measure-buttons">
+        <button id="focusTrunk">ดูลำต้นที่วัด</button>
+        <button id="focusCrown">ดูพุ่มที่วัด</button>
+        <button id="toggleMeasure" aria-pressed="true">ซ่อนไฮไลท์</button>
+      </div>
+    </div>
+  </section>
+  <div id="hint">ลากเพื่อหมุน · คลิกขวาเพื่อเลื่อน · หมุนล้อเพื่อซูม</div>
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>
