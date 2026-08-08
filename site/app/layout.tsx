@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Moke Garden Point Cloud",
-  description: "Interactive 3D point cloud with highlighted trunk and crown measurements.",
+  title: "Samut Songkram Mangrove Point Cloud",
+  description: "Interactive 3D point cloud viewer for the Samut Songkram mangrove survey.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

@@ -4,7 +4,7 @@ export default function Home() {
       <iframe
         className="viewer-frame"
         src="/viewer/index.html"
-        title="Moke garden point-cloud viewer"
+        title="Samut Songkram mangrove point-cloud viewer"
         allow="fullscreen"
       />
     </main>

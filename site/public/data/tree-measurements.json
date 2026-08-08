@@ -1,0 +1,793 @@
+{
+  "source": "TD_008_2026_08_07_07_04_07.las",
+  "method": "sampled-cloud candidate detection; full 67M-point LAS multi-slice circle validation",
+  "measurementSourcePointCount": 67177038,
+  "viewerPointCount": 2920741,
+  "breastHeightM": 1.3,
+  "visibleMeasuredTrees": 29,
+  "trees": [
+    {
+      "id": 1,
+      "center": [
+        23.016,
+        2.384
+      ],
+      "groundCenter": [
+        23.076,
+        2.307
+      ],
+      "axis": [
+        -0.04616,
+        0.05902,
+        0.99719
+      ],
+      "groundZ": -6.652,
+      "measurementZ": -5.352,
+      "radiusM": 0.021,
+      "dbhCm": 4.2,
+      "circumferenceM": 0.132,
+      "fitPoints": 89,
+      "angularCoverage": 0.75,
+      "residualM": 0.0025,
+      "verticality": 0.999,
+      "validatedSlices": 4,
+      "confidence": "medium"
+    },
+    {
+      "id": 2,
+      "center": [
+        8.839,
+        1.401
+      ],
+      "groundCenter": [
+        8.852,
+        1.339
+      ],
+      "axis": [
+        -0.0103,
+        0.04766,
+        0.99881
+      ],
+      "groundZ": -6.636,
+      "measurementZ": -5.336,
+      "radiusM": 0.0455,
+      "dbhCm": 9.1,
+      "circumferenceM": 0.286,
+      "fitPoints": 16877,
+      "angularCoverage": 0.792,
+      "residualM": 0.0028,
+      "verticality": 0.999,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 3,
+      "center": [
+        31.262,
+        1.204
+      ],
+      "groundCenter": [
+        31.354,
+        1.359
+      ],
+      "axis": [
+        -0.07063,
+        -0.11846,
+        0.99044
+      ],
+      "groundZ": -6.544,
+      "measurementZ": -5.244,
+      "radiusM": 0.1159,
+      "dbhCm": 23.2,
+      "circumferenceM": 0.728,
+      "fitPoints": 866,
+      "angularCoverage": 0.75,
+      "residualM": 0.0059,
+      "verticality": 0.997,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 4,
+      "center": [
+        20.914,
+        -0.173
+      ],
+      "groundCenter": [
+        20.972,
+        -0.198
+      ],
+      "axis": [
+        -0.04437,
+        0.0187,
+        0.99884
+      ],
+      "groundZ": -6.654,
+      "measurementZ": -5.354,
+      "radiusM": 0.0228,
+      "dbhCm": 4.6,
+      "circumferenceM": 0.143,
+      "fitPoints": 1043,
+      "angularCoverage": 0.958,
+      "residualM": 0.0026,
+      "verticality": 0.999,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 5,
+      "center": [
+        11.183,
+        -4.716
+      ],
+      "groundCenter": [
+        11.222,
+        -4.763
+      ],
+      "axis": [
+        -0.02953,
+        0.03596,
+        0.99892
+      ],
+      "groundZ": -6.505,
+      "measurementZ": -5.205,
+      "radiusM": 0.1052,
+      "dbhCm": 21.0,
+      "circumferenceM": 0.661,
+      "fitPoints": 737,
+      "angularCoverage": 1.0,
+      "residualM": 0.0062,
+      "verticality": 0.993,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 6,
+      "center": [
+        10.545,
+        -5.58
+      ],
+      "groundCenter": [
+        10.633,
+        -5.51
+      ],
+      "axis": [
+        -0.06749,
+        -0.05334,
+        0.99629
+      ],
+      "groundZ": -6.361,
+      "measurementZ": -5.061,
+      "radiusM": 0.1116,
+      "dbhCm": 22.3,
+      "circumferenceM": 0.701,
+      "fitPoints": 1277,
+      "angularCoverage": 0.833,
+      "residualM": 0.0073,
+      "verticality": 0.987,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 7,
+      "center": [
+        18.9,
+        -7.965
+      ],
+      "groundCenter": [
+        18.853,
+        -7.832
+      ],
+      "axis": [
+        0.03529,
+        -0.10146,
+        0.99421
+      ],
+      "groundZ": -6.768,
+      "measurementZ": -5.468,
+      "radiusM": 0.0286,
+      "dbhCm": 5.7,
+      "circumferenceM": 0.18,
+      "fitPoints": 597,
+      "angularCoverage": 0.958,
+      "residualM": 0.0024,
+      "verticality": 0.998,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 8,
+      "center": [
+        29.829,
+        -8.002
+      ],
+      "groundCenter": [
+        29.946,
+        -7.93
+      ],
+      "axis": [
+        -0.08954,
+        -0.0549,
+        0.99447
+      ],
+      "groundZ": -6.378,
+      "measurementZ": -5.078,
+      "radiusM": 0.0891,
+      "dbhCm": 17.8,
+      "circumferenceM": 0.56,
+      "fitPoints": 799,
+      "angularCoverage": 0.875,
+      "residualM": 0.0056,
+      "verticality": 0.996,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 9,
+      "center": [
+        16.341,
+        -8.595
+      ],
+      "groundCenter": [
+        16.345,
+        -8.442
+      ],
+      "axis": [
+        -0.00314,
+        -0.11695,
+        0.99313
+      ],
+      "groundZ": -6.741,
+      "measurementZ": -5.441,
+      "radiusM": 0.0276,
+      "dbhCm": 5.5,
+      "circumferenceM": 0.173,
+      "fitPoints": 945,
+      "angularCoverage": 1.0,
+      "residualM": 0.0025,
+      "verticality": 0.997,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 10,
+      "center": [
+        34.727,
+        -10.255
+      ],
+      "groundCenter": [
+        34.718,
+        -10.341
+      ],
+      "axis": [
+        0.00682,
+        0.06562,
+        0.99782
+      ],
+      "groundZ": -6.647,
+      "measurementZ": -5.347,
+      "radiusM": 0.0228,
+      "dbhCm": 4.6,
+      "circumferenceM": 0.143,
+      "fitPoints": 852,
+      "angularCoverage": 1.0,
+      "residualM": 0.0028,
+      "verticality": 0.995,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 11,
+      "center": [
+        20.313,
+        -10.322
+      ],
+      "groundCenter": [
+        20.338,
+        -10.227
+      ],
+      "axis": [
+        -0.01877,
+        -0.07276,
+        0.99717
+      ],
+      "groundZ": -6.769,
+      "measurementZ": -5.469,
+      "radiusM": 0.0219,
+      "dbhCm": 4.4,
+      "circumferenceM": 0.137,
+      "fitPoints": 1665,
+      "angularCoverage": 1.0,
+      "residualM": 0.0025,
+      "verticality": 0.998,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 12,
+      "center": [
+        17.658,
+        -10.561
+      ],
+      "groundCenter": [
+        17.768,
+        -10.474
+      ],
+      "axis": [
+        -0.0838,
+        -0.06657,
+        0.99426
+      ],
+      "groundZ": -6.773,
+      "measurementZ": -5.473,
+      "radiusM": 0.0421,
+      "dbhCm": 8.4,
+      "circumferenceM": 0.264,
+      "fitPoints": 1693,
+      "angularCoverage": 0.958,
+      "residualM": 0.0029,
+      "verticality": 0.991,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 13,
+      "center": [
+        14.806,
+        -11.002
+      ],
+      "groundCenter": [
+        14.844,
+        -10.987
+      ],
+      "axis": [
+        -0.02963,
+        -0.0113,
+        0.9995
+      ],
+      "groundZ": -6.738,
+      "measurementZ": -5.438,
+      "radiusM": 0.0213,
+      "dbhCm": 4.3,
+      "circumferenceM": 0.134,
+      "fitPoints": 1132,
+      "angularCoverage": 1.0,
+      "residualM": 0.0028,
+      "verticality": 0.999,
+      "validatedSlices": 4,
+      "confidence": "medium"
+    },
+    {
+      "id": 14,
+      "center": [
+        19.149,
+        -11.007
+      ],
+      "groundCenter": [
+        19.109,
+        -10.948
+      ],
+      "axis": [
+        0.03096,
+        -0.04468,
+        0.99852
+      ],
+      "groundZ": -6.782,
+      "measurementZ": -5.482,
+      "radiusM": 0.0213,
+      "dbhCm": 4.3,
+      "circumferenceM": 0.134,
+      "fitPoints": 1295,
+      "angularCoverage": 0.542,
+      "residualM": 0.0027,
+      "verticality": 0.999,
+      "validatedSlices": 5,
+      "confidence": "medium"
+    },
+    {
+      "id": 15,
+      "center": [
+        8.871,
+        -11.467
+      ],
+      "groundCenter": [
+        9.0,
+        -11.394
+      ],
+      "axis": [
+        -0.09893,
+        -0.05602,
+        0.99352
+      ],
+      "groundZ": -6.761,
+      "measurementZ": -5.461,
+      "radiusM": 0.0637,
+      "dbhCm": 12.7,
+      "circumferenceM": 0.4,
+      "fitPoints": 1277,
+      "angularCoverage": 0.917,
+      "residualM": 0.0046,
+      "verticality": 0.994,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 16,
+      "center": [
+        17.126,
+        -11.558
+      ],
+      "groundCenter": [
+        17.142,
+        -11.39
+      ],
+      "axis": [
+        -0.01284,
+        -0.12835,
+        0.99165
+      ],
+      "groundZ": -6.762,
+      "measurementZ": -5.462,
+      "radiusM": 0.0582,
+      "dbhCm": 11.6,
+      "circumferenceM": 0.366,
+      "fitPoints": 3677,
+      "angularCoverage": 1.0,
+      "residualM": 0.0035,
+      "verticality": 0.986,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 17,
+      "center": [
+        16.042,
+        -13.037
+      ],
+      "groundCenter": [
+        16.172,
+        -13.038
+      ],
+      "axis": [
+        -0.09959,
+        0.001,
+        0.99503
+      ],
+      "groundZ": -6.784,
+      "measurementZ": -5.484,
+      "radiusM": 0.0362,
+      "dbhCm": 7.2,
+      "circumferenceM": 0.227,
+      "fitPoints": 2038,
+      "angularCoverage": 0.917,
+      "residualM": 0.0025,
+      "verticality": 0.992,
+      "validatedSlices": 4,
+      "confidence": "medium"
+    },
+    {
+      "id": 18,
+      "center": [
+        14.733,
+        -13.151
+      ],
+      "groundCenter": [
+        14.802,
+        -13.245
+      ],
+      "axis": [
+        -0.05214,
+        0.07228,
+        0.99602
+      ],
+      "groundZ": -6.743,
+      "measurementZ": -5.443,
+      "radiusM": 0.0414,
+      "dbhCm": 8.3,
+      "circumferenceM": 0.26,
+      "fitPoints": 817,
+      "angularCoverage": 0.917,
+      "residualM": 0.0029,
+      "verticality": 0.994,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 19,
+      "center": [
+        33.117,
+        -13.648
+      ],
+      "groundCenter": [
+        33.039,
+        -13.64
+      ],
+      "axis": [
+        0.06056,
+        -0.00639,
+        0.99814
+      ],
+      "groundZ": -6.681,
+      "measurementZ": -5.381,
+      "radiusM": 0.0502,
+      "dbhCm": 10.0,
+      "circumferenceM": 0.316,
+      "fitPoints": 3557,
+      "angularCoverage": 0.917,
+      "residualM": 0.0029,
+      "verticality": 1.0,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 20,
+      "center": [
+        30.432,
+        -13.67
+      ],
+      "groundCenter": [
+        30.369,
+        -13.669
+      ],
+      "axis": [
+        0.04895,
+        -0.00056,
+        0.9988
+      ],
+      "groundZ": -6.704,
+      "measurementZ": -5.404,
+      "radiusM": 0.02,
+      "dbhCm": 4.0,
+      "circumferenceM": 0.126,
+      "fitPoints": 833,
+      "angularCoverage": 0.458,
+      "residualM": 0.0027,
+      "verticality": 0.999,
+      "validatedSlices": 5,
+      "confidence": "medium"
+    },
+    {
+      "id": 21,
+      "center": [
+        29.103,
+        -13.807
+      ],
+      "groundCenter": [
+        29.104,
+        -13.772
+      ],
+      "axis": [
+        -0.00072,
+        -0.02751,
+        0.99962
+      ],
+      "groundZ": -6.707,
+      "measurementZ": -5.407,
+      "radiusM": 0.019,
+      "dbhCm": 3.8,
+      "circumferenceM": 0.119,
+      "fitPoints": 416,
+      "angularCoverage": 1.0,
+      "residualM": 0.0027,
+      "verticality": 0.997,
+      "validatedSlices": 4,
+      "confidence": "medium"
+    },
+    {
+      "id": 22,
+      "center": [
+        24.046,
+        -14.916
+      ],
+      "groundCenter": [
+        23.989,
+        -14.995
+      ],
+      "axis": [
+        0.04348,
+        0.06043,
+        0.99722
+      ],
+      "groundZ": -6.72,
+      "measurementZ": -5.42,
+      "radiusM": 0.019,
+      "dbhCm": 3.8,
+      "circumferenceM": 0.119,
+      "fitPoints": 227,
+      "angularCoverage": 0.958,
+      "residualM": 0.0028,
+      "verticality": 0.996,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 23,
+      "center": [
+        23.36,
+        -15.405
+      ],
+      "groundCenter": [
+        23.368,
+        -15.304
+      ],
+      "axis": [
+        -0.00591,
+        -0.078,
+        0.99694
+      ],
+      "groundZ": -6.711,
+      "measurementZ": -5.411,
+      "radiusM": 0.0351,
+      "dbhCm": 7.0,
+      "circumferenceM": 0.221,
+      "fitPoints": 304,
+      "angularCoverage": 0.667,
+      "residualM": 0.0027,
+      "verticality": 0.996,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 24,
+      "center": [
+        24.99,
+        -15.483
+      ],
+      "groundCenter": [
+        24.978,
+        -15.311
+      ],
+      "axis": [
+        0.00883,
+        -0.13056,
+        0.9914
+      ],
+      "groundZ": -6.726,
+      "measurementZ": -5.426,
+      "radiusM": 0.019,
+      "dbhCm": 3.8,
+      "circumferenceM": 0.119,
+      "fitPoints": 251,
+      "angularCoverage": 0.75,
+      "residualM": 0.0027,
+      "verticality": 0.991,
+      "validatedSlices": 4,
+      "confidence": "medium"
+    },
+    {
+      "id": 25,
+      "center": [
+        37.384,
+        -15.525
+      ],
+      "groundCenter": [
+        37.481,
+        -15.529
+      ],
+      "axis": [
+        -0.07455,
+        0.00245,
+        0.99721
+      ],
+      "groundZ": -6.66,
+      "measurementZ": -5.36,
+      "radiusM": 0.0243,
+      "dbhCm": 4.9,
+      "circumferenceM": 0.153,
+      "fitPoints": 398,
+      "angularCoverage": 0.75,
+      "residualM": 0.0024,
+      "verticality": 0.994,
+      "validatedSlices": 4,
+      "confidence": "medium"
+    },
+    {
+      "id": 26,
+      "center": [
+        24.257,
+        -16.1
+      ],
+      "groundCenter": [
+        24.254,
+        -15.964
+      ],
+      "axis": [
+        0.00209,
+        -0.1045,
+        0.99452
+      ],
+      "groundZ": -6.661,
+      "measurementZ": -5.361,
+      "radiusM": 0.0218,
+      "dbhCm": 4.4,
+      "circumferenceM": 0.137,
+      "fitPoints": 197,
+      "angularCoverage": 0.792,
+      "residualM": 0.0028,
+      "verticality": 0.994,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 27,
+      "center": [
+        36.344,
+        -16.354
+      ],
+      "groundCenter": [
+        36.471,
+        -16.392
+      ],
+      "axis": [
+        -0.0966,
+        0.02854,
+        0.99491
+      ],
+      "groundZ": -6.661,
+      "measurementZ": -5.361,
+      "radiusM": 0.0198,
+      "dbhCm": 4.0,
+      "circumferenceM": 0.124,
+      "fitPoints": 224,
+      "angularCoverage": 0.625,
+      "residualM": 0.0026,
+      "verticality": 0.998,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 28,
+      "center": [
+        24.653,
+        -16.421
+      ],
+      "groundCenter": [
+        24.608,
+        -16.287
+      ],
+      "axis": [
+        0.03445,
+        -0.10234,
+        0.99415
+      ],
+      "groundZ": -6.647,
+      "measurementZ": -5.347,
+      "radiusM": 0.0232,
+      "dbhCm": 4.6,
+      "circumferenceM": 0.146,
+      "fitPoints": 246,
+      "angularCoverage": 0.875,
+      "residualM": 0.0024,
+      "verticality": 0.997,
+      "validatedSlices": 5,
+      "confidence": "high"
+    },
+    {
+      "id": 29,
+      "center": [
+        15.458,
+        -17.287
+      ],
+      "groundCenter": [
+        15.483,
+        -17.311
+      ],
+      "axis": [
+        -0.01929,
+        0.01839,
+        0.99964
+      ],
+      "groundZ": -6.737,
+      "measurementZ": -5.437,
+      "radiusM": 0.091,
+      "dbhCm": 18.2,
+      "circumferenceM": 0.572,
+      "fitPoints": 636,
+      "angularCoverage": 0.625,
+      "residualM": 0.0055,
+      "verticality": 0.999,
+      "validatedSlices": 5,
+      "confidence": "high"
+    }
+  ]
+}
