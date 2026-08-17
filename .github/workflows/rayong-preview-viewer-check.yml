@@ -1,0 +1,34 @@
+name: Check Rayong preview viewer
+
+on:
+  push:
+    branches:
+      - codex/public-lidar-extension
+    paths:
+      - 'rayong-preview/index.html'
+      - 'rayong-preview/viewer.js'
+      - 'rayong-preview/data/tree-measurements.json'
+      - '.github/workflows/rayong-preview-viewer-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-viewer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+
+      - name: Validate JavaScript and generated JSON
+        run: |
+          node --check rayong-preview/viewer.js
+          python -m json.tool rayong-preview/data/tree-measurements.json >/dev/null
+
+      - name: Verify measurement UI hooks
+        run: |
+          grep -q 'id="measurementCard"' rayong-preview/index.html
+          grep -q 'id="focusMeasurement"' rayong-preview/index.html
+          grep -q 'id="toggleMeasurements"' rayong-preview/index.html
+          grep -q 'tree-measurements.json' rayong-preview/viewer.js
