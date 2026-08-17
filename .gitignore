@@ -1,6 +1,15 @@
 .DS_Store
 **/.DS_Store
 
+# Local/private LiDAR source and analysis products. The public release contains
+# only the derived static viewer bundle under site/public/.
+/outputs/
+/audit/
+/growth-app/
+/config/
+/annotations/
+/samutsongkram/*.las
+/scripts/__pycache__/
+
 # Local development output
 *.log
-

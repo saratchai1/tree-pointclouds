@@ -1,0 +1,57 @@
+name: Build LiDAR viewer index
+
+on:
+  push:
+    branches:
+      - main
+      - codex/integrate-lidar-measurements-viewer
+    paths:
+      - 'site/public/data/lidar-measurements/**'
+      - '!site/public/data/lidar-measurements/viewer-index.json'
+      - 'scripts/build_lidar_viewer_index.mjs'
+      - '.github/workflows/build-lidar-viewer-index.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lidar-viewer-index-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Validate and build compact viewer index
+        shell: bash
+        run: |
+          node --check scripts/build_lidar_viewer_index.mjs
+          node --check site/public/viewer/viewer.js
+          node scripts/build_lidar_viewer_index.mjs
+          git diff --check
+
+      - name: Commit generated index when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- site/public/data/lidar-measurements/viewer-index.json; then
+            echo 'viewer-index.json is already current.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/public/data/lidar-measurements/viewer-index.json
+          git commit -m 'Generate compact LiDAR viewer index'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
