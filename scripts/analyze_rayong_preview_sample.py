@@ -83,7 +83,7 @@ def write_csv(records: list[dict]) -> None:
         "validatedSlices", "centerSpreadM", "radiusCv", "status", "qaFlags",
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for record in records:
             row = {key: record.get(key) for key in fields}
