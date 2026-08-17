@@ -1,0 +1,67 @@
+{
+  "name": "Rayong site-002 Point Cloud",
+  "description": "Sampled colored LAS point cloud for a local preliminary preview.",
+  "source": "Rayong55_010s_2026_08_14_02_53_34.las",
+  "sourcePointCount": 73372172,
+  "samplingStride": 74,
+  "points": 991516,
+  "projection": "LAS source coordinates, recentered for browser viewing",
+  "offset": [
+    0,
+    0,
+    0
+  ],
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "boundingBox": {
+    "min": [
+      -35.79367446899414,
+      -55.07551193237305,
+      -4.94316291809082
+    ],
+    "max": [
+      35.79367446899414,
+      55.07551193237305,
+      4.94316291809082
+    ]
+  },
+  "attributes": [
+    {
+      "name": "rgba",
+      "type": "uint8",
+      "numElements": 4,
+      "elementSize": 1,
+      "size": 4,
+      "bufferView": {
+        "uri": "colors.glbin",
+        "byteLength": 3966064,
+        "byteOffset": 0
+      }
+    },
+    {
+      "name": "position",
+      "type": "float",
+      "numElements": 3,
+      "elementSize": 4,
+      "size": 12,
+      "bufferView": {
+        "uri": "positions-00.glbin",
+        "byteLength": 11898192,
+        "byteOffset": 0
+      },
+      "min": [
+        -35.79367446899414,
+        -55.07551193237305,
+        -4.94316291809082
+      ],
+      "max": [
+        35.79367446899414,
+        55.07551193237305,
+        4.94316291809082
+      ]
+    }
+  ]
+}
