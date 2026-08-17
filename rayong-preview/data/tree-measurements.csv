@@ -1,2 +1,2 @@
-treeId,x,y,groundZ,measurementZ,dbhCm,circumferenceCm,radiusM,confidence,fitPoints,angularCoverageRatio,residualM,verticality,validatedSlices,centerSpreadM,radiusCv,status
-RY-001,-44.756,-0.504,-6.06,-4.76,59.67,187.45,0.2983,medium,18,0.5417,0.02212,0.9988,3,0.13367,0.3122,PRELIMINARY_SAMPLE_ESTIMATE
+treeId,x,y,groundZ,measurementZ,dbhCm,circumferenceCm,radiusM,confidence,fitPoints,angularCoverageRatio,residualM,verticality,validatedSlices,centerSpreadM,radiusCv,status,qaFlags
+RY-001,-44.756,-0.504,-6.06,-4.76,59.67,187.45,0.2983,low,18,0.5417,0.02212,0.9988,3,0.13367,0.3122,CHECK_ON_SITE,FITTED_RADIUS_NEAR_0_30_M_BOUND;LIMITED_POINT_SUPPORT;PARTIAL_ANGULAR_COVERAGE;LIMITED_VERTICAL_SLICE_SUPPORT;CENTERLINE_SPREAD_HIGH;RADIUS_VARIATION_HIGH
