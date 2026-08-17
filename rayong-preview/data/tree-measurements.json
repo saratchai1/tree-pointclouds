@@ -1,0 +1,68 @@
+{
+  "algorithmVersion": "rayong-preview-sampled-skill-v1",
+  "method": "repository sampled-cloud stem candidate detection; five-height circle persistence; duplicate suppression",
+  "measurementStatus": "PRELIMINARY_SAMPLE_ESTIMATE",
+  "fieldVerified": false,
+  "breastHeightM": 1.3,
+  "source": {
+    "path": "rayong-preview/data/positions-*.glbin",
+    "sourceLas": "Rayong_009s_2026_08_14_02_28_36.las",
+    "viewerPointCount": 998284,
+    "sourcePointCount": 106816323,
+    "samplingStride": 107,
+    "metadataSha256": "e551bbf77a10e55ec5ae4b554c38f5a8570fd49d072120bec4c73c4c1550c318",
+    "globalGroundHintZ": -6.3116,
+    "zQuantiles": [
+      -7.6211,
+      -6.3413,
+      -6.3116,
+      -6.2815,
+      -5.4373,
+      -2.7834,
+      7.1274
+    ]
+  },
+  "candidateSeedCount": 57,
+  "acceptedBeforeDuplicateSuppression": 1,
+  "visibleMeasuredTrees": 1,
+  "summary": {
+    "high": 0,
+    "medium": 1,
+    "low": 0
+  },
+  "limitations": [
+    "The browser point cloud is a regular 1/107 sample, not the full LAS.",
+    "The full-LAS perpendicular-plane refinement step was not available in this public preview run.",
+    "Prop-root point-of-measurement applicability has not been reviewed.",
+    "All measurements require full-LAS and/or field confirmation before formal reporting."
+  ],
+  "trees": [
+    {
+      "treeId": "RY-001",
+      "center": [
+        -44.756,
+        -0.504
+      ],
+      "x": -44.756,
+      "y": -0.504,
+      "groundZ": -6.06,
+      "measurementZ": -4.76,
+      "measurementHeightM": 1.3,
+      "radiusM": 0.2983,
+      "dbhCm": 59.67,
+      "circumferenceCm": 187.45,
+      "circumferenceM": 1.8745,
+      "confidence": "medium",
+      "fitPoints": 18,
+      "angularCoverageRatio": 0.5417,
+      "angularCoverageDeg": 195.0,
+      "residualM": 0.02212,
+      "verticality": 0.9988,
+      "validatedSlices": 3,
+      "centerSpreadM": 0.13367,
+      "radiusCv": 0.3122,
+      "status": "PRELIMINARY_SAMPLE_ESTIMATE",
+      "fieldVerified": false
+    }
+  ]
+}
