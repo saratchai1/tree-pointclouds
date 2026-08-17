@@ -2,9 +2,11 @@
 """Preliminary Rayong DBH measurement using the repository LiDAR stem skill.
 
 This reuses the sampled-cloud candidate detector and multi-slice circle fitting
-from ``analyze_samutsongkhram_trees.py``.  It deliberately stops before the
+from ``analyze_samutsongkhram_trees.py``. It deliberately stops before the
 full-LAS refinement because ``rayong-preview`` contains a 1/107 browser sample,
-not the 2.78 GB source LAS.  Every output is therefore marked preliminary.
+not the 2.78 GB source LAS. Every output is therefore marked preliminary and
+geometry close to the sampled detector's acceptance bounds is flagged for
+on-site/full-LAS checking instead of being presented as a final measurement.
 """
 
 from __future__ import annotations
@@ -39,26 +41,38 @@ def load_skill():
     return module
 
 
-def confidence(row: dict) -> str:
+def qa_flags(row: dict, radius_m: float) -> list[str]:
+    flags: list[str] = []
+    # The inherited sampled detector accepts radii only up to 0.30 m. A fit
+    # close to that bound may be truncated or may represent roots/branches.
+    if radius_m >= 0.285:
+        flags.append("FITTED_RADIUS_NEAR_0_30_M_BOUND")
+    if int(row["inliers"]) < 25:
+        flags.append("LIMITED_POINT_SUPPORT")
+    if float(row["coverage"]) < 0.60:
+        flags.append("PARTIAL_ANGULAR_COVERAGE")
+    if int(row["slice_count"]) < 4:
+        flags.append("LIMITED_VERTICAL_SLICE_SUPPORT")
+    if float(row["center_spread"]) > 0.10:
+        flags.append("CENTERLINE_SPREAD_HIGH")
+    if float(row["radius_cv"]) > 0.25:
+        flags.append("RADIUS_VARIATION_HIGH")
+    return flags
+
+
+def confidence(row: dict, flags: list[str]) -> str:
+    if flags:
+        return "low"
     if (
-        row["inliers"] >= 18
-        and row["coverage"] >= 0.45
-        and row["slice_count"] >= 4
-        and row["verticality"] >= 0.82
-        and row["center_spread"] <= 0.09
-        and row["radius_cv"] <= 0.25
+        row["inliers"] >= 40
+        and row["coverage"] >= 0.65
+        and row["slice_count"] >= 5
+        and row["verticality"] >= 0.90
+        and row["center_spread"] <= 0.06
+        and row["radius_cv"] <= 0.18
     ):
         return "high"
-    if (
-        row["inliers"] >= 10
-        and row["coverage"] >= 0.30
-        and row["slice_count"] >= 3
-        and row["verticality"] >= 0.72
-        and row["center_spread"] <= 0.14
-        and row["radius_cv"] <= 0.38
-    ):
-        return "medium"
-    return "low"
+    return "medium"
 
 
 def write_csv(records: list[dict]) -> None:
@@ -66,12 +80,15 @@ def write_csv(records: list[dict]) -> None:
         "treeId", "x", "y", "groundZ", "measurementZ", "dbhCm",
         "circumferenceCm", "radiusM", "confidence", "fitPoints",
         "angularCoverageRatio", "residualM", "verticality",
-        "validatedSlices", "centerSpreadM", "radiusCv", "status",
+        "validatedSlices", "centerSpreadM", "radiusCv", "status", "qaFlags",
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
-        writer.writerows({key: row.get(key) for key in fields} for row in records)
+        for record in records:
+            row = {key: record.get(key) for key in fields}
+            row["qaFlags"] = ";".join(record.get("qaFlags") or [])
+            writer.writerow(row)
 
 
 def write_markdown(payload: dict) -> None:
@@ -79,26 +96,28 @@ def write_markdown(payload: dict) -> None:
     lines = [
         "# Rayong preview DBH measurements",
         "",
-        "> **PRELIMINARY_SAMPLE_ESTIMATE — not field verified.**",
+        "> **SCREENING RESULT — not field verified and not a final DBH claim.**",
         "",
         "The calculation reuses the repository stem skill: vertically persistent candidate detection, circle fitting at five heights, centre/radius consistency checks, and duplicate suppression.",
         "",
         f"- Browser points analysed: {payload['source']['viewerPointCount']:,}",
         f"- Source LAS points reported in metadata: {payload['source']['sourcePointCount']:,}",
         f"- Browser sampling stride: 1/{payload['source']['samplingStride']}",
-        f"- Retained stems: {payload['visibleMeasuredTrees']}",
+        f"- Retained candidates: {payload['visibleMeasuredTrees']}",
         f"- Confidence: high {counts['high']}, medium {counts['medium']}, low {counts['low']}",
         "",
-        "| Tree | DBH (cm) | Circumference (cm) | Confidence | Fit points | Coverage | Slices |",
-        "|---|---:|---:|---|---:|---:|---:|",
+        "| Tree | DBH screening (cm) | Circumference (cm) | Status | Confidence | Fit points | Coverage | Slices |",
+        "|---|---:|---:|---|---|---:|---:|---:|",
     ]
     for row in payload["trees"]:
         lines.append(
-            f"| {row['treeId']} | {row['dbhCm']:.1f} | {row['circumferenceCm']:.1f} | {row['confidence']} | {row['fitPoints']} | {row['angularCoverageRatio']:.2f} | {row['validatedSlices']} |"
+            f"| {row['treeId']} | {row['dbhCm']:.1f} | {row['circumferenceCm']:.1f} | {row['status']} | {row['confidence']} | {row['fitPoints']} | {row['angularCoverageRatio']:.2f} | {row['validatedSlices']} |"
         )
+        lines.append("")
+        lines.append(f"QA flags for {row['treeId']}: `{'`, `'.join(row['qaFlags'])}`")
     lines += [
         "",
-        "These numbers are for locating candidates and planning field checks. Re-run the retained centres against the full LAS and review the point of measurement for prop-root trees before formal reporting.",
+        "The retained geometry is a candidate for locating the object in the viewer and planning a field/full-LAS check. Re-run the centre against the full LAS and review point-of-measurement applicability for prop-root trees before formal reporting.",
         "",
     ]
     OUTPUT_MD.write_text("\n".join(lines), encoding="utf-8")
@@ -162,6 +181,8 @@ def main() -> None:
         radius = float(stem["radius"])
         dbh_cm = radius * 200.0
         circumference_cm = 2.0 * math.pi * radius * 100.0
+        flags = qa_flags(stem, radius)
+        record_confidence = confidence(stem, flags)
         records.append({
             "treeId": f"RY-{index:03d}",
             "center": [round(float(v), 3) for v in stem["center"]],
@@ -174,7 +195,7 @@ def main() -> None:
             "dbhCm": round(dbh_cm, 2),
             "circumferenceCm": round(circumference_cm, 2),
             "circumferenceM": round(circumference_cm / 100.0, 4),
-            "confidence": confidence(stem),
+            "confidence": record_confidence,
             "fitPoints": int(stem["inliers"]),
             "angularCoverageRatio": round(float(stem["coverage"]), 4),
             "angularCoverageDeg": round(float(stem["coverage"] * 360.0), 1),
@@ -183,15 +204,16 @@ def main() -> None:
             "validatedSlices": int(stem["slice_count"]),
             "centerSpreadM": round(float(stem["center_spread"]), 5),
             "radiusCv": round(float(stem["radius_cv"]), 4),
-            "status": "PRELIMINARY_SAMPLE_ESTIMATE",
+            "status": "CHECK_ON_SITE" if flags else "PRELIMINARY_SAMPLE_ESTIMATE",
+            "qaFlags": flags,
             "fieldVerified": False,
         })
 
     counts = {level: sum(row["confidence"] == level for row in records) for level in ("high", "medium", "low")}
     payload = {
-        "algorithmVersion": "rayong-preview-sampled-skill-v1",
-        "method": "repository sampled-cloud stem candidate detection; five-height circle persistence; duplicate suppression",
-        "measurementStatus": "PRELIMINARY_SAMPLE_ESTIMATE",
+        "algorithmVersion": "rayong-preview-sampled-skill-v2",
+        "method": "repository sampled-cloud stem candidate detection; five-height circle persistence; duplicate suppression; conservative QA flagging",
+        "measurementStatus": "SCREENING_ONLY",
         "fieldVerified": False,
         "breastHeightM": BREAST_HEIGHT_M,
         "source": {
