@@ -1,0 +1,63 @@
+name: Measure Rayong preview DBH
+
+on:
+  push:
+    branches:
+      - codex/public-lidar-extension
+    paths:
+      - 'scripts/analyze_rayong_preview_sample.py'
+      - 'scripts/analyze_samutsongkhram_trees.py'
+      - 'rayong-preview/data/positions-*.glbin'
+      - 'rayong-preview/data/metadata.json'
+      - '.github/workflows/rayong-preview-dbh.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rayong-preview-dbh-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out measurement branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install analysis dependencies
+        run: python -m pip install --upgrade numpy scipy matplotlib scikit-image
+
+      - name: Run sampled-cloud DBH skill
+        run: |
+          python -m py_compile scripts/analyze_rayong_preview_sample.py
+          python scripts/analyze_rayong_preview_sample.py
+          git diff --check
+
+      - name: Commit generated measurements
+        shell: bash
+        run: |
+          paths=(
+            rayong-preview/data/tree-measurements.json
+            rayong-preview/data/tree-measurements.csv
+            rayong-preview/MEASUREMENTS.md
+          )
+          if git diff --quiet -- "${paths[@]}"; then
+            echo 'Rayong DBH outputs are already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${paths[@]}"
+          git commit -m 'Generate preliminary Rayong DBH measurements'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
