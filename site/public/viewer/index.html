@@ -52,8 +52,10 @@
     .legend-final { color: #72d8ff; }
     .legend-prop { color: #d6a4ff; }
     .legend-check { color: #ffbd66; }
-    .measure-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-    .measure-actions button { min-height: 32px; padding: 0 6px; font-size: 9px; }
+    .measure-actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .measure-actions button { min-height: 34px; padding: 0 7px; font-size: 10px; }
+    .measure-actions button[aria-pressed="true"] { border-color: rgba(114, 216, 255, .68); background: rgba(114, 216, 255, .14); color: #f2fbff; }
+    .measure-actions button[aria-pressed="false"] { color: #8fa399; background: rgba(255,255,255,.025); }
     #showAllTrees { border-color: rgba(114, 216, 255, .42); color: #d8f4ff; }
     .selected-card { margin-top: 9px; padding: 10px; border-radius: 10px; background: rgba(0,0,0,.18); }
     .selected-head { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
@@ -132,7 +134,7 @@
 
     <section class="measure-card">
       <h2>วงวัด LiDAR Field Aid บน Point Cloud</h2>
-      <p class="measure-copy">วงใช้ระนาบตั้งฉากกับแกนลำต้นและโมเดล circle/ellipse จาก marking รายต้น ไม่บังคับทุกต้นให้วัดที่ 1.30 ม.; กรณี prop-root ใช้จุดเกาะรากสูงสุด +0.30 ม.</p>
+      <p class="measure-copy">วงใช้ระนาบตั้งฉากกับแกนลำต้นและโมเดล circle/ellipse จาก marking รายต้น ไม่บังคับทุกต้นให้วัดที่ 1.30 ม.; กรณี prop-root ใช้จุดเกาะรากสูงสุด +0.30 ม. ป้ายตัวเลขรักษาขนาดบนหน้าจอ จึงอ่านได้แม้ซูมออก.</p>
 
       <div class="tree-summary">
         <div><b id="treeCount">–</b><span>Tree IDs</span></div>
@@ -164,8 +166,9 @@
       </div>
 
       <div class="measure-actions">
-        <button id="showAllTrees" disabled>ดูวงตามตัวกรอง</button>
-        <button id="toggleMeasurements" disabled>ซ่อนวงวัด</button>
+        <button id="showAllTrees" disabled>ดูตามตัวกรอง</button>
+        <button id="toggleMeasurements" type="button" aria-pressed="true" disabled>วงวัด: เปิด</button>
+        <button id="toggleMeasurementLabels" type="button" aria-pressed="true" disabled>ตัวเลข: เปิด</button>
         <button id="exportMeasurements" disabled>ส่งออก CSV</button>
       </div>
 
@@ -192,7 +195,7 @@
     <div class="source-note">ค่าทั้งหมดเป็น LiDAR estimates และยังไม่ได้ field verified. วงบนฉากแสดงเฉพาะสถานะ READY_FOR_FIELD_USE หรือ CHECK_ON_SITE; Tree ID ที่ถูกยืนยันว่าผิดคงไว้เฉพาะ audit record และไม่แสดงเป็นวงวัดจริง.</div>
   </section>
 
-  <div id="hint">ลากเพื่อหมุน · คลิกวงเพื่อเลือก · คลิกขวาเพื่อเลื่อน · หมุนล้อเพื่อซูม</div>
+  <div id="hint">ลากเพื่อหมุน · คลิกวงหรือป้ายตัวเลขเพื่อเลือก · คลิกขวาเพื่อเลื่อน · หมุนล้อเพื่อซูม</div>
   <script type="module" src="./viewer.js"></script>
 </body>
 </html>

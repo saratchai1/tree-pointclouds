@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from './vendor/OrbitControls.js';
 
 const DATA = '../data/';
-const DATA_VERSION = '?v=20260817-lidar-field-aid-v2';
+const DATA_VERSION = '?v=20260817-lidar-field-aid-v3-overlay-controls';
 const POSITION_CHUNKS = ['positions-00.glbin', 'positions-01.glbin', 'positions-02.glbin'];
 const MEASUREMENT_INDEX = `${DATA}lidar-measurements/viewer-index.json`;
 const MEASUREMENT_CSV = `${DATA}lidar-measurements/measurements.csv`;
@@ -18,6 +18,7 @@ const treeSearchEl = document.querySelector('#treeSearch');
 const measurementFilterEl = document.querySelector('#measurementFilter');
 const showAllTreesEl = document.querySelector('#showAllTrees');
 const toggleMeasurementsEl = document.querySelector('#toggleMeasurements');
+const toggleMeasurementLabelsEl = document.querySelector('#toggleMeasurementLabels');
 const exportMeasurementsEl = document.querySelector('#exportMeasurements');
 const selectedTreeEl = document.querySelector('#selectedTree');
 const selectedStatusEl = document.querySelector('#selectedStatus');
@@ -53,6 +54,9 @@ scene.add(grid);
 const measurementLayer = new THREE.Group();
 measurementLayer.name = 'lidar-field-aid-measurements';
 scene.add(measurementLayer);
+const measurementLabelLayer = new THREE.Group();
+measurementLabelLayer.name = 'lidar-field-aid-measurement-labels';
+scene.add(measurementLabelLayer);
 const selectionLayer = new THREE.Group();
 selectionLayer.name = 'selected-lidar-measurement';
 scene.add(selectionLayer);
@@ -60,6 +64,7 @@ scene.add(selectionLayer);
 const markerGeometry = new THREE.SphereGeometry(0.045, 12, 8);
 const markerMaterials = new Map();
 const measurementGroups = new Map();
+const measurementLabelGroups = new Map();
 const measurementHitTargets = [];
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
@@ -209,17 +214,96 @@ function effectiveRadiusM(record) {
   return record.fit?.radius_m ?? Math.max((record.field_aid_diameter_cm ?? 8) / 200, 0.04);
 }
 
-function makeRingGeometry(record, selected = false) {
+function makeRingGeometry(record, selected = false, halo = false) {
   const points = outlineSourcePoints(record).map((point) => toScene(point[0], point[1], point[2]));
   if (points.length < 4) return null;
   const curve = new THREE.CatmullRomCurve3(points, true, 'centripetal', 0.5);
-  const baseTubeRadius = Math.max(0.008, Math.min(0.028, effectiveRadiusM(record) * 0.04));
-  return new THREE.TubeGeometry(curve, 72, selected ? baseTubeRadius * 1.9 : baseTubeRadius, 6, true);
+  const baseTubeRadius = Math.max(0.018, Math.min(0.05, effectiveRadiusM(record) * 0.085));
+  const thicknessScale = halo ? 2.15 : selected ? 1.75 : 1;
+  return new THREE.TubeGeometry(curve, 72, baseTubeRadius * thicknessScale, 8, true);
 }
 
 function recordSceneCenter(record) {
   const source = fitCenterSource(record) ?? record.plane?.center_xyz;
   return source ? toScene(source[0], source[1], source[2]) : null;
+}
+
+function makeLocatorSprite(record) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 256;
+  canvas.height = 256;
+  const context = canvas.getContext('2d');
+  const color = `#${measurementColor(record).toString(16).padStart(6, '0')}`;
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.beginPath();
+  context.arc(128, 128, 88, 0, Math.PI * 2);
+  context.strokeStyle = 'rgba(0, 0, 0, .92)';
+  context.lineWidth = 54;
+  context.stroke();
+  context.beginPath();
+  context.arc(128, 128, 88, 0, Math.PI * 2);
+  context.strokeStyle = color;
+  context.lineWidth = 28;
+  context.stroke();
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.minFilter = THREE.LinearFilter;
+  texture.generateMipmaps = false;
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: texture,
+    depthTest: false,
+    depthWrite: false,
+    transparent: true,
+  }));
+  sprite.renderOrder = 16;
+  sprite.userData.pixelWidth = 30;
+  sprite.userData.pixelHeight = 30;
+  sprite.userData.overlayType = 'ring';
+  return sprite;
+}
+
+function makeCompactMeasurementLabel(record) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 960;
+  canvas.height = 240;
+  const context = canvas.getContext('2d');
+  const color = `#${measurementColor(record).toString(16).padStart(6, '0')}`;
+  const treeNumber = record.tree_id.replace('TREE_', '');
+  const valueText = record.field_aid_circumference_cm == null
+    ? 'ไม่มีค่า'
+    : `${fmt(record.field_aid_circumference_cm, 1)} ซม.`;
+  context.fillStyle = 'rgba(2, 8, 5, .96)';
+  context.fillRect(8, 8, canvas.width - 16, canvas.height - 16);
+  context.strokeStyle = 'rgba(0, 0, 0, .95)';
+  context.lineWidth = 34;
+  context.strokeRect(17, 17, canvas.width - 34, canvas.height - 34);
+  context.strokeStyle = color;
+  context.lineWidth = 15;
+  context.strokeRect(17, 17, canvas.width - 34, canvas.height - 34);
+  context.textBaseline = 'middle';
+  context.textAlign = 'center';
+  context.fillStyle = '#ffffff';
+  context.font = '900 92px system-ui, sans-serif';
+  context.fillText(treeNumber, 225, 120);
+  context.fillStyle = color;
+  context.font = '900 76px system-ui, sans-serif';
+  context.fillText(valueText, 650, 120);
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.minFilter = THREE.LinearFilter;
+  texture.generateMipmaps = false;
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: texture,
+    depthTest: false,
+    depthWrite: false,
+    transparent: true,
+  }));
+  sprite.center.set(0.5, 0);
+  sprite.renderOrder = 28;
+  sprite.userData.pixelWidth = 132;
+  sprite.userData.pixelHeight = 33;
+  sprite.userData.overlayType = 'label';
+  return sprite;
 }
 
 function addMeasurementOverlay(record) {
@@ -231,35 +315,75 @@ function addMeasurementOverlay(record) {
   const sceneCenter = recordSceneCenter(record);
   const marker = new THREE.Mesh(markerGeometry, markerMaterial(record));
   marker.position.copy(sceneCenter);
-  marker.scale.setScalar(record.renderable ? 0.82 : 1.25);
+  const markerBaseScale = record.renderable ? 1.1 : 1.5;
+  marker.scale.setScalar(markerBaseScale);
   marker.renderOrder = 14;
   marker.userData.treeId = record.tree_id;
   marker.userData.kind = 'marker';
+  marker.userData.baseScale = markerBaseScale;
+  marker.userData.overlayType = 'ring';
   group.add(marker);
   measurementHitTargets.push(marker);
 
-  if (record.renderable) {
-    const geometry = makeRingGeometry(record);
-    if (geometry) {
-      const ring = new THREE.Mesh(
-        geometry,
-        new THREE.MeshBasicMaterial({
-          color: measurementColor(record),
-          transparent: true,
-          opacity: record.field_aid_status === 'READY_FOR_FIELD_USE' ? 0.98 : 0.82,
-          depthTest: false,
-          depthWrite: false,
-        })
-      );
-      ring.renderOrder = 13;
-      ring.userData.treeId = record.tree_id;
-      ring.userData.kind = 'ring';
-      group.add(ring);
-      measurementHitTargets.push(ring);
-    }
-  }
+  const locator = makeLocatorSprite(record);
+  locator.position.copy(sceneCenter);
+  locator.userData.treeId = record.tree_id;
+  locator.userData.kind = 'locator';
+  group.add(locator);
+  measurementHitTargets.push(locator);
 
-  measurementGroups.set(record.tree_id, group);
+  if (record.renderable) {
+  const haloGeometry = makeRingGeometry(record, false, true);
+  const geometry = makeRingGeometry(record);
+  if (haloGeometry && geometry) {
+    const ringHalo = new THREE.Mesh(
+      haloGeometry,
+      new THREE.MeshBasicMaterial({
+        color: 0x010403,
+        transparent: true,
+        opacity: 0.88,
+        depthTest: false,
+        depthWrite: false,
+      })
+    );
+    ringHalo.renderOrder = 12;
+    ringHalo.userData.treeId = record.tree_id;
+    ringHalo.userData.kind = 'ring-halo';
+    ringHalo.userData.overlayType = 'ring';
+    group.add(ringHalo);
+
+    const ring = new THREE.Mesh(
+      geometry,
+      new THREE.MeshBasicMaterial({
+        color: measurementColor(record),
+        transparent: true,
+        opacity: 1,
+        depthTest: false,
+        depthWrite: false,
+      })
+    );
+    ring.renderOrder = 13;
+    ring.userData.treeId = record.tree_id;
+    ring.userData.kind = 'ring';
+    ring.userData.overlayType = 'ring';
+    group.add(ring);
+    measurementHitTargets.push(ring);
+  }
+}
+
+const compactLabel = makeCompactMeasurementLabel(record);
+compactLabel.position.copy(sceneCenter).add(new THREE.Vector3(
+  0,
+  Math.max(0.28, effectiveRadiusM(record) * 1.65),
+  0
+));
+compactLabel.userData.treeId = record.tree_id;
+compactLabel.userData.kind = 'label';
+measurementLabelGroups.set(record.tree_id, compactLabel);
+measurementLabelLayer.add(compactLabel);
+measurementHitTargets.push(compactLabel);
+
+measurementGroups.set(record.tree_id, group);
   measurementLayer.add(group);
 }
 
@@ -304,9 +428,51 @@ function makeMeasurementLabel(record) {
     depthWrite: false,
     transparent: true,
   }));
-  sprite.scale.set(3.7, 0.79, 1);
+  sprite.center.set(0.5, 0);
   sprite.renderOrder = 30;
+  sprite.userData.pixelWidth = 390;
+  sprite.userData.pixelHeight = 84;
+  sprite.userData.overlayType = 'label';
   return sprite;
+}
+
+function scaleSpriteToPixels(sprite) {
+  const pixelWidth = sprite.userData.pixelWidth;
+  const pixelHeight = sprite.userData.pixelHeight;
+  if (!pixelWidth || !pixelHeight) return;
+  const distance = Math.max(camera.position.distanceTo(sprite.position), camera.near);
+  const worldPerPixel = (
+    2
+    * distance
+    * Math.tan(THREE.MathUtils.degToRad(camera.fov * 0.5))
+    / Math.max(renderer.domElement.clientHeight, 1)
+  );
+  sprite.scale.set(pixelWidth * worldPerPixel, pixelHeight * worldPerPixel, 1);
+}
+
+function updateScreenSpaceOverlays() {
+  for (const layer of [measurementLayer, measurementLabelLayer, selectionLayer]) {
+    layer.traverse((object) => {
+      if (object.isSprite) scaleSpriteToPixels(object);
+    });
+  }
+}
+
+function setOverlayButtonState(button, visible, label) {
+  button.textContent = `${label}: ${visible ? 'เปิด' : 'ปิด'}`;
+  button.setAttribute('aria-pressed', String(visible));
+}
+
+function syncOverlayVisibility() {
+  const ringsVisible = measurementLayer.visible;
+  const labelsVisible = measurementLabelLayer.visible;
+  selectionLayer.visible = ringsVisible || labelsVisible;
+  selectionLayer.traverse((object) => {
+    if (object.userData.overlayType === 'ring') object.visible = ringsVisible;
+    if (object.userData.overlayType === 'label') object.visible = labelsVisible;
+  });
+  setOverlayButtonState(toggleMeasurementsEl, ringsVisible, 'วงวัด');
+  setOverlayButtonState(toggleMeasurementLabelsEl, labelsVisible, 'ตัวเลข');
 }
 
 function updateSelectedDetail(record) {
@@ -363,6 +529,7 @@ function focusTree(record, { updateUrl = true } = {}) {
       })
     );
     halo.renderOrder = 25;
+    halo.userData.overlayType = 'ring';
     selectionLayer.add(halo);
   } else {
     const halo = new THREE.Mesh(
@@ -371,6 +538,7 @@ function focusTree(record, { updateUrl = true } = {}) {
     );
     halo.position.copy(target);
     halo.renderOrder = 25;
+    halo.userData.overlayType = 'ring';
     selectionLayer.add(halo);
   }
 
@@ -392,11 +560,13 @@ function focusTree(record, { updateUrl = true } = {}) {
   );
   axisLine.computeLineDistances();
   axisLine.renderOrder = 24;
+  axisLine.userData.overlayType = 'ring';
   selectionLayer.add(axisLine);
 
   const label = makeMeasurementLabel(record);
   label.position.copy(target).add(new THREE.Vector3(0, Math.max(0.72, effectiveRadiusM(record) * 2.2), 0));
   selectionLayer.add(label);
+  syncOverlayVisibility();
 
   const distance = Math.max(3.2, effectiveRadiusM(record) * 9);
   const cameraDirection = new THREE.Vector3(1, 0.48, 1).normalize();
@@ -490,7 +660,10 @@ function applyMeasurementFilter({ frameAfter = false } = {}) {
   const visibleIds = new Set(visibleMeasurementRecords.map((record) => record.tree_id));
   for (const record of measurementRecords) {
     const group = measurementGroups.get(record.tree_id);
-    if (group) group.visible = visibleIds.has(record.tree_id);
+    const label = measurementLabelGroups.get(record.tree_id);
+    const visible = visibleIds.has(record.tree_id);
+    if (group) group.visible = visible;
+    if (label) label.visible = visible;
   }
   renderTreeList(visibleMeasurementRecords);
   if (selectedTreeId && !visibleIds.has(selectedTreeId)) clearSelection();
@@ -609,7 +782,9 @@ async function load() {
   applyMeasurementFilter();
   showAllTreesEl.disabled = false;
   toggleMeasurementsEl.disabled = false;
+  toggleMeasurementLabelsEl.disabled = false;
   exportMeasurementsEl.disabled = false;
+  syncOverlayVisibility();
 
   setStatus(`กำลังโหลด ${fmt(metadata.points, 0)} จุด และตำแหน่ง Tree ID ${fmt(measurementRecords.length, 0)} ต้น…`);
   const [positionBuffers, colorsBuffer] = await Promise.all([
@@ -681,8 +856,11 @@ showAllTreesEl.addEventListener('click', () => {
 });
 toggleMeasurementsEl.addEventListener('click', () => {
   measurementLayer.visible = !measurementLayer.visible;
-  selectionLayer.visible = measurementLayer.visible;
-  toggleMeasurementsEl.textContent = measurementLayer.visible ? 'ซ่อนวงวัด' : 'แสดงวงวัด';
+  syncOverlayVisibility();
+});
+toggleMeasurementLabelsEl.addEventListener('click', () => {
+  measurementLabelLayer.visible = !measurementLabelLayer.visible;
+  syncOverlayVisibility();
 });
 exportMeasurementsEl.addEventListener('click', exportMeasurements);
 measurementFilterEl.addEventListener('change', () => applyMeasurementFilter({ frameAfter: true }));
@@ -698,7 +876,9 @@ renderer.domElement.addEventListener('pointerup', (event) => {
   if (!pointerStart) return;
   const movement = Math.hypot(event.clientX - pointerStart.x, event.clientY - pointerStart.y);
   pointerStart = null;
-  if (movement <= 5 && measurementLayer.visible) selectMeasurementAtPointer(event);
+  if (movement <= 5 && (measurementLayer.visible || measurementLabelLayer.visible)) {
+    selectMeasurementAtPointer(event);
+  }
 });
 
 addEventListener('resize', () => {
@@ -709,6 +889,7 @@ addEventListener('resize', () => {
 
 renderer.setAnimationLoop(() => {
   controls.update();
+  updateScreenSpaceOverlays();
   renderer.render(scene, camera);
 });
 
