@@ -4,12 +4,31 @@ set -Eeuo pipefail
 # Process the archived Rayong site-001 LAS without modifying the raw source.
 # Outputs: checksums + PDAL metadata + full COPC + decimated preview COPC.
 
-ROOT="${POINTCLOUD_ROOT:-/Users/kong/Library/CloudStorage/GoogleDrive-saratchai@gmail.com/My Drive/PointCloud-Archive/Rayong/site-001/2026-08-17}"
-INPUT="${POINTCLOUD_INPUT:-$ROOT/raw/Rayong_009s_2026_08_14_02_28_36.las}"
+SOURCE_NAME="Rayong_009s_2026_08_14_02_28_36.las"
+DISCOVERED_ROOT=""
+
+if [[ -z "${POINTCLOUD_ROOT:-}" ]]; then
+  for drive_root in "$HOME"/Library/CloudStorage/GoogleDrive-*; do
+    candidate="$drive_root/My Drive/PointCloud-Archive/Rayong/site-001/2026-08-17"
+    if [[ -f "$candidate/raw/$SOURCE_NAME" ]]; then
+      DISCOVERED_ROOT="$candidate"
+      break
+    fi
+  done
+fi
+
+ROOT="${POINTCLOUD_ROOT:-$DISCOVERED_ROOT}"
+[[ -n "$ROOT" ]] || {
+  echo "ERROR: Rayong archive was not found under Google Drive for desktop."
+  echo "Set POINTCLOUD_ROOT to the folder that contains raw/, metadata/ and derived/."
+  exit 1
+}
+
+INPUT="${POINTCLOUD_INPUT:-$ROOT/raw/$SOURCE_NAME}"
 META="$ROOT/metadata"
 DERIVED="$ROOT/derived"
-FULL_COPC="$DERIVED/Rayong_009s_2026_08_14_02_28_36.copc.laz"
-PREVIEW_COPC="$DERIVED/Rayong_009s_2026_08_14_02_28_36.preview.copc.laz"
+FULL_COPC="$DERIVED/${SOURCE_NAME%.las}.copc.laz"
+PREVIEW_COPC="$DERIVED/${SOURCE_NAME%.las}.preview.copc.laz"
 DRIVE_FILE_ID="1EYPxhCs_4fTpkaFj1a00nTOlEA1dfLYU"
 TARGET_PREVIEW_POINTS="${TARGET_PREVIEW_POINTS:-2000000}"
 FORCE="${FORCE:-0}"
@@ -30,7 +49,9 @@ cleanup() {
 }
 trap cleanup EXIT
 
-command -v caffeinate >/dev/null 2>&1 && caffeinate -dimsu -w $$ >/dev/null 2>&1 &
+if command -v caffeinate >/dev/null 2>&1; then
+  caffeinate -dimsu -w $$ >/dev/null 2>&1 &
+fi
 
 echo "=== Rayong site-001 LAS processing ==="
 echo "Started: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
