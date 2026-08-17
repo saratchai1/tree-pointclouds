@@ -1,0 +1,67 @@
+{
+  "name": "Samut Songkram Mangrove Point Cloud",
+  "description": "Sampled colored LAS point cloud from the mangrove survey.",
+  "source": "Rayong_009s_2026_08_14_02_28_36.las",
+  "sourcePointCount": 106816323,
+  "samplingStride": 107,
+  "points": 998284,
+  "projection": "LAS source coordinates, recentered for browser viewing",
+  "offset": [
+    0,
+    0,
+    0
+  ],
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "boundingBox": {
+    "min": [
+      -70.18254852294922,
+      -73.3943099975586,
+      -7.621147632598877
+    ],
+    "max": [
+      70.18254852294922,
+      73.3943099975586,
+      7.621147632598877
+    ]
+  },
+  "attributes": [
+    {
+      "name": "rgba",
+      "type": "uint8",
+      "numElements": 4,
+      "elementSize": 1,
+      "size": 4,
+      "bufferView": {
+        "uri": "colors.glbin",
+        "byteLength": 3993136,
+        "byteOffset": 0
+      }
+    },
+    {
+      "name": "position",
+      "type": "float",
+      "numElements": 3,
+      "elementSize": 4,
+      "size": 12,
+      "bufferView": {
+        "uri": "positions-00.glbin",
+        "byteLength": 11979408,
+        "byteOffset": 0
+      },
+      "min": [
+        -70.18254852294922,
+        -73.3943099975586,
+        -7.621147632598877
+      ],
+      "max": [
+        70.18254852294922,
+        73.3943099975586,
+        7.621147632598877
+      ]
+    }
+  ]
+}
