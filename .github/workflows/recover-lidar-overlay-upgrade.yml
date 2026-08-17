@@ -1,0 +1,88 @@
+name: Recover LiDAR overlay upgrade
+
+on:
+  push:
+    paths:
+      - .github/workflows/recover-lidar-overlay-upgrade.yml
+
+permissions:
+  contents: write
+
+jobs:
+  recover-and-patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract corrected patch and apply it
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          workflow_path = Path('.github/workflows/improve-lidar-overlays.yml')
+          workflow = workflow_path.read_text(encoding='utf-8')
+          start_marker = "          python - <<'PY'\n"
+          end_marker = "\n          PY"
+          start = workflow.index(start_marker) + len(start_marker)
+          end = workflow.index(end_marker, start)
+          lines = workflow[start:end].splitlines()
+          script = '\n'.join(line[10:] if line.startswith('          ') else line for line in lines)
+
+          marker = 'new_ring_block = """  if (record.renderable) {'
+          if script.count(marker) != 1:
+              raise RuntimeError(f'could not locate new_ring_block marker exactly once: {script.count(marker)}')
+
+          corrected_assignment = r'''old_ring_block = (
+              "  if (record.renderable) {\n"
+              "    const geometry = makeRingGeometry(record);\n"
+              "    if (geometry) {\n"
+              "      const ring = new THREE.Mesh(\n"
+              "        geometry,\n"
+              "        new THREE.MeshBasicMaterial({\n"
+              "          color: measurementColor(record),\n"
+              "          transparent: true,\n"
+              "          opacity: record.field_aid_status === 'READY_FOR_FIELD_USE' ? 0.98 : 0.82,\n"
+              "          depthTest: false,\n"
+              "          depthWrite: false,\n"
+              "        })\n"
+              "      );\n"
+              "      ring.renderOrder = 13;\n"
+              "      ring.userData.treeId = record.tree_id;\n"
+              "      ring.userData.kind = 'ring';\n"
+              "      group.add(ring);\n"
+              "      measurementHitTargets.push(ring);\n"
+              "    }\n"
+              "  }\n"
+              "\n"
+              "  measurementGroups.set(record.tree_id, group);"
+          )'''
+
+          script = script.replace(marker, corrected_assignment + '\n\n' + marker, 1)
+          namespace = {'__name__': '__main__'}
+          exec(compile(script, '<corrected-lidar-overlay-patch>', 'exec'), namespace)
+          PY
+
+      - name: Validate JavaScript and markup
+        shell: bash
+        run: |
+          node --check site/public/viewer/viewer.js
+          grep -q 'id="toggleMeasurementLabels"' site/public/viewer/index.html
+          grep -q 'makeCompactMeasurementLabel' site/public/viewer/viewer.js
+          grep -q 'updateScreenSpaceOverlays' site/public/viewer/viewer.js
+          git diff --check
+
+      - name: Commit upgrade and remove temporary workflows
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/improve-lidar-overlays.yml
+          git rm .github/workflows/recover-lidar-overlay-upgrade.yml
+          git add site/public/viewer/index.html site/public/viewer/viewer.js
+          git commit -m "Improve LiDAR ring visibility and overlay controls"
+          git push origin HEAD:main
