@@ -1,0 +1,22 @@
+algorithm_version: stem-inventory-v2-phase3-tree-inventory
+phase1_5_algorithm_version: stem-inventory-v2-phase1_5
+
+# Phase 3 reuses the Phase 1.5 minimum vertical support. These are discovery
+# evidence gates, not circumference-acceptance thresholds.
+discovery_support:
+  minimum_height_levels: 4
+  minimum_vertical_span_m: 0.75
+
+# Association is deliberately conservative. An automatic merge requires
+# vertical geometry plus independent overlap/provenance evidence; XY alone is
+# never sufficient.
+stem_association:
+  minimum_height_overlap_ratio: 0.60
+  maximum_mean_centreline_distance_m: 0.08
+  maximum_radius_relative_difference: 0.20
+  minimum_accepted_point_containment: 0.50
+
+measurement_guardrails:
+  radius_bound_epsilon_m: 0.000001
+  maximum_circle_ellipse_relative_difference: 0.25
+

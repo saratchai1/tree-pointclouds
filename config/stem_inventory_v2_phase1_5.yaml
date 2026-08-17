@@ -1,0 +1,65 @@
+algorithm_version: stem-inventory-v2-phase1_5
+phase1_algorithm_version: stem-inventory-v2-phase1
+
+observation_aliasing:
+  same_height_tolerance_m: 0.001
+  maximum_xy_distance_m: 0.08
+  maximum_radius_relative_difference: 0.35
+
+track_association:
+  maximum_height_gap_m: 0.75
+  base_center_gate_m: 0.20
+  radius_center_gate_multiplier: 1.00
+  maximum_center_gate_m: 0.45
+  maximum_lean_m_per_m: 0.55
+  maximum_radius_relative_change: 0.75
+  maximum_edge_cost: 4.00
+  unassigned_penalty: 4.25
+  weights:
+    height_gap: 0.45
+    center_displacement: 1.70
+    radius_change: 0.85
+    fit_residual: 0.45
+    angular_coverage: 0.35
+    component_compatibility: 0.20
+
+track_refinement:
+  maximum_iterations: 6
+  robust_iterations: 5
+  huber_delta_m: 0.05
+  center_outlier_base_m: 0.12
+  center_outlier_radius_fraction: 0.75
+  radius_outlier_base_m: 0.06
+  radius_outlier_radius_fraction: 0.50
+  minimum_cost_improvement: 0.05
+
+geometry_status:
+  stem_like_minimum_height_levels: 4
+  stem_like_minimum_vertical_span_m: 0.75
+  stem_like_minimum_median_coverage_deg: 80.0
+  stem_like_center_residual_base_m: 0.05
+  stem_like_center_residual_radius_fraction: 0.20
+  stem_like_radius_residual_base_m: 0.025
+  stem_like_radius_residual_radius_fraction: 0.20
+  weak_minimum_height_levels: 2
+  ambiguous_multi_component_fraction: 0.40
+  auto_high_support_minimum_height_levels: 6
+  auto_high_support_minimum_vertical_span_m: 1.25
+
+alias_consolidation:
+  pair_search_m: 1.00
+  minimum_height_overlap_ratio: 0.60
+  maximum_mean_centreline_distance_m: 0.08
+  maximum_radius_relative_difference: 0.20
+  minimum_accepted_point_containment: 0.50
+  probable_maximum_mean_centreline_distance_m: 0.15
+  probable_maximum_radius_relative_difference: 0.35
+  probable_minimum_height_overlap_ratio: 0.40
+  probable_minimum_accepted_point_containment: 0.20
+
+review_queue:
+  large_radius_m: 0.30
+  needs_review_sample_count: 80
+  insufficient_coverage_sample_count: 30
+  maximum_crop_points_per_class: 500
+  random_seed: 20260808

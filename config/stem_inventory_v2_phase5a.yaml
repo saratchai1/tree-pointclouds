@@ -1,0 +1,56 @@
+algorithm_version: stem-inventory-v2-phase5a-protocol-anchored-pom-shadow
+config_version: phase5a-protocol-v1
+
+mode:
+  shadow: true
+  preserve_tree_ids: true
+  preserve_previous_measurements: true
+  phase4c_global_enforcement_enabled: false
+
+measurement_protocol:
+  id: MANGROVE_PROP_ROOT_PLUS_030
+  reference_landmark: HIGHEST_PROP_ROOT_ATTACHMENT
+  offset_m: 0.30
+  offset_mode: VERTICAL_ABOVE_ATTACHMENT
+  slice_orientation: PERPENDICULAR_TO_LOCAL_STEM_AXIS
+
+main_stem_axis:
+  prefer_upper_fraction: 0.55
+  minimum_upper_observations: 3
+  minimum_confirmed_observations: 4
+  minimum_confirmed_vertical_span_m: 0.75
+  maximum_confirmed_uncertainty_m: 0.08
+
+attachment:
+  minimum_relationship_evidence_count: 2
+  probable_evidence_score: 0.55
+  competing_height_tolerance_m: 0.08
+  maximum_localization_interval_m: 0.30
+  phase4c_height_half_interval_m: 0.125
+  profile_transition_half_interval_m: 0.05
+
+cross_section:
+  spatial_query_radius_m: 1.10
+  radial_extraction_radius_m: 0.55
+  slab_thickness_m: 0.08
+  slab_thickness_variants_m: [0.06, 0.08, 0.10]
+  neighbouring_plane_offsets_m: [-0.03, 0.0, 0.03]
+  minimum_point_support: 20
+  minimum_angular_coverage_deg: 140.0
+  maximum_axis_center_offset_m: 0.10
+  maximum_circle_ellipse_relative_difference: 0.25
+  maximum_variant_relative_difference: 0.20
+  maximum_axis_uncertainty_m: 0.15
+  radius_bound_epsilon_m: 0.000001
+  sampled_browser_cloud_can_be_final: false
+  historical_pom_match_tolerance_m: 0.03
+
+evaluation:
+  attachment_height_tolerances_m: [0.02, 0.05, 0.10]
+
+viewer:
+  crop_radius_m: 1.35
+  minimum_height_agl_m: 0.20
+  maximum_height_agl_m: 4.20
+  maximum_crop_points: 9000
+  maximum_slice_points: 2500

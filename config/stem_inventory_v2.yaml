@@ -1,0 +1,124 @@
+algorithm_version: stem-inventory-v2-phase1
+random_seed: 20260807
+
+analysis:
+  bounds: [5.0, 45.0, -25.0, 5.0]
+  global_ground_hint_m: -6.68
+  local_ground_percentile: 2.5
+  local_ground_clip_below_hint_m: 0.80
+  local_ground_clip_above_hint_m: 0.80
+  sampled_neighborhood_radius_m: 1.05
+
+height_profile:
+  min_height_m: 0.50
+  max_height_m: 3.50
+  step_m: 0.05
+  slab_thickness_m: 0.08
+
+seed_generation:
+  min_height_m: 0.75
+  max_height_m: 3.25
+  step_m: 0.25
+  slab_thickness_m: 0.12
+  grid_resolution_m: 0.08
+  gaussian_sigma_cells: 1.2
+  peak_percentile: 97.5
+  minimum_peak_distance_cells: 4
+  minimum_points_in_slab: 20
+  local_ground_grid_resolution_m: 0.50
+  local_ground_percentile: 2.5
+  local_ground_minimum_cell_points: 20
+
+candidate_grouping:
+  alias_distance_m: 0.30
+  duplicate_distance_m: 0.22
+
+candidate_radius:
+  minimum_m: 0.02
+  maximum_m: 0.75
+
+slice_fit:
+  component_grid_cell_m: 0.06
+  minimum_component_points: 6
+  maximum_components_to_fit: 8
+  maximum_fits_to_retain: 3
+  sampled_ransac_trials: 96
+  full_resolution_ransac_trials: 240
+  maximum_scored_trials: 36
+  maximum_fit_points: 1800
+  minimum_trial_inliers: 6
+  minimum_final_inliers: 8
+  minimum_fit_coverage_deg: 30.0
+  maximum_center_distance_m: 0.95
+  inlier_tolerance_minimum_m: 0.012
+  inlier_tolerance_radius_fraction: 0.10
+  inlier_tolerance_maximum_m: 0.050
+  ellipse_trim_mad_multiplier: 2.8
+  ellipse_minimum_residual_threshold_m: 0.012
+
+tracking:
+  maximum_fit_to_line_distance_m: 0.20
+  maximum_centreline_hypotheses: 6
+  huber_delta_m: 0.05
+  robust_iterations: 5
+
+stable_window:
+  width_m: 0.30
+  minimum_valid_slices: 4
+  maximum_consecutive_missing_slices: 2
+  centre_residual_base_m: 0.05
+  centre_residual_radius_fraction: 0.20
+  radius_residual_base_m: 0.025
+  radius_residual_radius_fraction: 0.20
+  minimum_median_angular_coverage_deg: 80.0
+  fit_residual_base_m: 0.025
+  fit_residual_radius_fraction: 0.15
+
+automatic_measurement_window:
+  minimum_valid_slices: 5
+  maximum_consecutive_missing_slices: 2
+  centre_residual_base_m: 0.035
+  centre_residual_radius_fraction: 0.15
+  radius_residual_base_m: 0.020
+  radius_residual_radius_fraction: 0.15
+  minimum_median_angular_coverage_deg: 140.0
+  fit_residual_base_m: 0.020
+  fit_residual_radius_fraction: 0.10
+
+adaptive_measurement:
+  standard_height_m: 1.30
+  minimum_height_m: 1.20
+  maximum_height_m: 3.50
+  preferred_clearance_above_irregular_zone_m: 0.30
+  maximum_supported_region_offset_m: 0.10
+
+candidate_classification:
+  minimum_compatible_slices_for_insufficient_coverage: 3
+  possible_large_lower_radius_ratio: 1.50
+
+full_resolution:
+  extraction_radius_minimum_m: 0.90
+  extraction_radius_radius_multiplier: 2.2
+  extraction_radius_padding_m: 0.20
+  extraction_radius_maximum_m: 1.60
+  vertical_half_range_m: 0.40
+  chunk_size_points: 2000000
+  grid_cell_m: 0.25
+  neighbouring_half_width_m: 0.15
+  neighbouring_step_m: 0.05
+  slab_thickness_m: 0.08
+  observed_contour_minimum_coverage_deg: 300.0
+  ellipse_selection_residual_ratio: 0.85
+  minimum_neighbouring_valid_slices: 3
+
+sensitivity:
+  variants:
+    strict:
+      threshold_scale: 0.80
+      coverage_scale: 1.10
+    baseline:
+      threshold_scale: 1.00
+      coverage_scale: 1.00
+    relaxed:
+      threshold_scale: 1.20
+      coverage_scale: 0.90

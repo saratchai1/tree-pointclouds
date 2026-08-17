@@ -1,0 +1,30 @@
+algorithm_version: stem-inventory-v2-phase2-manual-anchor-pilot
+
+# These parameters associate a reviewer click with one sampled component and
+# propagate that component vertically. They are not measurement-acceptance
+# thresholds; Phase 1 stable-window and full-resolution criteria remain locked.
+anchor_association:
+  maximum_height_offset_m: 0.20
+  maximum_click_distance_m: 0.75
+  click_distance_weight: 1.0
+  height_offset_weight: 0.40
+  incomplete_coverage_penalty: 0.08
+  circle_residual_weight: 2.0
+
+vertical_propagation:
+  maximum_consecutive_missing_slices: 2
+  base_center_gate_m: 0.08
+  maximum_centerline_slope_m_per_m: 0.50
+  radius_log_change_weight: 0.15
+  circle_residual_weight: 2.0
+  angular_coverage_reward: 0.0001
+
+# Identity association only. The original full-resolution quality checks below
+# this selection step are still applied without modification.
+full_resolution_component_association:
+  maximum_predicted_center_distance_m: 0.25
+  radius_absolute_difference_weight: 0.20
+  circle_residual_weight: 2.0
+
+output:
+  candidate_id_start: 9001
