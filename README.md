@@ -1,7 +1,7 @@
 # Tree Point Clouds
 
-Interactive Three.js viewer and measurements for a PIX4Dcatch garden point
-cloud.
+Interactive Three.js viewers and LiDAR-derived tree measurements for the
+Samut Songkhram mangrove point cloud and the earlier PIX4Dcatch garden sample.
 
 ## Local preview
 
@@ -9,27 +9,41 @@ cloud.
 python3 -m http.server 8094
 ```
 
-Open <http://127.0.0.1:8094/moke/viewer/>.
+Open the Samut Songkhram viewer at
+`http://127.0.0.1:8094/site/public/viewer/`.
 
-The viewer includes a highlighted breast-height trunk section and a 3D crown
-measurement overlay for the largest tree. See `moke/tree-measurement.json` for
-the numerical results and limitations.
+The earlier PIX4Dcatch sample remains available at
+`http://127.0.0.1:8094/moke/viewer/`.
 
-## Public LiDAR measurement extension
+## Samut Songkhram LiDAR viewers
 
-The derived full-resolution LiDAR measurement viewer is available at
-`/lidar-measurements/` when this repository is served as a static site. It
-includes circumference/diameter field-aid values, the recovered earlier
-Full-LAS measurement lane, the four highest-prop-root `+0.30 m` cases, CSV and
-JSON exports, and per-tree marking evidence for all 118 Tree IDs.
+The main Three.js point-cloud viewer is served from `/viewer/`. It overlays
+compact 3D measurement rings generated from the full-resolution per-tree
+marking geometry. The viewer supports all 118 stable Tree IDs, status filters,
+search, CSV export, click-to-focus, standard 1.30 m measurements, and the
+highest-prop-root attachment `+0.30 m` protocol where applicable.
 
-The public extension intentionally does not include the source LAS, private
-debug caches, or the full internal analysis workspace. The owner explicitly
-authorized this derived public release; the raw georeferenced source remains
-local.
+The detailed read-only QA viewer remains available at `/lidar-measurements/`.
+It exposes the point-cloud slice, measurement plane, accepted/rejected points,
+fit outline, QA reasons, and audit status for each Tree ID.
+
+The compact 3D index is generated rather than edited manually:
+
+```sh
+node scripts/build_lidar_viewer_index.mjs
+```
+
+The GitHub Actions workflow `Build LiDAR viewer index` rebuilds and commits
+`site/public/data/lidar-measurements/viewer-index.json` when the measurement
+records, marking files, or generator change.
+
+All values shown by these viewers are LiDAR estimates and are not field-verified
+measurements. Records confirmed as wrong or lacking a plausible fit remain
+visible for audit but are not drawn as measurement rings.
 
 ## Privacy
 
-This repository contains georeferenced point-cloud data from a private garden.
-Keep repository and deployment access private unless the owner explicitly
-chooses to publish it.
+The public bundle contains derived measurement artifacts only. It intentionally
+does not include the source LAS, private debug caches, or the full internal
+analysis workspace. Keep raw georeferenced source data local unless the owner
+explicitly authorizes another release.
