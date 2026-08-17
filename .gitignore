@@ -11,5 +11,12 @@
 /samutsongkram/*.las
 /scripts/__pycache__/
 
+# Never commit raw or cloud-optimized source point clouds.
+*.las
+*.laz
+*.copc.laz
+*.e57
+*.pcd
+
 # Local development output
 *.log
