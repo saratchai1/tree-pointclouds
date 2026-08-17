@@ -41,6 +41,24 @@ All values shown by these viewers are LiDAR estimates and are not field-verified
 measurements. Records confirmed as wrong or lacking a plausible fit remain
 visible for audit but are not drawn as measurement rings.
 
+## Rayong site-001 archive processing
+
+The raw LAS remains in the restricted Google Drive archive. Run the following
+command on the Mac that has Google Drive for desktop mounted:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/saratchai1/tree-pointclouds/main/scripts/process_rayong_site001.sh | bash
+```
+
+The pipeline keeps the raw LAS unchanged and writes the following beside it:
+
+- `metadata/`: SHA-256, PDAL summary, metadata, schema and processing logs
+- `derived/*.copc.laz`: full-resolution COPC and a roughly two-million-point preview COPC
+
+The script installs PDAL through Homebrew when PDAL is not already available.
+Set `FORCE=1` to rebuild existing COPC files or `TARGET_PREVIEW_POINTS` to change
+the preview point budget.
+
 ## Privacy
 
 The public bundle contains derived measurement artifacts only. It intentionally
