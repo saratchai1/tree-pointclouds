@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LiDAR Tree Measurement Markings</title>
+  <link rel="stylesheet" href="./styles.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">FULL-RESOLUTION LAS · LOCAL REVIEW</p>
+      <h1>ผลวัดรอบวงและ DBH จาก LiDAR</h1>
+      <p class="subtitle">ค่าช่วยภาคสนามจาก Full‑LAS พร้อมระนาบวัด วงฟิต และระดับความเชื่อมั่น</p>
+    </div>
+    <div class="header-actions">
+      <a class="button secondary" href="/pilot-measurement/">กลับ Pilot</a>
+      <a class="button" href="/data/lidar-measurements/measurements.csv" download>ดาวน์โหลด CSV</a>
+      <a class="button" href="/data/lidar-measurements/measurements.json" download>ดาวน์โหลด JSON</a>
+    </div>
+  </header>
+
+  <section class="summary" aria-label="สรุปผล">
+    <article><span>พร้อมช่วยภาคสนาม</span><strong id="fieldReadyCount">—</strong><small>ไม่ใช้ protocol เป็นด่านกั้น</small></article>
+    <article><span>Full‑LAS รุ่นแรกที่ยังใช้</span><strong id="legacyCount">—</strong><small id="legacyNote">จากเดิม 29 ต้น</small></article>
+    <article><span>เหนือรากสุดท้าย +0.30 ม.</span><strong id="propRootCount">—</strong><small id="propRootNote">แสดงครบทั้งกลุ่ม</small></article>
+    <article><span>ควรเช็กหน้างาน</span><strong id="checkCount">—</strong><small id="noEstimateNote">มีค่าแต่ QA ยังไม่นิ่ง</small></article>
+    <article><span>ตัดออกตามคำยืนยัน</span><strong id="excludedCount">—</strong><small>ไม่รวมในค่าที่ใช้งาน</small></article>
+    <article><span>ไม่มีวง fit</span><strong id="noEstimateCount">—</strong><small>point cloud ไม่พอจริง</small></article>
+  </section>
+
+  <main class="workspace">
+    <aside class="tree-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">TREE QUEUE</p>
+          <h2>เลือกต้นไม้</h2>
+        </div>
+        <span id="listCount" class="count">—</span>
+      </div>
+      <label class="search">
+        <span>ค้นหา Tree ID</span>
+        <input id="searchInput" type="search" placeholder="เช่น TREE_0105" autocomplete="off">
+      </label>
+      <label class="filter">
+        <span>แสดงผล</span>
+        <select id="filterSelect">
+          <option value="FIELD_READY">พร้อมช่วยภาคสนาม</option>
+          <option value="PROP_ROOT">เหนือรากสุดท้าย +0.30 ม. (4)</option>
+          <option value="LEGACY">Full‑LAS รุ่นแรกที่ยังใช้</option>
+          <option value="LEGACY_STANDARD">รุ่นแรก · Standard 1.30 ม.</option>
+          <option value="LEGACY_ADAPTIVE">รุ่นแรก · Adaptive +0.30 ม.</option>
+          <option value="FINAL">ยืนยัน protocol ล่าสุด</option>
+          <option value="CHECK">มีค่า · ควรเช็กหน้างาน</option>
+          <option value="HAS_ESTIMATE">มีค่าประมาณทั้งหมด</option>
+          <option value="NO_ESTIMATE">ไม่มีวง fit</option>
+          <option value="EXCLUDED">ตัดออกตามคำยืนยัน</option>
+          <option value="ALL">ทั้งหมด รวมรายการตัดออก</option>
+        </select>
+      </label>
+      <div id="treeList" class="tree-list" role="listbox" aria-label="Tree IDs"></div>
+    </aside>
+
+    <section class="review-panel">
+      <div class="tree-header">
+        <div>
+          <p class="eyebrow" id="statusKicker">MEASUREMENT MARKING</p>
+          <h2 id="treeTitle">กำลังโหลด…</h2>
+          <p id="treeSubtitle">—</p>
+        </div>
+        <span id="statusBadge" class="status-badge">—</span>
+      </div>
+
+      <div class="metrics">
+        <article>
+          <span>เส้นรอบวงช่วยภาคสนาม</span>
+          <strong id="circumferenceValue">—</strong>
+          <small id="circumferenceNote">แหล่งค่าที่เลือก</small>
+        </article>
+        <article>
+          <span id="diameterLabel">DBH</span>
+          <strong id="diameterValue">—</strong>
+          <small id="diameterNote">เซนติเมตร</small>
+        </article>
+        <article>
+          <span>ระดับ marking</span>
+          <strong id="heightValue">—</strong>
+          <small>เมตรเหนือพื้น</small>
+        </article>
+        <article>
+          <span>ความครอบคลุม</span>
+          <strong id="coverageValue">—</strong>
+          <small>องศารอบลำต้น</small>
+        </article>
+      </div>
+
+      <div class="visual-grid">
+        <article class="canvas-card">
+          <div class="canvas-heading">
+            <div><h3>Marking บน point cloud</h3><p>ลากเพื่อหมุน · เลื่อนล้อเพื่อซูม</p></div>
+            <button id="resetView" class="icon-button" type="button">รีเซ็ตมุม</button>
+          </div>
+          <canvas id="cloudCanvas" aria-label="มุมมอง point cloud และระนาบวัด"></canvas>
+          <div class="legend">
+            <span><i class="dot cloud"></i>LiDAR</span>
+            <span><i class="dot plane"></i>ระนาบวัด</span>
+            <span><i class="dot accepted"></i>จุดรับเข้า fit</span>
+            <span><i class="line fit"></i>วงที่วัด</span>
+          </div>
+        </article>
+        <article class="canvas-card">
+          <div class="canvas-heading">
+            <div><h3>หน้าตัดตั้งฉากกับแกนลำต้น</h3><p>เครื่องหมาย + คือแกนกลางที่คาดหมาย</p></div>
+          </div>
+          <canvas id="crossCanvas" aria-label="หน้าตัดและวงฟิต"></canvas>
+          <div class="legend">
+            <span><i class="dot accepted"></i>Inlier</span>
+            <span><i class="dot rejected"></i>จุดอื่นใน slice</span>
+            <span><i class="line fit"></i>Circle / ellipse fit</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="evidence-grid">
+        <article>
+          <h3>รายละเอียดการวัด</h3>
+          <dl id="measurementDetails"></dl>
+        </article>
+        <article>
+          <h3>QA และข้อจำกัด</h3>
+          <div id="qaReasons" class="reason-list"></div>
+          <p class="warning">ใช้เป็นค่าตั้งต้นและตำแหน่ง marking สำหรับสำรวจภาคสนาม; ค่า “ควรเช็กหน้างาน” ให้ตรวจลำต้น/Tree ID ก่อนจดเป็นผลจริง</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="loading" class="loading">กำลังโหลดหลักฐานการวัด…</div>
+  <script src="./app.js?v=3"></script>
+</body>
+</html>
