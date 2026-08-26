@@ -1,0 +1,8 @@
+{
+  "name": "tree-pointclouds-production-static",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && cp -R ../site/public/. dist/ && cp index.html viewer.js dist/ && cp -R vendor/. dist/vendor/ && cp -R data/. dist/data/ && cp -R site-002 dist/site-002"
+  }
+}
