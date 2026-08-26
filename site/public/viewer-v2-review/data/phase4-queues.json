@@ -1,0 +1,44 @@
+{
+  "queues": [
+    {
+      "queue_id": "phase4_fragments",
+      "label": "Phase 4 fragments · 169 review items",
+      "url": "data/phase4/review_queue.json"
+    },
+    {
+      "queue_id": "phase4_ground_truth_roi",
+      "label": "Phase 4 ground truth · ROI A",
+      "url": "data/phase4_roi/review_queue.json"
+    },
+    {
+      "queue_id": "phase4b_high_priority",
+      "label": "Phase 4B first · 21 priority items",
+      "url": "data/phase4b_priority/review_queue.json"
+    },
+    {
+      "queue_id": "phase4b_roi_census",
+      "label": "Phase 4B · ROI A LiDAR-visible census",
+      "url": "data/phase4b_roi/review_queue.json"
+    },
+    {
+      "queue_id": "phase4c_structure_shadow",
+      "label": "Phase 4C shadow · 18 structure proposals",
+      "url": "data/phase4c/review_queue.json"
+    },
+    {
+      "queue_id": "phase4c_roi_b_census",
+      "label": "Phase 4C · blind ROI-B census",
+      "url": "data/phase4c_roi_b/review_queue.json"
+    },
+    {
+      "queue_id": "phase4d_roi_b_full_las",
+      "label": "Phase 4D · ROI-B full-LAS census",
+      "url": "data/phase4d_roi_b/review_queue.json"
+    },
+    {
+      "queue_id": "phase5a_prop_root_pom_shadow",
+      "label": "Phase 5A shadow · 13 protocol-POM reviews",
+      "url": "data/phase5a/review_queue.json"
+    }
+  ]
+}

@@ -1,0 +1,2432 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+  "interpretation": "PHASE 4C SHADOW STRUCTURE EVIDENCE; NOT AN ENFORCED TREE REMOVAL",
+  "tree_id": "TREE_0098",
+  "ground_z_m": -6.672875905036927,
+  "sampled": {
+    "components_by_height": [
+      {
+        "height_m": 0.75,
+        "fits": [
+          {
+            "track_id": "T15-0951",
+            "center": [
+              32.50433806151894,
+              -14.0992852275966
+            ],
+            "radius_m": 0.03701031350579191,
+            "circle_residual_m": 0.005248716739018504,
+            "inlier_count": 28,
+            "angular_coverage_deg": 140.0,
+            "selected": true
+          }
+        ],
+        "selected_fit": {
+          "track_id": "T15-0951",
+          "center": [
+            32.50433806151894,
+            -14.0992852275966
+          ],
+          "radius_m": 0.03701031350579191,
+          "circle_residual_m": 0.005248716739018504,
+          "inlier_count": 28,
+          "angular_coverage_deg": 140.0,
+          "selected": true
+        },
+        "point_count": 28
+      },
+      {
+        "height_m": 1.0,
+        "fits": [
+          {
+            "track_id": "T15-0951",
+            "center": [
+              32.55949139181678,
+              -14.159109357916057
+            ],
+            "radius_m": 0.03692338879787013,
+            "circle_residual_m": 0.004844630956083955,
+            "inlier_count": 46,
+            "angular_coverage_deg": 170.0,
+            "selected": true
+          }
+        ],
+        "selected_fit": {
+          "track_id": "T15-0951",
+          "center": [
+            32.55949139181678,
+            -14.159109357916057
+          ],
+          "radius_m": 0.03692338879787013,
+          "circle_residual_m": 0.004844630956083955,
+          "inlier_count": 46,
+          "angular_coverage_deg": 170.0,
+          "selected": true
+        },
+        "point_count": 46
+      },
+      {
+        "height_m": 1.25,
+        "fits": [
+          {
+            "track_id": "T15-0951",
+            "center": [
+              32.56344342950424,
+              -14.223342342901224
+            ],
+            "radius_m": 0.0376269092651968,
+            "circle_residual_m": 0.005542893073033215,
+            "inlier_count": 92,
+            "angular_coverage_deg": 230.0,
+            "selected": true
+          }
+        ],
+        "selected_fit": {
+          "track_id": "T15-0951",
+          "center": [
+            32.56344342950424,
+            -14.223342342901224
+          ],
+          "radius_m": 0.0376269092651968,
+          "circle_residual_m": 0.005542893073033215,
+          "inlier_count": 92,
+          "angular_coverage_deg": 230.0,
+          "selected": true
+        },
+        "point_count": 92
+      },
+      {
+        "height_m": 1.3,
+        "fits": [
+          {
+            "track_id": "T15-0951",
+            "center": [
+              32.56136063148318,
+              -14.234418078252734
+            ],
+            "radius_m": 0.03636854467596231,
+            "circle_residual_m": 0.005159171351596465,
+            "inlier_count": 81,
+            "angular_coverage_deg": 240.0,
+            "selected": true
+          }
+        ],
+        "selected_fit": {
+          "track_id": "T15-0951",
+          "center": [
+            32.56136063148318,
+            -14.234418078252734
+          ],
+          "radius_m": 0.03636854467596231,
+          "circle_residual_m": 0.005159171351596465,
+          "inlier_count": 81,
+          "angular_coverage_deg": 240.0,
+          "selected": true
+        },
+        "point_count": 81
+      },
+      {
+        "height_m": 1.5,
+        "fits": [
+          {
+            "track_id": "T15-0951",
+            "center": [
+              32.55358734522429,
+              -14.294780416200734
+            ],
+            "radius_m": 0.05201457185967377,
+            "circle_residual_m": 0.005236786142105724,
+            "inlier_count": 106,
+            "angular_coverage_deg": 260.0,
+            "selected": true
+          }
+        ],
+        "selected_fit": {
+          "track_id": "T15-0951",
+          "center": [
+            32.55358734522429,
+            -14.294780416200734
+          ],
+          "radius_m": 0.05201457185967377,
+          "circle_residual_m": 0.005236786142105724,
+          "inlier_count": 106,
+          "angular_coverage_deg": 260.0,
+          "selected": true
+        },
+        "point_count": 106
+      },
+      {
+        "height_m": 1.75,
+        "fits": [
+          {
+            "track_id": "T15-0951",
+            "center": [
+              32.51018499674449,
+              -14.418455508248337
+            ],
+            "radius_m": 0.03974289242070078,
+            "circle_residual_m": 0.005534824777822876,
+            "inlier_count": 64,
+            "angular_coverage_deg": 280.0,
+            "selected": true
+          }
+        ],
+        "selected_fit": {
+          "track_id": "T15-0951",
+          "center": [
+            32.51018499674449,
+            -14.418455508248337
+          ],
+          "radius_m": 0.03974289242070078,
+          "circle_residual_m": 0.005534824777822876,
+          "inlier_count": 64,
+          "angular_coverage_deg": 280.0,
+          "selected": true
+        },
+        "point_count": 64
+      }
+    ],
+    "radius_profile_selected": [
+      {
+        "height_m": 0.75,
+        "radius_m": 0.03701031350579191,
+        "circle_residual_m": 0.005248716739018504
+      },
+      {
+        "height_m": 1.0,
+        "radius_m": 0.03692338879787013,
+        "circle_residual_m": 0.004844630956083955
+      },
+      {
+        "height_m": 1.25,
+        "radius_m": 0.0376269092651968,
+        "circle_residual_m": 0.005542893073033215
+      },
+      {
+        "height_m": 1.3,
+        "radius_m": 0.03636854467596231,
+        "circle_residual_m": 0.005159171351596465
+      },
+      {
+        "height_m": 1.5,
+        "radius_m": 0.05201457185967377,
+        "circle_residual_m": 0.005236786142105724
+      },
+      {
+        "height_m": 1.75,
+        "radius_m": 0.03974289242070078,
+        "circle_residual_m": 0.005534824777822876
+      }
+    ],
+    "centreline": {
+      "points_xyz": [
+        [
+          32.54011231474742,
+          -14.08152690117834,
+          -5.922875905036927
+        ],
+        [
+          32.54021094415312,
+          -14.08943131079621,
+          -5.897234879395901
+        ],
+        [
+          32.540309573558815,
+          -14.09733572041408,
+          -5.8715938537548755
+        ],
+        [
+          32.54040820296451,
+          -14.105240130031952,
+          -5.84595282811385
+        ],
+        [
+          32.540506832370205,
+          -14.113144539649822,
+          -5.820311802472824
+        ],
+        [
+          32.5406054617759,
+          -14.121048949267692,
+          -5.794670776831799
+        ],
+        [
+          32.540704091181595,
+          -14.128953358885562,
+          -5.769029751190772
+        ],
+        [
+          32.540802720587294,
+          -14.136857768503432,
+          -5.743388725549747
+        ],
+        [
+          32.540901349992986,
+          -14.144762178121304,
+          -5.717747699908721
+        ],
+        [
+          32.540999979398684,
+          -14.152666587739175,
+          -5.692106674267696
+        ],
+        [
+          32.541098608804376,
+          -14.160570997357045,
+          -5.66646564862667
+        ],
+        [
+          32.541197238210074,
+          -14.168475406974915,
+          -5.640824622985645
+        ],
+        [
+          32.54129586761577,
+          -14.176379816592785,
+          -5.615183597344619
+        ],
+        [
+          32.541394497021464,
+          -14.184284226210657,
+          -5.589542571703594
+        ],
+        [
+          32.54149312642716,
+          -14.192188635828527,
+          -5.563901546062567
+        ],
+        [
+          32.541591755832854,
+          -14.200093045446398,
+          -5.538260520421542
+        ],
+        [
+          32.54169038523855,
+          -14.207997455064268,
+          -5.512619494780516
+        ],
+        [
+          32.54178901464425,
+          -14.21590186468214,
+          -5.4869784691394905
+        ],
+        [
+          32.54188764404994,
+          -14.22380627430001,
+          -5.461337443498465
+        ],
+        [
+          32.54198627345564,
+          -14.23171068391788,
+          -5.435696417857439
+        ],
+        [
+          32.54208490286134,
+          -14.23961509353575,
+          -5.410055392216414
+        ],
+        [
+          32.54218353226703,
+          -14.24751950315362,
+          -5.384414366575388
+        ],
+        [
+          32.54228216167273,
+          -14.255423912771493,
+          -5.358773340934363
+        ],
+        [
+          32.54238079107842,
+          -14.263328322389363,
+          -5.333132315293337
+        ],
+        [
+          32.54247942048412,
+          -14.271232732007233,
+          -5.307491289652312
+        ],
+        [
+          32.54257804988982,
+          -14.279137141625103,
+          -5.281850264011286
+        ],
+        [
+          32.54267667929551,
+          -14.287041551242973,
+          -5.2562092383702606
+        ],
+        [
+          32.54277530870121,
+          -14.294945960860845,
+          -5.230568212729234
+        ],
+        [
+          32.5428739381069,
+          -14.302850370478716,
+          -5.204927187088209
+        ],
+        [
+          32.5429725675126,
+          -14.310754780096586,
+          -5.179286161447183
+        ],
+        [
+          32.5430711969183,
+          -14.318659189714456,
+          -5.1536451358061575
+        ],
+        [
+          32.54316982632399,
+          -14.326563599332328,
+          -5.128004110165132
+        ],
+        [
+          32.54326845572969,
+          -14.334468008950198,
+          -5.102363084524106
+        ],
+        [
+          32.54336708513538,
+          -14.342372418568068,
+          -5.07672205888308
+        ],
+        [
+          32.54346571454108,
+          -14.350276828185939,
+          -5.051081033242054
+        ],
+        [
+          32.54356434394678,
+          -14.358181237803809,
+          -5.025440007601029
+        ],
+        [
+          32.54366297335247,
+          -14.36608564742168,
+          -4.999798981960003
+        ],
+        [
+          32.54376160275817,
+          -14.373990057039551,
+          -4.974157956318978
+        ],
+        [
+          32.54386023216386,
+          -14.381894466657421,
+          -4.948516930677952
+        ],
+        [
+          32.54395886156956,
+          -14.389798876275291,
+          -4.922875905036927
+        ]
+      ],
+      "residual_p90_m": 0.04211623553678158
+    }
+  },
+  "full_resolution": {
+    "components_by_height": [],
+    "radius_profile_selected": [],
+    "centreline": {
+      "points_xyz": []
+    },
+    "not_loaded_reason": "PHASE4C_REUSES_TRACK_GEOMETRY_AND_SAMPLED_BROWSER_CLOUD"
+  },
+  "phase4c": {
+    "feature": {
+      "tree_id": "TREE_0098",
+      "tree_key": "PT-6BDB36C78AF42D7C",
+      "center": {
+        "x": 32.542227915499595,
+        "y": -14.251076487481663
+      },
+      "current_detection_status": "PROBABLE",
+      "source_candidate_ids": [
+        "C-0101"
+      ],
+      "source_track_ids": [
+        "T15-0951"
+      ],
+      "primary_track_id": "T15-0951",
+      "primary_geometry_status": "STEM_LIKE",
+      "vertical_persistence": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "vertical_span_m": 1.0,
+        "supported_height_level_count": 6,
+        "supported_heights_m": [
+          0.75,
+          1.0,
+          1.25,
+          1.3,
+          1.5,
+          1.75
+        ],
+        "nominal_level_count": 5,
+        "nominal_level_continuity_ratio": 1.0,
+        "gap_count": 0,
+        "missing_nominal_level_count": 0,
+        "maximum_gap_m": 0.0,
+        "upper_supported_level_count": 0
+      },
+      "axis_geometry": {
+        "slope_x_m_per_m": 0.0038465468221358773,
+        "slope_y_m_per_m": -0.30827197509695253,
+        "slope_magnitude_m_per_m": 0.3082959723263199,
+        "inclination_deg": 17.134319695550843,
+        "xy_drift_over_supported_span_m": 0.3082959723263199,
+        "centreline_residual_p90_m": 0.04211623553678158,
+        "observation_path_length_m": 0.34892330649086223,
+        "observation_direct_displacement_m": 0.31922383166493223,
+        "curvature_excess_m": 0.029699474825929995
+      },
+      "cross_section": {
+        "observation_count": 6,
+        "median_radius_m": 0.03731861138549436,
+        "radius_residual_mad_m": 0.0023833633697359843,
+        "radius_relative_range": 0.41925534211578486,
+        "median_circle_residual_m": 0.005242751440562114,
+        "median_ellipse_axis_ratio": 1.1672950807223614,
+        "median_angular_coverage_deg": 235.0,
+        "median_point_count": 381.0,
+        "median_inlier_count": 72.5,
+        "median_connected_component_count": 5.0
+      },
+      "base_evidence": {
+        "has_low_stem_support": true,
+        "starts_above_root_zone": false,
+        "independent_upper_continuation": false
+      },
+      "topology": {
+        "phase4_graph_degree": 1,
+        "edge_classification_counts": {
+          "CONTINUATION_REVIEW": 1
+        },
+        "shared_candidate_count": 1,
+        "phase4_attached_fragment_track_ids": []
+      },
+      "track_quality": {
+        "primary_track_quality_score": 13.807156378445477,
+        "track_count": 1,
+        "rejected_observation_count": 0
+      },
+      "provenance": {
+        "source_tree_id": "TREE_0098",
+        "source_candidate_ids": [
+          "C-0101"
+        ],
+        "source_track_ids": [
+          "T15-0951"
+        ],
+        "phase4_algorithm_version": "stem-inventory-v2-phase4-stem-graph",
+        "phase4c_algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow"
+      },
+      "classifier_excluded_inputs": [
+        "measurement.status",
+        "measurement.pom_m",
+        "measurement.circumference_cm",
+        "equivalent_diameter_cm",
+        "fitted_radius",
+        "tree_id_numeric_value"
+      ],
+      "main_stem_evidence": {
+        "score": 0.6603742128753569,
+        "components": {
+          "vertical_span": 0.5,
+          "height_levels": 0.75,
+          "continuity": 1.0,
+          "verticality": 0.5104480086985473,
+          "centreline_stability": 0.7192250964214562,
+          "upper_continuation": 0.0,
+          "base_support": 1.0,
+          "cross_section_support": 1.0
+        },
+        "calibrated_probability": false
+      }
+    },
+    "classification": {
+      "source_tree_id": "TREE_0098",
+      "structure_class": "PROBABLE_MAIN_STEM",
+      "parent_tree_id": null,
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "effective_inventory_eligible_in_shadow_mode": true,
+      "confidence": 0.6603742128753569,
+      "confidence_is_calibrated": false,
+      "attachment_height_agl_m": null,
+      "attachment_vertical_range_agl_m": null,
+      "proposed_action": "RETAIN_TREE_HYPOTHESIS",
+      "reason_codes": [
+        "MULTI_LEVEL_MAIN_STEM_EVIDENCE"
+      ],
+      "contradictory_evidence": [
+        "NEAREST_PARENT_FAILED:attachment_proximity"
+      ],
+      "weak_attachment_indicators": {
+        "HIGH_INCLINATION": false,
+        "HIGH_CENTRELINE_RESIDUAL": false,
+        "FRAGMENTED_VERTICAL_LEVELS": false,
+        "UNSTABLE_RADIUS_PROFILE": false
+      },
+      "nearest_possible_parent": {
+        "child_tree_id": "TREE_0098",
+        "parent_tree_id": "TREE_0099",
+        "child_track_id": "T15-0951",
+        "parent_track_id": "T15-0955",
+        "center_distance_m": 0.8369177649786204,
+        "vertical_overlap_m": 1.0,
+        "vertical_gap_m": 0.0,
+        "minimum_centerline_distance_m": 0.6865315904581479,
+        "bottom_overlap_distance_m": 0.6865315904581479,
+        "top_overlap_distance_m": 0.9706162030539112,
+        "convergence_upward_m": -0.28408461259576323,
+        "divergence_upward_m": 0.28408461259576323,
+        "attachment_height_agl_m": 0.75,
+        "parent_upper_extension_m": 1.5,
+        "parent_lower_extension_m": 0.0,
+        "orientation_difference_m_per_m": 0.3470969548349044,
+        "shared_candidate_ids": [],
+        "graph_edge_ids": [],
+        "graph_edge_classifications": [],
+        "parent_main_stem_score": 0.964065168820583,
+        "child_main_stem_score": 0.6603742128753569,
+        "parent_strength_margin": 0.3036909559452261,
+        "axial_continuation_evidence": false,
+        "common_parent_checks": {
+          "within_pair_search_radius": true,
+          "sufficient_vertical_overlap": true,
+          "attachment_proximity": false,
+          "parent_main_evidence": true,
+          "parent_stronger_than_child": true,
+          "not_axial_continuation": true
+        },
+        "failed_parent_checks": [
+          "attachment_proximity"
+        ],
+        "root_indicators": {
+          "LOW_OR_ROOT_ZONE_ORIGIN": true,
+          "CONVERGES_TOWARD_PARENT_UPWARD": false,
+          "OBLIQUE_OR_CURVED_AXIS": true,
+          "PARENT_CONTINUES_ABOVE_CHILD": true,
+          "FRAGMENTED_VERTICAL_SUPPORT": false
+        },
+        "root_indicator_count": 3,
+        "branch_indicators": {
+          "STARTS_ABOVE_ROOT_ZONE": false,
+          "DIVERGES_FROM_PARENT_UPWARD": true,
+          "PARENT_HAS_LOWER_SUPPORT": false,
+          "LIMITED_VERTICAL_PERSISTENCE": true,
+          "OBLIQUE_OR_CURVED_AXIS": true
+        },
+        "branch_indicator_count": 3,
+        "proposed_attachment_class": null,
+        "attachment_rank_score": 0.6133666771559005,
+        "confidence_is_calibrated": false
+      },
+      "parent_candidate_count": 3,
+      "source_candidate_ids": [
+        "C-0101"
+      ],
+      "source_track_ids": [
+        "T15-0951"
+      ],
+      "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+      "shadow_mode": true
+    },
+    "possible_parent_relationships": [
+      {
+        "child_tree_id": "TREE_0098",
+        "parent_tree_id": "TREE_0099",
+        "child_track_id": "T15-0951",
+        "parent_track_id": "T15-0955",
+        "center_distance_m": 0.8369177649786204,
+        "vertical_overlap_m": 1.0,
+        "vertical_gap_m": 0.0,
+        "minimum_centerline_distance_m": 0.6865315904581479,
+        "bottom_overlap_distance_m": 0.6865315904581479,
+        "top_overlap_distance_m": 0.9706162030539112,
+        "convergence_upward_m": -0.28408461259576323,
+        "divergence_upward_m": 0.28408461259576323,
+        "attachment_height_agl_m": 0.75,
+        "parent_upper_extension_m": 1.5,
+        "parent_lower_extension_m": 0.0,
+        "orientation_difference_m_per_m": 0.3470969548349044,
+        "shared_candidate_ids": [],
+        "graph_edge_ids": [],
+        "graph_edge_classifications": [],
+        "parent_main_stem_score": 0.964065168820583,
+        "child_main_stem_score": 0.6603742128753569,
+        "parent_strength_margin": 0.3036909559452261,
+        "axial_continuation_evidence": false,
+        "common_parent_checks": {
+          "within_pair_search_radius": true,
+          "sufficient_vertical_overlap": true,
+          "attachment_proximity": false,
+          "parent_main_evidence": true,
+          "parent_stronger_than_child": true,
+          "not_axial_continuation": true
+        },
+        "failed_parent_checks": [
+          "attachment_proximity"
+        ],
+        "root_indicators": {
+          "LOW_OR_ROOT_ZONE_ORIGIN": true,
+          "CONVERGES_TOWARD_PARENT_UPWARD": false,
+          "OBLIQUE_OR_CURVED_AXIS": true,
+          "PARENT_CONTINUES_ABOVE_CHILD": true,
+          "FRAGMENTED_VERTICAL_SUPPORT": false
+        },
+        "root_indicator_count": 3,
+        "branch_indicators": {
+          "STARTS_ABOVE_ROOT_ZONE": false,
+          "DIVERGES_FROM_PARENT_UPWARD": true,
+          "PARENT_HAS_LOWER_SUPPORT": false,
+          "LIMITED_VERTICAL_PERSISTENCE": true,
+          "OBLIQUE_OR_CURVED_AXIS": true
+        },
+        "branch_indicator_count": 3,
+        "proposed_attachment_class": null,
+        "attachment_rank_score": 0.6133666771559005,
+        "confidence_is_calibrated": false
+      },
+      {
+        "child_tree_id": "TREE_0098",
+        "parent_tree_id": "TREE_0096",
+        "child_track_id": "T15-0951",
+        "parent_track_id": "T15-0928",
+        "center_distance_m": 1.2394033614525464,
+        "vertical_overlap_m": 1.0,
+        "vertical_gap_m": 0.0,
+        "minimum_centerline_distance_m": 1.1666592496838257,
+        "bottom_overlap_distance_m": 1.1666592496838257,
+        "top_overlap_distance_m": 1.3027258280219067,
+        "convergence_upward_m": -0.136066578338081,
+        "divergence_upward_m": 0.136066578338081,
+        "attachment_height_agl_m": 0.75,
+        "parent_upper_extension_m": 1.5,
+        "parent_lower_extension_m": 0.0,
+        "orientation_difference_m_per_m": 0.19871852547023175,
+        "shared_candidate_ids": [],
+        "graph_edge_ids": [],
+        "graph_edge_classifications": [],
+        "parent_main_stem_score": 0.9052557225938636,
+        "child_main_stem_score": 0.6603742128753569,
+        "parent_strength_margin": 0.24488150971850664,
+        "axial_continuation_evidence": false,
+        "common_parent_checks": {
+          "within_pair_search_radius": true,
+          "sufficient_vertical_overlap": true,
+          "attachment_proximity": false,
+          "parent_main_evidence": true,
+          "parent_stronger_than_child": true,
+          "not_axial_continuation": true
+        },
+        "failed_parent_checks": [
+          "attachment_proximity"
+        ],
+        "root_indicators": {
+          "LOW_OR_ROOT_ZONE_ORIGIN": true,
+          "CONVERGES_TOWARD_PARENT_UPWARD": false,
+          "OBLIQUE_OR_CURVED_AXIS": true,
+          "PARENT_CONTINUES_ABOVE_CHILD": true,
+          "FRAGMENTED_VERTICAL_SUPPORT": false
+        },
+        "root_indicator_count": 3,
+        "branch_indicators": {
+          "STARTS_ABOVE_ROOT_ZONE": false,
+          "DIVERGES_FROM_PARENT_UPWARD": true,
+          "PARENT_HAS_LOWER_SUPPORT": false,
+          "LIMITED_VERTICAL_PERSISTENCE": true,
+          "OBLIQUE_OR_CURVED_AXIS": true
+        },
+        "branch_indicator_count": 3,
+        "proposed_attachment_class": null,
+        "attachment_rank_score": 0.5927833709765488,
+        "confidence_is_calibrated": false
+      },
+      {
+        "child_tree_id": "TREE_0098",
+        "parent_tree_id": "TREE_0097",
+        "child_track_id": "T15-0951",
+        "parent_track_id": "T15-0950",
+        "center_distance_m": 0.10671992355199238,
+        "vertical_overlap_m": 0.0,
+        "vertical_gap_m": 0.25,
+        "minimum_centerline_distance_m": 0.042832160844346,
+        "bottom_overlap_distance_m": 0.042832160844346,
+        "top_overlap_distance_m": 0.042832160844346,
+        "convergence_upward_m": 0.0,
+        "divergence_upward_m": 0.0,
+        "attachment_height_agl_m": 1.875,
+        "parent_upper_extension_m": 1.25,
+        "parent_lower_extension_m": -1.25,
+        "orientation_difference_m_per_m": 0.2925906428277871,
+        "shared_candidate_ids": [],
+        "graph_edge_ids": [
+          "E4-00237"
+        ],
+        "graph_edge_classifications": [
+          "CONTINUATION_REVIEW"
+        ],
+        "parent_main_stem_score": 0.7678851679245733,
+        "child_main_stem_score": 0.6603742128753569,
+        "parent_strength_margin": 0.10751095504921637,
+        "axial_continuation_evidence": false,
+        "common_parent_checks": {
+          "within_pair_search_radius": true,
+          "sufficient_vertical_overlap": false,
+          "attachment_proximity": true,
+          "parent_main_evidence": true,
+          "parent_stronger_than_child": true,
+          "not_axial_continuation": true
+        },
+        "failed_parent_checks": [
+          "sufficient_vertical_overlap"
+        ],
+        "root_indicators": {
+          "LOW_OR_ROOT_ZONE_ORIGIN": true,
+          "CONVERGES_TOWARD_PARENT_UPWARD": false,
+          "OBLIQUE_OR_CURVED_AXIS": true,
+          "PARENT_CONTINUES_ABOVE_CHILD": true,
+          "FRAGMENTED_VERTICAL_SUPPORT": false
+        },
+        "root_indicator_count": 3,
+        "branch_indicators": {
+          "STARTS_ABOVE_ROOT_ZONE": false,
+          "DIVERGES_FROM_PARENT_UPWARD": false,
+          "PARENT_HAS_LOWER_SUPPORT": false,
+          "LIMITED_VERTICAL_PERSISTENCE": true,
+          "OBLIQUE_OR_CURVED_AXIS": true
+        },
+        "branch_indicator_count": 2,
+        "proposed_attachment_class": null,
+        "attachment_rank_score": 0.49330508382908195,
+        "confidence_is_calibrated": false
+      }
+    ],
+    "child_tracks": [
+      {
+        "track_id": "T15-0951",
+        "canonical_track_id": "T15-0951",
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW",
+        "reason_codes": [
+          "CONSTRAINED_VERTICAL_TRACK_STABLE"
+        ],
+        "source_candidate_ids": [
+          "C-0101"
+        ],
+        "source_seed_ids": [
+          "MH-00151",
+          "MH-00283",
+          "MH-00418",
+          "MH-00528",
+          "MH-00710",
+          "V1-0101"
+        ],
+        "source_providers": [
+          "MULTI_HEIGHT_DENSITY",
+          "V1_DENSITY"
+        ],
+        "source_height_count": 6,
+        "source_heights_m": [
+          0.75,
+          1.0,
+          1.25,
+          1.3,
+          1.5,
+          1.75
+        ],
+        "vertical_span_m": 1.0,
+        "gaps": [],
+        "reference_height_m": 1.3,
+        "reference_center": [
+          32.542227915499595,
+          -14.251076487481663
+        ],
+        "centreline_coefficients": [
+          [
+            0.0038465468221358773,
+            32.53722740463082
+          ],
+          [
+            -0.30827197509695253,
+            -13.850322919855625
+          ]
+        ],
+        "radius_coefficients": [
+          0.007909832216335158,
+          0.029994564548644236
+        ],
+        "centre_residual_p90_m": 0.04211623553678158,
+        "radius_residual_mad_m": 0.0023833633697359843,
+        "median_radius_m": 0.03731861138549436,
+        "median_angular_coverage_deg": 235.0,
+        "median_fit_residual_m": 0.005242751440562114,
+        "alias_track_ids": [],
+        "observations": [
+          {
+            "node_id": "OBS-MH-00151",
+            "source_seed_id": "MH-00151",
+            "source_seed_ids": [
+              "MH-00151"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 0.75,
+            "profile_height_m": 0.75,
+            "source_xy": [
+              32.56,
+              -14.08
+            ],
+            "center": [
+              32.50433806151894,
+              -14.0992852275966
+            ],
+            "radius_m": 0.03701031350579191,
+            "circle_residual_m": 0.005248716739018504,
+            "ellipse_residual_m": 0.005314716313822414,
+            "ellipse_axis_ratio": 1.1925832966261116,
+            "angular_coverage_deg": 140.0,
+            "point_count": 184,
+            "inlier_count": 28,
+            "component_id": 2,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.6860174574466481,
+            "phase1_candidate_id": "C-0101",
+            "phase1_candidate_ids": [
+              "C-0101"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 0,
+                "center": [
+                  33.09068141487357,
+                  -13.633999642426119
+                ],
+                "radius_m": 0.05467768767272761,
+                "circle_residual_m": 0.0030112709057578146,
+                "angular_coverage_deg": 210.0
+              },
+              {
+                "component_id": 3,
+                "center": [
+                  31.972508158650477,
+                  -14.5874622886647
+                ],
+                "radius_m": 0.020682461978636362,
+                "circle_residual_m": 0.0061791890838890935,
+                "angular_coverage_deg": 160.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00283",
+            "source_seed_id": "MH-00283",
+            "source_seed_ids": [
+              "MH-00283"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.0,
+            "profile_height_m": 1.0,
+            "source_xy": [
+              32.56,
+              -14.16
+            ],
+            "center": [
+              32.55949139181678,
+              -14.159109357916057
+            ],
+            "radius_m": 0.03692338879787013,
+            "circle_residual_m": 0.004844630956083955,
+            "ellipse_residual_m": 0.00449715415400771,
+            "ellipse_axis_ratio": 1.5277399682951684,
+            "angular_coverage_deg": 170.0,
+            "point_count": 223,
+            "inlier_count": 46,
+            "component_id": 1,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.7551669133234762,
+            "phase1_candidate_id": "C-0101",
+            "phase1_candidate_ids": [
+              "C-0101"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 0,
+                "center": [
+                  33.100632327218314,
+                  -13.643114771612627
+                ],
+                "radius_m": 0.05037437515596812,
+                "circle_residual_m": 0.0028095979014070714,
+                "angular_coverage_deg": 240.0
+              },
+              {
+                "component_id": 3,
+                "center": [
+                  31.887501771504535,
+                  -14.640284234709664
+                ],
+                "radius_m": 0.022275368132170688,
+                "circle_residual_m": 0.005244733230492093,
+                "angular_coverage_deg": 170.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00418",
+            "source_seed_id": "MH-00418",
+            "source_seed_ids": [
+              "MH-00418"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.25,
+            "profile_height_m": 1.25,
+            "source_xy": [
+              32.56,
+              -14.24
+            ],
+            "center": [
+              32.56344342950424,
+              -14.223342342901224
+            ],
+            "radius_m": 0.0376269092651968,
+            "circle_residual_m": 0.005542893073033215,
+            "ellipse_residual_m": 0.005941407767861761,
+            "ellipse_axis_ratio": 1.1041140212254126,
+            "angular_coverage_deg": 230.0,
+            "point_count": 348,
+            "inlier_count": 92,
+            "component_id": 1,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8712812366371132,
+            "phase1_candidate_id": "C-0101",
+            "phase1_candidate_ids": [
+              "C-0101"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 0,
+                "center": [
+                  33.113145324035294,
+                  -13.646770783276716
+                ],
+                "radius_m": 0.050851209816786355,
+                "circle_residual_m": 0.004482318163836168,
+                "angular_coverage_deg": 300.0
+              },
+              {
+                "component_id": 2,
+                "center": [
+                  31.80569687000045,
+                  -14.734836101343648
+                ],
+                "radius_m": 0.022268424469741577,
+                "circle_residual_m": 0.006413817311986624,
+                "angular_coverage_deg": 230.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-V1-0101",
+            "source_seed_id": "V1-0101",
+            "source_seed_ids": [
+              "V1-0101"
+            ],
+            "source_provider": "V1_DENSITY",
+            "source_providers": [
+              "V1_DENSITY"
+            ],
+            "source_height_m": 1.3,
+            "profile_height_m": 1.3,
+            "source_xy": [
+              32.56,
+              -14.16
+            ],
+            "center": [
+              32.56136063148318,
+              -14.234418078252734
+            ],
+            "radius_m": 0.03636854467596231,
+            "circle_residual_m": 0.005159171351596465,
+            "ellipse_residual_m": 0.005265595579455264,
+            "ellipse_axis_ratio": 1.1440843733101647,
+            "angular_coverage_deg": 240.0,
+            "point_count": 414,
+            "inlier_count": 81,
+            "component_id": 1,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.887745623812741,
+            "phase1_candidate_id": "C-0101",
+            "phase1_candidate_ids": [
+              "C-0101"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 0,
+                "center": [
+                  33.11629590892746,
+                  -13.649688496460204
+                ],
+                "radius_m": 0.052837013081253735,
+                "circle_residual_m": 0.004785054951914201,
+                "angular_coverage_deg": 320.0
+              },
+              {
+                "component_id": 2,
+                "center": [
+                  31.76260235169336,
+                  -14.675747879745703
+                ],
+                "radius_m": 0.0809257768003825,
+                "circle_residual_m": 0.006388192015812348,
+                "angular_coverage_deg": 60.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00528",
+            "source_seed_id": "MH-00528",
+            "source_seed_ids": [
+              "MH-00528"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.5,
+            "profile_height_m": 1.5,
+            "source_xy": [
+              32.56,
+              -14.32
+            ],
+            "center": [
+              32.55358734522429,
+              -14.294780416200734
+            ],
+            "radius_m": 0.05201457185967377,
+            "circle_residual_m": 0.005236786142105724,
+            "ellipse_residual_m": 0.005040715572425639,
+            "ellipse_axis_ratio": 1.190505788134558,
+            "angular_coverage_deg": 260.0,
+            "point_count": 512,
+            "inlier_count": 106,
+            "component_id": 1,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.9013119491924764,
+            "phase1_candidate_id": "C-0101",
+            "phase1_candidate_ids": [
+              "C-0101"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 0,
+                "center": [
+                  33.12840984223153,
+                  -13.652322831450949
+                ],
+                "radius_m": 0.04887925969694564,
+                "circle_residual_m": 0.0046555612071801375,
+                "angular_coverage_deg": 330.0
+              },
+              {
+                "component_id": 2,
+                "center": [
+                  31.61177337834591,
+                  -14.201882232422138
+                ],
+                "radius_m": 0.06586458429462654,
+                "circle_residual_m": 0.0055827485641896275,
+                "angular_coverage_deg": 60.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00710",
+            "source_seed_id": "MH-00710",
+            "source_seed_ids": [
+              "MH-00710"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.75,
+            "profile_height_m": 1.75,
+            "source_xy": [
+              32.56,
+              -14.4
+            ],
+            "center": [
+              32.51018499674449,
+              -14.418455508248337
+            ],
+            "radius_m": 0.03974289242070078,
+            "circle_residual_m": 0.005534824777822876,
+            "ellipse_residual_m": 0.005763658078965838,
+            "ellipse_axis_ratio": 1.09376099657191,
+            "angular_coverage_deg": 280.0,
+            "point_count": 426,
+            "inlier_count": 64,
+            "component_id": 1,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8764030574559394,
+            "phase1_candidate_id": "C-0101",
+            "phase1_candidate_ids": [
+              "C-0101"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 0,
+                "center": [
+                  33.14611342283976,
+                  -13.648618647303234
+                ],
+                "radius_m": 0.05142076426297757,
+                "circle_residual_m": 0.004456375985008425,
+                "angular_coverage_deg": 260.0
+              },
+              {
+                "component_id": 2,
+                "center": [
+                  31.613706612511226,
+                  -14.127596586428037
+                ],
+                "radius_m": 0.034550417354350084,
+                "circle_residual_m": 0.005326754758301745,
+                "angular_coverage_deg": 110.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "parent_tree_id_for_display": "TREE_0099",
+    "parent_tracks": [
+      {
+        "track_id": "T15-0955",
+        "canonical_track_id": "T15-0955",
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "NEEDS_REVIEW",
+        "reason_codes": [
+          "CONSTRAINED_VERTICAL_TRACK_STABLE"
+        ],
+        "source_candidate_ids": [
+          "C-0003",
+          "C-0762"
+        ],
+        "source_seed_ids": [
+          "MH-00065",
+          "MH-00203",
+          "MH-00350",
+          "MH-00496",
+          "MH-00670",
+          "MH-00849",
+          "MH-01069",
+          "MH-01270",
+          "MH-01479",
+          "MH-01684",
+          "MH-01872",
+          "MH-01966",
+          "V1-0003"
+        ],
+        "source_providers": [
+          "MULTI_HEIGHT_DENSITY",
+          "V1_DENSITY"
+        ],
+        "source_height_count": 12,
+        "source_heights_m": [
+          0.75,
+          1.0,
+          1.25,
+          1.3,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25
+        ],
+        "vertical_span_m": 2.5,
+        "gaps": [],
+        "reference_height_m": 1.3,
+        "reference_center": [
+          33.118576823483195,
+          -13.644237726686905
+        ],
+        "centreline_coefficients": [
+          [
+            0.06250269044654645,
+            33.03732332590268
+          ],
+          [
+            0.033832910677536486,
+            -13.688220510567703
+          ]
+        ],
+        "radius_coefficients": [
+          -0.005045146000228293,
+          0.05799244894261844
+        ],
+        "centre_residual_p90_m": 0.023140150684496413,
+        "radius_residual_mad_m": 0.0012490775237923267,
+        "median_radius_m": 0.049563709564830076,
+        "median_angular_coverage_deg": 240.0,
+        "median_fit_residual_m": 0.004383655969678009,
+        "alias_track_ids": [],
+        "observations": [
+          {
+            "node_id": "OBS-MH-00065",
+            "source_seed_id": "MH-00065",
+            "source_seed_ids": [
+              "MH-00065"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 0.75,
+            "profile_height_m": 0.75,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.09188778207917,
+              -13.633404991298676
+            ],
+            "radius_m": 0.053883166358109205,
+            "circle_residual_m": 0.003476514822671472,
+            "ellipse_residual_m": 0.0033246473751283164,
+            "ellipse_axis_ratio": 1.1510131157179675,
+            "angular_coverage_deg": 200.0,
+            "point_count": 299,
+            "inlier_count": 62,
+            "component_id": 1,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8276414319431634,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  32.48385073424789,
+                  -14.102768008800068
+                ],
+                "radius_m": 0.0536951069656005,
+                "circle_residual_m": 0.005420427936381177,
+                "angular_coverage_deg": 140.0
+              },
+              {
+                "component_id": 0,
+                "center": [
+                  33.71456942636679,
+                  -14.226225972325516
+                ],
+                "radius_m": 0.19123318246985324,
+                "circle_residual_m": 0.009554556325926679,
+                "angular_coverage_deg": 150.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00203",
+            "source_seed_id": "MH-00203",
+            "source_seed_ids": [
+              "MH-00203"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.0,
+            "profile_height_m": 1.0,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.10171531440004,
+              -13.642797423265213
+            ],
+            "radius_m": 0.04940841572685181,
+            "circle_residual_m": 0.0026038156608142976,
+            "ellipse_residual_m": 0.00259701376249653,
+            "ellipse_axis_ratio": 1.1257535768545992,
+            "angular_coverage_deg": 210.0,
+            "point_count": 176,
+            "inlier_count": 77,
+            "component_id": 0,
+            "connected_component_count": 4,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8477534814177223,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.54462861807786,
+                  -13.67853874140891
+                ],
+                "radius_m": 0.022426033632409737,
+                "circle_residual_m": 0.0038845768063163113,
+                "angular_coverage_deg": 110.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.55974526400901,
+                  -14.15689645060129
+                ],
+                "radius_m": 0.03535324458174675,
+                "circle_residual_m": 0.004395197305382651,
+                "angular_coverage_deg": 190.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00350",
+            "source_seed_id": "MH-00350",
+            "source_seed_ids": [
+              "MH-00350"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.25,
+            "profile_height_m": 1.25,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.11152481285997,
+              -13.64632253025748
+            ],
+            "radius_m": 0.05071966130796635,
+            "circle_residual_m": 0.004291304155868514,
+            "ellipse_residual_m": 0.00426176078755598,
+            "ellipse_axis_ratio": 1.0675967791474286,
+            "angular_coverage_deg": 290.0,
+            "point_count": 368,
+            "inlier_count": 165,
+            "component_id": 0,
+            "connected_component_count": 4,
+            "fit_validity": true,
+            "local_evidence_quality": 0.9194388403186486,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.57307417637522,
+                  -13.670493055647775
+                ],
+                "radius_m": 0.021812071627032976,
+                "circle_residual_m": 0.005914860202103644,
+                "angular_coverage_deg": 150.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.5612923072,
+                  -14.222964634307747
+                ],
+                "radius_m": 0.04062061697512413,
+                "circle_residual_m": 0.004781709692685618,
+                "angular_coverage_deg": 240.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-V1-0003",
+            "source_seed_id": "V1-0003",
+            "source_seed_ids": [
+              "V1-0003"
+            ],
+            "source_provider": "V1_DENSITY",
+            "source_providers": [
+              "V1_DENSITY"
+            ],
+            "source_height_m": 1.3,
+            "profile_height_m": 1.3,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.11501028963347,
+              -13.650123970751887
+            ],
+            "radius_m": 0.05297182646018839,
+            "circle_residual_m": 0.00462161702836852,
+            "ellipse_residual_m": 0.004235742951555408,
+            "ellipse_axis_ratio": 1.145806465376979,
+            "angular_coverage_deg": 320.0,
+            "point_count": 365,
+            "inlier_count": 180,
+            "component_id": 0,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.9196930446889706,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.57140043997868,
+                  -13.671981344400608
+                ],
+                "radius_m": 0.020419713969432696,
+                "circle_residual_m": 0.005578230313506123,
+                "angular_coverage_deg": 160.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.561187064070936,
+                  -14.23244592803435
+                ],
+                "radius_m": 0.037006697502669245,
+                "circle_residual_m": 0.004741411282667303,
+                "angular_coverage_deg": 240.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00496",
+            "source_seed_id": "MH-00496",
+            "source_seed_ids": [
+              "MH-00496"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.5,
+            "profile_height_m": 1.5,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.128115726558995,
+              -13.652850168192813
+            ],
+            "radius_m": 0.048703217423781156,
+            "circle_residual_m": 0.00464816741371939,
+            "ellipse_residual_m": 0.004183682441433439,
+            "ellipse_axis_ratio": 1.1732517271287977,
+            "angular_coverage_deg": 330.0,
+            "point_count": 493,
+            "inlier_count": 248,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.9293361282192425,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.560780025226656,
+                  -13.699715893418475
+                ],
+                "radius_m": 0.021648391274656995,
+                "circle_residual_m": 0.006162995884233966,
+                "angular_coverage_deg": 280.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.55328923590095,
+                  -14.293443905203914
+                ],
+                "radius_m": 0.05262878948014934,
+                "circle_residual_m": 0.0047492874016560735,
+                "angular_coverage_deg": 250.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00670",
+            "source_seed_id": "MH-00670",
+            "source_seed_ids": [
+              "MH-00670"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 1.75,
+            "profile_height_m": 1.75,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.146695159490356,
+              -13.650021147412824
+            ],
+            "radius_m": 0.05250063458528353,
+            "circle_residual_m": 0.004295878086282468,
+            "ellipse_residual_m": 0.0036443387492140554,
+            "ellipse_axis_ratio": 1.3223616603383437,
+            "angular_coverage_deg": 240.0,
+            "point_count": 377,
+            "inlier_count": 186,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.9243670465004123,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.55454466085571,
+                  -13.765263678328607
+                ],
+                "radius_m": 0.021542146286247666,
+                "circle_residual_m": 0.006111391325110282,
+                "angular_coverage_deg": 140.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.57439342893003,
+                  -14.330480171439662
+                ],
+                "radius_m": 0.02423542354442026,
+                "circle_residual_m": 0.0040499187780058815,
+                "angular_coverage_deg": 240.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-00849",
+            "source_seed_id": "MH-00849",
+            "source_seed_ids": [
+              "MH-00849"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 2.0,
+            "profile_height_m": 2.0,
+            "source_xy": [
+              33.120000000000005,
+              -13.6
+            ],
+            "center": [
+              33.16557924899457,
+              -13.636460261754701
+            ],
+            "radius_m": 0.05178895757868356,
+            "circle_residual_m": 0.003948186599494799,
+            "ellipse_residual_m": 0.0036041171605712134,
+            "ellipse_axis_ratio": 1.1534081438114145,
+            "angular_coverage_deg": 260.0,
+            "point_count": 201,
+            "inlier_count": 117,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8976686044831235,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.54211360251671,
+                  -13.859044234917194
+                ],
+                "radius_m": 0.038107202700543436,
+                "circle_residual_m": 0.004310294966297285,
+                "angular_coverage_deg": 120.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.54485178336522,
+                  -14.343917647973768
+                ],
+                "radius_m": 0.021135047100363027,
+                "circle_residual_m": 0.004541643776369419,
+                "angular_coverage_deg": 200.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-01069",
+            "source_seed_id": "MH-01069",
+            "source_seed_ids": [
+              "MH-01069"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 2.25,
+            "profile_height_m": 2.25,
+            "source_xy": [
+              33.2,
+              -13.6
+            ],
+            "center": [
+              33.1785163669046,
+              -13.621746577902115
+            ],
+            "radius_m": 0.04971900340280834,
+            "circle_residual_m": 0.004810696576625136,
+            "ellipse_residual_m": 0.004023497540318498,
+            "ellipse_axis_ratio": 1.2207424222559184,
+            "angular_coverage_deg": 240.0,
+            "point_count": 149,
+            "inlier_count": 75,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8677499333185495,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 1,
+                "center": [
+                  33.52650755666935,
+                  -13.904055198218117
+                ],
+                "radius_m": 0.021745704045711415,
+                "circle_residual_m": 0.004905837251631716,
+                "angular_coverage_deg": 190.0
+              },
+              {
+                "component_id": 2,
+                "center": [
+                  32.535352690240735,
+                  -14.347495307147316
+                ],
+                "radius_m": 0.02163545501438267,
+                "circle_residual_m": 0.003950114672292071,
+                "angular_coverage_deg": 190.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-01270",
+            "source_seed_id": "MH-01270",
+            "source_seed_ids": [
+              "MH-01270"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 2.5,
+            "profile_height_m": 2.5,
+            "source_xy": [
+              33.2,
+              -13.6
+            ],
+            "center": [
+              33.188524785413385,
+              -13.606910852698082
+            ],
+            "radius_m": 0.043887266660836366,
+            "circle_residual_m": 0.003997120781144362,
+            "ellipse_residual_m": 0.003852455485821965,
+            "ellipse_axis_ratio": 1.0787122504424953,
+            "angular_coverage_deg": 250.0,
+            "point_count": 92,
+            "inlier_count": 66,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.8605886595141199,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 1,
+                "center": [
+                  32.55042484799923,
+                  -14.356381122271898
+                ],
+                "radius_m": 0.0628356203715332,
+                "circle_residual_m": 0.005177286612223656,
+                "angular_coverage_deg": 50.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-01479",
+            "source_seed_id": "MH-01479",
+            "source_seed_ids": [
+              "MH-01479"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 2.75,
+            "profile_height_m": 2.75,
+            "source_xy": [
+              33.2,
+              -13.6
+            ],
+            "center": [
+              33.201375339326304,
+              -13.593303750283118
+            ],
+            "radius_m": 0.04204987669419608,
+            "circle_residual_m": 0.0044714338530735505,
+            "ellipse_residual_m": 0.004396544053809218,
+            "ellipse_axis_ratio": 1.1889480187534665,
+            "angular_coverage_deg": 170.0,
+            "point_count": 80,
+            "inlier_count": 38,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.7312530524488912,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 1,
+                "center": [
+                  33.673613129610914,
+                  -14.031987874819116
+                ],
+                "radius_m": 0.024916003763522362,
+                "circle_residual_m": 0.0060399316429836265,
+                "angular_coverage_deg": 90.0
+              },
+              {
+                "component_id": 2,
+                "center": [
+                  32.55021290120105,
+                  -14.352532913764007
+                ],
+                "radius_m": 0.05082868084695632,
+                "circle_residual_m": 0.0064296549859900005,
+                "angular_coverage_deg": 60.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-01684",
+            "source_seed_id": "MH-01684",
+            "source_seed_ids": [
+              "MH-01684",
+              "MH-01872"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 3.0,
+            "profile_height_m": 3.0,
+            "source_xy": [
+              33.2,
+              -13.6
+            ],
+            "center": [
+              33.2232919069044,
+              -13.57848754131727
+            ],
+            "radius_m": 0.04258984180560917,
+            "circle_residual_m": 0.005380530873450134,
+            "ellipse_residual_m": 0.005624209100291934,
+            "ellipse_axis_ratio": 1.1338775346398966,
+            "angular_coverage_deg": 180.0,
+            "point_count": 58,
+            "inlier_count": 32,
+            "component_id": 0,
+            "connected_component_count": 3,
+            "fit_validity": true,
+            "local_evidence_quality": 0.7255680589400677,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003",
+              "C-0762"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [
+              "OBS-MH-01872"
+            ],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.73763984963465,
+                  -14.0275781406574
+                ],
+                "radius_m": 0.03731131227917693,
+                "circle_residual_m": 0.002729285833283341,
+                "angular_coverage_deg": 50.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  32.53912988307869,
+                  -14.33853081185945
+                ],
+                "radius_m": 0.04226265617203055,
+                "circle_residual_m": 0.004739864253390572,
+                "angular_coverage_deg": 40.0
+              }
+            ]
+          },
+          {
+            "node_id": "OBS-MH-01966",
+            "source_seed_id": "MH-01966",
+            "source_seed_ids": [
+              "MH-01966"
+            ],
+            "source_provider": "MULTI_HEIGHT_DENSITY",
+            "source_providers": [
+              "MULTI_HEIGHT_DENSITY"
+            ],
+            "source_height_m": 3.25,
+            "profile_height_m": 3.25,
+            "source_xy": [
+              33.2,
+              -13.52
+            ],
+            "center": [
+              33.25195586567145,
+              -13.557910092891621
+            ],
+            "radius_m": 0.0401356175017882,
+            "circle_residual_m": 0.0046065212942568295,
+            "ellipse_residual_m": 0.004819003136004466,
+            "ellipse_axis_ratio": 1.2982100943996064,
+            "angular_coverage_deg": 160.0,
+            "point_count": 77,
+            "inlier_count": 33,
+            "component_id": 0,
+            "connected_component_count": 5,
+            "fit_validity": true,
+            "local_evidence_quality": 0.7095896075821986,
+            "phase1_candidate_id": "C-0003",
+            "phase1_candidate_ids": [
+              "C-0003"
+            ],
+            "rejection_reasons": [],
+            "alias_observation_ids": [],
+            "alternative_fits": [
+              {
+                "component_id": 2,
+                "center": [
+                  33.56914180728983,
+                  -12.837155888627548
+                ],
+                "radius_m": 0.13562437851107403,
+                "circle_residual_m": 0.008164220329013533,
+                "angular_coverage_deg": 60.0
+              },
+              {
+                "component_id": 1,
+                "center": [
+                  33.776879074722736,
+                  -14.091925089816097
+                ],
+                "radius_m": 0.032911531943167024,
+                "circle_residual_m": 0.005826799074452361,
+                "angular_coverage_deg": 80.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "child_centreline_points_xyz": [
+      [
+        32.54011231474742,
+        -14.08152690117834,
+        -5.922875905036927
+      ],
+      [
+        32.54021094415312,
+        -14.08943131079621,
+        -5.897234879395901
+      ],
+      [
+        32.540309573558815,
+        -14.09733572041408,
+        -5.8715938537548755
+      ],
+      [
+        32.54040820296451,
+        -14.105240130031952,
+        -5.84595282811385
+      ],
+      [
+        32.540506832370205,
+        -14.113144539649822,
+        -5.820311802472824
+      ],
+      [
+        32.5406054617759,
+        -14.121048949267692,
+        -5.794670776831799
+      ],
+      [
+        32.540704091181595,
+        -14.128953358885562,
+        -5.769029751190772
+      ],
+      [
+        32.540802720587294,
+        -14.136857768503432,
+        -5.743388725549747
+      ],
+      [
+        32.540901349992986,
+        -14.144762178121304,
+        -5.717747699908721
+      ],
+      [
+        32.540999979398684,
+        -14.152666587739175,
+        -5.692106674267696
+      ],
+      [
+        32.541098608804376,
+        -14.160570997357045,
+        -5.66646564862667
+      ],
+      [
+        32.541197238210074,
+        -14.168475406974915,
+        -5.640824622985645
+      ],
+      [
+        32.54129586761577,
+        -14.176379816592785,
+        -5.615183597344619
+      ],
+      [
+        32.541394497021464,
+        -14.184284226210657,
+        -5.589542571703594
+      ],
+      [
+        32.54149312642716,
+        -14.192188635828527,
+        -5.563901546062567
+      ],
+      [
+        32.541591755832854,
+        -14.200093045446398,
+        -5.538260520421542
+      ],
+      [
+        32.54169038523855,
+        -14.207997455064268,
+        -5.512619494780516
+      ],
+      [
+        32.54178901464425,
+        -14.21590186468214,
+        -5.4869784691394905
+      ],
+      [
+        32.54188764404994,
+        -14.22380627430001,
+        -5.461337443498465
+      ],
+      [
+        32.54198627345564,
+        -14.23171068391788,
+        -5.435696417857439
+      ],
+      [
+        32.54208490286134,
+        -14.23961509353575,
+        -5.410055392216414
+      ],
+      [
+        32.54218353226703,
+        -14.24751950315362,
+        -5.384414366575388
+      ],
+      [
+        32.54228216167273,
+        -14.255423912771493,
+        -5.358773340934363
+      ],
+      [
+        32.54238079107842,
+        -14.263328322389363,
+        -5.333132315293337
+      ],
+      [
+        32.54247942048412,
+        -14.271232732007233,
+        -5.307491289652312
+      ],
+      [
+        32.54257804988982,
+        -14.279137141625103,
+        -5.281850264011286
+      ],
+      [
+        32.54267667929551,
+        -14.287041551242973,
+        -5.2562092383702606
+      ],
+      [
+        32.54277530870121,
+        -14.294945960860845,
+        -5.230568212729234
+      ],
+      [
+        32.5428739381069,
+        -14.302850370478716,
+        -5.204927187088209
+      ],
+      [
+        32.5429725675126,
+        -14.310754780096586,
+        -5.179286161447183
+      ],
+      [
+        32.5430711969183,
+        -14.318659189714456,
+        -5.1536451358061575
+      ],
+      [
+        32.54316982632399,
+        -14.326563599332328,
+        -5.128004110165132
+      ],
+      [
+        32.54326845572969,
+        -14.334468008950198,
+        -5.102363084524106
+      ],
+      [
+        32.54336708513538,
+        -14.342372418568068,
+        -5.07672205888308
+      ],
+      [
+        32.54346571454108,
+        -14.350276828185939,
+        -5.051081033242054
+      ],
+      [
+        32.54356434394678,
+        -14.358181237803809,
+        -5.025440007601029
+      ],
+      [
+        32.54366297335247,
+        -14.36608564742168,
+        -4.999798981960003
+      ],
+      [
+        32.54376160275817,
+        -14.373990057039551,
+        -4.974157956318978
+      ],
+      [
+        32.54386023216386,
+        -14.381894466657421,
+        -4.948516930677952
+      ],
+      [
+        32.54395886156956,
+        -14.389798876275291,
+        -4.922875905036927
+      ]
+    ],
+    "parent_centreline_points_xyz": [
+      [
+        33.08420034373759,
+        -13.66284582755955,
+        -5.932574939727783
+      ],
+      [
+        33.088206926458525,
+        -13.660677051234067,
+        -5.8684723756252195
+      ],
+      [
+        33.09221350917946,
+        -13.658508274908584,
+        -5.804369811522655
+      ],
+      [
+        33.09622009190039,
+        -13.656339498583101,
+        -5.740267247420091
+      ],
+      [
+        33.100226674621325,
+        -13.654170722257618,
+        -5.676164683317527
+      ],
+      [
+        33.10423325734226,
+        -13.652001945932135,
+        -5.612062119214963
+      ],
+      [
+        33.108239840063185,
+        -13.649833169606651,
+        -5.547959555112399
+      ],
+      [
+        33.11224642278412,
+        -13.647664393281168,
+        -5.4838569910098345
+      ],
+      [
+        33.11625300550505,
+        -13.645495616955685,
+        -5.419754426907271
+      ],
+      [
+        33.120259588225984,
+        -13.643326840630202,
+        -5.355651862804707
+      ],
+      [
+        33.12426617094692,
+        -13.641158064304719,
+        -5.291549298702142
+      ],
+      [
+        33.12827275366785,
+        -13.638989287979237,
+        -5.227446734599578
+      ],
+      [
+        33.132279336388784,
+        -13.636820511653754,
+        -5.163344170497014
+      ],
+      [
+        33.13628591910972,
+        -13.634651735328271,
+        -5.09924160639445
+      ],
+      [
+        33.14029250183065,
+        -13.632482959002788,
+        -5.0351390422918865
+      ],
+      [
+        33.14429908455158,
+        -13.630314182677305,
+        -4.971036478189322
+      ],
+      [
+        33.14830566727251,
+        -13.628145406351821,
+        -4.906933914086758
+      ],
+      [
+        33.15231224999344,
+        -13.625976630026338,
+        -4.842831349984194
+      ],
+      [
+        33.156318832714376,
+        -13.623807853700855,
+        -4.778728785881629
+      ],
+      [
+        33.16032541543531,
+        -13.621639077375372,
+        -4.714626221779065
+      ],
+      [
+        33.16433199815624,
+        -13.619470301049889,
+        -4.650523657676501
+      ],
+      [
+        33.168338580877176,
+        -13.617301524724406,
+        -4.586421093573938
+      ],
+      [
+        33.17234516359811,
+        -13.615132748398922,
+        -4.522318529471374
+      ],
+      [
+        33.17635174631904,
+        -13.61296397207344,
+        -4.458215965368809
+      ],
+      [
+        33.180358329039976,
+        -13.610795195747956,
+        -4.394113401266245
+      ],
+      [
+        33.1843649117609,
+        -13.608626419422473,
+        -4.330010837163681
+      ],
+      [
+        33.188371494481835,
+        -13.60645764309699,
+        -4.265908273061116
+      ],
+      [
+        33.19237807720277,
+        -13.604288866771507,
+        -4.2018057089585525
+      ],
+      [
+        33.1963846599237,
+        -13.602120090446023,
+        -4.137703144855989
+      ],
+      [
+        33.200391242644635,
+        -13.59995131412054,
+        -4.073600580753425
+      ],
+      [
+        33.20439782536557,
+        -13.597782537795057,
+        -4.009498016650861
+      ],
+      [
+        33.2084044080865,
+        -13.595613761469574,
+        -3.945395452548296
+      ],
+      [
+        33.212410990807435,
+        -13.59344498514409,
+        -3.8812928884457323
+      ],
+      [
+        33.21641757352837,
+        -13.591276208818607,
+        -3.8171903243431684
+      ],
+      [
+        33.220424156249294,
+        -13.589107432493124,
+        -3.753087760240604
+      ],
+      [
+        33.22443073897023,
+        -13.586938656167641,
+        -3.6889851961380398
+      ],
+      [
+        33.22843732169116,
+        -13.58476987984216,
+        -3.624882632035476
+      ],
+      [
+        33.232443904412094,
+        -13.582601103516676,
+        -3.560780067932912
+      ],
+      [
+        33.23645048713303,
+        -13.580432327191193,
+        -3.4966775038303477
+      ],
+      [
+        33.24045706985396,
+        -13.57826355086571,
+        -3.4325749397277834
+      ]
+    ],
+    "attachment_height_agl_m": null
+  }
+}

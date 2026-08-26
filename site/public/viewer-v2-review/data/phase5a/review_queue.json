@@ -1,0 +1,673 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase5a-protocol-anchored-pom-shadow",
+  "mode": "SHADOW",
+  "interpretation": "ROOT-ATTACHMENT AND PROTOCOL-POM REVIEW; LIDAR ESTIMATES ARE NOT FIELD VERIFIED",
+  "annotation_export_path": "annotations/phase5a_prop_root_pom_review.json",
+  "queue_size": 13,
+  "unique_tree_id_count": 13,
+  "roi_a_evaluable_reference_count": 9,
+  "annotation_schema": {
+    "protocol_applicability": [
+      "NOT_REVIEWED",
+      "PROP_ROOT_PROTOCOL_APPLICABLE",
+      "PROTOCOL_APPLICABILITY_UNCERTAIN",
+      "STANDARD_NON_PROP_ROOT_PROTOCOL"
+    ],
+    "attachment_status": [
+      "CONFIRMED",
+      "PROBABLE",
+      "NEEDS_REVIEW",
+      "NOT_VISIBLE",
+      "CONFLICTING_ROOT_OWNERSHIP"
+    ],
+    "measurement_decision": [
+      "ACCEPT",
+      "REJECT",
+      "UNCERTAIN"
+    ]
+  },
+  "entries": [
+    {
+      "review_item_id": "TREE_0017",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "MANUAL_SEED_REGRESSION",
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "PROP_ROOT_PROTOCOL_APPLICABLE"
+      ],
+      "candidate_geometry_status": "PROBABLE",
+      "identity_status": "CONFIRMED",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 10.4450836642628,
+        "y": -5.747561875596052
+      },
+      "ground_z_m": -6.400219988822937,
+      "point_crop_url": "data/phase5a/points/TREE_0017.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0017.json",
+      "phase4_tree_id": "TREE_0017",
+      "tree_detection_status": "CONFIRMED",
+      "protocol_applicability": "PROP_ROOT_PROTOCOL_APPLICABLE",
+      "attachment_status": "PROBABLE",
+      "protocol_pom_status": "NEEDS_REVIEW",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 2.45,
+        "circumference_cm": 45.63,
+        "reported_candidate_circumference_cm": 45.63,
+        "equivalent_diameter_cm": 14.41,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-9001",
+        "point_count": 987,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false,
+        "source_manual_seed_id": "MANUAL-P175-0001",
+        "independent_recheck_verdict": "REPRODUCED_WITHIN_DECLARED_PILOT_UNCERTAINTY"
+      },
+      "roi_a_reference_ids": [],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0062",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "PROTOCOL_APPLICABILITY_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "CONFIRMED",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 23.200994229801182,
+        "y": -9.79631322713892
+      },
+      "ground_z_m": -6.6648201704025265,
+      "point_crop_url": "data/phase5a/points/TREE_0062.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0062.json",
+      "phase4_tree_id": "TREE_0062",
+      "tree_detection_status": "CONFIRMED",
+      "protocol_applicability": "PROTOCOL_APPLICABILITY_UNCERTAIN",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 22.0,
+        "reported_candidate_circumference_cm": 22.0,
+        "equivalent_diameter_cm": 5.96,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.971708,
+        "source_candidate_id": "C-0622",
+        "point_count": 1375,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "roi_a_reference_ids": [],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0091",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "PROTOCOL_APPLICABILITY_UNCERTAIN",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 29.805978082435207,
+        "y": -14.21909596823061
+      },
+      "ground_z_m": -6.708493590354919,
+      "point_crop_url": "data/phase5a/points/TREE_0091.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0091.json",
+      "phase4_tree_id": "TREE_0091",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "PROTOCOL_APPLICABILITY_UNCERTAIN",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NEEDS_REVIEW",
+        "pom_m": 1.3,
+        "circumference_cm": null,
+        "reported_candidate_circumference_cm": 17.09,
+        "equivalent_diameter_cm": null,
+        "selected_model": "CIRCLE",
+        "confidence": 0.972461,
+        "source_candidate_id": "C-0404",
+        "point_count": 1040,
+        "validity_reasons": [
+          "CIRCLE_ELLIPSE_DISAGREEMENT"
+        ],
+        "verified_field_measurement": false
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0014"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0103",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "PROP_ROOT_PROTOCOL_APPLICABLE",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "PROBABLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 33.823268998974605,
+        "y": -9.216776229757933
+      },
+      "ground_z_m": -6.620848309993744,
+      "point_crop_url": "data/phase5a/points/TREE_0103.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0103.json",
+      "phase4_tree_id": "TREE_0103",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "PROP_ROOT_PROTOCOL_APPLICABLE",
+      "attachment_status": "PROBABLE",
+      "protocol_pom_status": "COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0004"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0107",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "PROP_ROOT_PROTOCOL_APPLICABLE",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "PROBABLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 34.72735710547437,
+        "y": -10.244650895222707
+      },
+      "ground_z_m": -6.650988507270813,
+      "point_crop_url": "data/phase5a/points/TREE_0107.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0107.json",
+      "phase4_tree_id": "TREE_0107",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "PROP_ROOT_PROTOCOL_APPLICABLE",
+      "attachment_status": "PROBABLE",
+      "protocol_pom_status": "NEEDS_REVIEW",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0006"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0112",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "MANUAL_SEED_REGRESSION",
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "PROTOCOL_APPLICABILITY_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "CONFIRMED",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 35.51119117241029,
+        "y": -12.020865635300138
+      },
+      "ground_z_m": -6.675570845603943,
+      "point_crop_url": "data/phase5a/points/TREE_0112.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0112.json",
+      "phase4_tree_id": "TREE_0112",
+      "tree_detection_status": "CONFIRMED",
+      "protocol_applicability": "PROTOCOL_APPLICABILITY_UNCERTAIN",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NEEDS_REVIEW",
+        "pom_m": 1.3,
+        "circumference_cm": null,
+        "reported_candidate_circumference_cm": 14.1,
+        "equivalent_diameter_cm": null,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-9002",
+        "point_count": 1168,
+        "validity_reasons": [
+          "UNCONSTRAINED_RADIUS_BELOW_CONFIGURED_MINIMUM",
+          "BOUNDARY_SENSITIVE_RESULT_NOT_FINAL",
+          "TREE_PRESERVED_DESPITE_MEASUREMENT_FAILURE"
+        ],
+        "verified_field_measurement": false,
+        "source_manual_seed_id": "MANUAL-P175-0003",
+        "independent_recheck_verdict": "BOUNDARY_SENSITIVE_DO_NOT_TREAT_REPORTED_GIRTH_AS_FINAL"
+      },
+      "roi_a_reference_ids": [],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0094",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 30.463670475659445,
+        "y": -13.674725537508888
+      },
+      "ground_z_m": -6.703702187538147,
+      "point_crop_url": "data/phase5a/points/TREE_0094.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0094.json",
+      "phase4_tree_id": "TREE_0094",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "STANDARD_NON_PROP_ROOT_PROTOCOL",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0013"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0097",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 32.52524387676335,
+        "y": -14.35643627350626
+      },
+      "ground_z_m": -6.686447417736053,
+      "point_crop_url": "data/phase5a/points/TREE_0097.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0097.json",
+      "phase4_tree_id": "TREE_0097",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "STANDARD_NON_PROP_ROOT_PROTOCOL",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0011"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0098",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 32.542227915499595,
+        "y": -14.251076487481663
+      },
+      "ground_z_m": -6.672875905036927,
+      "point_crop_url": "data/phase5a/points/TREE_0098.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0098.json",
+      "phase4_tree_id": "TREE_0098",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "STANDARD_NON_PROP_ROOT_PROTOCOL",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0011"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0099",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 33.118576823483195,
+        "y": -13.644237726686903
+      },
+      "ground_z_m": -6.682574939727783,
+      "point_crop_url": "data/phase5a/points/TREE_0099.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0099.json",
+      "phase4_tree_id": "TREE_0099",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "STANDARD_NON_PROP_ROOT_PROTOCOL",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0005"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0101",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 33.73017190478958,
+        "y": -12.348102114888347
+      },
+      "ground_z_m": -6.67204327583313,
+      "point_crop_url": "data/phase5a/points/TREE_0101.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0101.json",
+      "phase4_tree_id": "TREE_0101",
+      "tree_detection_status": "UNCERTAIN",
+      "protocol_applicability": "NOT_REVIEWED",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0012"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0105",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "NOT_VISIBLE",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_MEASURABLE",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 34.40826654407324,
+        "y": -14.004594349067379
+      },
+      "ground_z_m": -6.684189140796661,
+      "point_crop_url": "data/phase5a/points/TREE_0105.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0105.json",
+      "phase4_tree_id": "TREE_0105",
+      "tree_detection_status": "PROBABLE",
+      "protocol_applicability": "STANDARD_NON_PROP_ROOT_PROTOCOL",
+      "attachment_status": "NOT_VISIBLE",
+      "protocol_pom_status": "NOT_COMPUTED",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 25.97,
+        "reported_candidate_circumference_cm": 25.97,
+        "equivalent_diameter_cm": 8.27,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0006",
+        "point_count": 4581,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0009"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    },
+    {
+      "review_item_id": "TREE_0106",
+      "item_type": "PHASE5A_PROP_ROOT_POM",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PHASE5A_PROTOCOL_APPLICABILITY_REVIEW",
+        "ROI_A_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "PROBABLE",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "MANGROVE_PROP_ROOT_PLUS_030",
+      "source_providers": [
+        "PHASE1_5_VERTICAL_TRACKS",
+        "PHASE4C_RELATIONAL_GEOMETRY_SHADOW",
+        "PHASE5A_PROTOCOL_SHADOW"
+      ],
+      "position": {
+        "x": 34.62449398022648,
+        "y": -11.661519207969093
+      },
+      "ground_z_m": -6.6509243726730345,
+      "point_crop_url": "data/phase5a/points/TREE_0106.json",
+      "evidence_url": "data/phase5a/evidence/TREE_0106.json",
+      "phase4_tree_id": "TREE_0106",
+      "tree_detection_status": "UNCERTAIN",
+      "protocol_applicability": "NOT_REVIEWED",
+      "attachment_status": "PROBABLE",
+      "protocol_pom_status": "NEEDS_REVIEW",
+      "protocol_offset_m": 0.3,
+      "historical_measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "roi_a_reference_ids": [
+        "ROI_A_REF_0007"
+      ],
+      "review_question": "Confirm protocol applicability, the highest prop-root attachment, +0.30 m POM, and exact-plane measurement QA."
+    }
+  ],
+  "input_provenance": {
+    "config/stem_inventory_v2_phase5a.yaml": "b0950cdca6ba0340d8109b740f0570be17b2361302e332ccf5ec3021465ed344",
+    "config/stem_inventory_v2.yaml": "e49b9f97dd4c30e5d3f243dae7f1361aec0a49f4554cbffd24e601d30d2f73c7",
+    "outputs/phase4_tree_inventory.json": "d56557ac409dea59040437b467571cc0a67121a3d2652fb1c169b6d948bd0c72",
+    "outputs/phase3_tree_id_registry.json": "3c12428d9f60d8d3a8d9c18f97e005f702de6d4454ef1cfcea8fcca32d80ed3a",
+    "outputs/tree_tracks_v2_phase1_5.json": "16b09909c7723fda61f610c25789222403e5e463beb508d5eb5895ace053a0a7",
+    "outputs/phase3_candidate_tree_associations.json": "1f90af8b9d83ce5d7d69bcb1613ef5004e4a24e5a061c8f86801867fac2c51e9",
+    "outputs/tree_candidates_v2_phase1.json": "1c084436d316ac562b0805c399ee32c49792091ffd2a6634ee9b819f2db6173a",
+    "annotations/phase1_75_pilot_review.json": "2b8ffc7e8e1f2a846eae339408f52b47786436c869bf1df66478265407fa0c10",
+    "annotations/phase4_ground_truth_roi.json": "d5794402d7dc518a33d7a6f691447b858e12a0bc8f041c1ecc4284b469ba6b6c",
+    "outputs/phase4b_roi_evaluation.json": "310bc8917555577f2a6267257ba889f6b7b280e7a98b535787f3572fb4b1528d",
+    "outputs/phase4c_parent_attachment_graph.json": "de9a871810521f9ad2deac905e3090bcbbb8ddccccbb6639b6468362c0af4e23",
+    "outputs/phase4c_structure_classification_shadow.json": "71b015cecbc6fa61270cd1040ba19631b9cefdaf5318c58031037fe3935d384d",
+    "outputs/manual_seed_evaluations_v2_phase2_anchor_pilot.json": "6700c3fa69ded31615319431838e31564f2eac60d442e7dacd46ea9f0769bfcf",
+    "outputs/phase2_manual_anchor_measurement_recheck.json": "fba892162850c552a5be44d70bc3bbcb9bfbcc9989edf3e35967df593c6d3bcd",
+    "annotations/phase5a_prop_root_pom_review.json": "6cb2e50bf9e94e1d81f5419f3f86e46850793a572df8cf9c960cf9776e693499"
+  },
+  "roi_a_evaluable_reference_tree_ids": [
+    "TREE_0091",
+    "TREE_0094",
+    "TREE_0097",
+    "TREE_0098",
+    "TREE_0099",
+    "TREE_0101",
+    "TREE_0103",
+    "TREE_0105",
+    "TREE_0106",
+    "TREE_0107"
+  ],
+  "roi_a_strict_reference_count_from_phase4b": 9
+}

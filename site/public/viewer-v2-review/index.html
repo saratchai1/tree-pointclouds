@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samut Songkhram · V2 Pilot Review</title>
+  <link rel="stylesheet" href="styles.css?v=phase5a-protocol-v1">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">LOCAL REVIEW · STEM INVENTORY V2</p>
+      <h1>ตรวจ geometry evidence</h1>
+      <p id="summary">กำลังโหลด review queue…</p>
+    </div>
+    <div class="toolbar">
+      <button id="nextUnresolved">รายการที่ยังไม่ตรวจถัดไป</button>
+      <button id="exportAnnotations">Export annotations JSON</button>
+      <label class="button">Import annotations<input id="importAnnotations" type="file" accept="application/json"></label>
+      <button id="exportProgress">Export progress CSV</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="filters panel">
+      <h2>ตัวกรอง</h2>
+      <label>Review queue<select id="queueSelect"></select></label>
+      <label>Geometry status<select id="geometryFilter"><option value="">ทั้งหมด</option></select></label>
+      <label>Measurement status<select id="measurementFilter"><option value="">ทั้งหมด</option></select></label>
+      <label>Source provider<select id="providerFilter"><option value="">ทั้งหมด</option></select></label>
+      <label>รูปแบบการวัด<select id="ruleFilter"><option value="">ทั้งหมด</option><option value="STANDARD_1_30">Standard 1.30 m</option><option value="ADAPTIVE_STABLE_STEM">Adaptive</option><option value="NONE">ไม่มี POM</option></select></label>
+      <label class="check"><input id="duplicateFilter" type="checkbox"> เฉพาะ potential duplicates</label>
+      <label class="check"><input id="unresolvedFilter" type="checkbox"> เฉพาะที่ยังไม่ตรวจ</label>
+      <label>Candidate<select id="candidateSelect"></select></label>
+      <p id="filterCount" class="muted"></p>
+      <div id="queueCategories" class="chips"></div>
+      <div id="manualSeedPanel">
+        <hr>
+        <h2>Manual missed-tree seed</h2>
+        <p class="muted">เลือก candidate ใกล้เคียง เปิดโหมด แล้วคลิกมุมมองด้านบน หรือกรอก XY เอง ความสูง 2.50 ม. เป็น hint เท่านั้น ไม่ใช่ POM อัตโนมัติ</p>
+        <button id="manualMode">เปิดโหมดปัก seed</button>
+        <div class="manual-xy"><label>Approx. X<input id="manualX" type="number" step="0.01"></label><label>Approx. Y<input id="manualY" type="number" step="0.01"></label></div>
+        <label>Human label<input id="manualLabel" value="TRUE_MAIN_STEM" readonly></label>
+        <label>Clean-height hint (m)<input id="manualHeight" type="number" min="0.5" max="3.5" step="0.05" value="2.50"></label>
+        <label>หมายเหตุ<textarea id="manualNote" rows="2"></textarea></label>
+        <button id="addManualSeed" class="primary">เพิ่ม manual seed</button>
+        <button id="exportManualSeeds">Export manual seeds JSON</button>
+        <p id="manualCount" class="muted">0 manual seeds</p>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <div class="viewer panel">
+        <div class="viewer-head">
+          <div><strong id="candidateTitle">—</strong><span id="candidateState"></span></div>
+          <div class="viewer-tools"><button id="resetView">รีเซ็ตมุม</button><button id="topView">มองจากบน</button></div>
+        </div>
+        <div id="roiCanvasTools" class="roi-canvas-tools" hidden>
+          <div class="roi-tool-step"><strong>ขั้น A · ระบุต้นไม้จากภาพ 3D</strong><span>หมุนให้เห็นลำต้น กดเพิ่ม แล้วคลิกลงบนลำต้นโดยตรง — ระบบจะไม่เปลี่ยนมุม</span></div>
+          <div class="roi-tool-row">
+            <button id="addRoiReference" class="primary">+ เพิ่มต้นไม้ต่อเนื่อง</button>
+            <button id="moveRoiReference">ย้ายจุด</button>
+            <button id="deleteRoiReference">ลบจุด</button>
+            <span id="roiReferenceCount" class="roi-count">0 ต้น</span>
+            <span id="roiPickStatus" class="roi-pick-status">คลิกให้โดนจุดของลำต้น ระบบจะ snap ไปยังจุด LiDAR ใกล้ที่สุด</span>
+          </div>
+          <div class="roi-tool-row height-bands" aria-label="ช่วงความสูงของจุด">
+            <span>จุดที่เห็น:</span>
+            <button type="button" data-roi-band="LOW">โคน 0.3–1.5 ม.</button>
+            <button type="button" data-roi-band="STEM">ลำต้น 1.5–3.2 ม.</button>
+            <button type="button" data-roi-band="ALL">ทุกระดับ</button>
+            <button id="toggleRoiAlgorithm" type="button">จบการนับ → เริ่มจับคู่</button>
+          </div>
+        </div>
+        <canvas id="pointCanvas"></canvas>
+        <div id="geometryLegend" class="legend"><span class="sampled">sampled points</span><span class="accepted">full accepted</span><span class="rejected">full rejected</span><span class="sampleline">child/sample centreline</span><span class="fullline">full centreline</span><span class="parentline">possible parent centreline</span><span class="components">component centres</span></div>
+        <div id="roiLegend" class="legend roi-legend" hidden><span class="sampled">LiDAR points</span><span class="reference">human reference</span><span class="resolved">resolved Tree ID</span><span class="unresolved">unresolved track</span></div>
+        <p id="cropStatus" class="canvas-note"></p>
+      </div>
+
+      <div class="detail-grid">
+        <article class="panel metrics"><h2>สถานะและการวัด</h2><div id="metrics"></div></article>
+        <article class="panel chart"><h2>Sampled / full radius profile</h2><canvas id="profileCanvas"></canvas></article>
+        <article class="panel aliases"><h2>Aliases / failures</h2><div id="aliases"></div><div id="failures"></div></article>
+        <article class="panel components-card"><h2>Components by height</h2><div id="componentRows"></div></article>
+      </div>
+
+      <article id="candidateAnnotation" class="panel annotation">
+        <h2>Human annotation</h2>
+        <div id="labelActions" class="label-actions"></div>
+        <div class="annotation-grid">
+          <label><span id="duplicateTargetLabel">Duplicate target</span><input id="duplicateTarget" placeholder="C-0000"></label>
+          <label>Corrected X<input id="correctedX" type="number" step="0.01"></label>
+          <label>Corrected Y<input id="correctedY" type="number" step="0.01"></label>
+          <label>Corrected POM (m)<input id="correctedPom" type="number" step="0.05" min="0.5" max="3.5"></label>
+        </div>
+        <label>Reviewer note<textarea id="reviewerNote" rows="3"></textarea></label>
+        <button id="saveAnnotation" class="primary">บันทึก annotation</button>
+        <span id="saveStatus" class="muted"></span>
+      </article>
+      <article id="phase5aAnnotation" class="panel annotation" hidden>
+        <h2>Phase 5A · Highest prop-root attachment review</h2>
+        <p class="warning">Protocol: highest supported prop-root attachment + 0.30 m vertically. LiDAR estimate — not field verified.</p>
+        <div class="annotation-grid compact">
+          <label>Protocol applicability<select id="phase5aApplicability"><option value="NOT_REVIEWED">Not reviewed</option><option value="PROP_ROOT_PROTOCOL_APPLICABLE">Prop-root protocol applies</option><option value="STANDARD_NON_PROP_ROOT_PROTOCOL">Standard non-prop-root protocol</option><option value="PROTOCOL_APPLICABILITY_UNCERTAIN">Applicability uncertain</option></select></label>
+          <label>Attachment decision<select id="phase5aAttachmentStatus"><option value="NEEDS_REVIEW">Needs review</option><option value="CONFIRMED">Confirmed</option><option value="PROBABLE">Probable</option><option value="NOT_VISIBLE">Not visible</option><option value="CONFLICTING_ROOT_OWNERSHIP">Conflicting root ownership</option></select></label>
+          <label>Selected automatic candidate ID<input id="phase5aCandidateId" placeholder="P5A-ATT-…"></label>
+          <label>Accepted root track IDs<input id="phase5aAcceptedRootTracks" placeholder="T15-0001, T15-0002"></label>
+          <label>Rejected / other-tree root IDs<input id="phase5aRejectedRootTracks" placeholder="T15-0003"></label>
+          <label>Manual attachment X<input id="phase5aAttachmentX" type="number" step="0.001"></label>
+          <label>Manual attachment Y<input id="phase5aAttachmentY" type="number" step="0.001"></label>
+          <label>Manual attachment Z<input id="phase5aAttachmentZ" type="number" step="0.001"></label>
+          <label>Manual attachment AGL (m)<input id="phase5aAttachmentAgl" readonly></label>
+          <label>+0.30 m POM AGL (m)<input id="phase5aPomAgl" readonly></label>
+          <label>POM decision<select id="phase5aPomDecision"><option value="NEEDS_REVIEW">Needs review</option><option value="CONFIRM_PROTOCOL_POM">Confirm +0.30 m POM</option><option value="REJECT_PROTOCOL_POM">Reject proposed POM</option></select></label>
+          <label>Measurement decision<select id="phase5aMeasurementDecision"><option value="UNCERTAIN">Uncertain</option><option value="ACCEPT">Accept LiDAR measurement</option><option value="REJECT">Reject measurement</option></select></label>
+        </div>
+        <div class="label-actions">
+          <button id="phase5aPickAttachment" type="button">Click manual attachment point</button>
+          <button id="phase5aUseCandidate" type="button">Use selected automatic candidate</button>
+        </div>
+        <label>Review reason<input id="phase5aReason" placeholder="Why this attachment / ownership decision is supported"></label>
+        <label>Reviewer note<textarea id="phase5aNote" rows="3"></textarea></label>
+        <button id="savePhase5aAnnotation" class="primary">Save Phase 5A annotation</button>
+        <span id="phase5aSaveStatus" class="muted"></span>
+      </article>
+      <article id="roiAnnotation" class="panel annotation" hidden>
+        <h2 id="roiCensusTitle">ROI · LiDAR-visible reference census</h2>
+        <p class="warning">นี่คือการนับต้นไม้ที่มองเห็นใน LiDAR ไม่ใช่ field ground truth และไม่ควรใช้จุดเขียว/ชมพูเป็นคำตอบตั้งต้น</p>
+        <ol class="roi-steps">
+          <li><strong>ขั้น A:</strong> หมุนภาพ 3D ให้เห็นลำต้น ซ่อนผล algorithm แล้วกดเพิ่มและคลิกลงบนลำต้นแต่ละต้น ปุ่มเพิ่มจะไม่เปลี่ยนมุม</li>
+          <li><strong>ตรวจตำแหน่ง:</strong> ใช้มุมบนเฉพาะเมื่อต้องการตรวจหรือย้าย XY หลังจากระบุต้นไม้จากมุม 3D แล้ว</li>
+          <li><strong>ขั้น B:</strong> เมื่อปักครบแล้ว ค่อยเปิดผล algorithm และจับคู่ reference กับ Tree/candidate/track</li>
+          <li id="roiStepCText"><strong>ขั้น C:</strong> ตรวจ Tree ID ของระบบทุกตัว แล้วจึงยืนยันว่าตรวจครบ</li>
+        </ol>
+        <div class="roi-toolbar">
+          <button id="resetRoiDraft">รีเซ็ต local draft</button>
+          <span class="muted">ปุ่มเพิ่ม/ย้าย/ลบอยู่บนภาพ เพื่อให้มองเห็นจุดขณะทำงาน</span>
+        </div>
+        <div id="roiCensusStageA" class="roi-stage-card">
+          <strong>ตอนนี้ทำอย่างเดียว: ปักต้นไม้ที่มองเห็นให้ครบ</strong>
+          <p>ยังไม่ต้องกรอก Algorithm evidence, Matched ID หรือ Classification เมื่อปักครบแล้วให้กด “จบการนับ → เริ่มจับคู่” บนภาพ</p>
+        </div>
+        <div id="roiAssociationWorkflow" hidden>
+        <div class="roi-review-grid">
+          <section class="roi-subpanel">
+            <h2>ขั้น B · จับคู่ต้นไม้ที่คุณปัก</h2>
+            <p id="roiReferenceProgress" class="step-progress"></p>
+            <p class="muted">จุดเหลืองคือ reference ที่เลือก กดจับคู่กับ Tree ID สีเขียวที่เป็นลำต้นเดียวกัน ถ้าระบบแยกต้นเดียวเป็นหลาย ID ให้จับคู่ได้มากกว่าหนึ่ง ID</p>
+            <label>Reference ID<select id="roiReferenceSelect"></select></label>
+            <p id="roiBoundaryStatus" class="muted"></p>
+            <div id="roiMatchSuggestions" class="suggestions muted"></div>
+            <div class="simple-actions">
+              <button id="markRoiReferenceNoEvidence" type="button">ไม่พบหลักฐานระบบที่ตรงกับต้นนี้</button>
+              <button id="markRoiReferenceUncertain" type="button">ดูแล้วไม่แน่ใจ</button>
+            </div>
+            <details class="advanced-fields">
+              <summary>รายละเอียดขั้นสูง: candidate, track, ความมั่นใจ และสาเหตุที่พลาด</summary>
+              <div class="annotation-grid compact">
+                <label>X<input id="roiReferenceX" type="number" step="0.001"></label>
+                <label>Y<input id="roiReferenceY" type="number" step="0.001"></label>
+                <label>ความมั่นใจ<select id="roiReferenceConfidence"><option value="CERTAIN">มั่นใจ</option><option value="PROBABLE">น่าจะใช่</option><option value="UNCERTAIN">ไม่แน่ใจ</option></select></label>
+                <label>การมองเห็น<select id="roiReferenceVisibility"><option value="CLEAR">เห็นชัด</option><option value="PARTIALLY_OCCLUDED">ถูกบังบางส่วน</option><option value="STRONGLY_OCCLUDED">ถูกบังมาก</option><option value="INSUFFICIENT_LIDAR_EVIDENCE">LiDAR ไม่พอให้ตัดสิน</option></select></label>
+              </div>
+              <label>หลักฐานที่ระบบมี<select id="roiEvidenceStatus"><option value="RESOLVED_TREE">มี Tree ID ที่ตรง</option><option value="TRACK_EXISTS_UNRESOLVED">มี track แต่ยังไม่เป็น Tree ID</option><option value="CANDIDATE_EXISTS_NO_TRACK">มี candidate แต่ยังไม่มี track</option><option value="NO_ALGORITHM_EVIDENCE">ไม่พบหลักฐานจากระบบ</option><option value="INCORRECTLY_MERGED">ระบบรวมหลายต้นเป็น Tree ID เดียว</option><option value="DUPLICATE_TREE_IDS">ต้นเดียวถูกแยกเป็นหลาย Tree ID</option><option value="UNCERTAIN">ไม่แน่ใจ</option></select></label>
+              <div class="annotation-grid compact">
+                <label>Matched Tree IDs<input id="matchedTreeIds" placeholder="TREE_0086, TREE_0087"></label>
+                <label>Matched candidate IDs<input id="matchedCandidateIds" placeholder="C-0001, C-0002"></label>
+                <label>Matched track IDs<input id="matchedTrackIds" placeholder="T15-0001"></label>
+                <label>สาเหตุหลัก<select id="roiFailureReason"><option value="">— ไม่มี/ยังไม่ระบุ —</option><option value="NO_CANDIDATE_GENERATED">ไม่สร้าง candidate</option><option value="CANDIDATE_EXISTS_NO_TRACK">มี candidate แต่ไม่มี track</option><option value="TRACK_EXISTS_UNRESOLVED">มี track แต่ไม่เป็น Tree ID</option><option value="TRACK_ASSOCIATED_TO_WRONG_TREE">track ถูกผูกผิดต้น</option><option value="MERGED_WITH_NEARBY_TREE">ถูกรวมกับต้นข้างเคียง</option><option value="DUPLICATE_OR_SPLIT_ERROR">สร้าง ID ซ้ำ/แยกต้นผิด</option><option value="PROP_ROOT_TRANSITION_FAILURE">พลาดช่วงรากค้ำยัน</option><option value="OCCLUSION_OR_POINT_GAP">ถูกบังหรือ point ขาดช่วง</option><option value="GROUND_NORMALIZATION_OR_HEIGHT_ERROR">ระดับพื้น/ความสูงผิด</option><option value="ROI_BOUNDARY_ISSUE">อยู่บริเวณขอบ ROI</option><option value="INSUFFICIENT_LIDAR_EVIDENCE">LiDAR ไม่พอให้ตัดสิน</option><option value="OTHER">อื่น ๆ</option></select></label>
+              </div>
+            </details>
+            <label>Reference note<textarea id="roiReferenceNote" rows="2"></textarea></label>
+            <button id="saveRoiReference" class="primary">บันทึกต้นนี้ → ต้นถัดไป</button>
+          </section>
+          <section class="roi-subpanel">
+            <h2>ขั้น C · ตรวจ Tree ID ของระบบ</h2>
+            <p id="roiPredictionIntro" class="muted">ตรวจ Tree ID ทุกตัวว่าคือหนึ่งต้นจริง, ID ซ้ำ, ราก/กิ่ง หรือไม่ใช่ต้นไม้ ระยะ XY เป็นเพียงคำแนะนำ</p>
+            <label>Prediction<select id="roiPredictionSelect"></select></label>
+            <label>ผลการตรวจ<select id="predictionClassification"><option value="">— ยังไม่ตรวจ —</option><option value="CORRECT_UNIQUE_TREE">เป็นต้นไม้จริง 1 ต้น ถูกต้อง</option><option value="DUPLICATE_OF_REFERENCE_TREE">Tree ID ซ้ำกับต้นที่มีแล้ว</option><option value="ROOT_OR_BRANCH_FALSE_POSITIVE">เป็นรากหรือกิ่ง ไม่ใช่ต้นแยก</option><option value="NON_TREE_FALSE_POSITIVE">ไม่ใช่ต้นไม้</option><option value="INCORRECT_MERGE">รวมต้นไม้หลายต้นเข้าด้วยกันผิด</option><option value="UNCERTAIN">ไม่แน่ใจ</option><option value="OUTSIDE_ROI">อยู่นอกกรอบ ROI</option></select></label>
+            <label>Matched reference IDs<input id="predictionReferenceIds" placeholder="ROI_A_REF_0001"></label>
+            <label>Prediction note<textarea id="predictionReviewerNote" rows="2"></textarea></label>
+            <button id="saveRoiPrediction" class="primary">บันทึกแล้วไป Tree ID ถัดไป</button>
+            <p id="roiPredictionProgress" class="muted"></p>
+          </section>
+        </div>
+        <hr>
+        <label class="check"><input id="roiCensusComplete" type="checkbox"> ยืนยันว่าตรวจต้นไม้ที่มองเห็นครบทั้ง ROI และตรวจ Tree ID ทุกตัวแล้ว</label>
+        <label>Reviewer / census note<textarea id="roiReviewerNote" rows="3"></textarea></label>
+        <button id="saveRoiAnnotation" class="primary">บันทึกสถานะ ROI census</button>
+        <span id="roiSaveStatus" class="muted"></span>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="app.js?v=phase5a-protocol-v1"></script>
+</body>
+</html>

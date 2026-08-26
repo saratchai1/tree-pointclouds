@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stem-inventory-v2-phase1_5-annotations.schema.json",
+  "title": "V2 Phase 1.5 human review annotations",
+  "type": "object",
+  "required": ["algorithm_version", "annotations"],
+  "properties": {
+    "algorithm_version": {"const": "stem-inventory-v2-phase1_5"},
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "algorithm_version", "automatic_status", "human_label", "timestamp", "reviewer_note"],
+        "properties": {
+          "candidate_id": {"type": "string", "pattern": "^C-[0-9]{4}$"},
+          "algorithm_version": {"const": "stem-inventory-v2-phase1_5"},
+          "automatic_status": {"type": ["object", "null"]},
+          "human_label": {"enum": ["TRUE_MAIN_STEM", "PROP_ROOT_OR_ROOT_ONLY", "BRANCH", "OTHER_VEGETATION", "DUPLICATE_OF", "NOT_ENOUGH_INFORMATION", "MANUAL_REVIEW_REQUIRED"]},
+          "duplicate_target": {"type": ["string", "null"]},
+          "corrected_center": {"type": ["array", "null"], "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+          "corrected_measurement_height_m": {"type": ["number", "null"], "minimum": 0.5, "maximum": 3.5},
+          "timestamp": {"type": "string", "format": "date-time"},
+          "reviewer_note": {"type": "string"}
+        },
+        "allOf": [{"if": {"properties": {"human_label": {"const": "DUPLICATE_OF"}}}, "then": {"required": ["duplicate_target"]}}],
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

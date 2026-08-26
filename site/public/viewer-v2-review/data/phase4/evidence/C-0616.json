@@ -1,0 +1,6706 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4-stem-graph",
+  "candidate_id": "C-0616",
+  "interpretation": "UNRESOLVED FRAGMENT EVIDENCE; NOT A VERIFIED TREE",
+  "position": {
+    "x": 20.880000000000003,
+    "y": -7.199999999999999
+  },
+  "ground_z_m": -6.72276600599289,
+  "sampled": {
+    "centreline": {
+      "available": false,
+      "coefficients": null,
+      "height_range_m": null,
+      "points_xyz": [],
+      "residual_p90_m": null
+    },
+    "components_by_height": [
+      {
+        "height_m": 0.5,
+        "point_count": 425,
+        "connected_component_count": 13,
+        "candidate_centres": [
+          [
+            21.358103650135956,
+            -7.611442378365546
+          ],
+          [
+            20.914111166212727,
+            -6.878884906814047
+          ],
+          [
+            20.290414123598744,
+            -7.143562380047245
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.358103650135956,
+              -7.611442378365546
+            ],
+            "radius_m": 0.43591675506140987,
+            "circle_residual_m": 0.02397634068266589,
+            "inlier_count": 77,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 174,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.914111166212727,
+              -6.878884906814047
+            ],
+            "radius_m": 0.2884765089310084,
+            "circle_residual_m": 0.014657012096281412,
+            "inlier_count": 25,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 39,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.290414123598744,
+              -7.143562380047245
+            ],
+            "radius_m": 0.09457462743733522,
+            "circle_residual_m": 0.004598862013977606,
+            "inlier_count": 18,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 27,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 19,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 6,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 20,
+              "TOO_FEW_TRIAL_INLIERS": 19
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 0.55,
+        "point_count": 424,
+        "connected_component_count": 12,
+        "candidate_centres": [
+          [
+            21.271495293100163,
+            -6.973599088817308
+          ],
+          [
+            20.497103897088273,
+            -7.463240077497605
+          ],
+          [
+            20.48465758452067,
+            -6.38519924810255
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.271495293100163,
+              -6.973599088817308
+            ],
+            "radius_m": 0.3268031217931586,
+            "circle_residual_m": 0.018391162705676384,
+            "inlier_count": 60,
+            "angular_coverage_deg": 170.0,
+            "component_point_count": 189,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.497103897088273,
+              -7.463240077497605
+            ],
+            "radius_m": 0.4132361568278537,
+            "circle_residual_m": 0.02157688840643681,
+            "inlier_count": 37,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 51,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.48465758452067,
+              -6.38519924810255
+            ],
+            "radius_m": 0.13830571087675786,
+            "circle_residual_m": 0.005620727475069648,
+            "inlier_count": 16,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 42,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 0.6,
+        "point_count": 332,
+        "connected_component_count": 12,
+        "candidate_centres": [
+          [
+            21.70567912662418,
+            -6.776027045419645
+          ],
+          [
+            21.54484110146472,
+            -7.047455455506238
+          ],
+          [
+            20.544664400832808,
+            -7.865950293238743
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.70567912662418,
+              -6.776027045419645
+            ],
+            "radius_m": 0.6576372815534395,
+            "circle_residual_m": 0.027941797389146057,
+            "inlier_count": 65,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 163,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.54484110146472,
+              -7.047455455506238
+            ],
+            "radius_m": 0.10862514218446938,
+            "circle_residual_m": 0.005615252507183914,
+            "inlier_count": 19,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 31,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 4,
+            "center": [
+              20.544664400832808,
+              -7.865950293238743
+            ],
+            "radius_m": 0.0459856617681377,
+            "circle_residual_m": 0.004657650375586363,
+            "inlier_count": 12,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 13,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 13,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 5,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 22,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 36,
+              "TOO_FEW_TRIAL_INLIERS": 11
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 0.65,
+        "point_count": 368,
+        "connected_component_count": 12,
+        "candidate_centres": [
+          [
+            20.978151737011437,
+            -7.164829581312421
+          ],
+          [
+            21.5923024450045,
+            -6.740141917268492
+          ],
+          [
+            21.57005494727321,
+            -6.776500648422967
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.978151737011437,
+              -7.164829581312421
+            ],
+            "radius_m": 0.25084510273937394,
+            "circle_residual_m": 0.012042264012560382,
+            "inlier_count": 34,
+            "angular_coverage_deg": 200.0,
+            "component_point_count": 139,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.5923024450045,
+              -6.740141917268492
+            ],
+            "radius_m": 0.14206575945795075,
+            "circle_residual_m": 0.00687235822770719,
+            "inlier_count": 18,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 33,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.57005494727321,
+              -6.776500648422967
+            ],
+            "radius_m": 0.17083396131556133,
+            "circle_residual_m": 0.0077859762813248246,
+            "inlier_count": 19,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 32,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 0.7,
+        "point_count": 416,
+        "connected_component_count": 11,
+        "candidate_centres": [
+          [
+            20.400194474406714,
+            -7.279442691832347
+          ],
+          [
+            21.48991540119981,
+            -6.702445406603532
+          ],
+          [
+            19.94079295883553,
+            -7.141254455241824
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.400194474406714,
+              -7.279442691832347
+            ],
+            "radius_m": 0.5086583775914498,
+            "circle_residual_m": 0.028776889664865902,
+            "inlier_count": 78,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 184,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.48991540119981,
+              -6.702445406603532
+            ],
+            "radius_m": 0.20052151630081613,
+            "circle_residual_m": 0.011083723533948871,
+            "inlier_count": 30,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 60,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              19.94079295883553,
+              -7.141254455241824
+            ],
+            "radius_m": 0.2058355007275244,
+            "circle_residual_m": 0.0091762788840631,
+            "inlier_count": 20,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 23,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 7,
+            "point_count": 13,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 11,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 2,
+              "TOO_FEW_TRIAL_INLIERS": 67
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 0.75,
+        "point_count": 368,
+        "connected_component_count": 14,
+        "candidate_centres": [
+          [
+            20.788500980677902,
+            -6.974410977090418
+          ],
+          [
+            20.29536406562911,
+            -6.506231338786327
+          ],
+          [
+            21.381599381043596,
+            -7.4788415951849005
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.788500980677902,
+              -6.974410977090418
+            ],
+            "radius_m": 0.3772200804651534,
+            "circle_residual_m": 0.01862112075887629,
+            "inlier_count": 49,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 121,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 4,
+            "center": [
+              20.29536406562911,
+              -6.506231338786327
+            ],
+            "radius_m": 0.08317119703740507,
+            "circle_residual_m": 0.004288703520270777,
+            "inlier_count": 11,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 26,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.381599381043596,
+              -7.4788415951849005
+            ],
+            "radius_m": 0.1679722123899658,
+            "circle_residual_m": 0.006336104503181973,
+            "inlier_count": 11,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 29,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 23,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 19
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 0.8,
+        "point_count": 340,
+        "connected_component_count": 14,
+        "candidate_centres": [
+          [
+            21.144897621929022,
+            -7.360797271907265
+          ],
+          [
+            20.881479115893008,
+            -7.08871065080173
+          ],
+          [
+            20.896482250551305,
+            -7.264220004816491
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.144897621929022,
+              -7.360797271907265
+            ],
+            "radius_m": 0.2077269041361215,
+            "circle_residual_m": 0.00969712767100344,
+            "inlier_count": 32,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 102,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.881479115893008,
+              -7.08871065080173
+            ],
+            "radius_m": 0.23191229350504586,
+            "circle_residual_m": 0.010237069083762158,
+            "inlier_count": 26,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 37,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.896482250551305,
+              -7.264220004816491
+            ],
+            "radius_m": 0.08445568924228354,
+            "circle_residual_m": 0.005232641820071445,
+            "inlier_count": 18,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 38,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 7,
+            "point_count": 14,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 9,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 3,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 70,
+              "TOO_FEW_TRIAL_INLIERS": 0
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 0.85,
+        "point_count": 311,
+        "connected_component_count": 13,
+        "candidate_centres": [
+          [
+            21.351496537066005,
+            -7.451797988733003
+          ],
+          [
+            21.774195017485898,
+            -6.92837466664671
+          ],
+          [
+            20.88826076353119,
+            -7.07338653587955
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.351496537066005,
+              -7.451797988733003
+            ],
+            "radius_m": 0.09609088374723072,
+            "circle_residual_m": 0.004875294417365793,
+            "inlier_count": 22,
+            "angular_coverage_deg": 170.0,
+            "component_point_count": 68,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              21.774195017485898,
+              -6.92837466664671
+            ],
+            "radius_m": 0.059351276394714735,
+            "circle_residual_m": 0.005134872450395127,
+            "inlier_count": 22,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 29,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.88826076353119,
+              -7.07338653587955
+            ],
+            "radius_m": 0.24824634495432357,
+            "circle_residual_m": 0.014301218888675858,
+            "inlier_count": 26,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 50,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 0.9,
+        "point_count": 237,
+        "connected_component_count": 9,
+        "candidate_centres": [
+          [
+            21.340537341998086,
+            -7.326652513568091
+          ],
+          [
+            20.58687503456811,
+            -6.683905069647271
+          ],
+          [
+            21.272949621774114,
+            -6.480798875828503
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.340537341998086,
+              -7.326652513568091
+            ],
+            "radius_m": 0.08888542250839479,
+            "circle_residual_m": 0.004734922136031222,
+            "inlier_count": 23,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 61,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.58687503456811,
+              -6.683905069647271
+            ],
+            "radius_m": 0.22918244298063,
+            "circle_residual_m": 0.009834367746271293,
+            "inlier_count": 27,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 52,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.272949621774114,
+              -6.480798875828503
+            ],
+            "radius_m": 0.22746614121800907,
+            "circle_residual_m": 0.009193814551432528,
+            "inlier_count": 25,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 52,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 7,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 23,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 18,
+              "TOO_FEW_TRIAL_INLIERS": 32
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 0.95,
+        "point_count": 215,
+        "connected_component_count": 8,
+        "candidate_centres": [
+          [
+            20.6148141601068,
+            -6.719734838236791
+          ],
+          [
+            21.275171396760978,
+            -6.597786411895161
+          ],
+          [
+            21.735644308006886,
+            -6.859396537983676
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.6148141601068,
+              -6.719734838236791
+            ],
+            "radius_m": 0.180987518365147,
+            "circle_residual_m": 0.008457039644416091,
+            "inlier_count": 35,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 73,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.275171396760978,
+              -6.597786411895161
+            ],
+            "radius_m": 0.1784261047827493,
+            "circle_residual_m": 0.0067401996975938894,
+            "inlier_count": 22,
+            "angular_coverage_deg": 60.0,
+            "component_point_count": 26,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              21.735644308006886,
+              -6.859396537983676
+            ],
+            "radius_m": 0.04767585233511709,
+            "circle_residual_m": 0.004343363133563569,
+            "inlier_count": 15,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 20,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.0,
+        "point_count": 179,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            21.378550129359194,
+            -6.446961736075212
+          ],
+          [
+            20.520710839968615,
+            -6.52359868826726
+          ],
+          [
+            20.38722014350582,
+            -6.852075115300993
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 1,
+            "center": [
+              21.378550129359194,
+              -6.446961736075212
+            ],
+            "radius_m": 0.3210207734096867,
+            "circle_residual_m": 0.01171572125815491,
+            "inlier_count": 40,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 51,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 0,
+            "center": [
+              20.520710839968615,
+              -6.52359868826726
+            ],
+            "radius_m": 0.3221196075665344,
+            "circle_residual_m": 0.014017293191724182,
+            "inlier_count": 39,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 100,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.38722014350582,
+              -6.852075115300993
+            ],
+            "radius_m": 0.024002440957847766,
+            "circle_residual_m": 0.0046084877016848436,
+            "inlier_count": 9,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 9,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 6,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 70,
+              "TOO_FEW_TRIAL_INLIERS": 14
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 5,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 63,
+              "TOO_FEW_TRIAL_INLIERS": 19
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.05,
+        "point_count": 211,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            21.360517905279988,
+            -6.430893776705644
+          ],
+          [
+            20.539007760746124,
+            -6.529581075905552
+          ],
+          [
+            20.388878462460674,
+            -6.823184318634804
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 1,
+            "center": [
+              21.360517905279988,
+              -6.430893776705644
+            ],
+            "radius_m": 0.3223166576616957,
+            "circle_residual_m": 0.01409553519601035,
+            "inlier_count": 53,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 70,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 0,
+            "center": [
+              20.539007760746124,
+              -6.529581075905552
+            ],
+            "radius_m": 0.3048398214082485,
+            "circle_residual_m": 0.014496069053335153,
+            "inlier_count": 44,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 123,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.388878462460674,
+              -6.823184318634804
+            ],
+            "radius_m": 0.03963563926460985,
+            "circle_residual_m": 0.005011626868669936,
+            "inlier_count": 8,
+            "angular_coverage_deg": 60.0,
+            "component_point_count": 8,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 6,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 14,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 22,
+              "TOO_FEW_TRIAL_INLIERS": 49
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.1,
+        "point_count": 255,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.963965926936837,
+            -6.535037692205916
+          ],
+          [
+            20.38017024252345,
+            -6.44553065529745
+          ],
+          [
+            21.636635379287323,
+            -6.6608942019479125
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.963965926936837,
+              -6.535037692205916
+            ],
+            "radius_m": 0.23181414694839045,
+            "circle_residual_m": 0.011646426202134056,
+            "inlier_count": 50,
+            "angular_coverage_deg": 220.0,
+            "component_point_count": 143,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.38017024252345,
+              -6.44553065529745
+            ],
+            "radius_m": 0.192338813243384,
+            "circle_residual_m": 0.008104975657077065,
+            "inlier_count": 32,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 69,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.636635379287323,
+              -6.6608942019479125
+            ],
+            "radius_m": 0.03392550875107584,
+            "circle_residual_m": 0.0037228460429954004,
+            "inlier_count": 8,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 12,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 8,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 1,
+              "TOO_FEW_TRIAL_INLIERS": 26
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 7,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 25,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 47
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.15,
+        "point_count": 245,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            20.71467856677554,
+            -6.758034522451507
+          ],
+          [
+            20.211444750331385,
+            -6.903682360170428
+          ],
+          [
+            21.57196915876783,
+            -6.788758510470907
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.71467856677554,
+              -6.758034522451507
+            ],
+            "radius_m": 0.4708139717948262,
+            "circle_residual_m": 0.026162353427300767,
+            "inlier_count": 61,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 189,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.211444750331385,
+              -6.903682360170428
+            ],
+            "radius_m": 0.15286569085799367,
+            "circle_residual_m": 0.006953872155531601,
+            "inlier_count": 15,
+            "angular_coverage_deg": 50.0,
+            "component_point_count": 23,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              21.57196915876783,
+              -6.788758510470907
+            ],
+            "radius_m": 0.02761302995903811,
+            "circle_residual_m": 0.004840244073134589,
+            "inlier_count": 8,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 12,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 2,
+            "point_count": 14,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 3,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 7,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 52,
+              "TOO_FEW_TRIAL_INLIERS": 21
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 7,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 52,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 44
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.2,
+        "point_count": 202,
+        "connected_component_count": 9,
+        "candidate_centres": [
+          [
+            20.504511241867505,
+            -6.553163794618653
+          ],
+          [
+            20.329848377134848,
+            -7.006093377000923
+          ],
+          [
+            21.16757554434625,
+            -6.473270038055257
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.504511241867505,
+              -6.553163794618653
+            ],
+            "radius_m": 0.2528177464851247,
+            "circle_residual_m": 0.011485544548381256,
+            "inlier_count": 37,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 87,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.329848377134848,
+              -7.006093377000923
+            ],
+            "radius_m": 0.029507162664696093,
+            "circle_residual_m": 0.004432178181000874,
+            "inlier_count": 14,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 18,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              21.16757554434625,
+              -6.473270038055257
+            ],
+            "radius_m": 0.11043837240786802,
+            "circle_residual_m": 0.005273294701559218,
+            "inlier_count": 11,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 17,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.25,
+        "point_count": 199,
+        "connected_component_count": 10,
+        "candidate_centres": [
+          [
+            20.501633128874463,
+            -6.536823370267054
+          ],
+          [
+            20.347393028781685,
+            -7.024080376595687
+          ],
+          [
+            21.074522588303594,
+            -6.489923798503176
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.501633128874463,
+              -6.536823370267054
+            ],
+            "radius_m": 0.2527563882731264,
+            "circle_residual_m": 0.011565388706091263,
+            "inlier_count": 26,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 55,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.347393028781685,
+              -7.024080376595687
+            ],
+            "radius_m": 0.02848831938302188,
+            "circle_residual_m": 0.005363062978943889,
+            "inlier_count": 16,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 24,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              21.074522588303594,
+              -6.489923798503176
+            ],
+            "radius_m": 0.03411775826296915,
+            "circle_residual_m": 0.005749548278444952,
+            "inlier_count": 13,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 21,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 7,
+            "point_count": 10,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 9,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 5,
+              "TOO_FEW_TRIAL_INLIERS": 19
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.3,
+        "point_count": 218,
+        "connected_component_count": 8,
+        "candidate_centres": [
+          [
+            20.352509856816358,
+            -7.028021188795302
+          ],
+          [
+            21.036731065920602,
+            -6.616444801321042
+          ],
+          [
+            20.491292342368972,
+            -6.5727194299950575
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 2,
+            "center": [
+              20.352509856816358,
+              -7.028021188795302
+            ],
+            "radius_m": 0.02648214854310428,
+            "circle_residual_m": 0.00612468502684734,
+            "inlier_count": 25,
+            "angular_coverage_deg": 200.0,
+            "component_point_count": 33,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.036731065920602,
+              -6.616444801321042
+            ],
+            "radius_m": 0.1761509596096157,
+            "circle_residual_m": 0.009913110957610835,
+            "inlier_count": 32,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 53,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 0,
+            "center": [
+              20.491292342368972,
+              -6.5727194299950575
+            ],
+            "radius_m": 0.2661196463485743,
+            "circle_residual_m": 0.012036901935229829,
+            "inlier_count": 24,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 56,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 7,
+            "point_count": 7,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 34,
+              "TOO_FEW_TRIAL_INLIERS": 0
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.35,
+        "point_count": 204,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            21.049335037431312,
+            -6.610560247413413
+          ],
+          [
+            20.328120588934425,
+            -6.9003494983169125
+          ],
+          [
+            20.85131259690369,
+            -6.4384471204637554
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.049335037431312,
+              -6.610560247413413
+            ],
+            "radius_m": 0.17848013770798576,
+            "circle_residual_m": 0.008625824690164298,
+            "inlier_count": 26,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 67,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.328120588934425,
+              -6.9003494983169125
+            ],
+            "radius_m": 0.12982230043043821,
+            "circle_residual_m": 0.007128823363603613,
+            "inlier_count": 23,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 55,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.85131259690369,
+              -6.4384471204637554
+            ],
+            "radius_m": 0.28628662592002374,
+            "circle_residual_m": 0.009010271961030429,
+            "inlier_count": 23,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 51,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.4,
+        "point_count": 214,
+        "connected_component_count": 8,
+        "candidate_centres": [
+          [
+            21.269358840498413,
+            -6.381539178291351
+          ],
+          [
+            20.45496287508968,
+            -6.8925852930836236
+          ],
+          [
+            20.959176364020724,
+            -6.394885657572551
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.269358840498413,
+              -6.381539178291351
+            ],
+            "radius_m": 0.22146765037519017,
+            "circle_residual_m": 0.01010925875933869,
+            "inlier_count": 47,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 77,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.45496287508968,
+              -6.8925852930836236
+            ],
+            "radius_m": 0.1697477291860666,
+            "circle_residual_m": 0.0076593835942230255,
+            "inlier_count": 31,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 60,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.959176364020724,
+              -6.394885657572551
+            ],
+            "radius_m": 0.21887597435264008,
+            "circle_residual_m": 0.008333132402444172,
+            "inlier_count": 16,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 24,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.45,
+        "point_count": 237,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            21.043264918903965,
+            -6.784144721939712
+          ],
+          [
+            20.51912834884571,
+            -6.747388863050051
+          ],
+          [
+            20.85914436246877,
+            -6.284097173916225
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.043264918903965,
+              -6.784144721939712
+            ],
+            "radius_m": 0.24630566026129755,
+            "circle_residual_m": 0.01085907456407547,
+            "inlier_count": 50,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 92,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.51912834884571,
+              -6.747388863050051
+            ],
+            "radius_m": 0.3131901891283761,
+            "circle_residual_m": 0.015261688813241742,
+            "inlier_count": 34,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 73,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.85914436246877,
+              -6.284097173916225
+            ],
+            "radius_m": 0.1313496654964237,
+            "circle_residual_m": 0.006219299201943072,
+            "inlier_count": 18,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 30,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 46,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 45
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.5,
+        "point_count": 282,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            21.237844425647946,
+            -6.864614836729457
+          ],
+          [
+            20.181732353850357,
+            -7.04394370147515
+          ],
+          [
+            20.827993526612804,
+            -6.4148342162875815
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.237844425647946,
+              -6.864614836729457
+            ],
+            "radius_m": 0.23959765039772826,
+            "circle_residual_m": 0.012620280251982394,
+            "inlier_count": 42,
+            "angular_coverage_deg": 170.0,
+            "component_point_count": 124,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.181732353850357,
+              -7.04394370147515
+            ],
+            "radius_m": 0.20706226085572224,
+            "circle_residual_m": 0.010364133965734388,
+            "inlier_count": 31,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 114,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.827993526612804,
+              -6.4148342162875815
+            ],
+            "radius_m": 0.12998773534581876,
+            "circle_residual_m": 0.007152031350467334,
+            "inlier_count": 14,
+            "angular_coverage_deg": 60.0,
+            "component_point_count": 20,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.55,
+        "point_count": 306,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            21.149301296042957,
+            -6.817363433444595
+          ],
+          [
+            20.166046958845847,
+            -7.014232586430052
+          ],
+          [
+            20.53754297786248,
+            -6.544362200270257
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.149301296042957,
+              -6.817363433444595
+            ],
+            "radius_m": 0.20001968179175902,
+            "circle_residual_m": 0.009670935596463376,
+            "inlier_count": 52,
+            "angular_coverage_deg": 190.0,
+            "component_point_count": 197,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.166046958845847,
+              -7.014232586430052
+            ],
+            "radius_m": 0.174247696025357,
+            "circle_residual_m": 0.009217123514986963,
+            "inlier_count": 23,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 46,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.53754297786248,
+              -6.544362200270257
+            ],
+            "radius_m": 0.30412415670681947,
+            "circle_residual_m": 0.012884508281124264,
+            "inlier_count": 24,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 28,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 41,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 55
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.6,
+        "point_count": 356,
+        "connected_component_count": 7,
+        "candidate_centres": [
+          [
+            20.931343520891787,
+            -6.723175010494217
+          ],
+          [
+            20.138248970290686,
+            -7.283386321959336
+          ],
+          [
+            20.912602572580123,
+            -6.291372874192268
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.931343520891787,
+              -6.723175010494217
+            ],
+            "radius_m": 0.27591128717862085,
+            "circle_residual_m": 0.014383297277422078,
+            "inlier_count": 89,
+            "angular_coverage_deg": 170.0,
+            "component_point_count": 230,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.138248970290686,
+              -7.283386321959336
+            ],
+            "radius_m": 0.2645083940728419,
+            "circle_residual_m": 0.01311251814547157,
+            "inlier_count": 21,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 57,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.912602572580123,
+              -6.291372874192268
+            ],
+            "radius_m": 0.02615329317864015,
+            "circle_residual_m": 0.0047197254731367305,
+            "inlier_count": 13,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 20,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 15,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 73,
+              "TOO_FEW_TRIAL_INLIERS": 0
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 11,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 46
+            }
+          },
+          {
+            "component_index": 6,
+            "point_count": 7,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 71,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 16
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.65,
+        "point_count": 324,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            20.931019154460383,
+            -6.623620411090196
+          ],
+          [
+            20.32192509236893,
+            -6.829970523676201
+          ],
+          [
+            20.85035197060111,
+            -6.264006837763691
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.931019154460383,
+              -6.623620411090196
+            ],
+            "radius_m": 0.3598538873481898,
+            "circle_residual_m": 0.017932005088850525,
+            "inlier_count": 75,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 140,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.32192509236893,
+              -6.829970523676201
+            ],
+            "radius_m": 0.2822657635399379,
+            "circle_residual_m": 0.013650372081216515,
+            "inlier_count": 44,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 139,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.85035197060111,
+              -6.264006837763691
+            ],
+            "radius_m": 0.03718737939522304,
+            "circle_residual_m": 0.00482310697962712,
+            "inlier_count": 9,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 12,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 2,
+            "point_count": 13,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 76,
+              "TOO_FEW_TRIAL_INLIERS": 4
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 6,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 7,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 10,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 68
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.7,
+        "point_count": 198,
+        "connected_component_count": 8,
+        "candidate_centres": [
+          [
+            20.298487199824194,
+            -6.7899857514652835
+          ],
+          [
+            20.241867899251314,
+            -7.088606707025166
+          ],
+          [
+            20.867719363170153,
+            -6.643325410186276
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.298487199824194,
+              -6.7899857514652835
+            ],
+            "radius_m": 0.24339830101413157,
+            "circle_residual_m": 0.01317721464084247,
+            "inlier_count": 33,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 64,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.241867899251314,
+              -7.088606707025166
+            ],
+            "radius_m": 0.03042151859061841,
+            "circle_residual_m": 0.006060255092849637,
+            "inlier_count": 18,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 38,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.867719363170153,
+              -6.643325410186276
+            ],
+            "radius_m": 0.310130059990853,
+            "circle_residual_m": 0.015488886223041107,
+            "inlier_count": 18,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 31,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 6,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 15,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 34,
+              "TOO_FEW_TRIAL_INLIERS": 27
+            }
+          },
+          {
+            "component_index": 7,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 16,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 6,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 11,
+              "TOO_FEW_TRIAL_INLIERS": 16
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.75,
+        "point_count": 107,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.223875409633973,
+            -7.112785124833145
+          ],
+          [
+            20.34247241940765,
+            -6.704622929109478
+          ],
+          [
+            20.510637016715364,
+            -6.562615619054094
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 1,
+            "center": [
+              20.223875409633973,
+              -7.112785124833145
+            ],
+            "radius_m": 0.04534152080193018,
+            "circle_residual_m": 0.006053037545866504,
+            "inlier_count": 13,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 23,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 0,
+            "center": [
+              20.34247241940765,
+              -6.704622929109478
+            ],
+            "radius_m": 0.2818499638839828,
+            "circle_residual_m": 0.013031189849982115,
+            "inlier_count": 15,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 29,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.510637016715364,
+              -6.562615619054094
+            ],
+            "radius_m": 0.0431415935649726,
+            "circle_residual_m": 0.0057222427037947,
+            "inlier_count": 9,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 11,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 11,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 3,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 64,
+              "TOO_FEW_TRIAL_INLIERS": 5
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 11,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 1,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 5,
+              "TOO_FEW_TRIAL_INLIERS": 65
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.8,
+        "point_count": 122,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.965989599974396,
+            -6.421323629331953
+          ],
+          [
+            20.204765206268924,
+            -6.581296739949897
+          ],
+          [
+            21.152086778187805,
+            -6.781081096984326
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.965989599974396,
+              -6.421323629331953
+            ],
+            "radius_m": 0.07954925209433206,
+            "circle_residual_m": 0.0057081856361432285,
+            "inlier_count": 16,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 45,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.204765206268924,
+              -6.581296739949897
+            ],
+            "radius_m": 0.11350820727175817,
+            "circle_residual_m": 0.006232918385474407,
+            "inlier_count": 18,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 31,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 4,
+            "center": [
+              21.152086778187805,
+              -6.781081096984326
+            ],
+            "radius_m": 0.04879116786543367,
+            "circle_residual_m": 0.005876223556357544,
+            "inlier_count": 8,
+            "angular_coverage_deg": 60.0,
+            "component_point_count": 8,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 2,
+            "point_count": 18,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 36,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 24,
+              "TOO_FEW_TRIAL_INLIERS": 17
+            }
+          },
+          {
+            "component_index": 3,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 13,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 59,
+              "TOO_FEW_TRIAL_INLIERS": 0
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 5,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 6,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 76,
+              "TOO_FEW_TRIAL_INLIERS": 9
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 1.85,
+        "point_count": 179,
+        "connected_component_count": 3,
+        "candidate_centres": [
+          [
+            20.97212077187997,
+            -6.491198749657936
+          ],
+          [
+            20.361900831910017,
+            -6.431324397494222
+          ],
+          [
+            21.08957212249736,
+            -6.756898461085362
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.97212077187997,
+              -6.491198749657936
+            ],
+            "radius_m": 0.09719393960314257,
+            "circle_residual_m": 0.005386671209232614,
+            "inlier_count": 26,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 81,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.361900831910017,
+              -6.431324397494222
+            ],
+            "radius_m": 0.23272748031895193,
+            "circle_residual_m": 0.013436231528138134,
+            "inlier_count": 31,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 74,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.08957212249736,
+              -6.756898461085362
+            ],
+            "radius_m": 0.021309942720783376,
+            "circle_residual_m": 0.005417324352565641,
+            "inlier_count": 14,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 16,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.9,
+        "point_count": 184,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.727679794485137,
+            -6.765098349373593
+          ],
+          [
+            20.387351855285456,
+            -6.612240757221401
+          ],
+          [
+            20.233419913606692,
+            -6.5792636104570175
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.727679794485137,
+              -6.765098349373593
+            ],
+            "radius_m": 0.3688549075773771,
+            "circle_residual_m": 0.019179166724225323,
+            "inlier_count": 66,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 115,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.387351855285456,
+              -6.612240757221401
+            ],
+            "radius_m": 0.10542823161683323,
+            "circle_residual_m": 0.0053219939238034605,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 13,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.233419913606692,
+              -6.5792636104570175
+            ],
+            "radius_m": 0.12940604736403394,
+            "circle_residual_m": 0.005674455102527402,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 34,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 1.95,
+        "point_count": 266,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.81444570899916,
+            -6.799412371012868
+          ],
+          [
+            20.24596356907795,
+            -6.722227168163092
+          ],
+          [
+            20.459980784581155,
+            -6.439882356881664
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.81444570899916,
+              -6.799412371012868
+            ],
+            "radius_m": 0.2929862360105835,
+            "circle_residual_m": 0.013976507072736866,
+            "inlier_count": 70,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 160,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.24596356907795,
+              -6.722227168163092
+            ],
+            "radius_m": 0.22037482194395816,
+            "circle_residual_m": 0.010066115619657959,
+            "inlier_count": 36,
+            "angular_coverage_deg": 180.0,
+            "component_point_count": 72,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.459980784581155,
+              -6.439882356881664
+            ],
+            "radius_m": 0.10363640298443944,
+            "circle_residual_m": 0.004946943297091015,
+            "inlier_count": 15,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 18,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 7,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 1,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 87,
+              "TOO_FEW_TRIAL_INLIERS": 0
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.0,
+        "point_count": 320,
+        "connected_component_count": 3,
+        "candidate_centres": [
+          [
+            20.560773240937653,
+            -6.926618751235164
+          ],
+          [
+            20.388619499616528,
+            -6.80986516836646
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.560773240937653,
+              -6.926618751235164
+            ],
+            "radius_m": 0.5049751474127112,
+            "circle_residual_m": 0.027423019968537153,
+            "inlier_count": 117,
+            "angular_coverage_deg": 190.0,
+            "component_point_count": 287,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.388619499616528,
+              -6.80986516836646
+            ],
+            "radius_m": 0.12190362907067781,
+            "circle_residual_m": 0.003679340371643724,
+            "inlier_count": 9,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 15,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 2,
+            "point_count": 7,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 3,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 10,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 2,
+              "TOO_FEW_TRIAL_INLIERS": 44
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.05,
+        "point_count": 269,
+        "connected_component_count": 2,
+        "candidate_centres": [
+          [
+            20.424843556425767,
+            -7.10933563434393
+          ],
+          [
+            20.513040756624008,
+            -7.296434509118516
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.424843556425767,
+              -7.10933563434393
+            ],
+            "radius_m": 0.6146680496513456,
+            "circle_residual_m": 0.023241054347096186,
+            "inlier_count": 111,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 246,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.513040756624008,
+              -7.296434509118516
+            ],
+            "radius_m": 0.06623588447806938,
+            "circle_residual_m": 0.004455218229395249,
+            "inlier_count": 11,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 17,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 2.1,
+        "point_count": 206,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            21.083102816473424,
+            -7.125217371633566
+          ],
+          [
+            20.24148100390639,
+            -6.76917035549562
+          ],
+          [
+            20.515037391319986,
+            -7.298430262796791
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.083102816473424,
+              -7.125217371633566
+            ],
+            "radius_m": 0.26472795570568314,
+            "circle_residual_m": 0.01199373870066795,
+            "inlier_count": 28,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 63,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.24148100390639,
+              -6.76917035549562
+            ],
+            "radius_m": 0.26593466308083535,
+            "circle_residual_m": 0.01228740334367148,
+            "inlier_count": 18,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 51,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.515037391319986,
+              -7.298430262796791
+            ],
+            "radius_m": 0.06714596797257039,
+            "circle_residual_m": 0.004637009800570021,
+            "inlier_count": 12,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 21,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 2.15,
+        "point_count": 209,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            19.9604676461663,
+            -7.292077904490428
+          ],
+          [
+            20.414726726073496,
+            -6.945840977292261
+          ],
+          [
+            20.688649172514783,
+            -7.064903754000801
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              19.9604676461663,
+              -7.292077904490428
+            ],
+            "radius_m": 0.0568798944824778,
+            "circle_residual_m": 0.005485887653313415,
+            "inlier_count": 22,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 55,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.414726726073496,
+              -6.945840977292261
+            ],
+            "radius_m": 0.5107360300097635,
+            "circle_residual_m": 0.022381201842135937,
+            "inlier_count": 34,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 47,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.688649172514783,
+              -7.064903754000801
+            ],
+            "radius_m": 0.19573597124744355,
+            "circle_residual_m": 0.008158410071603677,
+            "inlier_count": 23,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 36,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 7,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 49
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.2,
+        "point_count": 197,
+        "connected_component_count": 7,
+        "candidate_centres": [
+          [
+            20.291425336342897,
+            -6.765116568195525
+          ],
+          [
+            19.97047030994931,
+            -7.3030670051676925
+          ],
+          [
+            20.757900003342172,
+            -7.109845894236043
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.291425336342897,
+              -6.765116568195525
+            ],
+            "radius_m": 0.3086364792713514,
+            "circle_residual_m": 0.017640867793861356,
+            "inlier_count": 31,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 71,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              19.97047030994931,
+              -7.3030670051676925
+            ],
+            "radius_m": 0.07230468439640626,
+            "circle_residual_m": 0.005941225995797925,
+            "inlier_count": 17,
+            "angular_coverage_deg": 160.0,
+            "component_point_count": 43,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.757900003342172,
+              -7.109845894236043
+            ],
+            "radius_m": 0.11733190170308047,
+            "circle_residual_m": 0.005978560303918322,
+            "inlier_count": 17,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 22,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 13,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 5,
+              "TOO_FEW_TRIAL_INLIERS": 33
+            }
+          },
+          {
+            "component_index": 6,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 4,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 76,
+              "TOO_FEW_TRIAL_INLIERS": 1
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.25,
+        "point_count": 197,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.362830420865542,
+            -7.219823211895726
+          ],
+          [
+            21.038816891234926,
+            -6.786599009523857
+          ],
+          [
+            20.55658040102667,
+            -6.540100173163497
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 1,
+            "center": [
+              20.362830420865542,
+              -7.219823211895726
+            ],
+            "radius_m": 0.11035382603825036,
+            "circle_residual_m": 0.005854860674214154,
+            "inlier_count": 22,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 48,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 0,
+            "center": [
+              21.038816891234926,
+              -6.786599009523857
+            ],
+            "radius_m": 0.4538108109238138,
+            "circle_residual_m": 0.020349473532793757,
+            "inlier_count": 32,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 51,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.55658040102667,
+              -6.540100173163497
+            ],
+            "radius_m": 0.29951445385030495,
+            "circle_residual_m": 0.013812463251377558,
+            "inlier_count": 19,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 37,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 3,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 5,
+              "TOO_FEW_TRIAL_INLIERS": 64
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.3,
+        "point_count": 283,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.536013466149505,
+            -6.899003863216438
+          ],
+          [
+            21.097770938885773,
+            -6.41244693294786
+          ],
+          [
+            20.537996835983826,
+            -6.606630090477385
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.536013466149505,
+              -6.899003863216438
+            ],
+            "radius_m": 0.445764094942505,
+            "circle_residual_m": 0.022357495336328744,
+            "inlier_count": 69,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 136,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.097770938885773,
+              -6.41244693294786
+            ],
+            "radius_m": 0.21056926299520887,
+            "circle_residual_m": 0.008478495343897755,
+            "inlier_count": 25,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 65,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.537996835983826,
+              -6.606630090477385
+            ],
+            "radius_m": 0.3439618346755755,
+            "circle_residual_m": 0.014540522378552764,
+            "inlier_count": 26,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 37,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 7,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 6,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 56,
+              "TOO_FEW_TRIAL_INLIERS": 8
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.35,
+        "point_count": 333,
+        "connected_component_count": 3,
+        "candidate_centres": [
+          [
+            20.716814788345584,
+            -6.804789407579229
+          ],
+          [
+            19.97028554730664,
+            -7.017527223467757
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.716814788345584,
+              -6.804789407579229
+            ],
+            "radius_m": 0.41159945707795076,
+            "circle_residual_m": 0.02030765833552274,
+            "inlier_count": 88,
+            "angular_coverage_deg": 190.0,
+            "component_point_count": 301,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              19.97028554730664,
+              -7.017527223467757
+            ],
+            "radius_m": 0.1435145770400957,
+            "circle_residual_m": 0.007711512494542597,
+            "inlier_count": 10,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 15,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 2,
+            "point_count": 6,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 7,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 75
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.4,
+        "point_count": 297,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            20.93116999726249,
+            -6.6418965553172695
+          ],
+          [
+            20.493682441610805,
+            -6.358879697615055
+          ],
+          [
+            20.001594443564244,
+            -6.924881566949378
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.93116999726249,
+              -6.6418965553172695
+            ],
+            "radius_m": 0.4624525752403201,
+            "circle_residual_m": 0.023167429957511778,
+            "inlier_count": 84,
+            "angular_coverage_deg": 190.0,
+            "component_point_count": 222,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.493682441610805,
+              -6.358879697615055
+            ],
+            "radius_m": 0.10579938682174732,
+            "circle_residual_m": 0.004318740125452621,
+            "inlier_count": 13,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 33,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.001594443564244,
+              -6.924881566949378
+            ],
+            "radius_m": 0.12142775936723896,
+            "circle_residual_m": 0.005207871562251143,
+            "inlier_count": 9,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 19,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 9,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 2,
+              "TOO_FEW_TRIAL_INLIERS": 61
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 1,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 1,
+              "TOO_FEW_TRIAL_INLIERS": 89
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.45,
+        "point_count": 249,
+        "connected_component_count": 7,
+        "candidate_centres": [
+          [
+            21.158044861101644,
+            -6.8121420754333615
+          ],
+          [
+            20.378283229131025,
+            -7.251463901718915
+          ],
+          [
+            20.01802968647019,
+            -7.109671815810598
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.158044861101644,
+              -6.8121420754333615
+            ],
+            "radius_m": 0.3392293770936439,
+            "circle_residual_m": 0.0161491902584784,
+            "inlier_count": 22,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 60,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.378283229131025,
+              -7.251463901718915
+            ],
+            "radius_m": 0.3078736918035801,
+            "circle_residual_m": 0.016286423037521876,
+            "inlier_count": 27,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 58,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.01802968647019,
+              -7.109671815810598
+            ],
+            "radius_m": 0.13684800107345121,
+            "circle_residual_m": 0.0072357818784422314,
+            "inlier_count": 16,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 48,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 12,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 1,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 26
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.5,
+        "point_count": 208,
+        "connected_component_count": 7,
+        "candidate_centres": [
+          [
+            20.00473761338048,
+            -7.041869657622606
+          ],
+          [
+            20.47325346227319,
+            -7.320384857432628
+          ],
+          [
+            20.971810828117796,
+            -6.540694463505917
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.00473761338048,
+              -7.041869657622606
+            ],
+            "radius_m": 0.14052806763657671,
+            "circle_residual_m": 0.007947863319785876,
+            "inlier_count": 21,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 48,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.47325346227319,
+              -7.320384857432628
+            ],
+            "radius_m": 0.19221722950982303,
+            "circle_residual_m": 0.00980157531818135,
+            "inlier_count": 21,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 42,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.971810828117796,
+              -6.540694463505917
+            ],
+            "radius_m": 0.12545759850959093,
+            "circle_residual_m": 0.0060414240618982375,
+            "inlier_count": 15,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 28,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 6,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 56,
+              "TOO_FEW_TRIAL_INLIERS": 32
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.55,
+        "point_count": 215,
+        "connected_component_count": 8,
+        "candidate_centres": [
+          [
+            20.954649416223177,
+            -6.479943141780271
+          ],
+          [
+            20.63839962961351,
+            -7.288271381134272
+          ],
+          [
+            20.165371415395896,
+            -7.352132396595974
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 2,
+            "center": [
+              20.954649416223177,
+              -6.479943141780271
+            ],
+            "radius_m": 0.0993854129600831,
+            "circle_residual_m": 0.006132844312359249,
+            "inlier_count": 16,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 29,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.63839962961351,
+              -7.288271381134272
+            ],
+            "radius_m": 0.054915899909716716,
+            "circle_residual_m": 0.005150305288490541,
+            "inlier_count": 14,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 32,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 6,
+            "center": [
+              20.165371415395896,
+              -7.352132396595974
+            ],
+            "radius_m": 0.045845600828027334,
+            "circle_residual_m": 0.005754570451888034,
+            "inlier_count": 13,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 18,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 2.6,
+        "point_count": 210,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            21.265017399087768,
+            -6.487146912744352
+          ],
+          [
+            20.61985265530057,
+            -7.294370532240265
+          ],
+          [
+            20.585112667089998,
+            -6.428437179999787
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.265017399087768,
+              -6.487146912744352
+            ],
+            "radius_m": 0.2865618139194778,
+            "circle_residual_m": 0.014392388103896111,
+            "inlier_count": 33,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 84,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.61985265530057,
+              -7.294370532240265
+            ],
+            "radius_m": 0.066047619520422,
+            "circle_residual_m": 0.005550937940203865,
+            "inlier_count": 18,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 32,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.585112667089998,
+              -6.428437179999787
+            ],
+            "radius_m": 0.16353891807645116,
+            "circle_residual_m": 0.007992416970083693,
+            "inlier_count": 13,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 31,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 14,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 11,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 14,
+              "TOO_FEW_TRIAL_INLIERS": 54
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.65,
+        "point_count": 206,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            21.249352192400448,
+            -6.476616573207128
+          ],
+          [
+            20.138052751689123,
+            -7.385845703617109
+          ],
+          [
+            20.57298978855425,
+            -7.362590378955462
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.249352192400448,
+              -6.476616573207128
+            ],
+            "radius_m": 0.29373298146881965,
+            "circle_residual_m": 0.016354518233429663,
+            "inlier_count": 35,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 93,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.138052751689123,
+              -7.385845703617109
+            ],
+            "radius_m": 0.1837820453813551,
+            "circle_residual_m": 0.0096876723464546,
+            "inlier_count": 16,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 40,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.57298978855425,
+              -7.362590378955462
+            ],
+            "radius_m": 0.02274703942530047,
+            "circle_residual_m": 0.0044484059977091,
+            "inlier_count": 9,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 17,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 13,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 81
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 10,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 3,
+              "TOO_FEW_TRIAL_INLIERS": 70
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.7,
+        "point_count": 206,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            21.215679657481495,
+            -6.384609705838244
+          ],
+          [
+            20.37907199649227,
+            -7.2105456006914075
+          ],
+          [
+            20.504995608275056,
+            -6.440961251066401
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              21.215679657481495,
+              -6.384609705838244
+            ],
+            "radius_m": 0.28983985813123486,
+            "circle_residual_m": 0.013710443504648928,
+            "inlier_count": 29,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 81,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.37907199649227,
+              -7.2105456006914075
+            ],
+            "radius_m": 0.21693227466530962,
+            "circle_residual_m": 0.009126843298245013,
+            "inlier_count": 20,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 46,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.504995608275056,
+              -6.440961251066401
+            ],
+            "radius_m": 0.20574075618114998,
+            "circle_residual_m": 0.008562463210200672,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 26,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 14,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 1,
+              "TOO_FEW_TRIAL_INLIERS": 45
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 13,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 83
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.75,
+        "point_count": 222,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.450080410174117,
+            -7.1319030226181575
+          ],
+          [
+            21.143584438744067,
+            -6.8278810907326095
+          ],
+          [
+            20.520872531084834,
+            -6.460002130240836
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.450080410174117,
+              -7.1319030226181575
+            ],
+            "radius_m": 0.3408146097668297,
+            "circle_residual_m": 0.016759750114406568,
+            "inlier_count": 38,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 102,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.143584438744067,
+              -6.8278810907326095
+            ],
+            "radius_m": 0.15098218313634632,
+            "circle_residual_m": 0.007629502850923249,
+            "inlier_count": 25,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 62,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.520872531084834,
+              -6.460002130240836
+            ],
+            "radius_m": 0.20286929273701013,
+            "circle_residual_m": 0.010252288866866952,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 15,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 5,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 1,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 1,
+              "TOO_FEW_TRIAL_INLIERS": 87
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.8,
+        "point_count": 230,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.4244084069524,
+            -7.146325032454797
+          ],
+          [
+            20.94597648053182,
+            -6.636995036898892
+          ],
+          [
+            20.511847658660418,
+            -6.462987485786909
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.4244084069524,
+              -7.146325032454797
+            ],
+            "radius_m": 0.2915342120813009,
+            "circle_residual_m": 0.015008182164814195,
+            "inlier_count": 38,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 119,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.94597648053182,
+              -6.636995036898892
+            ],
+            "radius_m": 0.18634398722669207,
+            "circle_residual_m": 0.010334756125526735,
+            "inlier_count": 22,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 65,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.511847658660418,
+              -6.462987485786909
+            ],
+            "radius_m": 0.20606023306116117,
+            "circle_residual_m": 0.008132757303109792,
+            "inlier_count": 8,
+            "angular_coverage_deg": 60.0,
+            "component_point_count": 31,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 9,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 3,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 75,
+              "TOO_FEW_TRIAL_INLIERS": 9
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.85,
+        "point_count": 189,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.05834241897308,
+            -7.194710085459628
+          ],
+          [
+            20.438761166793146,
+            -7.499266146814239
+          ],
+          [
+            20.544728275886417,
+            -6.503854031020214
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.05834241897308,
+              -7.194710085459628
+            ],
+            "radius_m": 0.08391542658611642,
+            "circle_residual_m": 0.004738482541549562,
+            "inlier_count": 19,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 58,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.438761166793146,
+              -7.499266146814239
+            ],
+            "radius_m": 0.11065627435838951,
+            "circle_residual_m": 0.005162188513492997,
+            "inlier_count": 17,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 40,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.544728275886417,
+              -6.503854031020214
+            ],
+            "radius_m": 0.22825794437295963,
+            "circle_residual_m": 0.011792995034461523,
+            "inlier_count": 13,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 36,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 2.9,
+        "point_count": 146,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.638511922066723,
+            -7.245789458600903
+          ],
+          [
+            20.46962695801493,
+            -6.350758169945613
+          ],
+          [
+            20.2884293620498,
+            -6.744983877404143
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.638511922066723,
+              -7.245789458600903
+            ],
+            "radius_m": 0.27646131976122895,
+            "circle_residual_m": 0.011803174083198363,
+            "inlier_count": 25,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 57,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.46962695801493,
+              -6.350758169945613
+            ],
+            "radius_m": 0.06823498342188557,
+            "circle_residual_m": 0.002865482694923076,
+            "inlier_count": 9,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 27,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.2884293620498,
+              -6.744983877404143
+            ],
+            "radius_m": 0.27177590146148517,
+            "circle_residual_m": 0.011474903478816132,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 20,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 12,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 71,
+              "TOO_FEW_TRIAL_INLIERS": 9
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 8,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 94
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 31,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 59
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 2.95,
+        "point_count": 132,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.371083875622663,
+            -7.387096450376324
+          ],
+          [
+            20.960358855179148,
+            -6.888671770408168
+          ],
+          [
+            20.459198708964074,
+            -6.349764569280168
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.371083875622663,
+              -7.387096450376324
+            ],
+            "radius_m": 0.11810595492793878,
+            "circle_residual_m": 0.004874757196570698,
+            "inlier_count": 17,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 54,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.960358855179148,
+              -6.888671770408168
+            ],
+            "radius_m": 0.05511581097894447,
+            "circle_residual_m": 0.0039864775548717245,
+            "inlier_count": 11,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 26,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              20.459198708964074,
+              -6.349764569280168
+            ],
+            "radius_m": 0.09267177870154476,
+            "circle_residual_m": 0.005494540885191061,
+            "inlier_count": 9,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 16,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": []
+      },
+      {
+        "height_m": 3.0,
+        "point_count": 102,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            20.31510455969711,
+            -7.413335621352652
+          ],
+          [
+            20.51943075617738,
+            -6.3377936779579755
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 1,
+            "center": [
+              20.31510455969711,
+              -7.413335621352652
+            ],
+            "radius_m": 0.09518744044562061,
+            "circle_residual_m": 0.004808703500137347,
+            "inlier_count": 12,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 23,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.51943075617738,
+              -6.3377936779579755
+            ],
+            "radius_m": 0.14628083237987263,
+            "circle_residual_m": 0.005722814977953482,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 20,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 0,
+            "point_count": 24,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 7,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 41
+            }
+          },
+          {
+            "component_index": 3,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 48,
+              "TOO_FEW_TRIAL_INLIERS": 45
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 3,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 86,
+              "TOO_FEW_TRIAL_INLIERS": 7
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.05,
+        "point_count": 98,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.132263356226595,
+            -7.301937293438933
+          ],
+          [
+            20.576857120646785,
+            -6.408179182031298
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.132263356226595,
+              -7.301937293438933
+            ],
+            "radius_m": 0.083474151672187,
+            "circle_residual_m": 0.00646258885980338,
+            "inlier_count": 15,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 26,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.576857120646785,
+              -6.408179182031298
+            ],
+            "radius_m": 0.20391437407430432,
+            "circle_residual_m": 0.008329469454438502,
+            "inlier_count": 11,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 16,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 2,
+            "point_count": 10,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 52
+            }
+          },
+          {
+            "component_index": 3,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 65,
+              "TOO_FEW_TRIAL_INLIERS": 26
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 7,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 1,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 69,
+              "TOO_FEW_TRIAL_INLIERS": 26
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 25,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 9,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 34,
+              "TOO_FEW_TRIAL_INLIERS": 28
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.1,
+        "point_count": 184,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.12139246480994,
+            -7.3103128165473406
+          ],
+          [
+            20.38593061491831,
+            -6.4311330075062125
+          ],
+          [
+            19.946299080714358,
+            -7.092050436884309
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.12139246480994,
+              -7.3103128165473406
+            ],
+            "radius_m": 0.08826266303401754,
+            "circle_residual_m": 0.006572264748816201,
+            "inlier_count": 20,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 64,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.38593061491831,
+              -6.4311330075062125
+            ],
+            "radius_m": 0.1600539001926057,
+            "circle_residual_m": 0.005727447370875163,
+            "inlier_count": 12,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 31,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              19.946299080714358,
+              -7.092050436884309
+            ],
+            "radius_m": 0.044423125129037275,
+            "circle_residual_m": 0.0038337697315910207,
+            "inlier_count": 8,
+            "angular_coverage_deg": 70.0,
+            "component_point_count": 17,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 16,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 5,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 22
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 15,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 10,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 47
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.15,
+        "point_count": 208,
+        "connected_component_count": 7,
+        "candidate_centres": [
+          [
+            20.259606069973547,
+            -7.068616217126473
+          ],
+          [
+            20.39841812570751,
+            -6.45229444839371
+          ],
+          [
+            20.409312354492286,
+            -7.1036876968735765
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.259606069973547,
+              -7.068616217126473
+            ],
+            "radius_m": 0.3462876480093825,
+            "circle_residual_m": 0.018945103732040572,
+            "inlier_count": 27,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 70,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.39841812570751,
+              -6.45229444839371
+            ],
+            "radius_m": 0.1124957607488683,
+            "circle_residual_m": 0.005597586229399202,
+            "inlier_count": 15,
+            "angular_coverage_deg": 110.0,
+            "component_point_count": 35,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.409312354492286,
+              -7.1036876968735765
+            ],
+            "radius_m": 0.4012840131412659,
+            "circle_residual_m": 0.014770304254283741,
+            "inlier_count": 18,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 30,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 6,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 1,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 93
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.2,
+        "point_count": 195,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.290655987524577,
+            -7.144898048186024
+          ],
+          [
+            20.355908676660242,
+            -7.4829230059951275
+          ],
+          [
+            21.140752112185616,
+            -6.484008145541242
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.290655987524577,
+              -7.144898048186024
+            ],
+            "radius_m": 0.5016411263448113,
+            "circle_residual_m": 0.022814688334333217,
+            "inlier_count": 44,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 134,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.355908676660242,
+              -7.4829230059951275
+            ],
+            "radius_m": 0.10468129987620917,
+            "circle_residual_m": 0.005384896153863087,
+            "inlier_count": 16,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 28,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              21.140752112185616,
+              -6.484008145541242
+            ],
+            "radius_m": 0.2112430890689029,
+            "circle_residual_m": 0.013231773039797782,
+            "inlier_count": 9,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 18,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 6,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 5,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 61
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.25,
+        "point_count": 184,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.353230347475694,
+            -7.477759213194265
+          ],
+          [
+            20.83350943901835,
+            -6.79117294899882
+          ],
+          [
+            21.025091390556277,
+            -6.978157122814956
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.353230347475694,
+              -7.477759213194265
+            ],
+            "radius_m": 0.11292078947723679,
+            "circle_residual_m": 0.006255220903434233,
+            "inlier_count": 20,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 54,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.83350943901835,
+              -6.79117294899882
+            ],
+            "radius_m": 0.28665323894850064,
+            "circle_residual_m": 0.014560964135662232,
+            "inlier_count": 14,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 34,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.025091390556277,
+              -6.978157122814956
+            ],
+            "radius_m": 0.2154424697664132,
+            "circle_residual_m": 0.011333854545530474,
+            "inlier_count": 13,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 37,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 11,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 4,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 19,
+              "TOO_FEW_TRIAL_INLIERS": 44
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.3,
+        "point_count": 162,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.97239918584067,
+            -6.773667630391219
+          ],
+          [
+            20.437123860630003,
+            -7.50874439444989
+          ],
+          [
+            20.002620567013054,
+            -7.013338286491402
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.97239918584067,
+              -6.773667630391219
+            ],
+            "radius_m": 0.3862746141408045,
+            "circle_residual_m": 0.019283752181119284,
+            "inlier_count": 37,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 73,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.437123860630003,
+              -7.50874439444989
+            ],
+            "radius_m": 0.07390723748113975,
+            "circle_residual_m": 0.005215281762539506,
+            "inlier_count": 15,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 33,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.002620567013054,
+              -7.013338286491402
+            ],
+            "radius_m": 0.13616109289618217,
+            "circle_residual_m": 0.005478482736921637,
+            "inlier_count": 13,
+            "angular_coverage_deg": 60.0,
+            "component_point_count": 20,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 11,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 2,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 1,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 1,
+              "TOO_FEW_TRIAL_INLIERS": 55
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.35,
+        "point_count": 145,
+        "connected_component_count": 6,
+        "candidate_centres": [
+          [
+            20.09448445093055,
+            -6.97248467641247
+          ],
+          [
+            20.304041304372817,
+            -6.77470649179085
+          ],
+          [
+            20.71949088710953,
+            -6.921761009032662
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.09448445093055,
+              -6.97248467641247
+            ],
+            "radius_m": 0.19067995801591406,
+            "circle_residual_m": 0.010541678266492204,
+            "inlier_count": 21,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 53,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.304041304372817,
+              -6.77470649179085
+            ],
+            "radius_m": 0.15763778368097559,
+            "circle_residual_m": 0.007749703284046968,
+            "inlier_count": 12,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 25,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              20.71949088710953,
+              -6.921761009032662
+            ],
+            "radius_m": 0.1379430672223498,
+            "circle_residual_m": 0.006715593464261228,
+            "inlier_count": 10,
+            "angular_coverage_deg": 80.0,
+            "component_point_count": 26,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 17,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 2,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 69
+            }
+          },
+          {
+            "component_index": 4,
+            "point_count": 9,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 3,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 81
+            }
+          },
+          {
+            "component_index": 5,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 7,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 13,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 16,
+              "TOO_FEW_TRIAL_INLIERS": 60
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.4,
+        "point_count": 157,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.095539211406642,
+            -6.995296629678601
+          ],
+          [
+            20.689535997489504,
+            -6.529998211287151
+          ],
+          [
+            20.892380166023926,
+            -6.270494484990398
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 1,
+            "center": [
+              20.095539211406642,
+              -6.995296629678601
+            ],
+            "radius_m": 0.18526163695848533,
+            "circle_residual_m": 0.008473336511388402,
+            "inlier_count": 23,
+            "angular_coverage_deg": 150.0,
+            "component_point_count": 64,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 0,
+            "center": [
+              20.689535997489504,
+              -6.529998211287151
+            ],
+            "radius_m": 0.3233978500856551,
+            "circle_residual_m": 0.017052616589720414,
+            "inlier_count": 24,
+            "angular_coverage_deg": 140.0,
+            "component_point_count": 65,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.892380166023926,
+              -6.270494484990398
+            ],
+            "radius_m": 0.07651556512147703,
+            "circle_residual_m": 0.0032973474793880626,
+            "inlier_count": 8,
+            "angular_coverage_deg": 50.0,
+            "component_point_count": 12,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 6,
+            "rejection_reasons": [
+              "NO_CIRCLE_MODEL"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 13,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 0,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 0,
+              "TOO_FEW_TRIAL_INLIERS": 83
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.45,
+        "point_count": 168,
+        "connected_component_count": 4,
+        "candidate_centres": [
+          [
+            20.64589737594759,
+            -6.580321558805442
+          ],
+          [
+            21.102211359413726,
+            -6.9237169863700885
+          ],
+          [
+            20.055143588077875,
+            -6.938314005951747
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.64589737594759,
+              -6.580321558805442
+            ],
+            "radius_m": 0.2705735072233508,
+            "circle_residual_m": 0.012262593119890575,
+            "inlier_count": 26,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 63,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 1,
+            "center": [
+              21.102211359413726,
+              -6.9237169863700885
+            ],
+            "radius_m": 0.07918743777812666,
+            "circle_residual_m": 0.005449121921726054,
+            "inlier_count": 18,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 40,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.055143588077875,
+              -6.938314005951747
+            ],
+            "radius_m": 0.16971938544415396,
+            "circle_residual_m": 0.007865660959685444,
+            "inlier_count": 13,
+            "angular_coverage_deg": 90.0,
+            "component_point_count": 32,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 3,
+            "point_count": 10,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 0,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 5,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 1,
+              "TOO_FEW_TRIAL_INLIERS": 67
+            }
+          }
+        ]
+      },
+      {
+        "height_m": 3.5,
+        "point_count": 185,
+        "connected_component_count": 5,
+        "candidate_centres": [
+          [
+            20.071833247448318,
+            -7.034831215133001
+          ],
+          [
+            20.44175980710018,
+            -6.707989508385193
+          ],
+          [
+            21.150433433320057,
+            -6.998577590950192
+          ]
+        ],
+        "fits": [
+          {
+            "component_index": 0,
+            "center": [
+              20.071833247448318,
+              -7.034831215133001
+            ],
+            "radius_m": 0.20735427734733552,
+            "circle_residual_m": 0.010671138805258329,
+            "inlier_count": 21,
+            "angular_coverage_deg": 130.0,
+            "component_point_count": 62,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 0,
+            "selected": false
+          },
+          {
+            "component_index": 2,
+            "center": [
+              20.44175980710018,
+              -6.707989508385193
+            ],
+            "radius_m": 0.09585854229646815,
+            "circle_residual_m": 0.006017813172058703,
+            "inlier_count": 15,
+            "angular_coverage_deg": 100.0,
+            "component_point_count": 34,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 1,
+            "selected": false
+          },
+          {
+            "component_index": 3,
+            "center": [
+              21.150433433320057,
+              -6.998577590950192
+            ],
+            "radius_m": 0.14190513834574478,
+            "circle_residual_m": 0.0072321006564353965,
+            "inlier_count": 13,
+            "angular_coverage_deg": 120.0,
+            "component_point_count": 30,
+            "valid": true,
+            "rejection_reasons": [],
+            "fit_index": 2,
+            "selected": false
+          }
+        ],
+        "selected_fit": null,
+        "slice_rejection_reasons": [],
+        "rejected_components": [
+          {
+            "component_index": 4,
+            "point_count": 8,
+            "rejection_reasons": [
+              "TOO_FEW_FINAL_INLIERS"
+            ],
+            "trial_rejections": {
+              "DEGENERATE_TRIPLE": 0,
+              "RADIUS_BELOW_CANDIDATE_MINIMUM": 1,
+              "RADIUS_ABOVE_BROAD_CANDIDATE_LIMIT": 8,
+              "CENTER_OUTSIDE_SEARCH_RADIUS": 72,
+              "TOO_FEW_TRIAL_INLIERS": 3
+            }
+          }
+        ]
+      }
+    ],
+    "selected_components_by_height": [],
+    "radius_profile_all_fits": [
+      {
+        "height_m": 0.5,
+        "radius_m": 0.43591675506140987,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.5,
+        "radius_m": 0.2884765089310084,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.5,
+        "radius_m": 0.09457462743733522,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.55,
+        "radius_m": 0.3268031217931586,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.55,
+        "radius_m": 0.4132361568278537,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.55,
+        "radius_m": 0.13830571087675786,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.6,
+        "radius_m": 0.6576372815534395,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.6,
+        "radius_m": 0.10862514218446938,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.6,
+        "radius_m": 0.0459856617681377,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.65,
+        "radius_m": 0.25084510273937394,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.65,
+        "radius_m": 0.14206575945795075,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.65,
+        "radius_m": 0.17083396131556133,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.7,
+        "radius_m": 0.5086583775914498,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.7,
+        "radius_m": 0.20052151630081613,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.7,
+        "radius_m": 0.2058355007275244,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.75,
+        "radius_m": 0.3772200804651534,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.75,
+        "radius_m": 0.08317119703740507,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.75,
+        "radius_m": 0.1679722123899658,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.8,
+        "radius_m": 0.2077269041361215,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.8,
+        "radius_m": 0.23191229350504586,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.8,
+        "radius_m": 0.08445568924228354,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.85,
+        "radius_m": 0.09609088374723072,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.85,
+        "radius_m": 0.059351276394714735,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.85,
+        "radius_m": 0.24824634495432357,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.9,
+        "radius_m": 0.08888542250839479,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.9,
+        "radius_m": 0.22918244298063,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.9,
+        "radius_m": 0.22746614121800907,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 0.95,
+        "radius_m": 0.180987518365147,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 0.95,
+        "radius_m": 0.1784261047827493,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 0.95,
+        "radius_m": 0.04767585233511709,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.0,
+        "radius_m": 0.3210207734096867,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.0,
+        "radius_m": 0.3221196075665344,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.0,
+        "radius_m": 0.024002440957847766,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.05,
+        "radius_m": 0.3223166576616957,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.05,
+        "radius_m": 0.3048398214082485,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.05,
+        "radius_m": 0.03963563926460985,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.1,
+        "radius_m": 0.23181414694839045,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.1,
+        "radius_m": 0.192338813243384,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.1,
+        "radius_m": 0.03392550875107584,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.15,
+        "radius_m": 0.4708139717948262,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.15,
+        "radius_m": 0.15286569085799367,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.15,
+        "radius_m": 0.02761302995903811,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.2,
+        "radius_m": 0.2528177464851247,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.2,
+        "radius_m": 0.029507162664696093,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.2,
+        "radius_m": 0.11043837240786802,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.25,
+        "radius_m": 0.2527563882731264,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.25,
+        "radius_m": 0.02848831938302188,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.25,
+        "radius_m": 0.03411775826296915,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.3,
+        "radius_m": 0.02648214854310428,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.3,
+        "radius_m": 0.1761509596096157,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.3,
+        "radius_m": 0.2661196463485743,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.35,
+        "radius_m": 0.17848013770798576,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.35,
+        "radius_m": 0.12982230043043821,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.35,
+        "radius_m": 0.28628662592002374,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.4,
+        "radius_m": 0.22146765037519017,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.4,
+        "radius_m": 0.1697477291860666,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.4,
+        "radius_m": 0.21887597435264008,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.45,
+        "radius_m": 0.24630566026129755,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.45,
+        "radius_m": 0.3131901891283761,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.45,
+        "radius_m": 0.1313496654964237,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.5,
+        "radius_m": 0.23959765039772826,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.5,
+        "radius_m": 0.20706226085572224,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.5,
+        "radius_m": 0.12998773534581876,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.55,
+        "radius_m": 0.20001968179175902,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.55,
+        "radius_m": 0.174247696025357,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.55,
+        "radius_m": 0.30412415670681947,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.6,
+        "radius_m": 0.27591128717862085,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.6,
+        "radius_m": 0.2645083940728419,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.6,
+        "radius_m": 0.02615329317864015,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.65,
+        "radius_m": 0.3598538873481898,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.65,
+        "radius_m": 0.2822657635399379,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.65,
+        "radius_m": 0.03718737939522304,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.7,
+        "radius_m": 0.24339830101413157,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.7,
+        "radius_m": 0.03042151859061841,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.7,
+        "radius_m": 0.310130059990853,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.75,
+        "radius_m": 0.04534152080193018,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.75,
+        "radius_m": 0.2818499638839828,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.75,
+        "radius_m": 0.0431415935649726,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.8,
+        "radius_m": 0.07954925209433206,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.8,
+        "radius_m": 0.11350820727175817,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.8,
+        "radius_m": 0.04879116786543367,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.85,
+        "radius_m": 0.09719393960314257,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.85,
+        "radius_m": 0.23272748031895193,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.85,
+        "radius_m": 0.021309942720783376,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.9,
+        "radius_m": 0.3688549075773771,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.9,
+        "radius_m": 0.10542823161683323,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.9,
+        "radius_m": 0.12940604736403394,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 1.95,
+        "radius_m": 0.2929862360105835,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 1.95,
+        "radius_m": 0.22037482194395816,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 1.95,
+        "radius_m": 0.10363640298443944,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.0,
+        "radius_m": 0.5049751474127112,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.0,
+        "radius_m": 0.12190362907067781,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.05,
+        "radius_m": 0.6146680496513456,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.05,
+        "radius_m": 0.06623588447806938,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.1,
+        "radius_m": 0.26472795570568314,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.1,
+        "radius_m": 0.26593466308083535,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.1,
+        "radius_m": 0.06714596797257039,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.15,
+        "radius_m": 0.0568798944824778,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.15,
+        "radius_m": 0.5107360300097635,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.15,
+        "radius_m": 0.19573597124744355,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.2,
+        "radius_m": 0.3086364792713514,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.2,
+        "radius_m": 0.07230468439640626,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.2,
+        "radius_m": 0.11733190170308047,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.25,
+        "radius_m": 0.11035382603825036,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.25,
+        "radius_m": 0.4538108109238138,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.25,
+        "radius_m": 0.29951445385030495,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.3,
+        "radius_m": 0.445764094942505,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.3,
+        "radius_m": 0.21056926299520887,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.3,
+        "radius_m": 0.3439618346755755,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.35,
+        "radius_m": 0.41159945707795076,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.35,
+        "radius_m": 0.1435145770400957,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.4,
+        "radius_m": 0.4624525752403201,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.4,
+        "radius_m": 0.10579938682174732,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.4,
+        "radius_m": 0.12142775936723896,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.45,
+        "radius_m": 0.3392293770936439,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.45,
+        "radius_m": 0.3078736918035801,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.45,
+        "radius_m": 0.13684800107345121,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.5,
+        "radius_m": 0.14052806763657671,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.5,
+        "radius_m": 0.19221722950982303,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.5,
+        "radius_m": 0.12545759850959093,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.55,
+        "radius_m": 0.0993854129600831,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.55,
+        "radius_m": 0.054915899909716716,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.55,
+        "radius_m": 0.045845600828027334,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.6,
+        "radius_m": 0.2865618139194778,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.6,
+        "radius_m": 0.066047619520422,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.6,
+        "radius_m": 0.16353891807645116,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.65,
+        "radius_m": 0.29373298146881965,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.65,
+        "radius_m": 0.1837820453813551,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.65,
+        "radius_m": 0.02274703942530047,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.7,
+        "radius_m": 0.28983985813123486,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.7,
+        "radius_m": 0.21693227466530962,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.7,
+        "radius_m": 0.20574075618114998,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.75,
+        "radius_m": 0.3408146097668297,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.75,
+        "radius_m": 0.15098218313634632,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.75,
+        "radius_m": 0.20286929273701013,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.8,
+        "radius_m": 0.2915342120813009,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.8,
+        "radius_m": 0.18634398722669207,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.8,
+        "radius_m": 0.20606023306116117,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.85,
+        "radius_m": 0.08391542658611642,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.85,
+        "radius_m": 0.11065627435838951,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.85,
+        "radius_m": 0.22825794437295963,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.9,
+        "radius_m": 0.27646131976122895,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.9,
+        "radius_m": 0.06823498342188557,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.9,
+        "radius_m": 0.27177590146148517,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 2.95,
+        "radius_m": 0.11810595492793878,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 2.95,
+        "radius_m": 0.05511581097894447,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 2.95,
+        "radius_m": 0.09267177870154476,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.0,
+        "radius_m": 0.09518744044562061,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.0,
+        "radius_m": 0.14628083237987263,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.05,
+        "radius_m": 0.083474151672187,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.05,
+        "radius_m": 0.20391437407430432,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.1,
+        "radius_m": 0.08826266303401754,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.1,
+        "radius_m": 0.1600539001926057,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.1,
+        "radius_m": 0.044423125129037275,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.15,
+        "radius_m": 0.3462876480093825,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.15,
+        "radius_m": 0.1124957607488683,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.15,
+        "radius_m": 0.4012840131412659,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.2,
+        "radius_m": 0.5016411263448113,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.2,
+        "radius_m": 0.10468129987620917,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.2,
+        "radius_m": 0.2112430890689029,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.25,
+        "radius_m": 0.11292078947723679,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.25,
+        "radius_m": 0.28665323894850064,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.25,
+        "radius_m": 0.2154424697664132,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.3,
+        "radius_m": 0.3862746141408045,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.3,
+        "radius_m": 0.07390723748113975,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.3,
+        "radius_m": 0.13616109289618217,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.35,
+        "radius_m": 0.19067995801591406,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.35,
+        "radius_m": 0.15763778368097559,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.35,
+        "radius_m": 0.1379430672223498,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.4,
+        "radius_m": 0.18526163695848533,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.4,
+        "radius_m": 0.3233978500856551,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.4,
+        "radius_m": 0.07651556512147703,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.45,
+        "radius_m": 0.2705735072233508,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.45,
+        "radius_m": 0.07918743777812666,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.45,
+        "radius_m": 0.16971938544415396,
+        "fit_index": 2,
+        "selected": false
+      },
+      {
+        "height_m": 3.5,
+        "radius_m": 0.20735427734733552,
+        "fit_index": 0,
+        "selected": false
+      },
+      {
+        "height_m": 3.5,
+        "radius_m": 0.09585854229646815,
+        "fit_index": 1,
+        "selected": false
+      },
+      {
+        "height_m": 3.5,
+        "radius_m": 0.14190513834574478,
+        "fit_index": 2,
+        "selected": false
+      }
+    ],
+    "radius_profile_selected": [],
+    "metrics": {}
+  },
+  "full_resolution": {
+    "available": false,
+    "centreline": {
+      "available": false,
+      "coefficients": null,
+      "axis": null,
+      "height_range_m": null,
+      "points_xyz": [],
+      "residual_p90_m": null,
+      "residual_limit_m": null
+    },
+    "components_by_height": [],
+    "selected_components_by_height": [],
+    "radius_profile_selected": [],
+    "validation": {},
+    "metrics": {},
+    "accepted_point_count": 0,
+    "rejected_point_count": 0
+  },
+  "track": {
+    "track_id": "T15-0547",
+    "canonical_track_id": "T15-0547",
+    "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+    "identity_status": "UNVERIFIED",
+    "measurement_status": "NEEDS_REVIEW",
+    "reason_codes": [
+      "MULTI_COMPONENT_EVIDENCE_DOMINANT"
+    ],
+    "source_candidate_ids": [
+      "C-0122",
+      "C-0616"
+    ],
+    "source_seed_ids": [
+      "MH-00631",
+      "MH-01219"
+    ],
+    "source_providers": [
+      "MULTI_HEIGHT_DENSITY"
+    ],
+    "source_height_count": 2,
+    "source_heights_m": [
+      1.5,
+      2.25
+    ],
+    "vertical_span_m": 0.75,
+    "gaps": [
+      {
+        "from_height_m": 1.5,
+        "to_height_m": 2.25,
+        "gap_m": 0.75,
+        "missing_nominal_0_25m_levels": 2
+      }
+    ],
+    "reference_height_m": 1.875,
+    "reference_center": [
+      20.952708420421423,
+      -6.755791991026697
+    ],
+    "centreline_coefficients": [
+      [
+        0.22962258883603306,
+        20.52216606635386
+      ],
+      [
+        -0.08215204932577473,
+        -6.601756898540869
+      ]
+    ],
+    "radius_coefficients": [
+      0.1297054165484582,
+      0.16197362368978302
+    ],
+    "centre_residual_p90_m": 1.1365022108826096e-14,
+    "radius_residual_mad_m": 5.551115123125783e-17,
+    "median_radius_m": 0.40517127971814204,
+    "median_angular_coverage_deg": 110.0,
+    "median_fit_residual_m": 0.019260558697693088,
+    "alias_track_ids": [],
+    "observations": [
+      {
+        "node_id": "OBS-MH-00631",
+        "source_seed_id": "MH-00631",
+        "source_seed_ids": [
+          "MH-00631"
+        ],
+        "source_provider": "MULTI_HEIGHT_DENSITY",
+        "source_providers": [
+          "MULTI_HEIGHT_DENSITY"
+        ],
+        "source_height_m": 1.5,
+        "profile_height_m": 1.5,
+        "source_xy": [
+          21.12,
+          -6.879999999999999
+        ],
+        "center": [
+          20.866599949607906,
+          -6.724984972529526
+        ],
+        "radius_m": 0.35653174851247027,
+        "circle_residual_m": 0.018171643862592422,
+        "ellipse_residual_m": 0.019910772130007373,
+        "ellipse_axis_ratio": 1.364934707291838,
+        "angular_coverage_deg": 120.0,
+        "point_count": 316,
+        "inlier_count": 71,
+        "component_id": 0,
+        "connected_component_count": 7,
+        "fit_validity": true,
+        "local_evidence_quality": 0.613628801398959,
+        "phase1_candidate_id": "C-0122",
+        "phase1_candidate_ids": [
+          "C-0122"
+        ],
+        "rejection_reasons": [],
+        "alias_observation_ids": [],
+        "alternative_fits": [
+          {
+            "component_id": 1,
+            "center": [
+              20.693510374331225,
+              -6.64605178667816
+            ],
+            "radius_m": 0.49009354046027426,
+            "circle_residual_m": 0.02595193842491732,
+            "angular_coverage_deg": 120.0
+          },
+          {
+            "component_id": 3,
+            "center": [
+              20.5883518233623,
+              -6.200077444861622
+            ],
+            "radius_m": 0.042205134367928034,
+            "circle_residual_m": 0.005685008022754664,
+            "angular_coverage_deg": 70.0
+          }
+        ]
+      },
+      {
+        "node_id": "OBS-MH-01219",
+        "source_seed_id": "MH-01219",
+        "source_seed_ids": [
+          "MH-01219"
+        ],
+        "source_provider": "MULTI_HEIGHT_DENSITY",
+        "source_providers": [
+          "MULTI_HEIGHT_DENSITY"
+        ],
+        "source_height_m": 2.25,
+        "profile_height_m": 2.25,
+        "source_xy": [
+          20.880000000000003,
+          -7.199999999999999
+        ],
+        "center": [
+          21.038816891234926,
+          -6.786599009523857
+        ],
+        "radius_m": 0.4538108109238138,
+        "circle_residual_m": 0.020349473532793757,
+        "ellipse_residual_m": 0.021877793340294757,
+        "ellipse_axis_ratio": 3.902216489615909,
+        "angular_coverage_deg": 100.0,
+        "point_count": 197,
+        "inlier_count": 32,
+        "component_id": 0,
+        "connected_component_count": 6,
+        "fit_validity": true,
+        "local_evidence_quality": 0.5342905155835292,
+        "phase1_candidate_id": "C-0616",
+        "phase1_candidate_ids": [
+          "C-0616"
+        ],
+        "rejection_reasons": [],
+        "alias_observation_ids": [],
+        "alternative_fits": [
+          {
+            "component_id": 1,
+            "center": [
+              20.362830420865542,
+              -7.219823211895726
+            ],
+            "radius_m": 0.11035382603825036,
+            "circle_residual_m": 0.005854860674214154,
+            "angular_coverage_deg": 130.0
+          },
+          {
+            "component_id": 2,
+            "center": [
+              20.55658040102667,
+              -6.540100173163497
+            ],
+            "radius_m": 0.29951445385030495,
+            "circle_residual_m": 0.013812463251377558,
+            "angular_coverage_deg": 120.0
+          }
+        ]
+      }
+    ]
+  },
+  "phase4_graph_edges": [
+    {
+      "edge_id": "E4-00125",
+      "track_a": "T15-0547",
+      "track_b": "T15-0555",
+      "tree_a": null,
+      "tree_b": null,
+      "shared_candidate_ids": [
+        "C-0122"
+      ],
+      "accepted_point_containment": 0.0,
+      "features": {
+        "vertical_relation": "RIGHT_BELOW_LEFT",
+        "vertical_gap_m": 0.19999999999999996,
+        "vertical_overlap_m": 0.0,
+        "left_evaluation_height_m": 1.5,
+        "right_evaluation_height_m": 1.3,
+        "mean_evaluation_height_m": 1.4,
+        "seam_centre_distance_m": 0.23089762511046968,
+        "radius_relative_difference": 0.7540544877446373,
+        "orientation_difference_m_per_m": 0.24387597772676672,
+        "left_radius_m": 0.3565317485124703,
+        "right_radius_m": 0.16129642097221245
+      },
+      "classification": "ROOT_TRANSITION_REVIEW",
+      "automatic_attachment": false,
+      "checks": {
+        "adjacent_non_overlapping_levels": true,
+        "seam_centre": false,
+        "radius": false,
+        "orientation": true,
+        "multi_level_tracks": false,
+        "shared_provenance": true
+      },
+      "continuity_score": {
+        "score": 0.6694872375714066,
+        "components": {
+          "vertical": 0.7333333333333334,
+          "centreline": 0.48689416642117844,
+          "radius": 0.4972970081702418,
+          "orientation": 0.7782945657029394,
+          "provenance": 1.0
+        },
+        "calibrated_probability": false
+      },
+      "xy_distance_alone_can_resolve": false
+    },
+    {
+      "edge_id": "E4-00120",
+      "track_a": "T15-0528",
+      "track_b": "T15-0547",
+      "tree_a": null,
+      "tree_b": null,
+      "shared_candidate_ids": [
+        "C-0122"
+      ],
+      "accepted_point_containment": 0.0,
+      "features": {
+        "vertical_relation": "OVERLAP",
+        "vertical_gap_m": 0.0,
+        "vertical_overlap_m": 0.25,
+        "left_evaluation_height_m": 2.125,
+        "right_evaluation_height_m": 2.125,
+        "mean_evaluation_height_m": 2.125,
+        "seam_centre_distance_m": 0.6076926056977195,
+        "radius_relative_difference": 0.1365635796783337,
+        "orientation_difference_m_per_m": 0.33574132147128666,
+        "left_radius_m": 0.5017370900624365,
+        "right_radius_m": 0.43759763385525674
+      },
+      "classification": "CONFLICTING_SIMULTANEOUS_STEMS",
+      "automatic_attachment": false,
+      "checks": {
+        "adjacent_non_overlapping_levels": false,
+        "seam_centre": false,
+        "radius": true,
+        "orientation": true,
+        "multi_level_tracks": true,
+        "shared_provenance": true
+      },
+      "continuity_score": {
+        "score": 0.6517250753021284,
+        "components": {
+          "vertical": 1.0,
+          "centreline": 0.0,
+          "radius": 0.9089576135477775,
+          "orientation": 0.6947806168442849,
+          "provenance": 1.0
+        },
+        "calibrated_probability": false
+      },
+      "xy_distance_alone_can_resolve": false
+    }
+  ],
+  "suggested_existing_tree_targets": []
+}
