@@ -3,59 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ป่าชายเลนสมุทรสงคราม · Point Cloud</title>
+  <title>ป่าชายเลนสมุทรสงคราม · Point Cloud และวงวัด LiDAR</title>
   <style>
     :root { color-scheme: dark; font-family: Inter, system-ui, -apple-system, sans-serif; }
     * { box-sizing: border-box; }
     html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #07110d; }
     canvas { display: block; }
     #panel {
-      position: fixed; z-index: 2; top: 16px; left: 16px; width: min(360px, calc(100vw - 32px));
-      max-height: calc(100vh - 32px); overflow-y: auto;
+      position: fixed; z-index: 2; top: 16px; left: 16px; width: min(410px, calc(100vw - 32px));
+      max-height: calc(100vh - 32px); overflow-y: auto; overscroll-behavior: contain;
       padding: 16px; border: 1px solid rgba(165, 214, 180, .22); border-radius: 16px;
-      background: rgba(6, 18, 12, .84); backdrop-filter: blur(14px); box-shadow: 0 18px 55px rgba(0, 0, 0, .35);
+      background: rgba(6, 18, 12, .88); backdrop-filter: blur(14px); box-shadow: 0 18px 55px rgba(0, 0, 0, .38);
     }
-    h1 { margin: 0 0 4px; font-size: 18px; font-weight: 650; }
+    h1 { margin: 0 0 4px; font-size: 18px; font-weight: 680; }
     .sub { color: #a6b9ae; font-size: 12px; line-height: 1.45; }
-    #status { margin: 13px 0; padding: 10px 12px; border-radius: 10px; background: rgba(95, 184, 126, .1); color: #bce9ca; font-size: 12px; }
+    #status { margin: 13px 0; padding: 10px 12px; border-radius: 10px; background: rgba(95, 184, 126, .1); color: #bce9ca; font-size: 12px; line-height: 1.45; }
     .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
     label { display: grid; gap: 6px; color: #a6b9ae; font-size: 11px; }
-    select, button, input { width: 100%; }
-    select, button {
-      min-height: 34px; color: #eaf7ee; border: 1px solid rgba(165, 214, 180, .2); border-radius: 9px;
+    select, button, input, .button-link { width: 100%; font: inherit; }
+    select, button, input[type="search"], .button-link {
+      min-height: 35px; color: #eaf7ee; border: 1px solid rgba(165, 214, 180, .2); border-radius: 9px;
       background: rgba(255,255,255,.06); padding: 0 10px;
     }
-    button { cursor: pointer; }
-    button:hover { background: rgba(127, 214, 154, .14); }
-    button:disabled { cursor: not-allowed; opacity: .42; }
+    input[type="search"] { outline: none; }
+    input[type="search"]:focus, select:focus, button:focus-visible, .button-link:focus-visible { border-color: rgba(114, 216, 255, .68); outline: none; }
+    button, .button-link { cursor: pointer; }
+    button:hover, .button-link:hover { background: rgba(127, 214, 154, .14); }
+    button:disabled, .button-link[aria-disabled="true"] { cursor: not-allowed; opacity: .42; pointer-events: none; }
+    .button-link { display: grid; place-items: center; text-decoration: none; }
     .buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 11px; }
     .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 12px; }
     .metric { padding: 9px; border-radius: 10px; background: rgba(255,255,255,.045); }
     .metric b { display: block; color: #eef9f1; font-size: 14px; }
     .metric span { color: #8fa399; font-size: 10px; }
-    .measure-card { margin-top: 12px; padding: 12px; border: 1px solid rgba(255, 200, 79, .24); border-radius: 12px; background: rgba(255, 200, 79, .055); }
-    .measure-card h2 { margin: 0; color: #ffe7a9; font-size: 13px; }
-    .measure-copy { margin: 5px 0 10px; color: #b9af91; font-size: 10px; line-height: 1.45; }
+    .measure-card { margin-top: 12px; padding: 12px; border: 1px solid rgba(114, 216, 255, .24); border-radius: 12px; background: rgba(114, 216, 255, .045); }
+    .measure-card h2 { margin: 0; color: #d8f4ff; font-size: 13px; }
+    .measure-copy { margin: 5px 0 10px; color: #a9bec3; font-size: 10px; line-height: 1.5; }
     .tree-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin: 9px 0; }
-    .tree-summary div { padding: 7px 5px; border-radius: 8px; text-align: center; background: rgba(255,255,255,.045); }
-    .tree-summary b { display: block; color: #fff3cf; font-size: 13px; }
-    .tree-summary span { display: block; margin-top: 2px; color: #9f9577; font-size: 8px; }
-    .measure-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-    .measure-actions button { min-height: 32px; padding: 0 6px; font-size: 10px; }
-    #showAllTrees { border-color: rgba(255, 200, 79, .42); color: #ffe3a0; }
-    #treeList { display: grid; gap: 5px; max-height: 230px; margin-top: 9px; overflow-y: auto; padding-right: 2px; }
-    .tree-row { display: grid; grid-template-columns: auto 1fr auto; gap: 7px; align-items: center; min-height: 42px; padding: 7px 8px; text-align: left; border-radius: 8px; background: rgba(255,255,255,.045); }
-    .tree-row:hover, .tree-row.selected { border-color: rgba(255, 200, 79, .5); background: rgba(255, 200, 79, .1); }
-    .tree-id { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; color: #172015; background: #ffc84f; font-size: 9px; font-weight: 800; }
-    .tree-row b { display: block; color: #fff3cf; font-size: 10px; }
-    .tree-row small { display: block; margin-top: 2px; color: #a99f82; font-size: 8px; }
-    .tree-confidence { font-size: 8px; }
-    .confidence-high { color: #91e8a9; }
-    .confidence-medium { color: #f6d178; }
-    .confidence-low { color: #f39a86; }
-    .source-note { margin-top: 12px; color: #8fa399; font-size: 10px; line-height: 1.45; }
+    .tree-summary div { padding: 7px 4px; border-radius: 8px; text-align: center; background: rgba(255,255,255,.045); }
+    .tree-summary b { display: block; color: #edfaff; font-size: 13px; }
+    .tree-summary span { display: block; margin-top: 2px; color: #8fa7ad; font-size: 8px; }
+    .filter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .filter-grid input, .filter-grid select { font-size: 10px; }
+    .legend { display: flex; flex-wrap: wrap; gap: 5px 10px; margin: 9px 0; color: #9db0a6; font-size: 8px; }
+    .legend span { display: inline-flex; gap: 5px; align-items: center; }
+    .legend i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+    .legend-ready { color: #6fe0a7; }
+    .legend-final { color: #72d8ff; }
+    .legend-prop { color: #d6a4ff; }
+    .legend-check { color: #ffbd66; }
+    .measure-actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .measure-actions button { min-height: 34px; padding: 0 7px; font-size: 10px; }
+    .measure-actions button[aria-pressed="true"] { border-color: rgba(114, 216, 255, .68); background: rgba(114, 216, 255, .14); color: #f2fbff; }
+    .measure-actions button[aria-pressed="false"] { color: #8fa399; background: rgba(255,255,255,.025); }
+    #showAllTrees { border-color: rgba(114, 216, 255, .42); color: #d8f4ff; }
+    .selected-card { margin-top: 9px; padding: 10px; border-radius: 10px; background: rgba(0,0,0,.18); }
+    .selected-head { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+    .selected-head h3 { margin: 0; color: #fff9e8; font-size: 12px; }
+    .selected-status { margin-top: 3px; color: #8fa399; font-size: 9px; }
+    .selected-status.status-ready { color: #7be5ad; }
+    .selected-status.status-check { color: #ffca83; }
+    .selected-status.status-excluded { color: #f3907f; }
+    .selected-status.status-none { color: #9cac9f; }
+    .selected-values { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 9px 0; }
+    .selected-values div { padding: 7px; border-radius: 8px; background: rgba(255,255,255,.04); }
+    .selected-values small { display: block; color: #84988e; font-size: 8px; }
+    .selected-values b { display: block; margin-top: 2px; color: #eef9f1; font-size: 12px; }
+    .selected-copy { margin: 5px 0; color: #a6b9ae; font-size: 8px; line-height: 1.45; word-break: break-word; }
+    #openMeasurementDetail { min-height: 30px; margin-top: 8px; font-size: 9px; border-color: rgba(214,164,255,.35); }
+    .list-head { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; color: #9aada3; font-size: 9px; }
+    #treeList { display: grid; gap: 5px; max-height: 270px; margin-top: 6px; overflow-y: auto; padding-right: 2px; }
+    .tree-row { display: grid; grid-template-columns: auto 1fr auto; gap: 7px; align-items: center; min-height: 45px; padding: 7px 8px; text-align: left; border-radius: 8px; background: rgba(255,255,255,.045); }
+    .tree-row:hover, .tree-row.selected { border-color: rgba(114, 216, 255, .5); background: rgba(114, 216, 255, .09); }
+    .tree-row.status-check:hover, .tree-row.status-check.selected { border-color: rgba(255,189,102,.6); background: rgba(255,189,102,.09); }
+    .tree-row.status-excluded { opacity: .72; }
+    .tree-id { display: grid; place-items: center; width: 32px; height: 25px; border-radius: 13px; color: #102018; background: #72d8ff; font-size: 8px; font-weight: 800; }
+    .status-check .tree-id { background: #ffbd66; }
+    .status-excluded .tree-id { background: #f06c5b; }
+    .status-none .tree-id { background: #82958b; }
+    .tree-row b { display: block; color: #eaf7ee; font-size: 9px; }
+    .tree-row small { display: block; margin-top: 2px; color: #8ea098; font-size: 7px; line-height: 1.35; }
+    .tree-confidence { font-size: 7px; white-space: nowrap; }
+    .confidence-ready { color: #7be5ad; }
+    .confidence-check { color: #ffca83; }
+    .confidence-excluded { color: #f3907f; }
+    .confidence-none { color: #a0afa7; }
+    .measurement-empty { padding: 14px 8px; text-align: center; color: #84988e; font-size: 9px; }
+    .source-note { margin-top: 12px; color: #8fa399; font-size: 9px; line-height: 1.5; }
     #hint { position: fixed; z-index: 2; right: 16px; bottom: 14px; color: rgba(225,240,230,.62); font-size: 11px; }
-    @media (max-width: 620px) { #hint { display: none; } }
+    @media (max-width: 620px) {
+      #panel { top: 8px; left: 8px; width: calc(100vw - 16px); max-height: calc(100vh - 16px); }
+      #hint { display: none; }
+    }
   </style>
   <script type="importmap">
     { "imports": { "three": "./vendor/three.module.js" } }
@@ -64,8 +103,9 @@
 <body>
   <section id="panel">
     <h1>ป่าชายเลนสมุทรสงคราม · Point Cloud</h1>
-    <div class="sub">ข้อมูลสำรวจจากไฟล์ LAS · 7 ส.ค. 2026</div>
-    <div id="status">กำลังโหลด metadata…</div>
+    <div class="sub">ข้อมูล LAS วันที่ 7 ส.ค. 2026 · วงวัด Full-LAS field aid</div>
+    <div id="status">กำลังโหลด metadata และดัชนีวงวัด…</div>
+
     <div class="grid">
       <label>จำนวนจุดที่แสดง
         <select id="budget">
@@ -79,35 +119,83 @@
         <input id="pointSize" type="range" min="0.5" max="5" value="2" step="0.1">
       </label>
     </div>
+
     <div class="buttons">
       <button id="reset">มุมเริ่มต้น</button>
       <button id="top">มองจากบน</button>
       <button id="front">มองด้านข้าง</button>
     </div>
+
     <div class="metrics">
-      <div class="metric"><b id="points">–</b><span>จุดต้นฉบับ</span></div>
+      <div class="metric"><b id="points">–</b><span>จุด LAS ต้นฉบับ</span></div>
       <div class="metric"><b id="footprint">–</b><span>ขนาดพื้นที่</span></div>
       <div class="metric"><b id="height">–</b><span>ช่วงความสูง</span></div>
     </div>
+
     <section class="measure-card">
-      <h2>ผลวัดลำต้นอัตโนมัติที่ความสูง 1.30 ม.</h2>
-      <p class="measure-copy">วัดจาก LAS ต้นฉบับเต็ม 67,177,038 จุด และยืนยันหน้าตัดตั้งฉากกับแนวลำต้นหลายระดับ</p>
+      <h2>วงวัด LiDAR Field Aid บน Point Cloud</h2>
+      <p class="measure-copy">วงใช้ระนาบตั้งฉากกับแกนลำต้นและโมเดล circle/ellipse จาก marking รายต้น ไม่บังคับทุกต้นให้วัดที่ 1.30 ม.; กรณี prop-root ใช้จุดเกาะรากสูงสุด +0.30 ม. ป้ายตัวเลขรักษาขนาดบนหน้าจอ จึงอ่านได้แม้ซูมออก.</p>
+
       <div class="tree-summary">
-        <div><b id="treeCount">–</b><span>ต้นที่วัดได้</span></div>
-        <div><b id="highCount">–</b><span>เชื่อมั่นสูง</span></div>
-        <div><b id="mediumCount">–</b><span>ปานกลาง</span></div>
-        <div><b id="lowCount">–</b><span>ควรตรวจซ้ำ</span></div>
+        <div><b id="treeCount">–</b><span>Tree IDs</span></div>
+        <div><b id="readyCount">–</b><span>พร้อมใช้</span></div>
+        <div><b id="checkCount">–</b><span>เช็กหน้างาน</span></div>
+        <div><b id="otherCount">–</b><span>ไม่มีค่า/ตัดออก</span></div>
       </div>
+
+      <div class="filter-grid">
+        <input id="treeSearch" type="search" placeholder="ค้นหา TREE_0103" autocomplete="off">
+        <select id="measurementFilter" aria-label="กรองสถานะวงวัด">
+          <option value="MEASURED" selected>วงที่แสดงผลได้</option>
+          <option value="ALL">Tree IDs ทั้งหมด</option>
+          <option value="READY">พร้อมใช้</option>
+          <option value="CHECK">เช็กหน้างาน</option>
+          <option value="FINAL">Final LiDAR estimate</option>
+          <option value="PROP_ROOT">Prop-root +0.30 ม.</option>
+          <option value="LEGACY">Full-LAS รุ่นแรก</option>
+          <option value="NO_ESTIMATE">ไม่มีวง fit</option>
+          <option value="EXCLUDED">ตัดออกแล้ว</option>
+        </select>
+      </div>
+
+      <div class="legend" aria-label="คำอธิบายสีวงวัด">
+        <span class="legend-final"><i></i>final protocol</span>
+        <span class="legend-ready"><i></i>พร้อมใช้</span>
+        <span class="legend-prop"><i></i>prop-root</span>
+        <span class="legend-check"><i></i>เช็กหน้างาน</span>
+      </div>
+
       <div class="measure-actions">
-        <button id="showAllTrees" disabled>ดูทุกต้น</button>
-        <button id="toggleMeasurements" disabled>ซ่อนวงวัด</button>
+        <button id="showAllTrees" disabled>ดูตามตัวกรอง</button>
+        <button id="toggleMeasurements" type="button" aria-pressed="true" disabled>วงวัด: เปิด</button>
+        <button id="toggleMeasurementLabels" type="button" aria-pressed="true" disabled>ตัวเลข: เปิด</button>
         <button id="exportMeasurements" disabled>ส่งออก CSV</button>
       </div>
+
+      <section class="selected-card" aria-live="polite">
+        <div class="selected-head">
+          <div>
+            <h3 id="selectedTree">ยังไม่ได้เลือกต้นไม้</h3>
+            <div id="selectedStatus" class="selected-status">คลิกวงหรือเลือกรายการด้านล่าง</div>
+          </div>
+        </div>
+        <div class="selected-values">
+          <div><small>รอบวง</small><b id="selectedCircumference">–</b></div>
+          <div><small id="selectedDiameterLabel">เส้นผ่านศูนย์กลาง</small><b id="selectedDiameter">–</b></div>
+        </div>
+        <div id="selectedProtocol" class="selected-copy">–</div>
+        <div id="selectedQa" class="selected-copy">–</div>
+        <a id="openMeasurementDetail" class="button-link" href="#" aria-disabled="true">เปิด point slice และ QA รายต้น</a>
+      </section>
+
+      <div class="list-head"><span>รายการ Tree ID</span><span id="treeListCount">0 / 0</span></div>
       <div id="treeList"><div class="measurement-empty">กำลังโหลดผลวิเคราะห์…</div></div>
     </section>
-    <div class="source-note">ค่ารอบวงคำนวณจาก LAS ต้นฉบับเต็ม ส่วนภาพ 3D ใช้จุดตัวอย่าง 2,920,741 จุดเพื่อให้หมุนลื่น รายงานเฉพาะลำต้นที่เห็นหน้าตัดต่อเนื่องถึงระดับ 1.30 ม.</div>
+
+    <div class="source-note">ค่าทั้งหมดเป็น LiDAR estimates และยังไม่ได้ field verified. วงบนฉากแสดงเฉพาะสถานะ READY_FOR_FIELD_USE หรือ CHECK_ON_SITE; Tree ID ที่ถูกยืนยันว่าผิดคงไว้เฉพาะ audit record และไม่แสดงเป็นวงวัดจริง.</div>
   </section>
-  <div id="hint">ลากเพื่อหมุน · คลิกขวาเพื่อเลื่อน · หมุนล้อเพื่อซูม</div>
+
+  <div id="hint">ลากเพื่อหมุน · คลิกวงหรือป้ายตัวเลขเพื่อเลือก · คลิกขวาเพื่อเลื่อน · หมุนล้อเพื่อซูม</div>
   <script type="module" src="./viewer.js"></script>
 </body>
 </html>
