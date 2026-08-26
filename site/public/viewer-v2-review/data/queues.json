@@ -1,0 +1,15 @@
+{
+  "default_queue_id": "phase1_75_pilot",
+  "queues": [
+    {
+      "queue_id": "phase1_75_pilot",
+      "label": "Phase 1.75 pilot · 40 review items",
+      "url": "data/phase1_75/review_queue.json"
+    },
+    {
+      "queue_id": "phase1_5_full",
+      "label": "Phase 1.5 full · 460 candidates",
+      "url": "data/review_queue.json"
+    }
+  ]
+}

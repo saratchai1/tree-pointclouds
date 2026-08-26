@@ -1,0 +1,971 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+  "mode": "SHADOW",
+  "interpretation": "STRUCTURE PROPOSALS FOR HUMAN REVIEW; ITEMS OUTSIDE ROI-A ARE UNVERIFIED",
+  "annotation_export_path": "annotations/phase4c_structure_review.json",
+  "annotation_labels": [
+    "ACCEPT_PROPOSAL",
+    "REJECT_PROPOSAL",
+    "UNCERTAIN"
+  ],
+  "queue_size": 18,
+  "unique_tree_id_count": 18,
+  "category_counts": {
+    "PROPOSED_SHADOW_ATTACHMENT": 1,
+    "ROI_A_CORRECT_UNIQUE_TREE": 9,
+    "ROI_A_DUPLICATE_OF_REFERENCE_TREE": 1,
+    "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE": 6,
+    "ROI_A_UNCERTAIN": 1,
+    "STRUCTURE_UNCERTAIN": 4
+  },
+  "entries": [
+    {
+      "review_item_id": "TREE_0086",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "STRUCTURE_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "WOODY_FRAGMENT_UNCERTAIN",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 29.32677244536744,
+        "y": -13.343072634339363
+      },
+      "ground_z_m": -6.701115894317627,
+      "point_crop_url": "data/phase4c/points/TREE_0086.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0086.json",
+      "phase4_tree_id": "TREE_0086",
+      "current_inventory_status": "UNCERTAIN",
+      "proposed_structure_class": "WOODY_FRAGMENT_UNCERTAIN",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.75,
+      "reason_codes": [
+        "FRAGMENTED_VERTICAL_LEVELS",
+        "HIGH_INCLINATION",
+        "UNSTABLE_RADIUS_PROFILE"
+      ],
+      "contradictory_evidence": [
+        "NO_PLAUSIBLE_STRONGER_PARENT"
+      ],
+      "vertical_range_agl_m": [
+        1.75,
+        3.0
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0080"
+      ],
+      "source_track_ids": [
+        "T15-0852"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0087",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE"
+      ],
+      "candidate_geometry_status": "PROBABLE_MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 29.393377440371996,
+        "y": -10.97653510917749
+      },
+      "ground_z_m": -6.595589971542358,
+      "point_crop_url": "data/phase4c/points/TREE_0087.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0087.json",
+      "phase4_tree_id": "TREE_0087",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "PROBABLE_MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.48652896646237836,
+      "reason_codes": [
+        "MULTI_LEVEL_MAIN_STEM_EVIDENCE"
+      ],
+      "contradictory_evidence": [
+        "NEAREST_PARENT_FAILED:attachment_proximity"
+      ],
+      "vertical_range_agl_m": [
+        1.25,
+        2.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0017",
+        "C-0064"
+      ],
+      "source_track_ids": [
+        "T15-0857"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0088",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "STRUCTURE_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "WOODY_FRAGMENT_UNCERTAIN",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 29.43392425499203,
+        "y": -10.149584907240534
+      },
+      "ground_z_m": -6.655664348602295,
+      "point_crop_url": "data/phase4c/points/TREE_0088.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0088.json",
+      "phase4_tree_id": "TREE_0088",
+      "current_inventory_status": "UNCERTAIN",
+      "proposed_structure_class": "WOODY_FRAGMENT_UNCERTAIN",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.75,
+      "reason_codes": [
+        "FRAGMENTED_VERTICAL_LEVELS",
+        "HIGH_CENTRELINE_RESIDUAL",
+        "HIGH_INCLINATION"
+      ],
+      "contradictory_evidence": [
+        "NO_PLAUSIBLE_STRONGER_PARENT"
+      ],
+      "vertical_range_agl_m": [
+        0.75,
+        2.75
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0229"
+      ],
+      "source_track_ids": [
+        "T15-0860"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0089",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "STRUCTURE_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "WOODY_FRAGMENT_UNCERTAIN",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 29.65804860129432,
+        "y": -9.174631040380001
+      },
+      "ground_z_m": -6.525568735599518,
+      "point_crop_url": "data/phase4c/points/TREE_0089.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0089.json",
+      "phase4_tree_id": "TREE_0089",
+      "current_inventory_status": "UNCERTAIN",
+      "proposed_structure_class": "WOODY_FRAGMENT_UNCERTAIN",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 1.0,
+      "reason_codes": [
+        "FRAGMENTED_VERTICAL_LEVELS",
+        "HIGH_CENTRELINE_RESIDUAL",
+        "HIGH_INCLINATION",
+        "UNSTABLE_RADIUS_PROFILE"
+      ],
+      "contradictory_evidence": [
+        "NO_PLAUSIBLE_STRONGER_PARENT"
+      ],
+      "vertical_range_agl_m": [
+        0.75,
+        2.75
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0259",
+        "C-0638"
+      ],
+      "source_track_ids": [
+        "T15-0874"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0091",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 29.805978082435207,
+        "y": -14.21909596823061
+      },
+      "ground_z_m": -6.708493590354919,
+      "point_crop_url": "data/phase4c/points/TREE_0091.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0091.json",
+      "phase4_tree_id": "TREE_0091",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.9019730031551945,
+      "reason_codes": [
+        "CENTRELINE_STABILITY_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "UPPER_CONTINUATION_SUPPORT",
+        "VERTICALITY_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        1.25,
+        3.0
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0404"
+      ],
+      "source_track_ids": [
+        "T15-0882"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0092",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE"
+      ],
+      "candidate_geometry_status": "PROBABLE_MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 30.181720194946482,
+        "y": -11.85396617153994
+      },
+      "ground_z_m": -6.628394722938538,
+      "point_crop_url": "data/phase4c/points/TREE_0092.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0092.json",
+      "phase4_tree_id": "TREE_0092",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "PROBABLE_MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.6327070945436872,
+      "reason_codes": [
+        "MULTI_LEVEL_MAIN_STEM_EVIDENCE"
+      ],
+      "contradictory_evidence": [
+        "NEAREST_PARENT_FAILED:attachment_proximity,parent_main_evidence,parent_stronger_than_child"
+      ],
+      "vertical_range_agl_m": [
+        1.25,
+        2.75
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0233"
+      ],
+      "source_track_ids": [
+        "T15-0899"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0094",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "PROBABLE_MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 30.463670475659445,
+        "y": -13.674725537508888
+      },
+      "ground_z_m": -6.703702187538147,
+      "point_crop_url": "data/phase4c/points/TREE_0094.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0094.json",
+      "phase4_tree_id": "TREE_0094",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "PROBABLE_MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.6446209224897932,
+      "reason_codes": [
+        "MULTI_LEVEL_MAIN_STEM_EVIDENCE"
+      ],
+      "contradictory_evidence": [
+        "NEAREST_PARENT_FAILED:attachment_proximity"
+      ],
+      "vertical_range_agl_m": [
+        1.5,
+        2.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0060"
+      ],
+      "source_track_ids": [
+        "T15-0913"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0096",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "ROI_A_ROOT_OR_BRANCH_FALSE_POSITIVE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 31.303095532968925,
+        "y": -14.276992330970481
+      },
+      "ground_z_m": -6.695110261440277,
+      "point_crop_url": "data/phase4c/points/TREE_0096.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0096.json",
+      "phase4_tree_id": "TREE_0096",
+      "current_inventory_status": "UNCERTAIN",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.9052557225938636,
+      "reason_codes": [
+        "BASE_SUPPORT_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "UPPER_CONTINUATION_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        0.75,
+        3.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0040",
+        "C-0415",
+        "C-0671"
+      ],
+      "source_track_ids": [
+        "T15-0928"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0097",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 32.52524387676335,
+        "y": -14.35643627350626
+      },
+      "ground_z_m": -6.686447417736053,
+      "point_crop_url": "data/phase4c/points/TREE_0097.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0097.json",
+      "phase4_tree_id": "TREE_0097",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.7678851679245733,
+      "reason_codes": [
+        "CENTRELINE_STABILITY_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "UPPER_CONTINUATION_SUPPORT",
+        "VERTICALITY_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        2.0,
+        3.0
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [],
+      "source_track_ids": [
+        "T15-0950"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0098",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_DUPLICATE_OF_REFERENCE_TREE"
+      ],
+      "candidate_geometry_status": "PROBABLE_MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 32.542227915499595,
+        "y": -14.251076487481663
+      },
+      "ground_z_m": -6.672875905036927,
+      "point_crop_url": "data/phase4c/points/TREE_0098.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0098.json",
+      "phase4_tree_id": "TREE_0098",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "PROBABLE_MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.6603742128753569,
+      "reason_codes": [
+        "MULTI_LEVEL_MAIN_STEM_EVIDENCE"
+      ],
+      "contradictory_evidence": [
+        "NEAREST_PARENT_FAILED:attachment_proximity"
+      ],
+      "vertical_range_agl_m": [
+        0.75,
+        1.75
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0101"
+      ],
+      "source_track_ids": [
+        "T15-0951"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0099",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 33.118576823483195,
+        "y": -13.644237726686903
+      },
+      "ground_z_m": -6.682574939727783,
+      "point_crop_url": "data/phase4c/points/TREE_0099.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0099.json",
+      "phase4_tree_id": "TREE_0099",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.964065168820583,
+      "reason_codes": [
+        "BASE_SUPPORT_SUPPORT",
+        "CENTRELINE_STABILITY_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "UPPER_CONTINUATION_SUPPORT",
+        "VERTICALITY_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        0.75,
+        3.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0003"
+      ],
+      "source_track_ids": [
+        "T15-0955"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0101",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE",
+        "STRUCTURE_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "WOODY_FRAGMENT_UNCERTAIN",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 33.73017190478958,
+        "y": -12.348102114888347
+      },
+      "ground_z_m": -6.67204327583313,
+      "point_crop_url": "data/phase4c/points/TREE_0101.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0101.json",
+      "phase4_tree_id": "TREE_0101",
+      "current_inventory_status": "UNCERTAIN",
+      "proposed_structure_class": "WOODY_FRAGMENT_UNCERTAIN",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.5,
+      "reason_codes": [
+        "HIGH_CENTRELINE_RESIDUAL",
+        "UNSTABLE_RADIUS_PROFILE"
+      ],
+      "contradictory_evidence": [
+        "NO_PLAUSIBLE_STRONGER_PARENT"
+      ],
+      "vertical_range_agl_m": [
+        1.5,
+        3.0
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0049"
+      ],
+      "source_track_ids": [
+        "T15-0972"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0102",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_UNCERTAIN"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 33.81609590369886,
+        "y": -11.076418376890421
+      },
+      "ground_z_m": -6.672258901596069,
+      "point_crop_url": "data/phase4c/points/TREE_0102.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0102.json",
+      "phase4_tree_id": "TREE_0102",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.8089042388721607,
+      "reason_codes": [
+        "BASE_SUPPORT_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "VERTICALITY_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        1.0,
+        2.5
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0023"
+      ],
+      "source_track_ids": [
+        "T15-0973"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0103",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 33.823268998974605,
+        "y": -9.216776229757933
+      },
+      "ground_z_m": -6.620848309993744,
+      "point_crop_url": "data/phase4c/points/TREE_0103.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0103.json",
+      "phase4_tree_id": "TREE_0103",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.9562708327285279,
+      "reason_codes": [
+        "BASE_SUPPORT_SUPPORT",
+        "CENTRELINE_STABILITY_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "UPPER_CONTINUATION_SUPPORT",
+        "VERTICALITY_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        1.0,
+        3.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0027",
+        "C-0345",
+        "C-0465",
+        "C-0801"
+      ],
+      "source_track_ids": [
+        "T15-0974"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0105",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 34.40826654407324,
+        "y": -14.004594349067379
+      },
+      "ground_z_m": -6.684189140796661,
+      "point_crop_url": "data/phase4c/points/TREE_0105.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0105.json",
+      "phase4_tree_id": "TREE_0105",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.9394550867630715,
+      "reason_codes": [
+        "BASE_SUPPORT_SUPPORT",
+        "CENTRELINE_STABILITY_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "UPPER_CONTINUATION_SUPPORT",
+        "VERTICALITY_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        1.0,
+        3.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0006"
+      ],
+      "source_track_ids": [
+        "T15-0992"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0106",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "PROBABLE_MAIN_STEM",
+      "identity_status": "UNCERTAIN",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 34.62449398022648,
+        "y": -11.661519207969093
+      },
+      "ground_z_m": -6.6509243726730345,
+      "point_crop_url": "data/phase4c/points/TREE_0106.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0106.json",
+      "phase4_tree_id": "TREE_0106",
+      "current_inventory_status": "UNCERTAIN",
+      "proposed_structure_class": "PROBABLE_MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.599954946457466,
+      "reason_codes": [
+        "MULTI_LEVEL_MAIN_STEM_EVIDENCE"
+      ],
+      "contradictory_evidence": [
+        "NEAREST_PARENT_FAILED:attachment_proximity"
+      ],
+      "vertical_range_agl_m": [
+        2.0,
+        2.75
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0007"
+      ],
+      "source_track_ids": [
+        "T15-1007"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0107",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "ROI_A_CORRECT_UNIQUE_TREE"
+      ],
+      "candidate_geometry_status": "MAIN_STEM",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 34.72735710547437,
+        "y": -10.244650895222707
+      },
+      "ground_z_m": -6.650988507270813,
+      "point_crop_url": "data/phase4c/points/TREE_0107.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0107.json",
+      "phase4_tree_id": "TREE_0107",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "MAIN_STEM",
+      "proposed_parent_tree_id": null,
+      "structure_confidence": 0.8118391716140654,
+      "reason_codes": [
+        "BASE_SUPPORT_SUPPORT",
+        "CENTRELINE_STABILITY_SUPPORT",
+        "CONTINUITY_SUPPORT",
+        "CROSS_SECTION_SUPPORT_SUPPORT",
+        "HEIGHT_LEVELS_SUPPORT",
+        "VERTICALITY_SUPPORT",
+        "VERTICAL_SPAN_SUPPORT"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        0.75,
+        2.25
+      ],
+      "attachment_height_agl_m": null,
+      "source_candidate_ids": [
+        "C-0028"
+      ],
+      "source_track_ids": [
+        "T15-1009"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": true,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    },
+    {
+      "review_item_id": "TREE_0111",
+      "item_type": "PHASE4C_STRUCTURE",
+      "candidate_id": null,
+      "priority": 2,
+      "categories": [
+        "PROPOSED_SHADOW_ATTACHMENT"
+      ],
+      "candidate_geometry_status": "PROP_ROOT_ATTACHED",
+      "identity_status": "PROBABLE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4C_STRUCTURE_SHADOW",
+        "PHASE1_5_VERTICAL_TRACKS"
+      ],
+      "position": {
+        "x": 35.39529218037244,
+        "y": -8.387047592357945
+      },
+      "ground_z_m": -6.2744555354118345,
+      "point_crop_url": "data/phase4c/points/TREE_0111.json",
+      "evidence_url": "data/phase4c/evidence/TREE_0111.json",
+      "phase4_tree_id": "TREE_0111",
+      "current_inventory_status": "PROBABLE",
+      "proposed_structure_class": "PROP_ROOT_ATTACHED",
+      "proposed_parent_tree_id": "TREE_0109",
+      "structure_confidence": 0.6524300026432412,
+      "reason_codes": [
+        "CONVERGES_TOWARD_PARENT_UPWARD",
+        "FRAGMENTED_VERTICAL_SUPPORT",
+        "LOW_OR_ROOT_ZONE_ORIGIN",
+        "OBLIQUE_OR_CURVED_AXIS",
+        "PARENT_CONTINUES_ABOVE_CHILD",
+        "PLAUSIBLE_STRONGER_PARENT",
+        "RELATIONAL_ATTACHMENT_GEOMETRY"
+      ],
+      "contradictory_evidence": [],
+      "vertical_range_agl_m": [
+        1.25,
+        2.0
+      ],
+      "attachment_height_agl_m": 1.75,
+      "source_candidate_ids": [
+        "C-0112",
+        "C-0429",
+        "C-0537"
+      ],
+      "source_track_ids": [
+        "T15-1038"
+      ],
+      "baseline_inventory_eligible": true,
+      "proposed_inventory_eligible": false,
+      "review_question": "Accept, reject, or mark uncertain for this Phase 4C structure proposal?"
+    }
+  ],
+  "input_provenance": {
+    "config/stem_inventory_v2_phase4c.yaml": "f3506abebd86d3de8f836b380cfe7308097e51573ea14616be427b5405958e18",
+    "outputs/tree_tracks_v2_phase1_5.json": "16b09909c7723fda61f610c25789222403e5e463beb508d5eb5895ace053a0a7",
+    "outputs/phase4_stem_graph.json": "4688273537b248b147cb1177a1e17ffd40f9904103a3cb0d3e34652d02200273",
+    "outputs/phase4_fragment_resolution.json": "4749a8999ce3f9c7885944b0804f2b6ecc5239ceca92a5b61adb83b3e3bc5c5e",
+    "outputs/phase4_tree_inventory.json": "d56557ac409dea59040437b467571cc0a67121a3d2652fb1c169b6d948bd0c72",
+    "outputs/phase4_summary.json": "3cf418572c24e410d9ece7d03cc1d2f3de839b1c5466f71a3737e046bf35f22b",
+    "outputs/phase4b_roi_evaluation.json": "310bc8917555577f2a6267257ba889f6b7b280e7a98b535787f3572fb4b1528d",
+    "outputs/phase4b_error_decomposition.json": "9b6eaedb69f906b3c75dd786e7c44897c2e1ca519f634772b80a31ced2f01538",
+    "annotations/phase4_ground_truth_roi.json": "d5794402d7dc518a33d7a6f691447b858e12a0bc8f041c1ecc4284b469ba6b6c",
+    "outputs/tree_candidates_v2_phase1.json": "1c084436d316ac562b0805c399ee32c49792091ffd2a6634ee9b819f2db6173a",
+    "outputs/phase3_candidate_tree_associations.json": "1f90af8b9d83ce5d7d69bcb1613ef5004e4a24e5a061c8f86801867fac2c51e9"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4-stem-graph",
+  "interpretation": "EXHAUSTIVE GROUND-TRUTH ROI WORKFLOW; CURRENT HYPOTHESES ARE NOT GROUND TRUTH",
+  "annotation_export_path": "annotations/phase4_ground_truth_roi.json",
+  "queue_size": 1,
+  "unique_candidate_count": 0,
+  "category_counts": {
+    "EXHAUSTIVE_GROUND_TRUTH_ROI": 1
+  },
+  "entries": [
+    {
+      "review_item_id": "ROI-A",
+      "item_type": "GROUND_TRUTH_ROI",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "EXHAUSTIVE_GROUND_TRUTH_ROI"
+      ],
+      "candidate_geometry_status": "ROI_GROUND_TRUTH_REQUIRED",
+      "identity_status": "NOT_REVIEWED",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "measurement_height_m": null,
+      "source_providers": [
+        "PHASE4_STEM_GRAPH"
+      ],
+      "position": {
+        "x": 32.0,
+        "y": -11.5
+      },
+      "ground_z_m": -6.6615396499633786,
+      "point_crop_url": "data/phase4_roi/points/ROI-A.json",
+      "evidence_url": "data/phase4_roi/evidence/ROI-A.json",
+      "review_question": "Count every physical tree in this ROI, then record TP, FP, FN, and duplicates. Do not infer a target count from the current 17 hypotheses.",
+      "current_resolved_hypothesis_count": 17,
+      "unresolved_track_count": 69
+    }
+  ]
+}

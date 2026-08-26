@@ -1,0 +1,1367 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+  "interpretation": "BLIND ROI-B REVIEW EVIDENCE; ALGORITHM MARKERS ARE HIDDEN UNTIL ASSOCIATION STAGE",
+  "roi": {
+    "roi_id": "ROI-B",
+    "bounds": {
+      "x_min": 5.0,
+      "x_max": 11.0,
+      "y_min": -11.0,
+      "y_max": -5.0
+    },
+    "current_tree_centers": [
+      {
+        "tree_id": "TREE_0001",
+        "x": 6.8545322603491865,
+        "y": -9.481166532388347,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0169",
+          "C-0561"
+        ],
+        "source_track_ids": [
+          "T15-0038"
+        ]
+      },
+      {
+        "tree_id": "TREE_0003",
+        "x": 7.382461281924923,
+        "y": -7.98816796847588,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0360"
+        ],
+        "source_track_ids": [
+          "T15-0068"
+        ]
+      },
+      {
+        "tree_id": "TREE_0004",
+        "x": 7.907170001510147,
+        "y": -7.700758571062889,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0001"
+        ],
+        "source_track_ids": [
+          "T15-0084"
+        ]
+      },
+      {
+        "tree_id": "TREE_0006",
+        "x": 8.426053987229464,
+        "y": -10.083677413947639,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0004",
+          "C-0190",
+          "C-0457"
+        ],
+        "source_track_ids": [
+          "T15-0100"
+        ]
+      },
+      {
+        "tree_id": "TREE_0007",
+        "x": 8.777422773491196,
+        "y": -9.695931117066843,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0297",
+          "C-0407"
+        ],
+        "source_track_ids": [
+          "T15-0115"
+        ]
+      },
+      {
+        "tree_id": "TREE_0009",
+        "x": 8.935424311109838,
+        "y": -7.630097444530291,
+        "detection_status": "CONFIRMED",
+        "source_candidate_ids": [
+          "C-0576"
+        ],
+        "source_track_ids": [
+          "T15-0128"
+        ]
+      },
+      {
+        "tree_id": "TREE_0013",
+        "x": 9.603446192392711,
+        "y": -8.336308183900512,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0089",
+          "C-0508"
+        ],
+        "source_track_ids": [
+          "T15-0155"
+        ]
+      },
+      {
+        "tree_id": "TREE_0016",
+        "x": 10.370377088268885,
+        "y": -5.785730502698559,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0141"
+        ],
+        "source_track_ids": [
+          "T15-0192"
+        ]
+      },
+      {
+        "tree_id": "TREE_0017",
+        "x": 10.4450836642628,
+        "y": -5.747561875596052,
+        "detection_status": "CONFIRMED",
+        "source_candidate_ids": [
+          "C-0174"
+        ],
+        "source_track_ids": [
+          "T15-0195"
+        ]
+      }
+    ],
+    "resolved_tree_predictions": [
+      {
+        "tree_id": "TREE_0001",
+        "x": 6.8545322603491865,
+        "y": -9.481166532388347,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0169",
+          "C-0561"
+        ],
+        "source_track_ids": [
+          "T15-0038"
+        ]
+      },
+      {
+        "tree_id": "TREE_0003",
+        "x": 7.382461281924923,
+        "y": -7.98816796847588,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0360"
+        ],
+        "source_track_ids": [
+          "T15-0068"
+        ]
+      },
+      {
+        "tree_id": "TREE_0004",
+        "x": 7.907170001510147,
+        "y": -7.700758571062889,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0001"
+        ],
+        "source_track_ids": [
+          "T15-0084"
+        ]
+      },
+      {
+        "tree_id": "TREE_0006",
+        "x": 8.426053987229464,
+        "y": -10.083677413947639,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0004",
+          "C-0190",
+          "C-0457"
+        ],
+        "source_track_ids": [
+          "T15-0100"
+        ]
+      },
+      {
+        "tree_id": "TREE_0007",
+        "x": 8.777422773491196,
+        "y": -9.695931117066843,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0297",
+          "C-0407"
+        ],
+        "source_track_ids": [
+          "T15-0115"
+        ]
+      },
+      {
+        "tree_id": "TREE_0009",
+        "x": 8.935424311109838,
+        "y": -7.630097444530291,
+        "detection_status": "CONFIRMED",
+        "source_candidate_ids": [
+          "C-0576"
+        ],
+        "source_track_ids": [
+          "T15-0128"
+        ]
+      },
+      {
+        "tree_id": "TREE_0013",
+        "x": 9.603446192392711,
+        "y": -8.336308183900512,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0089",
+          "C-0508"
+        ],
+        "source_track_ids": [
+          "T15-0155"
+        ]
+      },
+      {
+        "tree_id": "TREE_0016",
+        "x": 10.370377088268885,
+        "y": -5.785730502698559,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0141"
+        ],
+        "source_track_ids": [
+          "T15-0192"
+        ]
+      },
+      {
+        "tree_id": "TREE_0017",
+        "x": 10.4450836642628,
+        "y": -5.747561875596052,
+        "detection_status": "CONFIRMED",
+        "source_candidate_ids": [
+          "C-0174"
+        ],
+        "source_track_ids": [
+          "T15-0195"
+        ]
+      }
+    ],
+    "track_centers": [
+      {
+        "track_id": "T15-0002",
+        "x": 5.1181451276896315,
+        "y": -8.456631178224079,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0004",
+        "x": 5.40449896885848,
+        "y": -8.586392288279356,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0005",
+        "x": 5.489883333072527,
+        "y": -9.22712607624576,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0006",
+        "x": 5.502130593228993,
+        "y": -9.07218816984237,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0010",
+        "x": 5.628665948628281,
+        "y": -9.895194895182627,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0013",
+        "x": 5.910096907656629,
+        "y": -7.051027004604673,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0014",
+        "x": 5.931672287409149,
+        "y": -6.493823330408721,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0015",
+        "x": 5.958462081237844,
+        "y": -9.131449439064784,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0016",
+        "x": 6.002117670797877,
+        "y": -9.647165411669343,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0017",
+        "x": 6.01551016449173,
+        "y": -6.359244821976212,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0018",
+        "x": 6.088472889576805,
+        "y": -9.673908423770358,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0021",
+        "x": 6.269775110405999,
+        "y": -8.678560606895923,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0022",
+        "x": 6.2816066049383075,
+        "y": -9.516782587085187,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0023",
+        "x": 6.424639331014608,
+        "y": -9.309857841180252,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0025",
+        "x": 6.464247934517134,
+        "y": -7.684719037766747,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0027",
+        "x": 6.492570884992402,
+        "y": -7.007064095609689,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0029",
+        "x": 6.529434343920655,
+        "y": -9.221842478173663,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0030",
+        "x": 6.54813932303378,
+        "y": -8.444114348128972,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0031",
+        "x": 6.589215334652977,
+        "y": -8.33410805509124,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0032",
+        "x": 6.595116290997395,
+        "y": -10.198056100005154,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0033",
+        "x": 6.647751111677305,
+        "y": -5.790839434055749,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0034",
+        "x": 6.692202082347819,
+        "y": -6.864657911122001,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0036",
+        "x": 6.704325394338707,
+        "y": -6.2365581454398145,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0039",
+        "x": 6.874057378440814,
+        "y": -5.428812194562824,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0040",
+        "x": 6.876869017188881,
+        "y": -5.1771645176244885,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0042",
+        "x": 6.922344049907139,
+        "y": -7.986285854667314,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0044",
+        "x": 6.923920126508336,
+        "y": -9.36130231566675,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0046",
+        "x": 6.926788191477302,
+        "y": -8.936102650070113,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0047",
+        "x": 6.938225556191378,
+        "y": -6.574123397018142,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0048",
+        "x": 6.943844406589971,
+        "y": -5.839731398105255,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0051",
+        "x": 7.015061075701576,
+        "y": -9.595819654544227,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0052",
+        "x": 7.031671832271425,
+        "y": -5.973101234704471,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0053",
+        "x": 7.0567705956434015,
+        "y": -9.428899809275892,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0058",
+        "x": 7.1373072908684145,
+        "y": -7.2168161518143865,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0062",
+        "x": 7.188504217282373,
+        "y": -7.382322785169566,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0064",
+        "x": 7.212814405440144,
+        "y": -7.503741439061205,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0065",
+        "x": 7.271506623781407,
+        "y": -7.980166280941449,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0066",
+        "x": 7.2764670456857425,
+        "y": -7.431894375904081,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0067",
+        "x": 7.360250394627213,
+        "y": -9.693648390654726,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0070",
+        "x": 7.453162983821364,
+        "y": -6.749354304526096,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0071",
+        "x": 7.480352444128074,
+        "y": -6.608944109864185,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0076",
+        "x": 7.720510055067822,
+        "y": -7.40520667467591,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0080",
+        "x": 7.802273800374349,
+        "y": -5.167281147362797,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0085",
+        "x": 7.9145090430391765,
+        "y": -9.908860709395261,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0088",
+        "x": 8.043152888770646,
+        "y": -7.230565016878838,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0089",
+        "x": 8.092545989072558,
+        "y": -6.281561556588853,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0090",
+        "x": 8.099675557481707,
+        "y": -9.541706178938895,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0091",
+        "x": 8.112818669437587,
+        "y": -6.282844596763045,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0093",
+        "x": 8.134368414475414,
+        "y": -6.851419167231616,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0095",
+        "x": 8.17431891213198,
+        "y": -9.098478950680798,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0096",
+        "x": 8.18701888362966,
+        "y": -9.090367830736492,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0097",
+        "x": 8.244442999151959,
+        "y": -6.377463289912517,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0098",
+        "x": 8.301099234872183,
+        "y": -8.38127838398232,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0099",
+        "x": 8.349759444598073,
+        "y": -5.351843622997441,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0102",
+        "x": 8.460545541171955,
+        "y": -5.945779088327237,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0104",
+        "x": 8.518512707060522,
+        "y": -8.806961391611623,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0105",
+        "x": 8.527583321867791,
+        "y": -5.777399923551682,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0108",
+        "x": 8.584569535330772,
+        "y": -9.685208545997243,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0109",
+        "x": 8.6010252956995,
+        "y": -7.010789716197834,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0111",
+        "x": 8.630752399664285,
+        "y": -5.680931515451794,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0112",
+        "x": 8.633473781181758,
+        "y": -6.372780653213665,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0113",
+        "x": 8.660472499179235,
+        "y": -5.167931845661055,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0114",
+        "x": 8.720712651385998,
+        "y": -5.13513925745382,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0118",
+        "x": 8.808266119125266,
+        "y": -6.988632859906191,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0124",
+        "x": 8.899889966881585,
+        "y": -6.760644932410132,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0127",
+        "x": 8.934530144340346,
+        "y": -10.260491866970705,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0129",
+        "x": 8.937673838589648,
+        "y": -9.598785542448752,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0130",
+        "x": 8.942069729819679,
+        "y": -6.682734758131733,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0135",
+        "x": 9.149946020577188,
+        "y": -7.258411906474073,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0138",
+        "x": 9.27235891641868,
+        "y": -5.557933694135564,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0144",
+        "x": 9.4097700380961,
+        "y": -5.363346903457797,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0146",
+        "x": 9.447585963268978,
+        "y": -5.523766752840014,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0148",
+        "x": 9.467848070186179,
+        "y": -6.857727803568494,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0149",
+        "x": 9.47939849843546,
+        "y": -6.426716971105372,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0151",
+        "x": 9.523194633204742,
+        "y": -10.555840731087242,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0152",
+        "x": 9.55390936855167,
+        "y": -9.876112334506175,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0154",
+        "x": 9.573377869084219,
+        "y": -8.946457959127752,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0156",
+        "x": 9.636493446981714,
+        "y": -9.733220131368931,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0157",
+        "x": 9.643801491293896,
+        "y": -5.484946473426717,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0160",
+        "x": 9.672220474918626,
+        "y": -8.656709091567262,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0169",
+        "x": 9.871756468258267,
+        "y": -8.771792463990579,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0170",
+        "x": 9.899571571643692,
+        "y": -5.916692996706607,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0173",
+        "x": 9.994367575805889,
+        "y": -7.619981941014613,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0174",
+        "x": 10.00119331285163,
+        "y": -8.521597595794962,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0175",
+        "x": 10.030411629955585,
+        "y": -6.353200253315809,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0182",
+        "x": 10.18069584305858,
+        "y": -5.814376580773773,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0184",
+        "x": 10.215361951784594,
+        "y": -6.7101007888902116,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0188",
+        "x": 10.274319309613995,
+        "y": -6.362761968006066,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0190",
+        "x": 10.306437157581955,
+        "y": -5.76384657029562,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0194",
+        "x": 10.444132523204532,
+        "y": -6.087067884234491,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0198",
+        "x": 10.495708317344269,
+        "y": -8.996092443797489,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0209",
+        "x": 10.861715429590886,
+        "y": -6.79697264522369,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      }
+    ],
+    "unresolved_track_centers": [
+      {
+        "track_id": "T15-0002",
+        "x": 5.1181451276896315,
+        "y": -8.456631178224079,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0004",
+        "x": 5.40449896885848,
+        "y": -8.586392288279356,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0005",
+        "x": 5.489883333072527,
+        "y": -9.22712607624576,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0006",
+        "x": 5.502130593228993,
+        "y": -9.07218816984237,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0010",
+        "x": 5.628665948628281,
+        "y": -9.895194895182627,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0013",
+        "x": 5.910096907656629,
+        "y": -7.051027004604673,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0014",
+        "x": 5.931672287409149,
+        "y": -6.493823330408721,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0015",
+        "x": 5.958462081237844,
+        "y": -9.131449439064784,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0016",
+        "x": 6.002117670797877,
+        "y": -9.647165411669343,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0017",
+        "x": 6.01551016449173,
+        "y": -6.359244821976212,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0018",
+        "x": 6.088472889576805,
+        "y": -9.673908423770358,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0021",
+        "x": 6.269775110405999,
+        "y": -8.678560606895923,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0022",
+        "x": 6.2816066049383075,
+        "y": -9.516782587085187,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0023",
+        "x": 6.424639331014608,
+        "y": -9.309857841180252,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0025",
+        "x": 6.464247934517134,
+        "y": -7.684719037766747,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0027",
+        "x": 6.492570884992402,
+        "y": -7.007064095609689,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0029",
+        "x": 6.529434343920655,
+        "y": -9.221842478173663,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0030",
+        "x": 6.54813932303378,
+        "y": -8.444114348128972,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0031",
+        "x": 6.589215334652977,
+        "y": -8.33410805509124,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0032",
+        "x": 6.595116290997395,
+        "y": -10.198056100005154,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0033",
+        "x": 6.647751111677305,
+        "y": -5.790839434055749,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0034",
+        "x": 6.692202082347819,
+        "y": -6.864657911122001,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0036",
+        "x": 6.704325394338707,
+        "y": -6.2365581454398145,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0039",
+        "x": 6.874057378440814,
+        "y": -5.428812194562824,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0040",
+        "x": 6.876869017188881,
+        "y": -5.1771645176244885,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0042",
+        "x": 6.922344049907139,
+        "y": -7.986285854667314,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0044",
+        "x": 6.923920126508336,
+        "y": -9.36130231566675,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0046",
+        "x": 6.926788191477302,
+        "y": -8.936102650070113,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0047",
+        "x": 6.938225556191378,
+        "y": -6.574123397018142,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0048",
+        "x": 6.943844406589971,
+        "y": -5.839731398105255,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0051",
+        "x": 7.015061075701576,
+        "y": -9.595819654544227,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0052",
+        "x": 7.031671832271425,
+        "y": -5.973101234704471,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0053",
+        "x": 7.0567705956434015,
+        "y": -9.428899809275892,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0058",
+        "x": 7.1373072908684145,
+        "y": -7.2168161518143865,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0062",
+        "x": 7.188504217282373,
+        "y": -7.382322785169566,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0064",
+        "x": 7.212814405440144,
+        "y": -7.503741439061205,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0065",
+        "x": 7.271506623781407,
+        "y": -7.980166280941449,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0066",
+        "x": 7.2764670456857425,
+        "y": -7.431894375904081,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0067",
+        "x": 7.360250394627213,
+        "y": -9.693648390654726,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0070",
+        "x": 7.453162983821364,
+        "y": -6.749354304526096,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0071",
+        "x": 7.480352444128074,
+        "y": -6.608944109864185,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0076",
+        "x": 7.720510055067822,
+        "y": -7.40520667467591,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0080",
+        "x": 7.802273800374349,
+        "y": -5.167281147362797,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0085",
+        "x": 7.9145090430391765,
+        "y": -9.908860709395261,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0088",
+        "x": 8.043152888770646,
+        "y": -7.230565016878838,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0089",
+        "x": 8.092545989072558,
+        "y": -6.281561556588853,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0090",
+        "x": 8.099675557481707,
+        "y": -9.541706178938895,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0091",
+        "x": 8.112818669437587,
+        "y": -6.282844596763045,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0093",
+        "x": 8.134368414475414,
+        "y": -6.851419167231616,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0095",
+        "x": 8.17431891213198,
+        "y": -9.098478950680798,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0096",
+        "x": 8.18701888362966,
+        "y": -9.090367830736492,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0097",
+        "x": 8.244442999151959,
+        "y": -6.377463289912517,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0098",
+        "x": 8.301099234872183,
+        "y": -8.38127838398232,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0099",
+        "x": 8.349759444598073,
+        "y": -5.351843622997441,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0102",
+        "x": 8.460545541171955,
+        "y": -5.945779088327237,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0104",
+        "x": 8.518512707060522,
+        "y": -8.806961391611623,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0105",
+        "x": 8.527583321867791,
+        "y": -5.777399923551682,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0108",
+        "x": 8.584569535330772,
+        "y": -9.685208545997243,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0109",
+        "x": 8.6010252956995,
+        "y": -7.010789716197834,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0111",
+        "x": 8.630752399664285,
+        "y": -5.680931515451794,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0112",
+        "x": 8.633473781181758,
+        "y": -6.372780653213665,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0113",
+        "x": 8.660472499179235,
+        "y": -5.167931845661055,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0114",
+        "x": 8.720712651385998,
+        "y": -5.13513925745382,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0118",
+        "x": 8.808266119125266,
+        "y": -6.988632859906191,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0124",
+        "x": 8.899889966881585,
+        "y": -6.760644932410132,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0127",
+        "x": 8.934530144340346,
+        "y": -10.260491866970705,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0129",
+        "x": 8.937673838589648,
+        "y": -9.598785542448752,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0130",
+        "x": 8.942069729819679,
+        "y": -6.682734758131733,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0135",
+        "x": 9.149946020577188,
+        "y": -7.258411906474073,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0138",
+        "x": 9.27235891641868,
+        "y": -5.557933694135564,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0144",
+        "x": 9.4097700380961,
+        "y": -5.363346903457797,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0146",
+        "x": 9.447585963268978,
+        "y": -5.523766752840014,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0148",
+        "x": 9.467848070186179,
+        "y": -6.857727803568494,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0149",
+        "x": 9.47939849843546,
+        "y": -6.426716971105372,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0151",
+        "x": 9.523194633204742,
+        "y": -10.555840731087242,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0152",
+        "x": 9.55390936855167,
+        "y": -9.876112334506175,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0154",
+        "x": 9.573377869084219,
+        "y": -8.946457959127752,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0156",
+        "x": 9.636493446981714,
+        "y": -9.733220131368931,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0157",
+        "x": 9.643801491293896,
+        "y": -5.484946473426717,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0160",
+        "x": 9.672220474918626,
+        "y": -8.656709091567262,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0169",
+        "x": 9.871756468258267,
+        "y": -8.771792463990579,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0170",
+        "x": 9.899571571643692,
+        "y": -5.916692996706607,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0173",
+        "x": 9.994367575805889,
+        "y": -7.619981941014613,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0174",
+        "x": 10.00119331285163,
+        "y": -8.521597595794962,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0175",
+        "x": 10.030411629955585,
+        "y": -6.353200253315809,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0182",
+        "x": 10.18069584305858,
+        "y": -5.814376580773773,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0184",
+        "x": 10.215361951784594,
+        "y": -6.7101007888902116,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0188",
+        "x": 10.274319309613995,
+        "y": -6.362761968006066,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0190",
+        "x": 10.306437157581955,
+        "y": -5.76384657029562,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0194",
+        "x": 10.444132523204532,
+        "y": -6.087067884234491,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      },
+      {
+        "track_id": "T15-0198",
+        "x": 10.495708317344269,
+        "y": -8.996092443797489,
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT"
+      },
+      {
+        "track_id": "T15-0209",
+        "x": 10.861715429590886,
+        "y": -6.79697264522369,
+        "geometry_status": "INSUFFICIENT_EVIDENCE"
+      }
+    ],
+    "candidate_centers": [],
+    "automatic_xy_matching_policy": "SUGGESTION_ONLY; MANUAL ASSOCIATIONS OVERRIDE"
+  },
+  "sampled": {
+    "components_by_height": [],
+    "radius_profile_selected": [],
+    "centreline": {
+      "points_xyz": []
+    }
+  },
+  "full_resolution": {
+    "components_by_height": [],
+    "radius_profile_selected": [],
+    "centreline": {
+      "points_xyz": []
+    }
+  }
+}

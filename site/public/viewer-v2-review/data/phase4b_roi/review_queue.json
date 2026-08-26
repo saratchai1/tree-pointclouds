@@ -1,0 +1,1448 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4b-roi-reference-census",
+  "annotation_version": "phase4b-roi-reference-v1",
+  "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+  "interpretation": "EXHAUSTIVE MANUAL LIDAR-VISIBLE REFERENCE CENSUS; NOT FIELD GROUND TRUTH",
+  "annotation_export_path": "annotations/phase4_ground_truth_roi.json",
+  "queue_size": 1,
+  "unique_candidate_count": 0,
+  "category_counts": {
+    "EXHAUSTIVE_LIDAR_VISIBLE_REFERENCE_CENSUS": 1
+  },
+  "reference_confidence_values": [
+    "CERTAIN",
+    "PROBABLE",
+    "UNCERTAIN"
+  ],
+  "visibility_values": [
+    "CLEAR",
+    "INSUFFICIENT_LIDAR_EVIDENCE",
+    "PARTIALLY_OCCLUDED",
+    "STRONGLY_OCCLUDED"
+  ],
+  "algorithm_evidence_status_values": [
+    "CANDIDATE_EXISTS_NO_TRACK",
+    "DUPLICATE_TREE_IDS",
+    "INCORRECTLY_MERGED",
+    "NO_ALGORITHM_EVIDENCE",
+    "RESOLVED_TREE",
+    "TRACK_EXISTS_UNRESOLVED",
+    "UNCERTAIN"
+  ],
+  "prediction_classification_values": [
+    "CORRECT_UNIQUE_TREE",
+    "DUPLICATE_OF_REFERENCE_TREE",
+    "INCORRECT_MERGE",
+    "NON_TREE_FALSE_POSITIVE",
+    "OUTSIDE_ROI",
+    "ROOT_OR_BRANCH_FALSE_POSITIVE",
+    "UNCERTAIN"
+  ],
+  "failure_reason_values": [
+    "CANDIDATE_EXISTS_NO_TRACK",
+    "DUPLICATE_OR_SPLIT_ERROR",
+    "GROUND_NORMALIZATION_OR_HEIGHT_ERROR",
+    "INSUFFICIENT_LIDAR_EVIDENCE",
+    "MERGED_WITH_NEARBY_TREE",
+    "NO_CANDIDATE_GENERATED",
+    "OCCLUSION_OR_POINT_GAP",
+    "OTHER",
+    "PROP_ROOT_TRANSITION_FAILURE",
+    "ROI_BOUNDARY_ISSUE",
+    "TRACK_ASSOCIATED_TO_WRONG_TREE",
+    "TRACK_EXISTS_UNRESOLVED"
+  ],
+  "annotation_template": {
+    "algorithm_version": "stem-inventory-v2-phase4b-roi-reference-census",
+    "annotation_version": "phase4b-roi-reference-v1",
+    "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+    "interpretation": "MANUAL LIDAR-VISIBLE REFERENCE CENSUS; NOT FIELD-VERIFIED GROUND TRUTH",
+    "created_at": "2026-08-09T05:50:08.342312+00:00",
+    "annotation_status": "COMPLETE",
+    "frozen_roi": {
+      "roi_id": "ROI-A",
+      "bounds": {
+        "x_min": 29,
+        "x_max": 35,
+        "y_min": -14.5,
+        "y_max": -8.5
+      },
+      "polygon": [
+        [
+          29,
+          -14.5
+        ],
+        [
+          35,
+          -14.5
+        ],
+        [
+          35,
+          -8.5
+        ],
+        [
+          29,
+          -8.5
+        ],
+        [
+          29,
+          -14.5
+        ]
+      ],
+      "area_m2": 36,
+      "coordinate_reference_system": {
+        "name": "LOCAL_CARTESIAN_NO_EMBEDDED_CRS",
+        "epsg": null,
+        "source_las_has_embedded_crs": false,
+        "coordinate_space": "VIEWER_LOCAL_XYZ_AFTER_ORIGIN_TRANSLATION",
+        "viewer_origin_offset_m": [
+          -7.122629275835209,
+          -0.7796401654515108,
+          4.682373638660788
+        ]
+      },
+      "source_las": {
+        "identifier": "TD_008_2026_08_07_07_04_07.las|points=67177038|bytes=1746603215",
+        "file_name": "TD_008_2026_08_07_07_04_07.las",
+        "local_path": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "point_count": 67177038,
+        "size_bytes": 1746603215,
+        "las_version": "1.2",
+        "point_record_length_bytes": 26,
+        "embedded_vlr_count": 0,
+        "viewer_origin_offset_m": [
+          -7.122629275835209,
+          -0.7796401654515108,
+          4.682373638660788
+        ]
+      },
+      "point_cloud_and_config_version": {
+        "phase4_algorithm_version": "stem-inventory-v2-phase4-stem-graph",
+        "phase4_input_hashes": {
+          "config/stem_inventory_v2_phase4.yaml": "322defe51b5cbed33ce12266e30b7fa3d045d6bf1a3f0564323b48a1046485ff",
+          "outputs/tree_tracks_v2_phase1_5.json": "16b09909c7723fda61f610c25789222403e5e463beb508d5eb5895ace053a0a7",
+          "outputs/candidate_alias_map_v2_phase1_5.json": "39c2aaee724285431c4ef4924f30ac2481c3b31d785f5a0f213670dd00b5e8a0",
+          "outputs/tree_candidates_v2_phase1.json": "1c084436d316ac562b0805c399ee32c49792091ffd2a6634ee9b819f2db6173a",
+          "outputs/phase3_tree_inventory.json": "7d8c70df20755f32ed1d58d8eac4e0d87ef94590b9c23f3d53c69e6f1442f90c",
+          "outputs/phase3_candidate_tree_associations.json": "1f90af8b9d83ce5d7d69bcb1613ef5004e4a24e5a061c8f86801867fac2c51e9",
+          "outputs/phase3_failure_uncertainty_report.json": "fc4268a4ed105c53fff770f40438e0dd6abf51af78ad84d15a98a3b7a1cc895b"
+        },
+        "phase4b_config_sha256": "4452af998f3f58c86d6e7da329103fec12dccb134eba5428097cebfb072f90ed"
+      },
+      "boundary_rule": {
+        "membership_basis": "ESTIMATED_MAIN_STEM_BASE_OR_REFERENCE_CENTER",
+        "tolerance_m": 0.02,
+        "inside_rule": "REFERENCE CENTER IS FARTHER THAN TOLERANCE FROM EVERY ROI EDGE",
+        "crossing_rule": "REFERENCE CENTER IS WITHIN TOLERANCE OF AN ROI EDGE",
+        "outside_rule": "REFERENCE CENTER IS BEYOND THE ROI BY MORE THAN TOLERANCE",
+        "headline_metric_membership": "INSIDE_ROI_ONLY"
+      }
+    },
+    "next_reference_sequence": 16,
+    "reference_trees": [
+      {
+        "reference_tree_id": "ROI_A_REF_0004",
+        "center": {
+          "x": 33.806,
+          "y": -9.181,
+          "z": -4.3118
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0103"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0103",
+            "distance_m": 0.03972602347677735,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0107",
+            "distance_m": 1.4072143201077008,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0102",
+            "distance_m": 1.8954452645026232,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0974",
+            "distance_m": 0.03972602347677735,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0985",
+            "distance_m": 0.430833374161803,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0995",
+            "distance_m": 0.6368794624325606,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0027",
+            "distance_m": 0.04976946855251012,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0801",
+            "distance_m": 0.5329887428454779,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0335",
+            "distance_m": 0.5362807100763562,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            33.8055,
+            -9.1809,
+            -4.3118
+          ],
+          "height_agl_m": 2.368,
+          "height_band": "STEM",
+          "view": {
+            "yaw": -1.0647221679687495,
+            "pitch": 0.3310676269531248,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:42:02.034Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0005",
+        "center": {
+          "x": 33.128,
+          "y": -13.616,
+          "z": -4.5357
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0099"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0099",
+            "distance_m": 0.029768531440282957,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0098",
+            "distance_m": 0.8639740041991991,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0097",
+            "distance_m": 0.9547569424849006,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0955",
+            "distance_m": 0.02976853144028464,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0971",
+            "distance_m": 0.7244252205866762,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0951",
+            "distance_m": 0.8639740041991991,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0003",
+            "distance_m": 0.01788854381999635,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0762",
+            "distance_m": 0.6724284348538511,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0101",
+            "distance_m": 0.7864858549268373,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            33.1282,
+            -13.6161,
+            -4.5357
+          ],
+          "height_agl_m": 2.144,
+          "height_band": "STEM",
+          "view": {
+            "yaw": -1.2751391601562505,
+            "pitch": 0.21786450195312518,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:42:19.466Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0006",
+        "center": {
+          "x": 34.753,
+          "y": -10.157,
+          "z": -4.3588
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0107"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0107",
+            "distance_m": 0.09132490061858578,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0102",
+            "distance_m": 1.312676440494639,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0103",
+            "distance_m": 1.3222785154406353,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1010",
+            "distance_m": 0.029374106335083264,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1011",
+            "distance_m": 0.05782423829524947,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1009",
+            "distance_m": 0.09132490061858578,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0028",
+            "distance_m": 0.08931965069345107,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0648",
+            "distance_m": 0.5254883443046104,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0537",
+            "distance_m": 0.6018454951231283,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            34.7531,
+            -10.1571,
+            -4.3588
+          ],
+          "height_agl_m": 2.321,
+          "height_band": "STEM",
+          "view": {
+            "yaw": 1.1572221679687493,
+            "pitch": 0.37249999999999994,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:42:33.017Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0007",
+        "center": {
+          "x": 34.658,
+          "y": -11.621,
+          "z": -4.0962
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0106"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0106",
+            "distance_m": 0.052578128299759726,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0102",
+            "distance_m": 1.0026822286234593,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0101",
+            "distance_m": 1.1787885559916618,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1008",
+            "distance_m": 0.049537466267117254,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1007",
+            "distance_m": 0.052578128299759726,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0998",
+            "distance_m": 0.20624368862641726,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0007",
+            "distance_m": 0.06545991139621056,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0341",
+            "distance_m": 0.5014828013003084,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0208",
+            "distance_m": 0.6015687824347289,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            34.6581,
+            -11.6215,
+            -4.0962
+          ],
+          "height_agl_m": 2.584,
+          "height_band": "STEM",
+          "view": {
+            "yaw": 1.7992709960937494,
+            "pitch": 0.2045573120117182,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:42:51.517Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0008",
+        "center": {
+          "x": 34.937,
+          "y": -14.143,
+          "z": -4.3318
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "UNCERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "UNCERTAIN",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0105",
+            "distance_m": 0.5465484348402551,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0099",
+            "distance_m": 1.885583902713933,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0101",
+            "distance_m": 2.1628898421712317,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1022",
+            "distance_m": 0.03933355089699717,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1017",
+            "distance_m": 0.05567477456056027,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0992",
+            "distance_m": 0.5465484348402551,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0257",
+            "distance_m": 0.08495881355103968,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0006",
+            "distance_m": 0.46132201334858736,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0251",
+            "distance_m": 0.8122179510451574,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "มองจาก LiDAR แล้วไม่สามารถจับคู่หลักฐานของระบบได้อย่างมั่นใจ",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            34.9367,
+            -14.1425,
+            -4.3318
+          ],
+          "height_agl_m": 2.348,
+          "height_band": "STEM",
+          "view": {
+            "yaw": 0.5243749999999961,
+            "pitch": 0.32619793701171834,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:44:02.283Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0009",
+        "center": {
+          "x": 34.488,
+          "y": -14.026,
+          "z": -4.3054
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0105"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0105",
+            "distance_m": 0.082556803995027,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0099",
+            "distance_m": 1.4216406964161366,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0101",
+            "distance_m": 1.8410987846262927,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0992",
+            "distance_m": 0.082556803995027,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1017",
+            "distance_m": 0.4244895253082258,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-1022",
+            "distance_m": 0.5029998841812259,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0006",
+            "distance_m": 0.05458937625582434,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0257",
+            "distance_m": 0.3957019080065155,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0251",
+            "distance_m": 0.5887783963428003,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            34.4879,
+            -14.0264,
+            -4.3054
+          ],
+          "height_agl_m": 2.375,
+          "height_band": "STEM",
+          "view": {
+            "yaw": 0.5243749999999961,
+            "pitch": 0.32619793701171834,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:44:17.883Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0010",
+        "center": {
+          "x": 33.552,
+          "y": -13.932,
+          "z": -4.3341
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "UNCERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "UNCERTAIN",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0099",
+            "distance_m": 0.5202526077630352,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0105",
+            "distance_m": 0.8593383117350533,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0098",
+            "distance_m": 1.0589851120294034,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0971",
+            "distance_m": 0.19573539549237529,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0955",
+            "distance_m": 0.5202526077630342,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0970",
+            "distance_m": 0.562968191051338,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0762",
+            "distance_m": 0.14494136745594743,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0003",
+            "distance_m": 0.5448375904799486,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0272",
+            "distance_m": 0.902556369430741,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "มองจาก LiDAR แล้วไม่สามารถจับคู่หลักฐานของระบบได้อย่างมั่นใจ",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            33.5519,
+            -13.932,
+            -4.3341
+          ],
+          "height_agl_m": 2.346,
+          "height_band": "STEM",
+          "view": {
+            "yaw": 0.7439228515624956,
+            "pitch": 0.6560155639648432,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:45:00.449Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0011",
+        "center": {
+          "x": 32.519,
+          "y": -14.341,
+          "z": -4.3481
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0097",
+          "TREE_0098"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "DUPLICATE_TREE_IDS",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0097",
+            "distance_m": 0.016651262318394252,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0098",
+            "distance_m": 0.09287504596010555,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0099",
+            "distance_m": 0.9192225153740713,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0950",
+            "distance_m": 0.016651262318395903,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0951",
+            "distance_m": 0.09287504596010555,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0955",
+            "distance_m": 0.9192225153740698,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0101",
+            "distance_m": 0.1855855597830823,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0003",
+            "distance_m": 0.9540869981296292,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0441",
+            "distance_m": 0.9563482629251738,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            32.519,
+            -14.3405,
+            -4.3481
+          ],
+          "height_agl_m": 2.332,
+          "height_band": "STEM",
+          "view": {
+            "yaw": 1.3190615234374947,
+            "pitch": 0.7938280639648431,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T13:03:42.792Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0012",
+        "center": {
+          "x": 33.742,
+          "y": -12.418,
+          "z": -4.5699
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0101"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [
+          "T15-0972"
+        ],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0101",
+            "distance_m": 0.0708915945609104,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0106",
+            "distance_m": 1.1623505554899052,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0102",
+            "distance_m": 1.343626233150529,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0972",
+            "distance_m": 0.0708915945609104,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0975",
+            "distance_m": 0.17051451879544705,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0969",
+            "distance_m": 0.22059813926890137,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0049",
+            "distance_m": 0.1385929291125669,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0800",
+            "distance_m": 0.30253594827722546,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0250",
+            "distance_m": 0.6047875660097545,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            33.7419,
+            -12.4178,
+            -4.5699
+          ],
+          "height_agl_m": 2.11,
+          "height_band": "STEM",
+          "view": {
+            "yaw": -0.9151660156249983,
+            "pitch": 0.4913753662109378,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T12:45:49.900Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0013",
+        "center": {
+          "x": 30.477,
+          "y": -13.649,
+          "z": -4.5728
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0094"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0094",
+            "distance_m": 0.028973772610184766,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0091",
+            "distance_m": 0.8804997597075935,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0096",
+            "distance_m": 1.0376936914855708,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0913",
+            "distance_m": 0.02897377261018634,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0917",
+            "distance_m": 0.09610555775156897,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0875",
+            "distance_m": 0.8033049995222342,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0060",
+            "distance_m": 0.08300602387778706,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0797",
+            "distance_m": 0.2751181564346475,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0868",
+            "distance_m": 0.6328427924848308,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            30.4769,
+            -13.6494,
+            -4.5728
+          ],
+          "height_agl_m": 2.107,
+          "height_band": "STEM",
+          "view": {
+            "yaw": -1.9287490234374982,
+            "pitch": 0.48784436035156287,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T13:02:51.693Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0014",
+        "center": {
+          "x": 29.808,
+          "y": -14.24,
+          "z": -4.3671
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "CERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [
+          "TREE_0091"
+        ],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [
+          "T15-0882"
+        ],
+        "algorithm_evidence_status": "RESOLVED_TREE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0091",
+            "distance_m": 0.0210015879126914,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0094",
+            "distance_m": 0.8657014442612991,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0086",
+            "distance_m": 1.0178696668083618,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0882",
+            "distance_m": 0.02100158791269351,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0846",
+            "distance_m": 0.7743243490085342,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0875",
+            "distance_m": 0.8410442375223592,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0404",
+            "distance_m": 0.08616263691415216,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0060",
+            "distance_m": 0.8149012210078,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0091",
+            "distance_m": 0.8388945106507724,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": null,
+        "review_notes": "",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            29.8081,
+            -14.2403,
+            -4.3671
+          ],
+          "height_agl_m": 2.313,
+          "height_band": "STEM",
+          "view": {
+            "yaw": -1.2384990234374975,
+            "pitch": 0.4273442993164063,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T13:02:05.341Z"
+      },
+      {
+        "reference_tree_id": "ROI_A_REF_0015",
+        "center": {
+          "x": 31.444,
+          "y": -14.213,
+          "z": -5.8025
+        },
+        "boundary_relation": "INSIDE_ROI",
+        "confidence": "UNCERTAIN",
+        "visibility": "CLEAR",
+        "matched_tree_ids": [],
+        "matched_candidate_ids": [],
+        "matched_track_ids": [],
+        "algorithm_evidence_status": "NO_ALGORITHM_EVIDENCE",
+        "automatic_match_suggestions": [
+          {
+            "kind": "TREE",
+            "id": "TREE_0096",
+            "distance_m": 0.15475492642351255,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0097",
+            "distance_m": 1.0907164093363584,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TREE",
+            "id": "TREE_0098",
+            "distance_m": 1.0988877892130426,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0928",
+            "distance_m": 0.15475492642351255,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0931",
+            "distance_m": 0.175481861093362,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "TRACK",
+            "id": "T15-0921",
+            "distance_m": 0.746466068175301,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0040",
+            "distance_m": 0.08065358020571768,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0415",
+            "distance_m": 0.2664301034042515,
+            "accepted_as_match": false
+          },
+          {
+            "kind": "CANDIDATE",
+            "id": "C-0441",
+            "distance_m": 0.6326649982415654,
+            "accepted_as_match": false
+          }
+        ],
+        "primary_failure_reason": "NO_CANDIDATE_GENERATED",
+        "review_notes": "มองจาก LiDAR แล้วไม่สามารถจับคู่หลักฐานของระบบได้อย่างมั่นใจ",
+        "click_evidence": {
+          "source": "NEAREST_VISIBLE_LIDAR_POINT",
+          "source_point_xyz": [
+            31.4437,
+            -14.2127,
+            -5.8025
+          ],
+          "height_agl_m": 0.877,
+          "height_band": "ALL",
+          "view": {
+            "yaw": -2.9923325195312485,
+            "pitch": 0.8096882934570313,
+            "zoom": 125
+          }
+        },
+        "updated_at": "2026-08-09T13:05:30.547Z"
+      }
+    ],
+    "prediction_reviews": [
+      {
+        "tree_id": "TREE_0086",
+        "classification": "ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:49:18.302Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0087",
+        "classification": "ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:49:36.318Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0088",
+        "classification": "ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:49:48.072Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0089",
+        "classification": "ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:49:57.351Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0091",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0014"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:50:11.252Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0092",
+        "classification": "ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:50:23.285Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0094",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0013"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:50:40.635Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0096",
+        "classification": "ROOT_OR_BRANCH_FALSE_POSITIVE",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:51:01.451Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0097",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0011"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:51:13.285Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0098",
+        "classification": "DUPLICATE_OF_REFERENCE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0011"
+        ],
+        "review_notes": "Reviewer confirmed TREE_0098 belongs to ROI_A_REF_0011. TREE_0097 remains the primary Tree ID; TREE_0098 is a duplicate Tree ID for the same physical tree.",
+        "updated_at": "2026-08-09T13:26:19Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0099",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0005"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:51:32.968Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0101",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0012"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:51:43.234Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0102",
+        "classification": "UNCERTAIN",
+        "matched_reference_tree_ids": [],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:51:51.818Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0103",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0004"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T13:00:59.293Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0105",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0009"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:52:13.851Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0106",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0007"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T13:01:29.342Z",
+        "manual_association_overrides_xy_suggestion": true
+      },
+      {
+        "tree_id": "TREE_0107",
+        "classification": "CORRECT_UNIQUE_TREE",
+        "matched_reference_tree_ids": [
+          "ROI_A_REF_0006"
+        ],
+        "review_notes": "",
+        "updated_at": "2026-08-09T12:52:38.567Z",
+        "manual_association_overrides_xy_suggestion": true
+      }
+    ],
+    "reviewer": {
+      "name": null,
+      "notes": "Reviewer confirmed that all LiDAR-visible trees in ROI-A and all ROI Tree IDs were reviewed."
+    },
+    "completed_at": "2026-08-09T13:28:16Z",
+    "export_path": "annotations/phase4_ground_truth_roi.json"
+  },
+  "entries": [
+    {
+      "review_item_id": "ROI-A",
+      "item_type": "LIDAR_VISIBLE_REFERENCE_CENSUS",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "EXHAUSTIVE_LIDAR_VISIBLE_REFERENCE_CENSUS"
+      ],
+      "candidate_geometry_status": "REFERENCE_CENSUS_REQUIRED",
+      "identity_status": "COMPLETE",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4_STEM_GRAPH",
+        "MANUAL_LIDAR_ANNOTATION"
+      ],
+      "position": {
+        "x": 32.0,
+        "y": -11.5
+      },
+      "ground_z_m": -6.68,
+      "point_crop_url": "data/phase4_roi/points/ROI-A.json",
+      "evidence_url": "data/phase4b_roi/evidence/ROI-A.json",
+      "review_question": "Click every LiDAR-visible main tree, including trees with no candidate, track, or Tree ID.",
+      "current_resolved_hypothesis_count": 17,
+      "unresolved_track_count": 69,
+      "resolved_tree_ids": [
+        "TREE_0086",
+        "TREE_0087",
+        "TREE_0088",
+        "TREE_0089",
+        "TREE_0091",
+        "TREE_0092",
+        "TREE_0094",
+        "TREE_0096",
+        "TREE_0097",
+        "TREE_0098",
+        "TREE_0099",
+        "TREE_0101",
+        "TREE_0102",
+        "TREE_0103",
+        "TREE_0105",
+        "TREE_0106",
+        "TREE_0107"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+  "interpretation": "HUMAN REVIEW ANNOTATIONS; CLEAN-HEIGHT HINTS ARE NOT AUTOMATIC FINAL POM VALUES",
+  "export_path": "annotations/phase1_75_pilot_review.json",
+  "annotations": [
+    {
+      "candidate_id": "C-0021",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "NOT_ENOUGH_INFORMATION",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:44:50.928Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0162",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:46:30.391Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0169",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "NOT_ENOUGH_INFORMATION",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:47:24.822Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0174",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:47:52.488Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0045",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:48:29.189Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0083",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:48:49.069Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0091",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:49:12.702Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0121",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "PROP_ROOT_OR_ROOT_ONLY",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:49:44.314Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0128",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:49:59.962Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0163",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:50:43.511Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0164",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:51:27.241Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0176",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:51:51.241Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0237",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "PROP_ROOT_OR_ROOT_ONLY",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:52:21.090Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0242",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:52:44.841Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0271",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:52:55.360Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0285",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:53:11.521Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0370",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:53:38.654Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0393",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "PROP_ROOT_OR_ROOT_ONLY",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:53:54.454Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0419",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:54:19.903Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0463",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:54:33.970Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0492",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "NOT_ENOUGH_INFORMATION",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:55:24.819Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0495",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:55:42.436Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0516",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:56:13.868Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0576",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:56:36.681Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0588",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:56:55.719Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0590",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:57:10.112Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0622",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T02:57:24.561Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0736",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:01:05.803Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0655",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:02:27.178Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0732",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "DUPLICATE_OF",
+      "duplicate_target": "C-0163",
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:03:41.072Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0766",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:04:15.205Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0774",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "DUPLICATE_OF",
+      "duplicate_target": "C-0176",
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:05:00.001Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0789",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "AUTO_HIGH_SUPPORT",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:05:13.885Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0792",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "DUPLICATE_OF",
+      "duplicate_target": "C-0655",
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:05:39.442Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0796",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "WEAK_GEOMETRY",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "DUPLICATE_OF",
+      "duplicate_target": "C-0128",
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:06:13.000Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0811",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:06:31.398Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0877",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "UNVERIFIED",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "BRANCH",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:07:14.397Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0882",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT"
+      },
+      "human_label": "TRUE_MAIN_STEM",
+      "duplicate_target": null,
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:07:31.996Z",
+      "reviewer_note": ""
+    },
+    {
+      "candidate_id": "C-0889",
+      "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+      "automatic_status": {
+        "candidate_geometry_status": "STEM_LIKE",
+        "identity_status": "DUPLICATE_ALIAS",
+        "measurement_status": "MEASURABLE_STANDARD_1_30"
+      },
+      "human_label": "DUPLICATE_OF",
+      "duplicate_target": "C-0463",
+      "corrected_center": null,
+      "corrected_measurement_height_m": null,
+      "timestamp": "2026-08-09T03:07:57.581Z",
+      "reviewer_note": ""
+    }
+  ],
+  "manual_seeds": [
+    {
+      "seed_id": "MANUAL-P175-0001",
+      "source": "MANUAL_REVIEW_CLICK",
+      "approximate_xy": [
+        10.139,
+        -5.339
+      ],
+      "x": 10.139,
+      "y": -5.339,
+      "clean_height_hint_m": 2.5,
+      "human_label": "TRUE_MAIN_STEM",
+      "reviewer_note": "good quality",
+      "reference_candidate_id": "C-0174",
+      "hint_is_automatic_final_pom": false,
+      "timestamp": "2026-08-08T13:07:43.543Z",
+      "reference_candidate_ids": [
+        "C-0174"
+      ],
+      "merged_source_seed_ids": [
+        "MANUAL-P175-0001",
+        "MANUAL-P175-0002"
+      ],
+      "merged_click_count": 2,
+      "merged_clicks": [
+        {
+          "seed_id": "MANUAL-P175-0001",
+          "approximate_xy": [
+            10.124,
+            -5.323
+          ],
+          "timestamp": "2026-08-08T13:07:43.543Z"
+        },
+        {
+          "seed_id": "MANUAL-P175-0002",
+          "approximate_xy": [
+            10.154,
+            -5.355
+          ],
+          "timestamp": "2026-08-08T13:08:02.358Z"
+        }
+      ],
+      "manual_merge_decision": {
+        "decision": "SAME_PHYSICAL_STEM",
+        "authority": "HUMAN_REVIEWER",
+        "confirmed_date": "2026-08-09"
+      },
+      "approximate_clean_height_m": 2.5
+    },
+    {
+      "seed_id": "MANUAL-P175-0003",
+      "source": "MANUAL_REVIEW_CLICK",
+      "approximate_xy": [
+        35.605,
+        -12.091
+      ],
+      "x": 35.605,
+      "y": -12.091,
+      "clean_height_hint_m": 2.5,
+      "human_label": "TRUE_MAIN_STEM",
+      "reviewer_note": "",
+      "reference_candidate_id": "C-0045",
+      "hint_is_automatic_final_pom": false,
+      "timestamp": "2026-08-08T13:10:39.143Z",
+      "approximate_clean_height_m": 2.5
+    }
+  ]
+}

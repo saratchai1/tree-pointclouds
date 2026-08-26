@@ -1,0 +1,3528 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4b-roi-reference-census",
+  "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+  "interpretation": "ROI REVIEW EVIDENCE AND PROXIMITY SUGGESTION SOURCES; NO AUTOMATIC MATCH IS A LABEL",
+  "roi": {
+    "roi_id": "ROI-A",
+    "bounds": {
+      "x_min": 29.0,
+      "x_max": 35.0,
+      "y_min": -14.5,
+      "y_max": -8.5
+    },
+    "current_tree_centers": [
+      {
+        "tree_id": "TREE_0086",
+        "x": 29.32677244536744,
+        "y": -13.343072634339363,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0080"
+        ],
+        "source_track_ids": [
+          "T15-0852"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0087",
+        "x": 29.393377440371996,
+        "y": -10.97653510917749,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0064"
+        ],
+        "source_track_ids": [
+          "T15-0857"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0088",
+        "x": 29.43392425499203,
+        "y": -10.149584907240534,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0229"
+        ],
+        "source_track_ids": [
+          "T15-0860"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0089",
+        "x": 29.65804860129432,
+        "y": -9.174631040380001,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0259",
+          "C-0638"
+        ],
+        "source_track_ids": [
+          "T15-0874"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0091",
+        "x": 29.805978082435207,
+        "y": -14.21909596823061,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0404"
+        ],
+        "source_track_ids": [
+          "T15-0882"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      {
+        "tree_id": "TREE_0092",
+        "x": 30.181720194946482,
+        "y": -11.85396617153994,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0233"
+        ],
+        "source_track_ids": [
+          "T15-0899"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0094",
+        "x": 30.463670475659445,
+        "y": -13.674725537508888,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0060"
+        ],
+        "source_track_ids": [
+          "T15-0913"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0096",
+        "x": 31.303095532968925,
+        "y": -14.276992330970481,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0040",
+          "C-0415",
+          "C-0671"
+        ],
+        "source_track_ids": [
+          "T15-0928"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0097",
+        "x": 32.52524387676335,
+        "y": -14.35643627350626,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [],
+        "source_track_ids": [
+          "T15-0950"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0098",
+        "x": 32.542227915499595,
+        "y": -14.251076487481663,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0101"
+        ],
+        "source_track_ids": [
+          "T15-0951"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0099",
+        "x": 33.118576823483195,
+        "y": -13.644237726686903,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0003"
+        ],
+        "source_track_ids": [
+          "T15-0955"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0101",
+        "x": 33.73017190478958,
+        "y": -12.348102114888347,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0049"
+        ],
+        "source_track_ids": [
+          "T15-0972"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0102",
+        "x": 33.81609590369886,
+        "y": -11.076418376890421,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0023"
+        ],
+        "source_track_ids": [
+          "T15-0973"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0103",
+        "x": 33.823268998974605,
+        "y": -9.216776229757933,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0027",
+          "C-0345",
+          "C-0465",
+          "C-0801"
+        ],
+        "source_track_ids": [
+          "T15-0974"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0105",
+        "x": 34.40826654407324,
+        "y": -14.004594349067379,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0006"
+        ],
+        "source_track_ids": [
+          "T15-0992"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "MEASURABLE"
+      },
+      {
+        "tree_id": "TREE_0106",
+        "x": 34.62449398022648,
+        "y": -11.661519207969093,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0007"
+        ],
+        "source_track_ids": [
+          "T15-1007"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0107",
+        "x": 34.72735710547437,
+        "y": -10.244650895222707,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0028"
+        ],
+        "source_track_ids": [
+          "T15-1009"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      }
+    ],
+    "resolved_tree_predictions": [
+      {
+        "tree_id": "TREE_0086",
+        "x": 29.32677244536744,
+        "y": -13.343072634339363,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0080"
+        ],
+        "source_track_ids": [
+          "T15-0852"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0087",
+        "x": 29.393377440371996,
+        "y": -10.97653510917749,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0064"
+        ],
+        "source_track_ids": [
+          "T15-0857"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0088",
+        "x": 29.43392425499203,
+        "y": -10.149584907240534,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0229"
+        ],
+        "source_track_ids": [
+          "T15-0860"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0089",
+        "x": 29.65804860129432,
+        "y": -9.174631040380001,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0259",
+          "C-0638"
+        ],
+        "source_track_ids": [
+          "T15-0874"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0091",
+        "x": 29.805978082435207,
+        "y": -14.21909596823061,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0404"
+        ],
+        "source_track_ids": [
+          "T15-0882"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NEEDS_REVIEW"
+      },
+      {
+        "tree_id": "TREE_0092",
+        "x": 30.181720194946482,
+        "y": -11.85396617153994,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0233"
+        ],
+        "source_track_ids": [
+          "T15-0899"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0094",
+        "x": 30.463670475659445,
+        "y": -13.674725537508888,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0060"
+        ],
+        "source_track_ids": [
+          "T15-0913"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0096",
+        "x": 31.303095532968925,
+        "y": -14.276992330970481,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0040",
+          "C-0415",
+          "C-0671"
+        ],
+        "source_track_ids": [
+          "T15-0928"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0097",
+        "x": 32.52524387676335,
+        "y": -14.35643627350626,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [],
+        "source_track_ids": [
+          "T15-0950"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0098",
+        "x": 32.542227915499595,
+        "y": -14.251076487481663,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0101"
+        ],
+        "source_track_ids": [
+          "T15-0951"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0099",
+        "x": 33.118576823483195,
+        "y": -13.644237726686903,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0003"
+        ],
+        "source_track_ids": [
+          "T15-0955"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0101",
+        "x": 33.73017190478958,
+        "y": -12.348102114888347,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0049"
+        ],
+        "source_track_ids": [
+          "T15-0972"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0102",
+        "x": 33.81609590369886,
+        "y": -11.076418376890421,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0023"
+        ],
+        "source_track_ids": [
+          "T15-0973"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0103",
+        "x": 33.823268998974605,
+        "y": -9.216776229757933,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0027",
+          "C-0345",
+          "C-0465",
+          "C-0801"
+        ],
+        "source_track_ids": [
+          "T15-0974"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0105",
+        "x": 34.40826654407324,
+        "y": -14.004594349067379,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0006"
+        ],
+        "source_track_ids": [
+          "T15-0992"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "MEASURABLE"
+      },
+      {
+        "tree_id": "TREE_0106",
+        "x": 34.62449398022648,
+        "y": -11.661519207969093,
+        "detection_status": "UNCERTAIN",
+        "source_candidate_ids": [
+          "C-0007"
+        ],
+        "source_track_ids": [
+          "T15-1007"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      },
+      {
+        "tree_id": "TREE_0107",
+        "x": 34.72735710547437,
+        "y": -10.244650895222707,
+        "detection_status": "PROBABLE",
+        "source_candidate_ids": [
+          "C-0028"
+        ],
+        "source_track_ids": [
+          "T15-1009"
+        ],
+        "phase4_attached_fragment_track_ids": [],
+        "measurement_status": "NOT_ATTEMPTED"
+      }
+    ],
+    "track_centers": [
+      {
+        "track_id": "T15-0826",
+        "x": 28.686977542192754,
+        "y": -13.700244735995188,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0363"
+        ]
+      },
+      {
+        "track_id": "T15-0827",
+        "x": 28.696601566221325,
+        "y": -8.35782040536321,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0110"
+        ]
+      },
+      {
+        "track_id": "T15-0828",
+        "x": 28.705322897059325,
+        "y": -10.214675594637514,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0721"
+        ]
+      },
+      {
+        "track_id": "T15-0829",
+        "x": 28.70636732261576,
+        "y": -8.316547870524666,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0110"
+        ]
+      },
+      {
+        "track_id": "T15-0830",
+        "x": 28.7524288460392,
+        "y": -13.183248527310143,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0523"
+        ]
+      },
+      {
+        "track_id": "T15-0831",
+        "x": 28.8323768236279,
+        "y": -8.218499100471231,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0136"
+        ]
+      },
+      {
+        "track_id": "T15-0832",
+        "x": 28.85289002915918,
+        "y": -13.050626417628383,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0056"
+        ]
+      },
+      {
+        "track_id": "T15-0833",
+        "x": 28.85864017615998,
+        "y": -13.17654796719278,
+        "phase4_tree_id": "TREE_0084",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0056",
+          "C-0080",
+          "C-0091",
+          "C-0523"
+        ]
+      },
+      {
+        "track_id": "T15-0835",
+        "x": 28.873651760894944,
+        "y": -12.139376060317126,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0609"
+        ]
+      },
+      {
+        "track_id": "T15-0837",
+        "x": 28.906949363466648,
+        "y": -12.916481932390193,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0056"
+        ]
+      },
+      {
+        "track_id": "T15-0839",
+        "x": 29.042358405316474,
+        "y": -8.63804653657683,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0136"
+        ]
+      },
+      {
+        "track_id": "T15-0841",
+        "x": 29.049528031122644,
+        "y": -9.062658767281858,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0786"
+        ]
+      },
+      {
+        "track_id": "T15-0843",
+        "x": 29.119432533706572,
+        "y": -9.811178286480947,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0880"
+        ]
+      },
+      {
+        "track_id": "T15-0846",
+        "x": 29.18725364399753,
+        "y": -13.777126195408355,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0404"
+        ]
+      },
+      {
+        "track_id": "T15-0847",
+        "x": 29.19865093682499,
+        "y": -10.986721205402267,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0851",
+        "x": 29.29946356313787,
+        "y": -12.654386322070991,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0080",
+          "C-0548"
+        ]
+      },
+      {
+        "track_id": "T15-0852",
+        "x": 29.32677244536744,
+        "y": -13.343072634339364,
+        "phase4_tree_id": "TREE_0086",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0056",
+          "C-0080",
+          "C-0363"
+        ]
+      },
+      {
+        "track_id": "T15-0853",
+        "x": 29.336548156261966,
+        "y": -8.996373145000215,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0786"
+        ]
+      },
+      {
+        "track_id": "T15-0854",
+        "x": 29.337305513009774,
+        "y": -9.6343180995925,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0107"
+        ]
+      },
+      {
+        "track_id": "T15-0857",
+        "x": 29.393377440372,
+        "y": -10.97653510917749,
+        "phase4_tree_id": "TREE_0087",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0860",
+        "x": 29.43392425499203,
+        "y": -10.149584907240534,
+        "phase4_tree_id": "TREE_0088",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0107",
+          "C-0229",
+          "C-0259"
+        ]
+      },
+      {
+        "track_id": "T15-0866",
+        "x": 29.5301950239876,
+        "y": -11.030444418399131,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0867",
+        "x": 29.550268506908427,
+        "y": -10.157966104326102,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0860"
+        ]
+      },
+      {
+        "track_id": "T15-0868",
+        "x": 29.5709866832529,
+        "y": -8.150601145167174,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0710"
+        ]
+      },
+      {
+        "track_id": "T15-0869",
+        "x": 29.606815469759233,
+        "y": -8.54815096932973,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0081"
+        ]
+      },
+      {
+        "track_id": "T15-0871",
+        "x": 29.625451103096744,
+        "y": -10.01797674574058,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0092"
+        ]
+      },
+      {
+        "track_id": "T15-0874",
+        "x": 29.658048601294322,
+        "y": -9.174631040380001,
+        "phase4_tree_id": "TREE_0089",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0092",
+          "C-0107",
+          "C-0259",
+          "C-0638"
+        ]
+      },
+      {
+        "track_id": "T15-0875",
+        "x": 29.711816474184324,
+        "y": -13.40447373540311,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0080"
+        ]
+      },
+      {
+        "track_id": "T15-0877",
+        "x": 29.742816934848523,
+        "y": -11.078092028647221,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0880",
+        "x": 29.793643506240066,
+        "y": -11.769911340542555,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0233"
+        ]
+      },
+      {
+        "track_id": "T15-0881",
+        "x": 29.80119896302112,
+        "y": -8.433694275984005,
+        "phase4_tree_id": "TREE_0090",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0081",
+          "C-0492"
+        ]
+      },
+      {
+        "track_id": "T15-0882",
+        "x": 29.805978082435203,
+        "y": -14.219095968230608,
+        "phase4_tree_id": "TREE_0091",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0060",
+          "C-0404"
+        ]
+      },
+      {
+        "track_id": "T15-0885",
+        "x": 29.82701276889015,
+        "y": -11.345075833320722,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0827"
+        ]
+      },
+      {
+        "track_id": "T15-0888",
+        "x": 29.92390322184581,
+        "y": -8.408488803513096,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0081",
+          "C-0492"
+        ]
+      },
+      {
+        "track_id": "T15-0889",
+        "x": 29.931713528424734,
+        "y": -11.321943169072213,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0891",
+        "x": 29.971717297038623,
+        "y": -8.277965022553484,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0861",
+          "C-0869"
+        ]
+      },
+      {
+        "track_id": "T15-0893",
+        "x": 30.058798787784234,
+        "y": -10.745733922126087,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0092"
+        ]
+      },
+      {
+        "track_id": "T15-0894",
+        "x": 30.078690449395623,
+        "y": -10.734431343710582,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0017"
+        ]
+      },
+      {
+        "track_id": "T15-0895",
+        "x": 30.09043623942128,
+        "y": -9.953199528623454,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0638",
+          "C-0854"
+        ]
+      },
+      {
+        "track_id": "T15-0896",
+        "x": 30.094531895206487,
+        "y": -10.657519730237496,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0092"
+        ]
+      },
+      {
+        "track_id": "T15-0897",
+        "x": 30.116559045846763,
+        "y": -12.020966529164173,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0066",
+          "C-0147"
+        ]
+      },
+      {
+        "track_id": "T15-0898",
+        "x": 30.118501126773687,
+        "y": -11.4284996556556,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0233"
+        ]
+      },
+      {
+        "track_id": "T15-0899",
+        "x": 30.18172019494648,
+        "y": -11.85396617153994,
+        "phase4_tree_id": "TREE_0092",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0233"
+        ]
+      },
+      {
+        "track_id": "T15-0900",
+        "x": 30.202627669103528,
+        "y": -11.652658965018356,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0066",
+          "C-0233",
+          "C-0434"
+        ]
+      },
+      {
+        "track_id": "T15-0901",
+        "x": 30.221383490938745,
+        "y": -12.736825971343254,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0460"
+        ]
+      },
+      {
+        "track_id": "T15-0903",
+        "x": 30.292525333813156,
+        "y": -12.128425641138993,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0066"
+        ]
+      },
+      {
+        "track_id": "T15-0904",
+        "x": 30.301032266375078,
+        "y": -12.062139210300028,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0066",
+          "C-0147"
+        ]
+      },
+      {
+        "track_id": "T15-0908",
+        "x": 30.409233522409767,
+        "y": -11.133751149015058,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0533"
+        ]
+      },
+      {
+        "track_id": "T15-0911",
+        "x": 30.41905828127864,
+        "y": -8.624441779643833,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0492"
+        ]
+      },
+      {
+        "track_id": "T15-0912",
+        "x": 30.43501958551763,
+        "y": -12.550430958108562,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0932"
+        ]
+      },
+      {
+        "track_id": "T15-0913",
+        "x": 30.463670475659445,
+        "y": -13.67472553750889,
+        "phase4_tree_id": "TREE_0094",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0060"
+        ]
+      },
+      {
+        "track_id": "T15-0915",
+        "x": 30.46871961959422,
+        "y": -10.866023753852392,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0017"
+        ]
+      },
+      {
+        "track_id": "T15-0916",
+        "x": 30.503661237013887,
+        "y": -12.56387786075782,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0460",
+          "C-0853"
+        ]
+      },
+      {
+        "track_id": "T15-0917",
+        "x": 30.54358803895733,
+        "y": -13.579701289344193,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0060",
+          "C-0868"
+        ]
+      },
+      {
+        "track_id": "T15-0920",
+        "x": 30.601666882831285,
+        "y": -11.546849941184837,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0066",
+          "C-0883"
+        ]
+      },
+      {
+        "track_id": "T15-0921",
+        "x": 30.731054189460167,
+        "y": -14.434178349236074,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0161"
+        ]
+      },
+      {
+        "track_id": "T15-0922",
+        "x": 30.79054927014201,
+        "y": -12.202306396881859,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0437"
+        ]
+      },
+      {
+        "track_id": "T15-0924",
+        "x": 31.140811653245013,
+        "y": -12.022371954773961,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0353"
+        ]
+      },
+      {
+        "track_id": "T15-0925",
+        "x": 31.157137847194424,
+        "y": -9.742727067661626,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0321"
+        ]
+      },
+      {
+        "track_id": "T15-0927",
+        "x": 31.299844164655447,
+        "y": -11.722648043944325,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0353",
+          "C-0437"
+        ]
+      },
+      {
+        "track_id": "T15-0928",
+        "x": 31.303095532968925,
+        "y": -14.276992330970481,
+        "phase4_tree_id": "TREE_0096",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0040",
+          "C-0415",
+          "C-0671"
+        ]
+      },
+      {
+        "track_id": "T15-0929",
+        "x": 31.49935273388197,
+        "y": -10.825990427588524,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0255"
+        ]
+      },
+      {
+        "track_id": "T15-0931",
+        "x": 31.592941593896143,
+        "y": -14.12020837763857,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0040"
+        ]
+      },
+      {
+        "track_id": "T15-0940",
+        "x": 31.804483921901422,
+        "y": -12.747703351791056,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0389"
+        ]
+      },
+      {
+        "track_id": "T15-0942",
+        "x": 31.842863386807764,
+        "y": -13.25142760877203,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0881"
+        ]
+      },
+      {
+        "track_id": "T15-0950",
+        "x": 32.52524387676335,
+        "y": -14.356436273506262,
+        "phase4_tree_id": "TREE_0097",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0101",
+          "C-0179"
+        ]
+      },
+      {
+        "track_id": "T15-0951",
+        "x": 32.542227915499595,
+        "y": -14.251076487481663,
+        "phase4_tree_id": "TREE_0098",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0101"
+        ]
+      },
+      {
+        "track_id": "T15-0955",
+        "x": 33.118576823483195,
+        "y": -13.644237726686905,
+        "phase4_tree_id": "TREE_0099",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0003",
+          "C-0762"
+        ]
+      },
+      {
+        "track_id": "T15-0961",
+        "x": 33.56428920505711,
+        "y": -11.727214333408222,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0870"
+        ]
+      },
+      {
+        "track_id": "T15-0967",
+        "x": 33.66520682382766,
+        "y": -8.375617438411611,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0335"
+        ]
+      },
+      {
+        "track_id": "T15-0969",
+        "x": 33.671565914639295,
+        "y": -12.627051617234363,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0800"
+        ]
+      },
+      {
+        "track_id": "T15-0970",
+        "x": 33.689944990678654,
+        "y": -14.47780615943967,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0251"
+        ]
+      },
+      {
+        "track_id": "T15-0971",
+        "x": 33.71346210956311,
+        "y": -14.0426450732025,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0762"
+        ]
+      },
+      {
+        "track_id": "T15-0972",
+        "x": 33.73017190478958,
+        "y": -12.348102114888347,
+        "phase4_tree_id": "TREE_0101",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0049"
+        ]
+      },
+      {
+        "track_id": "T15-0973",
+        "x": 33.81609590369886,
+        "y": -11.076418376890421,
+        "phase4_tree_id": "TREE_0102",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0023"
+        ]
+      },
+      {
+        "track_id": "T15-0974",
+        "x": 33.823268998974605,
+        "y": -9.216776229757933,
+        "phase4_tree_id": "TREE_0103",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0027",
+          "C-0335",
+          "C-0345",
+          "C-0465",
+          "C-0801"
+        ]
+      },
+      {
+        "track_id": "T15-0975",
+        "x": 33.88081414772638,
+        "y": -12.318975591337084,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0049"
+        ]
+      },
+      {
+        "track_id": "T15-0976",
+        "x": 33.888805376632305,
+        "y": -12.679665271770375,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0800"
+        ]
+      },
+      {
+        "track_id": "T15-0979",
+        "x": 34.01420755868929,
+        "y": -14.337594351818929,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0251"
+        ]
+      },
+      {
+        "track_id": "T15-0982",
+        "x": 34.106506816580854,
+        "y": -13.193759218160626,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0272"
+        ]
+      },
+      {
+        "track_id": "T15-0984",
+        "x": 34.144662544911526,
+        "y": -14.816743453929265,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0425"
+        ]
+      },
+      {
+        "track_id": "T15-0985",
+        "x": 34.15748834341446,
+        "y": -9.430145220173703,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0027"
+        ]
+      },
+      {
+        "track_id": "T15-0986",
+        "x": 34.1969323250374,
+        "y": -14.805484350378201,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0425"
+        ]
+      },
+      {
+        "track_id": "T15-0992",
+        "x": 34.40826654407324,
+        "y": -14.004594349067379,
+        "phase4_tree_id": "TREE_0105",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0006"
+        ]
+      },
+      {
+        "track_id": "T15-0995",
+        "x": 34.43659984037717,
+        "y": -9.270214858542015,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0111",
+          "C-0384"
+        ]
+      },
+      {
+        "track_id": "T15-0996",
+        "x": 34.44430658429613,
+        "y": -11.489298868339098,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0007"
+        ]
+      },
+      {
+        "track_id": "T15-0997",
+        "x": 34.45242361453576,
+        "y": -8.59279366369731,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0757"
+        ]
+      },
+      {
+        "track_id": "T15-0998",
+        "x": 34.466120971147184,
+        "y": -11.69662339178277,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007"
+        ]
+      },
+      {
+        "track_id": "T15-1000",
+        "x": 34.49765178821182,
+        "y": -12.335200561150566,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0045",
+          "C-0250"
+        ]
+      },
+      {
+        "track_id": "T15-1001",
+        "x": 34.49773917922896,
+        "y": -12.015296003044748,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0250"
+        ]
+      },
+      {
+        "track_id": "T15-1003",
+        "x": 34.55841630668115,
+        "y": -11.943997717632174,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0250"
+        ]
+      },
+      {
+        "track_id": "T15-1004",
+        "x": 34.600570714188024,
+        "y": -10.48188691926949,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0028",
+          "C-0086"
+        ]
+      },
+      {
+        "track_id": "T15-1007",
+        "x": 34.62449398022648,
+        "y": -11.661519207969093,
+        "phase4_tree_id": "TREE_0106",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007"
+        ]
+      },
+      {
+        "track_id": "T15-1008",
+        "x": 34.64972274203769,
+        "y": -11.572158956145563,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007",
+          "C-0045",
+          "C-0341"
+        ]
+      },
+      {
+        "track_id": "T15-1009",
+        "x": 34.72735710547437,
+        "y": -10.244650895222707,
+        "phase4_tree_id": "TREE_0107",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0028"
+        ]
+      },
+      {
+        "track_id": "T15-1010",
+        "x": 34.75948612143442,
+        "y": -10.185649054988302,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0028"
+        ]
+      },
+      {
+        "track_id": "T15-1011",
+        "x": 34.763003910905006,
+        "y": -10.213952298470128,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0028"
+        ]
+      },
+      {
+        "track_id": "T15-1013",
+        "x": 34.7866566130225,
+        "y": -8.854065047010883,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0112"
+        ]
+      },
+      {
+        "track_id": "T15-1015",
+        "x": 34.80428051350903,
+        "y": -12.810938850853097,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0245"
+        ]
+      },
+      {
+        "track_id": "T15-1017",
+        "x": 34.906620408624036,
+        "y": -14.096344229186533,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0257"
+        ]
+      },
+      {
+        "track_id": "T15-1019",
+        "x": 34.9192692206301,
+        "y": -11.23954692242872,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007",
+          "C-0086",
+          "C-0208"
+        ]
+      },
+      {
+        "track_id": "T15-1021",
+        "x": 34.966592309868375,
+        "y": -9.21709406816489,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0384",
+          "C-0481",
+          "C-0527"
+        ]
+      },
+      {
+        "track_id": "T15-1022",
+        "x": 34.973389951220504,
+        "y": -14.157929825060457,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0257"
+        ]
+      },
+      {
+        "track_id": "T15-1023",
+        "x": 35.004881957936874,
+        "y": -10.737623640014991,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0648"
+        ]
+      },
+      {
+        "track_id": "T15-1024",
+        "x": 35.0212919588198,
+        "y": -8.863454650699913,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0111"
+        ]
+      },
+      {
+        "track_id": "T15-1025",
+        "x": 35.04244217107,
+        "y": -8.259930890724869,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0527"
+        ]
+      },
+      {
+        "track_id": "T15-1027",
+        "x": 35.07292799762236,
+        "y": -8.603119953673264,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0527"
+        ]
+      },
+      {
+        "track_id": "T15-1028",
+        "x": 35.11548625825555,
+        "y": -8.3517236647639,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0481"
+        ]
+      },
+      {
+        "track_id": "T15-1029",
+        "x": 35.155739409220295,
+        "y": -11.389073240158968,
+        "phase4_tree_id": "TREE_0108",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0045",
+          "C-0086",
+          "C-0208",
+          "C-0402"
+        ]
+      },
+      {
+        "track_id": "T15-1030",
+        "x": 35.163165172573684,
+        "y": -11.667962822843565,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0208"
+        ]
+      },
+      {
+        "track_id": "T15-1031",
+        "x": 35.178360662280646,
+        "y": -8.99403604555232,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0196"
+        ]
+      },
+      {
+        "track_id": "T15-1033",
+        "x": 35.235776826576135,
+        "y": -8.915290737413239,
+        "phase4_tree_id": "TREE_0109",
+        "detection_status": "UNCERTAIN",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0194",
+          "C-0196"
+        ]
+      },
+      {
+        "track_id": "T15-1035",
+        "x": 35.31182517414354,
+        "y": -10.477868795965195,
+        "phase4_tree_id": "TREE_0110",
+        "detection_status": "PROBABLE",
+        "geometry_status": "STEM_LIKE",
+        "source_candidate_ids": [
+          "C-0042"
+        ]
+      },
+      {
+        "track_id": "T15-1036",
+        "x": 35.323124460936576,
+        "y": -8.779825820917297,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0111"
+        ]
+      },
+      {
+        "track_id": "T15-1037",
+        "x": 35.33675265470494,
+        "y": -12.359515348235158,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0032",
+          "C-0045"
+        ]
+      }
+    ],
+    "unresolved_track_centers": [
+      {
+        "track_id": "T15-0826",
+        "x": 28.686977542192754,
+        "y": -13.700244735995188,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0363"
+        ]
+      },
+      {
+        "track_id": "T15-0827",
+        "x": 28.696601566221325,
+        "y": -8.35782040536321,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0110"
+        ]
+      },
+      {
+        "track_id": "T15-0828",
+        "x": 28.705322897059325,
+        "y": -10.214675594637514,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0721"
+        ]
+      },
+      {
+        "track_id": "T15-0829",
+        "x": 28.70636732261576,
+        "y": -8.316547870524666,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0110"
+        ]
+      },
+      {
+        "track_id": "T15-0830",
+        "x": 28.7524288460392,
+        "y": -13.183248527310143,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0523"
+        ]
+      },
+      {
+        "track_id": "T15-0831",
+        "x": 28.8323768236279,
+        "y": -8.218499100471231,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0136"
+        ]
+      },
+      {
+        "track_id": "T15-0832",
+        "x": 28.85289002915918,
+        "y": -13.050626417628383,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0056"
+        ]
+      },
+      {
+        "track_id": "T15-0835",
+        "x": 28.873651760894944,
+        "y": -12.139376060317126,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0609"
+        ]
+      },
+      {
+        "track_id": "T15-0837",
+        "x": 28.906949363466648,
+        "y": -12.916481932390193,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0056"
+        ]
+      },
+      {
+        "track_id": "T15-0839",
+        "x": 29.042358405316474,
+        "y": -8.63804653657683,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0136"
+        ]
+      },
+      {
+        "track_id": "T15-0841",
+        "x": 29.049528031122644,
+        "y": -9.062658767281858,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0786"
+        ]
+      },
+      {
+        "track_id": "T15-0843",
+        "x": 29.119432533706572,
+        "y": -9.811178286480947,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0880"
+        ]
+      },
+      {
+        "track_id": "T15-0846",
+        "x": 29.18725364399753,
+        "y": -13.777126195408355,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0404"
+        ]
+      },
+      {
+        "track_id": "T15-0847",
+        "x": 29.19865093682499,
+        "y": -10.986721205402267,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0851",
+        "x": 29.29946356313787,
+        "y": -12.654386322070991,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0080",
+          "C-0548"
+        ]
+      },
+      {
+        "track_id": "T15-0853",
+        "x": 29.336548156261966,
+        "y": -8.996373145000215,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0786"
+        ]
+      },
+      {
+        "track_id": "T15-0854",
+        "x": 29.337305513009774,
+        "y": -9.6343180995925,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0107"
+        ]
+      },
+      {
+        "track_id": "T15-0866",
+        "x": 29.5301950239876,
+        "y": -11.030444418399131,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0867",
+        "x": 29.550268506908427,
+        "y": -10.157966104326102,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0860"
+        ]
+      },
+      {
+        "track_id": "T15-0868",
+        "x": 29.5709866832529,
+        "y": -8.150601145167174,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0710"
+        ]
+      },
+      {
+        "track_id": "T15-0869",
+        "x": 29.606815469759233,
+        "y": -8.54815096932973,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0081"
+        ]
+      },
+      {
+        "track_id": "T15-0871",
+        "x": 29.625451103096744,
+        "y": -10.01797674574058,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0092"
+        ]
+      },
+      {
+        "track_id": "T15-0875",
+        "x": 29.711816474184324,
+        "y": -13.40447373540311,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0080"
+        ]
+      },
+      {
+        "track_id": "T15-0877",
+        "x": 29.742816934848523,
+        "y": -11.078092028647221,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0880",
+        "x": 29.793643506240066,
+        "y": -11.769911340542555,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0233"
+        ]
+      },
+      {
+        "track_id": "T15-0885",
+        "x": 29.82701276889015,
+        "y": -11.345075833320722,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0827"
+        ]
+      },
+      {
+        "track_id": "T15-0888",
+        "x": 29.92390322184581,
+        "y": -8.408488803513096,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0081",
+          "C-0492"
+        ]
+      },
+      {
+        "track_id": "T15-0889",
+        "x": 29.931713528424734,
+        "y": -11.321943169072213,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0064"
+        ]
+      },
+      {
+        "track_id": "T15-0891",
+        "x": 29.971717297038623,
+        "y": -8.277965022553484,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0861",
+          "C-0869"
+        ]
+      },
+      {
+        "track_id": "T15-0893",
+        "x": 30.058798787784234,
+        "y": -10.745733922126087,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0092"
+        ]
+      },
+      {
+        "track_id": "T15-0894",
+        "x": 30.078690449395623,
+        "y": -10.734431343710582,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0017"
+        ]
+      },
+      {
+        "track_id": "T15-0895",
+        "x": 30.09043623942128,
+        "y": -9.953199528623454,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0638",
+          "C-0854"
+        ]
+      },
+      {
+        "track_id": "T15-0896",
+        "x": 30.094531895206487,
+        "y": -10.657519730237496,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0092"
+        ]
+      },
+      {
+        "track_id": "T15-0897",
+        "x": 30.116559045846763,
+        "y": -12.020966529164173,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0066",
+          "C-0147"
+        ]
+      },
+      {
+        "track_id": "T15-0898",
+        "x": 30.118501126773687,
+        "y": -11.4284996556556,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0233"
+        ]
+      },
+      {
+        "track_id": "T15-0900",
+        "x": 30.202627669103528,
+        "y": -11.652658965018356,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0066",
+          "C-0233",
+          "C-0434"
+        ]
+      },
+      {
+        "track_id": "T15-0901",
+        "x": 30.221383490938745,
+        "y": -12.736825971343254,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0460"
+        ]
+      },
+      {
+        "track_id": "T15-0903",
+        "x": 30.292525333813156,
+        "y": -12.128425641138993,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0066"
+        ]
+      },
+      {
+        "track_id": "T15-0904",
+        "x": 30.301032266375078,
+        "y": -12.062139210300028,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0066",
+          "C-0147"
+        ]
+      },
+      {
+        "track_id": "T15-0908",
+        "x": 30.409233522409767,
+        "y": -11.133751149015058,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0533"
+        ]
+      },
+      {
+        "track_id": "T15-0911",
+        "x": 30.41905828127864,
+        "y": -8.624441779643833,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0492"
+        ]
+      },
+      {
+        "track_id": "T15-0912",
+        "x": 30.43501958551763,
+        "y": -12.550430958108562,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0932"
+        ]
+      },
+      {
+        "track_id": "T15-0915",
+        "x": 30.46871961959422,
+        "y": -10.866023753852392,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0017"
+        ]
+      },
+      {
+        "track_id": "T15-0916",
+        "x": 30.503661237013887,
+        "y": -12.56387786075782,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0460",
+          "C-0853"
+        ]
+      },
+      {
+        "track_id": "T15-0917",
+        "x": 30.54358803895733,
+        "y": -13.579701289344193,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0060",
+          "C-0868"
+        ]
+      },
+      {
+        "track_id": "T15-0920",
+        "x": 30.601666882831285,
+        "y": -11.546849941184837,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0017",
+          "C-0066",
+          "C-0883"
+        ]
+      },
+      {
+        "track_id": "T15-0921",
+        "x": 30.731054189460167,
+        "y": -14.434178349236074,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0161"
+        ]
+      },
+      {
+        "track_id": "T15-0922",
+        "x": 30.79054927014201,
+        "y": -12.202306396881859,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0437"
+        ]
+      },
+      {
+        "track_id": "T15-0924",
+        "x": 31.140811653245013,
+        "y": -12.022371954773961,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0353"
+        ]
+      },
+      {
+        "track_id": "T15-0925",
+        "x": 31.157137847194424,
+        "y": -9.742727067661626,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0321"
+        ]
+      },
+      {
+        "track_id": "T15-0927",
+        "x": 31.299844164655447,
+        "y": -11.722648043944325,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0353",
+          "C-0437"
+        ]
+      },
+      {
+        "track_id": "T15-0929",
+        "x": 31.49935273388197,
+        "y": -10.825990427588524,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0255"
+        ]
+      },
+      {
+        "track_id": "T15-0931",
+        "x": 31.592941593896143,
+        "y": -14.12020837763857,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0040"
+        ]
+      },
+      {
+        "track_id": "T15-0940",
+        "x": 31.804483921901422,
+        "y": -12.747703351791056,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0389"
+        ]
+      },
+      {
+        "track_id": "T15-0942",
+        "x": 31.842863386807764,
+        "y": -13.25142760877203,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0881"
+        ]
+      },
+      {
+        "track_id": "T15-0961",
+        "x": 33.56428920505711,
+        "y": -11.727214333408222,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0870"
+        ]
+      },
+      {
+        "track_id": "T15-0967",
+        "x": 33.66520682382766,
+        "y": -8.375617438411611,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0335"
+        ]
+      },
+      {
+        "track_id": "T15-0969",
+        "x": 33.671565914639295,
+        "y": -12.627051617234363,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0800"
+        ]
+      },
+      {
+        "track_id": "T15-0970",
+        "x": 33.689944990678654,
+        "y": -14.47780615943967,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0251"
+        ]
+      },
+      {
+        "track_id": "T15-0971",
+        "x": 33.71346210956311,
+        "y": -14.0426450732025,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0762"
+        ]
+      },
+      {
+        "track_id": "T15-0975",
+        "x": 33.88081414772638,
+        "y": -12.318975591337084,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0049"
+        ]
+      },
+      {
+        "track_id": "T15-0976",
+        "x": 33.888805376632305,
+        "y": -12.679665271770375,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0800"
+        ]
+      },
+      {
+        "track_id": "T15-0979",
+        "x": 34.01420755868929,
+        "y": -14.337594351818929,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0251"
+        ]
+      },
+      {
+        "track_id": "T15-0982",
+        "x": 34.106506816580854,
+        "y": -13.193759218160626,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0272"
+        ]
+      },
+      {
+        "track_id": "T15-0984",
+        "x": 34.144662544911526,
+        "y": -14.816743453929265,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0425"
+        ]
+      },
+      {
+        "track_id": "T15-0985",
+        "x": 34.15748834341446,
+        "y": -9.430145220173703,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0027"
+        ]
+      },
+      {
+        "track_id": "T15-0986",
+        "x": 34.1969323250374,
+        "y": -14.805484350378201,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0425"
+        ]
+      },
+      {
+        "track_id": "T15-0995",
+        "x": 34.43659984037717,
+        "y": -9.270214858542015,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0111",
+          "C-0384"
+        ]
+      },
+      {
+        "track_id": "T15-0996",
+        "x": 34.44430658429613,
+        "y": -11.489298868339098,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0007"
+        ]
+      },
+      {
+        "track_id": "T15-0997",
+        "x": 34.45242361453576,
+        "y": -8.59279366369731,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0757"
+        ]
+      },
+      {
+        "track_id": "T15-0998",
+        "x": 34.466120971147184,
+        "y": -11.69662339178277,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007"
+        ]
+      },
+      {
+        "track_id": "T15-1000",
+        "x": 34.49765178821182,
+        "y": -12.335200561150566,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0045",
+          "C-0250"
+        ]
+      },
+      {
+        "track_id": "T15-1001",
+        "x": 34.49773917922896,
+        "y": -12.015296003044748,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0250"
+        ]
+      },
+      {
+        "track_id": "T15-1003",
+        "x": 34.55841630668115,
+        "y": -11.943997717632174,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0250"
+        ]
+      },
+      {
+        "track_id": "T15-1004",
+        "x": 34.600570714188024,
+        "y": -10.48188691926949,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0028",
+          "C-0086"
+        ]
+      },
+      {
+        "track_id": "T15-1008",
+        "x": 34.64972274203769,
+        "y": -11.572158956145563,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007",
+          "C-0045",
+          "C-0341"
+        ]
+      },
+      {
+        "track_id": "T15-1010",
+        "x": 34.75948612143442,
+        "y": -10.185649054988302,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0028"
+        ]
+      },
+      {
+        "track_id": "T15-1011",
+        "x": 34.763003910905006,
+        "y": -10.213952298470128,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0028"
+        ]
+      },
+      {
+        "track_id": "T15-1013",
+        "x": 34.7866566130225,
+        "y": -8.854065047010883,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0112"
+        ]
+      },
+      {
+        "track_id": "T15-1015",
+        "x": 34.80428051350903,
+        "y": -12.810938850853097,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0245"
+        ]
+      },
+      {
+        "track_id": "T15-1017",
+        "x": 34.906620408624036,
+        "y": -14.096344229186533,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0257"
+        ]
+      },
+      {
+        "track_id": "T15-1019",
+        "x": 34.9192692206301,
+        "y": -11.23954692242872,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0007",
+          "C-0086",
+          "C-0208"
+        ]
+      },
+      {
+        "track_id": "T15-1021",
+        "x": 34.966592309868375,
+        "y": -9.21709406816489,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0384",
+          "C-0481",
+          "C-0527"
+        ]
+      },
+      {
+        "track_id": "T15-1022",
+        "x": 34.973389951220504,
+        "y": -14.157929825060457,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+        "source_candidate_ids": [
+          "C-0257"
+        ]
+      },
+      {
+        "track_id": "T15-1023",
+        "x": 35.004881957936874,
+        "y": -10.737623640014991,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0648"
+        ]
+      },
+      {
+        "track_id": "T15-1024",
+        "x": 35.0212919588198,
+        "y": -8.863454650699913,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0111"
+        ]
+      },
+      {
+        "track_id": "T15-1025",
+        "x": 35.04244217107,
+        "y": -8.259930890724869,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0527"
+        ]
+      },
+      {
+        "track_id": "T15-1027",
+        "x": 35.07292799762236,
+        "y": -8.603119953673264,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0527"
+        ]
+      },
+      {
+        "track_id": "T15-1028",
+        "x": 35.11548625825555,
+        "y": -8.3517236647639,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0481"
+        ]
+      },
+      {
+        "track_id": "T15-1030",
+        "x": 35.163165172573684,
+        "y": -11.667962822843565,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0208"
+        ]
+      },
+      {
+        "track_id": "T15-1031",
+        "x": 35.178360662280646,
+        "y": -8.99403604555232,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0196"
+        ]
+      },
+      {
+        "track_id": "T15-1036",
+        "x": 35.323124460936576,
+        "y": -8.779825820917297,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0111"
+        ]
+      },
+      {
+        "track_id": "T15-1037",
+        "x": 35.33675265470494,
+        "y": -12.359515348235158,
+        "phase4_tree_id": null,
+        "detection_status": "UNRESOLVED_FRAGMENT",
+        "geometry_status": "INSUFFICIENT_EVIDENCE",
+        "source_candidate_ids": [
+          "C-0032",
+          "C-0045"
+        ]
+      }
+    ],
+    "candidate_centers": [
+      {
+        "candidate_id": "C-0003",
+        "x": 33.120000000000005,
+        "y": -13.6,
+        "canonical_track_id": "T15-0955",
+        "tree_id": "TREE_0099",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0006",
+        "x": 34.480000000000004,
+        "y": -14.08,
+        "canonical_track_id": "T15-0992",
+        "tree_id": "TREE_0105",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0007",
+        "x": 34.72,
+        "y": -11.6,
+        "canonical_track_id": "T15-1007",
+        "tree_id": "TREE_0106",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0017",
+        "x": 30.0,
+        "y": -10.879999999999999,
+        "canonical_track_id": "T15-0857",
+        "tree_id": "TREE_0087",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0023",
+        "x": 33.92,
+        "y": -11.12,
+        "canonical_track_id": "T15-0973",
+        "tree_id": "TREE_0102",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0027",
+        "x": 33.760000000000005,
+        "y": -9.2,
+        "canonical_track_id": "T15-0974",
+        "tree_id": "TREE_0103",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0028",
+        "x": 34.72,
+        "y": -10.24,
+        "canonical_track_id": "T15-1009",
+        "tree_id": "TREE_0107",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0040",
+        "x": 31.52,
+        "y": -14.24,
+        "canonical_track_id": "T15-0928",
+        "tree_id": "TREE_0096",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0045",
+        "x": 35.2,
+        "y": -12.08,
+        "canonical_track_id": "T15-1042",
+        "tree_id": "TREE_0112",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0049",
+        "x": 33.84,
+        "y": -12.32,
+        "canonical_track_id": "T15-0972",
+        "tree_id": "TREE_0101",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0056",
+        "x": 29.04,
+        "y": -12.879999999999999,
+        "canonical_track_id": "T15-0832",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0060",
+        "x": 30.400000000000002,
+        "y": -13.68,
+        "canonical_track_id": "T15-0913",
+        "tree_id": "TREE_0094",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0064",
+        "x": 29.52,
+        "y": -11.12,
+        "canonical_track_id": "T15-0857",
+        "tree_id": "TREE_0087",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0066",
+        "x": 30.32,
+        "y": -11.92,
+        "canonical_track_id": "T15-0903",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0080",
+        "x": 29.68,
+        "y": -13.2,
+        "canonical_track_id": "T15-0852",
+        "tree_id": "TREE_0086",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0086",
+        "x": 34.56,
+        "y": -10.959999999999999,
+        "canonical_track_id": "T15-1004",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0091",
+        "x": 29.12,
+        "y": -13.76,
+        "canonical_track_id": "T15-0823",
+        "tree_id": "TREE_0082",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0092",
+        "x": 29.84,
+        "y": -10.24,
+        "canonical_track_id": "T15-0871",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0101",
+        "x": 32.56,
+        "y": -14.16,
+        "canonical_track_id": "T15-0951",
+        "tree_id": "TREE_0098",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0107",
+        "x": 29.44,
+        "y": -9.36,
+        "canonical_track_id": "T15-0854",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0111",
+        "x": 35.120000000000005,
+        "y": -9.12,
+        "canonical_track_id": "T15-0995",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0112",
+        "x": 35.28,
+        "y": -8.559999999999999,
+        "canonical_track_id": "T15-1038",
+        "tree_id": "TREE_0111",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0136",
+        "x": 29.2,
+        "y": -8.32,
+        "canonical_track_id": "T15-0831",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0147",
+        "x": 29.68,
+        "y": -12.32,
+        "canonical_track_id": "T15-0897",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0161",
+        "x": 30.8,
+        "y": -14.799999999999999,
+        "canonical_track_id": "T15-0921",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0208",
+        "x": 35.2,
+        "y": -11.36,
+        "canonical_track_id": "T15-1029",
+        "tree_id": "TREE_0108",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0229",
+        "x": 29.04,
+        "y": -10.4,
+        "canonical_track_id": "T15-0860",
+        "tree_id": "TREE_0088",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0233",
+        "x": 29.92,
+        "y": -11.68,
+        "canonical_track_id": "T15-0899",
+        "tree_id": "TREE_0092",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0245",
+        "x": 35.04,
+        "y": -12.4,
+        "canonical_track_id": "T15-1015",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0250",
+        "x": 34.32,
+        "y": -12.24,
+        "canonical_track_id": "T15-1003",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0251",
+        "x": 34.24,
+        "y": -14.56,
+        "canonical_track_id": "T15-0970",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0255",
+        "x": 31.68,
+        "y": -10.48,
+        "canonical_track_id": "T15-0929",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0257",
+        "x": 34.879999999999995,
+        "y": -14.08,
+        "canonical_track_id": "T15-1017",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0259",
+        "x": 29.76,
+        "y": -9.6,
+        "canonical_track_id": "T15-0874",
+        "tree_id": "TREE_0089",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0272",
+        "x": 34.08,
+        "y": -13.2,
+        "canonical_track_id": "T15-0982",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0321",
+        "x": 31.28,
+        "y": -10.16,
+        "canonical_track_id": "T15-0925",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0335",
+        "x": 34.08,
+        "y": -8.719999999999999,
+        "canonical_track_id": "T15-0967",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0341",
+        "x": 34.16,
+        "y": -11.68,
+        "canonical_track_id": "T15-1008",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0345",
+        "x": 33.36,
+        "y": -8.8,
+        "canonical_track_id": "T15-0974",
+        "tree_id": "TREE_0103",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0353",
+        "x": 31.12,
+        "y": -12.0,
+        "canonical_track_id": "T15-0924",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0384",
+        "x": 34.56,
+        "y": -9.28,
+        "canonical_track_id": "T15-0995",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0389",
+        "x": 31.84,
+        "y": -12.719999999999999,
+        "canonical_track_id": "T15-0940",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0404",
+        "x": 29.84,
+        "y": -14.16,
+        "canonical_track_id": "T15-0882",
+        "tree_id": "TREE_0091",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0415",
+        "x": 31.2,
+        "y": -14.32,
+        "canonical_track_id": "T15-0928",
+        "tree_id": "TREE_0096",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0434",
+        "x": 29.6,
+        "y": -11.68,
+        "canonical_track_id": "T15-0900",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0437",
+        "x": 31.12,
+        "y": -11.68,
+        "canonical_track_id": "T15-0922",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0441",
+        "x": 31.68,
+        "y": -14.799999999999999,
+        "canonical_track_id": "T15-0935",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0460",
+        "x": 30.240000000000002,
+        "y": -12.719999999999999,
+        "canonical_track_id": "T15-0901",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0465",
+        "x": 34.400000000000006,
+        "y": -8.719999999999999,
+        "canonical_track_id": "T15-0974",
+        "tree_id": "TREE_0103",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0481",
+        "x": 34.96,
+        "y": -8.559999999999999,
+        "canonical_track_id": "T15-1021",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0492",
+        "x": 30.16,
+        "y": -8.96,
+        "canonical_track_id": "T15-0881",
+        "tree_id": "TREE_0090",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0523",
+        "x": 28.88,
+        "y": -13.2,
+        "canonical_track_id": "T15-0833",
+        "tree_id": "TREE_0084",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0527",
+        "x": 34.72,
+        "y": -8.16,
+        "canonical_track_id": "T15-0991",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0533",
+        "x": 30.72,
+        "y": -11.36,
+        "canonical_track_id": "T15-0908",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0537",
+        "x": 35.120000000000005,
+        "y": -9.68,
+        "canonical_track_id": "T15-1038",
+        "tree_id": "TREE_0111",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0548",
+        "x": 28.88,
+        "y": -12.48,
+        "canonical_track_id": "T15-0851",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0609",
+        "x": 28.72,
+        "y": -12.16,
+        "canonical_track_id": "T15-0835",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0638",
+        "x": 29.6,
+        "y": -9.92,
+        "canonical_track_id": "T15-0874",
+        "tree_id": "TREE_0089",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0648",
+        "x": 34.96,
+        "y": -10.64,
+        "canonical_track_id": "T15-1023",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0671",
+        "x": 30.8,
+        "y": -14.4,
+        "canonical_track_id": "T15-0928",
+        "tree_id": "TREE_0096",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0710",
+        "x": 29.6,
+        "y": -8.16,
+        "canonical_track_id": "T15-0868",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0721",
+        "x": 28.72,
+        "y": -10.32,
+        "canonical_track_id": "T15-0828",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0757",
+        "x": 34.72,
+        "y": -8.8,
+        "canonical_track_id": "T15-0997",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0762",
+        "x": 33.68,
+        "y": -14.0,
+        "canonical_track_id": "T15-0971",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0786",
+        "x": 29.04,
+        "y": -9.04,
+        "canonical_track_id": "T15-0841",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0797",
+        "x": 30.72,
+        "y": -13.52,
+        "canonical_track_id": null,
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0800",
+        "x": 33.760000000000005,
+        "y": -12.719999999999999,
+        "canonical_track_id": "T15-0969",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0801",
+        "x": 34.32,
+        "y": -9.04,
+        "canonical_track_id": "T15-0974",
+        "tree_id": "TREE_0103",
+        "disposition": "SOURCE_CANDIDATE"
+      },
+      {
+        "candidate_id": "C-0827",
+        "x": 29.84,
+        "y": -11.28,
+        "canonical_track_id": "T15-0885",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0853",
+        "x": 30.64,
+        "y": -12.64,
+        "canonical_track_id": "T15-0916",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0854",
+        "x": 30.400000000000002,
+        "y": -9.52,
+        "canonical_track_id": "T15-0895",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0860",
+        "x": 29.52,
+        "y": -10.24,
+        "canonical_track_id": "T15-0867",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0861",
+        "x": 30.0,
+        "y": -8.32,
+        "canonical_track_id": "T15-0891",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0868",
+        "x": 31.04,
+        "y": -13.36,
+        "canonical_track_id": "T15-0917",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0869",
+        "x": 29.68,
+        "y": -8.8,
+        "canonical_track_id": "T15-0891",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0870",
+        "x": 33.519999999999996,
+        "y": -11.76,
+        "canonical_track_id": "T15-0961",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0880",
+        "x": 29.12,
+        "y": -9.6,
+        "canonical_track_id": "T15-0843",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0881",
+        "x": 31.76,
+        "y": -13.12,
+        "canonical_track_id": "T15-0942",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0883",
+        "x": 30.8,
+        "y": -11.68,
+        "canonical_track_id": "T15-0920",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      },
+      {
+        "candidate_id": "C-0932",
+        "x": 30.080000000000002,
+        "y": -12.24,
+        "canonical_track_id": "T15-0912",
+        "tree_id": null,
+        "disposition": "UNRESOLVED_FRAGMENT"
+      }
+    ],
+    "automatic_xy_matching_policy": "SUGGESTION_ONLY; MANUAL ASSOCIATIONS OVERRIDE; XY DISTANCE NEVER DECLARES A MATCH"
+  },
+  "sampled": {
+    "components_by_height": [],
+    "radius_profile_selected": [],
+    "centreline": {
+      "points_xyz": []
+    }
+  },
+  "full_resolution": {
+    "components_by_height": [],
+    "radius_profile_selected": [],
+    "centreline": {
+      "points_xyz": []
+    }
+  }
+}

@@ -1,0 +1,6521 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+  "interpretation": "PROVISIONAL PHYSICAL-TREE INVENTORY; CIRCUMFERENCES ARE NOT VERIFIED FIELD MEASUREMENTS",
+  "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+  "source_las_point_count": 67177038,
+  "tree_count": 118,
+  "tree_id_stability": "PERSISTED_FOR_UNCHANGED_INFERRED_TREE_KEYS",
+  "trees": [
+    {
+      "tree_key": "PT-F20D8DEFB6998580",
+      "tree_id": "TREE_0001",
+      "center": {
+        "x": 6.8545322603491865,
+        "y": -9.481166532388347
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_REVIEW_INSUFFICIENT_INFORMATION"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 6.769701355218303,
+        "source_track_ids": [
+          "T15-0038"
+        ],
+        "vertical_level_count": 3
+      },
+      "source_candidates": [
+        "C-0169",
+        "C-0561"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-47979410F358DAB6",
+      "tree_id": "TREE_0002",
+      "center": {
+        "x": 7.172003140754918,
+        "y": 4.6927862420676885
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.5,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 8.820203826798283,
+        "source_track_ids": [
+          "T15-0061"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0634",
+        "C-0776"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-BA2D8355A31E0487",
+      "tree_id": "TREE_0003",
+      "center": {
+        "x": 7.382461281924923,
+        "y": -7.98816796847588
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.448725230229059,
+        "source_track_ids": [
+          "T15-0068"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0360"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-94790438547861A0",
+      "tree_id": "TREE_0004",
+      "center": {
+        "x": 7.907170001510147,
+        "y": -7.700758571062889
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.84101886172086,
+        "source_track_ids": [
+          "T15-0084"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0001"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-4D12F12A5AC1C652",
+      "tree_id": "TREE_0005",
+      "center": {
+        "x": 8.03010448812756,
+        "y": -1.296322431956784
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.274439083705962,
+        "source_track_ids": [
+          "T15-0087"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0286",
+        "C-0362",
+        "C-0406"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-94A9C6E730A2B0FC",
+      "tree_id": "TREE_0006",
+      "center": {
+        "x": 8.426053987229464,
+        "y": -10.083677413947639
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.198406102040874,
+        "source_track_ids": [
+          "T15-0100"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0004",
+        "C-0190",
+        "C-0457"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-E06CEF800418653A",
+      "tree_id": "TREE_0007",
+      "center": {
+        "x": 8.777422773491196,
+        "y": -9.695931117066843
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.981462868266894,
+        "source_track_ids": [
+          "T15-0115"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0297",
+        "C-0407"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-9E9D251E1831B42E",
+      "tree_id": "TREE_0008",
+      "center": {
+        "x": 8.821071954014778,
+        "y": 1.4047000486146883
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.042383687397377,
+        "source_track_ids": [
+          "T15-0119"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0013"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F3815C8B08FC9AE1",
+      "tree_id": "TREE_0009",
+      "center": {
+        "x": 8.935424311109838,
+        "y": -7.630097444530291
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.5,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 4.986067734501346,
+        "source_track_ids": [
+          "T15-0128"
+        ],
+        "vertical_level_count": 2
+      },
+      "source_candidates": [
+        "C-0576"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-60DA88349A02F70D",
+      "tree_id": "TREE_0010",
+      "center": {
+        "x": 9.125393764566935,
+        "y": -4.797240178855312
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.029899952433974,
+        "source_track_ids": [
+          "T15-0134"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0278",
+        "C-0921"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-6EB2DBA68F91DE96",
+      "tree_id": "TREE_0011",
+      "center": {
+        "x": 9.355925281028412,
+        "y": 0.879909048400004
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.75,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 2.791464859688025,
+        "source_track_ids": [
+          "T15-0141"
+        ],
+        "vertical_level_count": 1
+      },
+      "source_candidates": [
+        "C-0285"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.65,
+        "circumference_cm": 21.71,
+        "reported_candidate_circumference_cm": 21.71,
+        "equivalent_diameter_cm": 6.91,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0285",
+        "point_count": 47139,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-B13DC0A15C593AC6",
+      "tree_id": "TREE_0012",
+      "center": {
+        "x": 9.451359742657834,
+        "y": -0.9008567831134688
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 13.041209236832584,
+        "source_track_ids": [
+          "T15-0147"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0002",
+        "C-0184"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-3F4CA683114A54A2",
+      "tree_id": "TREE_0013",
+      "center": {
+        "x": 9.603446192392711,
+        "y": -8.336308183900512
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 20.43952029071586,
+        "source_track_ids": [
+          "T15-0155"
+        ],
+        "vertical_level_count": 9
+      },
+      "source_candidates": [
+        "C-0089",
+        "C-0508"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-ED2097A963502837",
+      "tree_id": "TREE_0014",
+      "center": {
+        "x": 9.778084607137007,
+        "y": 2.4997678535942045
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 8.86286304496212,
+        "source_track_ids": [
+          "T15-0165"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0187",
+        "C-0287",
+        "C-0435"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 28.6,
+        "reported_candidate_circumference_cm": 28.6,
+        "equivalent_diameter_cm": 9.1,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0187",
+        "point_count": 29769,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-EDECF7F0D97CDCAE",
+      "tree_id": "TREE_0015",
+      "center": {
+        "x": 9.932136798334337,
+        "y": 2.5687980884826125
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.573104184362771,
+        "source_track_ids": [
+          "T15-0171"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0053",
+        "C-0365"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-6539EEC80E275B22",
+      "tree_id": "TREE_0016",
+      "center": {
+        "x": 10.370377088268885,
+        "y": -5.785730502698559
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.639536972204901,
+        "source_track_ids": [
+          "T15-0192"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0141"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-C6F3EEB9F4EE4D17",
+      "tree_id": "TREE_0017",
+      "center": {
+        "x": 10.4450836642628,
+        "y": -5.747561875596052
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_MANUAL_SEED_MAIN_STEM",
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.64519178934422,
+        "source_track_ids": [
+          "T15-0195"
+        ],
+        "vertical_level_count": 4,
+        "phase2_manual_track_height_range_m": [
+          1.85,
+          3.5
+        ],
+        "manual_clean_height_hint_m": 2.5,
+        "manual_height_is_final_pom": false
+      },
+      "source_candidates": [
+        "C-0174"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [
+        "MANUAL-P175-0001",
+        "MANUAL-P175-0002"
+      ],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 2.45,
+        "circumference_cm": 45.63,
+        "reported_candidate_circumference_cm": 45.63,
+        "equivalent_diameter_cm": 14.41,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-9001",
+        "point_count": 987,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false,
+        "source_manual_seed_id": "MANUAL-P175-0001",
+        "independent_recheck_verdict": "REPRODUCED_WITHIN_DECLARED_PILOT_UNCERTAINTY"
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-37E700CA5238ED6A",
+      "tree_id": "TREE_0018",
+      "center": {
+        "x": 11.044834486171789,
+        "y": -4.705608014450563
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.059994622069365,
+        "source_track_ids": [
+          "T15-0215"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0164",
+        "C-0656"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.75,
+        "circumference_cm": 58.38,
+        "reported_candidate_circumference_cm": 58.38,
+        "equivalent_diameter_cm": 18.58,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0164",
+        "point_count": 612,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-1A45A4F357F31EBB",
+      "tree_id": "TREE_0019",
+      "center": {
+        "x": 11.071815488255643,
+        "y": -0.7272605375499146
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.476724051823442,
+        "source_track_ids": [
+          "T15-0217"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0022",
+        "C-0106",
+        "C-0185",
+        "C-0623",
+        "C-0630"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 5,
+        "track_count": 1,
+        "candidates_merged_within_tree": 4,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F20D647E9A950B9D",
+      "tree_id": "TREE_0020",
+      "center": {
+        "x": 11.29163819496956,
+        "y": -14.526277364549887
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.737990943782062,
+        "source_track_ids": [
+          "T15-0224"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0619"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-5DEF203E0573EAC2",
+      "tree_id": "TREE_0021",
+      "center": {
+        "x": 11.450689035111576,
+        "y": -12.582393763809335
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.467048178942767,
+        "source_track_ids": [
+          "T15-0233"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0037"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-BEAD1F9CD1886D1E",
+      "tree_id": "TREE_0022",
+      "center": {
+        "x": 11.45785247733762,
+        "y": -11.184629855250229
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.83805452863753,
+        "source_track_ids": [
+          "T15-0235"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0518"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-8391A2C672C2F126",
+      "tree_id": "TREE_0023",
+      "center": {
+        "x": 11.679670168785421,
+        "y": -11.378935234592948
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.886526388239314,
+        "source_track_ids": [
+          "T15-0240"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0005",
+        "C-0175"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-46E206C7021FECEF",
+      "tree_id": "TREE_0024",
+      "center": {
+        "x": 12.241953712797397,
+        "y": -11.950251602613363
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.381424206563457,
+        "source_track_ids": [
+          "T15-0249"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0020"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D312A2A2E91A2396",
+      "tree_id": "TREE_0025",
+      "center": {
+        "x": 13.262662974603499,
+        "y": -0.8383405531107618
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 17.4185277562666,
+        "source_track_ids": [
+          "T15-0274"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0012",
+        "C-0291",
+        "C-0719"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-EB9557117E167E46",
+      "tree_id": "TREE_0026",
+      "center": {
+        "x": 13.324486656419563,
+        "y": -4.707595251669549
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.240822762645555,
+        "source_track_ids": [
+          "T15-0276"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0497",
+        "C-0584",
+        "C-0789"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.7,
+        "circumference_cm": 43.43,
+        "reported_candidate_circumference_cm": 43.43,
+        "equivalent_diameter_cm": 13.83,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0789",
+        "point_count": 716,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F25BDFF4BE3B8673",
+      "tree_id": "TREE_0027",
+      "center": {
+        "x": 13.363230414109136,
+        "y": -5.690053385218915
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.283139548638534,
+        "source_track_ids": [
+          "T15-0278"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0443",
+        "C-0715"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-E9D53C5752A3BC2A",
+      "tree_id": "TREE_0028",
+      "center": {
+        "x": 13.989001635483561,
+        "y": -14.546731406570606
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.378564630964263,
+        "source_track_ids": [
+          "T15-0299"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0483",
+        "C-0790"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-A13C022D86297DCB",
+      "tree_id": "TREE_0029",
+      "center": {
+        "x": 14.00737359111531,
+        "y": -6.204563590666941
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 2.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.618125910236682,
+        "source_track_ids": [
+          "T15-0300"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0047"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-6BC1893EB94B9695",
+      "tree_id": "TREE_0030",
+      "center": {
+        "x": 14.388828387287257,
+        "y": -5.654546869974515
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.1057922721317,
+        "source_track_ids": [
+          "T15-0313"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0530",
+        "C-0823"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D0775AE7B592D960",
+      "tree_id": "TREE_0031",
+      "center": {
+        "x": 14.71313166291,
+        "y": -13.16770386885202
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 19.31623175643939,
+        "source_track_ids": [
+          "T15-0322"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0009"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D00711F10CA3F607",
+      "tree_id": "TREE_0032",
+      "center": {
+        "x": 14.800100445646313,
+        "y": -11.00371702933584
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.392809810445094,
+        "source_track_ids": [
+          "T15-0325"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0025"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-E2FC7586D42BD643",
+      "tree_id": "TREE_0033",
+      "center": {
+        "x": 14.805390275477265,
+        "y": -6.356050565586704
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.908629345562366,
+        "source_track_ids": [
+          "T15-0326"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0172",
+        "C-0877"
+      ],
+      "excluded_non_tree_source_candidates": [
+        "C-0877"
+      ],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-2082E3AD22737242",
+      "tree_id": "TREE_0034",
+      "center": {
+        "x": 15.239642835811914,
+        "y": -11.507395693285797
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.514431940351749,
+        "source_track_ids": [
+          "T15-0337"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0273",
+        "C-0925"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F19E70F8CEB84E73",
+      "tree_id": "TREE_0035",
+      "center": {
+        "x": 15.455048667231017,
+        "y": -17.289003196299532
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.892669493857678,
+        "source_track_ids": [
+          "T15-0350"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0083"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.65,
+        "circumference_cm": 53.36,
+        "reported_candidate_circumference_cm": 53.36,
+        "equivalent_diameter_cm": 16.99,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0083",
+        "point_count": 704,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-22E3082F67728E10",
+      "tree_id": "TREE_0036",
+      "center": {
+        "x": 15.903726852978881,
+        "y": 1.5490559462029851
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.464424533326792,
+        "source_track_ids": [
+          "T15-0365"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0235",
+        "C-0316",
+        "C-0319",
+        "C-0399"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 4,
+        "track_count": 1,
+        "candidates_merged_within_tree": 3,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D2481F35306DE714",
+      "tree_id": "TREE_0037",
+      "center": {
+        "x": 16.03678080761925,
+        "y": -13.035492963888696
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 22.931736728757585,
+        "source_track_ids": [
+          "T15-0369"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0029"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 22.04,
+        "reported_candidate_circumference_cm": 22.04,
+        "equivalent_diameter_cm": 7.01,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0029",
+        "point_count": 2592,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-02383AC3E75A0458",
+      "tree_id": "TREE_0038",
+      "center": {
+        "x": 16.07099292502673,
+        "y": 1.2041157292835911
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.262766185795611,
+        "source_track_ids": [
+          "T15-0370"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0167"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-27E56E4C8B7313A5",
+      "tree_id": "TREE_0039",
+      "center": {
+        "x": 16.121914072601758,
+        "y": -15.543486774759295
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.5398498175062,
+        "source_track_ids": [
+          "T15-0373"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0150"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 30.78,
+        "reported_candidate_circumference_cm": 30.78,
+        "equivalent_diameter_cm": 9.8,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0150",
+        "point_count": 804,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-65E127060270AADF",
+      "tree_id": "TREE_0040",
+      "center": {
+        "x": 16.337917425915943,
+        "y": -8.59982494502559
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 21.278536196880005,
+        "source_track_ids": [
+          "T15-0380"
+        ],
+        "vertical_level_count": 9
+      },
+      "source_candidates": [
+        "C-0046"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-25A1E8C62E3174F8",
+      "tree_id": "TREE_0041",
+      "center": {
+        "x": 16.65624964036998,
+        "y": -9.611594689437798
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 25.231819562366706,
+        "source_track_ids": [
+          "T15-0384"
+        ],
+        "vertical_level_count": 11
+      },
+      "source_candidates": [
+        "C-0052"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 19.83,
+        "reported_candidate_circumference_cm": 19.83,
+        "equivalent_diameter_cm": 6.31,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0052",
+        "point_count": 2161,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-C2A3CCC877D74A5B",
+      "tree_id": "TREE_0042",
+      "center": {
+        "x": 16.886949189910585,
+        "y": -16.968446192813406
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.7688793666233,
+        "source_track_ids": [
+          "T15-0387"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0554"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-306C68B13C149E69",
+      "tree_id": "TREE_0043",
+      "center": {
+        "x": 16.99580558508956,
+        "y": -17.550261708866415
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.0095587778643,
+        "source_track_ids": [
+          "T15-0391"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0151",
+        "C-0804"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-46F8DDDDE956D6CC",
+      "tree_id": "TREE_0044",
+      "center": {
+        "x": 17.13269781377934,
+        "y": -11.58562414501082
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 22.998298735423475,
+        "source_track_ids": [
+          "T15-0396"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0010"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 35.8,
+        "reported_candidate_circumference_cm": 35.8,
+        "equivalent_diameter_cm": 11.4,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0010",
+        "point_count": 4121,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-DAB9C4B94EB9FDA7",
+      "tree_id": "TREE_0045",
+      "center": {
+        "x": 17.654927523685014,
+        "y": -14.72622770120584
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.446779542019899,
+        "source_track_ids": [
+          "T15-0405"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0030",
+        "C-0526"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-9EF1B79C82E3E0B3",
+      "tree_id": "TREE_0046",
+      "center": {
+        "x": 17.657607508778764,
+        "y": -10.567011025015985
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 25.66211369131549,
+        "source_track_ids": [
+          "T15-0406"
+        ],
+        "vertical_level_count": 11
+      },
+      "source_candidates": [
+        "C-0015"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-453C660D9E0D5A04",
+      "tree_id": "TREE_0047",
+      "center": {
+        "x": 18.01844489803231,
+        "y": 0.9999000351595198
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.692588562296834,
+        "source_track_ids": [
+          "T15-0419"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0063"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-13145778D3AD8DA8",
+      "tree_id": "TREE_0048",
+      "center": {
+        "x": 18.237575354350373,
+        "y": -5.75005178856202
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.5,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.244022215547252,
+        "source_track_ids": [
+          "T15-0425"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0676",
+        "C-0811"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 3.1,
+        "circumference_cm": 51.13,
+        "reported_candidate_circumference_cm": 51.13,
+        "equivalent_diameter_cm": 16.27,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0811",
+        "point_count": 482,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-FE46315CAD9CCC11",
+      "tree_id": "TREE_0049",
+      "center": {
+        "x": 18.250175364747477,
+        "y": -10.04934384181933
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.135408174322805,
+        "source_track_ids": [
+          "T15-0427"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0088"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D981AEBCD7FF4440",
+      "tree_id": "TREE_0050",
+      "center": {
+        "x": 18.909258761407106,
+        "y": -8.117902410386508
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.340160202155756,
+        "source_track_ids": [
+          "T15-0447",
+          "T15-0449"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0128",
+        "C-0796"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 2,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 17.61,
+        "reported_candidate_circumference_cm": 17.61,
+        "equivalent_diameter_cm": 5.6,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0128",
+        "point_count": 752,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-3D14BCB3F86A3D95",
+      "tree_id": "TREE_0051",
+      "center": {
+        "x": 19.02469047617058,
+        "y": -4.797057163546849
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.861601248640683,
+        "source_track_ids": [
+          "T15-0455"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0547"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D10CF26494A70A38",
+      "tree_id": "TREE_0052",
+      "center": {
+        "x": 19.114095503703282,
+        "y": -9.296665814669156
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 23.172886937714306,
+        "source_track_ids": [
+          "T15-0464"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0105",
+        "C-0392"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-1E16D900169A1ABE",
+      "tree_id": "TREE_0053",
+      "center": {
+        "x": 19.14744210503111,
+        "y": -10.975533467728082
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 23.154551712521208,
+        "source_track_ids": [
+          "T15-0469"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0026"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-89B853FF592C26F9",
+      "tree_id": "TREE_0054",
+      "center": {
+        "x": 19.191823629891474,
+        "y": -13.841594554741746
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.138028315000861,
+        "source_track_ids": [
+          "T15-0470"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0014"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F0CB5B88624D90BB",
+      "tree_id": "TREE_0055",
+      "center": {
+        "x": 19.641236836715418,
+        "y": -18.298470280636053
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.5,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.396137898776377,
+        "source_track_ids": [
+          "T15-0480"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0627",
+        "C-0931"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F10E8702B893E9DE",
+      "tree_id": "TREE_0056",
+      "center": {
+        "x": 20.31879987940471,
+        "y": -10.325365978216848
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.423292448720716,
+        "source_track_ids": [
+          "T15-0510"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0008"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 128.19,
+        "reported_candidate_circumference_cm": 128.19,
+        "equivalent_diameter_cm": 40.81,
+        "selected_model": "CIRCLE",
+        "confidence": 0.987365,
+        "source_candidate_id": "C-0008",
+        "point_count": 5991,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-7A26ED9E2D10B5B9",
+      "tree_id": "TREE_0057",
+      "center": {
+        "x": 20.91924431928471,
+        "y": -0.179804119015112
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 13.95814707195685,
+        "source_track_ids": [
+          "T15-0545"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0043"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-B8D8E57349128518",
+      "tree_id": "TREE_0058",
+      "center": {
+        "x": 21.644079155277677,
+        "y": -12.605159676778932
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 15.960298859725626,
+        "source_track_ids": [
+          "T15-0573"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0024",
+        "C-0410",
+        "C-0507",
+        "C-0569",
+        "C-0636"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 5,
+        "track_count": 1,
+        "candidates_merged_within_tree": 4,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-B2A8959EF11C2D19",
+      "tree_id": "TREE_0059",
+      "center": {
+        "x": 21.829645390262133,
+        "y": -0.17665631858015093
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 5.66018832402373,
+        "source_track_ids": [
+          "T15-0583"
+        ],
+        "vertical_level_count": 2
+      },
+      "source_candidates": [
+        "C-0495"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-9BA58B5BF017C6FD",
+      "tree_id": "TREE_0060",
+      "center": {
+        "x": 22.533999933178713,
+        "y": -3.4510334320788423
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 13.486023164942916,
+        "source_track_ids": [
+          "T15-0598"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0093",
+        "C-0390",
+        "C-0420",
+        "C-0677"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 4,
+        "track_count": 1,
+        "candidates_merged_within_tree": 3,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-016640D66BB30995",
+      "tree_id": "TREE_0061",
+      "center": {
+        "x": 22.58263057348869,
+        "y": -11.909029664422588
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.280812494662133,
+        "source_track_ids": [
+          "T15-0600"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0270",
+        "C-0408"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 29.12,
+        "reported_candidate_circumference_cm": 29.12,
+        "equivalent_diameter_cm": 9.27,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0270",
+        "point_count": 3431,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-19FB4C65B776CFEF",
+      "tree_id": "TREE_0062",
+      "center": {
+        "x": 23.200994229801182,
+        "y": -9.79631322713892
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 7.306567086916846,
+        "source_track_ids": [
+          "T15-0626"
+        ],
+        "vertical_level_count": 3
+      },
+      "source_candidates": [
+        "C-0121",
+        "C-0622"
+      ],
+      "excluded_non_tree_source_candidates": [
+        "C-0121"
+      ],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 22.0,
+        "reported_candidate_circumference_cm": 22.0,
+        "equivalent_diameter_cm": 5.96,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.971708,
+        "source_candidate_id": "C-0622",
+        "point_count": 1375,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-9DBE8DCF35926BFC",
+      "tree_id": "TREE_0063",
+      "center": {
+        "x": 23.349057228023984,
+        "y": -15.411761570543343
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.804595015687703,
+        "source_track_ids": [
+          "T15-0632"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0095"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-833C3AD51566E2A5",
+      "tree_id": "TREE_0064",
+      "center": {
+        "x": 23.427841197935425,
+        "y": -7.227254929254565
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.540458405861374,
+        "source_track_ids": [
+          "T15-0634"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0479",
+        "C-0871"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-7769EC427BD603EC",
+      "tree_id": "TREE_0065",
+      "center": {
+        "x": 23.529113428448838,
+        "y": -13.312408750697452
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 21.06766217286129,
+        "source_track_ids": [
+          "T15-0640"
+        ],
+        "vertical_level_count": 9
+      },
+      "source_candidates": [
+        "C-0331",
+        "C-0512",
+        "C-0711"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 40.33,
+        "reported_candidate_circumference_cm": 40.33,
+        "equivalent_diameter_cm": 12.84,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0711",
+        "point_count": 1970,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-FB20AAEC89C566DE",
+      "tree_id": "TREE_0066",
+      "center": {
+        "x": 23.535304787350682,
+        "y": -8.15908099788177
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.780887712804184,
+        "source_track_ids": [
+          "T15-0641"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0118",
+        "C-0127"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-861CA8A5FAC507F3",
+      "tree_id": "TREE_0067",
+      "center": {
+        "x": 23.71565674685592,
+        "y": -3.5014996227008
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.159079672069067,
+        "source_track_ids": [
+          "T15-0646"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0070",
+        "C-0314",
+        "C-0452"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-5CD804EC9FE4D8C3",
+      "tree_id": "TREE_0068",
+      "center": {
+        "x": 23.78833499393008,
+        "y": -11.780750356997606
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 23.548030587003435,
+        "source_track_ids": [
+          "T15-0654"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0018",
+        "C-0778"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-A3E1B10FE7D44A98",
+      "tree_id": "TREE_0069",
+      "center": {
+        "x": 23.934833298856287,
+        "y": -12.575522705154548
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 23.09910372361314,
+        "source_track_ids": [
+          "T15-0656"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0269",
+        "C-0458",
+        "C-0734"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 25.91,
+        "reported_candidate_circumference_cm": 25.91,
+        "equivalent_diameter_cm": 8.15,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0734",
+        "point_count": 2388,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-5429DB7CD37DB2E5",
+      "tree_id": "TREE_0070",
+      "center": {
+        "x": 24.115831319992232,
+        "y": -7.524565299501174
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.049397917055671,
+        "source_track_ids": [
+          "T15-0669"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0082"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F66C035D03638F7B",
+      "tree_id": "TREE_0071",
+      "center": {
+        "x": 24.30213974101177,
+        "y": -7.715105738713981
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.776404407879024,
+        "source_track_ids": [
+          "T15-0677"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0448",
+        "C-0641"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-3B922D92D69A2CFE",
+      "tree_id": "TREE_0072",
+      "center": {
+        "x": 24.748931141749544,
+        "y": -16.603825223461445
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.463472262049496,
+        "source_track_ids": [
+          "T15-0687"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0073"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-6B165B72119619D8",
+      "tree_id": "TREE_0073",
+      "center": {
+        "x": 24.85135657443997,
+        "y": -13.354561763572534
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.092274211930814,
+        "source_track_ids": [
+          "T15-0696"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0059"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 25.94,
+        "reported_candidate_circumference_cm": 25.94,
+        "equivalent_diameter_cm": 8.16,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0059",
+        "point_count": 2393,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-41E7110A209DB576",
+      "tree_id": "TREE_0074",
+      "center": {
+        "x": 24.921323350865496,
+        "y": -13.876483197690789
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.5,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 8.970438109374037,
+        "source_track_ids": [
+          "T15-0700"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0655",
+        "C-0792"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 25.84,
+        "reported_candidate_circumference_cm": 25.84,
+        "equivalent_diameter_cm": 8.13,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0655",
+        "point_count": 2352,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-5B0A89B997D12882",
+      "tree_id": "TREE_0075",
+      "center": {
+        "x": 26.07758641867735,
+        "y": -13.106482555556248
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 27.431621024050504,
+        "source_track_ids": [
+          "T15-0735"
+        ],
+        "vertical_level_count": 12
+      },
+      "source_candidates": [
+        "C-0242",
+        "C-0516"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 27.1,
+        "reported_candidate_circumference_cm": 27.1,
+        "equivalent_diameter_cm": 8.63,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0516",
+        "point_count": 3022,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-2C91366318D60E87",
+      "tree_id": "TREE_0076",
+      "center": {
+        "x": 26.154840232485917,
+        "y": -13.96175545342777
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 23.54412903978064,
+        "source_track_ids": [
+          "T15-0737"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0271",
+        "C-0370",
+        "C-0463",
+        "C-0590",
+        "C-0889"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 5,
+        "track_count": 1,
+        "candidates_merged_within_tree": 4,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 25.4,
+        "reported_candidate_circumference_cm": 25.4,
+        "equivalent_diameter_cm": 8.08,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0590",
+        "point_count": 2054,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-54721C4EF4C30096",
+      "tree_id": "TREE_0077",
+      "center": {
+        "x": 26.39577097846621,
+        "y": -17.09720075486317
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.09725794296668,
+        "source_track_ids": [
+          "T15-0749"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0541"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-8B069F190E27670B",
+      "tree_id": "TREE_0078",
+      "center": {
+        "x": 26.79915016502957,
+        "y": -16.775796867140798
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.017892218386246,
+        "source_track_ids": [
+          "T15-0757"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0067"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-6383870F5D50EB71",
+      "tree_id": "TREE_0079",
+      "center": {
+        "x": 27.571199393043802,
+        "y": -10.853184320544662
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.670914877049627,
+        "source_track_ids": [
+          "T15-0793"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0050",
+        "C-0054"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-A02ADD53B11B103A",
+      "tree_id": "TREE_0080",
+      "center": {
+        "x": 28.042912846353016,
+        "y": -12.871442067864606
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.860121192836342,
+        "source_track_ids": [
+          "T15-0810"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0327"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-764DF628DD0AFA65",
+      "tree_id": "TREE_0081",
+      "center": {
+        "x": 28.295069283099146,
+        "y": -15.356407123133677
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 20.91390096002466,
+        "source_track_ids": [
+          "T15-0816"
+        ],
+        "vertical_level_count": 9
+      },
+      "source_candidates": [
+        "C-0163",
+        "C-0732"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 23.34,
+        "reported_candidate_circumference_cm": 23.34,
+        "equivalent_diameter_cm": 7.43,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0163",
+        "point_count": 1067,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-262FB3624672B80D",
+      "tree_id": "TREE_0082",
+      "center": {
+        "x": 28.474383542216128,
+        "y": -13.560947515922832
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 22.936719219877425,
+        "source_track_ids": [
+          "T15-0823"
+        ],
+        "vertical_level_count": 10
+      },
+      "source_candidates": [
+        "C-0091",
+        "C-0363",
+        "C-0579",
+        "C-0793"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 4,
+        "track_count": 1,
+        "candidates_merged_within_tree": 3,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-873BDEF5212E8E05",
+      "tree_id": "TREE_0083",
+      "center": {
+        "x": 28.495388984837877,
+        "y": -16.628374135293175
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.75,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 2.6066631079179556,
+        "source_track_ids": [
+          "T15-0824"
+        ],
+        "vertical_level_count": 1
+      },
+      "source_candidates": [
+        "C-0736"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 2.95,
+        "circumference_cm": 18.31,
+        "reported_candidate_circumference_cm": 18.31,
+        "equivalent_diameter_cm": 5.83,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0736",
+        "point_count": 462,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-BF4409936B791945",
+      "tree_id": "TREE_0084",
+      "center": {
+        "x": 28.85864017615998,
+        "y": -13.17654796719278
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.666910513743924,
+        "source_track_ids": [
+          "T15-0833"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0523"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-CC0AC05C5E886CF8",
+      "tree_id": "TREE_0085",
+      "center": {
+        "x": 29.262209557215712,
+        "y": -7.931490115300055
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.594132220382212,
+        "source_track_ids": [
+          "T15-0849"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0599",
+        "C-0643"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-A5A55C6202A5FA8C",
+      "tree_id": "TREE_0086",
+      "center": {
+        "x": 29.32677244536744,
+        "y": -13.343072634339363
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.795760611208081,
+        "source_track_ids": [
+          "T15-0852"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0080"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-4A10B554FFD2FF2E",
+      "tree_id": "TREE_0087",
+      "center": {
+        "x": 29.393377440371996,
+        "y": -10.97653510917749
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.746982706314565,
+        "source_track_ids": [
+          "T15-0857"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0017",
+        "C-0064"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-5FD9B0BDA73EE66F",
+      "tree_id": "TREE_0088",
+      "center": {
+        "x": 29.43392425499203,
+        "y": -10.149584907240534
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.217732441581429,
+        "source_track_ids": [
+          "T15-0860"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0229"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-BC869FA90183CB3E",
+      "tree_id": "TREE_0089",
+      "center": {
+        "x": 29.65804860129432,
+        "y": -9.174631040380001
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 12.58569362059861,
+        "source_track_ids": [
+          "T15-0874"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0259",
+        "C-0638"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-4B1D2EB25BC2AC33",
+      "tree_id": "TREE_0090",
+      "center": {
+        "x": 29.80119896302112,
+        "y": -8.433694275984005
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_REVIEW_INSUFFICIENT_INFORMATION"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.75,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 6.628077537539137,
+        "source_track_ids": [
+          "T15-0881"
+        ],
+        "vertical_level_count": 3
+      },
+      "source_candidates": [
+        "C-0492"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.65,
+        "circumference_cm": 241.23,
+        "reported_candidate_circumference_cm": 241.23,
+        "equivalent_diameter_cm": 76.79,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0492",
+        "point_count": 3361,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-1E1A9501E75FA752",
+      "tree_id": "TREE_0091",
+      "center": {
+        "x": 29.805978082435207,
+        "y": -14.21909596823061
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 18.54897832592682,
+        "source_track_ids": [
+          "T15-0882"
+        ],
+        "vertical_level_count": 8
+      },
+      "source_candidates": [
+        "C-0404"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NEEDS_REVIEW",
+        "pom_m": 1.3,
+        "circumference_cm": null,
+        "reported_candidate_circumference_cm": 17.09,
+        "equivalent_diameter_cm": null,
+        "selected_model": "CIRCLE",
+        "confidence": 0.972461,
+        "source_candidate_id": "C-0404",
+        "point_count": 1040,
+        "validity_reasons": [
+          "CIRCLE_ELLIPSE_DISAGREEMENT"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-DF506186BCC3A6A6",
+      "tree_id": "TREE_0092",
+      "center": {
+        "x": 30.181720194946482,
+        "y": -11.85396617153994
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.278030184157311,
+        "source_track_ids": [
+          "T15-0899"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0233"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-8D908A48229D4CF0",
+      "tree_id": "TREE_0093",
+      "center": {
+        "x": 30.347214699369996,
+        "y": -7.338253755314696
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.75,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 4.993175911086321,
+        "source_track_ids": [
+          "T15-0906"
+        ],
+        "vertical_level_count": 2
+      },
+      "source_candidates": [
+        "C-0766",
+        "C-0779"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.65,
+        "circumference_cm": 297.95,
+        "reported_candidate_circumference_cm": 297.95,
+        "equivalent_diameter_cm": 94.84,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0766",
+        "point_count": 2710,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-32DEA659D15EE469",
+      "tree_id": "TREE_0094",
+      "center": {
+        "x": 30.463670475659445,
+        "y": -13.674725537508888
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.58581146268921,
+        "source_track_ids": [
+          "T15-0913"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0060"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-96FF371CB80F91B1",
+      "tree_id": "TREE_0095",
+      "center": {
+        "x": 31.25845512491014,
+        "y": 1.2007955073983645
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.834565719911353,
+        "source_track_ids": [
+          "T15-0926"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0057"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-53CAD498BE435B65",
+      "tree_id": "TREE_0096",
+      "center": {
+        "x": 31.303095532968925,
+        "y": -14.276992330970481
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 27.513208244732397,
+        "source_track_ids": [
+          "T15-0928"
+        ],
+        "vertical_level_count": 12
+      },
+      "source_candidates": [
+        "C-0040",
+        "C-0415",
+        "C-0671"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-72C44E112254E33E",
+      "tree_id": "TREE_0097",
+      "center": {
+        "x": 32.52524387676335,
+        "y": -14.35643627350626
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.715733299422867,
+        "source_track_ids": [
+          "T15-0950"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 0,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-6BDB36C78AF42D7C",
+      "tree_id": "TREE_0098",
+      "center": {
+        "x": 32.542227915499595,
+        "y": -14.251076487481663
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 13.807156378445477,
+        "source_track_ids": [
+          "T15-0951"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0101"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-CCD936785491EDF6",
+      "tree_id": "TREE_0099",
+      "center": {
+        "x": 33.118576823483195,
+        "y": -13.644237726686903
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 27.724774516406484,
+        "source_track_ids": [
+          "T15-0955"
+        ],
+        "vertical_level_count": 12
+      },
+      "source_candidates": [
+        "C-0003"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F41ED676DADF8DE6",
+      "tree_id": "TREE_0100",
+      "center": {
+        "x": 33.120540120702394,
+        "y": -16.033242355321537
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 13.971241714827464,
+        "source_track_ids": [
+          "T15-0956"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0475",
+        "C-0588",
+        "C-0882"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 2.1,
+        "circumference_cm": 42.07,
+        "reported_candidate_circumference_cm": 42.07,
+        "equivalent_diameter_cm": 13.28,
+        "selected_model": "ELLIPSE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0882",
+        "point_count": 1024,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-48BE43CB4619D2A0",
+      "tree_id": "TREE_0101",
+      "center": {
+        "x": 33.73017190478958,
+        "y": -12.348102114888347
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.5,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 15.969295982336353,
+        "source_track_ids": [
+          "T15-0972"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0049"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-E1BF8085B7E799E5",
+      "tree_id": "TREE_0102",
+      "center": {
+        "x": 33.81609590369886,
+        "y": -11.076418376890421
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.24071054545729,
+        "source_track_ids": [
+          "T15-0973"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0023"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-3856268FFD9B2EB0",
+      "tree_id": "TREE_0103",
+      "center": {
+        "x": 33.823268998974605,
+        "y": -9.216776229757933
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 21.38817887514741,
+        "source_track_ids": [
+          "T15-0974"
+        ],
+        "vertical_level_count": 9
+      },
+      "source_candidates": [
+        "C-0027",
+        "C-0345",
+        "C-0465",
+        "C-0801"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 4,
+        "track_count": 1,
+        "candidates_merged_within_tree": 3,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-3AE1FF6086DB9230",
+      "tree_id": "TREE_0104",
+      "center": {
+        "x": 33.9486223100924,
+        "y": -15.663742695374825
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 1.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.523624970442775,
+        "source_track_ids": [
+          "T15-0978"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0249",
+        "C-0385",
+        "C-0419"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 49.65,
+        "reported_candidate_circumference_cm": 49.65,
+        "equivalent_diameter_cm": 15.8,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0419",
+        "point_count": 1416,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-90BA38EE827A6CF3",
+      "tree_id": "TREE_0105",
+      "center": {
+        "x": 34.40826654407324,
+        "y": -14.004594349067379
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 25.324655374629895,
+        "source_track_ids": [
+          "T15-0992"
+        ],
+        "vertical_level_count": 11
+      },
+      "source_candidates": [
+        "C-0006"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.3,
+        "circumference_cm": 25.97,
+        "reported_candidate_circumference_cm": 25.97,
+        "equivalent_diameter_cm": 8.27,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0006",
+        "point_count": 4581,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-867D37861C77222D",
+      "tree_id": "TREE_0106",
+      "center": {
+        "x": 34.62449398022648,
+        "y": -11.661519207969093
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.312423069373628,
+        "source_track_ids": [
+          "T15-1007"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0007"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-F15AC35895F57402",
+      "tree_id": "TREE_0107",
+      "center": {
+        "x": 34.72735710547437,
+        "y": -10.244650895222707
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 16.526100348235115,
+        "source_track_ids": [
+          "T15-1009"
+        ],
+        "vertical_level_count": 7
+      },
+      "source_candidates": [
+        "C-0028"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-45BB65FD358C2ACC",
+      "tree_id": "TREE_0108",
+      "center": {
+        "x": 35.155739409220295,
+        "y": -11.389073240158968
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 21.150505030106544,
+        "source_track_ids": [
+          "T15-1029"
+        ],
+        "vertical_level_count": 9
+      },
+      "source_candidates": [
+        "C-0208",
+        "C-0402"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-5457A44C44F7D528",
+      "tree_id": "TREE_0109",
+      "center": {
+        "x": 35.235776826576135,
+        "y": -8.915290737413239
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 0.75,
+        "z_max_agl_m": 2.5,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.404960634896444,
+        "source_track_ids": [
+          "T15-1033"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0194",
+        "C-0196"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-072EDACE550E2834",
+      "tree_id": "TREE_0110",
+      "center": {
+        "x": 35.31182517414354,
+        "y": -10.477868795965195
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.497844105401498,
+        "source_track_ids": [
+          "T15-1035"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0042"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-D05E2EDF329F4DE6",
+      "tree_id": "TREE_0111",
+      "center": {
+        "x": 35.39529218037244,
+        "y": -8.387047592357945
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.25,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.503301397343991,
+        "source_track_ids": [
+          "T15-1038"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0112",
+        "C-0429",
+        "C-0537"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-8A4E657E183FD6B4",
+      "tree_id": "TREE_0112",
+      "center": {
+        "x": 35.51119117241029,
+        "y": -12.020865635300138
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_MANUAL_SEED_MAIN_STEM",
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.342482079908226,
+        "source_track_ids": [
+          "T15-1042"
+        ],
+        "vertical_level_count": 4,
+        "phase2_manual_track_height_range_m": [
+          1.0,
+          2.5
+        ],
+        "manual_clean_height_hint_m": 2.5,
+        "manual_height_is_final_pom": false
+      },
+      "source_candidates": [
+        "C-0032",
+        "C-0045"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [
+        "MANUAL-P175-0003"
+      ],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NEEDS_REVIEW",
+        "pom_m": 1.3,
+        "circumference_cm": null,
+        "reported_candidate_circumference_cm": 14.1,
+        "equivalent_diameter_cm": null,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-9002",
+        "point_count": 1168,
+        "validity_reasons": [
+          "UNCONSTRAINED_RADIUS_BELOW_CONFIGURED_MINIMUM",
+          "BOUNDARY_SENSITIVE_RESULT_NOT_FINAL",
+          "TREE_PRESERVED_DESPITE_MEASUREMENT_FAILURE"
+        ],
+        "verified_field_measurement": false,
+        "source_manual_seed_id": "MANUAL-P175-0003",
+        "independent_recheck_verdict": "BOUNDARY_SENSITIVE_DO_NOT_TREAT_REPORTED_GIRTH_AS_FINAL"
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-730453AAAACAA09D",
+      "tree_id": "TREE_0113",
+      "center": {
+        "x": 36.096794613810445,
+        "y": -0.8587164820560562
+      },
+      "detection": {
+        "status": "PROBABLE",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "PHASE1_5_STEM_LIKE_VERTICAL_TRACK"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.675083480242757,
+        "source_track_ids": [
+          "T15-1062"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0600"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-E4851BD38C7F2598",
+      "tree_id": "TREE_0114",
+      "center": {
+        "x": 36.567503916584194,
+        "y": -11.269022832689826
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.25,
+        "z_max_agl_m": 2.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 2.7441868896732693,
+        "source_track_ids": [
+          "T15-1071"
+        ],
+        "vertical_level_count": 1
+      },
+      "source_candidates": [
+        "C-0162"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 1,
+        "track_count": 1,
+        "candidates_merged_within_tree": 0,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-B040F7E11D674A3D",
+      "tree_id": "TREE_0115",
+      "center": {
+        "x": 36.781418300356044,
+        "y": -9.896845181951567
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_REVIEW_INSUFFICIENT_INFORMATION"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.75,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 10.148910765726564,
+        "source_track_ids": [
+          "T15-1077"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0021",
+        "C-0294",
+        "C-0330"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 3,
+        "track_count": 1,
+        "candidates_merged_within_tree": 2,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-FE7A787D3BD73275",
+      "tree_id": "TREE_0116",
+      "center": {
+        "x": 37.791389981074865,
+        "y": -12.957661837293585
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.0,
+        "z_max_agl_m": 2.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 11.051378923127562,
+        "source_track_ids": [
+          "T15-1117"
+        ],
+        "vertical_level_count": 5
+      },
+      "source_candidates": [
+        "C-0120",
+        "C-0142",
+        "C-0156",
+        "C-0403"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 4,
+        "track_count": 1,
+        "candidates_merged_within_tree": 3,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-37ED935D33388FAC",
+      "tree_id": "TREE_0117",
+      "center": {
+        "x": 38.447158263281736,
+        "y": -15.12033856061329
+      },
+      "detection": {
+        "status": "CONFIRMED",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "HUMAN_TRUE_MAIN_STEM_EVIDENCE"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 1.3,
+        "z_max_agl_m": 3.25,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 14.416505242495345,
+        "source_track_ids": [
+          "T15-1137"
+        ],
+        "vertical_level_count": 6
+      },
+      "source_candidates": [
+        "C-0176",
+        "C-0774"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "MEASURABLE",
+        "pom_m": 1.95,
+        "circumference_cm": 46.45,
+        "reported_candidate_circumference_cm": 46.45,
+        "equivalent_diameter_cm": 14.78,
+        "selected_model": "CIRCLE",
+        "confidence": 0.99,
+        "source_candidate_id": "C-0176",
+        "point_count": 651,
+        "validity_reasons": [
+          "EXISTING_FULL_RESOLUTION_ACCEPTANCE_PRESERVED"
+        ],
+        "verified_field_measurement": false
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    },
+    {
+      "tree_key": "PT-21AF69BCCAF0FAD2",
+      "tree_id": "TREE_0118",
+      "center": {
+        "x": 40.031764643269355,
+        "y": -11.822300397896967
+      },
+      "detection": {
+        "status": "UNCERTAIN",
+        "confidence": null,
+        "confidence_is_calibrated": false,
+        "reason_codes": [
+          "MULTI_LEVEL_VERTICAL_STRUCTURE_REQUIRES_REVIEW"
+        ]
+      },
+      "stem": {
+        "z_min_agl_m": 2.0,
+        "z_max_agl_m": 3.0,
+        "axis_confidence": null,
+        "axis_confidence_is_calibrated": false,
+        "axis_evidence_score": 9.266515032627328,
+        "source_track_ids": [
+          "T15-1163"
+        ],
+        "vertical_level_count": 4
+      },
+      "source_candidates": [
+        "C-0563",
+        "C-0567"
+      ],
+      "excluded_non_tree_source_candidates": [],
+      "manual_seed_ids": [],
+      "association": {
+        "candidate_count": 2,
+        "track_count": 1,
+        "candidates_merged_within_tree": 1,
+        "uses_xy_distance_only": false
+      },
+      "measurement": {
+        "status": "NOT_ATTEMPTED",
+        "pom_m": null,
+        "circumference_cm": null,
+        "validity_reasons": [
+          "NO_ACCEPTED_MEASUREMENT_FOR_TREE"
+        ]
+      },
+      "provenance": {
+        "algorithm_version": "stem-inventory-v2-phase3-tree-inventory",
+        "phase1_5_track_algorithm_version": "stem-inventory-v2-phase1_5",
+        "source_las": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "source_las_point_count": 67177038
+      }
+    }
+  ],
+  "input_provenance": {
+    "phase1_candidates": {
+      "path": "outputs/tree_candidates_v2_phase1.json",
+      "sha256": "1c084436d316ac562b0805c399ee32c49792091ffd2a6634ee9b819f2db6173a"
+    },
+    "phase1_measurements": {
+      "path": "outputs/tree_measurements_v2_phase1.json",
+      "sha256": "15695c2f556a85bc70b2a85080f000c1aad1e5c543e8f37f0467ea5ccce1182b"
+    },
+    "tracks": {
+      "path": "outputs/tree_tracks_v2_phase1_5.json",
+      "sha256": "16b09909c7723fda61f610c25789222403e5e463beb508d5eb5895ace053a0a7"
+    },
+    "aliases": {
+      "path": "outputs/candidate_alias_map_v2_phase1_5.json",
+      "sha256": "39c2aaee724285431c4ef4924f30ac2481c3b31d785f5a0f213670dd00b5e8a0"
+    },
+    "annotations": {
+      "path": "annotations/phase1_75_pilot_review.json",
+      "sha256": "2b8ffc7e8e1f2a846eae339408f52b47786436c869bf1df66478265407fa0c10"
+    },
+    "phase2": {
+      "path": "outputs/manual_seed_evaluations_v2_phase2_anchor_pilot.json",
+      "sha256": "6700c3fa69ded31615319431838e31564f2eac60d442e7dacd46ea9f0769bfcf"
+    },
+    "phase2_recheck": {
+      "path": "outputs/phase2_manual_anchor_measurement_recheck.json",
+      "sha256": "fba892162850c552a5be44d70bc3bbcb9bfbcc9989edf3e35967df593c6d3bcd"
+    },
+    "phase1_config": {
+      "path": "config/stem_inventory_v2.yaml",
+      "sha256": "e49b9f97dd4c30e5d3f243dae7f1361aec0a49f4554cbffd24e601d30d2f73c7"
+    },
+    "phase3_config": {
+      "path": "config/stem_inventory_v2_phase3.yaml",
+      "sha256": "1698d817f04c160df0119f31b87cb8abe431d0b8efee448bf66902617460589b"
+    }
+  }
+}

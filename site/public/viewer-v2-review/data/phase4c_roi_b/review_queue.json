@@ -1,0 +1,143 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+  "annotation_version": "phase4c-roi-b-reference-v1",
+  "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+  "interpretation": "BLIND ROI-B HOLDOUT CENSUS; NO REFERENCE LABELS HAVE BEEN CREATED",
+  "annotation_export_path": "annotations/phase4c_roi_b_reference.json",
+  "queue_size": 1,
+  "unique_candidate_count": 0,
+  "category_counts": {
+    "BLIND_HOLDOUT_LIDAR_VISIBLE_REFERENCE_CENSUS": 1
+  },
+  "annotation_template": {
+    "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+    "annotation_version": "phase4c-roi-b-reference-v1",
+    "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+    "interpretation": "BLIND MANUAL LIDAR-VISIBLE REFERENCE CENSUS; NOT FIELD GROUND TRUTH",
+    "created_at": null,
+    "annotation_status": "NOT_STARTED",
+    "frozen_roi": {
+      "roi_id": "ROI-B",
+      "bounds": {
+        "x_min": 5.0,
+        "x_max": 11.0,
+        "y_min": -11.0,
+        "y_max": -5.0
+      },
+      "polygon": [
+        [
+          5.0,
+          -11.0
+        ],
+        [
+          11.0,
+          -11.0
+        ],
+        [
+          11.0,
+          -5.0
+        ],
+        [
+          5.0,
+          -5.0
+        ],
+        [
+          5.0,
+          -11.0
+        ]
+      ],
+      "area_m2": 36.0,
+      "coordinate_reference_system": {
+        "name": "LOCAL_CARTESIAN_NO_EMBEDDED_CRS",
+        "epsg": null,
+        "source_las_has_embedded_crs": false,
+        "coordinate_space": "VIEWER_LOCAL_XYZ_AFTER_ORIGIN_TRANSLATION",
+        "viewer_origin_offset_m": [
+          -7.122629275835209,
+          -0.7796401654515108,
+          4.682373638660788
+        ]
+      },
+      "source_las": {
+        "identifier": "TD_008_2026_08_07_07_04_07.las|points=67177038|bytes=1746603215",
+        "file_name": "TD_008_2026_08_07_07_04_07.las",
+        "local_path": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "point_count": 67177038,
+        "size_bytes": 1746603215,
+        "las_version": "1.2",
+        "point_record_length_bytes": 26,
+        "embedded_vlr_count": 0,
+        "viewer_origin_offset_m": [
+          -7.122629275835209,
+          -0.7796401654515108,
+          4.682373638660788
+        ]
+      },
+      "point_cloud_and_config_version": {
+        "phase4c_algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+        "selection_method": "LABEL_FREE_DENSITY_AND_GEOMETRIC_COMPLEXITY_RANKING"
+      },
+      "boundary_rule": {
+        "membership_basis": "ESTIMATED_MAIN_STEM_BASE_OR_REFERENCE_CENTER",
+        "tolerance_m": 0.02,
+        "inside_rule": "REFERENCE CENTER IS FARTHER THAN TOLERANCE FROM EVERY ROI EDGE",
+        "crossing_rule": "REFERENCE CENTER IS WITHIN TOLERANCE OF AN ROI EDGE",
+        "outside_rule": "REFERENCE CENTER IS BEYOND THE ROI BY MORE THAN TOLERANCE",
+        "headline_metric_membership": "INSIDE_ROI_ONLY"
+      }
+    },
+    "next_reference_sequence": 1,
+    "reference_trees": [],
+    "prediction_reviews": [],
+    "reviewer": {
+      "name": null,
+      "notes": ""
+    },
+    "completed_at": null,
+    "blind_holdout_policy": {
+      "labels_used_for_threshold_tuning": false,
+      "automatic_reference_labels_created": false,
+      "evaluate_once_after_human_completion": true
+    }
+  },
+  "entries": [
+    {
+      "review_item_id": "ROI-B",
+      "item_type": "LIDAR_VISIBLE_REFERENCE_CENSUS",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "BLIND_HOLDOUT_LIDAR_VISIBLE_REFERENCE_CENSUS"
+      ],
+      "candidate_geometry_status": "REFERENCE_CENSUS_REQUIRED",
+      "identity_status": "NOT_STARTED",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "PHASE4_STEM_GRAPH",
+        "BLIND_MANUAL_LIDAR_ANNOTATION"
+      ],
+      "position": {
+        "x": 8.0,
+        "y": -8.0
+      },
+      "ground_z_m": -6.636497437953949,
+      "point_crop_url": "data/phase4c_roi_b/points/ROI-B.json",
+      "evidence_url": "data/phase4c_roi_b/evidence/ROI-B.json",
+      "review_question": "Blindly click every LiDAR-visible main tree before revealing algorithm markers.",
+      "current_resolved_hypothesis_count": 9,
+      "unresolved_track_count": 92,
+      "resolved_tree_ids": [
+        "TREE_0001",
+        "TREE_0003",
+        "TREE_0004",
+        "TREE_0006",
+        "TREE_0007",
+        "TREE_0009",
+        "TREE_0013",
+        "TREE_0016",
+        "TREE_0017"
+      ]
+    }
+  ]
+}

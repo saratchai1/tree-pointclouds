@@ -1,0 +1,1422 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4b-roi-reference-census",
+  "interpretation": "FOCUSED 21-ITEM REVIEW; MEASUREMENT FIT IS SUPPORTING EVIDENCE, NOT PROOF OF A TREE",
+  "annotation_export_path": "annotations/phase4b_high_priority_review.json",
+  "annotation_labels": [
+    "REAL_MAIN_STEM_NEW_TREE",
+    "PART_OF_EXISTING_TREE",
+    "ROOT",
+    "BRANCH",
+    "NON_TREE",
+    "INSUFFICIENT_INFORMATION"
+  ],
+  "part_of_existing_tree_requires_target": true,
+  "queue_size": 21,
+  "unique_candidate_count": 21,
+  "category_counts": {
+    "MEASUREMENT_FIT_WITHOUT_DISCOVERY": 19,
+    "SUSPICIOUS_NEW_TREE_BRIDGE": 2
+  },
+  "review_status": "NOT_REVIEWED",
+  "entries": [
+    {
+      "review_item_id": "RQ4B-01",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0079",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "position": {
+        "x": 23.2,
+        "y": -9.12
+      },
+      "ground_z_m": -6.559833025932312,
+      "track_id": "T15-0606",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0079.json",
+      "evidence_url": "data/phase4/evidence/C-0079.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_OLD_RADIUS_CAP",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 1,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-02",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0109",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "position": {
+        "x": 23.84,
+        "y": -9.44
+      },
+      "ground_z_m": -6.646836638450623,
+      "track_id": "T15-0648",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 1,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00154",
+          "track_a": "T15-0648",
+          "track_b": "T15-0651",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0109"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "RIGHT_BELOW_LEFT",
+            "vertical_gap_m": 0.7,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 2.0,
+            "right_evaluation_height_m": 1.3,
+            "mean_evaluation_height_m": 1.65,
+            "seam_centre_distance_m": 0.42294912447724414,
+            "radius_relative_difference": 0.924187633464834,
+            "orientation_difference_m_per_m": 0.0,
+            "left_radius_m": 0.020891298688653196,
+            "right_radius_m": 0.056785066962123334
+          },
+          "classification": "ROOT_TRANSITION_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": false,
+            "seam_centre": false,
+            "radius": false,
+            "orientation": true,
+            "multi_level_tracks": false,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.42059580653171247,
+            "components": {
+              "vertical": 0.06666666666666676,
+              "centreline": 0.060113056717235214,
+              "radius": 0.38387491102344395,
+              "orientation": 1.0,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0109.json",
+      "evidence_url": "data/phase4/evidence/C-0109.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_OLD_RADIUS_CAP",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 2,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-03",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0152",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "position": {
+        "x": 25.68,
+        "y": -13.44
+      },
+      "ground_z_m": -6.722390127182007,
+      "track_id": "T15-0721",
+      "track_source_height_count": 2,
+      "track_vertical_span_m": 0.25,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 3,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00173",
+          "track_a": "T15-0721",
+          "track_b": "T15-0737",
+          "tree_a": null,
+          "tree_b": "TREE_0076",
+          "shared_candidate_ids": [
+            "C-0370"
+          ],
+          "accepted_point_containment": 0.9815436241610739,
+          "features": {
+            "vertical_relation": "OVERLAP",
+            "vertical_gap_m": 0.0,
+            "vertical_overlap_m": 0.25,
+            "left_evaluation_height_m": 1.125,
+            "right_evaluation_height_m": 1.125,
+            "mean_evaluation_height_m": 1.125,
+            "seam_centre_distance_m": 0.6010096300273446,
+            "radius_relative_difference": 0.0643363586247815,
+            "orientation_difference_m_per_m": 0.31803590528648606,
+            "left_radius_m": 0.0417057941430613,
+            "right_radius_m": 0.03910621881948681
+          },
+          "classification": "CONFLICTING_SIMULTANEOUS_STEMS",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": false,
+            "seam_centre": false,
+            "radius": true,
+            "orientation": true,
+            "multi_level_tracks": true,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.6631286334207511,
+            "components": {
+              "vertical": 1.0,
+              "centreline": 0.0,
+              "radius": 0.9571090942501457,
+              "orientation": 0.7108764497395581,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        },
+        {
+          "edge_id": "E4-00172",
+          "track_a": "T15-0721",
+          "track_b": "T15-0735",
+          "tree_a": null,
+          "tree_b": "TREE_0075",
+          "shared_candidate_ids": [
+            "C-0152"
+          ],
+          "accepted_point_containment": 0.9812080536912752,
+          "features": {
+            "vertical_relation": "OVERLAP",
+            "vertical_gap_m": 0.0,
+            "vertical_overlap_m": 0.25,
+            "left_evaluation_height_m": 1.125,
+            "right_evaluation_height_m": 1.125,
+            "mean_evaluation_height_m": 1.125,
+            "seam_centre_distance_m": 0.7307265900374318,
+            "radius_relative_difference": 0.0759221840355091,
+            "orientation_difference_m_per_m": 0.590661350387497,
+            "left_radius_m": 0.0417057941430613,
+            "right_radius_m": 0.04499713189666388
+          },
+          "classification": "CONFLICTING_SIMULTANEOUS_STEMS",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": false,
+            "seam_centre": false,
+            "radius": true,
+            "orientation": false,
+            "multi_level_tracks": true,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.6196053110376711,
+            "components": {
+              "vertical": 1.0,
+              "centreline": 0.0,
+              "radius": 0.949385210642994,
+              "orientation": 0.46303513601136637,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        },
+        {
+          "edge_id": "E4-00171",
+          "track_a": "T15-0721",
+          "track_b": "T15-0726",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0152"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "RIGHT_BELOW_LEFT",
+            "vertical_gap_m": 0.25,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 1.0,
+            "right_evaluation_height_m": 0.75,
+            "mean_evaluation_height_m": 0.875,
+            "seam_centre_distance_m": 0.1702005593624771,
+            "radius_relative_difference": 0.7548588863158501,
+            "orientation_difference_m_per_m": 0.7524345406820979,
+            "left_radius_m": 0.05248768979949037,
+            "right_radius_m": 0.02372338592596521
+          },
+          "classification": "ROOT_TRANSITION_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": true,
+            "seam_centre": false,
+            "radius": false,
+            "orientation": false,
+            "multi_level_tracks": false,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.6138956919333638,
+            "components": {
+              "vertical": 0.6666666666666667,
+              "centreline": 0.6217765347500509,
+              "radius": 0.4967607424560999,
+              "orientation": 0.31596859937991106,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [
+        "TREE_0075",
+        "TREE_0076"
+      ],
+      "point_crop_url": "data/phase4/points/C-0152.json",
+      "evidence_url": "data/phase4/evidence/C-0152.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 3,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-04",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0179",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "position": {
+        "x": 32.32,
+        "y": -14.959999999999999
+      },
+      "ground_z_m": -6.6732916831970215,
+      "track_id": "T15-0947",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0179.json",
+      "evidence_url": "data/phase4/evidence/C-0179.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 4,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-05",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0251",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 34.24,
+        "y": -14.56
+      },
+      "ground_z_m": -6.682782232761383,
+      "track_id": "T15-0970",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 1,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00241",
+          "track_a": "T15-0970",
+          "track_b": "T15-0979",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0251"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "LEFT_BELOW_RIGHT",
+            "vertical_gap_m": 0.5,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 0.75,
+            "right_evaluation_height_m": 1.25,
+            "mean_evaluation_height_m": 1.0,
+            "seam_centre_distance_m": 0.35327830956503636,
+            "radius_relative_difference": 1.4185505355138683,
+            "orientation_difference_m_per_m": 0.0,
+            "left_radius_m": 0.407723712574341,
+            "right_radius_m": 0.06934831937448956
+          },
+          "classification": "ROOT_TRANSITION_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": false,
+            "seam_centre": false,
+            "radius": false,
+            "orientation": true,
+            "multi_level_tracks": false,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.46328965423120205,
+            "components": {
+              "vertical": 0.33333333333333337,
+              "centreline": 0.21493708985547477,
+              "radius": 0.054299642990754404,
+              "orientation": 1.0,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0251.json",
+      "evidence_url": "data/phase4/evidence/C-0251.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 5,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-06",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0257",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 34.879999999999995,
+        "y": -14.08
+      },
+      "ground_z_m": -6.685557126998901,
+      "track_id": "T15-1017",
+      "track_source_height_count": 3,
+      "track_vertical_span_m": 0.75,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 1,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00254",
+          "track_a": "T15-1017",
+          "track_b": "T15-1022",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0257"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "LEFT_BELOW_RIGHT",
+            "vertical_gap_m": 0.25,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 1.5,
+            "right_evaluation_height_m": 1.75,
+            "mean_evaluation_height_m": 1.625,
+            "seam_centre_distance_m": 0.059261592301649985,
+            "radius_relative_difference": 0.4699837007091955,
+            "orientation_difference_m_per_m": 0.13706150941188244,
+            "left_radius_m": 0.017948563640870455,
+            "right_radius_m": 0.028975285861098904
+          },
+          "classification": "CONTINUATION_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": true,
+            "seam_centre": true,
+            "radius": false,
+            "orientation": true,
+            "multi_level_tracks": true,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.8122125096544578,
+            "components": {
+              "vertical": 0.6666666666666667,
+              "centreline": 0.8683075726630001,
+              "radius": 0.6866775328605363,
+              "orientation": 0.8753986278073796,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0257.json",
+      "evidence_url": "data/phase4/evidence/C-0257.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 6,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-07",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0272",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 34.08,
+        "y": -13.2
+      },
+      "ground_z_m": -6.668489933013916,
+      "track_id": "T15-0982",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0272.json",
+      "evidence_url": "data/phase4/evidence/C-0272.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 7,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-08",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0275",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 16.48,
+        "y": -11.84
+      },
+      "ground_z_m": -6.759992623329163,
+      "track_id": "T15-0379",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 1,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00088",
+          "track_a": "T15-0379",
+          "track_b": "T15-0382",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0275"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "RIGHT_BELOW_LEFT",
+            "vertical_gap_m": 0.25,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 1.0,
+            "right_evaluation_height_m": 0.75,
+            "mean_evaluation_height_m": 0.875,
+            "seam_centre_distance_m": 0.18475452855575966,
+            "radius_relative_difference": 0.978144019130746,
+            "orientation_difference_m_per_m": 0.0,
+            "left_radius_m": 0.16100155223543242,
+            "right_radius_m": 0.05524259338170961
+          },
+          "classification": "ROOT_TRANSITION_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": true,
+            "seam_centre": false,
+            "radius": false,
+            "orientation": true,
+            "multi_level_tracks": false,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.6943310110473935,
+            "components": {
+              "vertical": 0.6666666666666667,
+              "centreline": 0.5894343809872007,
+              "radius": 0.34790398724616933,
+              "orientation": 1.0,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0275.json",
+      "evidence_url": "data/phase4/evidence/C-0275.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 8,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-09",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0375",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 23.04,
+        "y": -12.08
+      },
+      "ground_z_m": -6.698061013221741,
+      "track_id": "T15-0605",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 1,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00137",
+          "track_a": "T15-0605",
+          "track_b": "T15-0609",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0375"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "LEFT_BELOW_RIGHT",
+            "vertical_gap_m": 0.5,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 1.25,
+            "right_evaluation_height_m": 1.75,
+            "mean_evaluation_height_m": 1.5,
+            "seam_centre_distance_m": 0.37814760610865045,
+            "radius_relative_difference": 1.1133219444110614,
+            "orientation_difference_m_per_m": 0.0,
+            "left_radius_m": 0.1985931347141651,
+            "right_radius_m": 0.05655957773906938
+          },
+          "classification": "ROOT_TRANSITION_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": false,
+            "seam_centre": false,
+            "radius": false,
+            "orientation": true,
+            "multi_level_tracks": false,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.48444285620306793,
+            "components": {
+              "vertical": 0.33333333333333337,
+              "centreline": 0.1596719864252213,
+              "radius": 0.2577853703926257,
+              "orientation": 1.0,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0375.json",
+      "evidence_url": "data/phase4/evidence/C-0375.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 9,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-10",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0542",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 20.560000000000002,
+        "y": -11.04
+      },
+      "ground_z_m": -6.715391540527344,
+      "track_id": "T15-0508",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0542.json",
+      "evidence_url": "data/phase4/evidence/C-0542.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 10,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-11",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0583",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 24.240000000000002,
+        "y": -14.0
+      },
+      "ground_z_m": -6.7336922764778135,
+      "track_id": "T15-0653",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0583.json",
+      "evidence_url": "data/phase4/evidence/C-0583.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 11,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-12",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0675",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 37.52,
+        "y": -15.04
+      },
+      "ground_z_m": -6.659237742424011,
+      "track_id": "T15-1109",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0675.json",
+      "evidence_url": "data/phase4/evidence/C-0675.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 12,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-13",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0709",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 20.880000000000003,
+        "y": -10.719999999999999
+      },
+      "ground_z_m": -6.701445364952088,
+      "track_id": "T15-0543",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0709.json",
+      "evidence_url": "data/phase4/evidence/C-0709.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 13,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-14",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0726",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 20.32,
+        "y": -9.84
+      },
+      "ground_z_m": -6.760630512237549,
+      "track_id": "T15-0505",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0726.json",
+      "evidence_url": "data/phase4/evidence/C-0726.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_OLD_RADIUS_CAP",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 14,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-15",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0814",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 20.08,
+        "y": -12.08
+      },
+      "ground_z_m": -6.7045739650726315,
+      "track_id": "T15-0498",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0814.json",
+      "evidence_url": "data/phase4/evidence/C-0814.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 15,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-16",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0858",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 15.84,
+        "y": -12.719999999999999
+      },
+      "ground_z_m": -6.771698713302612,
+      "track_id": "T15-0368",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0858.json",
+      "evidence_url": "data/phase4/evidence/C-0858.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 16,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-17",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0870",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 33.519999999999996,
+        "y": -11.76
+      },
+      "ground_z_m": -6.6766417741775514,
+      "track_id": "T15-0961",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0870.json",
+      "evidence_url": "data/phase4/evidence/C-0870.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_OLD_RADIUS_CAP",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 17,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-18",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0887",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 23.68,
+        "y": -14.24
+      },
+      "ground_z_m": -6.734971833229065,
+      "track_id": "T15-0649",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0887.json",
+      "evidence_url": "data/phase4/evidence/C-0887.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 18,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-19",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0914",
+      "priority": 1,
+      "categories": [
+        "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 26.240000000000002,
+        "y": -12.4
+      },
+      "ground_z_m": -6.722080588340759,
+      "track_id": "T15-0744",
+      "track_source_height_count": 1,
+      "track_vertical_span_m": 0.0,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 0,
+      "phase4_graph_edges": [],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0914.json",
+      "evidence_url": "data/phase4/evidence/C-0914.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+      ],
+      "phase4b_review_order": 19,
+      "phase4b_focus": "MEASUREMENT_FIT_WITHOUT_DISCOVERY"
+    },
+    {
+      "review_item_id": "RQ4B-20",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0055",
+      "priority": 1,
+      "categories": [
+        "AMBIGUOUS_MULTI_COMPONENT_SAMPLE"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "position": {
+        "x": 9.600000000000001,
+        "y": -9.68
+      },
+      "ground_z_m": -6.7747886896133425,
+      "track_id": "T15-0156",
+      "track_source_height_count": 3,
+      "track_vertical_span_m": 0.75,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 2,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00030",
+          "track_a": "T15-0152",
+          "track_b": "T15-0156",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0055"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "LEFT_BELOW_RIGHT",
+            "vertical_gap_m": 0.19999999999999996,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 1.3,
+            "right_evaluation_height_m": 1.5,
+            "mean_evaluation_height_m": 1.4,
+            "seam_centre_distance_m": 0.04998901183535193,
+            "radius_relative_difference": 0.17923319702434354,
+            "orientation_difference_m_per_m": 0.3912357343682474,
+            "left_radius_m": 0.02044977912831547,
+            "right_radius_m": 0.0168651151878286
+          },
+          "classification": "HIGH_CONFIDENCE_NEW_TREE_BRIDGE_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": true,
+            "seam_centre": true,
+            "radius": true,
+            "orientation": true,
+            "multi_level_tracks": true,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.8282573712571609,
+            "components": {
+              "vertical": 0.7333333333333334,
+              "centreline": 0.8889133070325512,
+              "radius": 0.880511201983771,
+              "orientation": 0.6443311505743206,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        },
+        {
+          "edge_id": "E4-00026",
+          "track_a": "T15-0129",
+          "track_b": "T15-0156",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0055"
+          ],
+          "accepted_point_containment": 0.0,
+          "features": {
+            "vertical_relation": "OVERLAP",
+            "vertical_gap_m": 0.0,
+            "vertical_overlap_m": 0.25,
+            "left_evaluation_height_m": 1.875,
+            "right_evaluation_height_m": 1.875,
+            "mean_evaluation_height_m": 1.875,
+            "seam_centre_distance_m": 0.7250780623052216,
+            "radius_relative_difference": 0.020991307646740853,
+            "orientation_difference_m_per_m": 0.4229386775732087,
+            "left_radius_m": 0.0699512357625525,
+            "right_radius_m": 0.07143517862327373
+          },
+          "classification": "CONFLICTING_SIMULTANEOUS_STEMS",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": false,
+            "seam_centre": false,
+            "radius": true,
+            "orientation": true,
+            "multi_level_tracks": true,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.6521177929119861,
+            "components": {
+              "vertical": 1.0,
+              "centreline": 0.0,
+              "radius": 0.9860057949021728,
+              "orientation": 0.6155102931152648,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0055.json",
+      "evidence_url": "data/phase4/evidence/C-0055.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_STABLE",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+        "FULL_CENTRELINE_RESIDUAL_EXCEEDED"
+      ],
+      "phase4b_review_order": 20,
+      "phase4b_focus": "SUSPICIOUS_NEW_TREE_BRIDGE"
+    },
+    {
+      "review_item_id": "RQ4B-21",
+      "item_type": "PHASE4_FRAGMENT_REVIEW",
+      "candidate_id": "C-0710",
+      "priority": 1,
+      "categories": [
+        "AMBIGUOUS_MULTI_COMPONENT_SAMPLE"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNRESOLVED_FRAGMENT",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.6,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "position": {
+        "x": 29.6,
+        "y": -8.16
+      },
+      "ground_z_m": -6.394303607940674,
+      "track_id": "T15-0868",
+      "track_source_height_count": 2,
+      "track_vertical_span_m": 0.25,
+      "phase3_disposition": "UNRESOLVED_FRAGMENT",
+      "phase4_tree_id": null,
+      "phase4_graph_degree": 1,
+      "phase4_graph_edges": [
+        {
+          "edge_id": "E4-00217",
+          "track_a": "T15-0868",
+          "track_b": "T15-0876",
+          "tree_a": null,
+          "tree_b": null,
+          "shared_candidate_ids": [
+            "C-0710"
+          ],
+          "accepted_point_containment": 0.6425610317825887,
+          "features": {
+            "vertical_relation": "RIGHT_BELOW_LEFT",
+            "vertical_gap_m": 0.25,
+            "vertical_overlap_m": 0.0,
+            "left_evaluation_height_m": 3.0,
+            "right_evaluation_height_m": 2.75,
+            "mean_evaluation_height_m": 2.875,
+            "seam_centre_distance_m": 0.03299250777751839,
+            "radius_relative_difference": 0.031918437180248366,
+            "orientation_difference_m_per_m": 0.4742569181119568,
+            "left_radius_m": 0.055897513128487564,
+            "right_radius_m": 0.05771060999909439
+          },
+          "classification": "HIGH_CONFIDENCE_NEW_TREE_BRIDGE_REVIEW",
+          "automatic_attachment": false,
+          "checks": {
+            "adjacent_non_overlapping_levels": true,
+            "seam_centre": true,
+            "radius": true,
+            "orientation": true,
+            "multi_level_tracks": true,
+            "shared_provenance": true
+          },
+          "continuity_score": {
+            "score": 0.8290135317180868,
+            "components": {
+              "vertical": 0.6666666666666667,
+              "centreline": 0.9266833160499591,
+              "radius": 0.9787210418798344,
+              "orientation": 0.5688573471709484,
+              "provenance": 1.0
+            },
+            "calibrated_probability": false
+          },
+          "xy_distance_alone_can_resolve": false
+        }
+      ],
+      "suggested_existing_tree_targets": [],
+      "point_crop_url": "data/phase4/points/C-0710.json",
+      "evidence_url": "data/phase4/evidence/C-0710.json",
+      "review_question": "What is this: main tree, part of an existing tree, root/branch, not tree, or cannot tell?",
+      "reason_codes": [
+        "STANDARD_HEIGHT_UNSTABLE",
+        "LOWER_STEM_IRREGULAR",
+        "POSSIBLE_PROP_ROOT_ZONE",
+        "ADAPTIVE_HEIGHT_SELECTED",
+        "LARGE_LOWER_COMPONENT",
+        "RECOVERED_OLD_RADIUS_CAP",
+        "RECOVERED_CENTRELINE_RESIDUAL",
+        "RECOVERED_LOCAL_RADIUS_STABILITY",
+        "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+        "FULL_CENTRELINE_RESIDUAL_EXCEEDED"
+      ],
+      "phase4b_review_order": 21,
+      "phase4b_focus": "SUSPICIOUS_NEW_TREE_BRIDGE"
+    }
+  ]
+}

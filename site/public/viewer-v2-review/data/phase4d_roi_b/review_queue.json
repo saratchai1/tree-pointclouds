@@ -1,0 +1,220 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase4d-roi-b-full-las-holdout",
+  "annotation_version": "phase4c-roi-b-reference-v1",
+  "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+  "interpretation": "BLIND ROI-B HOLDOUT CENSUS USING ONE-PASS FULL-LAS EVIDENCE; ALGORITHM MARKERS REMAIN HIDDEN UNTIL ASSOCIATION",
+  "annotation_export_path": "annotations/phase4c_roi_b_reference.json",
+  "queue_size": 1,
+  "unique_candidate_count": 0,
+  "category_counts": {
+    "BLIND_HOLDOUT_LIDAR_VISIBLE_REFERENCE_CENSUS": 1
+  },
+  "annotation_template": {
+    "algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+    "annotation_version": "phase4c-roi-b-reference-v1",
+    "annotation_basis": "LIDAR_VISIBLE_REFERENCE",
+    "interpretation": "BLIND MANUAL LIDAR-VISIBLE REFERENCE CENSUS; NOT FIELD GROUND TRUTH",
+    "created_at": null,
+    "annotation_status": "NOT_STARTED",
+    "frozen_roi": {
+      "roi_id": "ROI-B",
+      "bounds": {
+        "x_min": 5.0,
+        "x_max": 11.0,
+        "y_min": -11.0,
+        "y_max": -5.0
+      },
+      "polygon": [
+        [
+          5.0,
+          -11.0
+        ],
+        [
+          11.0,
+          -11.0
+        ],
+        [
+          11.0,
+          -5.0
+        ],
+        [
+          5.0,
+          -5.0
+        ],
+        [
+          5.0,
+          -11.0
+        ]
+      ],
+      "area_m2": 36.0,
+      "coordinate_reference_system": {
+        "name": "LOCAL_CARTESIAN_NO_EMBEDDED_CRS",
+        "epsg": null,
+        "source_las_has_embedded_crs": false,
+        "coordinate_space": "VIEWER_LOCAL_XYZ_AFTER_ORIGIN_TRANSLATION",
+        "viewer_origin_offset_m": [
+          -7.122629275835209,
+          -0.7796401654515108,
+          4.682373638660788
+        ]
+      },
+      "source_las": {
+        "identifier": "TD_008_2026_08_07_07_04_07.las|points=67177038|bytes=1746603215",
+        "file_name": "TD_008_2026_08_07_07_04_07.las",
+        "local_path": "TD_008_2026_08_07_07_04_07.las (source excluded from publication)",
+        "point_count": 67177038,
+        "size_bytes": 1746603215,
+        "las_version": "1.2",
+        "point_record_length_bytes": 26,
+        "embedded_vlr_count": 0,
+        "viewer_origin_offset_m": [
+          -7.122629275835209,
+          -0.7796401654515108,
+          4.682373638660788
+        ]
+      },
+      "point_cloud_and_config_version": {
+        "phase4c_algorithm_version": "stem-inventory-v2-phase4c-woody-structure-shadow",
+        "selection_method": "LABEL_FREE_DENSITY_AND_GEOMETRIC_COMPLEXITY_RANKING"
+      },
+      "boundary_rule": {
+        "membership_basis": "ESTIMATED_MAIN_STEM_BASE_OR_REFERENCE_CENTER",
+        "tolerance_m": 0.02,
+        "inside_rule": "REFERENCE CENTER IS FARTHER THAN TOLERANCE FROM EVERY ROI EDGE",
+        "crossing_rule": "REFERENCE CENTER IS WITHIN TOLERANCE OF AN ROI EDGE",
+        "outside_rule": "REFERENCE CENTER IS BEYOND THE ROI BY MORE THAN TOLERANCE",
+        "headline_metric_membership": "INSIDE_ROI_ONLY"
+      }
+    },
+    "next_reference_sequence": 1,
+    "reference_trees": [],
+    "prediction_reviews": [],
+    "reviewer": {
+      "name": null,
+      "notes": ""
+    },
+    "completed_at": null,
+    "blind_holdout_policy": {
+      "labels_used_for_threshold_tuning": false,
+      "automatic_reference_labels_created": false,
+      "evaluate_once_after_human_completion": true
+    }
+  },
+  "entries": [
+    {
+      "review_item_id": "ROI-B",
+      "item_type": "LIDAR_VISIBLE_REFERENCE_CENSUS",
+      "candidate_id": null,
+      "priority": 1,
+      "categories": [
+        "BLIND_HOLDOUT_LIDAR_VISIBLE_REFERENCE_CENSUS"
+      ],
+      "candidate_geometry_status": "REFERENCE_CENSUS_REQUIRED",
+      "identity_status": "NOT_STARTED",
+      "measurement_status": "NOT_APPLICABLE",
+      "measurement_rule": null,
+      "source_providers": [
+        "FULL_SOURCE_LAS_SINGLE_PASS",
+        "PHASE4_STEM_GRAPH",
+        "BLIND_MANUAL_LIDAR_ANNOTATION"
+      ],
+      "position": {
+        "x": 8.0,
+        "y": -8.0
+      },
+      "ground_z_m": -6.636497437953949,
+      "point_crop_url": "data/phase4d_roi_b/points/ROI-B.json",
+      "evidence_url": "data/phase4d_roi_b/evidence/ROI-B.json",
+      "review_question": "Blindly click every LiDAR-visible main tree using the denser full-LAS crop before revealing algorithm markers.",
+      "current_resolved_hypothesis_count": 9,
+      "unresolved_track_count": 92,
+      "resolved_tree_ids": [
+        "TREE_0001",
+        "TREE_0003",
+        "TREE_0004",
+        "TREE_0006",
+        "TREE_0007",
+        "TREE_0009",
+        "TREE_0013",
+        "TREE_0016",
+        "TREE_0017"
+      ]
+    }
+  ],
+  "point_evidence": {
+    "source": "FULL_SOURCE_LAS_SINGLE_PASS",
+    "display_is_voxel_downsampled": true,
+    "summary": {
+      "source_las_point_count_scanned_once": 67177038,
+      "roi_xy_point_count_all_heights": 5397298,
+      "roi_review_height_point_count": 4368461,
+      "display_point_count": 209997,
+      "height_agl_range_m": [
+        0.3,
+        4.2
+      ],
+      "ground_z_m": -6.636497437953949,
+      "bounds": {
+        "x_min": 5.0,
+        "x_max": 11.0,
+        "y_min": -11.0,
+        "y_max": -5.0
+      },
+      "bands": [
+        {
+          "band_id": "LOWER_ROOT_ZONE",
+          "height_agl_range_m": [
+            0.3,
+            1.5
+          ],
+          "include_upper_bound": false,
+          "voxel_size_m": 0.055,
+          "input_point_count": 3153328,
+          "occupied_voxel_count": 83056,
+          "display_point_count": 83056,
+          "capped": false
+        },
+        {
+          "band_id": "CLEAN_STEM_SEARCH_ZONE",
+          "height_agl_range_m": [
+            1.5,
+            3.2
+          ],
+          "include_upper_bound": false,
+          "voxel_size_m": 0.04,
+          "input_point_count": 1054404,
+          "occupied_voxel_count": 79072,
+          "display_point_count": 79072,
+          "capped": false
+        },
+        {
+          "band_id": "UPPER_CONTINUATION_ZONE",
+          "height_agl_range_m": [
+            3.2,
+            4.2
+          ],
+          "include_upper_bound": true,
+          "voxel_size_m": 0.035,
+          "input_point_count": 160729,
+          "occupied_voxel_count": 47869,
+          "display_point_count": 47869,
+          "capped": false
+        }
+      ],
+      "source_las_scan_count": 1,
+      "display_is_voxel_downsampled": true,
+      "full_counts_are_pre_downsampling": true
+    }
+  },
+  "input_provenance": {
+    "config/stem_inventory_v2_phase4d.yaml": "68b721007e64137e8f4391314cccf205dde5bfbc881b83b8bae938bbb5f1e3d0",
+    "outputs/phase4_tree_inventory.json": "d56557ac409dea59040437b467571cc0a67121a3d2652fb1c169b6d948bd0c72",
+    "outputs/phase4_stem_graph.json": "4688273537b248b147cb1177a1e17ffd40f9904103a3cb0d3e34652d02200273",
+    "outputs/phase4c_roi_b_definition.json": "525770c4f6c298bdb510228e34f3c72fe7f4824c9adb7b58ab75a8263dad51ef",
+    "outputs/phase4c_proposed_tree_inventory.json": "2c3340b2cd06a3766ac50dba227781517a3fe5dd1ebba40620cf143adfdcc456",
+    "outputs/phase4c_structure_classification_shadow.json": "71b015cecbc6fa61270cd1040ba19631b9cefdaf5318c58031037fe3935d384d",
+    "site/public/viewer-v2-review/data/phase4c_roi_b/review_queue.json": "676374dbb556cada5c67f368ffcd1ca767ec59261d47a81c758e849f13a5cb83",
+    "site/public/viewer-v2-review/data/phase4c_roi_b/evidence/ROI-B.json": "9f5114369aa09b99d4d72f27b9ba0a27e98be0abac86beec8f00057327940306",
+    "annotations/phase4c_roi_b_reference.json": "9fb3893486ce1e8398993c6920e9ff212b12e2b2ec40d96421c40dfbe34fb166"
+  }
+}

@@ -1,0 +1,4366 @@
+{
+  "algorithm_version": "stem-inventory-v2-phase1_75-pilot-review",
+  "source_algorithm_version": "stem-inventory-v2-phase1_5",
+  "interpretation": "FOCUSED HUMAN PILOT REVIEW QUEUE; ITEMS ARE NOT VERIFIED TREES",
+  "locked_input_hashes": {
+    "outputs/review_queue_v2_phase1_5.json": "054c7479139deff4ca5cc65f5c90ae8403bea53bb7611483fed207e9fc38954d",
+    "outputs/tree_tracks_v2_phase1_5.json": "16b09909c7723fda61f610c25789222403e5e463beb508d5eb5895ace053a0a7",
+    "outputs/final_63_duplicate_review.csv": "fa8f53366874d445ebfde44b73835a74639fec1ebd061b4752308e146c9be71b",
+    "outputs/full_resolution_failure_reasons_v2_phase1_5.csv": "42af62dd866fc90bbe85d7613b785ebf8d9ec9ee5cd9009db9a4a29068c82f58",
+    "outputs/sampled_vs_full_metrics_v2_phase1_5.csv": "ef2b0bd9296a03d93402be6f32d74ec703a9ec6afb90fb949877a7bf49d0bcc3",
+    "outputs/debug/phase1_5_seed_21.json": "98a772f635c568a64a53212841c4b5e563506f44551427fa623f2a4c933f8476",
+    "outputs/debug/phase1_5_seed_162.json": "53d79878b6ae4415743c86643d13c1680a2a0a831008bd778fe87ac5e54e5cf4",
+    "outputs/debug/phase1_5_seed_169.json": "807a926ff875bc898722b57ec66fe164878a932225a09ec094a7c098f4b50616",
+    "outputs/tree_candidates_v2_phase1.json": "1c084436d316ac562b0805c399ee32c49792091ffd2a6634ee9b819f2db6173a",
+    "outputs/candidate_alias_map_v2_phase1_5.json": "39c2aaee724285431c4ef4924f30ac2481c3b31d785f5a0f213670dd00b5e8a0"
+  },
+  "queue_size": 40,
+  "unique_candidate_count": 39,
+  "manual_placeholder_count": 1,
+  "duplicate_inclusions_removed": 8,
+  "mandatory_inclusion_count_before_deduplication": 42,
+  "mandatory_unique_candidate_count": 34,
+  "category_counts": {
+    "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY": 16,
+    "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M": 9,
+    "DEFINITE_ALIAS_MEMBER": 15,
+    "FULL_RESIDUAL_LOW_LT_0_05_M": 31,
+    "FULL_RESIDUAL_MEDIUM_0_10_TO_LT_0_25_M": 3,
+    "FULL_RESIDUAL_VERY_HIGH_GTE_0_40_M": 3,
+    "HIGH_QUALITY_SAMPLED_FULL_CENTRELINE_FAILURE": 4,
+    "MANUAL_VISUALLY_CONFIRMED_LARGE_ROOT_WORKFLOW": 1,
+    "PROBABLE_ALIAS_MEMBER": 4,
+    "REQUIRED_CANDIDATE_C_0174": 1,
+    "REQUIRED_SEED_TRACE": 3,
+    "STANDARD_ACCEPTED_MEDIUM_RADIUS": 1,
+    "STANDARD_ACCEPTED_SMALL_RADIUS": 15,
+    "STRONG_SAMPLED_TO_FULL_RADIUS_EXPANSION": 5
+  },
+  "residual_stratum_counts": {
+    "INTERMEDIATE_NOT_TARGETED": 1,
+    "LOW_LT_0_05_M": 31,
+    "MEDIUM_0_10_TO_LT_0_25_M": 3,
+    "VERY_HIGH_GTE_0_40_M": 3
+  },
+  "selection_thresholds_for_review_strata_only": {
+    "low_full_centreline_residual_m": "<0.05",
+    "medium_full_centreline_residual_m": ">=0.10 and <0.25",
+    "very_high_full_centreline_residual_m": ">=0.40",
+    "strong_sampled_to_full_radius_expansion_m": ">=0.30",
+    "adaptive_pom_near_or_above_m": ">=1.95",
+    "note": "Review selection labels only; no measurement threshold or acceptance behavior changed."
+  },
+  "standard_height_accepted_population_by_existing_radius_band": {
+    "0.10-<0.20": 1,
+    "<0.10": 46
+  },
+  "known_selection_gap": {
+    "category": "STANDARD_ACCEPTED_LARGE_RADIUS",
+    "available_count": 0,
+    "handling": "No substitute was relabelled as accepted; the only medium-band item C-0419 and small-band accepted items are included."
+  },
+  "review_questions": [
+    "Are accepted geometry measurements actually main stems?",
+    "Are definite alias pairs really the same physical stem?",
+    "Are centreline failures real stems contaminated by roots or branches?",
+    "Is the selected full-resolution component wrong?",
+    "Does the known large-root tree form a stable upper stem track?"
+  ],
+  "annotation_export_path": "annotations/phase1_75_pilot_review.json",
+  "entries": [
+    {
+      "queue_id": "RQ15-0021",
+      "candidate_id": "C-0021",
+      "priority": 1,
+      "categories": [
+        "REQUIRED_SEED_TRACE"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0021",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": null,
+      "measurement_height_m": null,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 7,
+      "track_id": "T15-1077",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 36.96,
+        "y": -10.08
+      },
+      "ground_z_m": -6.659554791450501,
+      "sampled_radius_m": 0.401874490677344,
+      "point_crop_url": "data/phase1_75/points/C-0021.json",
+      "review_question": "Does this geometry represent a main stem, root, branch, duplicate, or insufficient evidence?",
+      "review_item_id": "RQ175-0021",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Explicit required Phase 1.5 debug seed 21"
+      ],
+      "sampled_metrics": {},
+      "full_metrics": {},
+      "comparison_metrics": {
+        "center_shift_m": null,
+        "radius_delta_m": null,
+        "centreline_residual_delta_m": null,
+        "full_rejected_point_fraction": null
+      },
+      "residual_stratum": null,
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": null,
+        "primary_reason": null,
+        "all_reason_codes": []
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0021.json"
+    },
+    {
+      "queue_id": "RQ15-0162",
+      "candidate_id": "C-0162",
+      "priority": 1,
+      "categories": [
+        "REQUIRED_SEED_TRACE",
+        "FULL_RESIDUAL_VERY_HIGH_GTE_0_40_M",
+        "STRONG_SAMPLED_TO_FULL_RADIUS_EXPANSION"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0162",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 3,
+      "track_id": "T15-1071",
+      "track_source_height_count": 1,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 36.56,
+        "y": -11.28
+      },
+      "ground_z_m": -6.683985114097595,
+      "sampled_radius_m": 0.026975808505028023,
+      "point_crop_url": "data/phase1_75/points/C-0162.json",
+      "review_question": "Does this geometry represent a main stem, root, branch, duplicate, or insufficient evidence?",
+      "review_item_id": "RQ175-0162",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Explicit required Phase 1.5 debug seed 162"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 35.65751753714701,
+        "sampled_center_y": -11.53638803765814,
+        "sampled_radius_m": 0.026975808505028023,
+        "sampled_centreline_residual_p90_m": 0.017894230816806543,
+        "sampled_radius_residual_mad_m": 0.001479763643748657,
+        "sampled_angular_coverage_deg": 180,
+        "sampled_median_angular_coverage_deg": 190,
+        "sampled_fit_residual_m": 0.006363916986521241,
+        "sampled_point_count": 324,
+        "sampled_connected_component_count": 7,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": false,
+        "full_center_x": 35.199713358834664,
+        "full_center_y": -11.374858937248293,
+        "full_radius_m": 0.37192344819286055,
+        "full_centreline_residual_p90_m": 0.465929,
+        "full_radius_residual_mad_m": 0.08288245902389987,
+        "full_angular_coverage_deg": 240,
+        "full_median_angular_coverage_deg": 170,
+        "full_fit_residual_m": 0.010205464705377426,
+        "full_point_count": 19993,
+        "full_accepted_point_count": 13480,
+        "full_rejected_point_count": 6513,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.3257640174060921,
+        "full_to_sampled_point_count_ratio": 61.70679012345679,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.48546505122352,
+        "radius_delta_m": 0.34494763968783254,
+        "centreline_residual_delta_m": 0.44803476918319346,
+        "full_rejected_point_fraction": 0.3257640174060921
+      },
+      "residual_stratum": "VERY_HIGH_GTE_0_40_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "FULL_RESOLUTION_VALIDATION",
+        "primary_reason": "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+          "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+          "FULL_RADIUS_STABILITY_NOT_MET"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0162.json"
+    },
+    {
+      "queue_id": "RQ15-0169",
+      "candidate_id": "C-0169",
+      "priority": 1,
+      "categories": [
+        "REQUIRED_SEED_TRACE",
+        "FULL_RESIDUAL_MEDIUM_0_10_TO_LT_0_25_M",
+        "STRONG_SAMPLED_TO_FULL_RADIUS_EXPANSION",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0169",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.95,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 5,
+      "track_id": "T15-0038",
+      "track_source_height_count": 3,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 6.96,
+        "y": -9.68
+      },
+      "ground_z_m": -6.635893750190735,
+      "sampled_radius_m": 0.08005109856287121,
+      "point_crop_url": "data/phase1_75/points/C-0169.json",
+      "review_question": "Does this geometry represent a main stem, root, branch, duplicate, or insufficient evidence?",
+      "review_item_id": "RQ175-0169",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Explicit required Phase 1.5 debug seed 169"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 6.1019421590793295,
+        "sampled_center_y": -9.446586367134689,
+        "sampled_radius_m": 0.08005109856287121,
+        "sampled_centreline_residual_p90_m": 0.024232403121196434,
+        "sampled_radius_residual_mad_m": 0.005967536635222953,
+        "sampled_angular_coverage_deg": 210,
+        "sampled_median_angular_coverage_deg": 210,
+        "sampled_fit_residual_m": 0.00696935732824455,
+        "sampled_point_count": 199,
+        "sampled_connected_component_count": 5,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": false,
+        "full_center_x": 5.9200242235561245,
+        "full_center_y": -9.355482391833013,
+        "full_radius_m": 0.48235122837024574,
+        "full_centreline_residual_p90_m": 0.234978,
+        "full_radius_residual_mad_m": 0.0041252982305178265,
+        "full_angular_coverage_deg": 110,
+        "full_median_angular_coverage_deg": 240,
+        "full_fit_residual_m": 0.008093075710364862,
+        "full_point_count": 3450,
+        "full_accepted_point_count": 468,
+        "full_rejected_point_count": 2982,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.8643478260869565,
+        "full_to_sampled_point_count_ratio": 17.33668341708543,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.20345532576168512,
+        "radius_delta_m": 0.4023001298073745,
+        "centreline_residual_delta_m": 0.21074559687880356,
+        "full_rejected_point_fraction": 0.8643478260869565
+      },
+      "residual_stratum": "MEDIUM_0_10_TO_LT_0_25_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "FULL_RESOLUTION_VALIDATION",
+        "primary_reason": "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+          "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+          "FULL_SELECTED_ANGULAR_COVERAGE_INSUFFICIENT"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0169.json"
+    },
+    {
+      "queue_id": "RQ15-0174",
+      "candidate_id": "C-0174",
+      "priority": 1,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "REQUIRED_CANDIDATE_C_0174",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0174",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 2.45,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 5,
+      "track_id": "T15-0195",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 10.56,
+        "y": -5.52
+      },
+      "ground_z_m": -6.400219988822937,
+      "sampled_radius_m": 0.07795152660215016,
+      "point_crop_url": "data/phase1_75/points/C-0174.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0174",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements",
+        "Explicit required candidate C-0174"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 10.37145585360172,
+        "sampled_center_y": -5.720382935016976,
+        "sampled_radius_m": 0.07795152660215016,
+        "sampled_centreline_residual_p90_m": 0.005206707004232966,
+        "sampled_radius_residual_mad_m": 0.0005941130543963002,
+        "sampled_angular_coverage_deg": 150,
+        "sampled_median_angular_coverage_deg": 190,
+        "sampled_fit_residual_m": 0.0048064379420242045,
+        "sampled_point_count": 149,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 10.373203071755624,
+        "full_center_y": -5.716647301573403,
+        "full_radius_m": 0.07465871270746609,
+        "full_centreline_residual_p90_m": 0.00462,
+        "full_radius_residual_mad_m": 0.018043919581762727,
+        "full_angular_coverage_deg": 310,
+        "full_median_angular_coverage_deg": 350,
+        "full_fit_residual_m": 0.005101939453173389,
+        "full_point_count": 3068,
+        "full_accepted_point_count": 1080,
+        "full_rejected_point_count": 1988,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.6479791395045632,
+        "full_to_sampled_point_count_ratio": 20.590604026845636,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.004124042737663102,
+        "radius_delta_m": -0.0032928138946840685,
+        "centreline_residual_delta_m": -0.0005867070042329661,
+        "full_rejected_point_fraction": 0.6479791395045632
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0174.json"
+    },
+    {
+      "queue_id": "RQ15-0045",
+      "candidate_id": "C-0045",
+      "priority": 2,
+      "categories": [
+        "HIGH_QUALITY_SAMPLED_FULL_CENTRELINE_FAILURE",
+        "FULL_RESIDUAL_VERY_HIGH_GTE_0_40_M",
+        "STRONG_SAMPLED_TO_FULL_RADIUS_EXPANSION"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0045",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.6,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 9,
+      "track_id": "T15-1042",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 35.2,
+        "y": -12.08
+      },
+      "ground_z_m": -6.670253324508667,
+      "sampled_radius_m": 0.029765743961185493,
+      "point_crop_url": "data/phase1_75/points/C-0045.json",
+      "review_question": "Does this geometry represent a main stem, root, branch, duplicate, or insufficient evidence?",
+      "review_item_id": "RQ175-0045",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "High-quality sampled fit whose primary full-resolution failure is centreline residual"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 35.17345666170612,
+        "sampled_center_y": -11.400367734108126,
+        "sampled_radius_m": 0.029765743961185493,
+        "sampled_centreline_residual_p90_m": 0.003151182651879247,
+        "sampled_radius_residual_mad_m": 0.0007540672114036487,
+        "sampled_angular_coverage_deg": 290,
+        "sampled_median_angular_coverage_deg": 300,
+        "sampled_fit_residual_m": 0.004660554263068003,
+        "sampled_point_count": 844,
+        "sampled_connected_component_count": 6,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": false,
+        "full_center_x": 35.03271669378486,
+        "full_center_y": -11.605946571497604,
+        "full_radius_m": 0.445760971802335,
+        "full_centreline_residual_p90_m": 0.466294,
+        "full_radius_residual_mad_m": 0.038549950523452725,
+        "full_angular_coverage_deg": 200,
+        "full_median_angular_coverage_deg": 180,
+        "full_fit_residual_m": 0.0222490199903029,
+        "full_point_count": 17077,
+        "full_accepted_point_count": 9369,
+        "full_rejected_point_count": 7708,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.4513673361831703,
+        "full_to_sampled_point_count_ratio": 20.23341232227488,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.2491393123392724,
+        "radius_delta_m": 0.4159952278411495,
+        "centreline_residual_delta_m": 0.46314281734812074,
+        "full_rejected_point_fraction": 0.4513673361831703
+      },
+      "residual_stratum": "VERY_HIGH_GTE_0_40_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "FULL_RESOLUTION_VALIDATION",
+        "primary_reason": "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+          "FULL_CENTRELINE_RESIDUAL_EXCEEDED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0045.json"
+    },
+    {
+      "queue_id": "RQ15-0083",
+      "candidate_id": "C-0083",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0083",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.65,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 8,
+      "track_id": "T15-0350",
+      "track_source_height_count": 8,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 15.6,
+        "y": -17.2
+      },
+      "ground_z_m": -6.737630665302277,
+      "sampled_radius_m": 0.08235912126839516,
+      "point_crop_url": "data/phase1_75/points/C-0083.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0083",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 15.463596774327858,
+        "sampled_center_y": -17.284148503339928,
+        "sampled_radius_m": 0.08235912126839516,
+        "sampled_centreline_residual_p90_m": 0.008156959768435407,
+        "sampled_radius_residual_mad_m": 0.003265465790360203,
+        "sampled_angular_coverage_deg": 160,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.00438547567688936,
+        "sampled_point_count": 47,
+        "sampled_connected_component_count": 1,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 15.464933223463465,
+        "full_center_y": -17.282383840449207,
+        "full_radius_m": 0.084929439067765,
+        "full_centreline_residual_p90_m": 0.005862,
+        "full_radius_residual_mad_m": 0.002691294861314933,
+        "full_angular_coverage_deg": 210,
+        "full_median_angular_coverage_deg": 210,
+        "full_fit_residual_m": 0.004664469478474582,
+        "full_point_count": 797,
+        "full_accepted_point_count": 704,
+        "full_rejected_point_count": 93,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.11668757841907151,
+        "full_to_sampled_point_count_ratio": 16.95744680851064,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.00221362404440202,
+        "radius_delta_m": 0.0025703177993698367,
+        "centreline_residual_delta_m": -0.0022949597684354074,
+        "full_rejected_point_fraction": 0.11668757841907151
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0083.json"
+    },
+    {
+      "queue_id": "RQ15-0091",
+      "candidate_id": "C-0091",
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0091",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0823",
+      "track_source_height_count": 10,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 29.12,
+        "y": -13.76
+      },
+      "ground_z_m": -6.707161808013916,
+      "sampled_radius_m": 0.0343494115870379,
+      "review_question": "Does this existing geometry represent a main stem contaminated by roots or branches, or is the selected full-resolution component wrong?",
+      "review_item_id": "RQ175-0091",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "priority": 2,
+      "categories": [
+        "HIGH_QUALITY_SAMPLED_FULL_CENTRELINE_FAILURE",
+        "FULL_RESIDUAL_MEDIUM_0_10_TO_LT_0_25_M"
+      ],
+      "selection_reasons": [
+        "High-quality sampled fit whose primary full-resolution failure is centreline residual"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 28.456395504432557,
+        "sampled_center_y": -13.585337855920558,
+        "sampled_radius_m": 0.0343494115870379,
+        "sampled_centreline_residual_p90_m": 0.0023161608860672238,
+        "sampled_radius_residual_mad_m": 0.0003355646073969626,
+        "sampled_angular_coverage_deg": 310,
+        "sampled_median_angular_coverage_deg": 300,
+        "sampled_fit_residual_m": 0.006437932476048166,
+        "sampled_point_count": 609,
+        "sampled_connected_component_count": 10,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": false,
+        "full_center_x": 28.61480628545049,
+        "full_center_y": -13.499869123556769,
+        "full_radius_m": 0.09349616957042842,
+        "full_centreline_residual_p90_m": 0.146,
+        "full_radius_residual_mad_m": 0.10106679661544923,
+        "full_angular_coverage_deg": 160,
+        "full_median_angular_coverage_deg": 150,
+        "full_fit_residual_m": 0.007316339350205352,
+        "full_point_count": 10047,
+        "full_accepted_point_count": 2893,
+        "full_rejected_point_count": 7154,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7120533492584851,
+        "full_to_sampled_point_count_ratio": 16.497536945812808,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.17999688818028267,
+        "radius_delta_m": 0.059146757983390516,
+        "centreline_residual_delta_m": 0.14368383911393276,
+        "full_rejected_point_fraction": 0.7120533492584851
+      },
+      "residual_stratum": "MEDIUM_0_10_TO_LT_0_25_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "FULL_RESOLUTION_VALIDATION",
+        "primary_reason": "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+          "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+          "FULL_RADIUS_STABILITY_NOT_MET"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0091.json",
+      "point_crop_url": "data/phase1_75/points/C-0091.json"
+    },
+    {
+      "queue_id": "RQ15-0121",
+      "candidate_id": "C-0121",
+      "priority": 2,
+      "categories": [
+        "PROBABLE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0121",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0626",
+      "track_source_height_count": 3,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 23.2,
+        "y": -9.92
+      },
+      "ground_z_m": -6.682590913772583,
+      "sampled_radius_m": 0.043937886864009915,
+      "point_crop_url": "data/phase1_75/points/C-0121.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0121",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a highest-ranked probable Phase 1.5 alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 23.21932131871813,
+        "sampled_center_y": -10.06009560865284,
+        "sampled_radius_m": 0.043937886864009915,
+        "sampled_centreline_residual_p90_m": 0.006969271275989107,
+        "sampled_radius_residual_mad_m": 0.0011968056342340182,
+        "sampled_angular_coverage_deg": 150,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.005124266310499966,
+        "sampled_point_count": 424,
+        "sampled_connected_component_count": 10,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 23.230183307439578,
+        "full_center_y": -10.050869017700945,
+        "full_radius_m": 0.05213579634165188,
+        "full_centreline_residual_p90_m": 0.031901,
+        "full_radius_residual_mad_m": 0.0017030089332465762,
+        "full_angular_coverage_deg": 180,
+        "full_median_angular_coverage_deg": 180,
+        "full_fit_residual_m": 0.00570154670881089,
+        "full_point_count": 5976,
+        "full_accepted_point_count": 1378,
+        "full_rejected_point_count": 4598,
+        "full_connected_component_count": 8,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7694109772423026,
+        "full_to_sampled_point_count_ratio": 14.09433962264151,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.014251764086542494,
+        "radius_delta_m": 0.008197909477641964,
+        "centreline_residual_delta_m": 0.024931728724010893,
+        "full_rejected_point_fraction": 0.7694109772423026
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0121",
+          "candidate_b": "C-0622",
+          "horizontal_distance_m": "0.3200000000000003",
+          "full_measurement_center_distance_m": "0.0030647581375636717",
+          "common_height_start_m": "1.5",
+          "common_height_end_m": "2.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.05213579634165188",
+          "radius_b_m": "0.049479133517578294",
+          "radius_relative_difference": "0.05228882857576005",
+          "shared_accepted_point_count": "553",
+          "accepted_point_jaccard": "0.2576887232059646",
+          "accepted_point_containment": "0.4099332839140104",
+          "shared_full_source_point_count": "3147",
+          "full_source_point_jaccard": "0.37054044507241257",
+          "full_source_point_containment": "0.5469238790406674",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0626",
+          "same_canonical_track": "True",
+          "classification": "PROBABLE_ALIAS_REQUIRES_REVIEW",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0121.json"
+    },
+    {
+      "queue_id": "RQ15-0128",
+      "candidate_id": "C-0128",
+      "priority": 2,
+      "categories": [
+        "PROBABLE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0128",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 5,
+      "track_id": "T15-0447",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 18.96,
+        "y": -8.0
+      },
+      "ground_z_m": -6.766655921936035,
+      "sampled_radius_m": 0.026443703931065685,
+      "point_crop_url": "data/phase1_75/points/C-0128.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0128",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a highest-ranked probable Phase 1.5 alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 18.90051080626231,
+        "sampled_center_y": -7.970402267364212,
+        "sampled_radius_m": 0.026443703931065685,
+        "sampled_centreline_residual_p90_m": 0.003343158231037669,
+        "sampled_radius_residual_mad_m": 0.0007339975123598422,
+        "sampled_angular_coverage_deg": 160,
+        "sampled_median_angular_coverage_deg": 190,
+        "sampled_fit_residual_m": 0.005254264401576943,
+        "sampled_point_count": 45,
+        "sampled_connected_component_count": 1,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 18.901082882909037,
+        "full_center_y": -7.9683547132528725,
+        "full_radius_m": 0.028023347989376217,
+        "full_centreline_residual_p90_m": 0.004997,
+        "full_radius_residual_mad_m": 0.00035387317549644137,
+        "full_angular_coverage_deg": 340,
+        "full_median_angular_coverage_deg": 340,
+        "full_fit_residual_m": 0.004399530340005844,
+        "full_point_count": 826,
+        "full_accepted_point_count": 752,
+        "full_rejected_point_count": 74,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.08958837772397095,
+        "full_to_sampled_point_count_ratio": 18.355555555555554,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.0021259702558106388,
+        "radius_delta_m": 0.0015796440583105316,
+        "centreline_residual_delta_m": 0.0016538417689623305,
+        "full_rejected_point_fraction": 0.08958837772397095
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0128",
+          "candidate_b": "C-0796",
+          "horizontal_distance_m": "0.3298484500494127",
+          "full_measurement_center_distance_m": "0.0006650985692704383",
+          "common_height_start_m": "2.5",
+          "common_height_end_m": "2.75",
+          "centreline_distance_m": "0.09183199444650891",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.028023347989376217",
+          "radius_b_m": "0.027855315939051464",
+          "radius_relative_difference": "0.006014175662466718",
+          "shared_accepted_point_count": "718",
+          "accepted_point_jaccard": "0.9100126742712294",
+          "accepted_point_containment": "0.9573333333333334",
+          "shared_full_source_point_count": "786",
+          "full_source_point_jaccard": "0.9076212471131639",
+          "full_source_point_containment": "0.9538834951456311",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0449",
+          "same_canonical_track": "False",
+          "classification": "PROBABLE_ALIAS_REQUIRES_REVIEW",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0128.json"
+    },
+    {
+      "queue_id": "RQ15-0163",
+      "candidate_id": "C-0163",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0163",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 6,
+      "track_id": "T15-0816",
+      "track_source_height_count": 9,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 28.400000000000002,
+        "y": -15.2
+      },
+      "ground_z_m": -6.717279267311096,
+      "sampled_radius_m": 0.035103890711244846,
+      "point_crop_url": "data/phase1_75/points/C-0163.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0163",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 28.279981804709276,
+        "sampled_center_y": -15.331012669465768,
+        "sampled_radius_m": 0.035103890711244846,
+        "sampled_centreline_residual_p90_m": 0.0066749804027218225,
+        "sampled_radius_residual_mad_m": 0.0021959853936833404,
+        "sampled_angular_coverage_deg": 220,
+        "sampled_median_angular_coverage_deg": 210,
+        "sampled_fit_residual_m": 0.005433149022935653,
+        "sampled_point_count": 118,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 28.27554407159558,
+        "full_center_y": -15.341491094874764,
+        "full_radius_m": 0.03714771566242452,
+        "full_centreline_residual_p90_m": 0.025756,
+        "full_radius_residual_mad_m": 0.0008659313584763809,
+        "full_angular_coverage_deg": 330,
+        "full_median_angular_coverage_deg": 330,
+        "full_fit_residual_m": 0.005081035436293569,
+        "full_point_count": 1908,
+        "full_accepted_point_count": 1067,
+        "full_rejected_point_count": 841,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.44077568134171907,
+        "full_to_sampled_point_count_ratio": 16.16949152542373,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.011379405706815148,
+        "radius_delta_m": 0.0020438249511796763,
+        "centreline_residual_delta_m": 0.01908101959727818,
+        "full_rejected_point_fraction": 0.44077568134171907
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0163",
+          "candidate_b": "C-0732",
+          "horizontal_distance_m": "0.3200000000000003",
+          "full_measurement_center_distance_m": "0.008202499280633806",
+          "common_height_start_m": "1.3",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.03714771566242452",
+          "radius_b_m": "0.03700117699557995",
+          "radius_relative_difference": "0.00395255172644187",
+          "shared_accepted_point_count": "1013",
+          "accepted_point_jaccard": "0.9134355275022543",
+          "accepted_point_containment": "0.9574669187145558",
+          "shared_full_source_point_count": "1578",
+          "full_source_point_jaccard": "0.6269368295589988",
+          "full_source_point_containment": "0.8283464566929134",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0816",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0163.json"
+    },
+    {
+      "queue_id": "RQ15-0164",
+      "candidate_id": "C-0164",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0164",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.75,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0215",
+      "track_source_height_count": 6,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 11.280000000000001,
+        "y": -4.800000000000001
+      },
+      "ground_z_m": -6.517501926422119,
+      "sampled_radius_m": 0.06530248448216601,
+      "point_crop_url": "data/phase1_75/points/C-0164.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0164",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 11.144392683303316,
+        "sampled_center_y": -4.720314916776497,
+        "sampled_radius_m": 0.06530248448216601,
+        "sampled_centreline_residual_p90_m": 0.020099648819515658,
+        "sampled_radius_residual_mad_m": 0.006509872465674471,
+        "sampled_angular_coverage_deg": 180,
+        "sampled_median_angular_coverage_deg": 160,
+        "sampled_fit_residual_m": 0.0052466217196679285,
+        "sampled_point_count": 57,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 11.132836548721981,
+        "full_center_y": -4.710150171038752,
+        "full_radius_m": 0.09291962001698204,
+        "full_centreline_residual_p90_m": 0.016537,
+        "full_radius_residual_mad_m": 0.003159371693480198,
+        "full_angular_coverage_deg": 290,
+        "full_median_angular_coverage_deg": 300,
+        "full_fit_residual_m": 0.005658822859890805,
+        "full_point_count": 1505,
+        "full_accepted_point_count": 612,
+        "full_rejected_point_count": 893,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5933554817275748,
+        "full_to_sampled_point_count_ratio": 26.403508771929825,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.01539046140877306,
+        "radius_delta_m": 0.027617135534816026,
+        "centreline_residual_delta_m": -0.0035626488195156583,
+        "full_rejected_point_fraction": 0.5933554817275748
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0164.json"
+    },
+    {
+      "queue_id": "RQ15-0176",
+      "candidate_id": "C-0176",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "DEFINITE_ALIAS_MEMBER",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0176",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.95,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY",
+        "V1_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-1137",
+      "track_source_height_count": 6,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 38.32,
+        "y": -15.04
+      },
+      "ground_z_m": -6.6443385004997255,
+      "sampled_radius_m": 0.0752330784733733,
+      "point_crop_url": "data/phase1_75/points/C-0176.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0176",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements",
+        "Member of a definite Phase 1.5 measurement alias pair"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 38.36529998955377,
+        "sampled_center_y": -14.966408030235542,
+        "sampled_radius_m": 0.0752330784733733,
+        "sampled_centreline_residual_p90_m": 0.015825006813856065,
+        "sampled_radius_residual_mad_m": 0.0069317186751314125,
+        "sampled_angular_coverage_deg": 150,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.0048542249672484696,
+        "sampled_point_count": 75,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 38.361357745295095,
+        "full_center_y": -14.96259337644617,
+        "full_radius_m": 0.07392419603244237,
+        "full_centreline_residual_p90_m": 0.00925,
+        "full_radius_residual_mad_m": 0.009098957872525335,
+        "full_angular_coverage_deg": 240,
+        "full_median_angular_coverage_deg": 240,
+        "full_fit_residual_m": 0.0054097079915605036,
+        "full_point_count": 1524,
+        "full_accepted_point_count": 651,
+        "full_rejected_point_count": 873,
+        "full_connected_component_count": 5,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5728346456692913,
+        "full_to_sampled_point_count_ratio": 20.32,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.005485697159688401,
+        "radius_delta_m": -0.001308882440930928,
+        "centreline_residual_delta_m": -0.006575006813856065,
+        "full_rejected_point_fraction": 0.5728346456692913
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0176",
+          "candidate_b": "C-0774",
+          "horizontal_distance_m": "0.3394112549695444",
+          "full_measurement_center_distance_m": "0.0016778907990240707",
+          "common_height_start_m": "1.3",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.07392419603244237",
+          "radius_b_m": "0.07344267508197787",
+          "radius_relative_difference": "0.006534995916288812",
+          "shared_accepted_point_count": "595",
+          "accepted_point_jaccard": "0.8673469387755102",
+          "accepted_point_containment": "0.9444444444444444",
+          "shared_full_source_point_count": "1415",
+          "full_source_point_jaccard": "0.8654434250764526",
+          "full_source_point_containment": "0.932762030323006",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-1137",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0176.json"
+    },
+    {
+      "queue_id": "RQ15-0237",
+      "candidate_id": "C-0237",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0237",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 2.0,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0675",
+      "track_source_height_count": 1,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 24.400000000000002,
+        "y": -8.96
+      },
+      "ground_z_m": -6.595417308807373,
+      "sampled_radius_m": 0.02475742795947617,
+      "point_crop_url": "data/phase1_75/points/C-0237.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0237",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 24.794409520777272,
+        "sampled_center_y": -8.77219579199696,
+        "sampled_radius_m": 0.02475742795947617,
+        "sampled_centreline_residual_p90_m": 0.02354680920949974,
+        "sampled_radius_residual_mad_m": 0.00422287601020698,
+        "sampled_angular_coverage_deg": 140,
+        "sampled_median_angular_coverage_deg": 140,
+        "sampled_fit_residual_m": 0.005588638143964919,
+        "sampled_point_count": 337,
+        "sampled_connected_component_count": 6,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 24.787981954500648,
+        "full_center_y": -8.760272004431783,
+        "full_radius_m": 0.02093969033558663,
+        "full_centreline_residual_p90_m": 0.021039,
+        "full_radius_residual_mad_m": 0.00320977089843439,
+        "full_angular_coverage_deg": 220,
+        "full_median_angular_coverage_deg": 210,
+        "full_fit_residual_m": 0.005947208368103065,
+        "full_point_count": 2807,
+        "full_accepted_point_count": 582,
+        "full_rejected_point_count": 2225,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7926612041325258,
+        "full_to_sampled_point_count_ratio": 8.329376854599406,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.013545859815451587,
+        "radius_delta_m": -0.0038177376238895423,
+        "centreline_residual_delta_m": -0.00250780920949974,
+        "full_rejected_point_fraction": 0.7926612041325258
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0237.json"
+    },
+    {
+      "queue_id": "RQ15-0242",
+      "candidate_id": "C-0242",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0242",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 5,
+      "track_id": "T15-0735",
+      "track_source_height_count": 12,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 26.16,
+        "y": -12.959999999999999
+      },
+      "ground_z_m": -6.722085332870483,
+      "sampled_radius_m": 0.040949403861168535,
+      "point_crop_url": "data/phase1_75/points/C-0242.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0242",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.060608431177574,
+        "sampled_center_y": -13.107538151970482,
+        "sampled_radius_m": 0.040949403861168535,
+        "sampled_centreline_residual_p90_m": 0.006313254825465006,
+        "sampled_radius_residual_mad_m": 0.0024348290876692533,
+        "sampled_angular_coverage_deg": 130,
+        "sampled_median_angular_coverage_deg": 300,
+        "sampled_fit_residual_m": 0.0065183214799881305,
+        "sampled_point_count": 429,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.06884535694433,
+        "full_center_y": -13.107947663762497,
+        "full_radius_m": 0.04312854513534304,
+        "full_centreline_residual_p90_m": 0.007805,
+        "full_radius_residual_mad_m": 0.0014252753689783446,
+        "full_angular_coverage_deg": 310,
+        "full_median_angular_coverage_deg": 320,
+        "full_fit_residual_m": 0.003925945453155314,
+        "full_point_count": 6864,
+        "full_accepted_point_count": 3022,
+        "full_rejected_point_count": 3842,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5597319347319347,
+        "full_to_sampled_point_count_ratio": 16,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.008247099247301746,
+        "radius_delta_m": 0.002179141274174505,
+        "centreline_residual_delta_m": 0.0014917451745349941,
+        "full_rejected_point_fraction": 0.5597319347319347
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0242",
+          "candidate_b": "C-0516",
+          "horizontal_distance_m": "0.3577708763999667",
+          "full_measurement_center_distance_m": "0.0004028495847665179",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04312854513534304",
+          "radius_b_m": "0.04313288523209093",
+          "radius_relative_difference": "0.00010062658894957147",
+          "shared_accepted_point_count": "2971",
+          "accepted_point_jaccard": "0.993977919036467",
+          "accepted_point_containment": "0.9969798657718121",
+          "shared_full_source_point_count": "6747",
+          "full_source_point_jaccard": "0.9848197343453511",
+          "full_source_point_containment": "0.9927898763978811",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0735",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0242.json"
+    },
+    {
+      "queue_id": "RQ15-0271",
+      "candidate_id": "C-0271",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0271",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0737",
+      "track_source_height_count": 10,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 26.240000000000002,
+        "y": -13.76
+      },
+      "ground_z_m": -6.719199180603027,
+      "sampled_radius_m": 0.04068567571304584,
+      "point_crop_url": "data/phase1_75/points/C-0271.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0271",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.062698417748237,
+        "sampled_center_y": -13.10962687644305,
+        "sampled_radius_m": 0.04068567571304584,
+        "sampled_centreline_residual_p90_m": 0.003619621365679689,
+        "sampled_radius_residual_mad_m": 0.001410770480317479,
+        "sampled_angular_coverage_deg": 280,
+        "sampled_median_angular_coverage_deg": 300,
+        "sampled_fit_residual_m": 0.006598523203819206,
+        "sampled_point_count": 440,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.06823258686671,
+        "full_center_y": -13.108981072373709,
+        "full_radius_m": 0.043385143475423965,
+        "full_centreline_residual_p90_m": 0.007751,
+        "full_radius_residual_mad_m": 0.001064373210299556,
+        "full_angular_coverage_deg": 310,
+        "full_median_angular_coverage_deg": 320,
+        "full_fit_residual_m": 0.003920077066050535,
+        "full_point_count": 6905,
+        "full_accepted_point_count": 3048,
+        "full_rejected_point_count": 3857,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5585807385952208,
+        "full_to_sampled_point_count_ratio": 15.693181818181818,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.005571722420206995,
+        "radius_delta_m": 0.002699467762378123,
+        "centreline_residual_delta_m": 0.004131378634320311,
+        "full_rejected_point_fraction": 0.5585807385952208
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0271",
+          "candidate_b": "C-0370",
+          "horizontal_distance_m": "0.6400000000000006",
+          "full_measurement_center_distance_m": "0.0006894330210671495",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.043385143475423965",
+          "radius_b_m": "0.04324239070834344",
+          "radius_relative_difference": "0.003295782765274106",
+          "shared_accepted_point_count": "2925",
+          "accepted_point_jaccard": "0.9558823529411765",
+          "accepted_point_containment": "0.9815436241610739",
+          "shared_full_source_point_count": "6643",
+          "full_source_point_jaccard": "0.9485934599457375",
+          "full_source_point_containment": "0.9761939750183688",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0271.json"
+    },
+    {
+      "queue_id": "RQ15-0285",
+      "candidate_id": "C-0285",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0285",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.65,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 2,
+      "track_id": "T15-0141",
+      "track_source_height_count": 1,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 9.440000000000001,
+        "y": 0.5600000000000023
+      },
+      "ground_z_m": -6.659467148780823,
+      "sampled_radius_m": 0.09116139126274712,
+      "point_crop_url": "data/phase1_75/points/C-0285.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0285",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 8.917143081165962,
+        "sampled_center_y": 1.3556232722262787,
+        "sampled_radius_m": 0.09116139126274712,
+        "sampled_centreline_residual_p90_m": 0.029583239196121606,
+        "sampled_radius_residual_mad_m": 0.005003874357727964,
+        "sampled_angular_coverage_deg": 190,
+        "sampled_median_angular_coverage_deg": 190,
+        "sampled_fit_residual_m": 0.006345546059824173,
+        "sampled_point_count": 2274,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 8.81172964135516,
+        "full_center_y": 1.4198655052777296,
+        "full_radius_m": 0.034546387149567745,
+        "full_centreline_residual_p90_m": 0.002626,
+        "full_radius_residual_mad_m": 0.002137198046175584,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.0053916772100905674,
+        "full_point_count": 59859,
+        "full_accepted_point_count": 47139,
+        "full_rejected_point_count": 12720,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.2124993735277903,
+        "full_to_sampled_point_count_ratio": 26.323218997361476,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.12344657873016333,
+        "radius_delta_m": -0.05661500411317938,
+        "centreline_residual_delta_m": -0.026957239196121606,
+        "full_rejected_point_fraction": 0.2124993735277903
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0285.json"
+    },
+    {
+      "queue_id": "RQ15-0370",
+      "candidate_id": "C-0370",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0271",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 5,
+      "track_id": "T15-0737",
+      "track_source_height_count": 10,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 25.6,
+        "y": -13.76
+      },
+      "ground_z_m": -6.720499515533447,
+      "sampled_radius_m": 0.04194693241627235,
+      "point_crop_url": "data/phase1_75/points/C-0370.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0370",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.062459608755095,
+        "sampled_center_y": -13.109561598051169,
+        "sampled_radius_m": 0.04194693241627235,
+        "sampled_centreline_residual_p90_m": 0.0030660567541251284,
+        "sampled_radius_residual_mad_m": 0.001115862071402976,
+        "sampled_angular_coverage_deg": 270,
+        "sampled_median_angular_coverage_deg": 300,
+        "sampled_fit_residual_m": 0.006308675055609369,
+        "sampled_point_count": 561,
+        "sampled_connected_component_count": 4,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.06862252042216,
+        "full_center_y": -13.108412504248616,
+        "full_radius_m": 0.04324239070834344,
+        "full_centreline_residual_p90_m": 0.007525,
+        "full_radius_residual_mad_m": 0.0011712448315145396,
+        "full_angular_coverage_deg": 310,
+        "full_median_angular_coverage_deg": 320,
+        "full_fit_residual_m": 0.003925881009149997,
+        "full_point_count": 6869,
+        "full_accepted_point_count": 3024,
+        "full_rejected_point_count": 3845,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.559761246178483,
+        "full_to_sampled_point_count_ratio": 12.244206773618538,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.006269122489082028,
+        "radius_delta_m": 0.0012954582920710889,
+        "centreline_residual_delta_m": 0.004458943245874871,
+        "full_rejected_point_fraction": 0.559761246178483
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0271",
+          "candidate_b": "C-0370",
+          "horizontal_distance_m": "0.6400000000000006",
+          "full_measurement_center_distance_m": "0.0006894330210671495",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.043385143475423965",
+          "radius_b_m": "0.04324239070834344",
+          "radius_relative_difference": "0.003295782765274106",
+          "shared_accepted_point_count": "2925",
+          "accepted_point_jaccard": "0.9558823529411765",
+          "accepted_point_containment": "0.9815436241610739",
+          "shared_full_source_point_count": "6643",
+          "full_source_point_jaccard": "0.9485934599457375",
+          "full_source_point_containment": "0.9761939750183688",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0370.json"
+    },
+    {
+      "queue_id": "RQ15-0393",
+      "candidate_id": "C-0393",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0393",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.65,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0168",
+      "track_source_height_count": 1,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 10.08,
+        "y": -12.08
+      },
+      "ground_z_m": -6.768273878097534,
+      "sampled_radius_m": 0.028692633228872937,
+      "point_crop_url": "data/phase1_75/points/C-0393.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0393",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 10.597795577067625,
+        "sampled_center_y": -12.456475143038885,
+        "sampled_radius_m": 0.028692633228872937,
+        "sampled_centreline_residual_p90_m": 0.016350648953181276,
+        "sampled_radius_residual_mad_m": 0.002144447006608853,
+        "sampled_angular_coverage_deg": 130,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.006618510661499194,
+        "sampled_point_count": 90,
+        "sampled_connected_component_count": 4,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 10.599027950954635,
+        "full_center_y": -12.461876615822106,
+        "full_radius_m": 0.020272851945920496,
+        "full_centreline_residual_p90_m": 0.015873,
+        "full_radius_residual_mad_m": 0.0193194832086743,
+        "full_angular_coverage_deg": 190,
+        "full_median_angular_coverage_deg": 230,
+        "full_fit_residual_m": 0.00463910344438913,
+        "full_point_count": 2989,
+        "full_accepted_point_count": 503,
+        "full_rejected_point_count": 2486,
+        "full_connected_component_count": 5,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.8317162930746069,
+        "full_to_sampled_point_count_ratio": 33.21111111111111,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.005540275591093512,
+        "radius_delta_m": -0.00841978128295244,
+        "centreline_residual_delta_m": -0.00047764895318127415,
+        "full_rejected_point_fraction": 0.8317162930746069
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0393.json"
+    },
+    {
+      "queue_id": "RQ15-0419",
+      "candidate_id": "C-0419",
+      "priority": 2,
+      "categories": [
+        "STANDARD_ACCEPTED_MEDIUM_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0419",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0978",
+      "track_source_height_count": 5,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 33.760000000000005,
+        "y": -15.6
+      },
+      "ground_z_m": -6.684681129455567,
+      "sampled_radius_m": 0.10206349078466356,
+      "point_crop_url": "data/phase1_75/points/C-0419.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0419",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Standard-height accepted sample in existing 0.10-<0.20 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 33.98656099124665,
+        "sampled_center_y": -15.606994224600617,
+        "sampled_radius_m": 0.10206349078466356,
+        "sampled_centreline_residual_p90_m": 0.033188685328254613,
+        "sampled_radius_residual_mad_m": 0.019469733363416925,
+        "sampled_angular_coverage_deg": 160,
+        "sampled_median_angular_coverage_deg": 140,
+        "sampled_fit_residual_m": 0.005729579340714902,
+        "sampled_point_count": 237,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 33.99095492523326,
+        "full_center_y": -15.62403503441424,
+        "full_radius_m": 0.07902171328327778,
+        "full_centreline_residual_p90_m": 0.012486,
+        "full_radius_residual_mad_m": 0.0020213231960103523,
+        "full_angular_coverage_deg": 270,
+        "full_median_angular_coverage_deg": 260,
+        "full_fit_residual_m": 0.0051671396857394586,
+        "full_point_count": 2598,
+        "full_accepted_point_count": 1416,
+        "full_rejected_point_count": 1182,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.45496535796766746,
+        "full_to_sampled_point_count_ratio": 10.962025316455696,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.017598177604023393,
+        "radius_delta_m": -0.02304177750138578,
+        "centreline_residual_delta_m": -0.020702685328254613,
+        "full_rejected_point_fraction": 0.45496535796766746
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0419.json"
+    },
+    {
+      "queue_id": "RQ15-0463",
+      "candidate_id": "C-0463",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0463",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 3,
+      "track_id": "T15-0737",
+      "track_source_height_count": 10,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 26.080000000000002,
+        "y": -14.08
+      },
+      "ground_z_m": -6.720744943618774,
+      "sampled_radius_m": 0.04109516279288062,
+      "point_crop_url": "data/phase1_75/points/C-0463.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0463",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.157880942310953,
+        "sampled_center_y": -13.961647177467906,
+        "sampled_radius_m": 0.04109516279288062,
+        "sampled_centreline_residual_p90_m": 0.0042050429991185145,
+        "sampled_radius_residual_mad_m": 0.0006279052240801622,
+        "sampled_angular_coverage_deg": 260,
+        "sampled_median_angular_coverage_deg": 270,
+        "sampled_fit_residual_m": 0.006382630966182598,
+        "sampled_point_count": 436,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.157467109427934,
+        "full_center_y": -13.961420273719108,
+        "full_radius_m": 0.04066523042250127,
+        "full_centreline_residual_p90_m": 0.003514,
+        "full_radius_residual_mad_m": 0.00014504915542664504,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.0043008744475577,
+        "full_point_count": 9539,
+        "full_accepted_point_count": 2058,
+        "full_rejected_point_count": 7481,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7842541146870741,
+        "full_to_sampled_point_count_ratio": 21.878440366972477,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.000471956530081746,
+        "radius_delta_m": -0.0004299323703793531,
+        "centreline_residual_delta_m": -0.0006910429991185143,
+        "full_rejected_point_fraction": 0.7842541146870741
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0463",
+          "candidate_b": "C-0590",
+          "horizontal_distance_m": "0.3577708763999667",
+          "full_measurement_center_distance_m": "0.001556843869266238",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04066523042250127",
+          "radius_b_m": "0.04042353895873895",
+          "radius_relative_difference": "0.0059611575217278",
+          "shared_accepted_point_count": "1918",
+          "accepted_point_jaccard": "0.8838709677419355",
+          "accepted_point_containment": "0.9392752203721841",
+          "shared_full_source_point_count": "8776",
+          "full_source_point_jaccard": "0.8626757102133097",
+          "full_source_point_containment": "0.9293656676903527",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "2",
+          "common_alias_tracks": "T15-0731|T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        },
+        {
+          "candidate_a": "C-0463",
+          "candidate_b": "C-0889",
+          "horizontal_distance_m": "0.6835202996254037",
+          "full_measurement_center_distance_m": "0.0033452996121955294",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04066523042250127",
+          "radius_b_m": "0.04037609857196227",
+          "radius_relative_difference": "0.007135417301923834",
+          "shared_accepted_point_count": "1854",
+          "accepted_point_jaccard": "0.8302731751007613",
+          "accepted_point_containment": "0.9083782459578638",
+          "shared_full_source_point_count": "8507",
+          "full_source_point_jaccard": "0.8135220426508559",
+          "full_source_point_containment": "0.900878957958276",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0463.json"
+    },
+    {
+      "queue_id": "RQ15-0492",
+      "candidate_id": "C-0492",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0492",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.65,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0881",
+      "track_source_height_count": 3,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 30.16,
+        "y": -8.96
+      },
+      "ground_z_m": -6.441156339645386,
+      "sampled_radius_m": 0.11072045482887183,
+      "point_crop_url": "data/phase1_75/points/C-0492.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0492",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 29.658716154539473,
+        "sampled_center_y": -9.28556755999256,
+        "sampled_radius_m": 0.11072045482887183,
+        "sampled_centreline_residual_p90_m": 0.014770483720858398,
+        "sampled_radius_residual_mad_m": 0.004181133260891701,
+        "sampled_angular_coverage_deg": 190,
+        "sampled_median_angular_coverage_deg": 210,
+        "sampled_fit_residual_m": 0.00596036347414883,
+        "sampled_point_count": 505,
+        "sampled_connected_component_count": 8,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 29.832222306992044,
+        "full_center_y": -9.020382110108994,
+        "full_radius_m": 0.3839307121401946,
+        "full_centreline_residual_p90_m": 0.057854,
+        "full_radius_residual_mad_m": 0.01987765023265553,
+        "full_angular_coverage_deg": 320,
+        "full_median_angular_coverage_deg": 320,
+        "full_fit_residual_m": 0.018834562156210873,
+        "full_point_count": 9664,
+        "full_accepted_point_count": 3361,
+        "full_rejected_point_count": 6303,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.6522144039735099,
+        "full_to_sampled_point_count_ratio": 19.136633663366336,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.316903309810491,
+        "radius_delta_m": 0.27321025731132276,
+        "centreline_residual_delta_m": 0.0430835162791416,
+        "full_rejected_point_fraction": 0.6522144039735099
+      },
+      "residual_stratum": "INTERMEDIATE_NOT_TARGETED",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0492.json"
+    },
+    {
+      "queue_id": "RQ15-0495",
+      "candidate_id": "C-0495",
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0495",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0583",
+      "track_source_height_count": 2,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 21.44,
+        "y": -0.9600000000000009
+      },
+      "ground_z_m": -6.656847727298737,
+      "sampled_radius_m": 0.02452722946543187,
+      "review_question": "Does this existing geometry represent a main stem contaminated by roots or branches, or is the selected full-resolution component wrong?",
+      "review_item_id": "RQ175-0495",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "priority": 2,
+      "categories": [
+        "HIGH_QUALITY_SAMPLED_FULL_CENTRELINE_FAILURE",
+        "FULL_RESIDUAL_MEDIUM_0_10_TO_LT_0_25_M"
+      ],
+      "selection_reasons": [
+        "High-quality sampled fit whose primary full-resolution failure is centreline residual"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 20.919279573559155,
+        "sampled_center_y": -0.1740882827527272,
+        "sampled_radius_m": 0.02452722946543187,
+        "sampled_centreline_residual_p90_m": 0.0022385478461863675,
+        "sampled_radius_residual_mad_m": 0.0007771670394252431,
+        "sampled_angular_coverage_deg": 230,
+        "sampled_median_angular_coverage_deg": 230,
+        "sampled_fit_residual_m": 0.0044014342900553,
+        "sampled_point_count": 199,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": false,
+        "full_center_x": 20.911980993419483,
+        "full_center_y": -0.18478043344738954,
+        "full_radius_m": 0.022779246827989125,
+        "full_centreline_residual_p90_m": 0.137873,
+        "full_radius_residual_mad_m": 0.019850550363892775,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.005505752462900766,
+        "full_point_count": 6742,
+        "full_accepted_point_count": 1530,
+        "full_rejected_point_count": 5212,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.773064372589736,
+        "full_to_sampled_point_count_ratio": 33.879396984924625,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.012945708112443336,
+        "radius_delta_m": -0.0017479826374427465,
+        "centreline_residual_delta_m": 0.13563445215381362,
+        "full_rejected_point_fraction": 0.773064372589736
+      },
+      "residual_stratum": "MEDIUM_0_10_TO_LT_0_25_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "FULL_RESOLUTION_VALIDATION",
+        "primary_reason": "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+          "FULL_CENTRELINE_RESIDUAL_EXCEEDED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0495.json",
+      "point_crop_url": "data/phase1_75/points/C-0495.json"
+    },
+    {
+      "queue_id": "RQ15-0516",
+      "candidate_id": "C-0516",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0242",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 6,
+      "track_id": "T15-0735",
+      "track_source_height_count": 12,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 26.0,
+        "y": -13.28
+      },
+      "ground_z_m": -6.721888542175293,
+      "sampled_radius_m": 0.04073050276274514,
+      "point_crop_url": "data/phase1_75/points/C-0516.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0516",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.062424134006974,
+        "sampled_center_y": -13.10923421860394,
+        "sampled_radius_m": 0.04073050276274514,
+        "sampled_centreline_residual_p90_m": 0.0029495432723939175,
+        "sampled_radius_residual_mad_m": 0.001213099093504852,
+        "sampled_angular_coverage_deg": 270,
+        "sampled_median_angular_coverage_deg": 300,
+        "sampled_fit_residual_m": 0.006630230556495177,
+        "sampled_point_count": 437,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.06849534412368,
+        "full_center_y": -13.108147110029263,
+        "full_radius_m": 0.04313288523209093,
+        "full_centreline_residual_p90_m": 0.00734,
+        "full_radius_residual_mad_m": 0.0018265548519714736,
+        "full_angular_coverage_deg": 310,
+        "full_median_angular_coverage_deg": 320,
+        "full_fit_residual_m": 0.003928626708688661,
+        "full_point_count": 6858,
+        "full_accepted_point_count": 3022,
+        "full_rejected_point_count": 3836,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5593467483231263,
+        "full_to_sampled_point_count_ratio": 15.693363844393593,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.006167770856177656,
+        "radius_delta_m": 0.002402382469345793,
+        "centreline_residual_delta_m": 0.004390456727606082,
+        "full_rejected_point_fraction": 0.5593467483231263
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0242",
+          "candidate_b": "C-0516",
+          "horizontal_distance_m": "0.3577708763999667",
+          "full_measurement_center_distance_m": "0.0004028495847665179",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04312854513534304",
+          "radius_b_m": "0.04313288523209093",
+          "radius_relative_difference": "0.00010062658894957147",
+          "shared_accepted_point_count": "2971",
+          "accepted_point_jaccard": "0.993977919036467",
+          "accepted_point_containment": "0.9969798657718121",
+          "shared_full_source_point_count": "6747",
+          "full_source_point_jaccard": "0.9848197343453511",
+          "full_source_point_containment": "0.9927898763978811",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0735",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0516.json"
+    },
+    {
+      "queue_id": "RQ15-0576",
+      "candidate_id": "C-0576",
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0576",
+      "measurement_status": "NEEDS_REVIEW",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 2,
+      "track_id": "T15-0128",
+      "track_source_height_count": 2,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": false,
+      "position": {
+        "x": 8.48,
+        "y": -7.440000000000001
+      },
+      "ground_z_m": -6.712884950637817,
+      "sampled_radius_m": 0.037678230989532144,
+      "review_question": "Does this existing geometry represent a main stem contaminated by roots or branches, or is the selected full-resolution component wrong?",
+      "review_item_id": "RQ175-0576",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "priority": 2,
+      "categories": [
+        "HIGH_QUALITY_SAMPLED_FULL_CENTRELINE_FAILURE",
+        "FULL_RESIDUAL_VERY_HIGH_GTE_0_40_M",
+        "STRONG_SAMPLED_TO_FULL_RADIUS_EXPANSION"
+      ],
+      "selection_reasons": [
+        "High-quality sampled fit whose primary full-resolution failure is centreline residual"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 7.905556295148664,
+        "sampled_center_y": -7.697381103389125,
+        "sampled_radius_m": 0.037678230989532144,
+        "sampled_centreline_residual_p90_m": 0.003225740552544364,
+        "sampled_radius_residual_mad_m": 0.00095081768551699,
+        "sampled_angular_coverage_deg": 210,
+        "sampled_median_angular_coverage_deg": 230,
+        "sampled_fit_residual_m": 0.005175437565831705,
+        "sampled_point_count": 1194,
+        "sampled_connected_component_count": 12,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": false,
+        "full_center_x": 7.565762491857015,
+        "full_center_y": -7.982777951232481,
+        "full_radius_m": 0.46124078328109075,
+        "full_centreline_residual_p90_m": 0.71585,
+        "full_radius_residual_mad_m": 0.013286643900710104,
+        "full_angular_coverage_deg": 250,
+        "full_median_angular_coverage_deg": 260,
+        "full_fit_residual_m": 0.023983378670830526,
+        "full_point_count": 28524,
+        "full_accepted_point_count": 12307,
+        "full_rejected_point_count": 16217,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5685387743654466,
+        "full_to_sampled_point_count_ratio": 23.889447236180903,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.44374676282123776,
+        "radius_delta_m": 0.4235625522915586,
+        "centreline_residual_delta_m": 0.7126242594474557,
+        "full_rejected_point_fraction": 0.5685387743654466
+      },
+      "residual_stratum": "VERY_HIGH_GTE_0_40_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "FULL_RESOLUTION_VALIDATION",
+        "primary_reason": "FULL_CENTRELINE_RESIDUAL_EXCEEDED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_NOT_MET",
+          "FULL_CENTRELINE_RESIDUAL_EXCEEDED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0576.json",
+      "point_crop_url": "data/phase1_75/points/C-0576.json"
+    },
+    {
+      "queue_id": "RQ15-0588",
+      "candidate_id": "C-0588",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "DEFINITE_ALIAS_MEMBER",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0588",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 2.1,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0956",
+      "track_source_height_count": 6,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 33.2,
+        "y": -15.92
+      },
+      "ground_z_m": -6.6927366018295285,
+      "sampled_radius_m": 0.09665258995929943,
+      "point_crop_url": "data/phase1_75/points/C-0588.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0588",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements",
+        "Member of a definite Phase 1.5 measurement alias pair"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 33.27575381609984,
+        "sampled_center_y": -15.950327938086286,
+        "sampled_radius_m": 0.09665258995929943,
+        "sampled_centreline_residual_p90_m": 0.01440246389941647,
+        "sampled_radius_residual_mad_m": 0.0034257024721581764,
+        "sampled_angular_coverage_deg": 150,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.004614252639428456,
+        "sampled_point_count": 57,
+        "sampled_connected_component_count": 1,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 33.275714903884314,
+        "full_center_y": -15.942515998641438,
+        "full_radius_m": 0.07287198031581751,
+        "full_centreline_residual_p90_m": 0.008718,
+        "full_radius_residual_mad_m": 0.0012817299852432157,
+        "full_angular_coverage_deg": 220,
+        "full_median_angular_coverage_deg": 230,
+        "full_fit_residual_m": 0.0034271873856038773,
+        "full_point_count": 1058,
+        "full_accepted_point_count": 1036,
+        "full_rejected_point_count": 22,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.020793950850661626,
+        "full_to_sampled_point_count_ratio": 18.56140350877193,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.007812036357473054,
+        "radius_delta_m": -0.023780609643481915,
+        "centreline_residual_delta_m": -0.005684463899416469,
+        "full_rejected_point_fraction": 0.020793950850661626
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0588",
+          "candidate_b": "C-0882",
+          "horizontal_distance_m": "0.35777087639997224",
+          "full_measurement_center_distance_m": "0.0029992979525338003",
+          "common_height_start_m": "2.0",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.07287198031581751",
+          "radius_b_m": "0.07266917507854631",
+          "radius_relative_difference": "0.0027869125639641145",
+          "shared_accepted_point_count": "965",
+          "accepted_point_jaccard": "0.8845096241979835",
+          "accepted_point_containment": "0.9442270058708415",
+          "shared_full_source_point_count": "982",
+          "full_source_point_jaccard": "0.8823000898472596",
+          "full_source_point_containment": "0.9451395572666025",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0956",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0588.json"
+    },
+    {
+      "queue_id": "RQ15-0590",
+      "candidate_id": "C-0590",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0463",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 4,
+      "track_id": "T15-0737",
+      "track_source_height_count": 10,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 25.92,
+        "y": -14.4
+      },
+      "ground_z_m": -6.724987125396728,
+      "sampled_radius_m": 0.04250650738627046,
+      "point_crop_url": "data/phase1_75/points/C-0590.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0590",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.15666229402768,
+        "sampled_center_y": -13.959552488934992,
+        "sampled_radius_m": 0.04250650738627046,
+        "sampled_centreline_residual_p90_m": 0.004376270426584138,
+        "sampled_radius_residual_mad_m": 0.0005926138242533935,
+        "sampled_angular_coverage_deg": 290,
+        "sampled_median_angular_coverage_deg": 270,
+        "sampled_fit_residual_m": 0.00621310541821042,
+        "sampled_point_count": 293,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.15794857960965,
+        "full_center_y": -13.959939750400348,
+        "full_radius_m": 0.04042353895873895,
+        "full_centreline_residual_p90_m": 0.003153,
+        "full_radius_residual_mad_m": 0.00015837113859298868,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.004345344130660646,
+        "full_point_count": 9604,
+        "full_accepted_point_count": 2054,
+        "full_rejected_point_count": 7550,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7861307788421491,
+        "full_to_sampled_point_count_ratio": 32.77815699658703,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.0013433175502952296,
+        "radius_delta_m": -0.0020829684275315077,
+        "centreline_residual_delta_m": -0.0012232704265841376,
+        "full_rejected_point_fraction": 0.7861307788421491
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0463",
+          "candidate_b": "C-0590",
+          "horizontal_distance_m": "0.3577708763999667",
+          "full_measurement_center_distance_m": "0.001556843869266238",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04066523042250127",
+          "radius_b_m": "0.04042353895873895",
+          "radius_relative_difference": "0.0059611575217278",
+          "shared_accepted_point_count": "1918",
+          "accepted_point_jaccard": "0.8838709677419355",
+          "accepted_point_containment": "0.9392752203721841",
+          "shared_full_source_point_count": "8776",
+          "full_source_point_jaccard": "0.8626757102133097",
+          "full_source_point_containment": "0.9293656676903527",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "2",
+          "common_alias_tracks": "T15-0731|T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        },
+        {
+          "candidate_a": "C-0590",
+          "candidate_b": "C-0889",
+          "horizontal_distance_m": "0.32984845004941354",
+          "full_measurement_center_distance_m": "0.001791948646607164",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04042353895873895",
+          "radius_b_m": "0.04037609857196227",
+          "radius_relative_difference": "0.0011742722672154833",
+          "shared_accepted_point_count": "1977",
+          "accepted_point_jaccard": "0.9387464387464387",
+          "accepted_point_containment": "0.9686428221460068",
+          "shared_full_source_point_count": "9237",
+          "full_source_point_jaccard": "0.9435137895812054",
+          "full_source_point_containment": "0.9717020828950137",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0590.json"
+    },
+    {
+      "queue_id": "RQ15-0622",
+      "candidate_id": "C-0622",
+      "priority": 2,
+      "categories": [
+        "PROBABLE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0622",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0626",
+      "track_source_height_count": 3,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 23.2,
+        "y": -9.6
+      },
+      "ground_z_m": -6.647049427032471,
+      "sampled_radius_m": 0.04341979263872282,
+      "point_crop_url": "data/phase1_75/points/C-0622.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0622",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a highest-ranked probable Phase 1.5 alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 23.22285151554781,
+        "sampled_center_y": -10.054882588738796,
+        "sampled_radius_m": 0.04341979263872282,
+        "sampled_centreline_residual_p90_m": 0.010891542671263504,
+        "sampled_radius_residual_mad_m": 0.0020313089292453013,
+        "sampled_angular_coverage_deg": 130,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.005385131960756286,
+        "sampled_point_count": 590,
+        "sampled_connected_component_count": 13,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 23.22852705390949,
+        "full_center_y": -10.04829034232668,
+        "full_radius_m": 0.049479133517578294,
+        "full_centreline_residual_p90_m": 0.031422,
+        "full_radius_residual_mad_m": 0.0015520240684270964,
+        "full_angular_coverage_deg": 160,
+        "full_median_angular_coverage_deg": 190,
+        "full_fit_residual_m": 0.005503267001094261,
+        "full_point_count": 5827,
+        "full_accepted_point_count": 1375,
+        "full_rejected_point_count": 4452,
+        "full_connected_component_count": 7,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7640295177621418,
+        "full_to_sampled_point_count_ratio": 9.876271186440677,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.008698818796421343,
+        "radius_delta_m": 0.006059340878855471,
+        "centreline_residual_delta_m": 0.020530457328736495,
+        "full_rejected_point_fraction": 0.7640295177621418
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0121",
+          "candidate_b": "C-0622",
+          "horizontal_distance_m": "0.3200000000000003",
+          "full_measurement_center_distance_m": "0.0030647581375636717",
+          "common_height_start_m": "1.5",
+          "common_height_end_m": "2.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.05213579634165188",
+          "radius_b_m": "0.049479133517578294",
+          "radius_relative_difference": "0.05228882857576005",
+          "shared_accepted_point_count": "553",
+          "accepted_point_jaccard": "0.2576887232059646",
+          "accepted_point_containment": "0.4099332839140104",
+          "shared_full_source_point_count": "3147",
+          "full_source_point_jaccard": "0.37054044507241257",
+          "full_source_point_containment": "0.5469238790406674",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0626",
+          "same_canonical_track": "True",
+          "classification": "PROBABLE_ALIAS_REQUIRES_REVIEW",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0622.json"
+    },
+    {
+      "queue_id": "RQ15-0655",
+      "candidate_id": "C-0655",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0655",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 3,
+      "track_id": "T15-0700",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": true,
+      "potential_duplicate": true,
+      "position": {
+        "x": 24.88,
+        "y": -13.6
+      },
+      "ground_z_m": -6.734423398971558,
+      "sampled_radius_m": 0.037481134277445406,
+      "point_crop_url": "data/phase1_75/points/C-0655.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0655",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 24.839440277689565,
+        "sampled_center_y": -13.349636316486393,
+        "sampled_radius_m": 0.037481134277445406,
+        "sampled_centreline_residual_p90_m": 0.005679748139554939,
+        "sampled_radius_residual_mad_m": 0.0006265203867113628,
+        "sampled_angular_coverage_deg": 280,
+        "sampled_median_angular_coverage_deg": 280,
+        "sampled_fit_residual_m": 0.005363729306124935,
+        "sampled_point_count": 539,
+        "sampled_connected_component_count": 5,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 24.842885201238662,
+        "full_center_y": -13.351884645687818,
+        "full_radius_m": 0.0388479052588961,
+        "full_centreline_residual_p90_m": 0.003321,
+        "full_radius_residual_mad_m": 0.00017016150713496103,
+        "full_angular_coverage_deg": 330,
+        "full_median_angular_coverage_deg": 330,
+        "full_fit_residual_m": 0.004613648943636402,
+        "full_point_count": 9967,
+        "full_accepted_point_count": 2352,
+        "full_rejected_point_count": 7615,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7640212701916324,
+        "full_to_sampled_point_count_ratio": 18.491651205936922,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.004113694502160064,
+        "radius_delta_m": 0.0013667709814506948,
+        "centreline_residual_delta_m": -0.0023587481395549387,
+        "full_rejected_point_fraction": 0.7640212701916324
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0655",
+          "candidate_b": "C-0792",
+          "horizontal_distance_m": "0.40000000000000036",
+          "full_measurement_center_distance_m": "0.0006023075106087631",
+          "common_height_start_m": "2.5",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.0388479052588961",
+          "radius_b_m": "0.0392084365871546",
+          "radius_relative_difference": "0.009237720337178273",
+          "shared_accepted_point_count": "2256",
+          "accepted_point_jaccard": "0.9249692496924969",
+          "accepted_point_containment": "0.9703225806451613",
+          "shared_full_source_point_count": "9599",
+          "full_source_point_jaccard": "0.9547443803461308",
+          "full_source_point_containment": "0.9790901672786617",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0700",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0655.json"
+    },
+    {
+      "queue_id": "RQ15-0732",
+      "candidate_id": "C-0732",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0163",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 3,
+      "track_id": "T15-0816",
+      "track_source_height_count": 9,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 28.400000000000002,
+        "y": -15.52
+      },
+      "ground_z_m": -6.716967463493347,
+      "sampled_radius_m": 0.03374076283508107,
+      "point_crop_url": "data/phase1_75/points/C-0732.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0732",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 28.27973693405107,
+        "sampled_center_y": -15.329227172818861,
+        "sampled_radius_m": 0.03374076283508107,
+        "sampled_centreline_residual_p90_m": 0.011900871523191714,
+        "sampled_radius_residual_mad_m": 0.0007873284786821463,
+        "sampled_angular_coverage_deg": 260,
+        "sampled_median_angular_coverage_deg": 230,
+        "sampled_fit_residual_m": 0.005070386237030389,
+        "sampled_point_count": 191,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 28.281467410987986,
+        "full_center_y": -15.335817027119514,
+        "full_radius_m": 0.03700117699557995,
+        "full_centreline_residual_p90_m": 0.00316,
+        "full_radius_residual_mad_m": 0.001609645699952568,
+        "full_angular_coverage_deg": 320,
+        "full_median_angular_coverage_deg": 320,
+        "full_fit_residual_m": 0.005055904571130174,
+        "full_point_count": 2197,
+        "full_accepted_point_count": 1061,
+        "full_rejected_point_count": 1136,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5170687300864816,
+        "full_to_sampled_point_count_ratio": 11.502617801047121,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.0068132760206115065,
+        "radius_delta_m": 0.0032604141604988812,
+        "centreline_residual_delta_m": -0.008740871523191715,
+        "full_rejected_point_fraction": 0.5170687300864816
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0163",
+          "candidate_b": "C-0732",
+          "horizontal_distance_m": "0.3200000000000003",
+          "full_measurement_center_distance_m": "0.008202499280633806",
+          "common_height_start_m": "1.3",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.03714771566242452",
+          "radius_b_m": "0.03700117699557995",
+          "radius_relative_difference": "0.00395255172644187",
+          "shared_accepted_point_count": "1013",
+          "accepted_point_jaccard": "0.9134355275022543",
+          "accepted_point_containment": "0.9574669187145558",
+          "shared_full_source_point_count": "1578",
+          "full_source_point_jaccard": "0.6269368295589988",
+          "full_source_point_containment": "0.8283464566929134",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0816",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0732.json"
+    },
+    {
+      "queue_id": "RQ15-0736",
+      "candidate_id": "C-0736",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "INSUFFICIENT_EVIDENCE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0736",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 2.95,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0824",
+      "track_source_height_count": 1,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 28.48,
+        "y": -16.48
+      },
+      "ground_z_m": -6.711547636985779,
+      "sampled_radius_m": 0.021899205164385663,
+      "point_crop_url": "data/phase1_75/points/C-0736.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0736",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 28.45483691978481,
+        "sampled_center_y": -15.538538272311659,
+        "sampled_radius_m": 0.021899205164385663,
+        "sampled_centreline_residual_p90_m": 0.008168954567589082,
+        "sampled_radius_residual_mad_m": 0.0002491606324989751,
+        "sampled_angular_coverage_deg": 180,
+        "sampled_median_angular_coverage_deg": 140,
+        "sampled_fit_residual_m": 0.004262836544235953,
+        "sampled_point_count": 86,
+        "sampled_connected_component_count": 3,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 28.457858304165562,
+        "full_center_y": -15.537790649164943,
+        "full_radius_m": 0.029136256798966368,
+        "full_centreline_residual_p90_m": 0.004625,
+        "full_radius_residual_mad_m": 0.0012006088767936539,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 350,
+        "full_fit_residual_m": 0.005235701287058925,
+        "full_point_count": 1442,
+        "full_accepted_point_count": 462,
+        "full_rejected_point_count": 980,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.6796116504854369,
+        "full_to_sampled_point_count_ratio": 16.767441860465116,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.0031125076619590995,
+        "radius_delta_m": 0.007237051634580705,
+        "centreline_residual_delta_m": -0.0035439545675890827,
+        "full_rejected_point_fraction": 0.6796116504854369
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0736.json"
+    },
+    {
+      "queue_id": "RQ15-0766",
+      "candidate_id": "C-0766",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "STRONG_SAMPLED_TO_FULL_RADIUS_EXPANSION"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0766",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.65,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0906",
+      "track_source_height_count": 2,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 30.16,
+        "y": -7.599999999999998
+      },
+      "ground_z_m": -6.414824652671814,
+      "sampled_radius_m": 0.1065307804783416,
+      "point_crop_url": "data/phase1_75/points/C-0766.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0766",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 29.791855388664686,
+        "sampled_center_y": -8.019190699091236,
+        "sampled_radius_m": 0.1065307804783416,
+        "sampled_centreline_residual_p90_m": 0.008125361737891166,
+        "sampled_radius_residual_mad_m": 0.0038660222318778956,
+        "sampled_angular_coverage_deg": 260,
+        "sampled_median_angular_coverage_deg": 250,
+        "sampled_fit_residual_m": 0.006006913690116483,
+        "sampled_point_count": 252,
+        "sampled_connected_component_count": 4,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 29.76958127258342,
+        "full_center_y": -8.407029927491251,
+        "full_radius_m": 0.4742031677969011,
+        "full_centreline_residual_p90_m": 0.034279,
+        "full_radius_residual_mad_m": 0.02768354943812701,
+        "full_angular_coverage_deg": 270,
+        "full_median_angular_coverage_deg": 280,
+        "full_fit_residual_m": 0.02333005732351656,
+        "full_point_count": 8978,
+        "full_accepted_point_count": 2710,
+        "full_rejected_point_count": 6268,
+        "full_connected_component_count": 2,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.6981510358654489,
+        "full_to_sampled_point_count_ratio": 35.62698412698413,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.3884783177129976,
+        "radius_delta_m": 0.3676723873185595,
+        "centreline_residual_delta_m": 0.02615363826210883,
+        "full_rejected_point_fraction": 0.6981510358654489
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0766.json"
+    },
+    {
+      "queue_id": "RQ15-0774",
+      "candidate_id": "C-0774",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "DEFINITE_ALIAS_MEMBER",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0176",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.95,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 3,
+      "track_id": "T15-1137",
+      "track_source_height_count": 6,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 38.08,
+        "y": -14.799999999999999
+      },
+      "ground_z_m": -6.650053977966309,
+      "sampled_radius_m": 0.06421387589758594,
+      "point_crop_url": "data/phase1_75/points/C-0774.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0774",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements",
+        "Member of a definite Phase 1.5 measurement alias pair"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 38.36381346867681,
+        "sampled_center_y": -14.965810094859599,
+        "sampled_radius_m": 0.06421387589758594,
+        "sampled_centreline_residual_p90_m": 0.013489397448046158,
+        "sampled_radius_residual_mad_m": 0.006552230573528016,
+        "sampled_angular_coverage_deg": 140,
+        "sampled_median_angular_coverage_deg": 140,
+        "sampled_fit_residual_m": 0.00595785087107644,
+        "sampled_point_count": 157,
+        "sampled_connected_component_count": 4,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 38.36246029657713,
+        "full_center_y": -14.963858168209239,
+        "full_radius_m": 0.07344267508197787,
+        "full_centreline_residual_p90_m": 0.008316,
+        "full_radius_residual_mad_m": 0.0021482073972417387,
+        "full_angular_coverage_deg": 240,
+        "full_median_angular_coverage_deg": 240,
+        "full_fit_residual_m": 0.005187226119033503,
+        "full_point_count": 1540,
+        "full_accepted_point_count": 630,
+        "full_rejected_point_count": 910,
+        "full_connected_component_count": 5,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.5909090909090909,
+        "full_to_sampled_point_count_ratio": 9.80891719745223,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.0023750983936942733,
+        "radius_delta_m": 0.009228799184391928,
+        "centreline_residual_delta_m": -0.005173397448046157,
+        "full_rejected_point_fraction": 0.5909090909090909
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0176",
+          "candidate_b": "C-0774",
+          "horizontal_distance_m": "0.3394112549695444",
+          "full_measurement_center_distance_m": "0.0016778907990240707",
+          "common_height_start_m": "1.3",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.07392419603244237",
+          "radius_b_m": "0.07344267508197787",
+          "radius_relative_difference": "0.006534995916288812",
+          "shared_accepted_point_count": "595",
+          "accepted_point_jaccard": "0.8673469387755102",
+          "accepted_point_containment": "0.9444444444444444",
+          "shared_full_source_point_count": "1415",
+          "full_source_point_jaccard": "0.8654434250764526",
+          "full_source_point_containment": "0.932762030323006",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-1137",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0774.json"
+    },
+    {
+      "queue_id": "RQ15-0789",
+      "candidate_id": "C-0789",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "AUTO_HIGH_SUPPORT",
+      "canonical_phase1_candidate_id": "C-0789",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.7,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 2,
+      "track_id": "T15-0276",
+      "track_source_height_count": 6,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 13.28,
+        "y": -4.32
+      },
+      "ground_z_m": -6.526783800125122,
+      "sampled_radius_m": 0.07119656550771172,
+      "point_crop_url": "data/phase1_75/points/C-0789.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0789",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 13.35331919113651,
+        "sampled_center_y": -5.1629721767116346,
+        "sampled_radius_m": 0.07119656550771172,
+        "sampled_centreline_residual_p90_m": 0.00599100080111307,
+        "sampled_radius_residual_mad_m": 0.001025514206435943,
+        "sampled_angular_coverage_deg": 190,
+        "sampled_median_angular_coverage_deg": 190,
+        "sampled_fit_residual_m": 0.006042903341980635,
+        "sampled_point_count": 58,
+        "sampled_connected_component_count": 1,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 13.356061808073749,
+        "full_center_y": -5.166419983539232,
+        "full_radius_m": 0.06912839697099896,
+        "full_centreline_residual_p90_m": 0.006689,
+        "full_radius_residual_mad_m": 0.0013066673341611407,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.0052094811819319966,
+        "full_point_count": 2828,
+        "full_accepted_point_count": 716,
+        "full_rejected_point_count": 2112,
+        "full_connected_component_count": 5,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7468175388967468,
+        "full_to_sampled_point_count_ratio": 48.758620689655174,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.004405600933454355,
+        "radius_delta_m": -0.0020681685367127667,
+        "centreline_residual_delta_m": 0.0006979991988869299,
+        "full_rejected_point_fraction": 0.7468175388967468
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_OLD_RADIUS_CAP",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0789.json"
+    },
+    {
+      "queue_id": "RQ15-0792",
+      "candidate_id": "C-0792",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "AMBIGUOUS_MULTI_COMPONENT",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0655",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 2,
+      "track_id": "T15-0700",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 24.88,
+        "y": -14.0
+      },
+      "ground_z_m": -6.731871604919434,
+      "sampled_radius_m": 0.03702492403109934,
+      "point_crop_url": "data/phase1_75/points/C-0792.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0792",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 24.842082539465896,
+        "sampled_center_y": -13.351397238795153,
+        "sampled_radius_m": 0.03702492403109934,
+        "sampled_centreline_residual_p90_m": 0.0032807967466171204,
+        "sampled_radius_residual_mad_m": 0.0007610812450680252,
+        "sampled_angular_coverage_deg": 280,
+        "sampled_median_angular_coverage_deg": 280,
+        "sampled_fit_residual_m": 0.005541113476232157,
+        "sampled_point_count": 308,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 24.84247325739927,
+        "full_center_y": -13.352324050524526,
+        "full_radius_m": 0.0392084365871546,
+        "full_centreline_residual_p90_m": 0.003385,
+        "full_radius_residual_mad_m": 0.00028407455140917054,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.004598093585148897,
+        "full_point_count": 9924,
+        "full_accepted_point_count": 2397,
+        "full_rejected_point_count": 7527,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7584643288996372,
+        "full_to_sampled_point_count_ratio": 32.22077922077922,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.00100580340283985,
+        "radius_delta_m": 0.002183512556055263,
+        "centreline_residual_delta_m": 0.00010420325338287954,
+        "full_rejected_point_fraction": 0.7584643288996372
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0655",
+          "candidate_b": "C-0792",
+          "horizontal_distance_m": "0.40000000000000036",
+          "full_measurement_center_distance_m": "0.0006023075106087631",
+          "common_height_start_m": "2.5",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.0388479052588961",
+          "radius_b_m": "0.0392084365871546",
+          "radius_relative_difference": "0.009237720337178273",
+          "shared_accepted_point_count": "2256",
+          "accepted_point_jaccard": "0.9249692496924969",
+          "accepted_point_containment": "0.9703225806451613",
+          "shared_full_source_point_count": "9599",
+          "full_source_point_jaccard": "0.9547443803461308",
+          "full_source_point_containment": "0.9790901672786617",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0700",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0792.json"
+    },
+    {
+      "queue_id": "RQ15-0796",
+      "candidate_id": "C-0796",
+      "priority": 2,
+      "categories": [
+        "PROBABLE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "WEAK_GEOMETRY",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0796",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 2,
+      "track_id": "T15-0449",
+      "track_source_height_count": 3,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 18.880000000000003,
+        "y": -8.32
+      },
+      "ground_z_m": -6.7630150556564335,
+      "sampled_radius_m": 0.025992566069406375,
+      "point_crop_url": "data/phase1_75/points/C-0796.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0796",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a highest-ranked probable Phase 1.5 alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 18.90131414644893,
+        "sampled_center_y": -7.968784691520153,
+        "sampled_radius_m": 0.025992566069406375,
+        "sampled_centreline_residual_p90_m": 0.004492727241849102,
+        "sampled_radius_residual_mad_m": 0.0012742254043026195,
+        "sampled_angular_coverage_deg": 170,
+        "sampled_median_angular_coverage_deg": 200,
+        "sampled_fit_residual_m": 0.0052482116311428325,
+        "sampled_point_count": 110,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 18.9013563690937,
+        "full_center_y": -7.968960981686525,
+        "full_radius_m": 0.027855315939051464,
+        "full_centreline_residual_p90_m": 0.005112,
+        "full_radius_residual_mad_m": 0.0002516681746043935,
+        "full_angular_coverage_deg": 340,
+        "full_median_angular_coverage_deg": 340,
+        "full_fit_residual_m": 0.004432301507994683,
+        "full_point_count": 830,
+        "full_accepted_point_count": 759,
+        "full_rejected_point_count": 71,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.0855421686746988,
+        "full_to_sampled_point_count_ratio": 7.545454545454546,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.00018127596225425615,
+        "radius_delta_m": 0.001862749869645089,
+        "centreline_residual_delta_m": 0.0006192727581508985,
+        "full_rejected_point_fraction": 0.0855421686746988
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0128",
+          "candidate_b": "C-0796",
+          "horizontal_distance_m": "0.3298484500494127",
+          "full_measurement_center_distance_m": "0.0006650985692704383",
+          "common_height_start_m": "2.5",
+          "common_height_end_m": "2.75",
+          "centreline_distance_m": "0.09183199444650891",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.028023347989376217",
+          "radius_b_m": "0.027855315939051464",
+          "radius_relative_difference": "0.006014175662466718",
+          "shared_accepted_point_count": "718",
+          "accepted_point_jaccard": "0.9100126742712294",
+          "accepted_point_containment": "0.9573333333333334",
+          "shared_full_source_point_count": "786",
+          "full_source_point_jaccard": "0.9076212471131639",
+          "full_source_point_containment": "0.9538834951456311",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0449",
+          "same_canonical_track": "False",
+          "classification": "PROBABLE_ALIAS_REQUIRES_REVIEW",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0796.json"
+    },
+    {
+      "queue_id": "RQ15-0811",
+      "candidate_id": "C-0811",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0811",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 3.1,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 2,
+      "track_id": "T15-0425",
+      "track_source_height_count": 4,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 17.92,
+        "y": -5.919999999999998
+      },
+      "ground_z_m": -6.577585196495056,
+      "sampled_radius_m": 0.08477629312756653,
+      "point_crop_url": "data/phase1_75/points/C-0811.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0811",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 18.557589929767296,
+        "sampled_center_y": -5.359726289816868,
+        "sampled_radius_m": 0.08477629312756653,
+        "sampled_centreline_residual_p90_m": 0.014920859716721406,
+        "sampled_radius_residual_mad_m": 0.00634231187012442,
+        "sampled_angular_coverage_deg": 130,
+        "sampled_median_angular_coverage_deg": 150,
+        "sampled_fit_residual_m": 0.005591049339071106,
+        "sampled_point_count": 112,
+        "sampled_connected_component_count": 5,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 18.568171746367934,
+        "full_center_y": -5.347084276256537,
+        "full_radius_m": 0.08137072128797573,
+        "full_centreline_residual_p90_m": 0.018825,
+        "full_radius_residual_mad_m": 0.0025580763111227034,
+        "full_angular_coverage_deg": 360,
+        "full_median_angular_coverage_deg": 350,
+        "full_fit_residual_m": 0.005517121433731178,
+        "full_point_count": 2480,
+        "full_accepted_point_count": 482,
+        "full_rejected_point_count": 1998,
+        "full_connected_component_count": 4,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.8056451612903226,
+        "full_to_sampled_point_count_ratio": 22.142857142857142,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.016486216953234312,
+        "radius_delta_m": -0.003405571839590796,
+        "centreline_residual_delta_m": 0.0039041402832785954,
+        "full_rejected_point_fraction": 0.8056451612903226
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0811.json"
+    },
+    {
+      "queue_id": "RQ15-0877",
+      "candidate_id": "C-0877",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "UNVERIFIED",
+      "canonical_phase1_candidate_id": "C-0877",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 1.9,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0326",
+      "track_source_height_count": 5,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": false,
+      "position": {
+        "x": 15.040000000000001,
+        "y": -6.640000000000001
+      },
+      "ground_z_m": -6.720243191719055,
+      "sampled_radius_m": 0.05890677559002835,
+      "point_crop_url": "data/phase1_75/points/C-0877.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0877",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 14.532296954341561,
+        "sampled_center_y": -6.2446789820434425,
+        "sampled_radius_m": 0.05890677559002835,
+        "sampled_centreline_residual_p90_m": 0.00735051132131425,
+        "sampled_radius_residual_mad_m": 0.003024006240699248,
+        "sampled_angular_coverage_deg": 200,
+        "sampled_median_angular_coverage_deg": 190,
+        "sampled_fit_residual_m": 0.004232683786824342,
+        "sampled_point_count": 52,
+        "sampled_connected_component_count": 1,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 14.5363800027105,
+        "full_center_y": -6.238595517855317,
+        "full_radius_m": 0.0475850751011527,
+        "full_centreline_residual_p90_m": 0.015517,
+        "full_radius_residual_mad_m": 0.015405304763609816,
+        "full_angular_coverage_deg": 350,
+        "full_median_angular_coverage_deg": 350,
+        "full_fit_residual_m": 0.004788507423225575,
+        "full_point_count": 4838,
+        "full_accepted_point_count": 893,
+        "full_rejected_point_count": 3945,
+        "full_connected_component_count": 5,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.8154195948739148,
+        "full_to_sampled_point_count_ratio": 93.03846153846153,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.007326651384588938,
+        "radius_delta_m": -0.011321700488875645,
+        "centreline_residual_delta_m": 0.00816648867868575,
+        "full_rejected_point_fraction": 0.8154195948739148
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "RECOVERED_LOCAL_RADIUS_STABILITY",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0877.json"
+    },
+    {
+      "queue_id": "RQ15-0882",
+      "candidate_id": "C-0882",
+      "priority": 2,
+      "categories": [
+        "ADAPTIVE_HEIGHT_ACCEPTED_GEOMETRY",
+        "DEFINITE_ALIAS_MEMBER",
+        "FULL_RESIDUAL_LOW_LT_0_05_M",
+        "ADAPTIVE_POM_NEAR_OR_ABOVE_2_0_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0588",
+      "measurement_status": "MEASURABLE_ADAPTIVE_HEIGHT",
+      "measurement_rule": "ADAPTIVE_STABLE_STEM",
+      "measurement_height_m": 2.1,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0956",
+      "track_source_height_count": 6,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 32.879999999999995,
+        "y": -16.08
+      },
+      "ground_z_m": -6.697123289108276,
+      "sampled_radius_m": 0.09777397795959897,
+      "point_crop_url": "data/phase1_75/points/C-0882.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0882",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "All 16 Phase 1.5 adaptive-height accepted geometry measurements",
+        "Member of a definite Phase 1.5 measurement alias pair"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 33.27357071690288,
+        "sampled_center_y": -15.9384535508675,
+        "sampled_radius_m": 0.09777397795959897,
+        "sampled_centreline_residual_p90_m": 0.02211927964566951,
+        "sampled_radius_residual_mad_m": 0.005692794287789585,
+        "sampled_angular_coverage_deg": 150,
+        "sampled_median_angular_coverage_deg": 160,
+        "sampled_fit_residual_m": 0.004615767505808982,
+        "sampled_point_count": 55,
+        "sampled_connected_component_count": 1,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 33.27868362723823,
+        "full_center_y": -15.942943163546346,
+        "full_radius_m": 0.07266917507854631,
+        "full_centreline_residual_p90_m": 0.00936,
+        "full_radius_residual_mad_m": 0.0011020061654501423,
+        "full_angular_coverage_deg": 210,
+        "full_median_angular_coverage_deg": 230,
+        "full_fit_residual_m": 0.003414667020775973,
+        "full_point_count": 1041,
+        "full_accepted_point_count": 1024,
+        "full_rejected_point_count": 17,
+        "full_connected_component_count": 1,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.01633045148895293,
+        "full_to_sampled_point_count_ratio": 18.927272727272726,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.0068042982079984425,
+        "radius_delta_m": -0.025104802881052657,
+        "centreline_residual_delta_m": -0.01275927964566951,
+        "full_rejected_point_fraction": 0.01633045148895293
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0588",
+          "candidate_b": "C-0882",
+          "horizontal_distance_m": "0.35777087639997224",
+          "full_measurement_center_distance_m": "0.0029992979525338003",
+          "common_height_start_m": "2.0",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.07287198031581751",
+          "radius_b_m": "0.07266917507854631",
+          "radius_relative_difference": "0.0027869125639641145",
+          "shared_accepted_point_count": "965",
+          "accepted_point_jaccard": "0.8845096241979835",
+          "accepted_point_containment": "0.9442270058708415",
+          "shared_full_source_point_count": "982",
+          "full_source_point_jaccard": "0.8823000898472596",
+          "full_source_point_containment": "0.9451395572666025",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0956",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_UNSTABLE",
+          "LOWER_STEM_IRREGULAR",
+          "POSSIBLE_PROP_ROOT_ZONE",
+          "ADAPTIVE_HEIGHT_SELECTED",
+          "LARGE_LOWER_COMPONENT",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0882.json"
+    },
+    {
+      "queue_id": "RQ15-0889",
+      "candidate_id": "C-0889",
+      "priority": 2,
+      "categories": [
+        "DEFINITE_ALIAS_MEMBER",
+        "STANDARD_ACCEPTED_SMALL_RADIUS",
+        "FULL_RESIDUAL_LOW_LT_0_05_M"
+      ],
+      "candidate_geometry_status": "STEM_LIKE",
+      "identity_status": "DUPLICATE_ALIAS",
+      "canonical_phase1_candidate_id": "C-0463",
+      "measurement_status": "MEASURABLE_STANDARD_1_30",
+      "measurement_rule": "STANDARD_1_30",
+      "measurement_height_m": 1.3,
+      "source_providers": [
+        "MULTI_HEIGHT_DENSITY"
+      ],
+      "source_height_count_phase1": 1,
+      "track_id": "T15-0737",
+      "track_source_height_count": 10,
+      "phase1_candidate_fragmented_across_tracks": false,
+      "potential_duplicate": true,
+      "position": {
+        "x": 25.84,
+        "y": -14.72
+      },
+      "ground_z_m": -6.727671098709107,
+      "sampled_radius_m": 0.04225779142988675,
+      "point_crop_url": "data/phase1_75/points/C-0889.json",
+      "review_question": "Is this one of the accepted 63 a real, unique main stem?",
+      "review_item_id": "RQ175-0889",
+      "item_type": "CANDIDATE_EVIDENCE",
+      "selection_reasons": [
+        "Member of a definite Phase 1.5 measurement alias pair",
+        "Standard-height accepted sample in existing <0.10 sampled-radius band"
+      ],
+      "sampled_metrics": {
+        "sampled_center_x": 26.15882175873202,
+        "sampled_center_y": -13.958465636120952,
+        "sampled_radius_m": 0.04225779142988675,
+        "sampled_centreline_residual_p90_m": 0.0076364976787450895,
+        "sampled_radius_residual_mad_m": 0.0016581518462246564,
+        "sampled_angular_coverage_deg": 280,
+        "sampled_median_angular_coverage_deg": 270,
+        "sampled_fit_residual_m": 0.00620051080682134,
+        "sampled_point_count": 223,
+        "sampled_connected_component_count": 2,
+        "sampled_extraction_radius_m": 1.05,
+        "sampled_ransac_trials": 96
+      },
+      "full_metrics": {
+        "full_resolution_attempted": true,
+        "full_resolution_accepted": true,
+        "full_center_x": 26.158656281490533,
+        "full_center_y": -13.958293470351308,
+        "full_radius_m": 0.04037609857196227,
+        "full_centreline_residual_p90_m": 0.002812,
+        "full_radius_residual_mad_m": 0.00026798874574792547,
+        "full_angular_coverage_deg": 350,
+        "full_median_angular_coverage_deg": 360,
+        "full_fit_residual_m": 0.004395350523244266,
+        "full_point_count": 9618,
+        "full_accepted_point_count": 2052,
+        "full_rejected_point_count": 7566,
+        "full_connected_component_count": 3,
+        "full_valid_slice_count": 7,
+        "full_rejected_point_fraction": 0.7866500311915159,
+        "full_to_sampled_point_count_ratio": 43.130044843049326,
+        "full_extraction_radius_minimum_m": 0.9,
+        "full_extraction_radius_maximum_m": 1.6,
+        "full_ransac_trials": 240
+      },
+      "comparison_metrics": {
+        "center_shift_m": 0.00023879650267061197,
+        "radius_delta_m": -0.0018816928579244788,
+        "centreline_residual_delta_m": -0.00482449767874509,
+        "full_rejected_point_fraction": 0.7866500311915159
+      },
+      "residual_stratum": "LOW_LT_0_05_M",
+      "alias_relationships": [
+        {
+          "candidate_a": "C-0463",
+          "candidate_b": "C-0889",
+          "horizontal_distance_m": "0.6835202996254037",
+          "full_measurement_center_distance_m": "0.0033452996121955294",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04066523042250127",
+          "radius_b_m": "0.04037609857196227",
+          "radius_relative_difference": "0.007135417301923834",
+          "shared_accepted_point_count": "1854",
+          "accepted_point_jaccard": "0.8302731751007613",
+          "accepted_point_containment": "0.9083782459578638",
+          "shared_full_source_point_count": "8507",
+          "full_source_point_jaccard": "0.8135220426508559",
+          "full_source_point_containment": "0.900878957958276",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        },
+        {
+          "candidate_a": "C-0590",
+          "candidate_b": "C-0889",
+          "horizontal_distance_m": "0.32984845004941354",
+          "full_measurement_center_distance_m": "0.001791948646607164",
+          "common_height_start_m": "0.75",
+          "common_height_end_m": "3.25",
+          "centreline_distance_m": "0.0",
+          "measurement_height_difference_m": "0.0",
+          "radius_a_m": "0.04042353895873895",
+          "radius_b_m": "0.04037609857196227",
+          "radius_relative_difference": "0.0011742722672154833",
+          "shared_accepted_point_count": "1977",
+          "accepted_point_jaccard": "0.9387464387464387",
+          "accepted_point_containment": "0.9686428221460068",
+          "shared_full_source_point_count": "9237",
+          "full_source_point_jaccard": "0.9435137895812054",
+          "full_source_point_containment": "0.9717020828950137",
+          "source_seed_overlap_count": "0",
+          "source_seed_overlap_ids": "",
+          "common_alias_track_count": "1",
+          "common_alias_tracks": "T15-0737",
+          "same_canonical_track": "True",
+          "classification": "DEFINITE_ALIAS",
+          "deterministic_rule": "definite full_center<=0.12,line<=0.08,radius_delta<=0.20,accepted_containment>=0.50; probable full_center<=0.20,line<=0.15,radius_delta<=0.35,accepted_containment>=0.20"
+        }
+      ],
+      "failure": {
+        "primary_stage": "NONE_ACCEPTED",
+        "primary_reason": "NONE_ACCEPTED",
+        "all_reason_codes": [
+          "STANDARD_HEIGHT_STABLE",
+          "RECOVERED_CENTRELINE_RESIDUAL",
+          "FULL_RESOLUTION_MEASUREMENT_ACCEPTED",
+          "FULL_RESOLUTION_MEASUREMENT_QUALITY_VALIDATED"
+        ]
+      },
+      "evidence_url": "data/phase1_75/evidence/C-0889.json"
+    },
+    {
+      "review_item_id": "MANUAL-LARGE-ROOT-001",
+      "item_type": "MANUAL_SEED_PLACEHOLDER",
+      "candidate_id": null,
+      "priority": 3,
+      "categories": [
+        "MANUAL_VISUALLY_CONFIRMED_LARGE_ROOT_WORKFLOW"
+      ],
+      "selection_reasons": [
+        "Placeholder for a reviewer-clicked large mangrove with roots above 1.30 m and a clean upper stem near 2.50 m"
+      ],
+      "candidate_geometry_status": "HUMAN_PLACEHOLDER_NOT_EVALUATED",
+      "identity_status": "UNVERIFIED",
+      "measurement_status": "NOT_MEASURED",
+      "measurement_rule": null,
+      "measurement_height_m": null,
+      "source_providers": [
+        "MANUAL_REVIEW_CLICK"
+      ],
+      "position": null,
+      "ground_z_m": null,
+      "point_crop_url": null,
+      "evidence_url": null,
+      "manual_seed_defaults": {
+        "approximate_xy": null,
+        "clean_height_hint_m": 2.5,
+        "human_label": "TRUE_MAIN_STEM",
+        "reviewer_note": "",
+        "hint_is_automatic_final_pom": false
+      },
+      "review_question": "Does the visually known large-root mangrove form a stable upper stem track?"
+    }
+  ]
+}
