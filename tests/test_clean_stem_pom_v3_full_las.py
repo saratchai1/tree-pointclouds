@@ -216,12 +216,19 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
             self.assertIn(required, html)
         for required in (
             "drawOverview", "overviewVisibleRecords", "OVERVIEW_POSITION_CHUNKS",
+            "WebGLRenderer", "PerspectiveCamera", "OrbitControls", "Raycaster",
+            "buildOverviewCloud", "buildOverviewMarkers", "frameOverviewTop",
             "drawPlane", "drawProfile", "drawCross", "candidate_profile", "full_resolution_tube_point_count",
         ):
             self.assertIn(required, script)
         for required in (".overview-panel", "#overviewCanvas", "max-width: 100%", "@media (max-width: 900px)", "@media (max-width: 620px)"):
             self.assertIn(required, styles)
-        self.assertIn('href="styles.css?v=full-las-v3-1"', html)
+        self.assertIn('WHOLE-CLOUD OVERVIEW · INTERACTIVE 3D', html)
+        self.assertIn('id="overviewTopView"', html)
+        self.assertIn('"three":"../viewer/vendor/three.module.js"', html)
+        self.assertIn('href="styles.css?v=full-las-v3-1-overview-3d"', html)
+        self.assertNotIn("createImageData", script)
+        self.assertNotIn("drawOverviewCloudLayer", script)
         self.assertNotIn("rayong", (html + script + styles).lower())
 
     def test_15_overview_maps_every_tree_and_preserves_measurement_truth(self):
@@ -258,6 +265,9 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
         self.assertIn('data-overview-filter="MANUAL_REVIEW"', html)
         self.assertIn('const OVERVIEW_POINT_BUDGET = 300000', script)
         self.assertIn('record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"', script)
+        self.assertIn('new THREE.Points', script)
+        self.assertIn('new THREE.Sprite', script)
+        self.assertIn('new THREE.GridHelper', script)
         self.assertIn('fetchJson("point-cloud/metadata.json")', script)
         self.assertNotIn('../../data/metadata.json', script)
         self.assertNotIn("lidar-measurements/viewer-index.json", script)

@@ -15,12 +15,24 @@ const state = {
     positions: null,
     filter: "ALL",
     selectedTreeId: null,
-    markerScreens: [],
-    view: null,
-    drag: null,
+    THREE: null,
+    renderer: null,
+    scene: null,
+    camera: null,
+    controls: null,
+    cloud: null,
+    grid: null,
+    markerLayer: null,
+    markers: new Map(),
+    markerHitTargets: [],
+    markerTextures: new Map(),
+    selectedLabel: null,
+    raycaster: null,
+    pointer: null,
+    pointerStart: null,
     frameMode: "TREES",
     displayedPointCount: 0,
-    drawPending: false,
+    animationFrame: null,
   },
 };
 
@@ -462,11 +474,12 @@ function bindOverview() {
       document.querySelectorAll("[data-overview-filter]").forEach((item) => {
         item.setAttribute("aria-pressed", String(item === button));
       });
-      scheduleOverviewDraw();
+      syncOverviewMarkerVisibility();
     });
   });
   $("overviewFrameTrees").addEventListener("click", frameOverviewTrees);
   $("overviewFrameCloud").addEventListener("click", frameOverviewCloud);
+  $("overviewTopView").addEventListener("click", frameOverviewTop);
   $("overviewOpenDetail").addEventListener("click", () => {
     if (!state.overview.selectedTreeId) return;
     $("detailViewer").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -478,9 +491,8 @@ function bindOverview() {
   canvas.addEventListener("pointerup", overviewPointerUp);
   canvas.addEventListener("pointercancel", overviewPointerUp);
   canvas.addEventListener("pointerleave", () => {
-    if (!state.overview.drag) canvas.removeAttribute("title");
+    if (!state.overview.pointerStart) canvas.removeAttribute("title");
   });
-  canvas.addEventListener("wheel", overviewWheel, { passive: false });
 }
 
 async function fetchArrayBuffer(path) {
@@ -490,6 +502,39 @@ async function fetchArrayBuffer(path) {
 }
 
 async function initOverview() {
+  const [THREE, { OrbitControls }] = await Promise.all([
+    import("three"),
+    import("../viewer/vendor/OrbitControls.js"),
+  ]);
+  state.overview.THREE = THREE;
+
+  const canvas = $("overviewCanvas");
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, logarithmicDepthBuffer: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+  renderer.setClearColor(0x050c09, 1);
+  if ("outputColorSpace" in renderer) renderer.outputColorSpace = THREE.SRGBColorSpace;
+  state.overview.renderer = renderer;
+
+  const scene = new THREE.Scene();
+  scene.add(new THREE.HemisphereLight(0xd8f5e2, 0x13251a, 1.15));
+  state.overview.scene = scene;
+
+  const camera = new THREE.PerspectiveCamera(52, 1, 0.03, 600);
+  camera.up.set(0, 1, 0);
+  state.overview.camera = camera;
+
+  const controls = new OrbitControls(camera, canvas);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.07;
+  controls.screenSpacePanning = true;
+  controls.rotateSpeed = 0.72;
+  controls.zoomSpeed = 0.9;
+  controls.minDistance = 0.35;
+  controls.maxDistance = 480;
+  state.overview.controls = controls;
+  state.overview.raycaster = new THREE.Raycaster();
+  state.overview.pointer = new THREE.Vector2();
+
   const metadata = await fetchJson("point-cloud/metadata.json");
   state.overview.metadata = metadata;
   $("overviewStatus").textContent = `กำลังโหลด browser sample ${Number(metadata.points).toLocaleString()} จุด…`;
@@ -512,75 +557,31 @@ async function initOverview() {
   });
   state.overview.positions = outputIndex === sampledPointCount ? positions : positions.slice(0, outputIndex * 3);
   state.overview.displayedPointCount = outputIndex;
+  buildOverviewCloud();
+  buildOverviewMarkers();
+  updateOverviewSelection(state.current);
+  resizeOverviewCanvas();
   frameOverviewTrees();
+  animateOverview();
   $("overviewStatus").textContent = overviewStatusText();
 }
 
 function overviewStatusText() {
   const metadata = state.overview.metadata;
   if (!metadata || !state.overview.positions) return "กำลังโหลด point cloud ภาพรวม…";
-  return `มุมบนแสดง ${state.overview.displayedPointCount.toLocaleString()} จุดจาก browser sample ${Number(metadata.points).toLocaleString()} จุด · LAS ต้นฉบับ ${Number(metadata.sourcePointCount).toLocaleString()} จุด`;
+  return `3D แสดง ${state.overview.displayedPointCount.toLocaleString()} จุดจาก browser sample ${Number(metadata.points).toLocaleString()} จุด · LAS ต้นฉบับ ${Number(metadata.sourcePointCount).toLocaleString()} จุด`;
 }
 
 function resizeOverviewCanvas() {
-  const canvas = $("overviewCanvas");
-  if (!canvas) return;
-  const ratio = Math.min(devicePixelRatio || 1, 2);
-  const rectangle = canvas.getBoundingClientRect();
-  const width = Math.max(1, Math.floor(rectangle.width * ratio));
-  const height = Math.max(1, Math.floor(rectangle.height * ratio));
-  if (canvas.width !== width || canvas.height !== height) {
-    canvas.width = width;
-    canvas.height = height;
-  }
-  scheduleOverviewDraw();
-}
-
-function overviewCanvasSize() {
-  const canvas = $("overviewCanvas");
-  return { width: Math.max(canvas.clientWidth, 1), height: Math.max(canvas.clientHeight, 1) };
-}
-
-function setOverviewBounds(bounds, mode) {
-  const { width, height } = overviewCanvasSize();
-  const spanX = Math.max(bounds.maxX - bounds.minX, 1);
-  const spanY = Math.max(bounds.maxY - bounds.minY, 1);
-  const padding = Math.min(70, Math.max(28, Math.min(width, height) * 0.09));
-  state.overview.view = {
-    centerX: (bounds.minX + bounds.maxX) / 2,
-    centerY: (bounds.minY + bounds.maxY) / 2,
-    scale: Math.max(0.1, Math.min((width - padding * 2) / spanX, (height - padding * 2) / spanY)),
-  };
-  state.overview.frameMode = mode;
-  scheduleOverviewDraw();
-}
-
-function frameOverviewTrees() {
-  if (!state.records.length) return;
-  const xs = state.records.map((record) => record.location.x);
-  const ys = state.records.map((record) => record.location.y);
-  setOverviewBounds({
-    minX: Math.min(...xs) - 2,
-    maxX: Math.max(...xs) + 2,
-    minY: Math.min(...ys) - 2,
-    maxY: Math.max(...ys) + 2,
-  }, "TREES");
-}
-
-function frameOverviewCloud() {
-  const position = state.overview.metadata?.attributes?.find((attribute) => attribute.name === "position");
-  if (!position?.min || !position?.max) return;
-  setOverviewBounds({ minX: position.min[0], maxX: position.max[0], minY: position.min[1], maxY: position.max[1] }, "CLOUD");
-}
-
-function overviewProject(x, y) {
-  const { width, height } = overviewCanvasSize();
-  const view = state.overview.view;
-  if (!view) return [0, 0];
-  return [
-    width / 2 + (x - view.centerX) * view.scale,
-    height / 2 - (y - view.centerY) * view.scale,
-  ];
+  const { renderer, camera } = state.overview;
+  if (!renderer || !camera) return;
+  const canvas = renderer.domElement;
+  const width = Math.max(canvas.clientWidth, 1);
+  const height = Math.max(canvas.clientHeight, 1);
+  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+  renderer.setSize(width, height, false);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
 }
 
 function overviewVisibleRecords() {
@@ -589,135 +590,263 @@ function overviewVisibleRecords() {
   return state.records;
 }
 
-function scheduleOverviewDraw() {
-  if (state.overview.drawPending) return;
-  state.overview.drawPending = true;
-  requestAnimationFrame(() => {
-    state.overview.drawPending = false;
-    drawOverview();
-  });
+function overviewSourceToScene(source) {
+  const THREE = state.overview.THREE;
+  return new THREE.Vector3(source[0], source[2], -source[1]);
 }
 
-function drawOverviewCloudLayer(context, width, height) {
-  const positions = state.overview.positions;
-  if (!positions || !state.overview.view) return;
-  const layer = document.createElement("canvas");
-  layer.width = Math.max(1, Math.round(width));
-  layer.height = Math.max(1, Math.round(height));
-  const layerContext = layer.getContext("2d");
-  const image = layerContext.createImageData(layer.width, layer.height);
-  const pixels = image.data;
-  const bounds = state.overview.metadata?.boundingBox;
-  const zMin = bounds?.min?.[2] ?? -9;
-  const zSpan = Math.max((bounds?.max?.[2] ?? 9) - zMin, 0.1);
-  const view = state.overview.view;
+function buildOverviewCloud() {
+  const { THREE, positions, metadata, scene } = state.overview;
+  const scenePositions = new Float32Array(positions.length);
+  const colors = new Uint8Array(positions.length);
+  const positionAttribute = metadata.attributes?.find((attribute) => attribute.name === "position");
+  const zMin = positionAttribute?.min?.[2] ?? metadata.boundingBox?.min?.[2] ?? -9;
+  const zMax = positionAttribute?.max?.[2] ?? metadata.boundingBox?.max?.[2] ?? 9;
+  const zSpan = Math.max(zMax - zMin, 0.1);
   for (let index = 0; index < positions.length; index += 3) {
-    const screenX = Math.round(width / 2 + (positions[index] - view.centerX) * view.scale);
-    const screenY = Math.round(height / 2 - (positions[index + 1] - view.centerY) * view.scale);
-    if (screenX < 0 || screenX >= layer.width || screenY < 0 || screenY >= layer.height) continue;
-    const pixelIndex = (screenY * layer.width + screenX) * 4;
+    scenePositions[index] = positions[index];
+    scenePositions[index + 1] = positions[index + 2];
+    scenePositions[index + 2] = -positions[index + 1];
     const heightRatio = Math.max(0, Math.min(1, (positions[index + 2] - zMin) / zSpan));
-    const brightness = pixels[pixelIndex + 3] ? 24 : 0;
-    pixels[pixelIndex] = Math.min(255, 46 + Math.round(heightRatio * 54) + brightness);
-    pixels[pixelIndex + 1] = Math.min(255, 76 + Math.round(heightRatio * 76) + brightness);
-    pixels[pixelIndex + 2] = Math.min(255, 62 + Math.round(heightRatio * 58) + brightness);
-    pixels[pixelIndex + 3] = 235;
+    colors[index] = 46 + Math.round(heightRatio * 58);
+    colors[index + 1] = 76 + Math.round(heightRatio * 86);
+    colors[index + 2] = 62 + Math.round(heightRatio * 65);
   }
-  layerContext.putImageData(image, 0, 0);
-  context.drawImage(layer, 0, 0, width, height);
-}
-
-function drawOverviewFootprint(context) {
-  const position = state.overview.metadata?.attributes?.find((attribute) => attribute.name === "position");
-  if (!position?.min || !position?.max) return;
-  const topLeft = overviewProject(position.min[0], position.max[1]);
-  const bottomRight = overviewProject(position.max[0], position.min[1]);
-  context.strokeStyle = "rgba(117, 191, 255, .42)";
-  context.lineWidth = 1;
-  context.setLineDash([6, 6]);
-  context.strokeRect(topLeft[0], topLeft[1], bottomRight[0] - topLeft[0], bottomRight[1] - topLeft[1]);
-  context.setLineDash([]);
-}
-
-function drawOverviewMarkers(context) {
-  const records = overviewVisibleRecords();
-  state.overview.markerScreens = [];
-  records.forEach((record) => {
-    const screen = overviewProject(record.location.x, record.location.y);
-    const selected = record.tree_id === state.overview.selectedTreeId;
-    const radius = selected ? 6.5 : 4.5;
-    state.overview.markerScreens.push({ record, x: screen[0], y: screen[1] });
-    context.save();
-    context.shadowColor = "rgba(0, 0, 0, .95)";
-    context.shadowBlur = 4;
-    if (selected) {
-      context.strokeStyle = "#ffffff";
-      context.lineWidth = 2.5;
-      context.beginPath();
-      context.arc(screen[0], screen[1], radius + 4, 0, Math.PI * 2);
-      context.stroke();
-    }
-    context.shadowBlur = 0;
-    context.strokeStyle = STATUS_COLORS[record.status];
-    context.fillStyle = STATUS_COLORS[record.status];
-    context.lineWidth = record.status === "MANUAL_REVIEW" ? 2.4 : 1.5;
-    context.beginPath();
-    context.arc(screen[0], screen[1], radius, 0, Math.PI * 2);
-    if (record.status === "MANUAL_REVIEW") {
-      context.fillStyle = "rgba(5, 12, 9, .86)";
-      context.fill();
-      context.stroke();
-      context.beginPath();
-      context.moveTo(screen[0] - 2.2, screen[1] - 2.2);
-      context.lineTo(screen[0] + 2.2, screen[1] + 2.2);
-      context.moveTo(screen[0] + 2.2, screen[1] - 2.2);
-      context.lineTo(screen[0] - 2.2, screen[1] + 2.2);
-      context.stroke();
-    } else {
-      context.fill();
-      context.strokeStyle = "rgba(3, 9, 6, .92)";
-      context.stroke();
-    }
-    context.restore();
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.BufferAttribute(scenePositions, 3));
+  geometry.setAttribute("color", new THREE.Uint8BufferAttribute(colors, 3, true));
+  geometry.computeBoundingBox();
+  geometry.computeBoundingSphere();
+  const material = new THREE.PointsMaterial({
+    size: 0.065,
+    sizeAttenuation: true,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.92,
   });
-  const selected = records.find((record) => record.tree_id === state.overview.selectedTreeId);
-  if (selected) drawOverviewLabel(context, selected);
+  const cloud = new THREE.Points(geometry, material);
+  cloud.name = "td008-browser-sample";
+  scene.add(cloud);
+  state.overview.cloud = cloud;
+
+  const size = geometry.boundingBox.getSize(new THREE.Vector3());
+  const gridSize = Math.ceil(Math.max(size.x, size.z) / 10) * 10;
+  const grid = new THREE.GridHelper(gridSize, Math.max(10, Math.round(gridSize / 5)), 0x3d7050, 0x193726);
+  grid.position.y = geometry.boundingBox.min.y - 0.04;
+  grid.material.opacity = 0.34;
+  grid.material.transparent = true;
+  scene.add(grid);
+  state.overview.grid = grid;
 }
 
-function drawOverviewLabel(context, record) {
-  const [x, y] = overviewProject(record.location.x, record.location.y);
-  const label = `${record.tree_id} · ${record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"}`;
-  context.save();
-  context.font = "700 12px system-ui, sans-serif";
-  const width = context.measureText(label).width + 18;
-  const { width: canvasWidth } = overviewCanvasSize();
-  const left = Math.max(8, Math.min(canvasWidth - width - 8, x + 12));
-  const top = Math.max(44, y - 29);
-  context.fillStyle = "rgba(3, 10, 7, .94)";
-  context.strokeStyle = STATUS_COLORS[record.status];
-  context.lineWidth = 1.5;
+function overviewMarkerTexture(status, selected = false) {
+  const key = `${status}-${selected ? "selected" : "normal"}`;
+  if (state.overview.markerTextures.has(key)) return state.overview.markerTextures.get(key);
+  const { THREE } = state.overview;
+  const canvas = document.createElement("canvas");
+  canvas.width = 128;
+  canvas.height = 128;
+  const context = canvas.getContext("2d");
+  context.translate(64, 64);
+  if (selected) {
+    context.strokeStyle = "#ffffff";
+    context.lineWidth = 9;
+    context.beginPath();
+    context.arc(0, 0, 48, 0, Math.PI * 2);
+    context.stroke();
+  }
+  context.shadowColor = "rgba(0, 0, 0, .95)";
+  context.shadowBlur = 12;
+  context.strokeStyle = STATUS_COLORS[status];
+  context.fillStyle = status === "MANUAL_REVIEW" ? "rgba(5, 12, 9, .92)" : STATUS_COLORS[status];
+  context.lineWidth = status === "MANUAL_REVIEW" ? 10 : 6;
   context.beginPath();
-  context.roundRect(left, top, width, 24, 5);
+  context.arc(0, 0, 30, 0, Math.PI * 2);
+  context.fill();
+  context.stroke();
+  if (status === "MANUAL_REVIEW") {
+    context.shadowBlur = 0;
+    context.lineWidth = 8;
+    context.beginPath();
+    context.moveTo(-13, -13);
+    context.lineTo(13, 13);
+    context.moveTo(13, -13);
+    context.lineTo(-13, 13);
+    context.stroke();
+  }
+  const texture = new THREE.CanvasTexture(canvas);
+  if ("colorSpace" in texture) texture.colorSpace = THREE.SRGBColorSpace;
+  texture.needsUpdate = true;
+  state.overview.markerTextures.set(key, texture);
+  return texture;
+}
+
+function overviewMarkerSource(record) {
+  const plane = record.measurement_plane || record.best_review_plane;
+  if (plane?.center_xyz) return plane.center_xyz;
+  return [record.location.x, record.location.y, (record.local_ground_z_m || 0) + 1.3];
+}
+
+function buildOverviewMarkers() {
+  const { THREE, scene } = state.overview;
+  const layer = new THREE.Group();
+  layer.name = "v31-tree-status-markers";
+  scene.add(layer);
+  state.overview.markerLayer = layer;
+  state.records.forEach((record) => {
+    const material = new THREE.SpriteMaterial({
+      map: overviewMarkerTexture(record.status),
+      transparent: true,
+      depthTest: false,
+      depthWrite: false,
+    });
+    const sprite = new THREE.Sprite(material);
+    sprite.position.copy(overviewSourceToScene(overviewMarkerSource(record)));
+    sprite.renderOrder = 20;
+    sprite.userData.treeId = record.tree_id;
+    sprite.userData.pixelWidth = 28;
+    sprite.userData.pixelHeight = 28;
+    layer.add(sprite);
+    state.overview.markers.set(record.tree_id, { record, sprite });
+    state.overview.markerHitTargets.push(sprite);
+  });
+  syncOverviewMarkerVisibility();
+}
+
+function syncOverviewMarkerVisibility() {
+  if (!state.overview.markers.size) return;
+  const visible = new Set(overviewVisibleRecords().map((record) => record.tree_id));
+  state.overview.markers.forEach(({ sprite }, treeId) => {
+    sprite.visible = visible.has(treeId);
+  });
+  if (state.overview.selectedLabel) {
+    state.overview.selectedLabel.visible = visible.has(state.overview.selectedTreeId);
+  }
+}
+
+function overviewFrameBox(box, direction, mode) {
+  const { THREE, camera, controls } = state.overview;
+  if (!THREE || !camera || !controls || !box || box.isEmpty()) return;
+  const sphere = box.getBoundingSphere(new THREE.Sphere());
+  const radius = Math.max(sphere.radius, 1.2);
+  const verticalFov = THREE.MathUtils.degToRad(camera.fov);
+  const fitDistance = radius / Math.sin(verticalFov / 2);
+  camera.position.copy(sphere.center).add(direction.clone().normalize().multiplyScalar(fitDistance * 1.08));
+  controls.target.copy(sphere.center);
+  controls.minDistance = Math.max(0.25, radius * 0.025);
+  controls.maxDistance = Math.max(80, radius * 12);
+  controls.update();
+  state.overview.frameMode = mode;
+}
+
+function overviewTreeBox() {
+  const { THREE } = state.overview;
+  if (!THREE || !state.overview.markers.size) return null;
+  const box = new THREE.Box3();
+  state.overview.markers.forEach(({ sprite }) => box.expandByPoint(sprite.position));
+  return box.expandByScalar(1.8);
+}
+
+function frameOverviewTrees() {
+  const { THREE } = state.overview;
+  if (!THREE) return;
+  overviewFrameBox(overviewTreeBox(), new THREE.Vector3(1.15, 0.92, 1.15), "TREES");
+}
+
+function frameOverviewCloud() {
+  const { THREE, cloud } = state.overview;
+  if (!THREE || !cloud?.geometry?.boundingBox) return;
+  overviewFrameBox(cloud.geometry.boundingBox.clone(), new THREE.Vector3(1.2, 0.82, 1.2), "CLOUD");
+}
+
+function frameOverviewTop() {
+  const { THREE, cloud } = state.overview;
+  if (!THREE) return;
+  const box = state.overview.frameMode === "CLOUD" ? cloud?.geometry?.boundingBox?.clone() : overviewTreeBox();
+  overviewFrameBox(box, new THREE.Vector3(0, 1, 0.001), state.overview.frameMode);
+}
+
+function disposeOverviewSelectedLabel() {
+  const label = state.overview.selectedLabel;
+  if (!label) return;
+  label.removeFromParent();
+  label.material.map?.dispose();
+  label.material.dispose();
+  state.overview.selectedLabel = null;
+}
+
+function makeOverviewSelectedLabel(record, anchor) {
+  const { THREE } = state.overview;
+  const labelText = `${record.tree_id} · ${record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"}`;
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  context.font = "700 34px system-ui, sans-serif";
+  canvas.width = Math.ceil(context.measureText(labelText).width + 48);
+  canvas.height = 64;
+  context.font = "700 34px system-ui, sans-serif";
+  context.fillStyle = "rgba(3, 10, 7, .95)";
+  context.strokeStyle = STATUS_COLORS[record.status];
+  context.lineWidth = 4;
+  context.beginPath();
+  context.roundRect(2, 2, canvas.width - 4, canvas.height - 4, 12);
   context.fill();
   context.stroke();
   context.fillStyle = "#edf6ef";
-  context.fillText(label, left + 9, top + 16);
-  context.restore();
+  context.fillText(labelText, 24, 43);
+  const texture = new THREE.CanvasTexture(canvas);
+  if ("colorSpace" in texture) texture.colorSpace = THREE.SRGBColorSpace;
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: texture,
+    transparent: true,
+    depthTest: false,
+    depthWrite: false,
+  }));
+  sprite.position.copy(anchor);
+  sprite.renderOrder = 21;
+  sprite.userData.anchor = anchor.clone();
+  sprite.userData.pixelWidth = Math.min(260, canvas.width / 2);
+  sprite.userData.pixelHeight = 32;
+  sprite.userData.labelOffsetPixels = 34;
+  return sprite;
+}
+
+function scaleOverviewSprites() {
+  const { THREE, camera, renderer } = state.overview;
+  if (!THREE || !camera || !renderer) return;
+  const canvasHeight = Math.max(renderer.domElement.clientHeight, 1);
+  const verticalFov = THREE.MathUtils.degToRad(camera.fov);
+  const scaleSprite = (sprite) => {
+    const anchor = sprite.userData.anchor || sprite.position;
+    const distance = Math.max(camera.position.distanceTo(anchor), 0.1);
+    const worldPerPixel = 2 * Math.tan(verticalFov / 2) * distance / canvasHeight;
+    if (sprite.userData.anchor) {
+      sprite.position.copy(anchor).addScaledVector(camera.up, worldPerPixel * sprite.userData.labelOffsetPixels);
+    }
+    sprite.scale.set(
+      worldPerPixel * sprite.userData.pixelWidth,
+      worldPerPixel * sprite.userData.pixelHeight,
+      1,
+    );
+  };
+  state.overview.markerHitTargets.forEach(scaleSprite);
+  if (state.overview.selectedLabel) scaleSprite(state.overview.selectedLabel);
 }
 
 function drawOverview() {
-  const canvas = $("overviewCanvas");
-  if (!canvas || !state.overview.view) return;
-  const ratio = Math.min(devicePixelRatio || 1, 2);
-  const { width, height } = overviewCanvasSize();
-  const context = canvas.getContext("2d");
-  context.setTransform(ratio, 0, 0, ratio, 0, 0);
-  context.clearRect(0, 0, width, height);
-  context.fillStyle = "#050c09";
-  context.fillRect(0, 0, width, height);
-  drawOverviewCloudLayer(context, width, height);
-  drawOverviewFootprint(context);
-  drawOverviewMarkers(context);
+  const { renderer, scene, camera, controls } = state.overview;
+  if (!renderer || !scene || !camera || !controls) return;
+  controls.update();
+  scaleOverviewSprites();
+  renderer.render(scene, camera);
+}
+
+function animateOverview() {
+  if (state.overview.animationFrame) cancelAnimationFrame(state.overview.animationFrame);
+  const tick = () => {
+    drawOverview();
+    state.overview.animationFrame = requestAnimationFrame(tick);
+  };
+  tick();
 }
 
 function updateOverviewSelection(record) {
@@ -732,24 +861,31 @@ function updateOverviewSelection(record) {
     $("overviewSelectedDetail").textContent = `MANUAL_REVIEW · ไม่ปล่อยตัวเลขอัตโนมัติ · ${reasons}`;
   }
   $("overviewOpenDetail").disabled = false;
-  scheduleOverviewDraw();
+  const marker = state.overview.markers.get(record.tree_id);
+  if (marker) {
+    state.overview.markers.forEach(({ record: item, sprite }) => {
+      const selected = item.tree_id === record.tree_id;
+      sprite.material.map = overviewMarkerTexture(item.status, selected);
+      sprite.userData.pixelWidth = selected ? 36 : 28;
+      sprite.userData.pixelHeight = selected ? 36 : 28;
+      sprite.material.needsUpdate = true;
+    });
+    disposeOverviewSelectedLabel();
+    state.overview.selectedLabel = makeOverviewSelectedLabel(record, marker.sprite.position);
+    state.overview.markerLayer.add(state.overview.selectedLabel);
+    syncOverviewMarkerVisibility();
+  }
 }
 
 function overviewHitTest(event) {
-  const canvas = $("overviewCanvas");
-  const rectangle = canvas.getBoundingClientRect();
-  const x = event.clientX - rectangle.left;
-  const y = event.clientY - rectangle.top;
-  let nearest = null;
-  let nearestDistance = 14;
-  state.overview.markerScreens.forEach((marker) => {
-    const distance = Math.hypot(marker.x - x, marker.y - y);
-    if (distance < nearestDistance) {
-      nearest = marker.record;
-      nearestDistance = distance;
-    }
-  });
-  return nearest;
+  const { camera, raycaster, pointer, markerHitTargets } = state.overview;
+  if (!camera || !raycaster || !pointer) return null;
+  const rectangle = $("overviewCanvas").getBoundingClientRect();
+  pointer.x = ((event.clientX - rectangle.left) / rectangle.width) * 2 - 1;
+  pointer.y = -((event.clientY - rectangle.top) / rectangle.height) * 2 + 1;
+  raycaster.setFromCamera(pointer, camera);
+  const hit = raycaster.intersectObjects(markerHitTargets.filter((sprite) => sprite.visible), false)[0];
+  return hit ? state.overview.markers.get(hit.object.userData.treeId)?.record || null : null;
 }
 
 function selectOverviewTree(record) {
@@ -761,28 +897,20 @@ function selectOverviewTree(record) {
 }
 
 function overviewPointerDown(event) {
-  if (!state.overview.view) return;
-  const view = state.overview.view;
-  state.overview.drag = {
+  if (!state.overview.renderer) return;
+  state.overview.pointerStart = {
+    pointerId: event.pointerId,
     x: event.clientX,
     y: event.clientY,
-    centerX: view.centerX,
-    centerY: view.centerY,
     moved: false,
   };
-  event.currentTarget.setPointerCapture(event.pointerId);
   event.currentTarget.classList.add("is-dragging");
 }
 
 function overviewPointerMove(event) {
-  const drag = state.overview.drag;
-  if (drag) {
-    const deltaX = event.clientX - drag.x;
-    const deltaY = event.clientY - drag.y;
-    drag.moved = drag.moved || Math.hypot(deltaX, deltaY) > 4;
-    state.overview.view.centerX = drag.centerX - deltaX / state.overview.view.scale;
-    state.overview.view.centerY = drag.centerY + deltaY / state.overview.view.scale;
-    scheduleOverviewDraw();
+  const start = state.overview.pointerStart;
+  if (start?.pointerId === event.pointerId) {
+    start.moved = start.moved || Math.hypot(event.clientX - start.x, event.clientY - start.y) > 5;
     return;
   }
   const record = overviewHitTest(event);
@@ -792,30 +920,11 @@ function overviewPointerMove(event) {
 }
 
 function overviewPointerUp(event) {
-  const drag = state.overview.drag;
-  if (!drag) return;
-  if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+  const start = state.overview.pointerStart;
+  if (!start || start.pointerId !== event.pointerId) return;
   event.currentTarget.classList.remove("is-dragging");
-  state.overview.drag = null;
-  if (!drag.moved) selectOverviewTree(overviewHitTest(event));
-}
-
-function overviewWheel(event) {
-  if (!state.overview.view) return;
-  event.preventDefault();
-  const canvas = $("overviewCanvas");
-  const rectangle = canvas.getBoundingClientRect();
-  const x = event.clientX - rectangle.left;
-  const y = event.clientY - rectangle.top;
-  const { width, height } = overviewCanvasSize();
-  const view = state.overview.view;
-  const worldX = view.centerX + (x - width / 2) / view.scale;
-  const worldY = view.centerY - (y - height / 2) / view.scale;
-  const nextScale = Math.max(0.4, Math.min(240, view.scale * Math.exp(-event.deltaY * 0.001)));
-  view.scale = nextScale;
-  view.centerX = worldX - (x - width / 2) / nextScale;
-  view.centerY = worldY + (y - height / 2) / nextScale;
-  scheduleOverviewDraw();
+  state.overview.pointerStart = null;
+  if (!start.moved) selectOverviewTree(overviewHitTest(event));
 }
 
 init().catch((error) => {
