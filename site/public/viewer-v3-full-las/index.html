@@ -66,7 +66,45 @@
     </aside>
 
     <section class="workspace">
-      <article class="viewer panel">
+      <article class="panel overview-panel" aria-labelledby="overviewTitle">
+        <div class="overview-head">
+          <div>
+            <p class="eyebrow">WHOLE-CLOUD OVERVIEW · TOP VIEW</p>
+            <h2 id="overviewTitle">ภาพรวมตำแหน่ง Tree ID ทั้งแปลง</h2>
+            <p class="muted">จุดสีแสดงผล V3.1 ของทั้ง 118 ต้นบน point cloud สมุทรสงคราม · คลิกจุดเพื่อเปิดต้นเดียวกันในรายละเอียดด้านล่าง</p>
+          </div>
+          <div class="overview-frame-controls" aria-label="กรอบมุมมองภาพรวม">
+            <button id="overviewFrameTrees" type="button">ซูม Tree IDs</button>
+            <button id="overviewFrameCloud" type="button">ดู point cloud ทั้งหมด</button>
+          </div>
+        </div>
+
+        <div class="overview-filter" aria-label="กรองสถานะการวัด">
+          <button type="button" data-overview-filter="ALL" aria-pressed="true"><strong>118</strong><span>ทั้งหมด</span></button>
+          <button type="button" data-overview-filter="MEASURABLE" aria-pressed="false"><strong>60</strong><span>วัดได้</span></button>
+          <button type="button" data-overview-filter="MANUAL_REVIEW" aria-pressed="false"><strong>58</strong><span>ยังวัดไม่ได้</span></button>
+        </div>
+
+        <div class="overview-stage">
+          <canvas id="overviewCanvas" aria-label="แผนที่มุมบนของ point cloud และตำแหน่งต้นไม้ทั้ง 118 ต้น"></canvas>
+          <div class="overview-legend" aria-label="คำอธิบายสี">
+            <span class="standard">STANDARD_DBH · 21</span>
+            <span class="alternative">ALTERNATIVE_POM · 39</span>
+            <span class="manual">ยังวัดไม่ได้ · 58</span>
+          </div>
+          <p id="overviewStatus" class="overview-status">กำลังโหลด point cloud ภาพรวม…</p>
+        </div>
+
+        <div class="overview-selection">
+          <div>
+            <strong id="overviewSelectedTree">ยังไม่ได้เลือกต้นไม้</strong>
+            <p id="overviewSelectedDetail" class="muted">ลากเพื่อเลื่อน · scroll เพื่อซูม · คลิกจุดสีเพื่อดูสถานะและเหตุผล</p>
+          </div>
+          <button id="overviewOpenDetail" type="button" disabled>ดูรายละเอียดต้นนี้</button>
+        </div>
+      </article>
+
+      <article id="detailViewer" class="viewer panel">
         <div class="viewer-head">
           <div><strong id="treeTitle">—</strong><span id="treeState"></span></div>
           <div><button id="resetView">รีเซ็ตมุม</button><button id="topView">มองจากบน</button></div>
@@ -108,6 +146,6 @@
       <article class="panel provenance-card"><h2>Provenance และข้อจำกัด</h2><div id="provenance"></div></article>
     </section>
   </main>
-  <script src="app.js?v=full-las-v3-1"></script>
+  <script src="app.js?v=full-las-v3-1-overview"></script>
 </body>
 </html>

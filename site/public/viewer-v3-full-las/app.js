@@ -10,9 +10,23 @@ const state = {
   evidence: null,
   view: { yaw: -0.55, pitch: 0.32, zoom: 165 },
   drag: null,
+  overview: {
+    metadata: null,
+    positions: null,
+    filter: "ALL",
+    selectedTreeId: null,
+    markerScreens: [],
+    view: null,
+    drag: null,
+    frameMode: "TREES",
+    displayedPointCount: 0,
+    drawPending: false,
+  },
 };
 
 const STATUS_COLORS = { STANDARD_DBH: "#75bfff", ALTERNATIVE_POM: "#ffd166", MANUAL_REVIEW: "#ff915f" };
+const OVERVIEW_POSITION_CHUNKS = ["positions-00.glbin", "positions-01.glbin", "positions-02.glbin"];
+const OVERVIEW_POINT_BUDGET = 300000;
 const QUALITY_LABELS = {
   angular_coverage: "arc coverage",
   fit_quality: "คุณภาพ circle fit",
@@ -66,6 +80,10 @@ async function init() {
   bind();
   resize();
   applyFilters(new URLSearchParams(location.search).get("tree"));
+  initOverview().catch((error) => {
+    $("overviewStatus").textContent = `โหลด point cloud ภาพรวมไม่สำเร็จ: ${error.message}`;
+    console.error(error);
+  });
 }
 
 function bind() {
@@ -90,6 +108,7 @@ function bind() {
     state.view.zoom = Math.max(35, Math.min(550, state.view.zoom * Math.exp(-event.deltaY * 0.001)));
     drawCloud();
   }, { passive: false });
+  bindOverview();
   window.addEventListener("resize", resize);
 }
 
@@ -134,6 +153,7 @@ async function selectTree(treeId) {
   state.evidence = null;
   state.view = { yaw: -0.55, pitch: 0.32, zoom: 165 };
   $("treeSelect").value = treeId;
+  updateOverviewSelection(state.current);
   history.replaceState(null, "", `${location.pathname}?tree=${encodeURIComponent(treeId)}`);
   render();
   const shardName = state.evidenceIndex.trees[treeId];
@@ -256,6 +276,7 @@ function resizeCanvas(canvas) {
 
 function resize() {
   ["cloudCanvas", "profileCanvas", "crossCanvas"].forEach((id) => resizeCanvas($(id)));
+  resizeOverviewCanvas();
   render();
 }
 
@@ -432,6 +453,369 @@ function pointerMove(event) {
 function pointerUp(event) {
   if (state.drag && event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
   state.drag = null;
+}
+
+function bindOverview() {
+  document.querySelectorAll("[data-overview-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.overview.filter = button.dataset.overviewFilter;
+      document.querySelectorAll("[data-overview-filter]").forEach((item) => {
+        item.setAttribute("aria-pressed", String(item === button));
+      });
+      scheduleOverviewDraw();
+    });
+  });
+  $("overviewFrameTrees").addEventListener("click", frameOverviewTrees);
+  $("overviewFrameCloud").addEventListener("click", frameOverviewCloud);
+  $("overviewOpenDetail").addEventListener("click", () => {
+    if (!state.overview.selectedTreeId) return;
+    $("detailViewer").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  const canvas = $("overviewCanvas");
+  canvas.addEventListener("pointerdown", overviewPointerDown);
+  canvas.addEventListener("pointermove", overviewPointerMove);
+  canvas.addEventListener("pointerup", overviewPointerUp);
+  canvas.addEventListener("pointercancel", overviewPointerUp);
+  canvas.addEventListener("pointerleave", () => {
+    if (!state.overview.drag) canvas.removeAttribute("title");
+  });
+  canvas.addEventListener("wheel", overviewWheel, { passive: false });
+}
+
+async function fetchArrayBuffer(path) {
+  const response = await fetch(path, { cache: "force-cache" });
+  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+  return response.arrayBuffer();
+}
+
+async function initOverview() {
+  const metadata = await fetchJson("../../data/metadata.json");
+  state.overview.metadata = metadata;
+  $("overviewStatus").textContent = `กำลังโหลด browser sample ${Number(metadata.points).toLocaleString()} จุด…`;
+  const buffers = await Promise.all(OVERVIEW_POSITION_CHUNKS.map((name) => fetchArrayBuffer(`../../data/${name}?v=v31-overview`)));
+  const totalPointCount = buffers.reduce((total, buffer) => total + buffer.byteLength / 12, 0);
+  const stride = Math.max(1, Math.ceil(totalPointCount / OVERVIEW_POINT_BUDGET));
+  const sampledPointCount = Math.ceil(totalPointCount / stride);
+  const positions = new Float32Array(sampledPointCount * 3);
+  let sourceIndex = 0;
+  let outputIndex = 0;
+  buffers.forEach((buffer) => {
+    const chunk = new Float32Array(buffer);
+    for (let index = 0; index < chunk.length; index += 3, sourceIndex += 1) {
+      if (sourceIndex % stride !== 0) continue;
+      positions[outputIndex * 3] = chunk[index];
+      positions[outputIndex * 3 + 1] = chunk[index + 1];
+      positions[outputIndex * 3 + 2] = chunk[index + 2];
+      outputIndex += 1;
+    }
+  });
+  state.overview.positions = outputIndex === sampledPointCount ? positions : positions.slice(0, outputIndex * 3);
+  state.overview.displayedPointCount = outputIndex;
+  frameOverviewTrees();
+  $("overviewStatus").textContent = overviewStatusText();
+}
+
+function overviewStatusText() {
+  const metadata = state.overview.metadata;
+  if (!metadata || !state.overview.positions) return "กำลังโหลด point cloud ภาพรวม…";
+  return `มุมบนแสดง ${state.overview.displayedPointCount.toLocaleString()} จุดจาก browser sample ${Number(metadata.points).toLocaleString()} จุด · LAS ต้นฉบับ ${Number(metadata.sourcePointCount).toLocaleString()} จุด`;
+}
+
+function resizeOverviewCanvas() {
+  const canvas = $("overviewCanvas");
+  if (!canvas) return;
+  const ratio = Math.min(devicePixelRatio || 1, 2);
+  const rectangle = canvas.getBoundingClientRect();
+  const width = Math.max(1, Math.floor(rectangle.width * ratio));
+  const height = Math.max(1, Math.floor(rectangle.height * ratio));
+  if (canvas.width !== width || canvas.height !== height) {
+    canvas.width = width;
+    canvas.height = height;
+  }
+  scheduleOverviewDraw();
+}
+
+function overviewCanvasSize() {
+  const canvas = $("overviewCanvas");
+  return { width: Math.max(canvas.clientWidth, 1), height: Math.max(canvas.clientHeight, 1) };
+}
+
+function setOverviewBounds(bounds, mode) {
+  const { width, height } = overviewCanvasSize();
+  const spanX = Math.max(bounds.maxX - bounds.minX, 1);
+  const spanY = Math.max(bounds.maxY - bounds.minY, 1);
+  const padding = Math.min(70, Math.max(28, Math.min(width, height) * 0.09));
+  state.overview.view = {
+    centerX: (bounds.minX + bounds.maxX) / 2,
+    centerY: (bounds.minY + bounds.maxY) / 2,
+    scale: Math.max(0.1, Math.min((width - padding * 2) / spanX, (height - padding * 2) / spanY)),
+  };
+  state.overview.frameMode = mode;
+  scheduleOverviewDraw();
+}
+
+function frameOverviewTrees() {
+  if (!state.records.length) return;
+  const xs = state.records.map((record) => record.location.x);
+  const ys = state.records.map((record) => record.location.y);
+  setOverviewBounds({
+    minX: Math.min(...xs) - 2,
+    maxX: Math.max(...xs) + 2,
+    minY: Math.min(...ys) - 2,
+    maxY: Math.max(...ys) + 2,
+  }, "TREES");
+}
+
+function frameOverviewCloud() {
+  const position = state.overview.metadata?.attributes?.find((attribute) => attribute.name === "position");
+  if (!position?.min || !position?.max) return;
+  setOverviewBounds({ minX: position.min[0], maxX: position.max[0], minY: position.min[1], maxY: position.max[1] }, "CLOUD");
+}
+
+function overviewProject(x, y) {
+  const { width, height } = overviewCanvasSize();
+  const view = state.overview.view;
+  if (!view) return [0, 0];
+  return [
+    width / 2 + (x - view.centerX) * view.scale,
+    height / 2 - (y - view.centerY) * view.scale,
+  ];
+}
+
+function overviewVisibleRecords() {
+  if (state.overview.filter === "MEASURABLE") return state.records.filter((record) => record.automatic_measurement);
+  if (state.overview.filter === "MANUAL_REVIEW") return state.records.filter((record) => record.status === "MANUAL_REVIEW");
+  return state.records;
+}
+
+function scheduleOverviewDraw() {
+  if (state.overview.drawPending) return;
+  state.overview.drawPending = true;
+  requestAnimationFrame(() => {
+    state.overview.drawPending = false;
+    drawOverview();
+  });
+}
+
+function drawOverviewCloudLayer(context, width, height) {
+  const positions = state.overview.positions;
+  if (!positions || !state.overview.view) return;
+  const layer = document.createElement("canvas");
+  layer.width = Math.max(1, Math.round(width));
+  layer.height = Math.max(1, Math.round(height));
+  const layerContext = layer.getContext("2d");
+  const image = layerContext.createImageData(layer.width, layer.height);
+  const pixels = image.data;
+  const bounds = state.overview.metadata?.boundingBox;
+  const zMin = bounds?.min?.[2] ?? -9;
+  const zSpan = Math.max((bounds?.max?.[2] ?? 9) - zMin, 0.1);
+  const view = state.overview.view;
+  for (let index = 0; index < positions.length; index += 3) {
+    const screenX = Math.round(width / 2 + (positions[index] - view.centerX) * view.scale);
+    const screenY = Math.round(height / 2 - (positions[index + 1] - view.centerY) * view.scale);
+    if (screenX < 0 || screenX >= layer.width || screenY < 0 || screenY >= layer.height) continue;
+    const pixelIndex = (screenY * layer.width + screenX) * 4;
+    const heightRatio = Math.max(0, Math.min(1, (positions[index + 2] - zMin) / zSpan));
+    const brightness = pixels[pixelIndex + 3] ? 24 : 0;
+    pixels[pixelIndex] = Math.min(255, 46 + Math.round(heightRatio * 54) + brightness);
+    pixels[pixelIndex + 1] = Math.min(255, 76 + Math.round(heightRatio * 76) + brightness);
+    pixels[pixelIndex + 2] = Math.min(255, 62 + Math.round(heightRatio * 58) + brightness);
+    pixels[pixelIndex + 3] = 235;
+  }
+  layerContext.putImageData(image, 0, 0);
+  context.drawImage(layer, 0, 0, width, height);
+}
+
+function drawOverviewFootprint(context) {
+  const position = state.overview.metadata?.attributes?.find((attribute) => attribute.name === "position");
+  if (!position?.min || !position?.max) return;
+  const topLeft = overviewProject(position.min[0], position.max[1]);
+  const bottomRight = overviewProject(position.max[0], position.min[1]);
+  context.strokeStyle = "rgba(117, 191, 255, .42)";
+  context.lineWidth = 1;
+  context.setLineDash([6, 6]);
+  context.strokeRect(topLeft[0], topLeft[1], bottomRight[0] - topLeft[0], bottomRight[1] - topLeft[1]);
+  context.setLineDash([]);
+}
+
+function drawOverviewMarkers(context) {
+  const records = overviewVisibleRecords();
+  state.overview.markerScreens = [];
+  records.forEach((record) => {
+    const screen = overviewProject(record.location.x, record.location.y);
+    const selected = record.tree_id === state.overview.selectedTreeId;
+    const radius = selected ? 6.5 : 4.5;
+    state.overview.markerScreens.push({ record, x: screen[0], y: screen[1] });
+    context.save();
+    context.shadowColor = "rgba(0, 0, 0, .95)";
+    context.shadowBlur = 4;
+    if (selected) {
+      context.strokeStyle = "#ffffff";
+      context.lineWidth = 2.5;
+      context.beginPath();
+      context.arc(screen[0], screen[1], radius + 4, 0, Math.PI * 2);
+      context.stroke();
+    }
+    context.shadowBlur = 0;
+    context.strokeStyle = STATUS_COLORS[record.status];
+    context.fillStyle = STATUS_COLORS[record.status];
+    context.lineWidth = record.status === "MANUAL_REVIEW" ? 2.4 : 1.5;
+    context.beginPath();
+    context.arc(screen[0], screen[1], radius, 0, Math.PI * 2);
+    if (record.status === "MANUAL_REVIEW") {
+      context.fillStyle = "rgba(5, 12, 9, .86)";
+      context.fill();
+      context.stroke();
+      context.beginPath();
+      context.moveTo(screen[0] - 2.2, screen[1] - 2.2);
+      context.lineTo(screen[0] + 2.2, screen[1] + 2.2);
+      context.moveTo(screen[0] + 2.2, screen[1] - 2.2);
+      context.lineTo(screen[0] - 2.2, screen[1] + 2.2);
+      context.stroke();
+    } else {
+      context.fill();
+      context.strokeStyle = "rgba(3, 9, 6, .92)";
+      context.stroke();
+    }
+    context.restore();
+  });
+  const selected = records.find((record) => record.tree_id === state.overview.selectedTreeId);
+  if (selected) drawOverviewLabel(context, selected);
+}
+
+function drawOverviewLabel(context, record) {
+  const [x, y] = overviewProject(record.location.x, record.location.y);
+  const label = `${record.tree_id} · ${record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"}`;
+  context.save();
+  context.font = "700 12px system-ui, sans-serif";
+  const width = context.measureText(label).width + 18;
+  const { width: canvasWidth } = overviewCanvasSize();
+  const left = Math.max(8, Math.min(canvasWidth - width - 8, x + 12));
+  const top = Math.max(44, y - 29);
+  context.fillStyle = "rgba(3, 10, 7, .94)";
+  context.strokeStyle = STATUS_COLORS[record.status];
+  context.lineWidth = 1.5;
+  context.beginPath();
+  context.roundRect(left, top, width, 24, 5);
+  context.fill();
+  context.stroke();
+  context.fillStyle = "#edf6ef";
+  context.fillText(label, left + 9, top + 16);
+  context.restore();
+}
+
+function drawOverview() {
+  const canvas = $("overviewCanvas");
+  if (!canvas || !state.overview.view) return;
+  const ratio = Math.min(devicePixelRatio || 1, 2);
+  const { width, height } = overviewCanvasSize();
+  const context = canvas.getContext("2d");
+  context.setTransform(ratio, 0, 0, ratio, 0, 0);
+  context.clearRect(0, 0, width, height);
+  context.fillStyle = "#050c09";
+  context.fillRect(0, 0, width, height);
+  drawOverviewCloudLayer(context, width, height);
+  drawOverviewFootprint(context);
+  drawOverviewMarkers(context);
+}
+
+function updateOverviewSelection(record) {
+  if (!record) return;
+  state.overview.selectedTreeId = record.tree_id;
+  $("overviewSelectedTree").textContent = `${record.tree_id} · ${record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"}`;
+  if (record.automatic_measurement) {
+    const pom = `${format(record.measurement_height_agl_m)} ม. AGL`;
+    $("overviewSelectedDetail").textContent = `${record.status} · POM ${pom} · เส้นรอบวง ${format(record.circumference_cm)} ซม. · ยังไม่ field-verified`;
+  } else {
+    const reasons = (record.reason_codes || []).slice(0, 3).join(" · ") || "ต้องตรวจด้วยคน";
+    $("overviewSelectedDetail").textContent = `MANUAL_REVIEW · ไม่ปล่อยตัวเลขอัตโนมัติ · ${reasons}`;
+  }
+  $("overviewOpenDetail").disabled = false;
+  scheduleOverviewDraw();
+}
+
+function overviewHitTest(event) {
+  const canvas = $("overviewCanvas");
+  const rectangle = canvas.getBoundingClientRect();
+  const x = event.clientX - rectangle.left;
+  const y = event.clientY - rectangle.top;
+  let nearest = null;
+  let nearestDistance = 14;
+  state.overview.markerScreens.forEach((marker) => {
+    const distance = Math.hypot(marker.x - x, marker.y - y);
+    if (distance < nearestDistance) {
+      nearest = marker.record;
+      nearestDistance = distance;
+    }
+  });
+  return nearest;
+}
+
+function selectOverviewTree(record) {
+  if (!record) return;
+  $("statusFilter").value = "";
+  $("detectionFilter").value = "";
+  $("treeSearch").value = "";
+  applyFilters(record.tree_id);
+}
+
+function overviewPointerDown(event) {
+  if (!state.overview.view) return;
+  const view = state.overview.view;
+  state.overview.drag = {
+    x: event.clientX,
+    y: event.clientY,
+    centerX: view.centerX,
+    centerY: view.centerY,
+    moved: false,
+  };
+  event.currentTarget.setPointerCapture(event.pointerId);
+  event.currentTarget.classList.add("is-dragging");
+}
+
+function overviewPointerMove(event) {
+  const drag = state.overview.drag;
+  if (drag) {
+    const deltaX = event.clientX - drag.x;
+    const deltaY = event.clientY - drag.y;
+    drag.moved = drag.moved || Math.hypot(deltaX, deltaY) > 4;
+    state.overview.view.centerX = drag.centerX - deltaX / state.overview.view.scale;
+    state.overview.view.centerY = drag.centerY + deltaY / state.overview.view.scale;
+    scheduleOverviewDraw();
+    return;
+  }
+  const record = overviewHitTest(event);
+  event.currentTarget.title = record
+    ? `${record.tree_id} · ${record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"} · ${record.status}`
+    : "";
+}
+
+function overviewPointerUp(event) {
+  const drag = state.overview.drag;
+  if (!drag) return;
+  if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+  event.currentTarget.classList.remove("is-dragging");
+  state.overview.drag = null;
+  if (!drag.moved) selectOverviewTree(overviewHitTest(event));
+}
+
+function overviewWheel(event) {
+  if (!state.overview.view) return;
+  event.preventDefault();
+  const canvas = $("overviewCanvas");
+  const rectangle = canvas.getBoundingClientRect();
+  const x = event.clientX - rectangle.left;
+  const y = event.clientY - rectangle.top;
+  const { width, height } = overviewCanvasSize();
+  const view = state.overview.view;
+  const worldX = view.centerX + (x - width / 2) / view.scale;
+  const worldY = view.centerY - (y - height / 2) / view.scale;
+  const nextScale = Math.max(0.4, Math.min(240, view.scale * Math.exp(-event.deltaY * 0.001)));
+  view.scale = nextScale;
+  view.centerX = worldX - (x - width / 2) / nextScale;
+  view.centerY = worldY + (y - height / 2) / nextScale;
+  scheduleOverviewDraw();
 }
 
 init().catch((error) => {

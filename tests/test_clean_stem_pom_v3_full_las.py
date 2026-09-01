@@ -212,14 +212,53 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
         html = (directory / "index.html").read_text(encoding="utf-8")
         script = (directory / "app.js").read_text(encoding="utf-8")
         styles = (directory / "styles.css").read_text(encoding="utf-8")
-        for required in ("cloudCanvas", "profileCanvas", "crossCanvas", "measurements.csv", "measurements.json"):
+        for required in ("overviewCanvas", "cloudCanvas", "profileCanvas", "crossCanvas", "measurements.csv", "measurements.json"):
             self.assertIn(required, html)
-        for required in ("drawPlane", "drawProfile", "drawCross", "candidate_profile", "full_resolution_tube_point_count"):
+        for required in (
+            "drawOverview", "overviewVisibleRecords", "OVERVIEW_POSITION_CHUNKS",
+            "drawPlane", "drawProfile", "drawCross", "candidate_profile", "full_resolution_tube_point_count",
+        ):
             self.assertIn(required, script)
-        for required in ("max-width: 100%", "@media (max-width: 900px)", "@media (max-width: 620px)"):
+        for required in (".overview-panel", "#overviewCanvas", "max-width: 100%", "@media (max-width: 900px)", "@media (max-width: 620px)"):
             self.assertIn(required, styles)
         self.assertIn('href="styles.css?v=full-las-v3-1"', html)
         self.assertNotIn("rayong", (html + script + styles).lower())
+
+    def test_15_overview_maps_every_tree_and_preserves_measurement_truth(self):
+        metadata = read_json(ROOT / "site/public/data/metadata.json")
+        position = next(attribute for attribute in metadata["attributes"] if attribute["name"] == "position")
+        minimum, maximum = position["min"], position["max"]
+        automatic = manual = 0
+        for record in self.records:
+            x = record["location"]["x"]
+            y = record["location"]["y"]
+            z = record["local_ground_z_m"]
+            self.assertTrue(all(math.isfinite(value) for value in (x, y, z)), record["tree_id"])
+            self.assertGreaterEqual(x, minimum[0], record["tree_id"])
+            self.assertLessEqual(x, maximum[0], record["tree_id"])
+            self.assertGreaterEqual(y, minimum[1], record["tree_id"])
+            self.assertLessEqual(y, maximum[1], record["tree_id"])
+            self.assertGreaterEqual(z, minimum[2], record["tree_id"])
+            self.assertLessEqual(z, maximum[2], record["tree_id"])
+            if record["automatic_measurement"]:
+                automatic += 1
+                self.assertIn(record["status"], v31.AUTOMATIC_STATUSES)
+            else:
+                manual += 1
+                self.assertEqual(record["status"], "MANUAL_REVIEW")
+                self.assertIsNone(record["circumference_cm"])
+        self.assertEqual((automatic, manual), (60, 58))
+
+        directory = ROOT / "site/public/viewer-v3-full-las"
+        html = (directory / "index.html").read_text(encoding="utf-8")
+        script = (directory / "app.js").read_text(encoding="utf-8")
+        for label in ("ภาพรวมตำแหน่ง Tree ID ทั้งแปลง", "วัดได้", "ยังวัดไม่ได้"):
+            self.assertIn(label, html)
+        self.assertIn('data-overview-filter="MEASURABLE"', html)
+        self.assertIn('data-overview-filter="MANUAL_REVIEW"', html)
+        self.assertIn('const OVERVIEW_POINT_BUDGET = 300000', script)
+        self.assertIn('record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"', script)
+        self.assertNotIn("lidar-measurements/viewer-index.json", script)
 
 
 if __name__ == "__main__":
