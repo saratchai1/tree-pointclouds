@@ -258,7 +258,15 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
         self.assertIn('data-overview-filter="MANUAL_REVIEW"', html)
         self.assertIn('const OVERVIEW_POINT_BUDGET = 300000', script)
         self.assertIn('record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"', script)
+        self.assertIn('fetchJson("point-cloud/metadata.json")', script)
+        self.assertNotIn('../../data/metadata.json', script)
         self.assertNotIn("lidar-measurements/viewer-index.json", script)
+
+        production_package = read_json(ROOT / "rayong-preview/package.json")
+        production_build = production_package["scripts"]["build"]
+        self.assertIn("dist/viewer-v3-full-las/point-cloud", production_build)
+        for name in ("metadata.json", "positions-00.glbin", "positions-01.glbin", "positions-02.glbin"):
+            self.assertIn(name, production_build)
 
 
 if __name__ == "__main__":

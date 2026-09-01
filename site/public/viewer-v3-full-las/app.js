@@ -490,10 +490,10 @@ async function fetchArrayBuffer(path) {
 }
 
 async function initOverview() {
-  const metadata = await fetchJson("../../data/metadata.json");
+  const metadata = await fetchJson("point-cloud/metadata.json");
   state.overview.metadata = metadata;
   $("overviewStatus").textContent = `กำลังโหลด browser sample ${Number(metadata.points).toLocaleString()} จุด…`;
-  const buffers = await Promise.all(OVERVIEW_POSITION_CHUNKS.map((name) => fetchArrayBuffer(`../../data/${name}?v=v31-overview`)));
+  const buffers = await Promise.all(OVERVIEW_POSITION_CHUNKS.map((name) => fetchArrayBuffer(`point-cloud/${name}?v=v31-overview`)));
   const totalPointCount = buffers.reduce((total, buffer) => total + buffer.byteLength / 12, 0);
   const stride = Math.max(1, Math.ceil(totalPointCount / OVERVIEW_POINT_BUDGET));
   const sampledPointCount = Math.ceil(totalPointCount / stride);
