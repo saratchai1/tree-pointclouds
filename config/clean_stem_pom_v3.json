@@ -1,0 +1,78 @@
+{
+  "algorithm_version": "clean-stem-pom-v3.0.0",
+  "site_id": "SAMUT_SONGKHRAM_TD_008",
+  "height_search": {
+    "standard_height_m": 1.3,
+    "minimum_height_m": 1.3,
+    "requested_maximum_height_m": 4.0,
+    "published_evidence_maximum_height_m": 3.5,
+    "window_width_m": 0.3,
+    "profile_step_m": 0.05,
+    "minimum_alternative_height_m": 1.35
+  },
+  "quality_weights": {
+    "axis_verticality": 0.12,
+    "vertical_continuity": 0.18,
+    "circularity": 0.15,
+    "radius_stability": 0.2,
+    "angular_coverage": 0.18,
+    "fit_quality": 0.17
+  },
+  "quality_scaling": {
+    "maximum_inclination_deg": 30.0,
+    "target_angular_coverage_deg": 240.0,
+    "minimum_angular_coverage_deg": 60.0,
+    "maximum_relative_radius_mad": 0.3,
+    "maximum_relative_fit_rmse": 0.25,
+    "clutter_free_component_count": 4,
+    "maximum_component_count": 12,
+    "clutter_penalty_weight": 0.08,
+    "identity_penalty_weight": 0.08
+  },
+  "cross_lane_qa": {
+    "reference_height_m": 1.3,
+    "maximum_checked_window_center_m": 1.6,
+    "maximum_relative_diameter_difference": 0.45
+  },
+  "reliability": {
+    "standard": {
+      "minimum_quality_score": 65.0,
+      "minimum_supporting_slices": 5,
+      "minimum_angular_coverage_deg": 140.0,
+      "minimum_circularity": 0.55,
+      "maximum_relative_radius_mad": 0.25,
+      "maximum_relative_fit_rmse": 0.22,
+      "maximum_inclination_deg": 30.0,
+      "require_phase1_5_automatic_quality": true
+    },
+    "alternative": {
+      "minimum_quality_score": 60.0,
+      "minimum_supporting_slices": 4,
+      "minimum_angular_coverage_deg": 100.0,
+      "minimum_circularity": 0.5,
+      "maximum_relative_radius_mad": 0.3,
+      "maximum_relative_fit_rmse": 0.25,
+      "maximum_inclination_deg": 32.0,
+      "require_phase1_5_automatic_quality": false
+    }
+  },
+  "confidence_labels": {
+    "high_minimum_quality_score": 80.0,
+    "medium_minimum_quality_score": 65.0
+  },
+  "eligible_detection_statuses": [
+    "CONFIRMED",
+    "PROBABLE"
+  ],
+  "blocked_identity_review_statuses": [
+    "DUPLICATE",
+    "FALSE_POSITIVE",
+    "INCORRECT_MERGE"
+  ],
+  "blocked_human_labels": [
+    "PROP_ROOT_OR_ROOT_ONLY",
+    "BRANCH",
+    "OTHER_VEGETATION",
+    "DUPLICATE_OF"
+  ]
+}

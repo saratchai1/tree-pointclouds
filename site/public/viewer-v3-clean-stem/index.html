@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samut Songkhram · Clean-stem POM V3</title>
+  <link rel="stylesheet" href="styles.css?v=clean-stem-v3">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">SAMUT SONGKHRAM · SEPARATE V3 WORKFLOW</p>
+      <h1>AI เลือกช่วงลำต้นสะอาดเพื่อวัดเส้นรอบวง</h1>
+      <p id="headline">กำลังโหลดผล V3…</p>
+    </div>
+    <nav class="downloads" aria-label="ดาวน์โหลดผลลัพธ์">
+      <a href="data/measurements.csv" download>CSV</a>
+      <a href="data/measurements.json" download>JSON</a>
+      <a href="data/summary.json" download>Summary</a>
+      <a href="../viewer-v2-review/">V2 เดิม</a>
+    </nav>
+  </header>
+
+  <section class="notice">
+    <strong>V3 แยกจาก V2:</strong> เลือก 1.30 ม. เมื่อผ่านเกณฑ์ หรือเลือก clean-stem POM ที่สูงกว่าโดยไม่ผูกกับรากค้ำยัน +0.30 ม.
+    เป็นค่าคัดกรองจาก LiDAR ไม่ใช่ field ground truth และหลักฐานที่เผยแพร่มีถึง 3.50 ม. AGL เท่านั้น
+  </section>
+
+  <main class="layout">
+    <aside class="sidebar panel">
+      <h2>ภาพรวม coverage</h2>
+      <div class="summary-grid">
+        <div><span id="automaticCount">—</span><small>วัดอัตโนมัติ</small></div>
+        <div><span id="standardCount">—</span><small>DBH 1.30 ม.</small></div>
+        <div><span id="alternativeCount">—</span><small>POM ทางเลือก</small></div>
+        <div><span id="manualCount">—</span><small>ตรวจด้วยคน</small></div>
+      </div>
+      <p id="coverageDelta" class="coverage-delta"></p>
+
+      <h2>เลือกต้นไม้</h2>
+      <label>สถานะ
+        <select id="statusFilter">
+          <option value="">ทั้งหมด</option>
+          <option value="STANDARD_DBH">STANDARD_DBH</option>
+          <option value="ALTERNATIVE_POM">ALTERNATIVE_POM</option>
+          <option value="MANUAL_REVIEW">MANUAL_REVIEW</option>
+        </select>
+      </label>
+      <label>ระดับความมั่นใจ
+        <select id="confidenceFilter"><option value="">ทั้งหมด</option></select>
+      </label>
+      <label>ค้นหา Tree ID
+        <input id="treeSearch" placeholder="TREE_0103">
+      </label>
+      <label>Tree ID
+        <select id="treeSelect" size="13"></select>
+      </label>
+      <p id="filterCount" class="muted"></p>
+      <div id="statusLegend" class="status-legend"></div>
+    </aside>
+
+    <section class="workspace">
+      <article class="viewer panel">
+        <div class="viewer-head">
+          <div><strong id="treeTitle">—</strong><span id="treeState"></span></div>
+          <div><button id="resetView">รีเซ็ตมุม</button><button id="topView">มองจากบน</button></div>
+        </div>
+        <canvas id="cloudCanvas"></canvas>
+        <div class="legend">
+          <span class="points">sampled point cloud</span>
+          <span class="axis">local stem axis</span>
+          <span class="pom">selected POM</span>
+          <span class="standard">1.30 m reference</span>
+        </div>
+        <p id="cloudStatus" class="canvas-note">กำลังโหลด point crop…</p>
+      </article>
+
+      <div class="dashboard-grid">
+        <article class="panel card">
+          <h2>ผลการวัด</h2>
+          <div id="measurementMetrics"></div>
+        </article>
+        <article class="panel card">
+          <h2>Quality score</h2>
+          <div id="qualityScore" class="score-ring">—</div>
+          <div id="qualityBars"></div>
+        </article>
+        <article class="panel card chart-card">
+          <h2>Radius profile ตามความสูง</h2>
+          <canvas id="profileCanvas"></canvas>
+        </article>
+        <article class="panel card chart-card">
+          <h2>หน้าตัด 2D บนระนาบตั้งฉากแกนลำต้น</h2>
+          <canvas id="crossCanvas"></canvas>
+          <p id="crossNote" class="muted"></p>
+        </article>
+      </div>
+
+      <article class="panel evidence-card">
+        <div class="evidence-head">
+          <div><h2>Clean-window QA / debug</h2><p class="muted">หนึ่งแถวคือหน้าต่างหลาย slice กว้าง 0.30 ม.; แถวที่เลือกถูกไฮไลต์</p></div>
+          <div id="reasonCodes" class="chips"></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>POM</th><th>ช่วง</th><th>Score</th><th>Slices</th><th>Radius</th><th>Coverage</th><th>Circularity</th><th>Radius MAD</th><th>Fit RMSE</th><th>Inclination</th><th>Cross-lane Δ</th><th>Decision</th></tr></thead>
+            <tbody id="windowRows"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel provenance-card">
+        <h2>ขอบเขตการตีความ</h2>
+        <div id="provenance"></div>
+      </article>
+    </section>
+  </main>
+  <script src="app.js?v=clean-stem-v3"></script>
+</body>
+</html>
