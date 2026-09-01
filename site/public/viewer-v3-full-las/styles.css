@@ -1,0 +1,67 @@
+/* V3.1-only layout guards. Keep the frozen V2/V3 styles untouched. */
+.topbar > *,
+.workspace,
+.viewer,
+.dashboard-grid,
+.dashboard-grid > *,
+.evidence-card,
+.provenance-card {
+  min-width: 0;
+}
+
+.workspace,
+.viewer,
+.dashboard-grid,
+#cloudCanvas,
+.chart-card canvas {
+  width: 100%;
+  max-width: 100%;
+}
+
+#cloudCanvas,
+.chart-card canvas {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .sidebar,
+  .workspace {
+    width: 100%;
+  }
+
+  .evidence-head {
+    flex-direction: column;
+  }
+
+  .chips {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 620px) {
+  .topbar {
+    padding: .9rem;
+  }
+
+  .downloads {
+    gap: .35rem;
+  }
+
+  .downloads a,
+  .viewer-head button {
+    padding: .42rem .55rem;
+    font-size: .78rem;
+  }
+
+  .viewer-head {
+    flex-wrap: wrap;
+  }
+
+  .legend {
+    max-width: calc(100% - 1.6rem);
+  }
+
+  #treeSelect {
+    min-height: 220px;
+  }
+}

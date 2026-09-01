@@ -211,11 +211,15 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
         directory = ROOT / "site/public/viewer-v3-full-las"
         html = (directory / "index.html").read_text(encoding="utf-8")
         script = (directory / "app.js").read_text(encoding="utf-8")
+        styles = (directory / "styles.css").read_text(encoding="utf-8")
         for required in ("cloudCanvas", "profileCanvas", "crossCanvas", "measurements.csv", "measurements.json"):
             self.assertIn(required, html)
         for required in ("drawPlane", "drawProfile", "drawCross", "candidate_profile", "full_resolution_tube_point_count"):
             self.assertIn(required, script)
-        self.assertNotIn("rayong", (html + script).lower())
+        for required in ("max-width: 100%", "@media (max-width: 900px)", "@media (max-width: 620px)"):
+            self.assertIn(required, styles)
+        self.assertIn('href="styles.css?v=full-las-v3-1"', html)
+        self.assertNotIn("rayong", (html + script + styles).lower())
 
 
 if __name__ == "__main__":
