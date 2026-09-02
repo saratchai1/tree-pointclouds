@@ -3,6 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp -R ../site/public/. dist/ && cp index.html viewer.js dist/ && cp -R vendor/. dist/vendor/ && cp -R data/. dist/data/ && cp -R site-002 dist/site-002"
+    "build": "rm -rf dist && mkdir -p dist && cp -R ../site/public/. dist/ && cp index.html viewer.js dist/ && cp -R vendor/. dist/vendor/ && cp -R data/. dist/data/ && cp -R site-002 dist/site-002 && mkdir -p dist/viewer-v3-full-las/point-cloud && cp ../site/public/data/metadata.json ../site/public/data/positions-00.glbin ../site/public/data/positions-01.glbin ../site/public/data/positions-02.glbin dist/viewer-v3-full-las/point-cloud/"
   }
 }

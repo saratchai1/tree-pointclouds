@@ -1,0 +1,209 @@
+{
+  "algorithm_version": "clean-stem-pom-v3.1.0-full-las",
+  "automatic_measurement_count": 60,
+  "automatic_measurement_tree_ids": [
+    "TREE_0004",
+    "TREE_0008",
+    "TREE_0009",
+    "TREE_0010",
+    "TREE_0011",
+    "TREE_0017",
+    "TREE_0018",
+    "TREE_0022",
+    "TREE_0023",
+    "TREE_0026",
+    "TREE_0028",
+    "TREE_0030",
+    "TREE_0031",
+    "TREE_0032",
+    "TREE_0033",
+    "TREE_0035",
+    "TREE_0037",
+    "TREE_0039",
+    "TREE_0040",
+    "TREE_0041",
+    "TREE_0043",
+    "TREE_0044",
+    "TREE_0046",
+    "TREE_0048",
+    "TREE_0049",
+    "TREE_0050",
+    "TREE_0051",
+    "TREE_0052",
+    "TREE_0054",
+    "TREE_0055",
+    "TREE_0062",
+    "TREE_0066",
+    "TREE_0068",
+    "TREE_0070",
+    "TREE_0073",
+    "TREE_0074",
+    "TREE_0075",
+    "TREE_0076",
+    "TREE_0077",
+    "TREE_0078",
+    "TREE_0081",
+    "TREE_0082",
+    "TREE_0083",
+    "TREE_0084",
+    "TREE_0091",
+    "TREE_0094",
+    "TREE_0095",
+    "TREE_0097",
+    "TREE_0099",
+    "TREE_0100",
+    "TREE_0102",
+    "TREE_0103",
+    "TREE_0104",
+    "TREE_0105",
+    "TREE_0107",
+    "TREE_0108",
+    "TREE_0110",
+    "TREE_0112",
+    "TREE_0113",
+    "TREE_0117"
+  ],
+  "confidence_is_calibrated": false,
+  "coverage_comparison": {
+    "accuracy_comparison_performed": false,
+    "interpretation": "Coverage comparison only; no field-verified accuracy claim.",
+    "metric": "tree_count_with_automatic_geometry_measurement",
+    "net_change_from_v2": 31,
+    "net_change_from_v3": 18,
+    "newly_automatic_vs_v3_count": 21,
+    "newly_automatic_vs_v3_tree_ids": [
+      "TREE_0008",
+      "TREE_0009",
+      "TREE_0010",
+      "TREE_0011",
+      "TREE_0046",
+      "TREE_0054",
+      "TREE_0055",
+      "TREE_0062",
+      "TREE_0068",
+      "TREE_0074",
+      "TREE_0082",
+      "TREE_0083",
+      "TREE_0084",
+      "TREE_0095",
+      "TREE_0097",
+      "TREE_0099",
+      "TREE_0102",
+      "TREE_0104",
+      "TREE_0107",
+      "TREE_0108",
+      "TREE_0110"
+    ],
+    "v2_phase4_measurable_count": 29,
+    "v3_1_full_las_automatic_count": 60,
+    "v3_automatic_now_manual_count": 3,
+    "v3_automatic_now_manual_tree_ids": [
+      "TREE_0020",
+      "TREE_0063",
+      "TREE_0085"
+    ],
+    "v3_sampled_evidence_automatic_count": 42
+  },
+  "field_verified": false,
+  "height_search": {
+    "four_metre_search_executed": true,
+    "maximum_height_m": 4.0,
+    "minimum_alternative_height_m": 1.4,
+    "prefer_lowest_within_quality_points": 3.0,
+    "radial_limit_m": 0.65,
+    "slab_thickness_m": 0.1,
+    "source_profile_limit_applies": false,
+    "standard_height_m": 1.3,
+    "step_m": 0.1
+  },
+  "manual_review_count": 58,
+  "manual_review_reason_counts": {
+    "CLEANER_SMALLER_UPPER_SECTION_AVAILABLE": 2,
+    "ELLIPSE_TOO_NONCIRCULAR": 1,
+    "IDENTITY_REVIEW_DUPLICATE": 1,
+    "IDENTITY_REVIEW_FALSE_POSITIVE": 6,
+    "INSUFFICIENT_ARC_COVERAGE": 3,
+    "INSUFFICIENT_INLIERS": 1,
+    "INSUFFICIENT_VERTICAL_CONTINUITY": 37,
+    "LARGE_SECTION_REQUIRES_STRONGER_ARC_COVERAGE": 5,
+    "LARGE_SECTION_REQUIRES_STRONGER_CIRCULARITY": 1,
+    "LOCAL_AXIS_UNCERTAINTY_TOO_HIGH": 22,
+    "OPERATIONALLY_EXCLUDED_TREE_ID": 8,
+    "QUALITY_SCORE_BELOW_THRESHOLD": 1,
+    "RADIUS_RANGE_UNSTABLE_ACROSS_HEIGHTS": 1,
+    "SECTION_RADIUS_EXCEEDS_AUTOMATIC_COHORT_GUARDRAIL": 35,
+    "TREE_DETECTION_UNCERTAIN": 42
+  },
+  "perpendicular_full_resolution_refit_performed": true,
+  "source": {
+    "files": {
+      "config": {
+        "path": "config/clean_stem_pom_v3_full_las.json",
+        "sha256": "b2304092fe755a167a6c09ea7ac7e53e8da95bc4c0029aba0947a743a4f04bd8"
+      },
+      "current_measurements": {
+        "path": "site/public/data/lidar-measurements/measurements.json",
+        "sha256": "8414e95ad6f2002e073702ea760efcc22009b76f84bdd9348f42495d5cdbb9ef"
+      },
+      "inventory": {
+        "path": "site/public/viewer-v2-review/data/phase4_tree_inventory.json",
+        "sha256": "dbe42274f393081283c722ffa02564f440099e22834d084625ac1558795e1205"
+      },
+      "marking_manifest": {
+        "file_count": 118,
+        "path": "site/public/data/lidar-measurements/markings/TREE_*.json",
+        "sha256_manifest": "a6ddb520ac87e0cf3e71784af6f8b5a0950f1398d789d1f8b4ffb0b511d19896"
+      },
+      "phase_config": {
+        "path": "config/stem_inventory_v2.yaml",
+        "sha256": "e49b9f97dd4c30e5d3f243dae7f1361aec0a49f4554cbffd24e601d30d2f73c7"
+      },
+      "v3_measurements": {
+        "path": "site/public/viewer-v3-clean-stem/data/measurements.json",
+        "sha256": "344951547a79e91ad1f66ae449abecee9892a845a5393e9564890e23fae99ba2"
+      }
+    },
+    "interpretation": "Full-resolution geometry screening from the public Samut Songkhram LAS; not field ground truth.",
+    "raw_las_in_repository": false,
+    "site_id": "SAMUT_SONGKHRAM_TD_008",
+    "source_las": {
+      "bounds": {
+        "xmax": 59.414974212646484,
+        "xmin": -71.87178802490234,
+        "ymax": 77.16532897949219,
+        "ymin": -63.370182037353516,
+        "zmax": 15.579585075378418,
+        "zmin": -4.503986835479736
+      },
+      "file_name": "TD_008_2026_08_07_07_04_07.las",
+      "generating_software": "libLAS 1.8.1",
+      "google_drive_file_id": "1y2u4apM3vEZHbea9u8HOXc4uSVgqmSbI",
+      "las_version": "1.2",
+      "offset": [
+        -71.87178802490234,
+        -63.370182037353516,
+        -4.503986835479736
+      ],
+      "point_count": 67177038,
+      "point_data_offset": 227,
+      "point_format": 2,
+      "point_record_length": 26,
+      "public_url": "https://drive.google.com/file/d/1y2u4apM3vEZHbea9u8HOXc4uSVgqmSbI/view",
+      "scale": [
+        1.3128675391271827e-07,
+        1.4053550501103018e-07,
+        2.0083572138673844e-08
+      ],
+      "sha256": "195725dbbc7f853994f926027dfea9c9e4d986ac06cd6d9187f30ffebe528276",
+      "size_bytes": 1746603215,
+      "system_identifier": "libLAS"
+    }
+  },
+  "status_counts": {
+    "ALTERNATIVE_POM": 39,
+    "MANUAL_REVIEW": 58,
+    "STANDARD_DBH": 21
+  },
+  "tree_count": 118,
+  "workflow": "SEPARATE_CLEAN_STEM_POM_V3_1_FULL_LAS"
+}

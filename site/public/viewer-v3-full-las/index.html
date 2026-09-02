@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samut Songkhram · Clean-stem POM V3.1 Full LAS</title>
+  <link rel="stylesheet" href="../viewer-v3-clean-stem/styles.css">
+  <link rel="stylesheet" href="styles.css?v=full-las-v3-1-overview-3d-status-filters">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">SAMUT SONGKHRAM · TD_008 · SEPARATE REVIEW LANE</p>
+      <h1>Clean-stem POM V3.1 · Full LAS</h1>
+      <p id="headline">กำลังโหลดผลการวัดจาก LAS เต็มความละเอียด…</p>
+    </div>
+    <nav class="downloads">
+      <a href="data/measurements.csv">CSV</a>
+      <a href="data/measurements.json">JSON</a>
+      <a href="data/summary.json">Summary</a>
+      <a href="../viewer-v3-clean-stem/">V3 เดิม</a>
+      <a href="../viewer-v2-review/">V2 review</a>
+    </nav>
+  </header>
+
+  <div class="notice">
+    <strong>ขอบเขต:</strong> ผลนี้เป็น geometry screening จาก LAS ต้นฉบับ ยังไม่ field-verified และไม่ใช่ protocol final ·
+    วัดที่ 1.30 ม. เมื่อผ่านเกณฑ์ มิฉะนั้นค้นหาช่วงลำต้นสะอาดถึง 4.00 ม. โดยไม่ผูกกับ “รากค้ำยันบนสุด + 0.30 ม.”
+  </div>
+
+  <main class="layout">
+    <aside class="sidebar panel">
+      <h2>Coverage</h2>
+      <div class="summary-grid">
+        <div><span id="automaticCount">—</span><small>วัดอัตโนมัติ</small></div>
+        <div><span id="standardCount">—</span><small>DBH 1.30 ม.</small></div>
+        <div><span id="alternativeCount">—</span><small>POM ทางเลือก</small></div>
+        <div><span id="manualCount">—</span><small>ตรวจด้วยคน</small></div>
+      </div>
+      <p id="coverageDelta" class="coverage-delta"></p>
+
+      <h2>เลือกต้นไม้</h2>
+      <label>สถานะ
+        <select id="statusFilter">
+          <option value="">ทั้งหมด</option>
+          <option value="STANDARD_DBH">STANDARD_DBH</option>
+          <option value="ALTERNATIVE_POM">ALTERNATIVE_POM</option>
+          <option value="MANUAL_REVIEW">MANUAL_REVIEW</option>
+        </select>
+      </label>
+      <label>Detection
+        <select id="detectionFilter"><option value="">ทั้งหมด</option></select>
+      </label>
+      <label>ค้นหา Tree ID
+        <input id="treeSearch" placeholder="TREE_0050">
+      </label>
+      <label>Tree ID
+        <select id="treeSelect" size="13"></select>
+      </label>
+      <p id="filterCount" class="muted"></p>
+      <div class="status-legend">
+        <span class="standard">STANDARD_DBH · 1.30 ม. ผ่านเกณฑ์</span>
+        <span class="alternative">ALTERNATIVE_POM · ช่วงสะอาดด้านบน</span>
+        <span class="manual">MANUAL_REVIEW · ไม่ปล่อยตัวเลขอัตโนมัติ</span>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <article class="panel overview-panel" aria-labelledby="overviewTitle">
+        <div class="overview-head">
+          <div>
+            <p class="eyebrow">WHOLE-CLOUD OVERVIEW · INTERACTIVE 3D</p>
+            <h2 id="overviewTitle">ภาพรวมตำแหน่ง Tree ID ทั้งแปลงแบบ 3D</h2>
+            <p class="muted">หมุนดู point cloud สมุทรสงครามและผล V3.1 ทั้ง 118 ต้นได้รอบทิศ · คลิก marker เพื่อเปิดต้นเดียวกันในรายละเอียดด้านล่าง</p>
+          </div>
+          <div class="overview-frame-controls" aria-label="กรอบมุมมองภาพรวม">
+            <button id="overviewFrameTrees" type="button">ซูม Tree IDs</button>
+            <button id="overviewFrameCloud" type="button">ดู point cloud ทั้งหมด</button>
+            <button id="overviewTopView" type="button">มองจากบน</button>
+          </div>
+        </div>
+
+        <div class="overview-filter" aria-label="กรองสถานะการวัด">
+          <button type="button" data-overview-filter="ALL" aria-pressed="true"><strong>118</strong><span>ทั้งหมด</span></button>
+          <button type="button" data-overview-filter="STANDARD_DBH" aria-pressed="false"><strong>21</strong><span>STANDARD_DBH</span></button>
+          <button type="button" data-overview-filter="ALTERNATIVE_POM" aria-pressed="false"><strong>39</strong><span>ALTERNATIVE_POM</span></button>
+          <button type="button" data-overview-filter="MANUAL_REVIEW" aria-pressed="false"><strong>58</strong><span>ยังวัดไม่ได้</span></button>
+        </div>
+
+        <div class="overview-stage">
+          <canvas id="overviewCanvas" aria-label="ฉาก 3D ของ point cloud และตำแหน่งต้นไม้ทั้ง 118 ต้น"></canvas>
+          <div class="overview-legend" aria-label="คำอธิบายสี">
+            <span class="standard">STANDARD_DBH · 21</span>
+            <span class="alternative">ALTERNATIVE_POM · 39</span>
+            <span class="manual">ยังวัดไม่ได้ · 58</span>
+          </div>
+          <p class="overview-hint">ลาก: หมุน · Shift/คลิกขวา/สองนิ้ว: เลื่อน · scroll/บีบนิ้ว: ซูม</p>
+          <p id="overviewStatus" class="overview-status">กำลังโหลด point cloud ภาพรวม…</p>
+        </div>
+
+        <div class="overview-selection">
+          <div>
+            <strong id="overviewSelectedTree">ยังไม่ได้เลือกต้นไม้</strong>
+            <p id="overviewSelectedDetail" class="muted">ลากเพื่อหมุนมุมมอง 3D · คลิก marker สีเพื่อดูสถานะและเหตุผล</p>
+          </div>
+          <button id="overviewOpenDetail" type="button" disabled>ดูรายละเอียดต้นนี้</button>
+        </div>
+      </article>
+
+      <article id="detailViewer" class="viewer panel">
+        <div class="viewer-head">
+          <div><strong id="treeTitle">—</strong><span id="treeState"></span></div>
+          <div><button id="resetView">รีเซ็ตมุม</button><button id="topView">มองจากบน</button></div>
+        </div>
+        <canvas id="cloudCanvas"></canvas>
+        <div class="legend">
+          <span class="points">full-LAS display sample (RGB)</span>
+          <span class="axis">refitted local axis</span>
+          <span class="pom">selected / review POM</span>
+          <span class="standard">1.30 m reference</span>
+        </div>
+        <p id="cloudStatus" class="canvas-note">กำลังโหลด full-LAS evidence shard…</p>
+      </article>
+
+      <div class="dashboard-grid">
+        <article class="panel card"><h2>ผลการวัด</h2><div id="measurementMetrics"></div></article>
+        <article class="panel card">
+          <h2>Quality score</h2>
+          <div id="qualityScore" class="score-ring">—</div>
+          <div id="qualityBars"></div>
+        </article>
+        <article class="panel card chart-card"><h2>Diameter profile · 1.30–4.00 ม.</h2><canvas id="profileCanvas"></canvas></article>
+        <article class="panel card chart-card"><h2>หน้าตัดจริงบนระนาบตั้งฉาก</h2><canvas id="crossCanvas"></canvas><p id="crossNote" class="muted"></p></article>
+      </div>
+
+      <article class="panel evidence-card">
+        <div class="evidence-head">
+          <div><h2>Full-LAS height scan / QA</h2><p class="muted">ทุกแถวเป็น refit ใหม่จาก LAS เต็มความละเอียด; สีเน้นแถวที่เลือกหรือแถวที่ดีที่สุดสำหรับตรวจ</p></div>
+          <div id="reasonCodes" class="chips"></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>POM</th><th>Diameter</th><th>Score</th><th>Points / inliers</th><th>Coverage</th><th>Circularity</th><th>Radius MAD</th><th>Radius range</th><th>Fit RMSE</th><th>Axis offset</th><th>Decision</th></tr></thead>
+            <tbody id="candidateRows"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel provenance-card"><h2>Provenance และข้อจำกัด</h2><div id="provenance"></div></article>
+    </section>
+  </main>
+  <script type="importmap">
+    {"imports":{"three":"../viewer/vendor/three.module.js"}}
+  </script>
+  <script src="app.js?v=full-las-v3-1-overview-3d-status-filters"></script>
+</body>
+</html>

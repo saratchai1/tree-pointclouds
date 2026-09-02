@@ -1,0 +1,156 @@
+{
+  "algorithm_version": "clean-stem-pom-v3.1.0-full-las",
+  "site_id": "SAMUT_SONGKHRAM_TD_008",
+  "source_las": {
+    "file_name": "TD_008_2026_08_07_07_04_07.las",
+    "google_drive_file_id": "1y2u4apM3vEZHbea9u8HOXc4uSVgqmSbI",
+    "public_url": "https://drive.google.com/file/d/1y2u4apM3vEZHbea9u8HOXc4uSVgqmSbI/view",
+    "expected_size_bytes": 1746603215,
+    "expected_sha256": "195725dbbc7f853994f926027dfea9c9e4d986ac06cd6d9187f30ffebe528276",
+    "expected_point_count": 67177038
+  },
+  "height_search": {
+    "standard_height_m": 1.3,
+    "minimum_alternative_height_m": 1.4,
+    "maximum_height_m": 4.0,
+    "step_m": 0.1,
+    "slab_thickness_m": 0.1,
+    "radial_limit_m": 0.65,
+    "prefer_lowest_within_quality_points": 3.0
+  },
+  "tube_extraction": {
+    "minimum_height_agl_m": -0.3,
+    "maximum_height_agl_m": 4.25,
+    "horizontal_radius_m": 1.0,
+    "grid_cell_m": 0.5,
+    "chunk_size_points": 2000000,
+    "minimum_axis_z_for_seed_slope": 0.7
+  },
+  "ground_refit": {
+    "annulus_minimum_radius_m": 0.35,
+    "annulus_maximum_radius_m": 0.8,
+    "vertical_search_below_seed_m": 0.2,
+    "vertical_search_above_seed_m": 0.25,
+    "quantile": 0.2,
+    "maximum_shift_from_seed_m": 0.08,
+    "minimum_supporting_points": 100
+  },
+  "axis_refit": {
+    "minimum_height_m": 1.0,
+    "maximum_height_m": 4.1,
+    "step_m": 0.2,
+    "horizontal_slab_thickness_m": 0.1,
+    "maximum_fit_center_offset_from_seed_m": 0.42,
+    "minimum_supporting_slices": 4,
+    "confirmed_uncertainty_p90_m": 0.06,
+    "maximum_automatic_uncertainty_p90_m": 0.14,
+    "local_half_window_m": 0.45,
+    "maximum_local_slope": 2.5
+  },
+  "fit_overrides": {
+    "component_grid_cell_m": 0.05,
+    "minimum_component_points": 10,
+    "maximum_components_to_fit": 8,
+    "maximum_fits_to_retain": 5,
+    "full_resolution_ransac_trials": 120,
+    "maximum_scored_trials": 30,
+    "maximum_fit_points": 1800,
+    "minimum_trial_inliers": 10,
+    "minimum_final_inliers": 20,
+    "minimum_fit_coverage_deg": 50.0,
+    "maximum_center_distance_m": 0.55,
+    "inlier_tolerance_minimum_m": 0.006,
+    "inlier_tolerance_radius_fraction": 0.09,
+    "inlier_tolerance_maximum_m": 0.03,
+    "ellipse_minimum_residual_threshold_m": 0.006
+  },
+  "candidate_radius": {
+    "minimum_m": 0.02,
+    "maximum_m": 0.5,
+    "large_stem_threshold_m": 0.3
+  },
+  "quality_weights": {
+    "angular_coverage": 0.2,
+    "fit_quality": 0.2,
+    "circularity": 0.15,
+    "radius_stability": 0.2,
+    "axis_alignment": 0.15,
+    "vertical_continuity": 0.1
+  },
+  "quality_scaling": {
+    "coverage_floor_deg": 70.0,
+    "coverage_target_deg": 300.0,
+    "maximum_relative_fit_rmse": 0.22,
+    "maximum_relative_radius_mad": 0.3,
+    "maximum_axis_offset_m": 0.16,
+    "clutter_penalty_per_extra_component": 0.75,
+    "maximum_clutter_penalty": 6.0
+  },
+  "reliability": {
+    "maximum_automatic_radius_m": 0.18,
+    "root_crown_guardrail": {
+      "minimum_candidate_radius_m": 0.12,
+      "maximum_upper_search_distance_m": 1.2,
+      "maximum_upper_to_lower_radius_ratio": 0.7,
+      "maximum_pair_relative_radius_difference": 0.25,
+      "minimum_upper_quality_score": 60.0,
+      "minimum_upper_angular_coverage_deg": 170.0,
+      "minimum_upper_circularity": 0.55
+    },
+    "standard": {
+      "minimum_quality_score": 68.0,
+      "minimum_inlier_count": 60,
+      "minimum_angular_coverage_deg": 210.0,
+      "minimum_circularity": 0.65,
+      "maximum_relative_fit_rmse": 0.2,
+      "maximum_relative_radius_mad": 0.2,
+      "maximum_relative_radius_range": 0.4,
+      "maximum_axis_center_offset_m": 0.13,
+      "minimum_neighbouring_valid_slices": 3,
+      "minimum_axis_supporting_slices": 4
+    },
+    "alternative": {
+      "minimum_quality_score": 62.0,
+      "minimum_inlier_count": 50,
+      "minimum_angular_coverage_deg": 170.0,
+      "minimum_circularity": 0.55,
+      "maximum_relative_fit_rmse": 0.24,
+      "maximum_relative_radius_mad": 0.26,
+      "maximum_relative_radius_range": 0.5,
+      "maximum_axis_center_offset_m": 0.16,
+      "minimum_neighbouring_valid_slices": 3,
+      "minimum_axis_supporting_slices": 4
+    },
+    "large_stem": {
+      "minimum_angular_coverage_deg": 240.0,
+      "minimum_circularity": 0.72
+    }
+  },
+  "confidence_labels": {
+    "high_minimum_quality_score": 82.0,
+    "medium_minimum_quality_score": 68.0
+  },
+  "eligible_detection_statuses": [
+    "CONFIRMED",
+    "PROBABLE"
+  ],
+  "blocked_identity_review_statuses": [
+    "DUPLICATE",
+    "FALSE_POSITIVE",
+    "INCORRECT_MERGE"
+  ],
+  "blocked_human_labels": [
+    "PROP_ROOT_OR_ROOT_ONLY",
+    "BRANCH",
+    "OTHER_VEGETATION",
+    "DUPLICATE_OF"
+  ],
+  "evidence": {
+    "trees_per_shard": 8,
+    "maximum_tube_points": 1200,
+    "maximum_accepted_slice_points": 320,
+    "maximum_rejected_slice_points": 320,
+    "coordinate_decimals": 4
+  },
+  "random_seed": 20260901
+}
