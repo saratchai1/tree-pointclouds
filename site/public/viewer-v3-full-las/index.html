@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samut Songkhram · Clean-stem POM V3.1 Full LAS</title>
   <link rel="stylesheet" href="../viewer-v3-clean-stem/styles.css">
-  <link rel="stylesheet" href="styles.css?v=full-las-v3-1-overview-3d">
+  <link rel="stylesheet" href="styles.css?v=full-las-v3-1-overview-3d-status-filters">
 </head>
 <body>
   <header class="topbar">
@@ -82,7 +82,8 @@
 
         <div class="overview-filter" aria-label="กรองสถานะการวัด">
           <button type="button" data-overview-filter="ALL" aria-pressed="true"><strong>118</strong><span>ทั้งหมด</span></button>
-          <button type="button" data-overview-filter="MEASURABLE" aria-pressed="false"><strong>60</strong><span>วัดได้</span></button>
+          <button type="button" data-overview-filter="STANDARD_DBH" aria-pressed="false"><strong>21</strong><span>STANDARD_DBH</span></button>
+          <button type="button" data-overview-filter="ALTERNATIVE_POM" aria-pressed="false"><strong>39</strong><span>ALTERNATIVE_POM</span></button>
           <button type="button" data-overview-filter="MANUAL_REVIEW" aria-pressed="false"><strong>58</strong><span>ยังวัดไม่ได้</span></button>
         </div>
 
@@ -151,6 +152,6 @@
   <script type="importmap">
     {"imports":{"three":"../viewer/vendor/three.module.js"}}
   </script>
-  <script src="app.js?v=full-las-v3-1-overview-3d"></script>
+  <script src="app.js?v=full-las-v3-1-overview-3d-status-filters"></script>
 </body>
 </html>

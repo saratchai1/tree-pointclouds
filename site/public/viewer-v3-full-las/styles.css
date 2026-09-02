@@ -55,7 +55,7 @@
 
 .overview-filter {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 160px));
+  grid-template-columns: repeat(4, minmax(0, 180px));
   gap: .55rem;
   margin: .9rem 0 .75rem;
 }
@@ -78,6 +78,14 @@
   font-size: .76rem;
 }
 
+.overview-filter button[data-overview-filter="STANDARD_DBH"] strong {
+  color: var(--blue);
+}
+
+.overview-filter button[data-overview-filter="ALTERNATIVE_POM"] strong {
+  color: var(--yellow);
+}
+
 .overview-filter button[data-overview-filter="MANUAL_REVIEW"] strong {
   color: var(--orange);
 }
@@ -91,6 +99,16 @@
 .overview-filter button[data-overview-filter="MANUAL_REVIEW"][aria-pressed="true"] {
   border-color: var(--orange);
   box-shadow: inset 0 0 0 1px rgba(255, 145, 95, .18);
+}
+
+.overview-filter button[data-overview-filter="STANDARD_DBH"][aria-pressed="true"] {
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 1px rgba(117, 191, 255, .18);
+}
+
+.overview-filter button[data-overview-filter="ALTERNATIVE_POM"][aria-pressed="true"] {
+  border-color: var(--yellow);
+  box-shadow: inset 0 0 0 1px rgba(255, 209, 102, .18);
 }
 
 .overview-stage {
@@ -253,7 +271,7 @@
   }
 
   .overview-filter {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: .35rem;
   }
 

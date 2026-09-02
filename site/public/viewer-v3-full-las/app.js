@@ -585,8 +585,9 @@ function resizeOverviewCanvas() {
 }
 
 function overviewVisibleRecords() {
-  if (state.overview.filter === "MEASURABLE") return state.records.filter((record) => record.automatic_measurement);
-  if (state.overview.filter === "MANUAL_REVIEW") return state.records.filter((record) => record.status === "MANUAL_REVIEW");
+  if (["STANDARD_DBH", "ALTERNATIVE_POM", "MANUAL_REVIEW"].includes(state.overview.filter)) {
+    return state.records.filter((record) => record.status === state.overview.filter);
+  }
   return state.records;
 }
 

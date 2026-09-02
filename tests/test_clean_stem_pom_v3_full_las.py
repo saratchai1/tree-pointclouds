@@ -226,7 +226,7 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
         self.assertIn('WHOLE-CLOUD OVERVIEW · INTERACTIVE 3D', html)
         self.assertIn('id="overviewTopView"', html)
         self.assertIn('"three":"../viewer/vendor/three.module.js"', html)
-        self.assertIn('href="styles.css?v=full-las-v3-1-overview-3d"', html)
+        self.assertIn('href="styles.css?v=full-las-v3-1-overview-3d-status-filters"', html)
         self.assertNotIn("createImageData", script)
         self.assertNotIn("drawOverviewCloudLayer", script)
         self.assertNotIn("rayong", (html + script + styles).lower())
@@ -259,10 +259,12 @@ class CleanStemPomV31FullLasTests(unittest.TestCase):
         directory = ROOT / "site/public/viewer-v3-full-las"
         html = (directory / "index.html").read_text(encoding="utf-8")
         script = (directory / "app.js").read_text(encoding="utf-8")
-        for label in ("ภาพรวมตำแหน่ง Tree ID ทั้งแปลง", "วัดได้", "ยังวัดไม่ได้"):
+        for label in ("ภาพรวมตำแหน่ง Tree ID ทั้งแปลง", "STANDARD_DBH", "ALTERNATIVE_POM", "ยังวัดไม่ได้"):
             self.assertIn(label, html)
-        self.assertIn('data-overview-filter="MEASURABLE"', html)
+        self.assertIn('data-overview-filter="STANDARD_DBH"', html)
+        self.assertIn('data-overview-filter="ALTERNATIVE_POM"', html)
         self.assertIn('data-overview-filter="MANUAL_REVIEW"', html)
+        self.assertNotIn('data-overview-filter="MEASURABLE"', html)
         self.assertIn('const OVERVIEW_POINT_BUDGET = 300000', script)
         self.assertIn('record.automatic_measurement ? "วัดได้" : "ยังวัดไม่ได้"', script)
         self.assertIn('new THREE.Points', script)
