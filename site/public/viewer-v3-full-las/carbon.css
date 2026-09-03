@@ -1,0 +1,370 @@
+.carbon-card {
+  padding: 1rem;
+  overflow: hidden;
+  border-color: #315f47;
+  background:
+    radial-gradient(circle at top right, rgba(113, 227, 160, .08), transparent 36%),
+    var(--panel);
+}
+
+.carbon-head,
+.carbon-section-head,
+.carbon-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.carbon-head h2 {
+  margin-bottom: .25rem;
+  font-size: 1.08rem;
+}
+
+.carbon-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .4rem;
+}
+
+.carbon-badge {
+  padding: .28rem .55rem;
+  border: 1px solid #4d765f;
+  border-radius: 999px;
+  color: #cfe3d5;
+  background: rgba(12, 31, 21, .8);
+  font-size: .7rem;
+  white-space: nowrap;
+}
+
+.carbon-badge.warning {
+  border-color: #79642d;
+  color: #f2dc99;
+  background: rgba(44, 35, 12, .72);
+}
+
+.carbon-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.28fr) minmax(310px, .72fr);
+  gap: 1rem;
+  margin-top: .9rem;
+}
+
+.carbon-results,
+.carbon-controls,
+.carbon-method {
+  min-width: 0;
+  border: 1px solid rgba(49, 95, 71, .72);
+  border-radius: 10px;
+  background: rgba(8, 20, 14, .68);
+}
+
+.carbon-results,
+.carbon-controls {
+  padding: .9rem;
+}
+
+.carbon-tree-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .8rem;
+  margin-bottom: .65rem;
+}
+
+#carbonTreeId {
+  font-size: 1.1rem;
+}
+
+#carbonEstimateStatus {
+  color: var(--muted);
+  font-size: .73rem;
+  text-align: right;
+}
+
+#carbonEstimateStatus[data-state="ready"] { color: var(--green); }
+#carbonEstimateStatus[data-state="caution"] { color: var(--yellow); }
+#carbonEstimateStatus[data-state="blocked"] { color: var(--orange); }
+
+.carbon-primary-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  gap: .65rem;
+}
+
+.carbon-primary,
+.carbon-stat,
+.carbon-site-card {
+  padding: .75rem;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--panel-2);
+}
+
+.carbon-primary {
+  border-color: rgba(113, 227, 160, .45);
+  background: rgba(22, 55, 38, .72);
+}
+
+.carbon-primary small,
+.carbon-stat small,
+.carbon-site-card small {
+  display: block;
+  margin-bottom: .28rem;
+  color: var(--muted);
+  font-size: .68rem;
+}
+
+.carbon-primary strong {
+  display: block;
+  color: var(--green);
+  font-size: clamp(1.45rem, 2.6vw, 2.2rem);
+  line-height: 1.1;
+}
+
+.carbon-stat strong,
+.carbon-site-card strong {
+  display: block;
+  color: #edf6ef;
+  font-size: .95rem;
+  line-height: 1.35;
+}
+
+.carbon-measurement {
+  margin: .6rem 0;
+  color: #c4d5ca;
+  font-size: .76rem;
+  overflow-wrap: anywhere;
+}
+
+.carbon-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .5rem;
+  margin-top: .6rem;
+}
+
+.carbon-detail-grid .carbon-stat {
+  padding: .6rem;
+}
+
+.carbon-detail-grid .carbon-stat strong {
+  font-size: .82rem;
+}
+
+.carbon-credit-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  margin-top: .7rem;
+  padding: .58rem .7rem;
+  border-left: 3px solid var(--orange);
+  background: rgba(57, 28, 17, .45);
+  color: #e8c4ae;
+  font-size: .76rem;
+}
+
+.carbon-credit-line strong {
+  color: var(--orange);
+  text-align: right;
+}
+
+.carbon-site-summary {
+  margin-top: .8rem;
+  padding-top: .8rem;
+  border-top: 1px solid rgba(49, 95, 71, .72);
+}
+
+.carbon-site-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .55rem;
+  margin-top: .55rem;
+}
+
+#carbonSiteCoverage {
+  margin-top: .45rem;
+}
+
+.carbon-control-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .55rem;
+}
+
+.carbon-control-grid label,
+.carbon-control-wide {
+  display: grid;
+  gap: .25rem;
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+.carbon-control-grid input,
+.carbon-control-wide input {
+  min-width: 0;
+}
+
+.carbon-control-wide {
+  margin-top: .6rem;
+}
+
+.carbon-checks {
+  display: grid;
+  gap: .48rem;
+  margin: .7rem 0;
+}
+
+.carbon-checks label {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: .5rem;
+  align-items: start;
+  color: #c3d2c8;
+  font-size: .74rem;
+  line-height: 1.4;
+}
+
+.carbon-checks input {
+  width: 16px;
+  height: 16px;
+  margin: .08rem 0 0;
+  accent-color: var(--green);
+}
+
+.carbon-actions {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: .65rem;
+}
+
+.carbon-actions button {
+  padding: .48rem .65rem;
+  font-size: .76rem;
+}
+
+#carbonExportCsv {
+  border-color: rgba(113, 227, 160, .6);
+}
+
+.carbon-assumption-summary {
+  margin-top: .7rem;
+  padding: .55rem .65rem;
+  border-radius: 8px;
+  background: rgba(16, 35, 26, .82);
+  color: #bcd0c2;
+  font-size: .7rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.carbon-warning-list {
+  margin: .75rem 0 0;
+  padding: .72rem .8rem .72rem 1.7rem;
+  border: 1px solid rgba(121, 100, 45, .7);
+  border-radius: 9px;
+  background: rgba(40, 32, 11, .54);
+  color: #dbcfac;
+  font-size: .72rem;
+  line-height: 1.48;
+}
+
+.carbon-warning-list li + li {
+  margin-top: .24rem;
+}
+
+.carbon-method {
+  margin-top: .85rem;
+  padding: .8rem .9rem;
+}
+
+.carbon-method summary {
+  cursor: pointer;
+  color: #dceae0;
+  font-size: .78rem;
+  font-weight: 650;
+}
+
+.carbon-method-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  margin-top: .7rem;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.55;
+}
+
+.carbon-formula {
+  padding: .65rem .75rem;
+  border-left: 2px solid var(--green);
+  background: rgba(16, 35, 26, .7);
+  color: #dce9df;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+
+.carbon-method a {
+  color: var(--blue);
+}
+
+#carbonModuleState {
+  margin-top: .55rem;
+  color: #718b7c;
+  font-size: .66rem;
+}
+
+@media (max-width: 1120px) {
+  .carbon-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .carbon-head,
+  .carbon-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .carbon-badges {
+    justify-content: flex-start;
+  }
+
+  .carbon-primary-grid,
+  .carbon-site-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carbon-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carbon-method-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .carbon-card {
+    padding: .7rem;
+  }
+
+  .carbon-tree-line,
+  .carbon-credit-line {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #carbonEstimateStatus,
+  .carbon-credit-line strong {
+    text-align: left;
+  }
+
+  .carbon-detail-grid,
+  .carbon-control-grid {
+    grid-template-columns: 1fr;
+  }
+}
