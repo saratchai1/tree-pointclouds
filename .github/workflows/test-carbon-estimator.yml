@@ -1,0 +1,41 @@
+name: Test carbon estimator
+
+on:
+  push:
+    branches:
+      - feature/indicative-carbon-estimator-v1
+    paths:
+      - "site/public/viewer-v3-full-las/carbon.js"
+      - "site/public/viewer-v3-full-las/carbon.css"
+      - "site/public/viewer-v3-full-las/index.html"
+      - "tests/carbon-estimator-smoke.cjs"
+      - ".github/workflows/test-carbon-estimator.yml"
+  pull_request:
+    paths:
+      - "site/public/viewer-v3-full-las/carbon.js"
+      - "site/public/viewer-v3-full-las/carbon.css"
+      - "site/public/viewer-v3-full-las/index.html"
+      - "tests/carbon-estimator-smoke.cjs"
+      - ".github/workflows/test-carbon-estimator.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check JavaScript syntax
+        run: node --check site/public/viewer-v3-full-las/carbon.js
+
+      - name: Run TREE_0066 DOM smoke test
+        run: node tests/carbon-estimator-smoke.cjs
