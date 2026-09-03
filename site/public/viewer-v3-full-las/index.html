@@ -6,6 +6,7 @@
   <title>Samut Songkhram · Clean-stem POM V3.1 Full LAS</title>
   <link rel="stylesheet" href="../viewer-v3-clean-stem/styles.css">
   <link rel="stylesheet" href="styles.css?v=full-las-v3-1-overview-3d-status-filters">
+  <link rel="stylesheet" href="carbon.css?v=indicative-carbon-v1">
 </head>
 <body>
   <header class="topbar">
@@ -133,6 +134,136 @@
         <article class="panel card chart-card"><h2>หน้าตัดจริงบนระนาบตั้งฉาก</h2><canvas id="crossCanvas"></canvas><p id="crossNote" class="muted"></p></article>
       </div>
 
+      <article id="carbonPanel" class="panel carbon-card" aria-labelledby="carbonTitle">
+        <div class="carbon-head">
+          <div>
+            <p class="eyebrow">INDICATIVE BIOMASS &amp; CARBON STOCK</p>
+            <h2 id="carbonTitle">ประมาณคาร์บอนจากเส้นผ่านศูนย์กลางที่ระบบวัดได้</h2>
+            <p class="muted">คำนวณระดับต้นและผลรวมเฉพาะ Tree IDs ที่มี diameter พร้อมแสดงสมมติฐานให้แก้ไขได้</p>
+          </div>
+          <div class="carbon-badges" aria-label="สถานะผลคำนวณ">
+            <span class="carbon-badge">Current stock estimate</span>
+            <span class="carbon-badge warning">Not issued carbon credits</span>
+          </div>
+        </div>
+
+        <div class="carbon-layout">
+          <section class="carbon-results" aria-live="polite">
+            <div class="carbon-tree-line">
+              <strong id="carbonTreeId">—</strong>
+              <span id="carbonEstimateStatus" data-state="blocked">กำลังโหลดข้อมูล…</span>
+            </div>
+
+            <div class="carbon-primary-grid">
+              <div class="carbon-primary">
+                <small>ค่ากลาง · current biomass stock</small>
+                <strong id="carbonStock">—</strong>
+              </div>
+              <div class="carbon-stat">
+                <small>ช่วงสมมติฐานต่ำ–สูง</small>
+                <strong id="carbonRange">—</strong>
+              </div>
+              <div class="carbon-stat">
+                <small>Gross increment จาก growth scenario</small>
+                <strong id="carbonAnnual">—</strong>
+              </div>
+            </div>
+
+            <p id="carbonMeasurement" class="carbon-measurement">ยังไม่ได้เลือกต้นไม้</p>
+
+            <div class="carbon-detail-grid">
+              <div class="carbon-stat"><small>Above-ground biomass</small><strong id="carbonAboveground">—</strong></div>
+              <div class="carbon-stat"><small>Root biomass</small><strong id="carbonBelowground">—</strong></div>
+              <div class="carbon-stat"><small>Stored carbon</small><strong id="carbonStored">—</strong></div>
+              <div class="carbon-stat"><small>Diameter scenario margin</small><strong id="carbonDiameterMargin">—</strong></div>
+            </div>
+
+            <div class="carbon-credit-line">
+              <span>Eligible / issued carbon credits</span>
+              <strong id="carbonCreditState">ยังคำนวณไม่ได้</strong>
+            </div>
+
+            <div class="carbon-site-summary">
+              <div class="carbon-section-head">
+                <div>
+                  <strong>ผลรวมทั้งชุดข้อมูลที่คำนวณได้</strong>
+                  <p id="carbonSiteCoverage" class="muted">—</p>
+                </div>
+              </div>
+              <div class="carbon-site-grid">
+                <div class="carbon-site-card"><small>ค่ากลาง</small><strong id="carbonSiteStock">—</strong></div>
+                <div class="carbon-site-card"><small>ช่วงสมมติฐาน</small><strong id="carbonSiteRange">—</strong></div>
+                <div class="carbon-site-card"><small>Gross annual scenario</small><strong id="carbonSiteAnnual">—</strong></div>
+              </div>
+            </div>
+
+            <ul id="carbonWarnings" class="carbon-warning-list"></ul>
+          </section>
+
+          <section class="carbon-controls" aria-labelledby="carbonAssumptionTitle">
+            <div class="carbon-section-head">
+              <div>
+                <strong id="carbonAssumptionTitle">สมมติฐานที่ใช้</strong>
+                <p class="muted">ยังไม่ทราบชนิดไม้ จึงเปิดให้ปรับ wood density และ growth scenario เอง</p>
+              </div>
+            </div>
+
+            <div class="carbon-control-grid">
+              <label>Wood density ต่ำ (g/cm³)
+                <input id="woodDensityLow" type="number" min="0.10" max="1.50" step="0.01" inputmode="decimal">
+              </label>
+              <label>Wood density กลาง (g/cm³)
+                <input id="woodDensityMid" type="number" min="0.10" max="1.50" step="0.01" inputmode="decimal">
+              </label>
+              <label>Wood density สูง (g/cm³)
+                <input id="woodDensityHigh" type="number" min="0.10" max="1.50" step="0.01" inputmode="decimal">
+              </label>
+            </div>
+
+            <label class="carbon-control-wide">Carbon fraction ของชีวมวลแห้ง
+              <input id="carbonFraction" type="number" min="0.10" max="0.70" step="0.01" inputmode="decimal">
+            </label>
+
+            <label class="carbon-control-wide">Annual diameter growth scenario (cm/year)
+              <input id="annualDiameterGrowth" type="number" min="0" max="10" step="0.05" inputmode="decimal">
+            </label>
+
+            <div class="carbon-checks">
+              <label><input id="includeRoots" type="checkbox"><span>รวม root biomass จากสมการ below-ground biomass</span></label>
+              <label><input id="allowReviewCandidate" type="checkbox"><span>ใช้ best review candidate เมื่อไม่มี diameter อัตโนมัติ — exploratory และมีความเสี่ยงสูง</span></label>
+            </div>
+
+            <div class="carbon-actions">
+              <button id="carbonReset" type="button">คืนค่าสมมติฐานเริ่มต้น</button>
+              <button id="carbonExportCsv" type="button">Export carbon CSV</button>
+            </div>
+
+            <p id="carbonAssumptionSummary" class="carbon-assumption-summary">—</p>
+          </section>
+        </div>
+
+        <details class="carbon-method">
+          <summary>สูตร วิธีคำนวณ และสิ่งที่ยังขาดก่อนใช้เป็น Carbon Credit</summary>
+          <div class="carbon-method-body">
+            <div>
+              <div class="carbon-formula">
+                AGB = 0.251 × ρ × D^2.46<br>
+                BGB = 0.199 × ρ^0.899 × D^2.22<br>
+                C = (AGB + BGB) × CF<br>
+                tCO₂e = C × 44/12 ÷ 1,000
+              </div>
+              <p>D ใช้หน่วยเซนติเมตร, ρ ใช้ g/cm³, AGB/BGB/C เป็นกิโลกรัม และผลสุดท้ายเป็นตัน CO₂e</p>
+            </div>
+            <div>
+              <p>สมการชีวมวลทั่วไปของป่าชายเลนใช้ตาม Komiyama, Poungparn &amp; Kato (2005); carbon fraction เริ่มต้น 0.47 และแปลง C เป็น CO₂ ด้วย 44/12</p>
+              <p>ค่าที่แสดงเป็น <strong>current carbon stock scenario</strong> ไม่ใช่เครดิตสุทธิ การออกเครดิตต้องมี baseline, monitoring รอบเวลา, ขอบเขตโครงการ, project emissions, leakage, uncertainty deduction, permanence/buffer และการทวนสอบตามระเบียบวิธีที่เลือก</p>
+              <p><a href="https://doi.org/10.1017/S0266467405002476" target="_blank" rel="noopener">Komiyama et al. 2005</a> · <a href="https://www.ipcc.ch/publication/2013-supplement-to-the-2006-ipcc-guidelines-for-national-greenhouse-gas-inventories-wetlands/" target="_blank" rel="noopener">IPCC Wetlands Supplement</a></p>
+            </div>
+          </div>
+        </details>
+        <p id="carbonModuleState">กำลังโหลด carbon module…</p>
+      </article>
+
       <article class="panel evidence-card">
         <div class="evidence-head">
           <div><h2>Full-LAS height scan / QA</h2><p class="muted">ทุกแถวเป็น refit ใหม่จาก LAS เต็มความละเอียด; สีเน้นแถวที่เลือกหรือแถวที่ดีที่สุดสำหรับตรวจ</p></div>
@@ -153,5 +284,6 @@
     {"imports":{"three":"../viewer/vendor/three.module.js"}}
   </script>
   <script src="app.js?v=full-las-v3-1-overview-3d-status-filters"></script>
+  <script src="carbon.js?v=indicative-carbon-v1"></script>
 </body>
 </html>
