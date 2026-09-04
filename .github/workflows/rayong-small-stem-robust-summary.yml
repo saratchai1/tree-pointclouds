@@ -1,0 +1,51 @@
+name: Rayong small-stem robust summary
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - analysis/rayong-cfo-dbh-screening-20260904
+    paths:
+      - '.github/workflows/rayong-small-stem-robust-summary.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build evidence-strength summary
+        run: |
+          python - <<'PY'
+          import json, statistics
+          from pathlib import Path
+          root=Path('sensitivity-results/rayong-small-stem')
+          out={'measurementStatus':'ROBUST_SUBSET_OF_SAMPLED_SMALL_STEM_SCREENING','criteria':{'status':'A_SMALL_STEM_INDICATIVE','persistentBands':5,'minShellPoints':15,'minBreastSupportPoints':10,'maxAxisCenterResidualM':0.04},'sites':{}}
+          def stats(vals):
+              if not vals: return None
+              vals=sorted(vals); n=len(vals)
+              def pct(p):
+                  if n==1:return vals[0]
+                  x=(n-1)*p; lo=int(x); hi=min(lo+1,n-1); f=x-lo
+                  return vals[lo]*(1-f)+vals[hi]*f
+              return {'n':n,'meanCm':round(sum(vals)/n,2),'medianCm':round(statistics.median(vals),2),'p25Cm':round(pct(.25),2),'p75Cm':round(pct(.75),2),'minCm':round(min(vals),2),'maxCm':round(max(vals),2)}
+          for site in ('site-001','site-002'):
+              d=json.loads(root.joinpath(f'{site}-base.json').read_text())
+              A=[r for r in d['trees'] if r['status']=='A_SMALL_STEM_INDICATIVE']
+              robust=[r for r in A if r['persistentBands']==5 and r['shellPoints']>=15 and r['breastSupportPoints']>=10 and r['axisCenterResidualM']<=0.04]
+              strong=[r for r in A if r['persistentBands']==5 and r['shellPoints']>=30 and r['breastSupportPoints']>=20 and r['axisCenterResidualM']<=0.03]
+              out['sites'][site]={'allA':stats([r['diameterCm'] for r in A]),'robust':stats([r['diameterCm'] for r in robust]),'strong':stats([r['diameterCm'] for r in strong]),'robustTreeIds':[r['treeId'] for r in robust],'strongTreeIds':[r['treeId'] for r in strong]}
+          root.joinpath('robust-summary.json').write_text(json.dumps(out,indent=2)+'\n')
+          print(json.dumps(out,indent=2))
+          PY
+      - name: Commit robust summary
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f sensitivity-results/rayong-small-stem/robust-summary.json
+          git commit -m 'analysis: add robust Rayong small-stem summary'
+          git push origin HEAD:${GITHUB_REF_NAME}
