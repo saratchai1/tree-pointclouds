@@ -1,0 +1,3669 @@
+{
+  "title": "Rayong two-site CFO DBH screening",
+  "algorithmVersion": "cfo-sampled-screening-v1",
+  "measurementStatus": "SCREENING_ONLY_NOT_FIELD_VERIFIED",
+  "warning": "Do not represent these sampled-cloud estimates as formal DBH, MRV, verification, or issued carbon-credit evidence.",
+  "sites": [
+    {
+      "siteId": "site-001",
+      "measurementStatus": "CFO_SCREENING_ONLY",
+      "fieldVerified": false,
+      "sourceLas": "Rayong_009s_2026_08_14_02_28_36.las",
+      "sourcePointCount": 106816323,
+      "viewerPointCount": 998284,
+      "samplingStride": 107,
+      "analysisPointCount": 998274,
+      "globalGroundHintZ": -6.3116,
+      "candidateSeedCount": 96,
+      "retainedCandidateCount": 41,
+      "statusCounts": {
+        "A_INDICATIVE": 2,
+        "B_LOW_CONFIDENCE": 17,
+        "C_STRUCTURE_RISK": 22
+      },
+      "aIndicativeDbh": {
+        "n": 2,
+        "meanCm": 35.77,
+        "medianCm": 35.77,
+        "p25Cm": 33.71,
+        "p75Cm": 37.83,
+        "minCm": 31.65,
+        "maxCm": 39.89
+      },
+      "aPlusBScreeningDbh": {
+        "n": 19,
+        "meanCm": 33.29,
+        "medianCm": 37.25,
+        "p25Cm": 29.53,
+        "p75Cm": 40.72,
+        "minCm": 9.11,
+        "maxCm": 45.83
+      },
+      "preferredCfoScreeningDbh": {
+        "n": 19,
+        "meanCm": 33.29,
+        "medianCm": 37.25,
+        "p25Cm": 29.53,
+        "p75Cm": 40.72,
+        "minCm": 9.11,
+        "maxCm": 45.83
+      },
+      "preferredBasis": "A_PLUS_B_FALLBACK",
+      "trees": [
+        {
+          "center": [
+            16.19,
+            3.746
+          ],
+          "seed": [
+            16.317,
+            3.806
+          ],
+          "groundZ": -6.344,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29851,
+          "dbhCm": 59.701,
+          "circumferenceCm": 187.558,
+          "fitPoints": 355,
+          "sectionPointCount": 898,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.02288,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15385,
+          "radiusCv": 0.106,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 1104.78,
+          "treeId": "SITE-001-CFO-001"
+        },
+        {
+          "center": [
+            -44.28,
+            12.241
+          ],
+          "seed": [
+            -44.383,
+            12.406
+          ],
+          "groundZ": -6.051,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.04553,
+          "dbhCm": 9.105,
+          "circumferenceCm": 28.605,
+          "fitPoints": 69,
+          "sectionPointCount": 426,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.01047,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.14946,
+          "radiusCv": 0.623,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 833.829,
+          "treeId": "SITE-001-CFO-002"
+        },
+        {
+          "center": [
+            23.852,
+            -11.388
+          ],
+          "seed": [
+            24.017,
+            -11.394
+          ],
+          "groundZ": -6.276,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27516,
+          "dbhCm": 55.033,
+          "circumferenceCm": 172.891,
+          "fitPoints": 320,
+          "sectionPointCount": 749,
+          "angularCoverageRatio": 0.95833,
+          "residualM": 0.02408,
+          "verticality": 0.994,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.18315,
+          "radiusCv": 0.426,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 818.33,
+          "treeId": "SITE-001-CFO-003"
+        },
+        {
+          "center": [
+            -42.721,
+            4.77
+          ],
+          "seed": [
+            -42.783,
+            4.806
+          ],
+          "groundZ": -6.154,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29717,
+          "dbhCm": 59.435,
+          "circumferenceCm": 186.72,
+          "fitPoints": 88,
+          "sectionPointCount": 227,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.02624,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.18324,
+          "radiusCv": 0.385,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 233.081,
+          "treeId": "SITE-001-CFO-004"
+        },
+        {
+          "center": [
+            -27.066,
+            -26.118
+          ],
+          "seed": [
+            -26.983,
+            -26.094
+          ],
+          "groundZ": -6.21,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.16622,
+          "dbhCm": 33.244,
+          "circumferenceCm": 104.438,
+          "fitPoints": 41,
+          "sectionPointCount": 149,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.01287,
+          "verticality": 0.977,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.19959,
+          "radiusCv": 0.29,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 146.804,
+          "treeId": "SITE-001-CFO-005"
+        },
+        {
+          "center": [
+            -28.734,
+            -23.03
+          ],
+          "seed": [
+            -28.683,
+            -23.094
+          ],
+          "groundZ": -6.226,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28053,
+          "dbhCm": 56.106,
+          "circumferenceCm": 176.264,
+          "fitPoints": 52,
+          "sectionPointCount": 137,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.02292,
+          "verticality": 0.993,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.22717,
+          "radiusCv": 0.461,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 136.154,
+          "treeId": "SITE-001-CFO-006"
+        },
+        {
+          "center": [
+            24.582,
+            -9.406
+          ],
+          "seed": [
+            24.617,
+            -9.394
+          ],
+          "groundZ": -6.278,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.26415,
+          "dbhCm": 52.83,
+          "circumferenceCm": 165.97,
+          "fitPoints": 50,
+          "sectionPointCount": 148,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.02372,
+          "verticality": 1.0,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.14946,
+          "radiusCv": 0.08,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 119.712,
+          "treeId": "SITE-001-CFO-007"
+        },
+        {
+          "center": [
+            -5.718,
+            -22.409
+          ],
+          "seed": [
+            -5.683,
+            -22.394
+          ],
+          "groundZ": -6.275,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29803,
+          "dbhCm": 59.606,
+          "circumferenceCm": 187.259,
+          "fitPoints": 51,
+          "sectionPointCount": 115,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.0244,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.24546,
+          "radiusCv": 0.196,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 109.324,
+          "treeId": "SITE-001-CFO-008"
+        },
+        {
+          "center": [
+            -45.579,
+            18.295
+          ],
+          "seed": [
+            -45.683,
+            18.306
+          ],
+          "groundZ": -6.019,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.15937,
+          "dbhCm": 31.875,
+          "circumferenceCm": 100.137,
+          "fitPoints": 26,
+          "sectionPointCount": 56,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.01455,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.18915,
+          "radiusCv": 0.516,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 96.917,
+          "treeId": "SITE-001-CFO-009"
+        },
+        {
+          "center": [
+            -39.798,
+            -9.738
+          ],
+          "seed": [
+            -39.883,
+            -9.794
+          ],
+          "groundZ": -6.158,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28472,
+          "dbhCm": 56.945,
+          "circumferenceCm": 178.896,
+          "fitPoints": 37,
+          "sectionPointCount": 98,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.02522,
+          "verticality": 0.991,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.1716,
+          "radiusCv": 0.131,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 86.114,
+          "treeId": "SITE-001-CFO-010"
+        },
+        {
+          "center": [
+            -47.231,
+            6.409
+          ],
+          "seed": [
+            -47.083,
+            6.206
+          ],
+          "groundZ": -5.808,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.19943,
+          "dbhCm": 39.886,
+          "circumferenceCm": 125.307,
+          "fitPoints": 30,
+          "sectionPointCount": 82,
+          "angularCoverageRatio": 0.5,
+          "residualM": 0.01605,
+          "verticality": 0.953,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.15202,
+          "radiusCv": 0.202,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 63.471,
+          "treeId": "SITE-001-CFO-011"
+        },
+        {
+          "center": [
+            -40.714,
+            21.941
+          ],
+          "seed": [
+            -40.683,
+            22.006
+          ],
+          "groundZ": -5.998,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29577,
+          "dbhCm": 59.154,
+          "circumferenceCm": 185.837,
+          "fitPoints": 27,
+          "sectionPointCount": 67,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.02432,
+          "verticality": 0.98,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.16322,
+          "radiusCv": 0.252,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 63.222,
+          "treeId": "SITE-001-CFO-012"
+        },
+        {
+          "center": [
+            -36.41,
+            21.55
+          ],
+          "seed": [
+            -36.683,
+            21.506
+          ],
+          "groundZ": -6.106,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.0631,
+          "dbhCm": 12.62,
+          "circumferenceCm": 39.647,
+          "fitPoints": 13,
+          "sectionPointCount": 41,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.00758,
+          "verticality": 0.997,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.19358,
+          "radiusCv": 0.319,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 63.188,
+          "treeId": "SITE-001-CFO-013"
+        },
+        {
+          "center": [
+            -44.254,
+            19.83
+          ],
+          "seed": [
+            -44.183,
+            19.806
+          ],
+          "groundZ": -6.006,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27824,
+          "dbhCm": 55.647,
+          "circumferenceCm": 174.822,
+          "fitPoints": 26,
+          "sectionPointCount": 51,
+          "angularCoverageRatio": 0.625,
+          "residualM": 0.0205,
+          "verticality": 0.994,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.23545,
+          "radiusCv": 0.181,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 61.034,
+          "treeId": "SITE-001-CFO-014"
+        },
+        {
+          "center": [
+            -44.257,
+            -2.459
+          ],
+          "seed": [
+            -44.183,
+            -2.594
+          ],
+          "groundZ": -6.085,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28319,
+          "dbhCm": 56.638,
+          "circumferenceCm": 177.935,
+          "fitPoints": 26,
+          "sectionPointCount": 60,
+          "angularCoverageRatio": 0.625,
+          "residualM": 0.02078,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.18045,
+          "radiusCv": 0.436,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 60.082,
+          "treeId": "SITE-001-CFO-015"
+        },
+        {
+          "center": [
+            24.443,
+            -6.216
+          ],
+          "seed": [
+            24.417,
+            -6.094
+          ],
+          "groundZ": -6.295,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29225,
+          "dbhCm": 58.449,
+          "circumferenceCm": 183.624,
+          "fitPoints": 40,
+          "sectionPointCount": 100,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.0253,
+          "verticality": 0.986,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.15407,
+          "radiusCv": 0.119,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 59.208,
+          "treeId": "SITE-001-CFO-016"
+        },
+        {
+          "center": [
+            -35.782,
+            22.119
+          ],
+          "seed": [
+            -35.783,
+            22.306
+          ],
+          "groundZ": -6.069,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25056,
+          "dbhCm": 50.112,
+          "circumferenceCm": 157.43,
+          "fitPoints": 25,
+          "sectionPointCount": 51,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.01919,
+          "verticality": 0.979,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.18453,
+          "radiusCv": 0.46,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 46.248,
+          "treeId": "SITE-001-CFO-017"
+        },
+        {
+          "center": [
+            -43.805,
+            -3.631
+          ],
+          "seed": [
+            -43.783,
+            -3.494
+          ],
+          "groundZ": -6.097,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29126,
+          "dbhCm": 58.251,
+          "circumferenceCm": 183.002,
+          "fitPoints": 25,
+          "sectionPointCount": 59,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.02668,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.15211,
+          "radiusCv": 0.062,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 41.424,
+          "treeId": "SITE-001-CFO-018"
+        },
+        {
+          "center": [
+            -46.164,
+            1.169
+          ],
+          "seed": [
+            -46.083,
+            1.406
+          ],
+          "groundZ": -6.058,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.13701,
+          "dbhCm": 27.401,
+          "circumferenceCm": 86.084,
+          "fitPoints": 12,
+          "sectionPointCount": 27,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01192,
+          "verticality": 0.986,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.25577,
+          "radiusCv": 0.416,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 40.701,
+          "treeId": "SITE-001-CFO-019"
+        },
+        {
+          "center": [
+            -46.301,
+            4.614
+          ],
+          "seed": [
+            -46.583,
+            4.806
+          ],
+          "groundZ": -6.088,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.21598,
+          "dbhCm": 43.196,
+          "circumferenceCm": 135.704,
+          "fitPoints": 21,
+          "sectionPointCount": 66,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.00951,
+          "verticality": 0.994,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.23309,
+          "radiusCv": 0.419,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 40.422,
+          "treeId": "SITE-001-CFO-020"
+        },
+        {
+          "center": [
+            -38.126,
+            22.886
+          ],
+          "seed": [
+            -38.283,
+            23.106
+          ],
+          "groundZ": -6.017,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.06661,
+          "dbhCm": 13.321,
+          "circumferenceCm": 41.85,
+          "fitPoints": 12,
+          "sectionPointCount": 29,
+          "angularCoverageRatio": 0.375,
+          "residualM": 0.00731,
+          "verticality": 0.988,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.08225,
+          "radiusCv": 0.401,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT"
+          ],
+          "quality": 39.407,
+          "treeId": "SITE-001-CFO-021"
+        },
+        {
+          "center": [
+            -41.141,
+            21.567
+          ],
+          "seed": [
+            -41.283,
+            21.806
+          ],
+          "groundZ": -6.001,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.15826,
+          "dbhCm": 31.652,
+          "circumferenceCm": 99.438,
+          "fitPoints": 15,
+          "sectionPointCount": 51,
+          "angularCoverageRatio": 0.45833,
+          "residualM": 0.00837,
+          "verticality": 0.98,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.08915,
+          "radiusCv": 0.267,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 39.376,
+          "treeId": "SITE-001-CFO-022"
+        },
+        {
+          "center": [
+            -31.17,
+            25.793
+          ],
+          "seed": [
+            -31.183,
+            25.806
+          ],
+          "groundZ": -6.013,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2644,
+          "dbhCm": 52.881,
+          "circumferenceCm": 166.13,
+          "fitPoints": 19,
+          "sectionPointCount": 35,
+          "angularCoverageRatio": 0.625,
+          "residualM": 0.01993,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.19009,
+          "radiusCv": 0.085,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 37.619,
+          "treeId": "SITE-001-CFO-023"
+        },
+        {
+          "center": [
+            -37.579,
+            22.794
+          ],
+          "seed": [
+            -37.583,
+            22.906
+          ],
+          "groundZ": -6.033,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28592,
+          "dbhCm": 57.185,
+          "circumferenceCm": 179.651,
+          "fitPoints": 19,
+          "sectionPointCount": 43,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.02961,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.18481,
+          "radiusCv": 0.128,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 37.174,
+          "treeId": "SITE-001-CFO-024"
+        },
+        {
+          "center": [
+            -42.024,
+            -9.712
+          ],
+          "seed": [
+            -42.083,
+            -9.694
+          ],
+          "groundZ": -6.015,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29635,
+          "dbhCm": 59.271,
+          "circumferenceCm": 186.204,
+          "fitPoints": 25,
+          "sectionPointCount": 61,
+          "angularCoverageRatio": 0.5,
+          "residualM": 0.0243,
+          "verticality": 0.989,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.18031,
+          "radiusCv": 0.403,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 36.92,
+          "treeId": "SITE-001-CFO-025"
+        },
+        {
+          "center": [
+            -43.646,
+            -5.631
+          ],
+          "seed": [
+            -43.583,
+            -5.494
+          ],
+          "groundZ": -6.032,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.1662,
+          "dbhCm": 33.24,
+          "circumferenceCm": 104.426,
+          "fitPoints": 17,
+          "sectionPointCount": 45,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.01448,
+          "verticality": 0.999,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.2127,
+          "radiusCv": 0.228,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 35.078,
+          "treeId": "SITE-001-CFO-026"
+        },
+        {
+          "center": [
+            -48.686,
+            6.137
+          ],
+          "seed": [
+            -48.883,
+            6.106
+          ],
+          "groundZ": -5.712,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27186,
+          "dbhCm": 54.372,
+          "circumferenceCm": 170.815,
+          "fitPoints": 20,
+          "sectionPointCount": 39,
+          "angularCoverageRatio": 0.5,
+          "residualM": 0.01504,
+          "verticality": 0.989,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.176,
+          "radiusCv": 0.341,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 33.973,
+          "treeId": "SITE-001-CFO-027"
+        },
+        {
+          "center": [
+            -37.461,
+            -17.703
+          ],
+          "seed": [
+            -37.383,
+            -17.794
+          ],
+          "groundZ": -6.058,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.19605,
+          "dbhCm": 39.209,
+          "circumferenceCm": 123.18,
+          "fitPoints": 13,
+          "sectionPointCount": 25,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01581,
+          "verticality": 0.994,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.154,
+          "radiusCv": 0.215,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT"
+          ],
+          "quality": 32.389,
+          "treeId": "SITE-001-CFO-028"
+        },
+        {
+          "center": [
+            -44.395,
+            0.814
+          ],
+          "seed": [
+            -44.383,
+            0.606
+          ],
+          "groundZ": -6.119,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.19177,
+          "dbhCm": 38.354,
+          "circumferenceCm": 120.492,
+          "fitPoints": 15,
+          "sectionPointCount": 42,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.0099,
+          "verticality": 0.994,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.22202,
+          "radiusCv": 0.223,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 31.795,
+          "treeId": "SITE-001-CFO-029"
+        },
+        {
+          "center": [
+            -42.218,
+            -9.224
+          ],
+          "seed": [
+            -42.083,
+            -9.294
+          ],
+          "groundZ": -6.01,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25396,
+          "dbhCm": 50.791,
+          "circumferenceCm": 159.566,
+          "fitPoints": 19,
+          "sectionPointCount": 49,
+          "angularCoverageRatio": 0.45833,
+          "residualM": 0.01901,
+          "verticality": 0.987,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.08124,
+          "radiusCv": 0.427,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 31.375,
+          "treeId": "SITE-001-CFO-030"
+        },
+        {
+          "center": [
+            -44.708,
+            -2.555
+          ],
+          "seed": [
+            -44.683,
+            -2.594
+          ],
+          "groundZ": -6.021,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25202,
+          "dbhCm": 50.405,
+          "circumferenceCm": 158.351,
+          "fitPoints": 19,
+          "sectionPointCount": 55,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01366,
+          "verticality": 0.995,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.16557,
+          "radiusCv": 0.141,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 31.121,
+          "treeId": "SITE-001-CFO-031"
+        },
+        {
+          "center": [
+            -27.081,
+            27.408
+          ],
+          "seed": [
+            -26.883,
+            27.306
+          ],
+          "groundZ": -6.023,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.18625,
+          "dbhCm": 37.251,
+          "circumferenceCm": 117.027,
+          "fitPoints": 14,
+          "sectionPointCount": 35,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01416,
+          "verticality": 0.99,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.24502,
+          "radiusCv": 0.188,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 29.343,
+          "treeId": "SITE-001-CFO-032"
+        },
+        {
+          "center": [
+            -45.119,
+            -0.363
+          ],
+          "seed": [
+            -45.183,
+            -0.594
+          ],
+          "groundZ": -5.981,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.20776,
+          "dbhCm": 41.552,
+          "circumferenceCm": 130.539,
+          "fitPoints": 13,
+          "sectionPointCount": 38,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01543,
+          "verticality": 0.994,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.16913,
+          "radiusCv": 0.282,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT"
+          ],
+          "quality": 24.769,
+          "treeId": "SITE-001-CFO-033"
+        },
+        {
+          "center": [
+            -38.495,
+            -14.55
+          ],
+          "seed": [
+            -38.483,
+            -14.694
+          ],
+          "groundZ": -5.989,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22771,
+          "dbhCm": 45.541,
+          "circumferenceCm": 143.072,
+          "fitPoints": 12,
+          "sectionPointCount": 34,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01043,
+          "verticality": 0.988,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.21035,
+          "radiusCv": 0.251,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 21.797,
+          "treeId": "SITE-001-CFO-034"
+        },
+        {
+          "center": [
+            -28.756,
+            26.205
+          ],
+          "seed": [
+            -28.583,
+            26.106
+          ],
+          "groundZ": -6.092,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.19503,
+          "dbhCm": 39.006,
+          "circumferenceCm": 122.542,
+          "fitPoints": 15,
+          "sectionPointCount": 29,
+          "angularCoverageRatio": 0.33333,
+          "residualM": 0.01368,
+          "verticality": 0.998,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.24635,
+          "radiusCv": 0.123,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "PARTIAL_ANGULAR_COVERAGE",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 20.092,
+          "treeId": "SITE-001-CFO-035"
+        },
+        {
+          "center": [
+            -45.245,
+            13.18
+          ],
+          "seed": [
+            -45.183,
+            13.406
+          ],
+          "groundZ": -5.712,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22913,
+          "dbhCm": 45.826,
+          "circumferenceCm": 143.965,
+          "fitPoints": 14,
+          "sectionPointCount": 19,
+          "angularCoverageRatio": 0.29167,
+          "residualM": 0.01774,
+          "verticality": 0.996,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.17109,
+          "radiusCv": 0.15,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "PARTIAL_ANGULAR_COVERAGE"
+          ],
+          "quality": 19.661,
+          "treeId": "SITE-001-CFO-036"
+        },
+        {
+          "center": [
+            -46.724,
+            17.974
+          ],
+          "seed": [
+            -46.683,
+            18.006
+          ],
+          "groundZ": -5.952,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29935,
+          "dbhCm": 59.87,
+          "circumferenceCm": 188.087,
+          "fitPoints": 14,
+          "sectionPointCount": 21,
+          "angularCoverageRatio": 0.375,
+          "residualM": 0.02515,
+          "verticality": 0.995,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.14841,
+          "radiusCv": 0.391,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "LIMITED_POINT_SUPPORT"
+          ],
+          "quality": 17.088,
+          "treeId": "SITE-001-CFO-037"
+        },
+        {
+          "center": [
+            -46.541,
+            3.313
+          ],
+          "seed": [
+            -46.483,
+            3.006
+          ],
+          "groundZ": -6.061,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.12241,
+          "dbhCm": 24.483,
+          "circumferenceCm": 76.915,
+          "fitPoints": 10,
+          "sectionPointCount": 23,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.00791,
+          "verticality": 0.989,
+          "validatedSlices": 2,
+          "centerSpreadM": 0.06346,
+          "radiusCv": 0.276,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "LIMITED_VERTICAL_PERSISTENCE"
+          ],
+          "quality": 15.265,
+          "treeId": "SITE-001-CFO-038"
+        },
+        {
+          "center": [
+            26.464,
+            -9.939
+          ],
+          "seed": [
+            26.517,
+            -9.994
+          ],
+          "groundZ": -6.286,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2691,
+          "dbhCm": 53.819,
+          "circumferenceCm": 169.079,
+          "fitPoints": 11,
+          "sectionPointCount": 24,
+          "angularCoverageRatio": 0.375,
+          "residualM": 0.02056,
+          "verticality": 0.992,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.07935,
+          "radiusCv": 0.177,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "LIMITED_POINT_SUPPORT"
+          ],
+          "quality": 11.364,
+          "treeId": "SITE-001-CFO-039"
+        },
+        {
+          "center": [
+            -36.227,
+            -19.391
+          ],
+          "seed": [
+            -36.283,
+            -19.394
+          ],
+          "groundZ": -6.104,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22912,
+          "dbhCm": 45.823,
+          "circumferenceCm": 143.958,
+          "fitPoints": 10,
+          "sectionPointCount": 27,
+          "angularCoverageRatio": 0.375,
+          "residualM": 0.01826,
+          "verticality": 0.988,
+          "validatedSlices": 2,
+          "centerSpreadM": 0.07956,
+          "radiusCv": 0.093,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "LIMITED_VERTICAL_PERSISTENCE"
+          ],
+          "quality": 8.006,
+          "treeId": "SITE-001-CFO-040"
+        },
+        {
+          "center": [
+            -28.912,
+            -33.849
+          ],
+          "seed": [
+            -28.783,
+            -33.794
+          ],
+          "groundZ": -6.043,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28528,
+          "dbhCm": 57.056,
+          "circumferenceCm": 179.246,
+          "fitPoints": 12,
+          "sectionPointCount": 21,
+          "angularCoverageRatio": 0.375,
+          "residualM": 0.02435,
+          "verticality": 0.981,
+          "validatedSlices": 2,
+          "centerSpreadM": 0.11384,
+          "radiusCv": 0.231,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "LIMITED_POINT_SUPPORT",
+            "LIMITED_VERTICAL_PERSISTENCE"
+          ],
+          "quality": 7.575,
+          "treeId": "SITE-001-CFO-041"
+        }
+      ]
+    },
+    {
+      "siteId": "site-002",
+      "measurementStatus": "CFO_SCREENING_ONLY",
+      "fieldVerified": false,
+      "sourceLas": "Rayong55_010s_2026_08_14_02_53_34.las",
+      "sourcePointCount": 73372172,
+      "viewerPointCount": 991516,
+      "samplingStride": 74,
+      "analysisPointCount": 991510,
+      "globalGroundHintZ": -3.6661,
+      "candidateSeedCount": 163,
+      "retainedCandidateCount": 80,
+      "statusCounts": {
+        "A_INDICATIVE": 5,
+        "B_LOW_CONFIDENCE": 32,
+        "C_STRUCTURE_RISK": 43
+      },
+      "aIndicativeDbh": {
+        "n": 5,
+        "meanCm": 34.75,
+        "medianCm": 36.47,
+        "p25Cm": 35.97,
+        "p75Cm": 41.2,
+        "minCm": 16.68,
+        "maxCm": 43.44
+      },
+      "aPlusBScreeningDbh": {
+        "n": 37,
+        "meanCm": 36.67,
+        "medianCm": 40.96,
+        "p25Cm": 30.25,
+        "p75Cm": 46.19,
+        "minCm": 12.61,
+        "maxCm": 49.48
+      },
+      "preferredCfoScreeningDbh": {
+        "n": 5,
+        "meanCm": 34.75,
+        "medianCm": 36.47,
+        "p25Cm": 35.97,
+        "p75Cm": 41.2,
+        "minCm": 16.68,
+        "maxCm": 43.44
+      },
+      "preferredBasis": "A_INDICATIVE",
+      "trees": [
+        {
+          "center": [
+            12.006,
+            -20.715
+          ],
+          "seed": [
+            11.906,
+            -20.676
+          ],
+          "groundZ": -3.703,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29298,
+          "dbhCm": 58.597,
+          "circumferenceCm": 184.087,
+          "fitPoints": 1347,
+          "sectionPointCount": 2993,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.02411,
+          "verticality": 0.985,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.16744,
+          "radiusCv": 0.135,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 4175.719,
+          "treeId": "SITE-002-CFO-001"
+        },
+        {
+          "center": [
+            10.493,
+            -21.958
+          ],
+          "seed": [
+            10.306,
+            -22.176
+          ],
+          "groundZ": -3.7,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.17733,
+          "dbhCm": 35.467,
+          "circumferenceCm": 111.421,
+          "fitPoints": 720,
+          "sectionPointCount": 2210,
+          "angularCoverageRatio": 0.95833,
+          "residualM": 0.0147,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.22648,
+          "radiusCv": 0.438,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 3563.413,
+          "treeId": "SITE-002-CFO-002"
+        },
+        {
+          "center": [
+            -2.956,
+            4.832
+          ],
+          "seed": [
+            -3.194,
+            4.924
+          ],
+          "groundZ": -3.564,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.07081,
+          "dbhCm": 14.161,
+          "circumferenceCm": 44.49,
+          "fitPoints": 343,
+          "sectionPointCount": 2234,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.00974,
+          "verticality": 0.932,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.21672,
+          "radiusCv": 0.28,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 3345.067,
+          "treeId": "SITE-002-CFO-003"
+        },
+        {
+          "center": [
+            2.504,
+            2.878
+          ],
+          "seed": [
+            2.506,
+            2.924
+          ],
+          "groundZ": -3.608,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25912,
+          "dbhCm": 51.824,
+          "circumferenceCm": 162.811,
+          "fitPoints": 780,
+          "sectionPointCount": 2014,
+          "angularCoverageRatio": 0.95833,
+          "residualM": 0.02287,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.25775,
+          "radiusCv": 0.389,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 2653.136,
+          "treeId": "SITE-002-CFO-004"
+        },
+        {
+          "center": [
+            -4.283,
+            -4.134
+          ],
+          "seed": [
+            -4.194,
+            -4.176
+          ],
+          "groundZ": -3.585,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29935,
+          "dbhCm": 59.869,
+          "circumferenceCm": 188.085,
+          "fitPoints": 851,
+          "sectionPointCount": 1805,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.02384,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15356,
+          "radiusCv": 0.44,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 2623.905,
+          "treeId": "SITE-002-CFO-005"
+        },
+        {
+          "center": [
+            -1.535,
+            -19.698
+          ],
+          "seed": [
+            -1.594,
+            -19.676
+          ],
+          "groundZ": -3.574,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29913,
+          "dbhCm": 59.825,
+          "circumferenceCm": 187.946,
+          "fitPoints": 842,
+          "sectionPointCount": 1928,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.02472,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15453,
+          "radiusCv": 0.201,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 2580.498,
+          "treeId": "SITE-002-CFO-006"
+        },
+        {
+          "center": [
+            15.531,
+            -13.445
+          ],
+          "seed": [
+            15.606,
+            -13.376
+          ],
+          "groundZ": -3.598,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29653,
+          "dbhCm": 59.306,
+          "circumferenceCm": 186.316,
+          "fitPoints": 844,
+          "sectionPointCount": 1744,
+          "angularCoverageRatio": 0.95833,
+          "residualM": 0.0233,
+          "verticality": 0.983,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.23223,
+          "radiusCv": 0.605,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 2510.942,
+          "treeId": "SITE-002-CFO-007"
+        },
+        {
+          "center": [
+            -4.251,
+            -19.503
+          ],
+          "seed": [
+            -4.294,
+            -19.576
+          ],
+          "groundZ": -3.584,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.1404,
+          "dbhCm": 28.079,
+          "circumferenceCm": 88.214,
+          "fitPoints": 391,
+          "sectionPointCount": 1496,
+          "angularCoverageRatio": 0.91667,
+          "residualM": 0.01164,
+          "verticality": 0.976,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.20225,
+          "radiusCv": 0.609,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 2258.07,
+          "treeId": "SITE-002-CFO-008"
+        },
+        {
+          "center": [
+            -0.148,
+            -21.372
+          ],
+          "seed": [
+            -0.094,
+            -21.376
+          ],
+          "groundZ": -3.593,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27096,
+          "dbhCm": 54.192,
+          "circumferenceCm": 170.249,
+          "fitPoints": 492,
+          "sectionPointCount": 1217,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.02399,
+          "verticality": 0.983,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.13457,
+          "radiusCv": 0.599,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 1630.31,
+          "treeId": "SITE-002-CFO-009"
+        },
+        {
+          "center": [
+            -3.063,
+            -21.038
+          ],
+          "seed": [
+            -3.094,
+            -21.076
+          ],
+          "groundZ": -3.599,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28144,
+          "dbhCm": 56.288,
+          "circumferenceCm": 176.835,
+          "fitPoints": 498,
+          "sectionPointCount": 1242,
+          "angularCoverageRatio": 0.95833,
+          "residualM": 0.0248,
+          "verticality": 0.981,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.12558,
+          "radiusCv": 0.618,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 1532.402,
+          "treeId": "SITE-002-CFO-010"
+        },
+        {
+          "center": [
+            -1.026,
+            -1.283
+          ],
+          "seed": [
+            -0.994,
+            -1.376
+          ],
+          "groundZ": -3.574,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29867,
+          "dbhCm": 59.734,
+          "circumferenceCm": 187.659,
+          "fitPoints": 484,
+          "sectionPointCount": 935,
+          "angularCoverageRatio": 1.0,
+          "residualM": 0.02481,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.11061,
+          "radiusCv": 0.575,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 1490.032,
+          "treeId": "SITE-002-CFO-011"
+        },
+        {
+          "center": [
+            -4.916,
+            -8.733
+          ],
+          "seed": [
+            -4.794,
+            -8.676
+          ],
+          "groundZ": -3.619,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28176,
+          "dbhCm": 56.352,
+          "circumferenceCm": 177.036,
+          "fitPoints": 303,
+          "sectionPointCount": 919,
+          "angularCoverageRatio": 0.91667,
+          "residualM": 0.02522,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.17904,
+          "radiusCv": 0.067,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 909.622,
+          "treeId": "SITE-002-CFO-012"
+        },
+        {
+          "center": [
+            16.883,
+            -15.041
+          ],
+          "seed": [
+            16.806,
+            -14.976
+          ],
+          "groundZ": -3.652,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25921,
+          "dbhCm": 51.841,
+          "circumferenceCm": 162.865,
+          "fitPoints": 222,
+          "sectionPointCount": 593,
+          "angularCoverageRatio": 0.91667,
+          "residualM": 0.02195,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.1351,
+          "radiusCv": 0.628,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 732.89,
+          "treeId": "SITE-002-CFO-013"
+        },
+        {
+          "center": [
+            13.935,
+            -14.796
+          ],
+          "seed": [
+            14.006,
+            -14.776
+          ],
+          "groundZ": -3.7,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28103,
+          "dbhCm": 56.207,
+          "circumferenceCm": 176.579,
+          "fitPoints": 290,
+          "sectionPointCount": 803,
+          "angularCoverageRatio": 0.91667,
+          "residualM": 0.0258,
+          "verticality": 0.992,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.20181,
+          "radiusCv": 0.531,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 693.122,
+          "treeId": "SITE-002-CFO-014"
+        },
+        {
+          "center": [
+            12.209,
+            -17.75
+          ],
+          "seed": [
+            12.206,
+            -17.776
+          ],
+          "groundZ": -3.67,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.26065,
+          "dbhCm": 52.13,
+          "circumferenceCm": 163.772,
+          "fitPoints": 212,
+          "sectionPointCount": 518,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.02217,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.08128,
+          "radiusCv": 0.465,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 648.643,
+          "treeId": "SITE-002-CFO-015"
+        },
+        {
+          "center": [
+            16.835,
+            0.34
+          ],
+          "seed": [
+            17.006,
+            0.224
+          ],
+          "groundZ": -3.533,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.08655,
+          "dbhCm": 17.31,
+          "circumferenceCm": 54.382,
+          "fitPoints": 77,
+          "sectionPointCount": 480,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.00882,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.19514,
+          "radiusCv": 0.642,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 637.623,
+          "treeId": "SITE-002-CFO-016"
+        },
+        {
+          "center": [
+            10.926,
+            -19.226
+          ],
+          "seed": [
+            10.706,
+            -19.176
+          ],
+          "groundZ": -3.696,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.21858,
+          "dbhCm": 43.717,
+          "circumferenceCm": 137.341,
+          "fitPoints": 143,
+          "sectionPointCount": 565,
+          "angularCoverageRatio": 0.95833,
+          "residualM": 0.01899,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.19319,
+          "radiusCv": 0.465,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 579.856,
+          "treeId": "SITE-002-CFO-017"
+        },
+        {
+          "center": [
+            15.264,
+            -2.633
+          ],
+          "seed": [
+            15.206,
+            -2.576
+          ],
+          "groundZ": -3.555,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.23225,
+          "dbhCm": 46.45,
+          "circumferenceCm": 145.928,
+          "fitPoints": 194,
+          "sectionPointCount": 436,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.02,
+          "verticality": 0.968,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.16274,
+          "radiusCv": 0.563,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 535.059,
+          "treeId": "SITE-002-CFO-018"
+        },
+        {
+          "center": [
+            16.816,
+            -13.436
+          ],
+          "seed": [
+            17.006,
+            -13.576
+          ],
+          "groundZ": -3.609,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.06304,
+          "dbhCm": 12.608,
+          "circumferenceCm": 39.609,
+          "fitPoints": 52,
+          "sectionPointCount": 440,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.0086,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.22143,
+          "radiusCv": 0.421,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 508.739,
+          "treeId": "SITE-002-CFO-019"
+        },
+        {
+          "center": [
+            7.705,
+            -19.124
+          ],
+          "seed": [
+            7.806,
+            -18.976
+          ],
+          "groundZ": -3.687,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25994,
+          "dbhCm": 51.987,
+          "circumferenceCm": 163.322,
+          "fitPoints": 155,
+          "sectionPointCount": 352,
+          "angularCoverageRatio": 0.79167,
+          "residualM": 0.02132,
+          "verticality": 0.998,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.25103,
+          "radiusCv": 0.375,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 459.124,
+          "treeId": "SITE-002-CFO-020"
+        },
+        {
+          "center": [
+            4.583,
+            -18.849
+          ],
+          "seed": [
+            4.606,
+            -18.776
+          ],
+          "groundZ": -3.638,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29855,
+          "dbhCm": 59.71,
+          "circumferenceCm": 187.586,
+          "fitPoints": 161,
+          "sectionPointCount": 368,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.0228,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.20483,
+          "radiusCv": 0.472,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 452.166,
+          "treeId": "SITE-002-CFO-021"
+        },
+        {
+          "center": [
+            -3.36,
+            -10.444
+          ],
+          "seed": [
+            -3.394,
+            -10.476
+          ],
+          "groundZ": -3.631,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29805,
+          "dbhCm": 59.611,
+          "circumferenceCm": 187.272,
+          "fitPoints": 136,
+          "sectionPointCount": 291,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.02448,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.16084,
+          "radiusCv": 0.454,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 378.432,
+          "treeId": "SITE-002-CFO-022"
+        },
+        {
+          "center": [
+            2.539,
+            4.535
+          ],
+          "seed": [
+            2.606,
+            4.424
+          ],
+          "groundZ": -3.59,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27247,
+          "dbhCm": 54.495,
+          "circumferenceCm": 171.2,
+          "fitPoints": 147,
+          "sectionPointCount": 310,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.02229,
+          "verticality": 0.988,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.17286,
+          "radiusCv": 0.511,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 361.496,
+          "treeId": "SITE-002-CFO-023"
+        },
+        {
+          "center": [
+            -6.89,
+            0.492
+          ],
+          "seed": [
+            -6.794,
+            0.524
+          ],
+          "groundZ": -3.579,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29741,
+          "dbhCm": 59.482,
+          "circumferenceCm": 186.869,
+          "fitPoints": 135,
+          "sectionPointCount": 310,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.02527,
+          "verticality": 0.98,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.22278,
+          "radiusCv": 0.303,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 353.437,
+          "treeId": "SITE-002-CFO-024"
+        },
+        {
+          "center": [
+            -7.259,
+            -2.451
+          ],
+          "seed": [
+            -7.294,
+            -2.476
+          ],
+          "groundZ": -3.552,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22104,
+          "dbhCm": 44.208,
+          "circumferenceCm": 138.885,
+          "fitPoints": 107,
+          "sectionPointCount": 288,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.01628,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.2447,
+          "radiusCv": 0.507,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 347.459,
+          "treeId": "SITE-002-CFO-025"
+        },
+        {
+          "center": [
+            17.317,
+            -10.463
+          ],
+          "seed": [
+            17.306,
+            -10.476
+          ],
+          "groundZ": -3.606,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29018,
+          "dbhCm": 58.037,
+          "circumferenceCm": 182.327,
+          "fitPoints": 118,
+          "sectionPointCount": 289,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.02457,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.16338,
+          "radiusCv": 0.281,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 335.956,
+          "treeId": "SITE-002-CFO-026"
+        },
+        {
+          "center": [
+            13.022,
+            -25.025
+          ],
+          "seed": [
+            13.006,
+            -25.276
+          ],
+          "groundZ": -3.718,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.17985,
+          "dbhCm": 35.969,
+          "circumferenceCm": 113.0,
+          "fitPoints": 69,
+          "sectionPointCount": 240,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.0163,
+          "verticality": 0.998,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15688,
+          "radiusCv": 0.172,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 300.229,
+          "treeId": "SITE-002-CFO-027"
+        },
+        {
+          "center": [
+            3.28,
+            -18.813
+          ],
+          "seed": [
+            3.206,
+            -18.576
+          ],
+          "groundZ": -3.626,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.21719,
+          "dbhCm": 43.437,
+          "circumferenceCm": 136.462,
+          "fitPoints": 90,
+          "sectionPointCount": 322,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.01822,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.1269,
+          "radiusCv": 0.36,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 279.978,
+          "treeId": "SITE-002-CFO-028"
+        },
+        {
+          "center": [
+            -7.517,
+            -5.649
+          ],
+          "seed": [
+            -7.494,
+            -5.576
+          ],
+          "groundZ": -3.598,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29752,
+          "dbhCm": 59.504,
+          "circumferenceCm": 186.936,
+          "fitPoints": 105,
+          "sectionPointCount": 225,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.02529,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.10145,
+          "radiusCv": 0.466,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 257.841,
+          "treeId": "SITE-002-CFO-029"
+        },
+        {
+          "center": [
+            17.493,
+            -7.555
+          ],
+          "seed": [
+            17.606,
+            -7.576
+          ],
+          "groundZ": -3.611,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.24649,
+          "dbhCm": 49.298,
+          "circumferenceCm": 154.875,
+          "fitPoints": 103,
+          "sectionPointCount": 243,
+          "angularCoverageRatio": 0.79167,
+          "residualM": 0.0204,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.22148,
+          "radiusCv": 0.12,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 257.389,
+          "treeId": "SITE-002-CFO-030"
+        },
+        {
+          "center": [
+            18.055,
+            -12.056
+          ],
+          "seed": [
+            18.006,
+            -12.076
+          ],
+          "groundZ": -3.629,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.08341,
+          "dbhCm": 16.681,
+          "circumferenceCm": 52.406,
+          "fitPoints": 40,
+          "sectionPointCount": 51,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.00676,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.05673,
+          "radiusCv": 0.29,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 243.445,
+          "treeId": "SITE-002-CFO-031"
+        },
+        {
+          "center": [
+            -6.365,
+            1.947
+          ],
+          "seed": [
+            -6.494,
+            2.124
+          ],
+          "groundZ": -3.581,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.07366,
+          "dbhCm": 14.732,
+          "circumferenceCm": 46.283,
+          "fitPoints": 31,
+          "sectionPointCount": 173,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.00879,
+          "verticality": 0.989,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.25284,
+          "radiusCv": 0.338,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 241.518,
+          "treeId": "SITE-002-CFO-032"
+        },
+        {
+          "center": [
+            4.103,
+            -23.218
+          ],
+          "seed": [
+            4.106,
+            -23.176
+          ],
+          "groundZ": -3.602,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.26024,
+          "dbhCm": 52.048,
+          "circumferenceCm": 163.514,
+          "fitPoints": 76,
+          "sectionPointCount": 233,
+          "angularCoverageRatio": 0.875,
+          "residualM": 0.02184,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.18122,
+          "radiusCv": 0.134,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 241.294,
+          "treeId": "SITE-002-CFO-033"
+        },
+        {
+          "center": [
+            -3.277,
+            -22.522
+          ],
+          "seed": [
+            -3.294,
+            -22.576
+          ],
+          "groundZ": -3.618,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2803,
+          "dbhCm": 56.061,
+          "circumferenceCm": 176.119,
+          "fitPoints": 90,
+          "sectionPointCount": 217,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.02314,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.16347,
+          "radiusCv": 0.451,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 226.589,
+          "treeId": "SITE-002-CFO-034"
+        },
+        {
+          "center": [
+            -8.486,
+            -2.329
+          ],
+          "seed": [
+            -8.594,
+            -2.376
+          ],
+          "groundZ": -3.582,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.23094,
+          "dbhCm": 46.187,
+          "circumferenceCm": 145.102,
+          "fitPoints": 62,
+          "sectionPointCount": 150,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.01807,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.13424,
+          "radiusCv": 0.379,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [],
+          "quality": 199.764,
+          "treeId": "SITE-002-CFO-035"
+        },
+        {
+          "center": [
+            4.286,
+            5.943
+          ],
+          "seed": [
+            4.306,
+            5.924
+          ],
+          "groundZ": -3.561,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.23751,
+          "dbhCm": 47.502,
+          "circumferenceCm": 149.231,
+          "fitPoints": 78,
+          "sectionPointCount": 225,
+          "angularCoverageRatio": 0.79167,
+          "residualM": 0.02193,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.1066,
+          "radiusCv": 0.294,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [],
+          "quality": 199.154,
+          "treeId": "SITE-002-CFO-036"
+        },
+        {
+          "center": [
+            18.359,
+            -15.206
+          ],
+          "seed": [
+            18.406,
+            -15.376
+          ],
+          "groundZ": -3.669,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28364,
+          "dbhCm": 56.729,
+          "circumferenceCm": 178.219,
+          "fitPoints": 74,
+          "sectionPointCount": 134,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.02324,
+          "verticality": 0.998,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.17102,
+          "radiusCv": 0.423,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 192.371,
+          "treeId": "SITE-002-CFO-037"
+        },
+        {
+          "center": [
+            18.224,
+            0.188
+          ],
+          "seed": [
+            18.406,
+            0.124
+          ],
+          "groundZ": -3.563,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2399,
+          "dbhCm": 47.98,
+          "circumferenceCm": 150.734,
+          "fitPoints": 84,
+          "sectionPointCount": 189,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.01938,
+          "verticality": 1.0,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.17958,
+          "radiusCv": 0.42,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [],
+          "quality": 190.504,
+          "treeId": "SITE-002-CFO-038"
+        },
+        {
+          "center": [
+            1.852,
+            -17.167
+          ],
+          "seed": [
+            1.906,
+            -16.976
+          ],
+          "groundZ": -3.601,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2469,
+          "dbhCm": 49.381,
+          "circumferenceCm": 155.135,
+          "fitPoints": 57,
+          "sectionPointCount": 167,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.01971,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.11591,
+          "radiusCv": 0.336,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [],
+          "quality": 185.661,
+          "treeId": "SITE-002-CFO-039"
+        },
+        {
+          "center": [
+            4.927,
+            -1.696
+          ],
+          "seed": [
+            4.906,
+            -1.876
+          ],
+          "groundZ": -3.644,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.24742,
+          "dbhCm": 49.485,
+          "circumferenceCm": 155.46,
+          "fitPoints": 62,
+          "sectionPointCount": 133,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.02082,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.25293,
+          "radiusCv": 0.43,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 184.288,
+          "treeId": "SITE-002-CFO-040"
+        },
+        {
+          "center": [
+            16.231,
+            -23.817
+          ],
+          "seed": [
+            16.106,
+            -24.076
+          ],
+          "groundZ": -3.724,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.08182,
+          "dbhCm": 16.364,
+          "circumferenceCm": 51.409,
+          "fitPoints": 36,
+          "sectionPointCount": 175,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.00906,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.20638,
+          "radiusCv": 0.616,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 183.437,
+          "treeId": "SITE-002-CFO-041"
+        },
+        {
+          "center": [
+            3.479,
+            -1.777
+          ],
+          "seed": [
+            3.606,
+            -1.676
+          ],
+          "groundZ": -3.641,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27307,
+          "dbhCm": 54.613,
+          "circumferenceCm": 171.572,
+          "fitPoints": 65,
+          "sectionPointCount": 152,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.02342,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.24094,
+          "radiusCv": 0.381,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 174.775,
+          "treeId": "SITE-002-CFO-042"
+        },
+        {
+          "center": [
+            17.741,
+            -5.803
+          ],
+          "seed": [
+            17.806,
+            -5.876
+          ],
+          "groundZ": -3.614,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29963,
+          "dbhCm": 59.927,
+          "circumferenceCm": 188.266,
+          "fitPoints": 70,
+          "sectionPointCount": 158,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.02479,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.13191,
+          "radiusCv": 0.099,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 171.882,
+          "treeId": "SITE-002-CFO-043"
+        },
+        {
+          "center": [
+            -1.991,
+            -8.9
+          ],
+          "seed": [
+            -2.094,
+            -8.976
+          ],
+          "groundZ": -3.643,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.20478,
+          "dbhCm": 40.956,
+          "circumferenceCm": 128.668,
+          "fitPoints": 45,
+          "sectionPointCount": 133,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.01573,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.23722,
+          "radiusCv": 0.443,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 130.541,
+          "treeId": "SITE-002-CFO-044"
+        },
+        {
+          "center": [
+            12.73,
+            -11.611
+          ],
+          "seed": [
+            12.706,
+            -11.576
+          ],
+          "groundZ": -3.671,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29757,
+          "dbhCm": 59.514,
+          "circumferenceCm": 186.968,
+          "fitPoints": 63,
+          "sectionPointCount": 139,
+          "angularCoverageRatio": 0.79167,
+          "residualM": 0.02391,
+          "verticality": 0.995,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.09951,
+          "radiusCv": 0.235,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 129.877,
+          "treeId": "SITE-002-CFO-045"
+        },
+        {
+          "center": [
+            -6.352,
+            3.506
+          ],
+          "seed": [
+            -6.594,
+            3.524
+          ],
+          "groundZ": -3.576,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22994,
+          "dbhCm": 45.988,
+          "circumferenceCm": 144.475,
+          "fitPoints": 49,
+          "sectionPointCount": 121,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.01631,
+          "verticality": 0.992,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.22368,
+          "radiusCv": 0.092,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 126.043,
+          "treeId": "SITE-002-CFO-046"
+        },
+        {
+          "center": [
+            6.283,
+            -1.988
+          ],
+          "seed": [
+            6.406,
+            -1.976
+          ],
+          "groundZ": -3.625,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28989,
+          "dbhCm": 57.978,
+          "circumferenceCm": 182.144,
+          "fitPoints": 57,
+          "sectionPointCount": 126,
+          "angularCoverageRatio": 0.75,
+          "residualM": 0.0221,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.22799,
+          "radiusCv": 0.428,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 117.209,
+          "treeId": "SITE-002-CFO-047"
+        },
+        {
+          "center": [
+            18.489,
+            -13.945
+          ],
+          "seed": [
+            18.606,
+            -13.876
+          ],
+          "groundZ": -3.666,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2946,
+          "dbhCm": 58.921,
+          "circumferenceCm": 185.105,
+          "fitPoints": 48,
+          "sectionPointCount": 125,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.02493,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.24281,
+          "radiusCv": 0.603,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 114.578,
+          "treeId": "SITE-002-CFO-048"
+        },
+        {
+          "center": [
+            -2.306,
+            -12.05
+          ],
+          "seed": [
+            -2.294,
+            -12.076
+          ],
+          "groundZ": -3.615,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29083,
+          "dbhCm": 58.165,
+          "circumferenceCm": 182.732,
+          "fitPoints": 56,
+          "sectionPointCount": 125,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.02302,
+          "verticality": 0.996,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.16206,
+          "radiusCv": 0.156,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 109.182,
+          "treeId": "SITE-002-CFO-049"
+        },
+        {
+          "center": [
+            -0.046,
+            7.838
+          ],
+          "seed": [
+            -0.094,
+            7.924
+          ],
+          "groundZ": -3.585,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.25131,
+          "dbhCm": 50.262,
+          "circumferenceCm": 157.904,
+          "fitPoints": 39,
+          "sectionPointCount": 69,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.02056,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15929,
+          "radiusCv": 0.613,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 105.284,
+          "treeId": "SITE-002-CFO-050"
+        },
+        {
+          "center": [
+            11.909,
+            -10.164
+          ],
+          "seed": [
+            11.606,
+            -10.176
+          ],
+          "groundZ": -3.667,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.07327,
+          "dbhCm": 14.654,
+          "circumferenceCm": 46.036,
+          "fitPoints": 17,
+          "sectionPointCount": 70,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.00809,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.21686,
+          "radiusCv": 0.542,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 93.878,
+          "treeId": "SITE-002-CFO-051"
+        },
+        {
+          "center": [
+            -9.173,
+            -9.993
+          ],
+          "seed": [
+            -9.194,
+            -9.976
+          ],
+          "groundZ": -3.591,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28515,
+          "dbhCm": 57.03,
+          "circumferenceCm": 179.166,
+          "fitPoints": 56,
+          "sectionPointCount": 108,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.02187,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.16532,
+          "radiusCv": 0.1,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 92.608,
+          "treeId": "SITE-002-CFO-052"
+        },
+        {
+          "center": [
+            -2.15,
+            -10.408
+          ],
+          "seed": [
+            -2.094,
+            -10.376
+          ],
+          "groundZ": -3.644,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29972,
+          "dbhCm": 59.943,
+          "circumferenceCm": 188.317,
+          "fitPoints": 65,
+          "sectionPointCount": 151,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.02361,
+          "verticality": 0.999,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.07282,
+          "radiusCv": 0.497,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 88.417,
+          "treeId": "SITE-002-CFO-053"
+        },
+        {
+          "center": [
+            5.498,
+            -24.76
+          ],
+          "seed": [
+            5.406,
+            -24.876
+          ],
+          "groundZ": -3.624,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2114,
+          "dbhCm": 42.281,
+          "circumferenceCm": 132.829,
+          "fitPoints": 34,
+          "sectionPointCount": 99,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.01808,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.1831,
+          "radiusCv": 0.153,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 86.438,
+          "treeId": "SITE-002-CFO-054"
+        },
+        {
+          "center": [
+            18.17,
+            -18.345
+          ],
+          "seed": [
+            18.106,
+            -18.376
+          ],
+          "groundZ": -3.695,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28908,
+          "dbhCm": 57.816,
+          "circumferenceCm": 181.633,
+          "fitPoints": 42,
+          "sectionPointCount": 70,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.02375,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.19654,
+          "radiusCv": 0.601,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 84.871,
+          "treeId": "SITE-002-CFO-055"
+        },
+        {
+          "center": [
+            1.387,
+            7.745
+          ],
+          "seed": [
+            1.306,
+            7.724
+          ],
+          "groundZ": -3.587,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.23757,
+          "dbhCm": 47.514,
+          "circumferenceCm": 149.268,
+          "fitPoints": 35,
+          "sectionPointCount": 95,
+          "angularCoverageRatio": 0.66667,
+          "residualM": 0.01925,
+          "verticality": 0.993,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.10031,
+          "radiusCv": 0.569,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 79.603,
+          "treeId": "SITE-002-CFO-056"
+        },
+        {
+          "center": [
+            7.038,
+            -24.756
+          ],
+          "seed": [
+            7.006,
+            -24.876
+          ],
+          "groundZ": -3.627,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.23461,
+          "dbhCm": 46.923,
+          "circumferenceCm": 147.412,
+          "fitPoints": 28,
+          "sectionPointCount": 72,
+          "angularCoverageRatio": 0.625,
+          "residualM": 0.01806,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.13872,
+          "radiusCv": 0.466,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 77.863,
+          "treeId": "SITE-002-CFO-057"
+        },
+        {
+          "center": [
+            0.49,
+            -15.197
+          ],
+          "seed": [
+            0.306,
+            -15.276
+          ],
+          "groundZ": -3.589,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.18232,
+          "dbhCm": 36.465,
+          "circumferenceCm": 114.558,
+          "fitPoints": 23,
+          "sectionPointCount": 71,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.01622,
+          "verticality": 0.995,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.1323,
+          "radiusCv": 0.2,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 72.122,
+          "treeId": "SITE-002-CFO-058"
+        },
+        {
+          "center": [
+            -8.67,
+            -3.846
+          ],
+          "seed": [
+            -8.594,
+            -3.876
+          ],
+          "groundZ": -3.588,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29278,
+          "dbhCm": 58.557,
+          "circumferenceCm": 183.961,
+          "fitPoints": 33,
+          "sectionPointCount": 75,
+          "angularCoverageRatio": 0.83333,
+          "residualM": 0.02619,
+          "verticality": 0.996,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.21389,
+          "radiusCv": 0.211,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 70.78,
+          "treeId": "SITE-002-CFO-059"
+        },
+        {
+          "center": [
+            9.762,
+            -12.992
+          ],
+          "seed": [
+            9.806,
+            -12.976
+          ],
+          "groundZ": -3.66,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29868,
+          "dbhCm": 59.736,
+          "circumferenceCm": 187.667,
+          "fitPoints": 36,
+          "sectionPointCount": 69,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.02383,
+          "verticality": 1.0,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.21773,
+          "radiusCv": 0.583,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 68.436,
+          "treeId": "SITE-002-CFO-060"
+        },
+        {
+          "center": [
+            2.592,
+            -24.636
+          ],
+          "seed": [
+            2.506,
+            -24.676
+          ],
+          "groundZ": -3.622,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2712,
+          "dbhCm": 54.239,
+          "circumferenceCm": 170.398,
+          "fitPoints": 44,
+          "sectionPointCount": 100,
+          "angularCoverageRatio": 0.70833,
+          "residualM": 0.02357,
+          "verticality": 0.997,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.20289,
+          "radiusCv": 0.269,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 68.211,
+          "treeId": "SITE-002-CFO-061"
+        },
+        {
+          "center": [
+            3.142,
+            8.797
+          ],
+          "seed": [
+            3.206,
+            8.924
+          ],
+          "groundZ": -3.551,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.206,
+          "dbhCm": 41.2,
+          "circumferenceCm": 129.434,
+          "fitPoints": 24,
+          "sectionPointCount": 57,
+          "angularCoverageRatio": 0.5,
+          "residualM": 0.01644,
+          "verticality": 0.998,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15331,
+          "radiusCv": 0.282,
+          "status": "A_INDICATIVE",
+          "qaFlags": [],
+          "quality": 64.53,
+          "treeId": "SITE-002-CFO-062"
+        },
+        {
+          "center": [
+            -4.224,
+            7.853
+          ],
+          "seed": [
+            -4.394,
+            8.024
+          ],
+          "groundZ": -3.543,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.15124,
+          "dbhCm": 30.249,
+          "circumferenceCm": 95.03,
+          "fitPoints": 20,
+          "sectionPointCount": 72,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.01193,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.18116,
+          "radiusCv": 0.199,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 63.598,
+          "treeId": "SITE-002-CFO-063"
+        },
+        {
+          "center": [
+            18.836,
+            -10.668
+          ],
+          "seed": [
+            18.906,
+            -10.776
+          ],
+          "groundZ": -3.64,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27616,
+          "dbhCm": 55.232,
+          "circumferenceCm": 173.516,
+          "fitPoints": 34,
+          "sectionPointCount": 85,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.01845,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.21772,
+          "radiusCv": 0.028,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 62.366,
+          "treeId": "SITE-002-CFO-064"
+        },
+        {
+          "center": [
+            18.822,
+            -12.07
+          ],
+          "seed": [
+            18.906,
+            -12.276
+          ],
+          "groundZ": -3.654,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.19139,
+          "dbhCm": 38.277,
+          "circumferenceCm": 120.252,
+          "fitPoints": 20,
+          "sectionPointCount": 69,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.01234,
+          "verticality": 0.997,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.23806,
+          "radiusCv": 0.431,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 62.124,
+          "treeId": "SITE-002-CFO-065"
+        },
+        {
+          "center": [
+            15.604,
+            -26.869
+          ],
+          "seed": [
+            15.606,
+            -26.876
+          ],
+          "groundZ": -3.724,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.16575,
+          "dbhCm": 33.15,
+          "circumferenceCm": 104.145,
+          "fitPoints": 21,
+          "sectionPointCount": 45,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01299,
+          "verticality": 0.982,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.25597,
+          "radiusCv": 0.107,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 60.544,
+          "treeId": "SITE-002-CFO-066"
+        },
+        {
+          "center": [
+            6.347,
+            -3.325
+          ],
+          "seed": [
+            6.406,
+            -3.176
+          ],
+          "groundZ": -3.631,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.28135,
+          "dbhCm": 56.27,
+          "circumferenceCm": 176.779,
+          "fitPoints": 28,
+          "sectionPointCount": 54,
+          "angularCoverageRatio": 0.58333,
+          "residualM": 0.02446,
+          "verticality": 0.996,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.1138,
+          "radiusCv": 0.094,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK"
+          ],
+          "quality": 60.509,
+          "treeId": "SITE-002-CFO-067"
+        },
+        {
+          "center": [
+            9.466,
+            -16.062
+          ],
+          "seed": [
+            9.406,
+            -16.176
+          ],
+          "groundZ": -3.678,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.26582,
+          "dbhCm": 53.164,
+          "circumferenceCm": 167.02,
+          "fitPoints": 31,
+          "sectionPointCount": 53,
+          "angularCoverageRatio": 0.625,
+          "residualM": 0.02239,
+          "verticality": 0.999,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.24927,
+          "radiusCv": 0.176,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 60.121,
+          "treeId": "SITE-002-CFO-068"
+        },
+        {
+          "center": [
+            17.631,
+            -22.782
+          ],
+          "seed": [
+            17.706,
+            -22.876
+          ],
+          "groundZ": -3.746,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.1976,
+          "dbhCm": 39.519,
+          "circumferenceCm": 124.153,
+          "fitPoints": 23,
+          "sectionPointCount": 86,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.01444,
+          "verticality": 0.997,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.24668,
+          "radiusCv": 0.496,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 54.801,
+          "treeId": "SITE-002-CFO-069"
+        },
+        {
+          "center": [
+            19.102,
+            -9.136
+          ],
+          "seed": [
+            19.206,
+            -9.276
+          ],
+          "groundZ": -3.644,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27496,
+          "dbhCm": 54.991,
+          "circumferenceCm": 172.759,
+          "fitPoints": 28,
+          "sectionPointCount": 65,
+          "angularCoverageRatio": 0.625,
+          "residualM": 0.02403,
+          "verticality": 0.997,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.21904,
+          "radiusCv": 0.298,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 52.06,
+          "treeId": "SITE-002-CFO-070"
+        },
+        {
+          "center": [
+            10.779,
+            -2.278
+          ],
+          "seed": [
+            10.706,
+            -2.376
+          ],
+          "groundZ": -3.575,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.23674,
+          "dbhCm": 47.349,
+          "circumferenceCm": 148.75,
+          "fitPoints": 28,
+          "sectionPointCount": 70,
+          "angularCoverageRatio": 0.5,
+          "residualM": 0.021,
+          "verticality": 0.993,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.20941,
+          "radiusCv": 0.608,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 51.611,
+          "treeId": "SITE-002-CFO-071"
+        },
+        {
+          "center": [
+            11.237,
+            -14.731
+          ],
+          "seed": [
+            11.106,
+            -14.676
+          ],
+          "groundZ": -3.682,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.2777,
+          "dbhCm": 55.54,
+          "circumferenceCm": 174.483,
+          "fitPoints": 36,
+          "sectionPointCount": 62,
+          "angularCoverageRatio": 0.5,
+          "residualM": 0.0212,
+          "verticality": 1.0,
+          "validatedSlices": 3,
+          "centerSpreadM": 0.18338,
+          "radiusCv": 0.53,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 43.597,
+          "treeId": "SITE-002-CFO-072"
+        },
+        {
+          "center": [
+            -0.895,
+            -12.158
+          ],
+          "seed": [
+            -0.694,
+            -12.176
+          ],
+          "groundZ": -3.613,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.27625,
+          "dbhCm": 55.25,
+          "circumferenceCm": 173.572,
+          "fitPoints": 24,
+          "sectionPointCount": 46,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.02189,
+          "verticality": 0.997,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.25566,
+          "radiusCv": 0.579,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH",
+            "RADIUS_VARIATION_HIGH"
+          ],
+          "quality": 40.794,
+          "treeId": "SITE-002-CFO-073"
+        },
+        {
+          "center": [
+            -1.089,
+            -13.562
+          ],
+          "seed": [
+            -0.994,
+            -13.376
+          ],
+          "groundZ": -3.598,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22013,
+          "dbhCm": 44.025,
+          "circumferenceCm": 138.309,
+          "fitPoints": 16,
+          "sectionPointCount": 35,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.01403,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.24446,
+          "radiusCv": 0.448,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 29.436,
+          "treeId": "SITE-002-CFO-074"
+        },
+        {
+          "center": [
+            7.947,
+            -3.638
+          ],
+          "seed": [
+            7.706,
+            -3.476
+          ],
+          "groundZ": -3.622,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.14927,
+          "dbhCm": 29.854,
+          "circumferenceCm": 93.789,
+          "fitPoints": 10,
+          "sectionPointCount": 26,
+          "angularCoverageRatio": 0.33333,
+          "residualM": 0.00725,
+          "verticality": 0.998,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.21894,
+          "radiusCv": 0.299,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "PARTIAL_ANGULAR_COVERAGE",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 29.086,
+          "treeId": "SITE-002-CFO-075"
+        },
+        {
+          "center": [
+            1.238,
+            -9.433
+          ],
+          "seed": [
+            1.306,
+            -9.376
+          ],
+          "groundZ": -3.648,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.17922,
+          "dbhCm": 35.844,
+          "circumferenceCm": 112.608,
+          "fitPoints": 10,
+          "sectionPointCount": 22,
+          "angularCoverageRatio": 0.375,
+          "residualM": 0.01362,
+          "verticality": 1.0,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.1753,
+          "radiusCv": 0.202,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT"
+          ],
+          "quality": 25.708,
+          "treeId": "SITE-002-CFO-076"
+        },
+        {
+          "center": [
+            19.438,
+            -4.719
+          ],
+          "seed": [
+            19.306,
+            -4.676
+          ],
+          "groundZ": -3.622,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.29906,
+          "dbhCm": 59.812,
+          "circumferenceCm": 187.903,
+          "fitPoints": 18,
+          "sectionPointCount": 39,
+          "angularCoverageRatio": 0.41667,
+          "residualM": 0.02209,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.24128,
+          "radiusCv": 0.213,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 24.024,
+          "treeId": "SITE-002-CFO-077"
+        },
+        {
+          "center": [
+            19.841,
+            -13.763
+          ],
+          "seed": [
+            19.806,
+            -13.576
+          ],
+          "groundZ": -3.675,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.22303,
+          "dbhCm": 44.605,
+          "circumferenceCm": 140.131,
+          "fitPoints": 13,
+          "sectionPointCount": 22,
+          "angularCoverageRatio": 0.29167,
+          "residualM": 0.01816,
+          "verticality": 0.999,
+          "validatedSlices": 5,
+          "centerSpreadM": 0.15774,
+          "radiusCv": 0.102,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "PARTIAL_ANGULAR_COVERAGE"
+          ],
+          "quality": 23.355,
+          "treeId": "SITE-002-CFO-078"
+        },
+        {
+          "center": [
+            -11.084,
+            -11.4
+          ],
+          "seed": [
+            -10.994,
+            -11.476
+          ],
+          "groundZ": -3.579,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.296,
+          "dbhCm": 59.201,
+          "circumferenceCm": 185.985,
+          "fitPoints": 24,
+          "sectionPointCount": 38,
+          "angularCoverageRatio": 0.54167,
+          "residualM": 0.022,
+          "verticality": 1.0,
+          "validatedSlices": 2,
+          "centerSpreadM": 0.09078,
+          "radiusCv": 0.315,
+          "status": "C_STRUCTURE_RISK",
+          "qaFlags": [
+            "LARGE_STRUCTURE_OR_PROP_ROOT_RISK",
+            "LIMITED_VERTICAL_PERSISTENCE"
+          ],
+          "quality": 19.233,
+          "treeId": "SITE-002-CFO-079"
+        },
+        {
+          "center": [
+            -10.059,
+            -3.916
+          ],
+          "seed": [
+            -10.294,
+            -3.776
+          ],
+          "groundZ": -3.58,
+          "measurementHeightM": 1.3,
+          "radiusM": 0.19468,
+          "dbhCm": 38.936,
+          "circumferenceCm": 122.321,
+          "fitPoints": 11,
+          "sectionPointCount": 33,
+          "angularCoverageRatio": 0.29167,
+          "residualM": 0.01697,
+          "verticality": 0.998,
+          "validatedSlices": 4,
+          "centerSpreadM": 0.22638,
+          "radiusCv": 0.258,
+          "status": "B_LOW_CONFIDENCE",
+          "qaFlags": [
+            "LIMITED_POINT_SUPPORT",
+            "PARTIAL_ANGULAR_COVERAGE",
+            "CENTERLINE_SPREAD_HIGH"
+          ],
+          "quality": 17.854,
+          "treeId": "SITE-002-CFO-080"
+        }
+      ]
+    }
+  ]
+}
