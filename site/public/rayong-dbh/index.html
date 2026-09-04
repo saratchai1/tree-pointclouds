@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Rayong · Preliminary LiDAR DBH Viewer</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="importmap">{"imports":{"three":"../viewer/vendor/three.module.js"}}</script>
+</head>
+<body>
+  <section id="panel" aria-label="Rayong DBH controls">
+    <header class="hero">
+      <div><div class="eyebrow">RAYONG · LIDAR SCREENING</div><h1>DBH Point Cloud Viewer</h1><p>ดู point cloud, ตำแหน่ง stem candidates และ DBH screening ที่ระดับประมาณ 1.30 ม.</p></div>
+      <span class="pill pill-warn">Preliminary</span>
+    </header>
+    <div class="site-switch" role="group" aria-label="เลือกแปลง">
+      <button id="site001" class="site-button" data-site="site-001" type="button">Site 001 <b>≈ 7–8 cm</b></button>
+      <button id="site002" class="site-button" data-site="site-002" type="button">Site 002 <b>≈ 5 cm</b></button>
+    </div>
+    <div id="status" class="status">กำลังโหลดข้อมูล…</div>
+    <section class="executive-card">
+      <div class="executive-main"><span>Indicative DBH median</span><strong id="medianDbh">–</strong></div>
+      <div class="executive-grid">
+        <div><span>ช่วงกลาง 50%</span><b id="iqrDbh">–</b></div><div><span>Strong subset</span><b id="strongDbh">–</b></div><div><span>Sensitivity</span><b id="sensitivityDbh">–</b></div>
+      </div>
+    </section>
+    <div class="control-grid">
+      <label>จำนวนจุดที่แสดง<select id="budget"><option value="250000">0.25 ล้าน</option><option value="500000">0.5 ล้าน</option><option value="1000000" selected>ประมาณ 1 ล้าน</option><option value="99999999">ทั้งหมดใน sample</option></select></label>
+      <label>ขนาดจุด <span id="pointSizeLabel">2.0</span><input id="pointSize" type="range" min="0.6" max="5" value="2" step="0.1"></label>
+    </div>
+    <div class="camera-actions"><button id="reset" type="button">มุมเริ่มต้น</button><button id="top" type="button">มองจากบน</button><button id="side" type="button">มองด้านข้าง</button><button id="showAll" type="button">เห็น candidates</button></div>
+    <div class="source-metrics"><div><b id="rawPoints">–</b><span>จุด LAS ต้นฉบับ</span></div><div><b id="samplePoints">–</b><span>จุดใน browser sample</span></div><div><b id="stride">–</b><span>sampling stride</span></div><div><b id="footprint">–</b><span>footprint</span></div></div>
+    <section class="measure-card">
+      <div class="section-head"><div><h2>Stem candidates</h2><p>สีแสดงระดับหลักฐานของ DBH screening ไม่ใช่สถานะ field verification</p></div><b id="visibleCount">–</b></div>
+      <div class="filter-grid"><input id="treeSearch" type="search" placeholder="ค้นหา SMALL-0004" autocomplete="off"><select id="candidateFilter" aria-label="กรอง candidate"><option value="ALL">ทั้งหมด</option><option value="STRONG" selected>Strong evidence</option><option value="ROBUST">Robust + Strong</option><option value="A">A · Indicative</option><option value="B">B · Low confidence</option><option value="C">C · Reject</option></select></div>
+      <div class="legend"><span class="legend-strong"><i></i>Strong</span><span class="legend-robust"><i></i>Robust</span><span class="legend-a"><i></i>A indicative</span><span class="legend-b"><i></i>B low confidence</span><span class="legend-c"><i></i>Reject</span></div>
+      <div class="overlay-actions"><button id="toggleMarkers" aria-pressed="true" type="button">Markers</button><button id="toggleRings" aria-pressed="true" type="button">DBH rings</button><button id="toggleCloud" aria-pressed="true" type="button">Point cloud</button><button id="focusStrong" type="button">Frame strong</button></div>
+      <div id="selectedCard" class="selected-card">
+        <div class="selected-head"><div><h3 id="selectedTree">เลือกต้นไม้</h3><div id="selectedStatus">คลิก marker หรือเลือกรายการด้านล่าง</div></div><span id="selectedBadge" class="selected-badge">–</span></div>
+        <div class="selected-values"><div><small>DBH</small><b id="selectedDbh">–</b></div><div><small>เส้นรอบวง</small><b id="selectedCirc">–</b></div><div><small>จุดใกล้ 1.30 ม.</small><b id="selectedBreast">–</b></div><div><small>shell points</small><b id="selectedShell">–</b></div><div><small>vertical bands</small><b id="selectedBands">–</b></div><div><small>verticality</small><b id="selectedVerticality">–</b></div></div>
+        <p id="selectedQa" class="selected-copy">วงที่เห็นเป็น locator ที่ระดับ 1.30 ม. จาก sample; ยังไม่ใช่วง full-LAS / field-verified.</p>
+      </div>
+      <div class="distribution-card"><div class="distribution-head"><b>DBH distribution</b><span id="distributionLabel">Strong evidence</span></div><div id="histogram" class="histogram" aria-label="DBH histogram"></div></div>
+      <div class="list-head"><span>รายการ candidate</span><b id="listCount">–</b></div><div id="treeList" class="tree-list"></div>
+    </section>
+    <p class="source-note">ข้อมูลนี้เป็น sampled small-stem cylinder screening สำหรับประมาณการเบื้องต้นเท่านั้น ไม่ใช่ค่า DBH ที่ตรวจรับ MRV หรือ field-verified. ต้นที่สูงไม่ถึง 1.30 ม. อาจไม่เข้ากลุ่มที่วัดได้.</p>
+  </section>
+  <div id="hint">ลาก = หมุน · scroll = zoom · คลิก marker = ดูรายละเอียด</div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
