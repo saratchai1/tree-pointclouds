@@ -1,0 +1,54 @@
+name: Rayong CFO DBH screening
+
+on:
+  push:
+    branches:
+      - analysis/rayong-cfo-dbh-screening-20260904
+    paths:
+      - 'scripts/rayong_cfo_dbd_screening.py'
+      - '.github/workflows/rayong-cfo-dbh-screening.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade numpy scipy matplotlib scikit-image
+
+      - name: Run two-site CFO screening
+        run: |
+          python -m py_compile scripts/rayong_cfo_dbd_screening.py
+          python scripts/rayong_cfo_dbd_screening.py
+          cat analysis/rayong-cfo-screening/summary.json
+          git diff --check
+
+      - name: Upload screening outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: rayong-cfo-dbh-screening
+          path: analysis/rayong-cfo-screening/
+
+      - name: Commit screening outputs
+        shell: bash
+        run: |
+          git add analysis/rayong-cfo-screening/summary.json analysis/rayong-cfo-screening/candidates.csv
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'analysis: generate Rayong CFO DBH screening outputs'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
