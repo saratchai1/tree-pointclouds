@@ -1,0 +1,123 @@
+{
+  "measurementStatus": "ROBUST_SUBSET_OF_SAMPLED_SMALL_STEM_SCREENING",
+  "criteria": {
+    "status": "A_SMALL_STEM_INDICATIVE",
+    "persistentBands": 5,
+    "minShellPoints": 15,
+    "minBreastSupportPoints": 10,
+    "maxAxisCenterResidualM": 0.04
+  },
+  "sites": {
+    "site-001": {
+      "allA": {
+        "n": 70,
+        "meanCm": 7.42,
+        "medianCm": 7.3,
+        "p25Cm": 5.05,
+        "p75Cm": 9.7,
+        "minCm": 1.9,
+        "maxCm": 16.3
+      },
+      "robust": {
+        "n": 7,
+        "meanCm": 8.67,
+        "medianCm": 9.7,
+        "p25Cm": 6.7,
+        "p75Cm": 10.0,
+        "minCm": 3.1,
+        "maxCm": 14.5
+      },
+      "strong": {
+        "n": 4,
+        "meanCm": 8.35,
+        "medianCm": 8.2,
+        "p25Cm": 6.7,
+        "p75Cm": 9.85,
+        "minCm": 6.7,
+        "maxCm": 10.3
+      },
+      "robustTreeIds": [
+        "SITE-001-SMALL-0001",
+        "SITE-001-SMALL-0002",
+        "SITE-001-SMALL-0003",
+        "SITE-001-SMALL-0004",
+        "SITE-001-SMALL-0005",
+        "SITE-001-SMALL-0007",
+        "SITE-001-SMALL-0008"
+      ],
+      "strongTreeIds": [
+        "SITE-001-SMALL-0001",
+        "SITE-001-SMALL-0002",
+        "SITE-001-SMALL-0003",
+        "SITE-001-SMALL-0004"
+      ]
+    },
+    "site-002": {
+      "allA": {
+        "n": 148,
+        "meanCm": 5.59,
+        "medianCm": 4.9,
+        "p25Cm": 3.1,
+        "p75Cm": 7.3,
+        "minCm": 1.9,
+        "maxCm": 16.9
+      },
+      "robust": {
+        "n": 23,
+        "meanCm": 5.37,
+        "medianCm": 4.9,
+        "p25Cm": 2.5,
+        "p75Cm": 7.0,
+        "minCm": 1.9,
+        "maxCm": 12.7
+      },
+      "strong": {
+        "n": 11,
+        "meanCm": 5.01,
+        "medianCm": 4.9,
+        "p25Cm": 2.5,
+        "p75Cm": 6.4,
+        "minCm": 1.9,
+        "maxCm": 11.5
+      },
+      "robustTreeIds": [
+        "SITE-002-SMALL-0003",
+        "SITE-002-SMALL-0004",
+        "SITE-002-SMALL-0005",
+        "SITE-002-SMALL-0007",
+        "SITE-002-SMALL-0008",
+        "SITE-002-SMALL-0011",
+        "SITE-002-SMALL-0012",
+        "SITE-002-SMALL-0013",
+        "SITE-002-SMALL-0016",
+        "SITE-002-SMALL-0017",
+        "SITE-002-SMALL-0018",
+        "SITE-002-SMALL-0021",
+        "SITE-002-SMALL-0024",
+        "SITE-002-SMALL-0025",
+        "SITE-002-SMALL-0026",
+        "SITE-002-SMALL-0027",
+        "SITE-002-SMALL-0032",
+        "SITE-002-SMALL-0033",
+        "SITE-002-SMALL-0035",
+        "SITE-002-SMALL-0036",
+        "SITE-002-SMALL-0038",
+        "SITE-002-SMALL-0041",
+        "SITE-002-SMALL-0051"
+      ],
+      "strongTreeIds": [
+        "SITE-002-SMALL-0003",
+        "SITE-002-SMALL-0004",
+        "SITE-002-SMALL-0005",
+        "SITE-002-SMALL-0008",
+        "SITE-002-SMALL-0011",
+        "SITE-002-SMALL-0013",
+        "SITE-002-SMALL-0017",
+        "SITE-002-SMALL-0018",
+        "SITE-002-SMALL-0024",
+        "SITE-002-SMALL-0026",
+        "SITE-002-SMALL-0035"
+      ]
+    }
+  }
+}

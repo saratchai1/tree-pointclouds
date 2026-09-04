@@ -1,0 +1,231 @@
+{
+  "measurementStatus": "SAMPLED_SMALL_STEM_SENSITIVITY",
+  "sites": {
+    "site-001": {
+      "variants": [
+        {
+          "variant": "base",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 70,
+          "A_medianCm": 7.3,
+          "A_p25Cm": 5.05,
+          "A_p75Cm": 9.7,
+          "AB_medianCm": 6.7
+        },
+        {
+          "variant": "coarsebins",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 30
+          },
+          "A_n": 79,
+          "A_medianCm": 7.65,
+          "A_p25Cm": 5.63,
+          "A_p75Cm": 10.48,
+          "AB_medianCm": 6.84
+        },
+        {
+          "variant": "coarsegrid",
+          "parameters": {
+            "gridM": 0.1,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 58,
+          "A_medianCm": 7.3,
+          "A_p25Cm": 3.85,
+          "A_p75Cm": 11.5,
+          "AB_medianCm": 6.4
+        },
+        {
+          "variant": "fewerseeds",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 80.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 52,
+          "A_medianCm": 6.7,
+          "A_p25Cm": 4.3,
+          "A_p75Cm": 9.1,
+          "AB_medianCm": 6.7
+        },
+        {
+          "variant": "finebins",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 52
+          },
+          "A_n": 66,
+          "A_medianCm": 7.79,
+          "A_p25Cm": 5.5,
+          "A_p75Cm": 9.63,
+          "AB_medianCm": 6.88
+        },
+        {
+          "variant": "finegrid",
+          "parameters": {
+            "gridM": 0.06,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 92,
+          "A_medianCm": 7.3,
+          "A_p25Cm": 4.3,
+          "A_p75Cm": 10.3,
+          "AB_medianCm": 5.5
+        },
+        {
+          "variant": "moreseeds",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 60.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 78,
+          "A_medianCm": 7.3,
+          "A_p25Cm": 5.5,
+          "A_p75Cm": 9.7,
+          "AB_medianCm": 7.3
+        }
+      ],
+      "medianOfVariantMediansCm": 7.3,
+      "minVariantMedianCm": 6.7,
+      "maxVariantMedianCm": 7.79,
+      "spreadCm": 1.09
+    },
+    "site-002": {
+      "variants": [
+        {
+          "variant": "base",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 148,
+          "A_medianCm": 4.9,
+          "A_p25Cm": 3.1,
+          "A_p75Cm": 7.3,
+          "AB_medianCm": 4.9
+        },
+        {
+          "variant": "coarsebins",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 30
+          },
+          "A_n": 150,
+          "A_medianCm": 4.42,
+          "A_p25Cm": 2.81,
+          "A_p75Cm": 7.65,
+          "AB_medianCm": 4.42
+        },
+        {
+          "variant": "coarsegrid",
+          "parameters": {
+            "gridM": 0.1,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 110,
+          "A_medianCm": 4.9,
+          "A_p25Cm": 3.1,
+          "A_p75Cm": 8.95,
+          "AB_medianCm": 5.5
+        },
+        {
+          "variant": "fewerseeds",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 80.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 115,
+          "A_medianCm": 4.9,
+          "A_p25Cm": 3.1,
+          "A_p75Cm": 7.9,
+          "AB_medianCm": 4.9
+        },
+        {
+          "variant": "finebins",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 52
+          },
+          "A_n": 143,
+          "A_medianCm": 4.58,
+          "A_p25Cm": 2.75,
+          "A_p75Cm": 6.88,
+          "AB_medianCm": 4.58
+        },
+        {
+          "variant": "finegrid",
+          "parameters": {
+            "gridM": 0.06,
+            "seedPercentile": 70.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 212,
+          "A_medianCm": 4.6,
+          "A_p25Cm": 2.5,
+          "A_p75Cm": 7.3,
+          "AB_medianCm": 4.3
+        },
+        {
+          "variant": "moreseeds",
+          "parameters": {
+            "gridM": 0.08,
+            "seedPercentile": 60.0,
+            "radialMinM": 0.008,
+            "radialMaxM": 0.125,
+            "radialBins": 40
+          },
+          "A_n": 170,
+          "A_medianCm": 4.9,
+          "A_p25Cm": 3.1,
+          "A_p75Cm": 7.9,
+          "AB_medianCm": 4.9
+        }
+      ],
+      "medianOfVariantMediansCm": 4.9,
+      "minVariantMedianCm": 4.42,
+      "maxVariantMedianCm": 4.9,
+      "spreadCm": 0.48
+    }
+  }
+}

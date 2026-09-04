@@ -1,0 +1,14 @@
+{
+  "name": "Rayong site-002 Point Cloud",
+  "description": "Sampled colored LAS point cloud used for preliminary small-stem DBH screening.",
+  "source": "Rayong55_010s_2026_08_14_02_53_34.las",
+  "sourcePointCount": 73372172,
+  "samplingStride": 74,
+  "points": 991516,
+  "projection": "LAS source coordinates, recentered for browser viewing",
+  "boundingBox": {"min": [-35.79367446899414, -55.07551193237305, -4.94316291809082], "max": [35.79367446899414, 55.07551193237305, 4.94316291809082]},
+  "positionChunks": ["positions-00.glbin", "positions-01.glbin", "positions-02.glbin"],
+  "colorBuffer": "colors.glbin",
+  "measurementStatus": "SAMPLED_SMALL_STEM_CYLINDER_SCREENING",
+  "fieldVerified": false
+}
