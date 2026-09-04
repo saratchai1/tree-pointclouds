@@ -32,12 +32,12 @@ jobs:
       - name: Process site-001 full LAS
         run: |
           mkdir -p outputs/rayong-full-las
-          gdown --id 1EYPxhCs_4fTpkaFj1a00nTOlEA1dfLYU -O /tmp/rayong-site-001.las
+          gdown 1EYPxhCs_4fTpkaFj1a00nTOlEA1dfLYU -O /tmp/rayong-site-001.las
           python scripts/rayong_full_las_small_stem_dbh.py --input /tmp/rayong-site-001.las --site site-001 --output outputs/rayong-full-las/site-001.json
           rm -f /tmp/rayong-site-001.las
       - name: Process site-002 full LAS
         run: |
-          gdown --id 15xdpaxDm-P1hkFbZX8jgzuvZIbrMIC_l -O /tmp/rayong-site-002.las
+          gdown 15xdpaxDm-P1hkFbZX8jgzuvZIbrMIC_l -O /tmp/rayong-site-002.las
           python scripts/rayong_full_las_small_stem_dbh.py --input /tmp/rayong-site-002.las --site site-002 --output outputs/rayong-full-las/site-002.json
           rm -f /tmp/rayong-site-002.las
       - name: Build CFO summary
