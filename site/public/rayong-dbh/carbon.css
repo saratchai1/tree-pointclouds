@@ -1,0 +1,84 @@
+.carbon-card {
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid rgba(92, 174, 123, .42);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(20, 48, 34, .94), rgba(6, 18, 12, .94));
+}
+.carbon-card .section-head { margin-bottom: 10px; }
+.carbon-card .section-head h2 { margin: 0 0 3px; font-size: 1rem; }
+.carbon-card .section-head p { margin: 0; color: #9db5a7; font-size: .75rem; line-height: 1.45; }
+.carbon-pill {
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  border: 1px solid rgba(242, 202, 99, .55);
+  border-radius: 999px;
+  color: #f5dc91;
+  background: rgba(87, 62, 8, .34);
+  font-size: .68rem;
+  font-weight: 800;
+}
+.carbon-primary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.carbon-primary-grid > div,
+.carbon-secondary-grid > div {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(78, 116, 91, .55);
+  border-radius: 10px;
+  background: rgba(9, 28, 18, .7);
+}
+.carbon-primary-grid small,
+.carbon-secondary-grid small { display: block; margin-bottom: 4px; color: #93ad9d; font-size: .66rem; }
+.carbon-primary-grid strong { display: block; color: #83e0a6; font-size: 1.22rem; line-height: 1.1; }
+.carbon-primary-grid span { display: block; margin-top: 3px; color: #c7d9ce; font-size: .68rem; }
+.carbon-secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+.carbon-secondary-grid b { font-size: .84rem; color: #d9e9df; }
+.carbon-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+.carbon-controls label { color: #a9c0b1; font-size: .7rem; }
+.carbon-controls input,
+.carbon-controls select {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 8px 9px;
+  border: 1px solid #365a45;
+  border-radius: 8px;
+  color: #eef8f1;
+  background: #09170f;
+}
+.carbon-check { display: flex; align-items: center; gap: 7px; padding-top: 19px; }
+.carbon-check input { width: auto; margin: 0; }
+.carbon-note,
+.carbon-warning,
+#carbonStatus {
+  margin: 9px 0 0;
+  color: #9eb5a6;
+  font-size: .69rem;
+  line-height: 1.45;
+}
+.carbon-warning {
+  padding: 9px 10px;
+  border-left: 3px solid #d2aa46;
+  color: #d8c58c;
+  background: rgba(87, 62, 8, .18);
+}
+#carbonStatus { color: #9fd3b1; font-weight: 700; }
+@media (max-width: 760px) {
+  .carbon-primary-grid { grid-template-columns: 1fr; }
+  .carbon-controls { grid-template-columns: 1fr; }
+  .carbon-check { padding-top: 0; }
+}
