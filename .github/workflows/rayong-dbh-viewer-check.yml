@@ -1,0 +1,53 @@
+name: Rayong DBH viewer check
+
+on:
+  push:
+    branches:
+      - feature/rayong-dbh-viewer-20260904
+    paths:
+      - 'site/public/rayong-dbh/**'
+      - 'site/public/index.html'
+      - '.github/workflows/rayong-dbh-viewer-check.yml'
+  pull_request:
+    paths:
+      - 'site/public/rayong-dbh/**'
+      - 'site/public/index.html'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: node --check site/public/rayong-dbh/app.js
+      - name: Validate Rayong data bundle
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('site/public/rayong-dbh')
+          robust = json.loads((root/'data/robust-summary.json').read_text())
+          sensitivity = json.loads((root/'data/sensitivity-summary.json').read_text())
+
+          expected = {
+              'site-001': (998_284, 107, 7.3, 8.2),
+              'site-002': (991_516, 74, 4.9, 4.9),
+          }
+          for site, (points, stride, a_median, strong_median) in expected.items():
+              data = root/'data'/site
+              meta = json.loads((data/'metadata.json').read_text())
+              measurements = json.loads((data/'measurements.json').read_text())
+              assert meta['points'] == points
+              assert meta['samplingStride'] == stride
+              assert round(measurements['aStats']['medianCm'], 1) == a_median
+              assert round(robust['sites'][site]['strong']['medianCm'], 1) == strong_median
+              assert site in sensitivity['sites']
+              pbytes = sum((data/f'positions-0{i}.glbin').stat().st_size for i in range(3))
+              cbytes = (data/'colors.glbin').stat().st_size
+              assert pbytes == points * 12, (site, pbytes, points * 12)
+              assert cbytes == points * 4, (site, cbytes, points * 4)
+              ids = {r['treeId'] for r in measurements['trees']}
+              assert set(robust['sites'][site]['strongTreeIds']).issubset(ids)
+          print('Rayong DBH viewer bundle OK')
+          PY
