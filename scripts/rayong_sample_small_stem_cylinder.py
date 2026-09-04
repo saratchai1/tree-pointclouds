@@ -6,6 +6,10 @@ from scipy.ndimage import maximum_filter
 from scipy.spatial import cKDTree
 
 GRID=0.08
+SEED_PERCENTILE=70.0
+RADIAL_MIN=0.008
+RADIAL_MAX=0.125
+RADIAL_BINS=40
 BANDS=((0.35,0.70),(0.65,1.00),(0.95,1.30),(1.25,1.60),(1.55,1.90))
 
 def load_positions(data):
@@ -28,11 +32,10 @@ def seeds(points,ground):
     C=np.stack(counts)
     presence=(C>0).sum(axis=0)
     strength=np.sqrt(C.sum(axis=0))*presence
-    # Require evidence through at least four height bands; no large-circle prior.
     mask=presence>=4
     if not mask.any(): return np.empty((0,2))
     vals=strength[mask]
-    thr=np.percentile(vals,70)
+    thr=np.percentile(vals,SEED_PERCENTILE)
     mx=maximum_filter(strength,size=5,mode='constant')
     yy,xx=np.where(mask&(strength==mx)&(strength>=thr))
     order=np.argsort(strength[yy,xx])[::-1]
@@ -50,9 +53,7 @@ def axis_from_bands(local,ground,seed):
     for lo,hi in ((0.4,0.7),(0.7,1.0),(1.0,1.3),(1.3,1.6),(1.6,1.9)):
         m=(h>=lo)&(h<hi)&(np.linalg.norm(local[:,:2]-seed,axis=1)<=0.16)
         if m.sum()<1:continue
-        q=local[m,:2]
-        # Median resists isolated foliage; sparse browser sample may have only 1-5 stem points/band.
-        centers.append(np.median(q,axis=0));zs.append((lo+hi)/2)
+        centers.append(np.median(local[m,:2],axis=0));zs.append((lo+hi)/2)
     if len(centers)<4:return None
     centers=np.asarray(centers);zs=np.asarray(zs)
     A=np.column_stack([zs,np.ones(len(zs))]);cx=np.linalg.lstsq(A,centers[:,0],rcond=None)[0];cy=np.linalg.lstsq(A,centers[:,1],rcond=None)[0]
@@ -78,8 +79,7 @@ def eval_seed(points,tree,seed,global_ground):
     zrel=q[:,2]-ground
     axis_xy=np.column_stack([cx[0]*zrel+cx[1],cy[0]*zrel+cy[1]])
     r=np.linalg.norm(q[:,:2]-axis_xy,axis=1)
-    # Estimate narrow stem surface as the strongest area-normalized radial mode.
-    bins=np.linspace(0.008,0.125,40);hist=np.zeros(len(bins)-1)
+    bins=np.linspace(RADIAL_MIN,RADIAL_MAX,RADIAL_BINS);hist=np.zeros(len(bins)-1)
     for i in range(len(hist)):
         lo,hi=bins[i],bins[i+1]
         hist[i]=np.sum((r>=lo)&(r<hi))/max(hi*hi-lo*lo,1e-6)
@@ -90,7 +90,6 @@ def eval_seed(points,tree,seed,global_ground):
     if shell.sum()<5:return None
     shell_h=zrel[shell]
     persistent=sum(np.any((shell_h>=lo)&(shell_h<hi)) for lo,hi in BANDS)
-    # Evidence around actual breast height, not only lower root geometry.
     breast=np.sum(shell & (np.abs(zrel-1.30)<=0.18))
     if persistent<3 or breast<1:return None
     diam=radius*200
@@ -100,7 +99,6 @@ def eval_seed(points,tree,seed,global_ground):
     if center_err>0.055:flags.append('AXIS_CENTER_UNSTABLE')
     if diam>18:flags.append('LARGE_STRUCTURE_RISK')
     if diam<1.5:flags.append('BELOW_EFFECTIVE_RESOLUTION')
-    # A is deliberately narrow: thin, persistent cylinder-like geometry near 1.3 m.
     if not flags and shell.sum()>=8 and persistent>=4 and center_err<=0.055 and 1.5<=diam<=18:
         status='A_SMALL_STEM_INDICATIVE'
     elif diam<=20 and persistent>=3 and center_err<=0.10:
@@ -124,7 +122,10 @@ def stats(v):
     return {'n':len(a),'meanCm':round(float(a.mean()),2),'medianCm':round(float(np.median(a)),2),'p25Cm':round(float(np.percentile(a,25)),2),'p75Cm':round(float(np.percentile(a,75)),2),'minCm':round(float(a.min()),2),'maxCm':round(float(a.max()),2)}
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--data',required=True);ap.add_argument('--metadata',required=True);ap.add_argument('--site',required=True);ap.add_argument('--output',required=True);args=ap.parse_args()
+    global GRID,SEED_PERCENTILE,RADIAL_MIN,RADIAL_MAX,RADIAL_BINS
+    ap=argparse.ArgumentParser();ap.add_argument('--data',required=True);ap.add_argument('--metadata',required=True);ap.add_argument('--site',required=True);ap.add_argument('--output',required=True)
+    ap.add_argument('--grid',type=float,default=GRID);ap.add_argument('--seed-percentile',type=float,default=SEED_PERCENTILE);ap.add_argument('--radial-min',type=float,default=RADIAL_MIN);ap.add_argument('--radial-max',type=float,default=RADIAL_MAX);ap.add_argument('--radial-bins',type=int,default=RADIAL_BINS)
+    args=ap.parse_args();GRID=args.grid;SEED_PERCENTILE=args.seed_percentile;RADIAL_MIN=args.radial_min;RADIAL_MAX=args.radial_max;RADIAL_BINS=args.radial_bins
     pts=load_positions(args.data);meta=json.loads(Path(args.metadata).read_text())
     ground=float(np.percentile(pts[:,2],2.5));ss=seeds(pts,ground);tree=cKDTree(pts[:,:2]);rows=[]
     for s in ss:
@@ -133,7 +134,7 @@ def main():
     rows=suppress(rows)
     for i,r in enumerate(rows,1):r['treeId']=f"{args.site.upper()}-SMALL-{i:04d}"
     A=[r['diameterCm'] for r in rows if r['status']=='A_SMALL_STEM_INDICATIVE'];B=[r['diameterCm'] for r in rows if r['status']=='B_SMALL_STEM_LOW_CONFIDENCE']
-    out={'siteId':args.site,'status':'SAMPLED_SMALL_STEM_CYLINDER_SCREENING','sourceLas':meta.get('source'),'sourcePointCount':meta.get('sourcePointCount'),'viewerPointCount':len(pts),'samplingStride':meta.get('samplingStride'),'globalGroundZ':ground,'seedCount':len(ss),'retainedCount':len(rows),'statusCounts':{k:sum(r['status']==k for r in rows) for k in ('A_SMALL_STEM_INDICATIVE','B_SMALL_STEM_LOW_CONFIDENCE','C_REJECT')},'aStats':stats(A),'aPlusBStats':stats(A+B),'trees':rows,'limitations':['Browser sample only; not formal DBH.','Cylinder radius uses multi-height shell mode because per-slice circle fitting is too sparse for small stems.','Requires full-LAS or field validation for MRV.']}
+    out={'siteId':args.site,'status':'SAMPLED_SMALL_STEM_CYLINDER_SCREENING','parameters':{'gridM':GRID,'seedPercentile':SEED_PERCENTILE,'radialMinM':RADIAL_MIN,'radialMaxM':RADIAL_MAX,'radialBins':RADIAL_BINS},'sourceLas':meta.get('source'),'sourcePointCount':meta.get('sourcePointCount'),'viewerPointCount':len(pts),'samplingStride':meta.get('samplingStride'),'globalGroundZ':ground,'seedCount':len(ss),'retainedCount':len(rows),'statusCounts':{k:sum(r['status']==k for r in rows) for k in ('A_SMALL_STEM_INDICATIVE','B_SMALL_STEM_LOW_CONFIDENCE','C_REJECT')},'aStats':stats(A),'aPlusBStats':stats(A+B),'trees':rows,'limitations':['Browser sample only; not formal DBH.','Cylinder radius uses multi-height shell mode because per-slice circle fitting is too sparse for small stems.','Requires full-LAS or field validation for MRV.']}
     Path(args.output).write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({k:out[k] for k in ('siteId','seedCount','retainedCount','statusCounts','aStats','aPlusBStats')},ensure_ascii=False))
+    print(json.dumps({k:out[k] for k in ('siteId','parameters','seedCount','retainedCount','statusCounts','aStats','aPlusBStats')},ensure_ascii=False))
 if __name__=='__main__':main()
