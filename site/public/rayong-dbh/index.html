@@ -6,6 +6,7 @@
   <meta name="color-scheme" content="dark">
   <title>Rayong · Preliminary LiDAR DBH Viewer</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./carbon.css">
   <script type="importmap">{"imports":{"three":"../viewer/vendor/three.module.js"}}</script>
 </head>
 <body>
@@ -25,6 +26,34 @@
         <div><span>ช่วงกลาง 50%</span><b id="iqrDbh">–</b></div><div><span>Strong subset</span><b id="strongDbh">–</b></div><div><span>Sensitivity</span><b id="sensitivityDbh">–</b></div>
       </div>
     </section>
+
+    <section class="carbon-card" aria-label="Indicative carbon per rai estimator">
+      <div class="section-head">
+        <div><h2>ประมาณการคาร์บอนต่อไร่</h2><p>Normalize biomass proxy จาก DBH candidates ด้วยพื้นที่อ้างอิงของแปลง</p></div>
+        <span class="carbon-pill">INDICATIVE</span>
+      </div>
+      <div class="carbon-primary-grid">
+        <div><small>Carbon stock proxy</small><strong id="carbonPerRai">–</strong><span>tCO₂e / ไร่</span></div>
+        <div><small>Gross annual increment proxy</small><strong id="carbonAnnualPerRai">–</strong><span>tCO₂e / ไร่ / ปี</span></div>
+        <div><small>Stem candidates ที่ใช้</small><strong id="carbonStemCount">–</strong><span>จาก detector ชุดนี้</span></div>
+      </div>
+      <div class="carbon-secondary-grid">
+        <div><small>รวม stock ในพื้นที่อ้างอิง</small><b id="carbonTotalStock">–</b></div>
+        <div><small>พื้นที่ที่ใช้หาร</small><b id="carbonAreaUsed">–</b></div>
+      </div>
+      <div class="carbon-controls">
+        <label>พื้นที่อ้างอิง (ไร่)<input id="carbonAreaRai" type="number" min="0.001" step="0.001" value="1"></label>
+        <label>ชุด candidate<select id="carbonCandidateSet"><option value="A" selected>A · Indicative</option><option value="STRONG">Strong evidence</option><option value="ROBUST">Robust + Strong</option><option value="AB">A + B screening</option></select></label>
+        <label>Wood density ρ (g/cm³)<input id="carbonWoodDensity" type="number" min="0.1" max="1.5" step="0.01" value="0.60"></label>
+        <label>Carbon fraction<input id="carbonFraction" type="number" min="0.10" max="0.70" step="0.01" value="0.47"></label>
+        <label>DBH growth scenario (cm/ปี)<input id="carbonGrowth" type="number" min="0" max="10" step="0.05" value="0.50"></label>
+        <label class="carbon-check"><input id="carbonIncludeRoots" type="checkbox" checked>รวม belowground/root biomass proxy</label>
+      </div>
+      <p id="carbonAreaNote" class="carbon-note">กำลังคำนวณพื้นที่อ้างอิง…</p>
+      <p id="carbonStatus">กำลังโหลดข้อมูล…</p>
+      <p class="carbon-warning">ค่านี้เป็น screening proxy จาก stem candidates ที่ตรวจพบ ไม่ใช่ T-VER carbon credit ที่ออกได้จริง. เครดิตต้องใช้การเปลี่ยนแปลงคาร์บอนตามเวลา แล้วหัก baseline, project emissions, leakage, uncertainty/buffer และผ่าน verification/certification. Allometry/CF ในกล่องนี้ยังเป็นสมมติฐานสำหรับสำรวจผล ไม่ใช่สูตร ex-post ที่รับรองแล้ว.</p>
+    </section>
+
     <div class="control-grid">
       <label>จำนวนจุดที่แสดง<select id="budget"><option value="250000">0.25 ล้าน</option><option value="500000">0.5 ล้าน</option><option value="1000000" selected>ประมาณ 1 ล้าน</option><option value="99999999">ทั้งหมดใน sample</option></select></label>
       <label>ขนาดจุด <span id="pointSizeLabel">2.0</span><input id="pointSize" type="range" min="0.6" max="5" value="2" step="0.1"></label>
@@ -48,5 +77,6 @@
   </section>
   <div id="hint">ลาก = หมุน · scroll = zoom · คลิก marker = ดูรายละเอียด</div>
   <script type="module" src="./app.js"></script>
+  <script src="./carbon.js" defer></script>
 </body>
 </html>
