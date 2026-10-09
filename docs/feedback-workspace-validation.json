@@ -1,0 +1,45 @@
+{
+  "base_commit": "b97d9ff84eb26514cf03ea829d27f6bc445b66f2",
+  "scope": "LOCAL_DESKTOP_ONLY_NOT_DEPLOYED",
+  "legacy_learning_tests_passed": 23,
+  "workspace_tests_passed": 30,
+  "browser_smoke": {
+    "reviews_saved": 2,
+    "offline_remount_preserved_labels": true,
+    "automatic_retrain_completed": true,
+    "asgi_shutdown_kept_database": true,
+    "browser_errors": [],
+    "mode": "OFFLINE_DOM_WITH_REAL_ASGI_API"
+  },
+  "new_cloud_tests": "Synthetic uncompressed LAS 1.2 and LAS 1.4; vertical and leaning cylinders",
+  "unchanged": [
+    "frozen V2/V3/V3.1 measurements",
+    "original annotations",
+    "saved v1 model weights",
+    "production deployment",
+    "CI/CD configuration"
+  ],
+  "not_validated": [
+    "real new mangrove survey accuracy",
+    "LAZ reader",
+    "Windows/macOS launchers",
+    "live network/deployed browser UI"
+  ],
+  "source_sha256": {
+    "scripts/feedback_cloud.py": "676282a3013360ba40bd3c3fb93c2e5836a63340c06cb81271705dfd5d0d945c",
+    "scripts/feedback_server.py": "fb23e036dc9cdf5338af8a65f20d96f4c3f0d8045cf0628e816ab5ea5f35c03a",
+    "scripts/start_feedback.py": "afbfac10555d1cae5348f0e7527434fbe72c3e2f45cbe3acb5de516b3454d07e",
+    "site/public/feedback-workspace/index.html": "4e21e63a8edfe46d47152cfafb09a0ab70c2162c5dcf985fe1e6d7db35f61c62",
+    "site/public/feedback-workspace/style.css": "0b060332c4ec3d0722323ae9765cda612481d196eb2523a22affe2aeff221e28",
+    "site/public/feedback-workspace/app.js": "7eca26fc724465b5319c089179c69607e49621567320778a710c8a5c98c4813f",
+    "site/public/feedback-workspace/bridge.js": "c2aa47fc6747df45d538973d082fc9a4c246e4412fbe4edc39b7ed2c438a522d",
+    "tests/test_feedback_workspace.py": "74898a914b8ee12e3f6a151c6e80d0940b467e697466c849fe06299f783f3d93",
+    "tests/workspace_browser_smoke.py": "7eae88b66549bfa9c789799bfa6d7248614dbe0e8770d7d2241d7a92e644c3f2",
+    "requirements-feedback-workspace.txt": "9d376f6ef1b47895360a75e877c100a3ab158b9d67462c06bf8193534f36d60a",
+    "start-feedback.cmd": "b9202b3c782a6eb6b5156329f37ee9d664ac0a49f4e39fb84cd21a360e50e306",
+    "start-feedback.command": "c02c57db794b39c364269975e3d6d4e40a19fe239ee00c6e318166e26d6d613b",
+    "docs/feedback-workspace.md": "642ac23f65f0fde2a1bf0c6b97cae4ae59587748bde560160e4bad7d07d43642",
+    ".agents/skills/mangrove-local-workspace/SKILL.md": "c2963da811ee08f6ee06f0a1dde29ac51f8046a494f3ec985ee11981f4a27670",
+    ".gitignore": "3757d44c7668652413be4cac92ed956bade2ba1b5f3b568a89ced5644b488043"
+  }
+}

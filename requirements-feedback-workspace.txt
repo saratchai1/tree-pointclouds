@@ -1,0 +1,6 @@
+-r requirements-feedback-learning.txt
+# Local desktop runtime, tested on Python 3.13. Python >=3.11 required.
+scipy==1.17.0
+fastapi==0.128.2
+uvicorn==0.48.0
+# Optional LAZ reader: python -m pip install 'laspy[lazrs]>=2.5,<3'
