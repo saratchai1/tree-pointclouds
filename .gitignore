@@ -13,3 +13,8 @@
 
 # Local development output
 *.log
+
+# Review-learning runtime: preserve locally, never publish implicitly.
+/.feedback-learning/
+/.venv-feedback/
+/tests/__pycache__/
