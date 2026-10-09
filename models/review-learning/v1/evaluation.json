@@ -1,0 +1,52 @@
+{
+  "version": "review-learning-v1.0.0",
+  "record_count": 39,
+  "dataset_fingerprint": "9e9cba458de95a7847f4e943a916e89173ac9748eef52238686cb7e2b3eafa40",
+  "audit": [{"duplicate_policy":"Grouped, never negative identity examples","ignored":[],"legacy_label_counts":{"BRANCH":1,"DUPLICATE_OF":5,"NOT_ENOUGH_INFORMATION":3,"PROP_ROOT_OR_ROOT_ONLY":3,"TRUE_MAIN_STEM":27},"manual_seeds_policy":"Retain upstream; hints are not measurement-correct labels","site_id":"SAMUT_SONGKHRAM_TD_008","survey_id":"TD_008_2026_08_07_07_04_07","unknown_policy":"Unlabelled, never negative examples"}],
+  "feedback_audit": [],
+  "source_files": [{"path":"annotations/phase1_75_pilot_review.json","sha256":"2b8ffc7e8e1f2a846eae339408f52b47786436c869bf1df66478265407fa0c10"},{"path":"outputs/review_queue_v2_phase1_75_pilot.json","sha256":"82114b5f72d0dabf2940321ec716b3c6bdaf3395abf6d8c457ae18e635ad7787"}],
+  "tasks": {
+    "measurement_validity": {"field_accuracy_measured":false,"labelled_rows":0,"negative":0,"parameters_frozen_before_evaluation":{"C":0.2,"class_weight":"balanced","max_iter":2000,"random_state":0,"solver":"liblinear"},"positive":0,"production_ready":false,"reason":"Advisory model; independent-plot validation and calibration are not established","site_count":0,"status":"NOT_ENOUGH_EXPLICIT_LABELS","task":"measurement_validity"},
+    "stem_identity": {
+      "beats_majority_on_grouped_balanced_accuracy": true,
+      "cross_plot_validation_performed": false,
+      "evaluated_rows": 31,
+      "evaluation": "leave-one-conservative-candidate-group-out",
+      "existing_geometry_stem_like_baseline": {"balanced_accuracy":0.6157407407407407,"count":31,"false_negative":14,"false_positive":1,"precision":0.9285714285714286,"recall":0.48148148148148145,"specificity":0.75,"true_negative":3,"true_positive":13},
+      "field_accuracy_measured": false,
+      "group_count": 22,
+      "labelled_rows": 31,
+      "learned_at_0_5": {"balanced_accuracy":0.7453703703703703,"count":31,"false_negative":7,"false_positive":1,"precision":0.9523809523809523,"recall":0.7407407407407407,"specificity":0.75,"true_negative":3,"true_positive":20},
+      "majority_baseline": {"balanced_accuracy":0.5,"count":31,"false_negative":0,"false_positive":4,"precision":0.8709677419354839,"recall":1.0,"specificity":0.0,"true_negative":0,"true_positive":27},
+      "negative": 4,
+      "parameters_frozen_before_evaluation": {"C":0.2,"class_weight":"balanced","max_iter":2000,"random_state":0,"solver":"liblinear"},
+      "positive": 27,
+      "production_ready": false,
+      "reason": "Advisory model; independent-plot validation and calibration are not established",
+      "site_count": 1,
+      "skipped_groups": [],
+      "status": "TRAINED_ADVISORY",
+      "task": "stem_identity",
+      "thresholds": {
+        "0.5": {"balanced_accuracy":0.7453703703703703,"count":31,"false_negative":7,"false_positive":1,"precision":0.9523809523809523,"recall":0.7407407407407407,"specificity":0.75,"true_negative":3,"true_positive":20},
+        "0.8": {"balanced_accuracy":0.6481481481481481,"count":31,"false_negative":19,"false_positive":0,"precision":1.0,"recall":0.2962962962962963,"specificity":1.0,"true_negative":4,"true_positive":8},
+        "0.9": {"balanced_accuracy":0.5,"count":31,"false_negative":27,"false_positive":0,"precision":null,"recall":0.0,"specificity":1.0,"true_negative":4,"true_positive":0}
+      }
+    }
+  },
+  "training_run": {
+    "repository": "saratchai1/tree-pointclouds",
+    "source_data_commit": "1b0654e6f1b6c62eef7c3d340b4167ab3f12c69f",
+    "training_commit": "ae163d4c9afccdcce6d9cbe00774f15dd8724b7c",
+    "workflow_run_id": 37887250254,
+    "artifact_id": 11597176160,
+    "artifact_sha256": "0e1e9332ca5141b2da8240dadf3038e2b9beba097f65753e171048f5326aae28",
+    "contract_tests_passed": 23,
+    "local_real_data_replay_max_absolute_score_delta": 2.220446049250313e-16
+  },
+  "important_limitations": [
+    "This compares stem-identity classification to the original STEM_LIKE flag, not full V3.1 circumference accuracy.",
+    "Only 31 labelled examples from one survey, including four negatives. No independent-plot validation.",
+    "This module does not connect deployed browser feedback buttons or generalized raw-LAS ingestion yet."
+  ]
+}
